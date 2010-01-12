@@ -1,336 +1,0 @@
-TMySchool
-v7
-r0
-t284934636.572378
-cCheck dependencies
-cProcessInfoPlistFile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Info.plist" MySchool-Info.plist
-cCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/MainWindow.xib"
-cCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchoolViewController.xib"
-cCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.xib"
-cProcessPCH /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch.gch MySchool_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/main.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolAppDelegate.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolViewController.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/Welcome.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool" normal i386
-cGenerateDSYMFile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app.dSYM" "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool"
-cTouch "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app"
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk
-c000000004AAE6C1B00000000000000EE
-t1252944923
-s238
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004A821911000000000026EE30
-t1250040081
-s2551344
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004A765094000000000027E880
-t1249267860
-s2615424
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004A7650820000000000001355
-t1249267842
-s4949
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004A7C6E970000000000000788
-t1249668759
-s1928
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004A7C6F5900000000016721E0
-t1249668953
-s23536096
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.h
-c000000004B4B89B8000000000000023C
-t1263241656
-s572
-i<UIKit/UIKit.h>
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m
-c000000004B4B8A6B00000000000002D2
-t1263241835
-s722
-i"MySchoolAppDelegate.h"
-i"MySchoolViewController.h"
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.h
-c000000004B4B8613000000000000015C
-t1263240723
-s348
-i<UIKit/UIKit.h>
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m
-c000000004B4B8A150000000000000638
-t1263241749
-s1592
-i"MySchoolViewController.h"
-i"Welcome.h"
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.h
-c000000004B4B86DF00000000000000CB
-t1263240927
-s203
-i<UIKit/UIKit.h>
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m
-c000000004B4B86DF000000000000054E
-t1263240927
-s1358
-i"Welcome.h"
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.xib
-c000000004B4B87120000000000004140
-t1263240978
-s16704
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/untitled.h
-c000000004B4B86A500000000000000CD
-t1263240869
-s205
-i<UIKit/UIKit.h>
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/untitled.m
-c000000004B4B86A50000000000000551
-t1263240869
-s1361
-i"untitled.h"
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/untitled.xib
-c000000004B4B86A50000000000001853
-t1263240869
-s6227
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/MainWindow.xib
-c000000004B4B7C5A0000000000002459
-t1263238234
-s9305
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchoolViewController.xib
-c000000004B4B8643000000000000493D
-t1263240771
-s18749
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchool_Prefix.pch
-c000000004B4B7C5A00000000000000B9
-t1263238234
-s185
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app
-t1263241836
-s272
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app.dSYM
-t1263241836
-s102
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Info.plist
-t1263240498
-s566
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MainWindow.nib
-t1263240502
-s1106
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool
-t1263241836
-s20880
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchoolViewController.nib
-t1263240773
-s1516
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/PkgInfo
-t1263240498
-s8
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Welcome.nib
-t1263241658
-s1169
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/untitled.nib
-t2
-s0
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchool.LinkFileList
-c000000004B4B89B80000000000000224
-t1263241656
-s548
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolAppDelegate.o
-t1263241836
-s40648
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolViewController.o
-t1263241749
-s31580
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/Welcome.o
-t1263241658
-s29752
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/main.o
-t1263240505
-s5952
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/untitled.o
-t2
-s0
-
-N/Users/ashley/DataJedi/iPhone Dev/MySchool/main.m
-c000000004B4B7C5A0000000000000162
-t1263238234
-s354
-i<UIKit/UIKit.h>
-
-N/var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch.gch
-t1263240505
-s8753336
-
-NMySchool-Info.plist
-c000000004B4B7C5A000000000000038D
-t1263238234
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies284934636#284934636#0(0"0(0#1#0"2450595136#0"0#
-
-CCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolAppDelegate.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s284934636.073133
-e284934636.376312
-r1
-xCompileC
-xbuild/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolAppDelegate.o
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m284934636#284934636#0(0"0(0#0#72"/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m2450595136#1981"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-generated-files.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-own-target-headers.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-all-target-headers.hmap" -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-project-headers.hmap" "-F/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/include" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources/i386" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources" -include /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch -c "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolAppDelegate.m" -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolAppDelegate.o"0#
-
-CCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolViewController.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s284934549.186506
-e284934549.474461
-r1
-xCompileC
-xbuild/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolViewController.o
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m284934549#284934549#0(0"0(0#0#75"/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m2450595136#1987"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-generated-files.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-own-target-headers.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-all-target-headers.hmap" -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-project-headers.hmap" "-F/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/include" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources/i386" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources" -include /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch -c "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/MySchoolViewController.m" -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchoolViewController.o"0#
-
-CCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/Welcome.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s284934458.368940
-e284934458.522877
-r1
-xCompileC
-xbuild/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/Welcome.o
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m284934458#284934458#0(0"0(0#0#60"/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m2450595136#1957"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-generated-files.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-own-target-headers.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-all-target-headers.hmap" -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-project-headers.hmap" "-F/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/include" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources/i386" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources" -include /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch -c "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.m" -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/Welcome.o"0#
-
-CCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/main.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s284933305.074368
-e284933305.284997
-r1
-xCompileC
-xbuild/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/main.o
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/ashley/DataJedi/iPhone Dev/MySchool/main.m284933305#284933305#0(0"0(0#0#49"/Users/ashley/DataJedi/iPhone Dev/MySchool/main.m2450595136#1943"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-generated-files.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-own-target-headers.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-all-target-headers.hmap" -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-project-headers.hmap" "-F/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/include" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources/i386" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources" -include /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch -c "/Users/ashley/DataJedi/iPhone Dev/MySchool/main.m" -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/main.o"0#
-
-CCompileC build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/untitled.o "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/untitled.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.xib"
-s284934456.287225
-e284934458.244607
-r1
-xCompileXIB
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.xib
-lSLF07#2@30"CompileXIB Classes/Welcome.xib284934456#284934458#0(0"0(0#0#62"/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.xib2450595136#501"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Welcome.nib" "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/Welcome.xib"0#
-
-CCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/Classes/untitled.xib"
-r0
-
-CCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/MainWindow.xib"
-s284933298.671487
-e284933302.865260
-r1
-xCompileXIB
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib284933298#284933302#0(0"0(0#0#57"/Users/ashley/DataJedi/iPhone Dev/MySchool/MainWindow.xib2450595136#499"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MainWindow.nib" "/Users/ashley/DataJedi/iPhone Dev/MySchool/MainWindow.xib"0#
-
-CCompileXIB "/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchoolViewController.xib"
-s284933573.216250
-e284933573.663227
-r1
-xCompileXIB
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchoolViewController.xib
-lSLF07#2@37"CompileXIB MySchoolViewController.xib284933573#284933573#0(0"0(0#0#69"/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchoolViewController.xib2450595136#523"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchoolViewController.nib" "/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchoolViewController.xib"0#
-
-CGenerateDSYMFile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app.dSYM" "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool"
-s284934636.454583
-e284934636.568651
-r1
-xGenerateDSYMFile
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app.dSYM
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/MySchool.app.dSYM build/Debug-iphonesimulator/MySchool.app/MySchool284934636#284934636#0(0"0(0#0#92"/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool2450595136#404"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool" -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app.dSYM"0#
-
-CLd "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool" normal i386
-s284934636.376543
-e284934636.454377
-r1
-xLd
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool
-xnormal
-xi386
-lSLF07#2@97"Link /Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool284934636#284934636#0(0"0(0#0#0"2450595136#897"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk "-L/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" "-F/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" -filelist "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/Objects-normal/i386/MySchool.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/MySchool"0#
-
-CProcessInfoPlistFile "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Info.plist" MySchool-Info.plist
-s284933298.644067
-e284933298.671362
-r1
-xProcessInfoPlistFile
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Info.plist
-xMySchool-Info.plist
-lSLF07#2@27"Process MySchool-Info.plist284933298#284933298#0(0"0(0#0#62"/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchool-Info.plist2450595136#500"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MySchool-Info.plist -genpkginfo "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app/Info.plist"0#
-
-CProcessPCH /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch.gch MySchool_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s284933302.865426
-e284933305.074120
-r1
-xProcessPCH
-x/var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch.gch
-xMySchool_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@30"Precompile MySchool_Prefix.pch284933302#284933305#0(0"0(0#0#62"/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchool_Prefix.pch2450595136#1828"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-generated-files.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-own-target-headers.hmap" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-all-target-headers.hmap" -iquote "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/MySchool-project-headers.hmap" "-F/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/include" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources/i386" "-I/Users/ashley/DataJedi/iPhone Dev/MySchool/build/MySchool.build/Debug-iphonesimulator/MySchool.build/DerivedSources" -c "/Users/ashley/DataJedi/iPhone Dev/MySchool/MySchool_Prefix.pch" -o /var/folders/IW/IWZFdYxiEJGIN8mHkB3ps++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MySchool_Prefix-awbftibpxpdfgnbgzaxwddslcjyi/MySchool_Prefix.pch.gch0#
-
-CTouch "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app"
-s284934636.568773
-e284934636.572323
-r1
-xTouch
-x/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app
-lSLF07#2@89"Touch /Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app284934636#284934636#0(0"0(0#0#0"2450595136#291"    cd "/Users/ashley/DataJedi/iPhone Dev/MySchool"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/ashley/DataJedi/iPhone Dev/MySchool/build/Debug-iphonesimulator/MySchool.app"0#
-
