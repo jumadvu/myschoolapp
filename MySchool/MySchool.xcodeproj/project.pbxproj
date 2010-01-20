@@ -12,11 +12,14 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* MySchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MySchoolViewController.xib */; };
+		2899E5220DE3E06400AC0155 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LoginController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* MySchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MySchoolViewController.m */; };
+		28D7ACF80DDB3853001CB0EB /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LoginController.m */; };
 		AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A166D10FBBE5F00902689 /* Welcome.m */; };
 		AB7A167010FBBE5F00902689 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7A166E10FBBE5F00902689 /* Welcome.xib */; };
+		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
+		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
+		ABB3C58E1106F3FA006FEEDA /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C58D1106F3FA006FEEDA /* person.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +29,19 @@
 		1D6058910D05DD3D006BFB54 /* MySchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* MySchoolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySchoolViewController.xib; sourceTree = "<group>"; };
+		2899E5210DE3E06400AC0155 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* MySchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySchoolViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* MySchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySchoolViewController.m; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MySchool_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySchool_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MySchool-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MySchool-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AB7A166C10FBBE5F00902689 /* Welcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Welcome.h; sourceTree = "<group>"; };
 		AB7A166D10FBBE5F00902689 /* Welcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Welcome.m; sourceTree = "<group>"; };
 		AB7A166E10FBBE5F00902689 /* Welcome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Welcome.xib; path = Classes/Welcome.xib; sourceTree = "<group>"; };
+		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		ABB3C58D1106F3FA006FEEDA /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* MySchoolAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MySchoolAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* MySchoolViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* MySchoolViewController.m */,
+				28D7ACF60DDB3853001CB0EB /* LoginController.h */,
+				28D7ACF70DDB3853001CB0EB /* LoginController.m */,
 				AB7A166C10FBBE5F00902689 /* Welcome.h */,
 				AB7A166D10FBBE5F00902689 /* Welcome.m */,
 			);
@@ -97,8 +103,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABB3C58D1106F3FA006FEEDA /* person.png */,
 				AB7A166E10FBBE5F00902689 /* Welcome.xib */,
-				2899E5210DE3E06400AC0155 /* MySchoolViewController.xib */,
+				ABB3C5491106ECA5006FEEDA /* Default.png */,
+				ABB3C54A1106ECA5006FEEDA /* icon.png */,
+				2899E5210DE3E06400AC0155 /* LoginController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* MySchool-Info.plist */,
 			);
@@ -158,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* MySchoolViewController.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* LoginController.xib in Resources */,
 				AB7A167010FBBE5F00902689 /* Welcome.xib in Resources */,
+				ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */,
+				ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */,
+				ABB3C58E1106F3FA006FEEDA /* person.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +184,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MySchoolAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* MySchoolViewController.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* LoginController.m in Sources */,
 				AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
