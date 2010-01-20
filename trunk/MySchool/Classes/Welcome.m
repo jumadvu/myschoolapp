@@ -19,6 +19,7 @@
 }
 
 -(void)gotoFirstPage {
+	//test
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon popViewControllerAnimated:YES];
 }
