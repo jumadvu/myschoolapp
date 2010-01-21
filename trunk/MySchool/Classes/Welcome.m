@@ -8,7 +8,7 @@
 
 #import "Welcome.h"
 #import "MySchoolAppDelegate.h"
-
+#import "LoginController.h"
 
 @implementation Welcome
 
@@ -21,7 +21,8 @@
 -(void)gotoFirstPage {
 	//test
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon popViewControllerAnimated:YES];
+	LoginController *vc = [[[LoginController alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
