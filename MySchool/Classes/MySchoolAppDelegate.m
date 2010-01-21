@@ -7,18 +7,18 @@
 //
 
 #import "MySchoolAppDelegate.h"
-#import "MySchoolViewController.h"
+
 
 @implementation MySchoolAppDelegate
 
 @synthesize window;
-@synthesize viewController;
 @synthesize navCon;
+@synthesize users;
 
 - (void)dealloc {
 	[navCon release];
-    [viewController release];
     [window release];
+	[users release];
     [super dealloc];
 }
 
