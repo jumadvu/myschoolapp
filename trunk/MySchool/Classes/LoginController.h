@@ -1,5 +1,5 @@
 //
-//  MySchoolViewController.h
+//  LoginController.h
 //  MySchool
 //
 //  Created by Ashley Kayler on 1/11/10.
@@ -10,6 +10,7 @@
 
 @interface LoginController : UIViewController {
 	IBOutlet UIButton *goNextButton;
+	NSMutableArray *users;
 }
 
 @property (nonatomic, retain) UIButton *goNextButton;
