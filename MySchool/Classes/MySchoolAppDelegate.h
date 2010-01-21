@@ -8,17 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class MySchoolViewController;
-
 @interface MySchoolAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    MySchoolViewController *viewController;
 	UINavigationController *navCon;
+	NSMutableArray *users;
 }
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navCon;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet MySchoolViewController *viewController;
+@property (nonatomic, retain) NSMutableArray *users;
 
 @end
 
