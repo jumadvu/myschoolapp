@@ -7,7 +7,7 @@
 //
 
 #import "MySchoolAppDelegate.h"
-
+#import "Welcome.h"
 
 @implementation MySchoolAppDelegate
 
@@ -26,7 +26,12 @@
     // Override point for customization after app launch    
     //[navCon initWithRootViewController:viewController];
 	[navCon setNavigationBarHidden:YES];
+	//add navigation controller view  (root view is set to main menu in nib)
     [window addSubview:navCon.view];
+	
+	//push welcome screen to nav con
+	Welcome *vc = [[[Welcome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[navCon pushViewController:vc animated:YES];
     [window makeKeyAndVisible];
 }
 

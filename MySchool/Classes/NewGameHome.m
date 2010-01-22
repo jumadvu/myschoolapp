@@ -1,41 +1,40 @@
 //
-//  Welcome.m
+//  NewGameHome.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 1/11/10.
+//  Created by Ashley Kayler on 1/21/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
-#import "Welcome.h"
-#import "MySchoolAppDelegate.h"
-#import "LoginController.h"
+#import "NewGameHome.h"
 
-@implementation Welcome
 
-@synthesize backButton;
+@implementation NewGameHome
 
-- (void)dealloc {
-    [super dealloc];
-}
-
--(void)gotoFirstPage {
-	//go to login page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	LoginController *vc = [[[LoginController alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-}
-
+/*
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
     }
     return self;
 }
+*/
 
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+*/
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -49,6 +48,10 @@
 	// e.g. self.myOutlet = nil;
 }
 
+
+- (void)dealloc {
+    [super dealloc];
+}
 
 
 @end
