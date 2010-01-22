@@ -8,17 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginController : UIViewController {
-	IBOutlet UIButton *goNextButton;
+@interface LoginController : baseViewController {
+	IBOutlet UIButton *newAccountButton;
 	NSMutableArray *users;
 	IBOutlet UIButton *imageButton;
 }
 
-@property (nonatomic, retain) UIButton *goNextButton;
+@property (nonatomic, retain) UIButton *newAccountButton;
 @property (nonatomic, retain) UIButton *imageButton;
 
--(IBAction) gotoNextPage;
--(IBAction) toMainMenu;
+-(IBAction) toNewAccount;
 
 @end
 
