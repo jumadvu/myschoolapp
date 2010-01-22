@@ -15,8 +15,28 @@
 		2899E5220DE3E06400AC0155 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LoginController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LoginController.m */; };
+		AB07EFE01108E97800204AFE /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFDF1108E97800204AFE /* Welcome.xib */; };
+		AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07EFEF1108EA1D00204AFE /* MainMenu.m */; };
+		AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFF01108EA1D00204AFE /* MainMenu.xib */; };
+		AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0191108F15F00204AFE /* model.xcdatamodel */; };
+		AB07F0D61109076D00204AFE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0D31109076D00204AFE /* User.m */; };
+		AB07F0D71109076D00204AFE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0D51109076D00204AFE /* Student.m */; };
+		AB07F12D11090B7500204AFE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07F12C11090B7500204AFE /* CoreData.framework */; };
+		AB07F13611090BA700204AFE /* UserMO.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F13511090BA700204AFE /* UserMO.m */; };
+		AB07F1B1110962BA00204AFE /* GameStatusHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1AF110962BA00204AFE /* GameStatusHome.m */; };
+		AB07F1B2110962BA00204AFE /* GameStatusHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F1B0110962BA00204AFE /* GameStatusHome.xib */; };
+		AB07F1DF110966CD00204AFE /* HelpHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1DD110966CD00204AFE /* HelpHome.m */; };
+		AB07F1E0110966CD00204AFE /* HelpHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F1DE110966CD00204AFE /* HelpHome.xib */; };
+		AB07F1E7110966F800204AFE /* NewGameHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1E5110966F800204AFE /* NewGameHome.m */; };
+		AB07F1E8110966F800204AFE /* NewGameHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F1E6110966F800204AFE /* NewGameHome.xib */; };
+		AB07F2151109858000204AFE /* baseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F2141109858000204AFE /* baseViewController.m */; };
+		AB07F25B11098B4B00204AFE /* LibraryHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F25911098B4B00204AFE /* LibraryHome.m */; };
+		AB07F25C11098B4B00204AFE /* LibraryHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F25A11098B4B00204AFE /* LibraryHome.xib */; };
+		AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26011098B6600204AFE /* ClassroomHome.m */; };
+		AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26111098B6600204AFE /* ClassroomHome.xib */; };
+		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
+		AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26811098B7600204AFE /* LoungeHome.xib */; };
 		AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A166D10FBBE5F00902689 /* Welcome.m */; };
-		AB7A167010FBBE5F00902689 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB7A166E10FBBE5F00902689 /* Welcome.xib */; };
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
 		ABB3C58E1106F3FA006FEEDA /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C58D1106F3FA006FEEDA /* person.png */; };
@@ -29,16 +49,47 @@
 		1D6058910D05DD3D006BFB54 /* MySchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		2899E5210DE3E06400AC0155 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginController.xib; path = ../LoginController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MySchool_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySchool_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MySchool-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MySchool-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AB07EFDF1108E97800204AFE /* Welcome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Welcome.xib; path = ../Welcome.xib; sourceTree = "<group>"; };
+		AB07EFEE1108EA1D00204AFE /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		AB07EFEF1108EA1D00204AFE /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		AB07EFF01108EA1D00204AFE /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		AB07F0191108F15F00204AFE /* model.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
+		AB07F0D21109076D00204AFE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AB07F0D31109076D00204AFE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AB07F0D41109076D00204AFE /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		AB07F0D51109076D00204AFE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		AB07F12C11090B7500204AFE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB07F13411090BA700204AFE /* UserMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMO.h; sourceTree = "<group>"; };
+		AB07F13511090BA700204AFE /* UserMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMO.m; sourceTree = "<group>"; };
+		AB07F1AE110962BA00204AFE /* GameStatusHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStatusHome.h; sourceTree = "<group>"; };
+		AB07F1AF110962BA00204AFE /* GameStatusHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStatusHome.m; sourceTree = "<group>"; };
+		AB07F1B0110962BA00204AFE /* GameStatusHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameStatusHome.xib; sourceTree = "<group>"; };
+		AB07F1DC110966CD00204AFE /* HelpHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpHome.h; sourceTree = "<group>"; };
+		AB07F1DD110966CD00204AFE /* HelpHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpHome.m; sourceTree = "<group>"; };
+		AB07F1DE110966CD00204AFE /* HelpHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpHome.xib; sourceTree = "<group>"; };
+		AB07F1E4110966F800204AFE /* NewGameHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameHome.h; sourceTree = "<group>"; };
+		AB07F1E5110966F800204AFE /* NewGameHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameHome.m; sourceTree = "<group>"; };
+		AB07F1E6110966F800204AFE /* NewGameHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewGameHome.xib; sourceTree = "<group>"; };
+		AB07F2131109858000204AFE /* baseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseViewController.h; sourceTree = "<group>"; };
+		AB07F2141109858000204AFE /* baseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseViewController.m; sourceTree = "<group>"; };
+		AB07F25811098B4B00204AFE /* LibraryHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHome.h; sourceTree = "<group>"; };
+		AB07F25911098B4B00204AFE /* LibraryHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHome.m; sourceTree = "<group>"; };
+		AB07F25A11098B4B00204AFE /* LibraryHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryHome.xib; sourceTree = "<group>"; };
+		AB07F25F11098B6600204AFE /* ClassroomHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassroomHome.h; sourceTree = "<group>"; };
+		AB07F26011098B6600204AFE /* ClassroomHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomHome.m; sourceTree = "<group>"; };
+		AB07F26111098B6600204AFE /* ClassroomHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassroomHome.xib; sourceTree = "<group>"; };
+		AB07F26611098B7600204AFE /* LoungeHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoungeHome.h; sourceTree = "<group>"; };
+		AB07F26711098B7600204AFE /* LoungeHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoungeHome.m; sourceTree = "<group>"; };
+		AB07F26811098B7600204AFE /* LoungeHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoungeHome.xib; sourceTree = "<group>"; };
 		AB7A166C10FBBE5F00902689 /* Welcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Welcome.h; sourceTree = "<group>"; };
 		AB7A166D10FBBE5F00902689 /* Welcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Welcome.m; sourceTree = "<group>"; };
-		AB7A166E10FBBE5F00902689 /* Welcome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Welcome.xib; path = Classes/Welcome.xib; sourceTree = "<group>"; };
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ABB3C58D1106F3FA006FEEDA /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
@@ -52,6 +103,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				AB07F12D11090B7500204AFE /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,12 +113,22 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AB07F25511098B2A00204AFE /* lounge */,
+				AB07F25211098B2000204AFE /* classroom */,
+				AB07F24F11098B1800204AFE /* library */,
+				AB07F1D91109669E00204AFE /* New Game */,
+				AB07F1D61109669200204AFE /* Help */,
+				AB07F1B5110962C700204AFE /* Status */,
 				1D3623240D0F684500981E51 /* MySchoolAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MySchoolAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* LoginController.h */,
-				28D7ACF70DDB3853001CB0EB /* LoginController.m */,
 				AB7A166C10FBBE5F00902689 /* Welcome.h */,
 				AB7A166D10FBBE5F00902689 /* Welcome.m */,
+				AB07EFDF1108E97800204AFE /* Welcome.xib */,
+				AB07EFEE1108EA1D00204AFE /* MainMenu.h */,
+				AB07EFEF1108EA1D00204AFE /* MainMenu.m */,
+				AB07EFF01108EA1D00204AFE /* MainMenu.xib */,
+				AB07F2131109858000204AFE /* baseViewController.h */,
+				AB07F2141109858000204AFE /* baseViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -82,6 +144,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				AB07F0161108F0CD00204AFE /* Model */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -104,10 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				ABB3C58D1106F3FA006FEEDA /* person.png */,
-				AB7A166E10FBBE5F00902689 /* Welcome.xib */,
 				ABB3C5491106ECA5006FEEDA /* Default.png */,
 				ABB3C54A1106ECA5006FEEDA /* icon.png */,
-				2899E5210DE3E06400AC0155 /* LoginController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* MySchool-Info.plist */,
 			);
@@ -117,11 +178,90 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB07F12C11090B7500204AFE /* CoreData.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB07F0161108F0CD00204AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB07F0D21109076D00204AFE /* User.h */,
+				AB07F0D31109076D00204AFE /* User.m */,
+				AB07F0D41109076D00204AFE /* Student.h */,
+				AB07F0D51109076D00204AFE /* Student.m */,
+				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
+				AB07F13411090BA700204AFE /* UserMO.h */,
+				AB07F13511090BA700204AFE /* UserMO.m */,
+			);
+			name = Model;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB07F1B5110962C700204AFE /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				AB07F1AE110962BA00204AFE /* GameStatusHome.h */,
+				AB07F1AF110962BA00204AFE /* GameStatusHome.m */,
+				AB07F1B0110962BA00204AFE /* GameStatusHome.xib */,
+			);
+			name = Status;
+			sourceTree = "<group>";
+		};
+		AB07F1D61109669200204AFE /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				AB07F1DC110966CD00204AFE /* HelpHome.h */,
+				AB07F1DD110966CD00204AFE /* HelpHome.m */,
+				AB07F1DE110966CD00204AFE /* HelpHome.xib */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		AB07F1D91109669E00204AFE /* New Game */ = {
+			isa = PBXGroup;
+			children = (
+				28D7ACF60DDB3853001CB0EB /* LoginController.h */,
+				28D7ACF70DDB3853001CB0EB /* LoginController.m */,
+				2899E5210DE3E06400AC0155 /* LoginController.xib */,
+				AB07F1E4110966F800204AFE /* NewGameHome.h */,
+				AB07F1E5110966F800204AFE /* NewGameHome.m */,
+				AB07F1E6110966F800204AFE /* NewGameHome.xib */,
+			);
+			name = "New Game";
+			sourceTree = "<group>";
+		};
+		AB07F24F11098B1800204AFE /* library */ = {
+			isa = PBXGroup;
+			children = (
+				AB07F25811098B4B00204AFE /* LibraryHome.h */,
+				AB07F25911098B4B00204AFE /* LibraryHome.m */,
+				AB07F25A11098B4B00204AFE /* LibraryHome.xib */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
+		AB07F25211098B2000204AFE /* classroom */ = {
+			isa = PBXGroup;
+			children = (
+				AB07F25F11098B6600204AFE /* ClassroomHome.h */,
+				AB07F26011098B6600204AFE /* ClassroomHome.m */,
+				AB07F26111098B6600204AFE /* ClassroomHome.xib */,
+			);
+			name = classroom;
+			sourceTree = "<group>";
+		};
+		AB07F25511098B2A00204AFE /* lounge */ = {
+			isa = PBXGroup;
+			children = (
+				AB07F26611098B7600204AFE /* LoungeHome.h */,
+				AB07F26711098B7600204AFE /* LoungeHome.m */,
+				AB07F26811098B7600204AFE /* LoungeHome.xib */,
+			);
+			name = lounge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,10 +308,17 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* LoginController.xib in Resources */,
-				AB7A167010FBBE5F00902689 /* Welcome.xib in Resources */,
 				ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */,
 				ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */,
 				ABB3C58E1106F3FA006FEEDA /* person.png in Resources */,
+				AB07EFE01108E97800204AFE /* Welcome.xib in Resources */,
+				AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */,
+				AB07F1B2110962BA00204AFE /* GameStatusHome.xib in Resources */,
+				AB07F1E0110966CD00204AFE /* HelpHome.xib in Resources */,
+				AB07F1E8110966F800204AFE /* NewGameHome.xib in Resources */,
+				AB07F25C11098B4B00204AFE /* LibraryHome.xib in Resources */,
+				AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */,
+				AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +333,18 @@
 				1D3623260D0F684500981E51 /* MySchoolAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* LoginController.m in Sources */,
 				AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */,
+				AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */,
+				AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */,
+				AB07F0D61109076D00204AFE /* User.m in Sources */,
+				AB07F0D71109076D00204AFE /* Student.m in Sources */,
+				AB07F13611090BA700204AFE /* UserMO.m in Sources */,
+				AB07F1B1110962BA00204AFE /* GameStatusHome.m in Sources */,
+				AB07F1DF110966CD00204AFE /* HelpHome.m in Sources */,
+				AB07F1E7110966F800204AFE /* NewGameHome.m in Sources */,
+				AB07F2151109858000204AFE /* baseViewController.m in Sources */,
+				AB07F25B11098B4B00204AFE /* LibraryHome.m in Sources */,
+				AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */,
+				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
