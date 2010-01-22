@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface GameStatusHome : UIViewController {
-
+@interface GameStatusHome : baseViewController {
+	
 }
+
 
 @end

@@ -8,7 +8,6 @@
 
 #import "GameStatusHome.h"
 
-
 @implementation GameStatusHome
 
 /*
