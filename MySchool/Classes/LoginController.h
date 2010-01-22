@@ -11,11 +11,14 @@
 @interface LoginController : UIViewController {
 	IBOutlet UIButton *goNextButton;
 	NSMutableArray *users;
+	IBOutlet UIButton *imageButton;
 }
 
 @property (nonatomic, retain) UIButton *goNextButton;
+@property (nonatomic, retain) UIButton *imageButton;
 
 -(IBAction) gotoNextPage;
+-(IBAction) toMainMenu;
 
 @end
 
