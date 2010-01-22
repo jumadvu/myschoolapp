@@ -8,31 +8,24 @@
 
 #import "LoginController.h"
 #import "Welcome.h"
-#import "MySchoolAppDelegate.h"
 #import "MainMenu.h"
+#import "NewGameHome.h"
 
 @implementation LoginController
 
-@synthesize goNextButton;
+@synthesize newAccountButton;
 @synthesize imageButton;
 
 - (void)dealloc {
 	[imageButton release];
-	[goNextButton release];
+	[newAccountButton release];
     [super dealloc];
 }
 
--(void)gotoNextPage {
+-(void)toNewAccount {
+	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	NSLog(@"go to next page");
-	[delegate.navCon popViewControllerAnimated:YES];
-	
-}
-
--(void)toMainMenu {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	NSLog(@"go to next page");
-	MainMenu *vc = [[[MainMenu alloc] initWithNibName:nil bundle:nil] autorelease];
+	NewGameHome *vc = [[[NewGameHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
