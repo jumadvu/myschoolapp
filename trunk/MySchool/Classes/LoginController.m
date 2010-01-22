@@ -9,15 +9,31 @@
 #import "LoginController.h"
 #import "Welcome.h"
 #import "MySchoolAppDelegate.h"
+#import "MainMenu.h"
 
 @implementation LoginController
 
 @synthesize goNextButton;
+@synthesize imageButton;
+
+- (void)dealloc {
+	[imageButton release];
+	[goNextButton release];
+    [super dealloc];
+}
 
 -(void)gotoNextPage {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	NSLog(@"go to next page");
 	[delegate.navCon popViewControllerAnimated:YES];
+	
+}
+
+-(void)toMainMenu {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSLog(@"go to next page");
+	MainMenu *vc = [[[MainMenu alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
 
@@ -50,8 +66,5 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 @end
