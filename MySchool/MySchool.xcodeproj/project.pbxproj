@@ -19,8 +19,6 @@
 		AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07EFEF1108EA1D00204AFE /* MainMenu.m */; };
 		AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFF01108EA1D00204AFE /* MainMenu.xib */; };
 		AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0191108F15F00204AFE /* model.xcdatamodel */; };
-		AB07F0D61109076D00204AFE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0D31109076D00204AFE /* User.m */; };
-		AB07F0D71109076D00204AFE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0D51109076D00204AFE /* Student.m */; };
 		AB07F12D11090B7500204AFE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07F12C11090B7500204AFE /* CoreData.framework */; };
 		AB07F13611090BA700204AFE /* UserMO.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F13511090BA700204AFE /* UserMO.m */; };
 		AB07F1B1110962BA00204AFE /* GameStatusHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1AF110962BA00204AFE /* GameStatusHome.m */; };
@@ -36,6 +34,25 @@
 		AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26111098B6600204AFE /* ClassroomHome.xib */; };
 		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
 		AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26811098B7600204AFE /* LoungeHome.xib */; };
+		AB3889B2110ED52B00217E8F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388991110ED52B00217E8F /* User.m */; };
+		AB3889B3110ED52B00217E8F /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388993110ED52B00217E8F /* Chapter.m */; };
+		AB3889B4110ED52B00217E8F /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388995110ED52B00217E8F /* CompletedWorksheet.m */; };
+		AB3889B5110ED52B00217E8F /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388997110ED52B00217E8F /* WorksheetAnswer.m */; };
+		AB3889B6110ED52B00217E8F /* StudentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388999110ED52B00217E8F /* StudentQuestion.m */; };
+		AB3889B7110ED52B00217E8F /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38899B110ED52B00217E8F /* Module.m */; };
+		AB3889B8110ED52B00217E8F /* CompletedLesson.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38899D110ED52B00217E8F /* CompletedLesson.m */; };
+		AB3889B9110ED52B00217E8F /* Award.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38899F110ED52B00217E8F /* Award.m */; };
+		AB3889BA110ED52B00217E8F /* StudentAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889A1110ED52B00217E8F /* StudentAnswer.m */; };
+		AB3889BB110ED52B00217E8F /* Lecture.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889A3110ED52B00217E8F /* Lecture.m */; };
+		AB3889BC110ED52B00217E8F /* Keyword.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889A5110ED52B00217E8F /* Keyword.m */; };
+		AB3889BD110ED52B00217E8F /* Worksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889A7110ED52B00217E8F /* Worksheet.m */; };
+		AB3889BE110ED52B00217E8F /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889A9110ED52B00217E8F /* Article.m */; };
+		AB3889BF110ED52B00217E8F /* UserAwards.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889AB110ED52B00217E8F /* UserAwards.m */; };
+		AB3889C0110ED52B00217E8F /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889AD110ED52B00217E8F /* KeywordSet.m */; };
+		AB3889C1110ED52B00217E8F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889AF110ED52B00217E8F /* Student.m */; };
+		AB3889C2110ED52B00217E8F /* WorksheetQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889B1110ED52B00217E8F /* WorksheetQuestion.m */; };
+		AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889CB110ED78800217E8F /* DesignAvatar1.m */; };
+		AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3889CC110ED78800217E8F /* DesignAvatar1.xib */; };
 		AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A166D10FBBE5F00902689 /* Welcome.m */; };
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
@@ -61,10 +78,6 @@
 		AB07EFEF1108EA1D00204AFE /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		AB07EFF01108EA1D00204AFE /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		AB07F0191108F15F00204AFE /* model.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
-		AB07F0D21109076D00204AFE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		AB07F0D31109076D00204AFE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		AB07F0D41109076D00204AFE /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		AB07F0D51109076D00204AFE /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		AB07F12C11090B7500204AFE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AB07F13411090BA700204AFE /* UserMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMO.h; sourceTree = "<group>"; };
 		AB07F13511090BA700204AFE /* UserMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMO.m; sourceTree = "<group>"; };
@@ -88,6 +101,43 @@
 		AB07F26611098B7600204AFE /* LoungeHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoungeHome.h; sourceTree = "<group>"; };
 		AB07F26711098B7600204AFE /* LoungeHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoungeHome.m; sourceTree = "<group>"; };
 		AB07F26811098B7600204AFE /* LoungeHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoungeHome.xib; sourceTree = "<group>"; };
+		AB388990110ED52B00217E8F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AB388991110ED52B00217E8F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AB388992110ED52B00217E8F /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		AB388993110ED52B00217E8F /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		AB388994110ED52B00217E8F /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
+		AB388995110ED52B00217E8F /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
+		AB388996110ED52B00217E8F /* WorksheetAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetAnswer.h; sourceTree = "<group>"; };
+		AB388997110ED52B00217E8F /* WorksheetAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetAnswer.m; sourceTree = "<group>"; };
+		AB388998110ED52B00217E8F /* StudentQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentQuestion.h; sourceTree = "<group>"; };
+		AB388999110ED52B00217E8F /* StudentQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentQuestion.m; sourceTree = "<group>"; };
+		AB38899A110ED52B00217E8F /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		AB38899B110ED52B00217E8F /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		AB38899C110ED52B00217E8F /* CompletedLesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedLesson.h; sourceTree = "<group>"; };
+		AB38899D110ED52B00217E8F /* CompletedLesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedLesson.m; sourceTree = "<group>"; };
+		AB38899E110ED52B00217E8F /* Award.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Award.h; sourceTree = "<group>"; };
+		AB38899F110ED52B00217E8F /* Award.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Award.m; sourceTree = "<group>"; };
+		AB3889A0110ED52B00217E8F /* StudentAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentAnswer.h; sourceTree = "<group>"; };
+		AB3889A1110ED52B00217E8F /* StudentAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentAnswer.m; sourceTree = "<group>"; };
+		AB3889A2110ED52B00217E8F /* Lecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lecture.h; sourceTree = "<group>"; };
+		AB3889A3110ED52B00217E8F /* Lecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lecture.m; sourceTree = "<group>"; };
+		AB3889A4110ED52B00217E8F /* Keyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyword.h; sourceTree = "<group>"; };
+		AB3889A5110ED52B00217E8F /* Keyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyword.m; sourceTree = "<group>"; };
+		AB3889A6110ED52B00217E8F /* Worksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worksheet.h; sourceTree = "<group>"; };
+		AB3889A7110ED52B00217E8F /* Worksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worksheet.m; sourceTree = "<group>"; };
+		AB3889A8110ED52B00217E8F /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		AB3889A9110ED52B00217E8F /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		AB3889AA110ED52B00217E8F /* UserAwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAwards.h; sourceTree = "<group>"; };
+		AB3889AB110ED52B00217E8F /* UserAwards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAwards.m; sourceTree = "<group>"; };
+		AB3889AC110ED52B00217E8F /* KeywordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSet.h; sourceTree = "<group>"; };
+		AB3889AD110ED52B00217E8F /* KeywordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSet.m; sourceTree = "<group>"; };
+		AB3889AE110ED52B00217E8F /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		AB3889AF110ED52B00217E8F /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		AB3889B0110ED52B00217E8F /* WorksheetQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetQuestion.h; sourceTree = "<group>"; };
+		AB3889B1110ED52B00217E8F /* WorksheetQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetQuestion.m; sourceTree = "<group>"; };
+		AB3889CA110ED78800217E8F /* DesignAvatar1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignAvatar1.h; sourceTree = "<group>"; };
+		AB3889CB110ED78800217E8F /* DesignAvatar1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignAvatar1.m; sourceTree = "<group>"; };
+		AB3889CC110ED78800217E8F /* DesignAvatar1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignAvatar1.xib; sourceTree = "<group>"; };
 		AB7A166C10FBBE5F00902689 /* Welcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Welcome.h; sourceTree = "<group>"; };
 		AB7A166D10FBBE5F00902689 /* Welcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Welcome.m; sourceTree = "<group>"; };
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -189,10 +239,40 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB07F0D21109076D00204AFE /* User.h */,
-				AB07F0D31109076D00204AFE /* User.m */,
-				AB07F0D41109076D00204AFE /* Student.h */,
-				AB07F0D51109076D00204AFE /* Student.m */,
+				AB388990110ED52B00217E8F /* User.h */,
+				AB388991110ED52B00217E8F /* User.m */,
+				AB388992110ED52B00217E8F /* Chapter.h */,
+				AB388993110ED52B00217E8F /* Chapter.m */,
+				AB388994110ED52B00217E8F /* CompletedWorksheet.h */,
+				AB388995110ED52B00217E8F /* CompletedWorksheet.m */,
+				AB388996110ED52B00217E8F /* WorksheetAnswer.h */,
+				AB388997110ED52B00217E8F /* WorksheetAnswer.m */,
+				AB388998110ED52B00217E8F /* StudentQuestion.h */,
+				AB388999110ED52B00217E8F /* StudentQuestion.m */,
+				AB38899A110ED52B00217E8F /* Module.h */,
+				AB38899B110ED52B00217E8F /* Module.m */,
+				AB38899C110ED52B00217E8F /* CompletedLesson.h */,
+				AB38899D110ED52B00217E8F /* CompletedLesson.m */,
+				AB38899E110ED52B00217E8F /* Award.h */,
+				AB38899F110ED52B00217E8F /* Award.m */,
+				AB3889A0110ED52B00217E8F /* StudentAnswer.h */,
+				AB3889A1110ED52B00217E8F /* StudentAnswer.m */,
+				AB3889A2110ED52B00217E8F /* Lecture.h */,
+				AB3889A3110ED52B00217E8F /* Lecture.m */,
+				AB3889A4110ED52B00217E8F /* Keyword.h */,
+				AB3889A5110ED52B00217E8F /* Keyword.m */,
+				AB3889A6110ED52B00217E8F /* Worksheet.h */,
+				AB3889A7110ED52B00217E8F /* Worksheet.m */,
+				AB3889A8110ED52B00217E8F /* Article.h */,
+				AB3889A9110ED52B00217E8F /* Article.m */,
+				AB3889AA110ED52B00217E8F /* UserAwards.h */,
+				AB3889AB110ED52B00217E8F /* UserAwards.m */,
+				AB3889AC110ED52B00217E8F /* KeywordSet.h */,
+				AB3889AD110ED52B00217E8F /* KeywordSet.m */,
+				AB3889AE110ED52B00217E8F /* Student.h */,
+				AB3889AF110ED52B00217E8F /* Student.m */,
+				AB3889B0110ED52B00217E8F /* WorksheetQuestion.h */,
+				AB3889B1110ED52B00217E8F /* WorksheetQuestion.m */,
 				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
 				AB07F13411090BA700204AFE /* UserMO.h */,
 				AB07F13511090BA700204AFE /* UserMO.m */,
@@ -230,6 +310,9 @@
 				AB07F1E4110966F800204AFE /* NewGameHome.h */,
 				AB07F1E5110966F800204AFE /* NewGameHome.m */,
 				AB07F1E6110966F800204AFE /* NewGameHome.xib */,
+				AB3889CA110ED78800217E8F /* DesignAvatar1.h */,
+				AB3889CB110ED78800217E8F /* DesignAvatar1.m */,
+				AB3889CC110ED78800217E8F /* DesignAvatar1.xib */,
 			);
 			name = "New Game";
 			sourceTree = "<group>";
@@ -319,6 +402,7 @@
 				AB07F25C11098B4B00204AFE /* LibraryHome.xib in Resources */,
 				AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */,
 				AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */,
+				AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +419,6 @@
 				AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */,
 				AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */,
 				AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */,
-				AB07F0D61109076D00204AFE /* User.m in Sources */,
-				AB07F0D71109076D00204AFE /* Student.m in Sources */,
 				AB07F13611090BA700204AFE /* UserMO.m in Sources */,
 				AB07F1B1110962BA00204AFE /* GameStatusHome.m in Sources */,
 				AB07F1DF110966CD00204AFE /* HelpHome.m in Sources */,
@@ -345,6 +427,24 @@
 				AB07F25B11098B4B00204AFE /* LibraryHome.m in Sources */,
 				AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */,
 				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
+				AB3889B2110ED52B00217E8F /* User.m in Sources */,
+				AB3889B3110ED52B00217E8F /* Chapter.m in Sources */,
+				AB3889B4110ED52B00217E8F /* CompletedWorksheet.m in Sources */,
+				AB3889B5110ED52B00217E8F /* WorksheetAnswer.m in Sources */,
+				AB3889B6110ED52B00217E8F /* StudentQuestion.m in Sources */,
+				AB3889B7110ED52B00217E8F /* Module.m in Sources */,
+				AB3889B8110ED52B00217E8F /* CompletedLesson.m in Sources */,
+				AB3889B9110ED52B00217E8F /* Award.m in Sources */,
+				AB3889BA110ED52B00217E8F /* StudentAnswer.m in Sources */,
+				AB3889BB110ED52B00217E8F /* Lecture.m in Sources */,
+				AB3889BC110ED52B00217E8F /* Keyword.m in Sources */,
+				AB3889BD110ED52B00217E8F /* Worksheet.m in Sources */,
+				AB3889BE110ED52B00217E8F /* Article.m in Sources */,
+				AB3889BF110ED52B00217E8F /* UserAwards.m in Sources */,
+				AB3889C0110ED52B00217E8F /* KeywordSet.m in Sources */,
+				AB3889C1110ED52B00217E8F /* Student.m in Sources */,
+				AB3889C2110ED52B00217E8F /* WorksheetQuestion.m in Sources */,
+				AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
