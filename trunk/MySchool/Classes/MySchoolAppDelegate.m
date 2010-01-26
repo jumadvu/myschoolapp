@@ -23,7 +23,13 @@
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
-    // Override point for customization after app launch    
+    // Override point for customization after app launch 
+	
+	 if(getenv("NSZombieEnabled") || getenv("NSAutoreleaseFreedObjectCheckEnabled")) {
+	 NSLog(@"NSZombieEnabled/NSAutoreleaseFreedObjectCheckEnabled enabled!");
+	 }
+	 
+	
     //[navCon initWithRootViewController:viewController];
 	[navCon setNavigationBarHidden:YES];
 	//add navigation controller view  (root view is set to main menu in nib)

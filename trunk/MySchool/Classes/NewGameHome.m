@@ -7,9 +7,24 @@
 //
 
 #import "NewGameHome.h"
-
+#import "DesignAvatar1.h"
 
 @implementation NewGameHome
+
+@synthesize continueButton;
+
+- (void)dealloc {
+	[continueButton release];
+    [super dealloc];
+}
+
+-(void)continueAvatarDesign {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -49,9 +64,7 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
+
 
 
 @end

@@ -10,7 +10,11 @@
 
 
 @interface NewGameHome : baseViewController {
-
+	IBOutlet UIButton *continueButton;
 }
+
+@property (nonatomic, retain) UIButton *continueButton;
+
+-(IBAction)continueAvatarDesign;
 
 @end
