@@ -10,7 +10,18 @@
 
 
 @interface ClassroomHome : baseViewController {
+	IBOutlet UIButton *chalkboardButton;
+	IBOutlet UIButton *questionButton;
+	IBOutlet UIButton *worksheetsButton;
 
 }
+
+@property (nonatomic, retain) UIButton *chalkboardButton;
+@property (nonatomic, retain) UIButton *questionButton;
+@property (nonatomic, retain) UIButton *worksheetsButton;
+
+-(IBAction)toChalkboard;
+-(IBAction)toQuestion;
+-(IBAction)toWorksheets;
 
 @end

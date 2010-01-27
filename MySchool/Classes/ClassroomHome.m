@@ -7,10 +7,44 @@
 //
 
 #import "ClassroomHome.h"
-
+#import "ChalkboardHome.h"
+#import "StudentQuestionHome.h"
+#import "PassOutWorksheets.h"
 
 @implementation ClassroomHome
 
+@synthesize chalkboardButton;
+@synthesize questionButton;
+@synthesize worksheetsButton;
+
+- (void)dealloc {
+	[worksheetsButton release];
+	[questionButton release];
+	[chalkboardButton release];
+    [super dealloc];
+}
+
+-(void)toChalkboard {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ChalkboardHome *vc = [[[ChalkboardHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
+-(void)toQuestion {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
+-(void)toWorksheets {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	PassOutWorksheets *vc = [[[PassOutWorksheets alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -46,11 +80,6 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 

@@ -11,11 +11,14 @@
 
 @interface baseViewController : UIViewController {
 	IBOutlet UIButton *mainMenuButton;
+	IBOutlet UIButton *backButton;
 
 }
 
 @property (nonatomic, retain) UIButton *mainMenuButton;
+@property (nonatomic, retain) UIButton *backButton;
 
 -(IBAction)toMainMenu;
+-(IBAction)goBack;
 
 @end
