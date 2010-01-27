@@ -10,7 +10,12 @@
 
 
 @interface LibraryHome : baseViewController {
+	IBOutlet UIButton *moduleButton;
 
 }
+
+@property (nonatomic, retain) UIButton *moduleButton;
+
+-(IBAction)toModule;
 
 @end
