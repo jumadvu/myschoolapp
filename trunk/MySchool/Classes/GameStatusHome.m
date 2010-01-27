@@ -7,8 +7,59 @@
 //
 
 #import "GameStatusHome.h"
+#import "DesignAvatar1.h"
+#import "StoreHome.h"
+#import "AwardsHome.h"
+#import "LessonsTaught.h"
+#import "StudentsList.h"
 
 @implementation GameStatusHome
+
+@synthesize button1;
+@synthesize button2;
+@synthesize button3;
+@synthesize button4;
+@synthesize button5;
+
+- (void)dealloc {
+	[button1 release];
+	[button2 release];
+	[button3 release];
+	[button4 release];
+	[button5 release];
+    [super dealloc];
+}
+
+-(void)clickButton1 {
+	StoreHome *vc = [[[StoreHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)clickButton2 {
+	LessonsTaught *vc = [[[LessonsTaught alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)clickButton3 {
+	StudentsList *vc = [[[StudentsList alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)clickButton4 {
+	DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)clickButton5 {
+	AwardsHome *vc = [[[AwardsHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -48,9 +99,7 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
+
 
 
 @end
