@@ -7,9 +7,24 @@
 //
 
 #import "LibraryHome.h"
-
+#import "ModuleHome.h"
 
 @implementation LibraryHome
+
+@synthesize moduleButton;
+
+- (void)dealloc {
+	[moduleButton release];
+    [super dealloc];
+}
+
+-(void)toModule {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -49,9 +64,6 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

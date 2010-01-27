@@ -1,30 +1,29 @@
 //
-//  LoungeHome.m
+//  ModuleHome.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 1/21/10.
+//  Created by Ashley Kayler on 1/26/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
-#import "LoungeHome.h"
-#import "PapersToGrade.h"
+#import "ModuleHome.h"
+#import "ChapterHome.h"
 
-@implementation LoungeHome
 
-@synthesize gradeButton;
+@implementation ModuleHome
+
+@synthesize chapterButton;
 
 - (void)dealloc {
-	[gradeButton release];
+	[chapterButton release];
     [super dealloc];
 }
 
 
--(void)toPapersToGrade {
-	//go back to previous page
+-(void)toChapter {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	PapersToGrade *vc = [[[PapersToGrade alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
+	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];	
 }
 
 /*
@@ -63,6 +62,7 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
+
 
 
 

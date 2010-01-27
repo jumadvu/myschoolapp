@@ -1,31 +1,15 @@
 //
-//  LoungeHome.m
+//  StoreHome.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 1/21/10.
+//  Created by Ashley Kayler on 1/26/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
-#import "LoungeHome.h"
-#import "PapersToGrade.h"
-
-@implementation LoungeHome
-
-@synthesize gradeButton;
-
-- (void)dealloc {
-	[gradeButton release];
-    [super dealloc];
-}
+#import "StoreHome.h"
 
 
--(void)toPapersToGrade {
-	//go back to previous page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	PapersToGrade *vc = [[[PapersToGrade alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
+@implementation StoreHome
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -64,6 +48,10 @@
 	// e.g. self.myOutlet = nil;
 }
 
+
+- (void)dealloc {
+    [super dealloc];
+}
 
 
 @end
