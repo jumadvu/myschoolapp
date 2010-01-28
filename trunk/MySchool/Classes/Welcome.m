@@ -8,7 +8,7 @@
 
 #import "Welcome.h"
 #import "MySchoolAppDelegate.h"
-#import "LoginController.h"
+#import "NewGameHome.h"
 
 @implementation Welcome
 
@@ -21,7 +21,7 @@
 -(void)gotoFirstPage {
 	//go to login page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	LoginController *vc = [[[LoginController alloc] initWithNibName:nil bundle:nil] autorelease];
+	NewGameHome *vc = [[[NewGameHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 

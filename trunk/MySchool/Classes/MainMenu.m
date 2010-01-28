@@ -50,6 +50,7 @@
 -(void)clickButton3 {
 	NewGameHome *vc = [[[NewGameHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	delegate.teacher = nil;
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
