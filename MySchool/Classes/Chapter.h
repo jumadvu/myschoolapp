@@ -17,6 +17,7 @@
 }
 
 @property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString * overview;
 @property (nonatomic, retain) Module * module;
 @property (nonatomic, retain) NSSet* articles;
 @property (nonatomic, retain) Lecture * lecture;

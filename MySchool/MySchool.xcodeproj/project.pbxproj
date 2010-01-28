@@ -34,6 +34,8 @@
 		AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26111098B6600204AFE /* ClassroomHome.xib */; };
 		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
 		AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26811098B7600204AFE /* LoungeHome.xib */; };
+		AB26205A11121CEE005D02F4 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205811121CEE005D02F4 /* man.png */; };
+		AB26205B11121CEE005D02F4 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205911121CEE005D02F4 /* woman.png */; };
 		AB3889B2110ED52B00217E8F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388991110ED52B00217E8F /* User.m */; };
 		AB3889B3110ED52B00217E8F /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388993110ED52B00217E8F /* Chapter.m */; };
 		AB3889B4110ED52B00217E8F /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388995110ED52B00217E8F /* CompletedWorksheet.m */; };
@@ -123,6 +125,8 @@
 		AB07F26611098B7600204AFE /* LoungeHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoungeHome.h; sourceTree = "<group>"; };
 		AB07F26711098B7600204AFE /* LoungeHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoungeHome.m; sourceTree = "<group>"; };
 		AB07F26811098B7600204AFE /* LoungeHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoungeHome.xib; sourceTree = "<group>"; };
+		AB26205811121CEE005D02F4 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = Classes/man.png; sourceTree = "<group>"; };
+		AB26205911121CEE005D02F4 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woman.png; path = Classes/woman.png; sourceTree = "<group>"; };
 		AB388990110ED52B00217E8F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		AB388991110ED52B00217E8F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		AB388992110ED52B00217E8F /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
@@ -273,7 +277,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ABB3C58D1106F3FA006FEEDA /* person.png */,
+				AB26207B1112204F005D02F4 /* avatar images */,
 				ABB3C5491106ECA5006FEEDA /* Default.png */,
 				ABB3C54A1106ECA5006FEEDA /* icon.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -439,6 +443,16 @@
 			name = lounge;
 			sourceTree = "<group>";
 		};
+		AB26207B1112204F005D02F4 /* avatar images */ = {
+			isa = PBXGroup;
+			children = (
+				AB26205811121CEE005D02F4 /* man.png */,
+				AB26205911121CEE005D02F4 /* woman.png */,
+				ABB3C58D1106F3FA006FEEDA /* person.png */,
+			);
+			name = "avatar images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,6 +518,8 @@
 				AB388AE3110FE5F300217E8F /* GradePaper.xib in Resources */,
 				AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */,
 				AB388B05110FEA9500217E8F /* StoreHome.xib in Resources */,
+				AB26205A11121CEE005D02F4 /* man.png in Resources */,
+				AB26205B11121CEE005D02F4 /* woman.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

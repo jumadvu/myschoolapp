@@ -12,6 +12,7 @@
 #import "AwardsHome.h"
 #import "LessonsTaught.h"
 #import "StudentsList.h"
+#import "NewGameHome.h"
 
 @implementation GameStatusHome
 
@@ -49,7 +50,7 @@
 }
 
 -(void)clickButton4 {
-	DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
+	NewGameHome *vc = [[[NewGameHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }

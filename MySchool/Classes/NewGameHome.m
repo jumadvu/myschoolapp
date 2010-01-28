@@ -8,22 +8,125 @@
 
 #import "NewGameHome.h"
 #import "DesignAvatar1.h"
+#import "User.h"
 
 @implementation NewGameHome
 
 @synthesize continueButton;
+@synthesize avatar1Button;
+@synthesize avatar2Button;
+@synthesize firstField;
+@synthesize lastField;
+@synthesize avatarImages;
+@synthesize selectedImage;
 
 - (void)dealloc {
+	[avatarImages release];
+	[avatar1Button release];
+	[avatar2Button release];
+	[firstField release];
+	[lastField release];
 	[continueButton release];
     [super dealloc];
+}
+
+- (void)viewDidLoad {
+	NSArray *array = [[NSArray alloc] initWithObjects:@"man.png", @"woman.png", nil];
+	
+	[self setAvatarImages:array];
+	[array release];
+	
+	[firstField setDelegate:self];
+	[lastField setDelegate:self];
+    [super viewDidLoad];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (delegate.teacher == nil) {
+		//default for no image
+		selectedImage = 100;
+	} else {
+		[firstField setText:delegate.teacher.firstName];
+		[lastField setText:delegate.teacher.lastName];
+		//set default for existing image
+		selectedImage = 101;
+	}
 }
 
 -(void)continueAvatarDesign {
 	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
+	BOOL requiredDataMissing = NO;
+	if (firstField.text.length == 0) requiredDataMissing = YES;
+	if (lastField.text.length == 0) requiredDataMissing = YES;
+	if (selectedImage == 100) requiredDataMissing = YES;
+
+	if (requiredDataMissing) {
+		NSMutableString *msg = [[NSMutableString alloc] initWithFormat:@"Please choose a first and a last name and select an avatar."];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"Required Info Missing" 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		[msg release];
+	} else {
+		//create teacher unless they are here to edit their existing avatar
+		if (delegate.teacher == nil) {
+			User *aTeacher = (User *)[NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:delegate.managedObjectContext];
+			[aTeacher setFirstName:[NSString stringWithFormat:firstField.text]];
+			[aTeacher setLastName:[NSString stringWithFormat:lastField.text]];
+			[aTeacher setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+			//assign the main account holder to this parent
+			delegate.teacher = aTeacher;
+		} else {
+			//set the image only if it is changed
+			if (selectedImage != 101) {
+				[delegate.teacher setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+			}
+			[delegate.teacher setFirstName:[NSString stringWithFormat:firstField.text]];
+			[delegate.teacher setLastName:[NSString stringWithFormat:lastField.text]];
+			
+		}
+
+		
+		
+		//save the managed object
+		NSError *error;
+		if (![delegate.managedObjectContext save:&error]) {
+			NSLog(@"error saving managed object");
+			// Handle the error.
+		}
+		//go to second phase of avatar design
+		DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];
+	}
+}
+
+- (void)avatarSelected:(UIButton *)sender {
+	NSLog(@"button selected");
+	if (avatar1Button == sender) {
+		avatar1Button.alpha = 1;
+		[self setSelectedImage:0];
+	} else {
+		avatar1Button.alpha = .2;
+	}
+
+	if (avatar2Button == sender) {
+		avatar2Button.alpha = 1;
+		[self setSelectedImage:1];
+	} else {
+		avatar2Button.alpha = .2;
+	}
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	NSLog(@"return");
+	[textField resignFirstResponder];
+	return YES;
 }
 
 /*
@@ -36,12 +139,6 @@
 }
 */
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
