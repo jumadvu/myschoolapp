@@ -7,7 +7,7 @@
 //
 
 #import "AccountSelection.h"
-#import "UserMO.h"
+#import "UserPlus.h"
 #import "User.h"
 
 
@@ -95,7 +95,7 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-	UserMO *anAccount = (UserMO*)[accounts objectAtIndex:indexPath.row];
+	User *anAccount = (User*)[accounts objectAtIndex:indexPath.row];
 	cell.imageView.image = [anAccount avatar];
 	
 	cell.textLabel.text = [anAccount fullName];
@@ -107,8 +107,9 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	//go to main menu
+	//set the teacher to selected avatar and go to main menu
   	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate setTeacher:[[self accounts] objectAtIndex:indexPath.row]];
 	[delegate.navCon popToRootViewControllerAnimated:YES];		
 }
 

@@ -20,7 +20,6 @@
 		AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFF01108EA1D00204AFE /* MainMenu.xib */; };
 		AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0191108F15F00204AFE /* model.xcdatamodel */; };
 		AB07F12D11090B7500204AFE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07F12C11090B7500204AFE /* CoreData.framework */; };
-		AB07F13611090BA700204AFE /* UserMO.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F13511090BA700204AFE /* UserMO.m */; };
 		AB07F1B1110962BA00204AFE /* GameStatusHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1AF110962BA00204AFE /* GameStatusHome.m */; };
 		AB07F1B2110962BA00204AFE /* GameStatusHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F1B0110962BA00204AFE /* GameStatusHome.xib */; };
 		AB07F1DF110966CD00204AFE /* HelpHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1DD110966CD00204AFE /* HelpHome.m */; };
@@ -34,9 +33,10 @@
 		AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26111098B6600204AFE /* ClassroomHome.xib */; };
 		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
 		AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26811098B7600204AFE /* LoungeHome.xib */; };
+		AB20516611174F9B00ED8E61 /* UserPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB20516511174F9B00ED8E61 /* UserPlus.m */; };
+		AB20518C1117547700ED8E61 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB20518B1117547700ED8E61 /* User.m */; };
 		AB26205A11121CEE005D02F4 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205811121CEE005D02F4 /* man.png */; };
 		AB26205B11121CEE005D02F4 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205911121CEE005D02F4 /* woman.png */; };
-		AB3889B2110ED52B00217E8F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388991110ED52B00217E8F /* User.m */; };
 		AB3889B3110ED52B00217E8F /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388993110ED52B00217E8F /* Chapter.m */; };
 		AB3889B4110ED52B00217E8F /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388995110ED52B00217E8F /* CompletedWorksheet.m */; };
 		AB3889B5110ED52B00217E8F /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388997110ED52B00217E8F /* WorksheetAnswer.m */; };
@@ -104,8 +104,6 @@
 		AB07EFF01108EA1D00204AFE /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		AB07F0191108F15F00204AFE /* model.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		AB07F12C11090B7500204AFE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		AB07F13411090BA700204AFE /* UserMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMO.h; sourceTree = "<group>"; };
-		AB07F13511090BA700204AFE /* UserMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMO.m; sourceTree = "<group>"; };
 		AB07F1AE110962BA00204AFE /* GameStatusHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStatusHome.h; sourceTree = "<group>"; };
 		AB07F1AF110962BA00204AFE /* GameStatusHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStatusHome.m; sourceTree = "<group>"; };
 		AB07F1B0110962BA00204AFE /* GameStatusHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameStatusHome.xib; sourceTree = "<group>"; };
@@ -126,10 +124,12 @@
 		AB07F26611098B7600204AFE /* LoungeHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoungeHome.h; sourceTree = "<group>"; };
 		AB07F26711098B7600204AFE /* LoungeHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoungeHome.m; sourceTree = "<group>"; };
 		AB07F26811098B7600204AFE /* LoungeHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoungeHome.xib; sourceTree = "<group>"; };
+		AB20516411174F9B00ED8E61 /* UserPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserPlus.h; path = ../UserPlus.h; sourceTree = "<group>"; };
+		AB20516511174F9B00ED8E61 /* UserPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserPlus.m; path = ../UserPlus.m; sourceTree = "<group>"; };
+		AB20518A1117547700ED8E61 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AB20518B1117547700ED8E61 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		AB26205811121CEE005D02F4 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = Classes/man.png; sourceTree = "<group>"; };
 		AB26205911121CEE005D02F4 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woman.png; path = Classes/woman.png; sourceTree = "<group>"; };
-		AB388990110ED52B00217E8F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		AB388991110ED52B00217E8F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		AB388992110ED52B00217E8F /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
 		AB388993110ED52B00217E8F /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
 		AB388994110ED52B00217E8F /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
@@ -301,9 +301,11 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB20518A1117547700ED8E61 /* User.h */,
+				AB20518B1117547700ED8E61 /* User.m */,
 				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
-				AB388990110ED52B00217E8F /* User.h */,
-				AB388991110ED52B00217E8F /* User.m */,
+				AB20516411174F9B00ED8E61 /* UserPlus.h */,
+				AB20516511174F9B00ED8E61 /* UserPlus.m */,
 				AB388992110ED52B00217E8F /* Chapter.h */,
 				AB388993110ED52B00217E8F /* Chapter.m */,
 				AB388994110ED52B00217E8F /* CompletedWorksheet.h */,
@@ -336,8 +338,6 @@
 				AB3889AF110ED52B00217E8F /* Student.m */,
 				AB3889B0110ED52B00217E8F /* WorksheetQuestion.h */,
 				AB3889B1110ED52B00217E8F /* WorksheetQuestion.m */,
-				AB07F13411090BA700204AFE /* UserMO.h */,
-				AB07F13511090BA700204AFE /* UserMO.m */,
 			);
 			name = Model;
 			path = Classes;
@@ -549,7 +549,6 @@
 				AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */,
 				AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */,
 				AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */,
-				AB07F13611090BA700204AFE /* UserMO.m in Sources */,
 				AB07F1B1110962BA00204AFE /* GameStatusHome.m in Sources */,
 				AB07F1DF110966CD00204AFE /* HelpHome.m in Sources */,
 				AB07F1E7110966F800204AFE /* NewGameHome.m in Sources */,
@@ -557,7 +556,6 @@
 				AB07F25B11098B4B00204AFE /* LibraryHome.m in Sources */,
 				AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */,
 				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
-				AB3889B2110ED52B00217E8F /* User.m in Sources */,
 				AB3889B3110ED52B00217E8F /* Chapter.m in Sources */,
 				AB3889B4110ED52B00217E8F /* CompletedWorksheet.m in Sources */,
 				AB3889B5110ED52B00217E8F /* WorksheetAnswer.m in Sources */,
@@ -589,6 +587,8 @@
 				AB388B10110FEB2900217E8F /* StudentsList.m in Sources */,
 				AB388B15110FEB5000217E8F /* StudentHome.m in Sources */,
 				ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */,
+				AB20516611174F9B00ED8E61 /* UserPlus.m in Sources */,
+				AB20518C1117547700ED8E61 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

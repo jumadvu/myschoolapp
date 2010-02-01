@@ -8,7 +8,7 @@
 
 #import "MySchoolAppDelegate.h"
 #import "Welcome.h"
-#import "UserMO.h"
+#import "UserPlus.h"
 #import "MainMenu.h"
 #import "AccountSelection.h"
 
