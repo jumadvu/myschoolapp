@@ -10,6 +10,7 @@
 #import "Welcome.h"
 #import "UserMO.h"
 #import "MainMenu.h"
+#import "AccountSelection.h"
 
 @implementation MySchoolAppDelegate
 
@@ -39,17 +40,15 @@
 	 if(getenv("NSZombieEnabled") || getenv("NSAutoreleaseFreedObjectCheckEnabled")) {
 		 NSLog(@"NSZombieEnabled/NSAutoreleaseFreedObjectCheckEnabled enabled!");
 	 }
-	 
-    //[navCon initWithRootViewController:viewController];
+	//hide nav bar
 	[navCon setNavigationBarHidden:YES];
+
 	//add navigation controller view  (root view is set to main menu in nib)
     [window addSubview:navCon.view];
 	
-	//push welcome screen to nav con
-	//Welcome *vc = [[[Welcome alloc] initWithNibName:nil bundle:nil] autorelease];
-	//[navCon pushViewController:vc animated:YES];
     [window makeKeyAndVisible];
 	
+	//fetch stored data from the sqlite database and send user to appropriate page
 	[self fetchData];
 }
 
@@ -78,26 +77,30 @@
 		// Handle the error.
 		NSLog(@"error fetching results");
 	} else {
-		UserMO *aTeacher;
 		if ([mutableFetchResults count] == 1) {
 			NSLog(@"Found one teacher");
-			// set the current teacher account
-			[self setTeacher:aTeacher];
+			//UserMO *aTeacher = [[UserMO alloc] init];
+			//aTeacher = [mutableFetchResults objectAtIndex:0];
+			// set the current teacher account and go to main menu
+			[self setTeacher:[mutableFetchResults objectAtIndex:0]];
+			//[aTeacher release];
 			MainMenu *vc = [[[MainMenu alloc] initWithNibName:nil bundle:nil] autorelease];
 			[navCon pushViewController:vc animated:YES];					 
 		} else {
 			if ([mutableFetchResults count] > 1) {
+				//more than one teacher account. Go to account selection page
 				NSLog(@"Found this many teachers: %d", [mutableFetchResults count]);
-				MainMenu *vc = [[[MainMenu alloc] initWithNibName:nil bundle:nil] autorelease];
+				[self setUsers:mutableFetchResults];
+				AccountSelection *vc = [[[AccountSelection alloc] initWithStyle:UITableViewStylePlain] autorelease];
+				[vc setAccounts:users];
 				[navCon pushViewController:vc animated:YES];					 			
 			} else {
+				//no teacher accounts. Must be first time login. Go to welcome page
 				NSLog(@"No results found. Present Welcome Page");
 				Welcome *vc = [[[Welcome alloc] initWithNibName:nil bundle:nil] autorelease];
 				[navCon pushViewController:vc animated:YES];
 			}
 		}
-
-
 		
 	}
 	NSLog(@"finished fetching data from sql lite store");

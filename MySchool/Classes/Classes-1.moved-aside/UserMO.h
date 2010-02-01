@@ -15,5 +15,6 @@
 }
 
 -(NSString *)fullName;
+-(UIImage *)avatar;
 
 @end

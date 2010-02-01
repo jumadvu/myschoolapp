@@ -74,7 +74,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{62, 108}, {213, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<object class="NSColor" key="IBUIBackgroundColor" id="139367951">
+						<object class="NSColor" key="IBUIBackgroundColor" id="584228602">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
 						</object>
@@ -110,7 +110,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{30, 197}, {72, 123}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="IBUIBackgroundColor" ref="139367951"/>
+						<reference key="IBUIBackgroundColor" ref="584228602"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -127,7 +127,7 @@
 							<string key="NSResourceName">person.png</string>
 						</object>
 					</object>
-					<object class="IBUILabel" id="495977223">
+					<object class="IBUILabel" id="605052345">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{30, 9}, {267, 28}}</string>
@@ -142,7 +142,7 @@
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
 					</object>
-					<object class="IBUILabel" id="962143029">
+					<object class="IBUILabel" id="303370437">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{48, 63}, {241, 21}}</string>
@@ -241,8 +241,8 @@
 						<reference key="object" ref="774585933"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="495977223"/>
-							<reference ref="962143029"/>
+							<reference ref="605052345"/>
+							<reference ref="303370437"/>
 							<reference ref="512834603"/>
 							<reference ref="863378980"/>
 							<reference ref="417309430"/>
@@ -272,12 +272,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">33</int>
-						<reference key="object" ref="495977223"/>
+						<reference key="object" ref="605052345"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">34</int>
-						<reference key="object" ref="962143029"/>
+						<reference key="object" ref="303370437"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</object>
@@ -307,7 +307,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{408, 108}, {320, 480}}</string>
+					<string>{{408, 109}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
