@@ -81,6 +81,7 @@
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
 		ABB3C58E1106F3FA006FEEDA /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C58D1106F3FA006FEEDA /* person.png */; };
+		ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAA6811116B7D700D3956F /* AccountSelection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +205,8 @@
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ABB3C58D1106F3FA006FEEDA /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		ABCAA6801116B7D700D3956F /* AccountSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelection.h; sourceTree = "<group>"; };
+		ABCAA6811116B7D700D3956F /* AccountSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,20 +227,18 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AB07F25511098B2A00204AFE /* lounge */,
-				AB07F25211098B2000204AFE /* classroom */,
-				AB07F24F11098B1800204AFE /* library */,
-				AB07F1D91109669E00204AFE /* New Game */,
-				AB07F1D61109669200204AFE /* Help */,
-				AB07F1B5110962C700204AFE /* Status */,
 				1D3623240D0F684500981E51 /* MySchoolAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MySchoolAppDelegate.m */,
-				AB7A166C10FBBE5F00902689 /* Welcome.h */,
-				AB7A166D10FBBE5F00902689 /* Welcome.m */,
-				AB07EFDF1108E97800204AFE /* Welcome.xib */,
 				AB07EFEE1108EA1D00204AFE /* MainMenu.h */,
 				AB07EFEF1108EA1D00204AFE /* MainMenu.m */,
 				AB07EFF01108EA1D00204AFE /* MainMenu.xib */,
+				ABCAA67D1116B68000D3956F /* welcome */,
+				AB07F25511098B2A00204AFE /* lounge */,
+				AB07F25211098B2000204AFE /* classroom */,
+				AB07F24F11098B1800204AFE /* library */,
+				AB07F1D91109669E00204AFE /* New Teacher */,
+				AB07F1D61109669200204AFE /* Help */,
+				AB07F1B5110962C700204AFE /* Status */,
 				AB07F2131109858000204AFE /* baseViewController.h */,
 				AB07F2141109858000204AFE /* baseViewController.m */,
 			);
@@ -300,6 +301,7 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
 				AB388990110ED52B00217E8F /* User.h */,
 				AB388991110ED52B00217E8F /* User.m */,
 				AB388992110ED52B00217E8F /* Chapter.h */,
@@ -334,7 +336,6 @@
 				AB3889AF110ED52B00217E8F /* Student.m */,
 				AB3889B0110ED52B00217E8F /* WorksheetQuestion.h */,
 				AB3889B1110ED52B00217E8F /* WorksheetQuestion.m */,
-				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
 				AB07F13411090BA700204AFE /* UserMO.h */,
 				AB07F13511090BA700204AFE /* UserMO.m */,
 			);
@@ -374,7 +375,7 @@
 			name = Help;
 			sourceTree = "<group>";
 		};
-		AB07F1D91109669E00204AFE /* New Game */ = {
+		AB07F1D91109669E00204AFE /* New Teacher */ = {
 			isa = PBXGroup;
 			children = (
 				28D7ACF60DDB3853001CB0EB /* LoginController.h */,
@@ -387,7 +388,7 @@
 				AB3889CB110ED78800217E8F /* DesignAvatar1.m */,
 				AB3889CC110ED78800217E8F /* DesignAvatar1.xib */,
 			);
-			name = "New Game";
+			name = "New Teacher";
 			sourceTree = "<group>";
 		};
 		AB07F24F11098B1800204AFE /* library */ = {
@@ -451,6 +452,18 @@
 				ABB3C58D1106F3FA006FEEDA /* person.png */,
 			);
 			name = "avatar images";
+			sourceTree = "<group>";
+		};
+		ABCAA67D1116B68000D3956F /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				AB7A166C10FBBE5F00902689 /* Welcome.h */,
+				AB7A166D10FBBE5F00902689 /* Welcome.m */,
+				AB07EFDF1108E97800204AFE /* Welcome.xib */,
+				ABCAA6801116B7D700D3956F /* AccountSelection.h */,
+				ABCAA6811116B7D700D3956F /* AccountSelection.m */,
+			);
+			name = welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +588,7 @@
 				AB388B0A110FEAC600217E8F /* LessonsTaught.m in Sources */,
 				AB388B10110FEB2900217E8F /* StudentsList.m in Sources */,
 				AB388B15110FEB5000217E8F /* StudentHome.m in Sources */,
+				ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
