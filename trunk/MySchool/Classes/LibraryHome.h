@@ -11,10 +11,13 @@
 
 @interface LibraryHome : baseViewController {
 	IBOutlet UIButton *moduleButton;
-
+	NSMutableArray *moduleNames;
+	IBOutlet UITableView *tableView;
 }
 
 @property (nonatomic, retain) UIButton *moduleButton;
+@property (nonatomic, retain) NSMutableArray *moduleNames;
+@property (nonatomic, retain) UITableView *tableView;
 
 -(IBAction)toModule;
 

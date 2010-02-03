@@ -11,9 +11,18 @@
 
 @interface ModuleHome : baseViewController {
 	IBOutlet UIButton *chapterButton;
+	IBOutlet UITableView *tableview;
+	IBOutlet UILabel *moduleNameLabel;
+	NSMutableArray *chapters;
+	NSString *moduleName;
 }
 
 @property (nonatomic,retain) UIButton *chapterButton;
+@property (nonatomic,retain) NSMutableArray *chapters;
+@property (nonatomic,retain) UITableView *tableview;
+@property (nonatomic, retain) NSString *moduleName;
+@property (nonatomic, retain) UILabel *moduleNameLabel;
+
 
 -(IBAction)toChapter;
 
