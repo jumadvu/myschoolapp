@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<myschool>
+	<module>
+		<title>All About Dinosaurs</title>
+		<SuperSubject>Biology</SuperSubject>
+		<Chapter>
+			<title>What is a dinosaur?</title>
+		</Chapter>
+		<Chapter>
+			<title>Dinosaur origins</title>
+		</Chapter>
+		<Chapter>
+			<title>All about fossils</title>
+		</Chapter>
+		<Chapter>
+			<title>The Triassic period</title>
+		</Chapter>
+		<Chapter>
+			<title>The Jurassic period</title>
+		</Chapter>
+		<Chapter>
+			<title>The Cretaceous Period</title>
+		</Chapter>
+		<Chapter>
+			<title>Dinosaur anatomy</title>
+		</Chapter>
+		<Chapter>
+			<title>Dinosaur society</title>
+		</Chapter>
+		<Chapter>
+			<title>Dinosaur food</title>
+		</Chapter>
+		<Chapter>
+			<title>The end of the dinosaurs</title>
+		</Chapter>
+	</module>
+	<module>
+		<title>Building a Sustainable World</title>
+		<SuperSubject>Environment</SuperSubject>
+		<Chapter>
+			<title>Recycling!</title>
+		</Chapter>
+		<Chapter>
+			<title>Chapter 2</title>
+		</Chapter>
+	</module>
+</myschool>

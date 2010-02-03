@@ -8,22 +8,24 @@
 
 #import "LibraryHome.h"
 #import "ModuleHome.h"
+#import "TBXML.h"
+#import "ModuleCell.h"
 
 @implementation LibraryHome
 
-@synthesize moduleButton;
+@synthesize moduleButton, tableView, moduleNames;
 
 - (void)dealloc {
 	[moduleButton release];
+	[tableView release];
+	[moduleNames release];
     [super dealloc];
 }
 
 -(void)toModule {
-	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];
-	
 }
 
 /*
@@ -36,15 +38,48 @@
 }
 */
 
+<<<<<<< .mine
+- (void)viewDidLoad
+{
+	//
+	// Change the properties of the imageView and tableView (these could be set
+	// in interface builder instead).
+	//
+	tableView.rowHeight = 60;
+	tableView.backgroundColor = [UIColor clearColor];
+=======
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+>>>>>>> .r59
 	[self setBackgroundColor];
 
 }
 
+<<<<<<< .mine
+//
+// tableView:numberOfRowsInSection:
+//
+// Returns the number of rows in a given section.
+//
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"myschool" fileExtension:@"xml"];
+	TBXMLElement * root = tbxml.rootXMLElement;
+	moduleNames= [NSMutableArray new];
+	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
+	while (module!=nil) {
+		NSString * mName = [tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]];
+		[moduleNames addObject:mName];
+		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];
+	}
+	[tbxml release];
+	return [moduleNames count];
+}
+=======
 
+>>>>>>> .r59
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -65,6 +100,26 @@
 	// e.g. self.myOutlet = nil;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	
+	static NSString *CellIdentifier = @"Cell";
+	ModuleCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil)
+	{
+		//
+		// Create the cell.
+		//
+		cell =
+		[[[ModuleCell alloc]
+		  initWithFrame:CGRectZero
+		  reuseIdentifier:CellIdentifier]
+		 autorelease];
+		
+	}
+	cell.textLabel.text = [moduleNames objectAtIndex:[indexPath row]];
+	return cell;
+}
 
 
 
