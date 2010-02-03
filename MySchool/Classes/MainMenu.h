@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MainMenu : UIViewController {
+@interface MainMenu : baseViewController {
 	IBOutlet UIButton *button1;
 	IBOutlet UIButton *button2;
 	IBOutlet UIButton *button3;

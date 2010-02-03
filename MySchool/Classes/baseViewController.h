@@ -20,5 +20,6 @@
 
 -(IBAction)toMainMenu;
 -(IBAction)goBack;
+-(void)setBackgroundColor;
 
 @end

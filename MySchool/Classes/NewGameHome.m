@@ -31,8 +31,8 @@
 }
 
 - (void)viewDidLoad {
-	NSArray *array = [[NSArray alloc] initWithObjects:@"man.png", @"woman.png", nil];
-	
+	NSArray *array = [[NSArray alloc] initWithObjects:@"woman.png", @"man.png", nil];
+	[self setBackgroundColor];
 	[self setAvatarImages:array];
 	[array release];
 	
