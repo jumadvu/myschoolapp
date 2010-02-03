@@ -26,4 +26,8 @@
 	
 }
 
+-(void)setBackgroundColor {
+	self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];	
+}
+
 @end
