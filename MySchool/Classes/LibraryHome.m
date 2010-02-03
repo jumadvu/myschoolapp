@@ -38,26 +38,18 @@
 }
 */
 
-<<<<<<< .mine
 - (void)viewDidLoad
 {
 	//
 	// Change the properties of the imageView and tableView (these could be set
 	// in interface builder instead).
 	//
+	[super viewDidLoad];
 	tableView.rowHeight = 60;
 	tableView.backgroundColor = [UIColor clearColor];
-=======
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
->>>>>>> .r59
-	[self setBackgroundColor];
-
+    
 }
 
-<<<<<<< .mine
 //
 // tableView:numberOfRowsInSection:
 //
@@ -77,9 +69,7 @@
 	[tbxml release];
 	return [moduleNames count];
 }
-=======
 
->>>>>>> .r59
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
