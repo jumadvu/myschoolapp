@@ -40,15 +40,9 @@
 }
 */
 
-<<<<<<< .mine
-
-=======
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
->>>>>>> .r59
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< .mine
 	moduleNameLabel.text=moduleName;
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"myschool" fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
@@ -68,20 +62,12 @@
 	tableview.rowHeight = 60;
 	tableview.backgroundColor = [UIColor clearColor];
 	[tbxml release];
-=======
-	[self setBackgroundColor];
-
->>>>>>> .r59
 }
-
-<<<<<<< .mine
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 	return [chapters count];
 }
-=======
 
->>>>>>> .r59
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
