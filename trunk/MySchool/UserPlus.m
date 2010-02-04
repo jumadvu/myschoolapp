@@ -7,6 +7,7 @@
 //
 
 #import "UserPlus.h"
+#import "Avatar.h"
 
 @implementation User (UserPlus)
 
@@ -14,10 +15,10 @@
 	return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
--(UIImage *)avatar {
+-(UIImage *)avatarImage {
 	//translates the numeric value for the avatarImage into a string value and creates the image
 	//NSArray imageNames = [NSArray initWithObjects:@"woman.png",@"man.png",nil];
-	UIImage *image = [UIImage imageNamed:[self avatarImage]];
+	UIImage *image = [UIImage imageNamed:[self.avatar avatarImage]];
 	//UIImageView *imageView = [UIImageView initWithImage:image];
 	return image;
 }

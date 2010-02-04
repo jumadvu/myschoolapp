@@ -12,8 +12,6 @@
 
 @implementation Welcome
 
-@synthesize backButton;
-
 - (void)dealloc {
     [super dealloc];
 }
@@ -34,6 +32,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	[self setBackgroundColor];
     [super viewDidLoad];
 }
 
