@@ -178,6 +178,15 @@
 			AB46076E111A3DE900E9C445 /* PBXTextBookmark */ = AB46076E111A3DE900E9C445 /* PBXTextBookmark */;
 			AB46076F111A3DE900E9C445 /* PBXTextBookmark */ = AB46076F111A3DE900E9C445 /* PBXTextBookmark */;
 			AB460770111A3DE900E9C445 /* XDModelBookmark */ = AB460770111A3DE900E9C445 /* XDModelBookmark */;
+			AB460781111A866F00E9C445 /* PBXTextBookmark */ = AB460781111A866F00E9C445 /* PBXTextBookmark */;
+			AB460782111A866F00E9C445 /* XDModelBookmark */ = AB460782111A866F00E9C445 /* XDModelBookmark */;
+			AB460783111A866F00E9C445 /* PBXTextBookmark */ = AB460783111A866F00E9C445 /* PBXTextBookmark */;
+			AB460784111A866F00E9C445 /* PBXTextBookmark */ = AB460784111A866F00E9C445 /* PBXTextBookmark */;
+			AB460785111A866F00E9C445 /* PBXTextBookmark */ = AB460785111A866F00E9C445 /* PBXTextBookmark */;
+			AB460786111A866F00E9C445 /* PBXTextBookmark */ = AB460786111A866F00E9C445 /* PBXTextBookmark */;
+			AB460787111A866F00E9C445 /* PBXTextBookmark */ = AB460787111A866F00E9C445 /* PBXTextBookmark */;
+			AB460789111A866F00E9C445 /* PBXTextBookmark */ = AB460789111A866F00E9C445 /* PBXTextBookmark */;
+			AB46078A111A866F00E9C445 /* PBXTextBookmark */ = AB46078A111A866F00E9C445 /* PBXTextBookmark */;
 		};
 		sourceControlManager = AB7A162E10FBB3FB00902689 /* Source Control */;
 		userBuildSettings = {
@@ -267,8 +276,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {211, 220}}",
-							"{{216, 0}, {437, 220}}",
+							"{{0, 0}, {211, 218}}",
+							"{{216, 0}, {437, 218}}",
 						);
 					};
 				};
@@ -367,7 +376,7 @@
 				"xdesign model browser state key - shown/hidden" = 1;
 				"xdesign model diagram view visible rect key" = "{{-2, 125}, {990, 546}}";
 			};
-			sepNavWindowFrame = "{{56, 74}, {1386, 949}}";
+			sepNavWindowFrame = "{{370, 14}, {1386, 949}}";
 		};
 	};
 	AB07F1AE110962BA00204AFE /* GameStatusHome.h */ = {
@@ -492,16 +501,16 @@
 	AB20516411174F9B00ED8E61 /* UserPlus.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {946, 748}}";
-			sepNavSelRange = "{254, 0}";
-			sepNavVisRange = "{0, 262}";
+			sepNavSelRange = "{283, 0}";
+			sepNavVisRange = "{0, 290}";
 			sepNavWindowFrame = "{{56, 81}, {1084, 942}}";
 		};
 	};
 	AB20516511174F9B00ED8E61 /* UserPlus.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1153, 546}}";
-			sepNavSelRange = "{326, 0}";
-			sepNavVisRange = "{0, 576}";
+			sepNavIntBoundsRect = "{{0, 0}, {946, 771}}";
+			sepNavSelRange = "{783, 0}";
+			sepNavVisRange = "{0, 894}";
 		};
 	};
 	AB2051A8111755D900ED8E61 /* PBXTextBookmark */ = {
@@ -539,7 +548,7 @@
 		fRef = AB20516511174F9B00ED8E61 /* UserPlus.m */;
 		name = "UserPlus.m: 14";
 		rLen = 0;
-		rLoc = 300;
+		rLoc = 320;
 		rType = 0;
 		vrLen = 626;
 		vrLoc = 0;
@@ -565,6 +574,20 @@
 			sepNavIntBoundsRect = "{{0, 0}, {946, 748}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1536}";
+		};
+	};
+	AB2054D211191E2B00ED8E61 /* Student.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 771}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 845}";
+		};
+	};
+	AB2054D311191E2B00ED8E61 /* Student.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 771}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 364}";
 		};
 	};
 	AB2054FA11191E9100ED8E61 /* PBXTextBookmark */ = {
@@ -1692,7 +1715,7 @@
 		fRef = AB20516511174F9B00ED8E61 /* UserPlus.m */;
 		name = "UserPlus.m: 20";
 		rLen = 0;
-		rLoc = 555;
+		rLoc = 575;
 		rType = 0;
 		vrLen = 633;
 		vrLoc = 0;
@@ -1924,7 +1947,7 @@
 		fRef = AB20516511174F9B00ED8E61 /* UserPlus.m */;
 		name = "UserPlus.m: 17";
 		rLen = 0;
-		rLoc = 329;
+		rLoc = 349;
 		rType = 0;
 		vrLen = 638;
 		vrLoc = 0;
@@ -2455,7 +2478,7 @@
 		fRef = AB20516511174F9B00ED8E61 /* UserPlus.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 20;
+		rLoc = 21;
 		rType = 1;
 	};
 	AB460759111A2E8A00E9C445 /* PBXTextBookmark */ = {
@@ -2885,6 +2908,264 @@
 				"<XDPMAttribute: 0x28f0020>{name=avatarImage, type=(null)}",
 			);
 		};
+	};
+	AB460777111A47DF00E9C445 /* User.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 771}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1544}";
+		};
+	};
+	AB460781111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB07F1E5110966F800204AFE /* NewGameHome.m */;
+		name = "NewGameHome.m: 61";
+		rLen = 0;
+		rLoc = 1519;
+		rType = 0;
+		vrLen = 2222;
+		vrLoc = 1627;
+	};
+	AB460782111A866F00E9C445 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = AB07F0191108F15F00204AFE /* model.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 0;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					61.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {655, 220}}",
+						"{{660, 0}, {345, 220}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {1005, 220}}",
+						"{{0, 225}, {1005, 561}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {211, 218}}",
+						"{{216, 0}, {437, 218}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					174.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-2, 125}, {990, 546}}";
+			"xdesign model selected entities key" = (
+				"<XDPMEntity: 0x26f1720>{name=User, package=}",
+			);
+			"xdesign model selected properties key" = (
+				"<XDPMRelationship: 0x2a29b70>{name=avatar, type=(null)}",
+			);
+		};
+	};
+	AB460783111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB2054D311191E2B00ED8E61 /* Student.m */;
+		name = "Student.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 364;
+		vrLoc = 0;
+	};
+	AB460784111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB2054D211191E2B00ED8E61 /* Student.h */;
+		name = "Student.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 0;
+	};
+	AB460785111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB20516511174F9B00ED8E61 /* UserPlus.m */;
+		name = "UserPlus.m: 29";
+		rLen = 0;
+		rLoc = 785;
+		rType = 0;
+		vrLen = 894;
+		vrLoc = 0;
+	};
+	AB460786111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB460777111A47DF00E9C445 /* User.h */;
+		name = "User.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1544;
+		vrLoc = 0;
+	};
+	AB460787111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB460788111A866F00E9C445 /* project.pbxproj */;
+		name = "project.pbxproj: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1827;
+		vrLoc = 47514;
+	};
+	AB460788111A866F00E9C445 /* project.pbxproj */ = {
+		isa = PBXFileReference;
+		name = project.pbxproj;
+		path = "/Users/ashley/iSchool/MastersProject/iPhone app/svn/trunk/MySchool/MySchool.xcodeproj/project.pbxproj";
+		sourceTree = "<absolute>";
+	};
+	AB460789111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB20516411174F9B00ED8E61 /* UserPlus.h */;
+		name = "UserPlus.h: 15";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 262;
+		vrLoc = 0;
+	};
+	AB46078A111A866F00E9C445 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB20516411174F9B00ED8E61 /* UserPlus.h */;
+		name = "UserPlus.h: 16";
+		rLen = 0;
+		rLoc = 283;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
 	};
 	AB7A162010FBB3DA00902689 /* MySchool */ = {
 		isa = PBXExecutable;
