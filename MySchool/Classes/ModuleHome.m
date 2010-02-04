@@ -9,7 +9,7 @@
 #import "ModuleHome.h"
 #import "ChapterHome.h"
 #import "TBXML.h"
-#import "ModuleCell.h"
+#import "ChapterCell.h"
 
 
 @implementation ModuleHome
@@ -79,14 +79,14 @@
 {
 	
 	static NSString *CellIdentifier = @"Cell";
-	ModuleCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	ChapterCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil)
 	{
 		//
 		// Create the cell.
 		//
 		cell =
-		[[[ModuleCell alloc]
+		[[[ChapterCell alloc]
 		  initWithFrame:CGRectZero
 		  reuseIdentifier:CellIdentifier]
 		 autorelease];

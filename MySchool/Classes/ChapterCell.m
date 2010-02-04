@@ -22,7 +22,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.chapterNameLabel.text=self.textLabel.text;
+	vc.chapterName=self.textLabel.text;
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
