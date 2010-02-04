@@ -8,11 +8,12 @@
 
 #import "ChapterHome.h"
 #import "ArticleHome.h"
+#import "TBXML.h"
 
 
 @implementation ChapterHome
 
-@synthesize learnButton, chapterNameLabel;
+@synthesize learnButton, chapterNameLabel, chapterName, textView;
 
 - (void)dealloc {
 	[learnButton release];
@@ -35,12 +36,34 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
+	chapterNameLabel.text=chapterName;
+	textView.text = nil;
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"myschool" fileExtension:@"xml"];
+	TBXMLElement * root = tbxml.rootXMLElement;
+	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
+	while (module!=nil) {
+		if([textView.text isEqualToString:nil]){
+		NSLog(@"In the loop.");}
+		TBXMLElement * chapter=[tbxml childElementNamed:@"Chapter" parentElement:module];
+			while (chapter!=nil){
+				if ([chapterName isEqualToString:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]]){
+					textView.text=[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]];
+					break;
+				}
+				else{
+					chapter = [tbxml nextSiblingNamed:@"Chapter" searchFromElement:chapter];
+				}
+			}
+		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];
+	}
+	[tbxml release];
+	
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

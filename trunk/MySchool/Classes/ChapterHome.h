@@ -9,14 +9,18 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ChapterHome : UIViewController {
+@interface ChapterHome : baseViewController {
 	IBOutlet UIButton *learnButton;
 	IBOutlet UILabel *chapterNameLabel;
+	IBOutlet UITextView *textView;
+	NSString *chapterName;
 
 }
 
 @property (nonatomic,retain) UIButton *learnButton;
 @property (nonatomic,retain) UILabel *chapterNameLabel;
+@property (nonatomic, retain) NSString *chapterName;
+@property (nonatomic, retain) UITextView *textView;
 
 -(IBAction)toArticle;
 
