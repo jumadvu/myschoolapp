@@ -14,12 +14,12 @@
 
 @implementation ModuleHome
 
-@synthesize chapterButton, tableview, moduleName, moduleNameLabel, chapters;
+@synthesize chapterButton, tableview, moduleNameLabel, chapters, moduleName;
 
 - (void)dealloc {
 	[chapterButton release];
-	[moduleName release];
 	[tableview release];
+	[moduleName release];
     [super dealloc];
 }
 

@@ -12,7 +12,7 @@
 
 @implementation ChapterHome
 
-@synthesize learnButton;
+@synthesize learnButton, chapterNameLabel;
 
 - (void)dealloc {
 	[learnButton release];

@@ -20,8 +20,8 @@
 @property (nonatomic,retain) UIButton *chapterButton;
 @property (nonatomic,retain) NSMutableArray *chapters;
 @property (nonatomic,retain) UITableView *tableview;
-@property (nonatomic, retain) NSString *moduleName;
 @property (nonatomic, retain) UILabel *moduleNameLabel;
+@property (nonatomic, retain) NSString *moduleName;
 
 
 -(IBAction)toChapter;
