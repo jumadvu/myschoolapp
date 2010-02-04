@@ -9,11 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface Welcome : UIViewController {
-	UIButton *backButton;
+@interface Welcome : baseViewController {
+	
 }
-
-@property (nonatomic, retain) UIButton *backButton;
 
 -(IBAction)gotoFirstPage;
 

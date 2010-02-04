@@ -9,6 +9,7 @@
 #import "NewGameHome.h"
 #import "DesignAvatar1.h"
 #import "User.h"
+#import "Avatar.h"
 
 @implementation NewGameHome
 
@@ -49,6 +50,21 @@
 	} else {
 		[firstField setText:delegate.teacher.firstName];
 		[lastField setText:delegate.teacher.lastName];
+		//set alpha of avatars
+		if ([delegate.teacher.avatar.avatarImage isEqualToString:[avatarImages objectAtIndex:0]]) {
+			avatar1Button.alpha = 1;
+			[self setSelectedImage:0];
+		} else {
+			avatar1Button.alpha = .2;
+		}
+		
+		if ([delegate.teacher.avatar.avatarImage isEqualToString:[avatarImages objectAtIndex:1]]) {
+			avatar2Button.alpha = 1;
+			[self setSelectedImage:1];
+		} else {
+			avatar2Button.alpha = .2;
+		}
+		
 		//set default for existing image
 		selectedImage = 101;
 	}
@@ -74,18 +90,20 @@
 		[alert release];
 		[msg release];
 	} else {
-		//create teacher unless they are here to edit their existing avatar
 		if (delegate.teacher == nil) {
+			//create teacher
 			User *aTeacher = (User *)[NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:delegate.managedObjectContext];
+			Avatar *avatar = (Avatar *)[NSEntityDescription insertNewObjectForEntityForName:@"Avatar" inManagedObjectContext:delegate.managedObjectContext];
 			[aTeacher setFirstName:[NSString stringWithFormat:firstField.text]];
 			[aTeacher setLastName:[NSString stringWithFormat:lastField.text]];
-			[aTeacher setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+			[avatar setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+			[aTeacher setAvatar:avatar];
 			//assign the main account holder to this parent
 			delegate.teacher = aTeacher;
 		} else {
 			//set the image only if it is changed
 			if (selectedImage != 101) {
-				[delegate.teacher setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+				[delegate.teacher.avatar setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
 			}
 			[delegate.teacher setFirstName:[NSString stringWithFormat:firstField.text]];
 			[delegate.teacher setLastName:[NSString stringWithFormat:lastField.text]];

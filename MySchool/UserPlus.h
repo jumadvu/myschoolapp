@@ -12,6 +12,6 @@
 @interface User (UserPlus)
 
 -(NSString *)fullName;
--(UIImage *)avatar;
+-(UIImage *)avatarImage;
 
 @end

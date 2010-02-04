@@ -58,7 +58,7 @@
 	//fetch data from the sql lite database
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	//finds all users who don't have parents (these are the parents)
-	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(avatarImage != nil)"];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(firstName != nil)"];
 	[request setPredicate:predicate];
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
 	[request setEntity:entity];

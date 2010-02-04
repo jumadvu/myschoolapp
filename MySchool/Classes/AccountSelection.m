@@ -97,7 +97,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	User *anAccount = (User*)[accounts objectAtIndex:indexPath.row];
-	cell.imageView.image = [anAccount avatar];
+	cell.imageView.image = [anAccount avatarImage];
 	
 	cell.textLabel.text = [anAccount fullName];
 	

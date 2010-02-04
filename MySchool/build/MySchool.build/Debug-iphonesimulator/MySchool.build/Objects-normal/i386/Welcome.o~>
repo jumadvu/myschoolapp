@@ -1,0 +1,2 @@
+/Users/ashley/iSchool/MastersProject/iPhone app/svn/trunk/MySchool/Classes/Welcome.m:53: warning: property 'backButton' requires method '-backButton' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/ashley/iSchool/MastersProject/iPhone app/svn/trunk/MySchool/Classes/Welcome.m:53: warning: property 'backButton' requires the method 'setBackButton:' to be defined - use @synthesize, @dynamic or provide a method implementation
