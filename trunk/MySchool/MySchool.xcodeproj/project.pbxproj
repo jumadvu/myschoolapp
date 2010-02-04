@@ -12,9 +12,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LoginController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LoginController.m */; };
 		AB07EFE01108E97800204AFE /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFDF1108E97800204AFE /* Welcome.xib */; };
 		AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07EFEF1108EA1D00204AFE /* MainMenu.m */; };
 		AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFF01108EA1D00204AFE /* MainMenu.xib */; };
@@ -86,6 +84,8 @@
 		F50B4818111A1368003231FB /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B4817111A1368003231FB /* TBXML.m */; };
 		F50B481B111A1378003231FB /* ModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B481A111A1378003231FB /* ModuleCell.m */; };
 		F50B481E111A13D6003231FB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B481D111A13D6003231FB /* libz.dylib */; };
+		F57D79BD111A40C90020C2DE /* myschool.xml in Resources */ = {isa = PBXBuildFile; fileRef = F57D79BC111A40C90020C2DE /* myschool.xml */; };
+		F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D79D0111A42940020C2DE /* ChapterCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,10 +95,7 @@
 		1D6058910D05DD3D006BFB54 /* MySchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginController.xib; path = ../LoginController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MySchool_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySchool_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MySchool-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MySchool-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -218,6 +215,9 @@
 		F50B4819111A1378003231FB /* ModuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleCell.h; sourceTree = "<group>"; };
 		F50B481A111A1378003231FB /* ModuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleCell.m; sourceTree = "<group>"; };
 		F50B481D111A13D6003231FB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F57D79BC111A40C90020C2DE /* myschool.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myschool.xml; sourceTree = "<group>"; };
+		F57D79CF111A42940020C2DE /* ChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterCell.h; sourceTree = "<group>"; };
+		F57D79D0111A42940020C2DE /* ChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +298,7 @@
 				AB26207B1112204F005D02F4 /* avatar images */,
 				ABB3C5491106ECA5006FEEDA /* Default.png */,
 				ABB3C54A1106ECA5006FEEDA /* icon.png */,
+				F57D79BC111A40C90020C2DE /* myschool.xml */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* MySchool-Info.plist */,
 			);
@@ -395,9 +396,6 @@
 		AB07F1D91109669E00204AFE /* New Teacher */ = {
 			isa = PBXGroup;
 			children = (
-				28D7ACF60DDB3853001CB0EB /* LoginController.h */,
-				28D7ACF70DDB3853001CB0EB /* LoginController.m */,
-				2899E5210DE3E06400AC0155 /* LoginController.xib */,
 				AB07F1E4110966F800204AFE /* NewGameHome.h */,
 				AB07F1E5110966F800204AFE /* NewGameHome.m */,
 				AB07F1E6110966F800204AFE /* NewGameHome.xib */,
@@ -419,6 +417,8 @@
 				AB388A3F110FAF3800217E8F /* ModuleHome.h */,
 				AB388A40110FAF3800217E8F /* ModuleHome.m */,
 				AB388A41110FAF3800217E8F /* ModuleHome.xib */,
+				F57D79CF111A42940020C2DE /* ChapterCell.h */,
+				F57D79D0111A42940020C2DE /* ChapterCell.m */,
 				AB388A4A110FB24B00217E8F /* ChapterHome.h */,
 				AB388A4B110FB24B00217E8F /* ChapterHome.m */,
 				AB388A4C110FB24B00217E8F /* ChapterHome.xib */,
@@ -528,7 +528,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* LoginController.xib in Resources */,
 				ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */,
 				ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */,
 				ABB3C58E1106F3FA006FEEDA /* person.png in Resources */,
@@ -552,6 +551,7 @@
 				AB388B05110FEA9500217E8F /* StoreHome.xib in Resources */,
 				AB26205A11121CEE005D02F4 /* man.png in Resources */,
 				AB26205B11121CEE005D02F4 /* woman.png in Resources */,
+				F57D79BD111A40C90020C2DE /* myschool.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +564,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MySchoolAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* LoginController.m in Sources */,
 				AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */,
 				AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */,
 				AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */,
@@ -611,6 +610,7 @@
 				F50B4815111A1356003231FB /* NSDataAdditions.m in Sources */,
 				F50B4818111A1368003231FB /* TBXML.m in Sources */,
 				F50B481B111A1378003231FB /* ModuleCell.m in Sources */,
+				F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
