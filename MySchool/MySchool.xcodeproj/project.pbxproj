@@ -84,6 +84,7 @@
 		F50B4818111A1368003231FB /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B4817111A1368003231FB /* TBXML.m */; };
 		F50B481B111A1378003231FB /* ModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B481A111A1378003231FB /* ModuleCell.m */; };
 		F50B481E111A13D6003231FB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B481D111A13D6003231FB /* libz.dylib */; };
+		F55EBC2D111B3BFE00F84DDF /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EBC2B111B3BFE00F84DDF /* Avatar.m */; };
 		F57D79BD111A40C90020C2DE /* myschool.xml in Resources */ = {isa = PBXBuildFile; fileRef = F57D79BC111A40C90020C2DE /* myschool.xml */; };
 		F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D79D0111A42940020C2DE /* ChapterCell.m */; };
 /* End PBXBuildFile section */
@@ -215,6 +216,8 @@
 		F50B4819111A1378003231FB /* ModuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleCell.h; sourceTree = "<group>"; };
 		F50B481A111A1378003231FB /* ModuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleCell.m; sourceTree = "<group>"; };
 		F50B481D111A13D6003231FB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F55EBC2B111B3BFE00F84DDF /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		F55EBC2C111B3BFE00F84DDF /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
 		F57D79BC111A40C90020C2DE /* myschool.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myschool.xml; sourceTree = "<group>"; };
 		F57D79CF111A42940020C2DE /* ChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterCell.h; sourceTree = "<group>"; };
 		F57D79D0111A42940020C2DE /* ChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterCell.m; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				AB2054C711191E2B00ED8E61 /* Lecture.m */,
 				AB2054C811191E2B00ED8E61 /* Keyword.h */,
 				AB2054C911191E2B00ED8E61 /* Keyword.m */,
+				F55EBC2B111B3BFE00F84DDF /* Avatar.m */,
+				F55EBC2C111B3BFE00F84DDF /* Avatar.h */,
 				AB2054CA11191E2B00ED8E61 /* Worksheet.h */,
 				AB2054CB11191E2B00ED8E61 /* Worksheet.m */,
 				AB2054CC11191E2B00ED8E61 /* Article.h */,
@@ -611,6 +616,7 @@
 				F50B4818111A1368003231FB /* TBXML.m in Sources */,
 				F50B481B111A1378003231FB /* ModuleCell.m in Sources */,
 				F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */,
+				F55EBC2D111B3BFE00F84DDF /* Avatar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
