@@ -8,62 +8,47 @@
 
 #import "PapersToGrade.h"
 #import "GradePaper.h"
+#import "User.h"
 
 
 @implementation PapersToGrade
 
-/*
+@synthesize students;
+
+- (void)dealloc {
+	[students release];
+    [super dealloc];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
+    if (self = [super initWithStyle:UITableViewStyleGrouped]) {
+		self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];	
     }
     return self;
 }
-*/
 
-/*
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-*/
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 }
 */
-/*
+
 - (void)viewDidAppear:(BOOL)animated {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+
     [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
+	[self setStudents:[delegate.teacher.students allObjects]];
+	[self.tableView reloadData];
 }
 
 - (void)viewDidUnload {
@@ -75,15 +60,24 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+	
+    return [students count];
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+
+    //return [[[students objectAtIndex:section] worksheets] count];
+	return 1;
 }
 
+- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	//return UITableViewCellAccessoryDetailDisclosureButton;
+	return UITableViewCellAccessoryDisclosureIndicator;
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -96,7 +90,7 @@
     }
     
     // Set up the cell...
-	cell.textLabel.text = @"a student worksheet";
+	cell.textLabel.text = [NSString stringWithFormat:@"%@'s dinosaur worksheet", [[students objectAtIndex:indexPath.section] firstName]];
     return cell;
 }
 
@@ -108,6 +102,28 @@
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+	// create the parent view that will hold header Label
+	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 50.0)] autorelease];
+	customView.backgroundColor = [UIColor clearColor];
+	
+	// create the heading label object
+	UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
+	label.backgroundColor = [UIColor clearColor];
+	//teamAveLabel.opaque = NO;
+	label.font = [UIFont boldSystemFontOfSize:18];
+	label.frame = CGRectMake(10.0, 10.0, 280.0, 30.0);
+	label.text = [[students objectAtIndex:section] firstName];
+	[customView addSubview:label];
+	[label release];
+	return customView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+	return 50;
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -149,9 +165,6 @@
 */
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Student;
 
 @interface StudentHome : UITableViewController {
 
+	Student *student;
 }
+
+@property (nonatomic, retain) Student *student;
+
 -(void)toMainMenu;
 
 @end

@@ -24,10 +24,5 @@
 	return image;
 }
 
--(NSArray *)createStudents {
-	//create 5 students for this teacher
-	//Student student1 = [Student alloc] initWith
-	//NSArray students = [NSArray arrayWithObjects:student1, student2, student3, student4, student5, nil];
-}
 
 @end

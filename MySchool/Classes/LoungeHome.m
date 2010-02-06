@@ -22,7 +22,7 @@
 -(void)toPapersToGrade {
 	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	PapersToGrade *vc = [[[PapersToGrade alloc] initWithNibName:nil bundle:nil] autorelease];
+	PapersToGrade *vc = [[[PapersToGrade alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }

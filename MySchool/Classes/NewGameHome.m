@@ -10,6 +10,8 @@
 #import "DesignAvatar1.h"
 #import "User.h"
 #import "Avatar.h"
+#import "Student.h"
+#import "StudentPlus.h"
 
 @implementation NewGameHome
 
@@ -91,12 +93,13 @@
 		[msg release];
 	} else {
 		if (delegate.teacher == nil) {
-			//create teacher
+			//create new teacher
 			User *aTeacher = (User *)[NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:delegate.managedObjectContext];
 			Avatar *avatar = (Avatar *)[NSEntityDescription insertNewObjectForEntityForName:@"Avatar" inManagedObjectContext:delegate.managedObjectContext];
 			[aTeacher setFirstName:[NSString stringWithFormat:firstField.text]];
 			[aTeacher setLastName:[NSString stringWithFormat:lastField.text]];
 			[avatar setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+			[aTeacher setStudents:[Student createStudentsInContext:delegate.managedObjectContext]];
 			[aTeacher setAvatar:avatar];
 			//assign the main account holder to this parent
 			delegate.teacher = aTeacher;
