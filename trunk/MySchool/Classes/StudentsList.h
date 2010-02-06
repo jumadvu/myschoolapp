@@ -10,7 +10,9 @@
 
 
 @interface StudentsList : UITableViewController {
-
+	NSArray *students;
 }
+
+@property (nonatomic, retain) NSArray *students;
 
 @end

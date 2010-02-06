@@ -2,7 +2,7 @@
 //  Student.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/5/10.
+//  Created by Ashley Kayler on 2/2/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -15,12 +15,9 @@
 
 @dynamic gradeLevel;
 @dynamic type;
-@dynamic intelligence;
 @dynamic avatarImage;
 @dynamic firstName;
 @dynamic gender;
-@dynamic politeness;
-@dynamic friendliness;
 @dynamic worksheets;
 @dynamic teacher;
 

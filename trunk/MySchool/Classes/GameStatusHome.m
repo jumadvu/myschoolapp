@@ -38,13 +38,13 @@
 }
 
 -(void)clickButton2 {
-	LessonsTaught *vc = [[[LessonsTaught alloc] initWithNibName:nil bundle:nil] autorelease];
+	LessonsTaught *vc = [[[LessonsTaught alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
 -(void)clickButton3 {
-	StudentsList *vc = [[[StudentsList alloc] initWithNibName:nil bundle:nil] autorelease];
+	StudentsList *vc = [[[StudentsList alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
@@ -56,7 +56,7 @@
 }
 
 -(void)clickButton5 {
-	AwardsHome *vc = [[[AwardsHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	AwardsHome *vc = [[[AwardsHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }

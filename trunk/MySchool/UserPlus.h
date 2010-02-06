@@ -13,6 +13,5 @@
 
 -(NSString *)fullName;
 -(UIImage *)avatarImage;
--(NSArray *)createStudents;
 
 @end

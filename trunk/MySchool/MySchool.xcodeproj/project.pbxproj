@@ -47,7 +47,6 @@
 		AB2054E211191E2B00ED8E61 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CD11191E2B00ED8E61 /* Article.m */; };
 		AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CF11191E2B00ED8E61 /* UserAwards.m */; };
 		AB2054E411191E2B00ED8E61 /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D111191E2B00ED8E61 /* KeywordSet.m */; };
-		AB2054E511191E2B00ED8E61 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D311191E2B00ED8E61 /* Student.m */; };
 		AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */; };
 		AB26205A11121CEE005D02F4 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205811121CEE005D02F4 /* man.png */; };
 		AB26205B11121CEE005D02F4 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205911121CEE005D02F4 /* woman.png */; };
@@ -75,6 +74,8 @@
 		AB388B0A110FEAC600217E8F /* LessonsTaught.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B09110FEAC600217E8F /* LessonsTaught.m */; };
 		AB388B10110FEB2900217E8F /* StudentsList.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B0F110FEB2900217E8F /* StudentsList.m */; };
 		AB388B15110FEB5000217E8F /* StudentHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B14110FEB5000217E8F /* StudentHome.m */; };
+		AB4607E9111CEA0A00E9C445 /* StudentPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4607E8111CEA0A00E9C445 /* StudentPlus.m */; };
+		AB4607EE111CEE6B00E9C445 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4607ED111CEE6B00E9C445 /* Student.m */; };
 		AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A166D10FBBE5F00902689 /* Welcome.m */; };
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
@@ -158,8 +159,6 @@
 		AB2054CF11191E2B00ED8E61 /* UserAwards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAwards.m; sourceTree = "<group>"; };
 		AB2054D011191E2B00ED8E61 /* KeywordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSet.h; sourceTree = "<group>"; };
 		AB2054D111191E2B00ED8E61 /* KeywordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSet.m; sourceTree = "<group>"; };
-		AB2054D211191E2B00ED8E61 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		AB2054D311191E2B00ED8E61 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetQuestion.h; sourceTree = "<group>"; };
 		AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetQuestion.m; sourceTree = "<group>"; };
 		AB26205811121CEE005D02F4 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = Classes/man.png; sourceTree = "<group>"; };
@@ -202,6 +201,10 @@
 		AB388B0F110FEB2900217E8F /* StudentsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsList.m; sourceTree = "<group>"; };
 		AB388B13110FEB5000217E8F /* StudentHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentHome.h; sourceTree = "<group>"; };
 		AB388B14110FEB5000217E8F /* StudentHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentHome.m; sourceTree = "<group>"; };
+		AB4607E7111CEA0A00E9C445 /* StudentPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentPlus.h; sourceTree = "<group>"; };
+		AB4607E8111CEA0A00E9C445 /* StudentPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentPlus.m; sourceTree = "<group>"; };
+		AB4607EC111CEE6B00E9C445 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		AB4607ED111CEE6B00E9C445 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		AB7A166C10FBBE5F00902689 /* Welcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Welcome.h; sourceTree = "<group>"; };
 		AB7A166D10FBBE5F00902689 /* Welcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Welcome.m; sourceTree = "<group>"; };
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB4607EC111CEE6B00E9C445 /* Student.h */,
+				AB4607ED111CEE6B00E9C445 /* Student.m */,
 				AB2054B411191E2B00ED8E61 /* User.h */,
 				AB2054B511191E2B00ED8E61 /* User.m */,
 				AB2054B611191E2B00ED8E61 /* Chapter.h */,
@@ -354,13 +359,13 @@
 				AB2054CF11191E2B00ED8E61 /* UserAwards.m */,
 				AB2054D011191E2B00ED8E61 /* KeywordSet.h */,
 				AB2054D111191E2B00ED8E61 /* KeywordSet.m */,
-				AB2054D211191E2B00ED8E61 /* Student.h */,
-				AB2054D311191E2B00ED8E61 /* Student.m */,
 				AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */,
 				AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */,
 				AB20516411174F9B00ED8E61 /* UserPlus.h */,
 				AB20516511174F9B00ED8E61 /* UserPlus.m */,
 				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
+				AB4607E7111CEA0A00E9C445 /* StudentPlus.h */,
+				AB4607E8111CEA0A00E9C445 /* StudentPlus.m */,
 			);
 			name = Model;
 			path = Classes;
@@ -610,13 +615,14 @@
 				AB2054E211191E2B00ED8E61 /* Article.m in Sources */,
 				AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */,
 				AB2054E411191E2B00ED8E61 /* KeywordSet.m in Sources */,
-				AB2054E511191E2B00ED8E61 /* Student.m in Sources */,
 				AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */,
 				F50B4815111A1356003231FB /* NSDataAdditions.m in Sources */,
 				F50B4818111A1368003231FB /* TBXML.m in Sources */,
 				F50B481B111A1378003231FB /* ModuleCell.m in Sources */,
 				F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */,
 				F55EBC2D111B3BFE00F84DDF /* Avatar.m in Sources */,
+				AB4607E9111CEA0A00E9C445 /* StudentPlus.m in Sources */,
+				AB4607EE111CEE6B00E9C445 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

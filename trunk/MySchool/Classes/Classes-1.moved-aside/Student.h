@@ -2,7 +2,7 @@
 //  Student.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/5/10.
+//  Created by Ashley Kayler on 2/2/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -17,12 +17,9 @@
 
 @property (nonatomic, retain) NSNumber * gradeLevel;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSNumber * intelligence;
 @property (nonatomic, retain) id avatarImage;
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * gender;
-@property (nonatomic, retain) NSNumber * politeness;
-@property (nonatomic, retain) NSNumber * friendliness;
 @property (nonatomic, retain) NSSet* worksheets;
 @property (nonatomic, retain) User * teacher;
 
