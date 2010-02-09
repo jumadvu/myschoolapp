@@ -13,9 +13,10 @@
 
 @implementation ChapterHome
 
-@synthesize learnButton, chapterNameLabel, chapterName, textView;
+@synthesize learnButton, chapterNameLabel, chapterName, textView, fileName;
 
 - (void)dealloc {
+	[fileName release];
 	[learnButton release];
     [super dealloc];
 }
@@ -42,20 +43,20 @@
 	[super viewDidLoad];
 	chapterNameLabel.text=chapterName;
 	textView.text = nil;
-	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"myschool" fileExtension:@"xml"];
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
 	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
 	while (module!=nil) {
 		if([textView.text isEqualToString:nil]){
 		NSLog(@"In the loop.");}
-		TBXMLElement * chapter=[tbxml childElementNamed:@"Chapter" parentElement:module];
+		TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
 			while (chapter!=nil){
 				if ([chapterName isEqualToString:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]]){
 					textView.text=[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]];
 					break;
 				}
 				else{
-					chapter = [tbxml nextSiblingNamed:@"Chapter" searchFromElement:chapter];
+					chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
 				}
 			}
 		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];

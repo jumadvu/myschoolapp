@@ -13,6 +13,9 @@
 
 @implementation ModuleCell
 
+@synthesize fileName;
+@synthesize moduleName;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         // Initialization code
@@ -23,7 +26,8 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.moduleName=self.textLabel.text;
+	vc.moduleName=self.moduleName;
+	vc.fileName=self.fileName;
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
@@ -35,6 +39,8 @@
 }
 
 - (void)dealloc {
+	[moduleName release];
+	[fileName release];
     [super dealloc];
 }
 

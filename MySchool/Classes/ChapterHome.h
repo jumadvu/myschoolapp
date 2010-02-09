@@ -14,6 +14,7 @@
 	IBOutlet UILabel *chapterNameLabel;
 	IBOutlet UITextView *textView;
 	NSString *chapterName;
+	NSString *fileName;
 
 }
 
@@ -21,6 +22,7 @@
 @property (nonatomic,retain) UILabel *chapterNameLabel;
 @property (nonatomic, retain) NSString *chapterName;
 @property (nonatomic, retain) UITextView *textView;
+@property (nonatomic, retain) NSString *fileName;
 
 -(IBAction)toArticle;
 

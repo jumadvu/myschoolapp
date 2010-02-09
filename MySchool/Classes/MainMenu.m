@@ -61,7 +61,7 @@
 }
 
 -(void)libraryButtonClicked {
-	LibraryHome *vc = [[[LibraryHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	LibraryHome *vc = [[[LibraryHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
