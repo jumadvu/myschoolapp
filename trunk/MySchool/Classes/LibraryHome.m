@@ -10,33 +10,27 @@
 #import "ModuleHome.h"
 #import "TBXML.h"
 #import "ModuleCell.h"
+#import "Library.h"
 
 @implementation LibraryHome
 
-@synthesize moduleButton, tableView, moduleNames;
+@synthesize moduleNames;
+@synthesize subjects;
 
 - (void)dealloc {
-	[moduleButton release];
-	[tableView release];
+	[subjects release];
 	[moduleNames release];
     [super dealloc];
 }
 
--(void)toModule {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-}
-
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
+- (id)initWithStyle:(UITableViewStyle)style {
+    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+    if (self = [super initWithStyle:UITableViewStyleGrouped]) {
+		self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];	
     }
     return self;
 }
-*/
+
 
 - (void)viewDidLoad
 {
@@ -45,38 +39,28 @@
 	// in interface builder instead).
 	//
 	[super viewDidLoad];
-	tableView.rowHeight = 60;
-	tableView.backgroundColor = [UIColor clearColor];
+	[self setSubjects:[Library subjectsForGrade:[NSNumber numberWithInt:2]]];
+	//tableView.backgroundColor = [UIColor clearColor];
     
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	
+    return [self.subjects count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	return [[subjects objectAtIndex:section] objectAtIndex:0];
+}
 //
-// tableView:numberOfRowsInSection:
-//
-// Returns the number of rows in a given section.
+// tableView:numberOfRowsInSection: Returns the number of rows in a given section.
 //
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"myschool" fileExtension:@"xml"];
-	TBXMLElement * root = tbxml.rootXMLElement;
-	moduleNames= [NSMutableArray new];
-	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
-	while (module!=nil) {
-		NSString * mName = [tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]];
-		[moduleNames addObject:mName];
-		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];
-	}
-	[tbxml release];
-	return [moduleNames count];
+	NSArray *modulesInSection = [NSArray arrayWithArray:[[subjects objectAtIndex:section] objectAtIndex:1]];
+	return [modulesInSection count];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -94,7 +78,7 @@
 {
 	
 	static NSString *CellIdentifier = @"Cell";
-	ModuleCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	ModuleCell *cell = (ModuleCell*)[aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil)
 	{
 		//
@@ -107,10 +91,26 @@
 		 autorelease];
 		
 	}
-	cell.textLabel.text = [moduleNames objectAtIndex:[indexPath row]];
+	NSArray *modulesInSection = [NSArray arrayWithArray:[[subjects objectAtIndex:indexPath.section] objectAtIndex:1]];
+	
+	//get the filename and the title of the module for display
+	[cell setFileName:[[modulesInSection objectAtIndex:[indexPath row]] objectAtIndex:1]];
+	[cell setModuleName:[[modulesInSection objectAtIndex:[indexPath row]] objectAtIndex:0]];
+	cell.textLabel.text = [[modulesInSection objectAtIndex:[indexPath row]] objectAtIndex:0];
 	return cell;
 }
 
-
-
+/*
+ //cell click handled in ModuleCell.m
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSArray *modulesInSection = [NSArray arrayWithArray:[[subjects objectAtIndex:indexPath.section] objectAtIndex:1]];
+	NSString *fileName = [NSString stringWithFormat:[[modulesInSection objectAtIndex:[indexPath row]] objectAtIndex:1]];
+    // Navigation logic may go here. Create and push another view controller.
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.moduleName = fileName;
+	NSLog(@"file name %@", fileName);
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+*/
 @end

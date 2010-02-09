@@ -12,6 +12,8 @@
 
 @implementation ChapterCell
 
+@synthesize fileName;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         // Initialization code
@@ -23,6 +25,7 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.textLabel.text;
+	vc.fileName = fileName;
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
@@ -35,6 +38,7 @@
 
 
 - (void)dealloc {
+	[fileName release];
     [super dealloc];
 }
 

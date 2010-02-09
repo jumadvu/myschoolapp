@@ -10,6 +10,11 @@
 
 
 @interface ModuleCell : UITableViewCell {
+	NSString *fileName;
+	NSString *moduleName;
 }
+
+@property (nonatomic, retain) NSString *fileName;
+@property (nonatomic, retain) NSString *moduleName;
 
 @end

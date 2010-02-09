@@ -10,7 +10,9 @@
 
 
 @interface ChapterCell : UITableViewCell {
-
+	NSString *fileName;
 }
+
+@property (nonatomic, retain) NSString *fileName;
 
 @end

@@ -9,16 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface LibraryHome : baseViewController {
-	IBOutlet UIButton *moduleButton;
+@interface LibraryHome : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+	NSArray *subjects;
 	NSMutableArray *moduleNames;
-	IBOutlet UITableView *tableView;
 }
 
-@property (nonatomic, retain) UIButton *moduleButton;
 @property (nonatomic, retain) NSMutableArray *moduleNames;
-@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) NSArray *subjects;
 
--(IBAction)toModule;
 
 @end

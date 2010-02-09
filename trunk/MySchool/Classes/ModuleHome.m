@@ -14,9 +14,10 @@
 
 @implementation ModuleHome
 
-@synthesize chapterButton, tableview, moduleNameLabel, chapters, moduleName;
+@synthesize chapterButton, tableview, moduleNameLabel, chapters, moduleName, fileName;
 
 - (void)dealloc {
+	[fileName release];
 	[chapterButton release];
 	[tableview release];
 	[moduleName release];
@@ -30,30 +31,21 @@
 	[delegate.navCon pushViewController:vc animated:YES];	
 }
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	NSLog(@"file name %@", fileName);
 	moduleNameLabel.text=moduleName;
-	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"myschool" fileExtension:@"xml"];
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
 	chapters= [NSMutableArray new];
 	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
 	while (module!=nil) {
 		if( [moduleName isEqualToString:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]]]){
-			TBXMLElement * chapter=[tbxml childElementNamed:@"Chapter" parentElement:module];
+			TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
 			while (chapter!=nil){
 				[chapters addObject:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-				chapter = [tbxml nextSiblingNamed:@"Chapter" searchFromElement:chapter];
+				chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
 			}
 			break;
 		}
@@ -79,7 +71,7 @@
 {
 	
 	static NSString *CellIdentifier = @"Cell";
-	ChapterCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	ChapterCell *cell = (ChapterCell*)[aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil)
 	{
 		//
@@ -92,6 +84,7 @@
 		 autorelease];
 		
 	}
+	[cell setFileName:fileName];
 	cell.textLabel.text = [chapters objectAtIndex:[indexPath row]];
 	return cell;
 }

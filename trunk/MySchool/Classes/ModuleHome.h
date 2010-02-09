@@ -15,6 +15,7 @@
 	IBOutlet UILabel *moduleNameLabel;
 	NSMutableArray *chapters;
 	NSString *moduleName;
+	NSString *fileName;
 }
 
 @property (nonatomic,retain) UIButton *chapterButton;
@@ -22,6 +23,7 @@
 @property (nonatomic,retain) UITableView *tableview;
 @property (nonatomic, retain) UILabel *moduleNameLabel;
 @property (nonatomic, retain) NSString *moduleName;
+@property (nonatomic, retain) NSString *fileName;
 
 
 -(IBAction)toChapter;

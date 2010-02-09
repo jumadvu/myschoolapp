@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<myschool>
+	<module>
+		<title>Building a Sustainable World</title>
+		<superSubject>Environment</superSubject>
+		<chapters>
+			<chapter>
+				<title>Recycling!</title>
+			</chapter>
+		</chapters>
+	</module>
+</myschool>
