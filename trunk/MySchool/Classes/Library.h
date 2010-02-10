@@ -15,5 +15,6 @@
 
 +(NSArray*)subjectsForGrade:(NSNumber *)gradeLevel;
 +(NSString*) whichXMLFile:(NSNumber*)gradeLevel;
++(void)addXMLModule:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc;
 
 @end

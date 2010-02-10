@@ -18,7 +18,7 @@
 @property (nonatomic, retain) NSNumber * gradeLevel;
 @property (nonatomic, retain) NSString * type;
 @property (nonatomic, retain) NSNumber * intelligence;
-@property (nonatomic, retain) id avatarImage;
+@property (nonatomic, retain) NSString * avatarImage;
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * gender;
 @property (nonatomic, retain) NSNumber * politeness;

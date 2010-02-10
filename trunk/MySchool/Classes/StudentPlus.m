@@ -17,6 +17,8 @@
 	NSArray *boysNames = [NSArray arrayWithObjects:@"Jacob",@"Michael",@"Ethan",@"Joshua",@"Daniel",@"Alexander",@"Anthony",@"William",@"Christopher",@"Matthew",@"Jayden",@"Andrew",@"Joseph",@"David",@"Noah",@"Aiden",@"James",@"Ryan",@"Logan",@"John",@"Nathan",@"Elijah",@"Christian",@"Gabriel",@"Benjamin",@"Jonathan",@"Tyler",@"Samuel",@"Nicholas",@"Gavin",@"Dylan",@"Jackson",@"Brandon",@"Caleb",@"Mason",@"Angel",@"Isaac",@"Evan",@"Jack",@"Kevin",@"Jose",@"Isaiah",@"Luke",@"Landon",@"Justin",@"Lucas",@"Zachary",@"Jordan",@"Robert",@"Aaron",@"Brayden",@"Thomas",@"Cameron",@"Hunter",@"Austin",@"Adrian",@"Connor",@"Owen",@"Aidan",@"Jason",@"Julian",@"Wyatt",@"Charles",@"Luis",@"Carter",@"Juan",@"Chase",@"Diego",@"Jeremiah",@"Brody",@"Xavier",@"Adam",@"Carlos",@"Sabastian",@"Liam",@"Hayden",@"Nathaniel",@"Henry",@"Jesus",@"Ian",@"Tristan",@"Bryan",@"Sean",@"Cole",@"Alex",@"Eric",@"Brian",@"Jaden",@"Carson",@"Blake",@"Ayden",@"Cooper",@"Dominic",@"Brady",@"Caden",@"Josiah",@"Kyle",@"Colton",@"Kaden1",@"Eli",nil];
 	NSMutableArray *students = [[[NSMutableArray alloc] init] autorelease];
 	BOOL isGirl = YES;
+	int girlNum = 0;
+	int boyNum = 0;
 
 	for (int x=0; x<4; x++) {
 		Student *student = (Student *)[NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:context];
@@ -29,10 +31,14 @@
 		int l = arc4random() % 100;
 		int m = arc4random() % 100;
 		if (isGirl) {
+			girlNum++;
+			[student setAvatarImage:[NSString stringWithFormat:@"Girl%d", girlNum]];
 			[student setFirstName:[girlsNames objectAtIndex:l]];
 			isGirl = NO;
 			[student setGender:@"Girl"];
 		} else {
+			boyNum++;
+			[student setAvatarImage:[NSString stringWithFormat:@"Boy%d", boyNum]];
 			[student setFirstName:[boysNames objectAtIndex:m]];
 			[student setGender:@"Boy"];
 			isGirl = YES;
@@ -42,6 +48,14 @@
 	}
 	NSSet *mySet = [NSSet setWithArray:students];
 	return mySet;
+}
+
+-(UIImage *)frontView {
+	NSString *mood = [NSString stringWithFormat:@"Happy"];
+	NSLog([self avatarImage]);
+	NSString *imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
+	UIImage *image = [UIImage imageNamed:imageFile];
+	return image;
 }
 
 @end

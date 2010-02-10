@@ -3,6 +3,7 @@
 	<module>
 		<title>All About Dinosaurs</title>
 		<superSubject>Biology</superSubject>
+		<gradeLevel>2</gradeLevel>
 		<chapter>
 			<title>What is a dinosaur?</title>
 			<article>
@@ -21,125 +22,103 @@
 				<title>Dinosaurs: The Terrible Lizards</title>
 				<text>Dinosaurs were reptiles that lived [millions] of years ago. The word "dinosaur" comes from [Greek], meaning "terrible lizard". The name was coined by the English [biologist] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [extinct]. Birds are the descendants of dinosaurs. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [herbivores], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like [Apatosaurus and Brachiosaurus]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [three horns] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [fossil bones] that have been found. Most meat-eaters were bipedal (walked on their back legs), though not as we are. Their body was more towards the horizontal, balanced at the back by their tail. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. It was the smaller sized meat-eaters that may have evolved into birds. One of the first birds was Archaeopteryx; most of its skeleton looked much like that of a dinosaur. There were large flying reptiles that lived at the same time as dinosaurs called [pterosaurs]. There were also various kinds of large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
 				</text>
-				<keywordSets>
-					<keywordSet word="millions">
-						<word>thousands</word>
-						<word>gazillions</word>
-					</keywordSet>
-					<keywordSet word="Greek">
-						<word>Chinese</word>
-						<word>Martian</word>
-					</keywordSet>
-					<keywordSet word="biologist">
-						<word>chemist</word>
-						<word>ice cream truck driver</word>
-					</keywordSet>
-					<keywordSet word="extinct">
-						<word>very popular</word>
-						<word>very smart</word>
-					</keywordSet>
-					<keywordSet word="herbivores">
-						<word>carnivores</word>
-						<word>tuskivores</word>
-					</keywordSet>
-					<keywordSet word="Apatosaurus and Brachiosaurus">
-						<word>Tyrannosaurus Rex and Allosaurus</word>
-						<word>Fred and George Weasley</word>
-					</keywordSet>
-					<keywordSet word="three horns">
-						<word>poisonous spikes</word>
-						<word>solar panels</word>
-					</keywordSet>
-					<keywordSet word="fossil bones">
-						<word>living dinosaurs</word>
-						<word>dinosaur photographs</word>
-					</keywordSet>
-					<keywordSet word="pterosaurs">
-						<word>bald eagles</word>
-						<word>dodos</word>
-					</keywordSet>
-				</keywordSets>
-				<studentQuestions>
-					<studentQuestion>
-						<text>How did the cavemen avoid getting eaten by dinosaurs?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="0">They hid in caves</answer>
-							<answer correctness="5">There were no cavemen in the time of the dinosaurs</answer>
-							<answer correctness="0">Scientists don't know how cavemen avoided getting eaten.</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>Why don't dinosaurs exist anymore?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="5">A big meteor hit the earth and caused a cloud that blocked the sun's warming rays.</answer>
-							<answer correctness="1">They ate each other until there were no more left.</answer>
-							<answer correctness="0">The cavemen wiped them all out.</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>How do scientists know if a dinosaur was an carnivore or a herbivore?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="5">They look at the fossil teeth. Carnivore teeth are bigger and pointier than herbivore teeth</answer>
-							<answer correctness="1">They look on wikipedia</answer>
-							<answer correctness="1">The big ones were herbivores and the small ones were carnivores.</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>What made scientists decide to look for dinosaur bones?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="4">The first dinosaur bones were not found by scientists.</answer>
-							<answer correctness="4">Scientists have always looked for bones for answers about our past.</answer>
-							<answer correctness="0">Albert Einstein had a vision about dinosaurs.</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>Why did some dinosaurs eat plants, and others eat only meat?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="5">The process of evolution has created this division throughout the animal kingdom.</answer>
-							<answer correctness="0">Some dinosaurs could not afford meat.</answer>
-							<answer correctness="3">The short dinosaurs could not reach the leaves on the trees.</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>Why were dinosaurs so big?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="3">There was an abundant food supply in the Mesozoic period</answer>
-							<answer correctness="4">Scientists are not sure of the reason.</answer>
-							<answer correctness="0">Because being big was cool back then.</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>How heavy was a Tyrannosaurus Rex?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="5">5-7 tons</answer>
-							<answer correctness="5">500-700 pounds</answer>
-							<answer correctness="0">50-80 tons</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>Were dinosaurs mammals?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="0">Yes, they were the earliest mammals</answer>
-							<answer correctness="5">No, they were reptiles</answer>
-						</answers>
-					</studentQuestion>
-					<studentQuestion>
-						<text>Did humans evolve from dinosaurs?</text>
-						<studenttype>1</studenttype>
-						<answers>
-							<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
-							<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
-						</answers>
-					</studentQuestion>
-				</studentQuestions>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<keywordSet word="Greek">
+					<word>Chinese</word>
+					<word>Martian</word>
+				</keywordSet>
+				<keywordSet word="biologist">
+					<word>chemist</word>
+					<word>ice cream truck driver</word>
+				</keywordSet>
+				<keywordSet word="extinct">
+					<word>very popular</word>
+					<word>very smart</word>
+				</keywordSet>
+				<keywordSet word="herbivores">
+					<word>carnivores</word>
+					<word>tuskivores</word>
+				</keywordSet>
+				<keywordSet word="Apatosaurus and Brachiosaurus">
+					<word>Tyrannosaurus Rex and Allosaurus</word>
+					<word>Fred and George Weasley</word>
+				</keywordSet>
+				<keywordSet word="three horns">
+					<word>poisonous spikes</word>
+					<word>solar panels</word>
+				</keywordSet>
+				<keywordSet word="fossil bones">
+					<word>living dinosaurs</word>
+					<word>dinosaur photographs</word>
+				</keywordSet>
+				<keywordSet word="pterosaurs">
+					<word>bald eagles</word>
+					<word>dodos</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>How did the cavemen avoid getting eaten by dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="0">They hid in caves</answer>
+					<answer correctness="5">There were no cavemen in the time of the dinosaurs</answer>
+					<answer correctness="0">Scientists don't know how cavemen avoided getting eaten.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why don't dinosaurs exist anymore?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">A big meteor hit the earth and caused a cloud that blocked the sun's warming rays.</answer>
+					<answer correctness="1">They ate each other until there were no more left.</answer>
+					<answer correctness="0">The cavemen wiped them all out.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>How do scientists know if a dinosaur was an carnivore or a herbivore?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">They look at the fossil teeth. Carnivore teeth are bigger and pointier than herbivore teeth</answer>
+					<answer correctness="1">They look on wikipedia</answer>
+					<answer correctness="1">The big ones were herbivores and the small ones were carnivores.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>What made scientists decide to look for dinosaur bones?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="4">The first dinosaur bones were not found by scientists.</answer>
+					<answer correctness="4">Scientists have always looked for bones for answers about our past.</answer>
+					<answer correctness="0">Albert Einstein had a vision about dinosaurs.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why did some dinosaurs eat plants, and others eat only meat?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">The process of evolution has created this division throughout the animal kingdom.</answer>
+					<answer correctness="0">Some dinosaurs could not afford meat.</answer>
+					<answer correctness="3">The short dinosaurs could not reach the leaves on the trees.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why were dinosaurs so big?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="3">There was an abundant food supply in the Mesozoic period</answer>
+					<answer correctness="4">Scientists are not sure of the reason.</answer>
+					<answer correctness="0">Because being big was cool back then.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>How heavy was a Tyrannosaurus Rex?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">5-7 tons</answer>
+					<answer correctness="5">500-700 pounds</answer>
+					<answer correctness="0">50-80 tons</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Were dinosaurs mammals?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="0">Yes, they were the earliest mammals</answer>
+					<answer correctness="5">No, they were reptiles</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
 			</lecture> 
 		</chapter>
 		<chapter>

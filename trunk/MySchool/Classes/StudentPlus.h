@@ -14,4 +14,6 @@
 
 +(NSSet*)createStudentsInContext:(NSManagedObjectContext*)context;
 
+-(UIImage *)frontView;
+
 @end

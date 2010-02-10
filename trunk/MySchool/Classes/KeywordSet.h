@@ -8,14 +8,15 @@
 
 #import <CoreData/CoreData.h>
 
-@class Keyword;
 @class Lecture;
+@class Keyword;
 
 @interface KeywordSet :  NSManagedObject  
 {
 }
 
 @property (nonatomic, retain) Lecture * lecture;
+@property (nonatomic, retain) NSString * correctWord;
 @property (nonatomic, retain) NSSet* words;
 
 @end

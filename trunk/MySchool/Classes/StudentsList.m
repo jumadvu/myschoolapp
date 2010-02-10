@@ -9,6 +9,8 @@
 #import "StudentsList.h"
 #import "StudentHome.h"
 #import "User.h"
+#import "Student.h"
+#import "StudentPlus.h"
 
 @implementation StudentsList
 
@@ -18,7 +20,6 @@
 	[students release];
     [super dealloc];
 }
-
 
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -31,17 +32,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
+	self.tableView.rowHeight = 80;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 
-/*
- - (void)viewWillAppear:(BOOL)animated {
- [super viewWillAppear:animated];
- }
- */
+-(void)toMainMenu {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon popToRootViewControllerAnimated:YES];		
+}
 
 - (void)viewDidAppear:(BOOL)animated {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -80,24 +80,24 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }
-    
     // Set up the cell...
-	cell.textLabel.text = [NSString stringWithFormat:@"%@'s Grade:", [[students objectAtIndex:indexPath.row] firstName]];
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"B+"];
+	cell.imageView.image = [[students objectAtIndex:indexPath.row] frontView];
+	cell.textLabel.text = [NSString stringWithFormat:@"%@", [[students objectAtIndex:indexPath.row] firstName]];
+	//cell.detailTextLabel.text = [NSString stringWithFormat:@"B+"];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-	return 80;
+	return 50;
 }
 
-- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-	//return UITableViewCellAccessoryDetailDisclosureButton;
-	return UITableViewCellAccessoryDisclosureIndicator;
+	return 50;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -110,7 +110,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
 	// create the parent view that will hold header Label
-	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 60.0)] autorelease];
+	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 50.0)] autorelease];
 	customView.backgroundColor = [UIColor clearColor];
 	
 	// create the heading label object
@@ -126,6 +126,22 @@
 	
 	[customView addSubview:label];
 	[label release];
+	return customView;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+	// create the parent view that will hold header Label
+	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 100.0)] autorelease];
+	customView.backgroundColor = [UIColor clearColor];
+	
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
+	button.titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
+	[button setTitle:@"Main Menu" forState:UIControlStateNormal];
+	button.frame = CGRectMake(110, 10, 100.0, 30.0);  
+	[button addTarget:self action:@selector(toMainMenu) forControlEvents:UIControlEventTouchUpInside];  
+	[customView addSubview:button];
+	//[button release];
 	return customView;
 }
 
