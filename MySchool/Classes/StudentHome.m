@@ -80,6 +80,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+	//	[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }
     
     // Set up the cell...
@@ -92,14 +93,6 @@
 {
 	return 100;
 }
-
-/*
-- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
-{
-	//return UITableViewCellAccessoryDetailDisclosureButton;
-	return UITableViewCellAccessoryDisclosureIndicator;
-}
-*/
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	//do we want to show the completed worksheet?
@@ -114,7 +107,7 @@
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
 	button.titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
 	[button setTitle:@"Main Menu" forState:UIControlStateNormal];
-	button.frame = CGRectMake(100, 10, 100.0, 30.0);  
+	button.frame = CGRectMake(110, 10, 100.0, 30.0);  
 	[button addTarget:self action:@selector(toMainMenu) forControlEvents:UIControlEventTouchUpInside];  
 	
 	// create the heading label object

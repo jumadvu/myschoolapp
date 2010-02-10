@@ -2,11 +2,13 @@
 <myschool>
 	<module>
 		<title>Building a Sustainable World</title>
-		<superSubject>Environment</superSubject>
-		<chapters>
-			<chapter>
-				<title>Recycling!</title>
-			</chapter>
-		</chapters>
+		<superSubject>Environmental Science</superSubject>
+		<gradeLevel>2</gradeLevel>
+		<chapter>
+			<title>Recycling!</title>
+		</chapter>
+		<chapter>
+			<title>Compost</title>
+		</chapter>
 	</module>
 </myschool>

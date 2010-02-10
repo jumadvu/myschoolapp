@@ -8,12 +8,13 @@
 
 #import "KeywordSet.h"
 
-#import "Keyword.h"
 #import "Lecture.h"
+#import "Keyword.h"
 
 @implementation KeywordSet 
 
 @dynamic lecture;
 @dynamic words;
+@dynamic correctWord;
 
 @end

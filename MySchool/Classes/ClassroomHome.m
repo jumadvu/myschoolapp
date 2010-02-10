@@ -10,6 +10,7 @@
 #import "ChalkboardHome.h"
 #import "StudentQuestionHome.h"
 #import "PassOutWorksheets.h"
+#import "Library.h"
 
 @implementation ClassroomHome
 
@@ -60,7 +61,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setBackgroundColor];
-
+	//add the lecture to teach to the database
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[Library addXMLModule:@"dinosaurs" toDatabaseContext:delegate.managedObjectContext];
 }
 
 

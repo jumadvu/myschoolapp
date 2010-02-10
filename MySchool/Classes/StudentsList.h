@@ -15,4 +15,6 @@
 
 @property (nonatomic, retain) NSArray *students;
 
+-(void)toMainMenu;
+
 @end
