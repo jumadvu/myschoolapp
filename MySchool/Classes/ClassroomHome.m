@@ -11,12 +11,15 @@
 #import "StudentQuestionHome.h"
 #import "PassOutWorksheets.h"
 #import "Library.h"
+#import "Chapter.h"
 
 @implementation ClassroomHome
 
 @synthesize chalkboardButton;
 @synthesize questionButton;
 @synthesize worksheetsButton;
+@synthesize chapter;
+
 
 - (void)dealloc {
 	[worksheetsButton release];
@@ -63,7 +66,8 @@
 	[self setBackgroundColor];
 	//add the lecture to teach to the database
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[Library addXMLModule:@"dinosaurs" toDatabaseContext:delegate.managedObjectContext];
+	//add modules to sqlite db
+	//[Library addXMLModule:@"dinosaurs" toDatabaseContext:delegate.managedObjectContext];
 }
 
 

@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface LessonsTaught : UITableViewController {
-
+@interface LessonsTaught : baseViewController <UITableViewDelegate, UITableViewDataSource> {
+	NSArray *modules;
+	IBOutlet UITableView *tableView;
 }
+
+@property (nonatomic, retain) NSArray *modules;
+@property (nonatomic, retain) UITableView *tableView;
 
 -(void)goBack;
 

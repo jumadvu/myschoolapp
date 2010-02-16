@@ -34,6 +34,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self setBackgroundColor];
 	NSLog(@"file name %@", fileName);
 	moduleNameLabel.text=moduleName;
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];

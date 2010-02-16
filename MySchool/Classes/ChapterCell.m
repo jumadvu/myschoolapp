@@ -8,20 +8,88 @@
 
 #import "ChapterCell.h"
 #import "ChapterHome.h"
+#import "MySchoolAppDelegate.h"
+#import "ChalkboardHome.h"
 
 
 @implementation ChapterCell
 
 @synthesize fileName;
+@synthesize lblTitle;
+@synthesize tButton;
+@synthesize lButton;
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        // Initialization code
-    }
-    return self;
+- (void)dealloc {
+	//[lblTitle release];
+	//[tButton release]; //don't need to release because it is created with an autorelease??
+	//[lButton release];
+	[fileName release];
+    [super dealloc];
+}
+
+-(void)teachButtonSelected:(id)sender {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ChalkboardHome *vc = [[[ChalkboardHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
+-(void)learnButtonSelected:(id)sender {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.chapterName=self.textLabel.text;
+	vc.fileName = fileName;
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
+- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
+	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	
+	if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+		UIImage *teachImage = [UIImage imageNamed:@"teach.png"];
+		UIImage *learnImage = [UIImage imageNamed:@"learn.png"];
+		
+		/*
+		// Initialization code 
+		lblTitle = [[UILabel alloc] initWithFrame:CGRectZero];
+		lblTitle.textColor = [UIColor blackColor];
+		lblTitle.font = [UIFont boldSystemFontOfSize:19.0];
+		lblTitle.backgroundColor = [UIColor clearColor];
+		[self.contentView addSubview:lblTitle];
+			*/
+		tButton = [UIButton buttonWithType: UIButtonTypeCustom]; 
+		[tButton setBackgroundImage:teachImage forState:UIControlStateNormal];
+		[self.contentView addSubview:tButton];
+		[tButton addTarget:self action:@selector(teachButtonSelected:) forControlEvents:UIControlEventTouchUpInside];  
+		
+		lButton = [UIButton buttonWithType: UIButtonTypeCustom]; 
+		[lButton setBackgroundImage:learnImage forState:UIControlStateNormal];
+		[self.contentView addSubview:lButton];
+		[lButton addTarget:self action:@selector(learnButtonSelected:) forControlEvents:UIControlEventTouchUpInside];  
+		
+		[self.contentView setBackgroundColor:[UIColor whiteColor]];
+				
+	}
+	return self;
+}
+
+- (void)layoutSubviews {
+	[super layoutSubviews];
+	
+	CGRect baseRect = CGRectInset(self.contentView.bounds, 10, 0);
+	CGRect rect = baseRect;
+	
+	//rect.origin.x += 2;
+	//rect.origin.y += -22;
+	//rect.size.width = 220;
+	//lblTitle.frame = rect;
+		
+	tButton.frame = CGRectMake(280, 11, 30.0, 30.0);  
+	lButton.frame = CGRectMake(240, 11, 30.0, 30.0);  
+	
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	//selected the cell. Default to learning not teaching
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.textLabel.text;
@@ -36,11 +104,6 @@
     // Configure the view for the selected state
 }
 
-
-- (void)dealloc {
-	[fileName release];
-    [super dealloc];
-}
 
 
 @end
