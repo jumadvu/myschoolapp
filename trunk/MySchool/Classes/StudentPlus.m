@@ -52,7 +52,7 @@
 
 -(UIImage *)frontView {
 	NSString *mood = [NSString stringWithFormat:@"Happy"];
-	NSLog([self avatarImage]);
+	//NSLog([self avatarImage]);
 	NSString *imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
 	UIImage *image = [UIImage imageNamed:imageFile];
 	return image;
