@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>AB72E313112934CE00055DBE</string>
+						<string>AB72E331112B1E6000055DBE</string>
 						<key>history</key>
 						<array>
 							<string>AB4608A7111DE99300E9C445</string>
@@ -271,6 +271,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -308,9 +310,8 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>AB07F0161108F0CD00204AFE</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>AB07F25211098B2000204AFE</string>
-								<string>AB07F24F11098B1800204AFE</string>
-								<string>AB07F1B5110962C700204AFE</string>
+								<string>ABCAA67D1116B68000D3956F</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -319,13 +320,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>108</integer>
+									<integer>57</integer>
 									<integer>45</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 1268}, {276, 893}}</string>
+							<string>{{0, 356}, {276, 893}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -355,14 +356,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>baseViewController.m</string>
+								<string>WorksheetQuestion.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -370,11 +369,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>baseViewController.m</string>
+										<string>WorksheetQuestion.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AB72E312112934CE00055DBE</string>
+										<string>AB72E330112B1E6000055DBE</string>
 										<key>history</key>
 										<array>
 											<string>AB07F203110981A100204AFE</string>
@@ -423,7 +422,6 @@
 											<string>AB53B4D5112331950017AFAB</string>
 											<string>AB53B4D6112331950017AFAB</string>
 											<string>AB53B4D7112331950017AFAB</string>
-											<string>AB53B4D9112331950017AFAB</string>
 											<string>AB53B4DA112331950017AFAB</string>
 											<string>AB53B4DB112331950017AFAB</string>
 											<string>AB53B4DC112331950017AFAB</string>
@@ -466,7 +464,8 @@
 											<string>AB72E3001129341700055DBE</string>
 											<string>AB72E3011129341700055DBE</string>
 											<string>AB72E3021129341700055DBE</string>
-											<string>AB72E3031129341700055DBE</string>
+											<string>AB72E32F112B1E6000055DBE</string>
+											<string>AB53B4D9112331950017AFAB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -665,10 +664,10 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>AB7A164410FBBCC200902689</string>
 		<string>AB4608A5111DE99300E9C445</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>AB7A164410FBBCC200902689</string>
 		<string>/Users/ashley/iSchool/MastersProject/iPhone app/svn/trunk/MySchool/MySchool.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -688,14 +687,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>baseViewController.m</string>
+								<string>StudentPlus.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -712,6 +709,8 @@
 							<string>735pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -764,7 +763,7 @@
 			<key>WindowToolGUID</key>
 			<string>AB7A164410FBBCC200902689</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
