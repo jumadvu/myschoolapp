@@ -7,18 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Module;
+@class Chapter;
 
 
 @interface ClassroomHome : baseViewController {
 	IBOutlet UIButton *chalkboardButton;
 	IBOutlet UIButton *questionButton;
 	IBOutlet UIButton *worksheetsButton;
+	
+	Chapter *chapter;
 
 }
 
 @property (nonatomic, retain) UIButton *chalkboardButton;
 @property (nonatomic, retain) UIButton *questionButton;
 @property (nonatomic, retain) UIButton *worksheetsButton;
+@property (nonatomic, retain) Chapter *chapter;
 
 -(IBAction)toChalkboard;
 -(IBAction)toQuestion;

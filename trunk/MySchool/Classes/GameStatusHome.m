@@ -38,7 +38,7 @@
 }
 
 -(void)clickButton2 {
-	LessonsTaught *vc = [[[LessonsTaught alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	LessonsTaught *vc = [[[LessonsTaught alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
@@ -75,8 +75,10 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
 	[self setBackgroundColor];
+	[delegate.navCon setNavigationBarHidden:YES];
 
 }
 

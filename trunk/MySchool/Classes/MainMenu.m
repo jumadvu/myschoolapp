@@ -85,8 +85,11 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
 	[self setBackgroundColor];
+	[delegate.navCon setNavigationBarHidden:YES];
+
 }
 
 

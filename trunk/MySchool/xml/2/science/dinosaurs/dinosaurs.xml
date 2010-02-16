@@ -131,30 +131,181 @@
 				over time, these reptiles evolved to walk on two legs and become the very fist dinosaurs. these dinosaurs were small and fast, about the size of chickens. 
 				over time, these tiny predators become very successful hunters and were able to move all over Pangea. over millions of years, dinosaurs adapted to many different environments and evolved into the shapes we know today. some stayed small, others became huge. some adapted to walk on four legs and eat plants. 
 			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>All about fossils</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>The Triassic period</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>The Jurassic period</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>The Cretaceous Period</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>Dinosaur anatomy</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>Dinosaur society</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>Dinosaur food</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 		<chapter>
 			<title>The end of the dinosaurs</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 	</module>
 </myschool>

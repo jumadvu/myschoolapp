@@ -19,6 +19,7 @@
 @property (nonatomic, retain) UIButton *backButton;
 
 -(IBAction)toMainMenu;
+-(IBAction)raiseMenu:(UIButton*)sender;
 -(IBAction)goBack;
 -(void)setBackgroundColor;
 

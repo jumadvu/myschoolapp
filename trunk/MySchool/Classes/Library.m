@@ -5,7 +5,7 @@
 //  Created by Ashley Kayler on 2/9/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
-
+#import "MySchoolAppDelegate.h"
 #import "Library.h"
 #import "TBXML.h"
 #import "Module.h"
@@ -77,7 +77,33 @@
 	
 }
 
++(NSArray*)fetchModulesFromDBforGrade:(NSNumber*)gradeLevel {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSLog(@"fetching data from sql lite store");
+	//fetch data from the sql lite database
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	//finds all users who don't have parents (these are the parents)
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(title != nil)"];
+	[request setPredicate:predicate];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Module" inManagedObjectContext:delegate.managedObjectContext];
+	[request setEntity:entity];
+	
+	//set up the sort orderings
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:NO];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];
+	[sortDescriptors release];
+	[sortDescriptor release];
+	
+	//fetch the data
+	NSError *error;
+	NSMutableArray *mutableFetchResults = [[delegate.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	return (NSArray*)mutableFetchResults;
+	
+}
+
 +(void)addXMLModule:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc {
+	NSLog(@"Adding xml module %@", xmlFile);
 	Module *moduleMO = (Module *)[NSEntityDescription insertNewObjectForEntityForName:@"Module" inManagedObjectContext:moc];
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:xmlFile fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
@@ -86,16 +112,17 @@
 	[moduleMO setGradeLevel:[NSNumber numberWithInt:[[tbxml textForElement:[tbxml childElementNamed:@"gradeLevel" parentElement:module]] intValue]]];
 	[moduleMO setSubject:[tbxml textForElement:[tbxml childElementNamed:@"superSubject" parentElement:module]]];
 	
+	
 	//grab each chapter
 	TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
 	while (chapter!=nil){
 		Chapter *chapterMO = (Chapter *)[NSEntityDescription insertNewObjectForEntityForName:@"Chapter" inManagedObjectContext:moc];
 		Lecture *lectureMO = (Lecture *)[NSEntityDescription insertNewObjectForEntityForName:@"Lecture" inManagedObjectContext:moc];
 		TBXMLElement * lecture=[tbxml childElementNamed:@"lecture" parentElement:chapter];
+		[lectureMO setChapter:chapterMO];
 		[lectureMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:lecture]]];
 		[lectureMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:lecture]]];
-		[lectureMO setChapter:chapterMO];
-
+		
 		//get the keyword sets
 		TBXMLElement * keywordSet=[tbxml childElementNamed:@"keywordSet" parentElement:chapter];		
 		while (keywordSet!=nil) {
