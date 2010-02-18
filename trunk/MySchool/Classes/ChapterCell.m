@@ -9,7 +9,7 @@
 #import "ChapterCell.h"
 #import "ChapterHome.h"
 #import "MySchoolAppDelegate.h"
-#import "ChalkboardHome.h"
+#import "ClassroomHome.h"
 
 
 @implementation ChapterCell
@@ -20,20 +20,23 @@
 @synthesize lButton;
 
 - (void)dealloc {
-	//[lblTitle release];
-	//[tButton release]; //don't need to release because it is created with an autorelease??
+	//[lblTitle release];//not currently using this
+	//[tButton release]; //don't need to release because it is created with an autorelease
 	//[lButton release];
 	[fileName release];
     [super dealloc];
 }
 
 -(void)teachButtonSelected:(id)sender {
+	//go to classroom
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ChalkboardHome *vc = [[[ChalkboardHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	//[delegate setCurrentChapter:];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
 -(void)learnButtonSelected:(id)sender {
+	//go to learn interaction
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.textLabel.text;
