@@ -12,6 +12,7 @@
 #import "ModulePlus.h"
 #import "Library.h"
 #import "StudentHome.h"
+#import "ClassroomHome.h"
 
 @implementation LessonsTaught
 
@@ -26,6 +27,8 @@
 
 -(void)goBack {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon setNavigationBarHidden:YES];
+
 	[delegate.navCon popViewControllerAnimated:YES];		
 	
 }
@@ -39,6 +42,11 @@
 
 	[tableView setBackgroundColor:[UIColor clearColor]];
 	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
+	//if there are no modules in the library, add the dinosaur module
+	if ([modules count] == 0) {
+		[Library addXMLModule:@"dinosaurs" toDatabaseContext:delegate.managedObjectContext];
+		modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];		
+	}
 }
 
 
@@ -93,8 +101,10 @@
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	StudentHome *vc = [[[StudentHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	[delegate.navCon setNavigationBarHidden:YES];
+	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	//vc.student = [students objectAtIndex:indexPath.row];
+	[delegate setCurrentChapter:[[[modules objectAtIndex:indexPath.section] chaptersArray] objectAtIndex:indexPath.row]];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 

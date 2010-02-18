@@ -21,8 +21,10 @@
 @synthesize managedObjectContext;
 @synthesize persistentStoreCoordinator;
 @synthesize teacher;
+@synthesize currentChapter;
 
 - (void)dealloc {
+	[currentChapter release];
     [managedObjectContext release];
     [managedObjectModel release];
     [persistentStoreCoordinator release];

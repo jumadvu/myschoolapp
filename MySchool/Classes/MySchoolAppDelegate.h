@@ -11,6 +11,7 @@
 
 @class UserMO;
 @class User;
+@class Chapter;
 
 @interface MySchoolAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
@@ -20,12 +21,14 @@
     NSManagedObjectModel *managedObjectModel;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
 	User *teacher;
+	Chapter *currentChapter;
 }
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navCon;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) NSMutableArray *users;
 @property (nonatomic, retain) User *teacher;
+@property (nonatomic, retain) Chapter *currentChapter;
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
