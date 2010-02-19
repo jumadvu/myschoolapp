@@ -115,6 +115,7 @@
 	
 	//grab each chapter
 	TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
+	int chapterCount = 0;
 	while (chapter!=nil){
 		Chapter *chapterMO = (Chapter *)[NSEntityDescription insertNewObjectForEntityForName:@"Chapter" inManagedObjectContext:moc];
 		Lecture *lectureMO = (Lecture *)[NSEntityDescription insertNewObjectForEntityForName:@"Lecture" inManagedObjectContext:moc];
@@ -124,19 +125,26 @@
 		[lectureMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:lecture]]];
 		
 		//get the keyword sets
-		TBXMLElement * keywordSet=[tbxml childElementNamed:@"keywordSet" parentElement:chapter];		
+		TBXMLElement * keywordSet=[tbxml childElementNamed:@"keywordSet" parentElement:lecture];
+		int keywordSetCount = 0;
 		while (keywordSet!=nil) {
 			KeywordSet *keySetMO = (KeywordSet *)[NSEntityDescription insertNewObjectForEntityForName:@"KeywordSet" inManagedObjectContext:moc];
-			[keySetMO setCorrectWord:[tbxml valueOfAttributeNamed:@"word" forElement:keywordSet]];
+			Keyword *awordMO = (Keyword *)[NSEntityDescription insertNewObjectForEntityForName:@"Keyword" inManagedObjectContext:moc];
+			[awordMO setWord:[tbxml valueOfAttributeNamed:@"word" forElement:keywordSet]];
+			[awordMO setCorrect:[NSNumber numberWithInt:1]];
+			[keySetMO addWordsObject:awordMO];
 			[keySetMO setLecture:lectureMO];
+			[keySetMO setOrder:[NSNumber numberWithInt:keywordSetCount]];
 			TBXMLElement * word=[tbxml childElementNamed:@"word" parentElement:keywordSet];		
 			while (word!=nil) {
 				Keyword *wordMO = (Keyword *)[NSEntityDescription insertNewObjectForEntityForName:@"Keyword" inManagedObjectContext:moc];
-				[wordMO setWord:[tbxml textForElement:[tbxml childElementNamed:@"word" parentElement:keywordSet]]];
+				[wordMO setCorrect:[NSNumber numberWithInt:0]];
+				[wordMO setWord:[tbxml textForElement:word]];
 				[keySetMO addWordsObject:wordMO];
 				word = [tbxml nextSiblingNamed:@"word" searchFromElement:word];
 			}
 			keywordSet = [tbxml nextSiblingNamed:@"keywordSet" searchFromElement:keywordSet];
+			keywordSetCount++;
 		}
 		
 		//grab the student questions
@@ -157,12 +165,14 @@
 			studentQ = [tbxml nextSiblingNamed:@"studentQuestion" searchFromElement:studentQ];
 		}
 		
+		[chapterMO setOrder:[NSNumber numberWithInt:chapterCount]];
 		
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
 		[chapterMO setOverview:[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]]];
 		[chapterMO setModule:moduleMO];
 		[chapterMO setLecture:lectureMO];
 		chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
+		 chapterCount++;
 	}
 	[tbxml release];
 	

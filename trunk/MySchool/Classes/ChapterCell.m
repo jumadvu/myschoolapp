@@ -78,8 +78,8 @@
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	
-	CGRect baseRect = CGRectInset(self.contentView.bounds, 10, 0);
-	CGRect rect = baseRect;
+	//CGRect baseRect = CGRectInset(self.contentView.bounds, 10, 0);
+	//CGRect rect = baseRect;
 	
 	//rect.origin.x += 2;
 	//rect.origin.y += -22;

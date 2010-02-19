@@ -1,26 +1,26 @@
 //
-//  ModulePlus.m
+//  LecturePlus.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/14/10.
+//  Created by Ashley Kayler on 2/18/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
-#import "ModulePlus.h"
+#import "LecturePlus.h"
 
 
-@implementation Module (ModulePlus)
+@implementation Lecture (LecturePlus)
 
--(NSArray*)chaptersArray {
+-(NSArray*)keywordSetArray {
 	
-	NSArray *array = [[NSArray alloc] initWithArray:[self.chapters allObjects]];
+	NSArray *array = [[NSArray alloc] initWithArray:[self.keywordSets allObjects]];
 	NSSortDescriptor *descriptor =
     [[[NSSortDescriptor alloc] initWithKey:@"order"
 								 ascending:YES] autorelease];
 	
 	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
 	NSArray *sortedArray = [array sortedArrayUsingDescriptors:descriptors];
-	
+	NSLog(@"how many keywords in set %d", [array count]);
 	return sortedArray;
 }
 
