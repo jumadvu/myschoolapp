@@ -2,22 +2,22 @@
 //  KeywordSet.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/2/10.
+//  Created by Ashley Kayler on 2/18/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
 #import <CoreData/CoreData.h>
 
-@class Lecture;
 @class Keyword;
+@class Lecture;
 
 @interface KeywordSet :  NSManagedObject  
 {
 }
 
-@property (nonatomic, retain) Lecture * lecture;
-@property (nonatomic, retain) NSString * correctWord;
+@property (nonatomic, retain) NSNumber * order;
 @property (nonatomic, retain) NSSet* words;
+@property (nonatomic, retain) Lecture * lecture;
 
 @end
 

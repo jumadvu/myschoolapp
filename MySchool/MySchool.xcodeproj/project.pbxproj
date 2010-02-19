@@ -30,7 +30,6 @@
 		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
 		AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26811098B7600204AFE /* LoungeHome.xib */; };
 		AB2054D611191E2B00ED8E61 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054B511191E2B00ED8E61 /* User.m */; };
-		AB2054D711191E2B00ED8E61 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054B711191E2B00ED8E61 /* Chapter.m */; };
 		AB2054D811191E2B00ED8E61 /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054B911191E2B00ED8E61 /* CompletedWorksheet.m */; };
 		AB2054D911191E2B00ED8E61 /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054BB11191E2B00ED8E61 /* WorksheetAnswer.m */; };
 		AB2054DA11191E2B00ED8E61 /* StudentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054BD11191E2B00ED8E61 /* StudentQuestion.m */; };
@@ -42,7 +41,6 @@
 		AB2054E111191E2B00ED8E61 /* Worksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CB11191E2B00ED8E61 /* Worksheet.m */; };
 		AB2054E211191E2B00ED8E61 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CD11191E2B00ED8E61 /* Article.m */; };
 		AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CF11191E2B00ED8E61 /* UserAwards.m */; };
-		AB2054E411191E2B00ED8E61 /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D111191E2B00ED8E61 /* KeywordSet.m */; };
 		AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */; };
 		AB26205A11121CEE005D02F4 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205811121CEE005D02F4 /* man.png */; };
 		AB26205B11121CEE005D02F4 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205911121CEE005D02F4 /* woman.png */; };
@@ -77,7 +75,6 @@
 		AB53B3711121EC120017AFAB /* sustainability.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3691121EC120017AFAB /* sustainability.xml */; };
 		AB53B3721121EC120017AFAB /* 2ndGradeModules.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B36E1121EC120017AFAB /* 2ndGradeModules.xml */; };
 		AB53B3791121F39D0017AFAB /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = AB53B3781121F39D0017AFAB /* Library.m */; };
-		AB53B44311229EDF0017AFAB /* Keyword.m in Sources */ = {isa = PBXBuildFile; fileRef = AB53B44211229EDF0017AFAB /* Keyword.m */; };
 		AB53B46E112314840017AFAB /* Boy1Aha.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B45E112314840017AFAB /* Boy1Aha.png */; };
 		AB53B46F112314840017AFAB /* Boy1Confused.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B45F112314840017AFAB /* Boy1Confused.png */; };
 		AB53B470112314840017AFAB /* Boy1Happy.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B460112314840017AFAB /* Boy1Happy.png */; };
@@ -96,6 +93,10 @@
 		AB53B47D112314840017AFAB /* Girl2Unhappy.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B46D112314840017AFAB /* Girl2Unhappy.png */; };
 		AB53B51C112349DE0017AFAB /* learn.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B51A112349DE0017AFAB /* learn.png */; };
 		AB53B51D112349DE0017AFAB /* teach.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B51B112349DE0017AFAB /* teach.png */; };
+		AB61202B112E06A600F31B72 /* LecturePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61202A112E06A600F31B72 /* LecturePlus.m */; };
+		AB612032112E0B1000F31B72 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61202F112E0B1000F31B72 /* Chapter.m */; };
+		AB61204F112E1EA500F31B72 /* Keyword.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61204E112E1EA500F31B72 /* Keyword.m */; };
+		AB612056112E1FDA00F31B72 /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB612055112E1FDA00F31B72 /* KeywordSet.m */; };
 		AB72E20F1128E78A00055DBE /* ModulePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB72E20E1128E78A00055DBE /* ModulePlus.m */; };
 		AB72E23C1128FCBA00055DBE /* LessonsTaught.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB72E23B1128FCBA00055DBE /* LessonsTaught.xib */; };
 		AB72E2EC11292B8B00055DBE /* mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = AB72E2EB11292B8B00055DBE /* mainmenu.png */; };
@@ -155,8 +156,6 @@
 		AB07F26811098B7600204AFE /* LoungeHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoungeHome.xib; sourceTree = "<group>"; };
 		AB2054B411191E2B00ED8E61 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		AB2054B511191E2B00ED8E61 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		AB2054B611191E2B00ED8E61 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
-		AB2054B711191E2B00ED8E61 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
 		AB2054B811191E2B00ED8E61 /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
 		AB2054B911191E2B00ED8E61 /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
 		AB2054BA11191E2B00ED8E61 /* WorksheetAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetAnswer.h; sourceTree = "<group>"; };
@@ -179,8 +178,6 @@
 		AB2054CD11191E2B00ED8E61 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		AB2054CE11191E2B00ED8E61 /* UserAwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAwards.h; sourceTree = "<group>"; };
 		AB2054CF11191E2B00ED8E61 /* UserAwards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAwards.m; sourceTree = "<group>"; };
-		AB2054D011191E2B00ED8E61 /* KeywordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSet.h; sourceTree = "<group>"; };
-		AB2054D111191E2B00ED8E61 /* KeywordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSet.m; sourceTree = "<group>"; };
 		AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetQuestion.h; sourceTree = "<group>"; };
 		AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetQuestion.m; sourceTree = "<group>"; };
 		AB26205811121CEE005D02F4 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = Classes/man.png; sourceTree = "<group>"; };
@@ -233,8 +230,6 @@
 		AB53B36E1121EC120017AFAB /* 2ndGradeModules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2ndGradeModules.xml; sourceTree = "<group>"; };
 		AB53B3771121F39D0017AFAB /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		AB53B3781121F39D0017AFAB /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
-		AB53B44111229EDF0017AFAB /* Keyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyword.h; sourceTree = "<group>"; };
-		AB53B44211229EDF0017AFAB /* Keyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyword.m; sourceTree = "<group>"; };
 		AB53B45E112314840017AFAB /* Boy1Aha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy1Aha.png; sourceTree = "<group>"; };
 		AB53B45F112314840017AFAB /* Boy1Confused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy1Confused.png; sourceTree = "<group>"; };
 		AB53B460112314840017AFAB /* Boy1Happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy1Happy.png; sourceTree = "<group>"; };
@@ -253,6 +248,14 @@
 		AB53B46D112314840017AFAB /* Girl2Unhappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl2Unhappy.png; sourceTree = "<group>"; };
 		AB53B51A112349DE0017AFAB /* learn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = learn.png; sourceTree = "<group>"; };
 		AB53B51B112349DE0017AFAB /* teach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teach.png; sourceTree = "<group>"; };
+		AB612029112E06A600F31B72 /* LecturePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LecturePlus.h; sourceTree = "<group>"; };
+		AB61202A112E06A600F31B72 /* LecturePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LecturePlus.m; sourceTree = "<group>"; };
+		AB61202E112E0B1000F31B72 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		AB61202F112E0B1000F31B72 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		AB61204D112E1EA500F31B72 /* Keyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyword.h; sourceTree = "<group>"; };
+		AB61204E112E1EA500F31B72 /* Keyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyword.m; sourceTree = "<group>"; };
+		AB612054112E1FDA00F31B72 /* KeywordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSet.h; sourceTree = "<group>"; };
+		AB612055112E1FDA00F31B72 /* KeywordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSet.m; sourceTree = "<group>"; };
 		AB72E20D1128E78A00055DBE /* ModulePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulePlus.h; sourceTree = "<group>"; };
 		AB72E20E1128E78A00055DBE /* ModulePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulePlus.m; sourceTree = "<group>"; };
 		AB72E23B1128FCBA00055DBE /* LessonsTaught.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonsTaught.xib; sourceTree = "<group>"; };
@@ -387,16 +390,18 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AB612054112E1FDA00F31B72 /* KeywordSet.h */,
+				AB612055112E1FDA00F31B72 /* KeywordSet.m */,
+				AB61204D112E1EA500F31B72 /* Keyword.h */,
+				AB61204E112E1EA500F31B72 /* Keyword.m */,
+				AB61202E112E0B1000F31B72 /* Chapter.h */,
+				AB61202F112E0B1000F31B72 /* Chapter.m */,
 				AB72E322112B1E1E00055DBE /* UserPlus.h */,
 				AB72E323112B1E1E00055DBE /* UserPlus.m */,
-				AB53B44111229EDF0017AFAB /* Keyword.h */,
-				AB53B44211229EDF0017AFAB /* Keyword.m */,
 				AB4607EC111CEE6B00E9C445 /* Student.h */,
 				AB4607ED111CEE6B00E9C445 /* Student.m */,
 				AB2054B411191E2B00ED8E61 /* User.h */,
 				AB2054B511191E2B00ED8E61 /* User.m */,
-				AB2054B611191E2B00ED8E61 /* Chapter.h */,
-				AB2054B711191E2B00ED8E61 /* Chapter.m */,
 				AB2054B811191E2B00ED8E61 /* CompletedWorksheet.h */,
 				AB2054B911191E2B00ED8E61 /* CompletedWorksheet.m */,
 				AB2054BA11191E2B00ED8E61 /* WorksheetAnswer.h */,
@@ -421,8 +426,6 @@
 				AB2054CD11191E2B00ED8E61 /* Article.m */,
 				AB2054CE11191E2B00ED8E61 /* UserAwards.h */,
 				AB2054CF11191E2B00ED8E61 /* UserAwards.m */,
-				AB2054D011191E2B00ED8E61 /* KeywordSet.h */,
-				AB2054D111191E2B00ED8E61 /* KeywordSet.m */,
 				AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */,
 				AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */,
 				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
@@ -430,6 +433,8 @@
 				AB4607E8111CEA0A00E9C445 /* StudentPlus.m */,
 				AB72E20D1128E78A00055DBE /* ModulePlus.h */,
 				AB72E20E1128E78A00055DBE /* ModulePlus.m */,
+				AB612029112E06A600F31B72 /* LecturePlus.h */,
+				AB61202A112E06A600F31B72 /* LecturePlus.m */,
 			);
 			name = Model;
 			path = Classes;
@@ -810,7 +815,6 @@
 				AB388B15110FEB5000217E8F /* StudentHome.m in Sources */,
 				ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */,
 				AB2054D611191E2B00ED8E61 /* User.m in Sources */,
-				AB2054D711191E2B00ED8E61 /* Chapter.m in Sources */,
 				AB2054D811191E2B00ED8E61 /* CompletedWorksheet.m in Sources */,
 				AB2054D911191E2B00ED8E61 /* WorksheetAnswer.m in Sources */,
 				AB2054DA11191E2B00ED8E61 /* StudentQuestion.m in Sources */,
@@ -822,7 +826,6 @@
 				AB2054E111191E2B00ED8E61 /* Worksheet.m in Sources */,
 				AB2054E211191E2B00ED8E61 /* Article.m in Sources */,
 				AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */,
-				AB2054E411191E2B00ED8E61 /* KeywordSet.m in Sources */,
 				AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */,
 				F50B4815111A1356003231FB /* NSDataAdditions.m in Sources */,
 				F50B4818111A1368003231FB /* TBXML.m in Sources */,
@@ -832,9 +835,12 @@
 				AB4607E9111CEA0A00E9C445 /* StudentPlus.m in Sources */,
 				AB4607EE111CEE6B00E9C445 /* Student.m in Sources */,
 				AB53B3791121F39D0017AFAB /* Library.m in Sources */,
-				AB53B44311229EDF0017AFAB /* Keyword.m in Sources */,
 				AB72E20F1128E78A00055DBE /* ModulePlus.m in Sources */,
 				AB72E324112B1E1E00055DBE /* UserPlus.m in Sources */,
+				AB61202B112E06A600F31B72 /* LecturePlus.m in Sources */,
+				AB612032112E0B1000F31B72 /* Chapter.m in Sources */,
+				AB61204F112E1EA500F31B72 /* Keyword.m in Sources */,
+				AB612056112E1FDA00F31B72 /* KeywordSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
