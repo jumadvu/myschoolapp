@@ -11,7 +11,7 @@
 @class Chapter;
 
 
-@interface ClassroomHome : baseViewController <UITextViewDelegate, UIActionSheetDelegate, UIScrollViewDelegate> {
+@interface ClassroomHome : baseViewController <UIActionSheetDelegate, UIScrollViewDelegate> {
 	IBOutlet UIButton *chalkboardButton;
 	IBOutlet UIButton *startButton;
 	IBOutlet UIButton *faster;
@@ -39,13 +39,16 @@
 	
 	UIImage *greenButton;
 	UIImage *redButton;
-
+	UIButton *currentButton;
+	
 	NSArray *students;
 	
 	int secondsRemaining;
 	float counter;
 	int scrollSpeed;
 	
+	int bonusPoints;
+	BOOL completedLesson;
 	
 	Chapter *chapter;
 
@@ -54,6 +57,7 @@
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSTimer *repeatingTimer;
 @property (nonatomic, retain) UILabel *timerLabel;
+@property (nonatomic, retain) UIButton *currentButton;
 @property (nonatomic) BOOL paused;
 @property (nonatomic) BOOL scrollPaused;
 @property (nonatomic) BOOL start;
@@ -61,6 +65,8 @@
 @property (nonatomic) float counter;
 @property (nonatomic) int scrollSpeed;
 @property (nonatomic) int keywordIndex;
+@property (nonatomic) int bonusPoints;
+@property (nonatomic) BOOL completedLesson;
 
 @property (nonatomic, retain) UIImage *greenButton;
 @property (nonatomic, retain) UIImage *redButton;
@@ -89,5 +95,7 @@
 -(IBAction)scrollSpeedPlus;
 -(IBAction)scrollSpeedMinus;
 -(void)loadTextIntoScrollView;
+-(void)clickedButton:(UIButton *)button;
+-(void)lectureOver;
 
 @end

@@ -15,6 +15,8 @@
 	IBOutlet UIButton *button3;
 	IBOutlet UIButton *button4;
 	IBOutlet UIButton *button5;
+	IBOutlet UILabel *points;
+	IBOutlet UILabel *gradeLevel;
 }
 
 @property (nonatomic, retain) UIButton *button1;
@@ -22,6 +24,8 @@
 @property (nonatomic, retain) UIButton *button3;
 @property (nonatomic, retain) UIButton *button4;
 @property (nonatomic, retain) UIButton *button5;
+@property (nonatomic, retain) UILabel *points;
+@property (nonatomic, retain) UILabel *gradeLevel;
 
 -(IBAction)clickButton1;
 -(IBAction)clickButton2;

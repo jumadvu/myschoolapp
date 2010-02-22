@@ -13,6 +13,7 @@
 #import "LessonsTaught.h"
 #import "StudentsList.h"
 #import "NewGameHome.h"
+#import "User.h"
 
 @implementation GameStatusHome
 
@@ -21,8 +22,12 @@
 @synthesize button3;
 @synthesize button4;
 @synthesize button5;
+@synthesize points;
+@synthesize gradeLevel;
 
 - (void)dealloc {
+	[gradeLevel release];
+	[points release];
 	[button1 release];
 	[button2 release];
 	[button3 release];
@@ -82,6 +87,15 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (delegate.teacher.totalPoints == nil) {
+		[self.points setText:[NSString stringWithFormat:@"Points Earned: 0"]];		
+	} else {
+		[self.points setText:[NSString stringWithFormat:@"Points Earned: %d", [delegate.teacher.totalPoints intValue]]];
+	}
+	[self.gradeLevel setText:[NSString stringWithFormat:@"Grade Level %d", [delegate.teacher.gradeLevel intValue]]];
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.

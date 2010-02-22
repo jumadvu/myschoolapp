@@ -21,6 +21,8 @@
 #import "LecturePlus.h"
 #import "Keyword.h"
 #import "KeywordSet.h"
+#import "MainMenu.h"
+#import "CompletedLesson.h"
 
 @implementation ClassroomHome
 
@@ -49,8 +51,12 @@
 @synthesize scrollPaused;
 @synthesize keywordIndex;
 @synthesize scrollView;
+@synthesize bonusPoints;
+@synthesize completedLesson;
+@synthesize currentButton;
 
 - (void)dealloc {
+	[currentButton release];
 	[scrollView release];
 	[repeatingTimer release];
 	[timerLabel release];
@@ -69,140 +75,7 @@
     [super dealloc];
 }
 
--(IBAction)startEvent:(id)sender{
-	NSLog(@"starting lecture");
-	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];	
-	
-	if (start) {
-		start = NO;
-		scrollPaused = NO;
-		//CGPoint scrollPoint = lectureText.contentOffset;
-		//scrollPoint.y= scrollPoint.y-80;
-		//[lectureText setContentOffset:scrollPoint animated:NO];
-	}
-	if (paused) {
-		//start the timer
-		[startButton setTitle:@"Pause" forState:UIControlStateNormal];
-		[startButton setBackgroundImage:redButton forState:UIControlStateNormal];
-		paused = NO;
-		scrollPaused = NO;
-	} else {
-		//pause the timer
-		[startButton setTitle:@"Continue" forState:UIControlStateNormal];
-		[startButton setBackgroundImage:greenButton forState:UIControlStateNormal];
-		paused = YES;
-		scrollPaused = YES;
-	}
-	
-}
-
-- (void)timerFireMethod:(NSTimer*)theTimer {
-	if (!scrollPaused) {
-		CGPoint scrollPoint = scrollView.contentOffset;
-		scrollPoint.y= scrollPoint.y+scrollSpeed;
-		[scrollView setContentOffset:scrollPoint animated:YES];		
-	}
-	if (!paused) {
-		//find the new position for the scrolling text
-		counter = counter - .2;
-		
-		if (counter <= 0.0) {
-			secondsRemaining --;
-			counter = 1.0;
-		}
-		self.timerLabel.text = [NSString stringWithFormat:@"%d",secondsRemaining];
-	}
-	if (secondsRemaining <= 0) {
-		paused = YES;
-		[self timeRanOut];
-	}
-}
-
-- (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	NSLog(@"web view click");
-	return NO;
-}
-
-/*
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-	NSLog(@"Web page failed to open");
-}
-*/
-
-
-- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
-	if (!paused) {
-		scrollPaused = YES;
-		NSLog(@"should begin editing");
-		NSLog(@"%d %d", textView.selectedRange.length, textView.selectedRange.location);
-		//if there is a keyword on screen, go to the highest one and display it
-		if (keywordIndex <= [[chapter.lecture keywordSetArray] count]) {
-			NSArray *words = [[[[chapter.lecture keywordSetArray] objectAtIndex:keywordIndex] words] allObjects];
-			Keyword *choice1 = [words objectAtIndex:0];
-			Keyword *choice2 = [words objectAtIndex:1];
-			Keyword *choice3 = [words objectAtIndex:2];
-			UIActionSheet *actionSheet = [[UIActionSheet alloc]
-										  initWithTitle:@"Choose one!"
-										  delegate:self
-										  cancelButtonTitle:nil
-										  destructiveButtonTitle:nil
-										  otherButtonTitles:choice1.word, choice2.word, choice3.word, nil];
-			[actionSheet showInView:self.view];
-			[actionSheet release];
-		}
-	}
-	return NO;
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	NSLog(@"%d",buttonIndex);
-	keywordIndex++;
-	scrollPaused = NO;
-	if (buttonIndex == 0) {
-		//correct
-		
-		
-	} else {
-		//incorrect
-	}
-	
-}
-
--(void)timeRanOut {
-	[self.repeatingTimer invalidate];
-}
-
--(void)scrollSpeedPlus{
-	scrollSpeed ++;
-}
-
--(void)scrollSpeedMinus{
-	scrollSpeed --;
-}
-
--(void)toChalkboard {
-	//go back to previous page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ChalkboardHome *vc = [[[ChalkboardHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
--(void)toQuestion {
-	//go back to previous page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
--(void)toWorksheets {
-	//go back to previous page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	PassOutWorksheets *vc = [[[PassOutWorksheets alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
-
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
@@ -210,20 +83,15 @@
     return self;
 }
 
-
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setBackgroundColor];
-	[self.lectureText setDelegate:self];
 	
 	greenButton = [UIImage imageNamed:@"green_button.png"];
 	redButton = [UIImage imageNamed:@"red_button.png"];
-
+	
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	//[startButton setDelegate:self];
-	//[startButton addTarget:self action:@selector(startEvent:) forControlEvents:UIControlEventTouchUpInside];  
 	[startButton setTitle:@"Begin" forState:UIControlStateNormal];
 	
 	[self setStudents:[delegate.teacher.students allObjects]];
@@ -257,43 +125,27 @@
 	counter = 1;
 	start = YES;
 	keywordIndex = 0;
+	bonusPoints = 0;
+	completedLesson = NO;
 	
 	lectureText = [[UITextView alloc] init];
-	CGRect lectureTextFrame = CGRectMake(0, 10, 200, 150.0);
+	CGRect lectureTextFrame = CGRectMake(0, 0, 200, 140.0);
 	lectureText.frame = lectureTextFrame;
 	lectureText.backgroundColor = [UIColor clearColor];
-	lectureText.font = [UIFont systemFontOfSize:18];
+	lectureText.font = [UIFont systemFontOfSize:17];
 	//add opening remarks
-	[self.lectureText setText:[NSString stringWithFormat:@"Hello Class!\rToday we are going to talk about...\r%@\r\r\r", self.chapter.title]];
+	[self.lectureText setText:[NSString stringWithFormat:@"Hello Class!\rToday we are going to talk about\r%@", self.chapter.title]];
 	[self.lectureText setEditable:NO];
 	[scrollView addSubview:self.lectureText];
+	scrollView.showsVerticalScrollIndicator = YES;
 	//add main lecture text
 	[self loadTextIntoScrollView];
 }
 
 -(void)loadTextIntoScrollView {
-	/*
-	CGSize theSize = [text sizeWithFont:[UIFont systemFontOfSize:17.0f] constrainedToSize:CGSizeMake(310.0f, FLT_MAX) lineBreakMode:UILineBreakModeWordWrap];
-	NSLog(@"calculated size for %@: %f, %f",text, theSize.width, theSize.height);
+	//create a UILabel for each regular word in the text and a UIButton for each keyword
+	//add these labels and buttons to the scrollview
 	
-	label = (UILabel *)[cell viewWithTag:3];
-	label.text = [NSString stringWithFormat:@"%@", text];
-	label.lineBreakMode = UILineBreakModeWordWrap;
-	label.font = [UIFont systemFontOfSize:17.0f];
-	CGSize labelSize;   
-	labelSize = label.frame.size;
-	NSLog(@"label size before resizing: %f, %f", labelSize.width, labelSize.height);
-	[label sizeToFit];
-	labelSize = label.frame.size;
-	NSLog(@"label size after resizing: %f, %f for text %@", labelSize.width, labelSize.height,text);
-	
-	CGRect labelFrame = label.frame;
-	labelFrame.size.width = 310;
-	label.frame = labelFrame;
-	[label sizeToFit];
-	*/
-	
-	//create a UILabel for each word in the text.
 	scrollView.backgroundColor = [UIColor clearColor];
 	NSMutableArray *words = [[NSMutableArray alloc] init];
 	NSArray *lines = [chapter.lecture.text componentsSeparatedByString:@"\n"];
@@ -305,49 +157,254 @@
 	}
 	NSString *word;
 	int x = 0;
-	int y = 150;
+	int y = 140;
 	int spacer = 5;
 	NSEnumerator *wordEnumerator = [words objectEnumerator];
 	UIColor *labelColor;
 	labelColor = [UIColor clearColor]; //default
-
+	int tagCount = 0;
+	BOOL isButton = NO;
 	while (word = [wordEnumerator nextObject]) {
 		//turn on label coloring
-		UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
 		if ([[word substringToIndex:1] isEqualToString:@"["]) {
-			labelColor = [UIColor yellowColor];
-		}
-		
-		label.backgroundColor = labelColor;
-		label.font = [UIFont systemFontOfSize:16];
-		label.text = word;
-		
-		CGRect labelFrame = CGRectMake(x, y, 240, 30.0);
-		label.frame = labelFrame;
-		[label sizeToFit];
-		x = x + label.frame.size.width + spacer;
-		
-		if (x > (scrollView.frame.size.width-10)) {
-			x = 0;
-			y = y + 30;
-			//move label to next row
-			CGRect newLabelFrame = CGRectMake(x, y, 240, 30.0);
-			label.frame = newLabelFrame;
+			NSMutableString *buttonWord = (NSMutableString*)[word stringByReplacingOccurrencesOfString:@"[" withString:@"  "];
+			while ([word rangeOfString:@"]"].location == NSNotFound) {
+				word = [wordEnumerator nextObject];
+				[buttonWord appendFormat:@" %@", word];
+			}			
+			buttonWord = (NSMutableString*)[buttonWord stringByReplacingOccurrencesOfString:@"]" withString:@"  "];
+
+			UIButton *memberButt = [UIButton buttonWithType:UIButtonTypeCustom]; 
+			memberButt.titleLabel.font = [UIFont boldSystemFontOfSize:17.0];
+			memberButt.backgroundColor = [UIColor redColor];
+			[memberButt setTitle:buttonWord forState:UIControlStateNormal];
+			memberButt.tag = tagCount;
+			[scrollView addSubview:memberButt];
+			[memberButt addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
+			memberButt.frame = CGRectMake(x, y, 145.0, 30.0);  
+			[memberButt sizeToFit];
+			x = x + memberButt.frame.size.width + spacer;
+			if (x > (scrollView.frame.size.width-10)) {
+				x = 0;
+				y = y + 30;
+				//move label to next row
+				CGRect newFrame = CGRectMake(x, y, 140, 30.0);
+				memberButt.frame = newFrame;
+				[memberButt sizeToFit];
+				x = x + memberButt.frame.size.width + spacer;
+			}
+			tagCount++;
+
+		} else {
+			UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
+			label.backgroundColor = [UIColor clearColor];
+			label.font = [UIFont systemFontOfSize:17];
+			label.text = word;
+			
+			CGRect labelFrame = CGRectMake(x, y, 240, 30.0);
+			label.frame = labelFrame;
 			[label sizeToFit];
 			x = x + label.frame.size.width + spacer;
+			
+			if (x > (scrollView.frame.size.width-10)) {
+				x = 0;
+				y = y + 30;
+				//move label to next row
+				CGRect newLabelFrame = CGRectMake(x, y, 240, 30.0);
+				label.frame = newLabelFrame;
+				[label sizeToFit];
+				x = x + label.frame.size.width + spacer;
+			}
+			[scrollView addSubview:label];
+			[label release];
 		}
-		
-		NSLog(@"%@ %d", word, label.frame.size.width);
-		[scrollView addSubview:label];
-		//turn off label coloring
+		NSLog(@"%@ isButton: %d", word, isButton);
+		/*
 		if ([word rangeOfString:@"]"].location != NSNotFound) {
-			labelColor = [UIColor clearColor];
+			isButton = NO;
 		}
-		
-		[label release];
+		*/
 	}
 	[scrollView setContentSize:CGSizeMake(200, y+30)];
+	
+}
 
+-(IBAction)startEvent:(id)sender{
+	NSLog(@"starting lecture");
+	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];	
+	
+	if (start) {
+		start = NO;
+		scrollPaused = NO;
+		//CGPoint scrollPoint = scrollView.contentOffset;
+		//scrollPoint.y= scrollPoint.y+80;
+		//[scrollView setContentOffset:scrollPoint animated:YES];
+	}
+	if (paused) {
+		//start the timer
+		[startButton setTitle:@"Pause" forState:UIControlStateNormal];
+		[startButton setBackgroundImage:redButton forState:UIControlStateNormal];
+		paused = NO;
+		scrollPaused = NO;
+	} else {
+		//pause the timer
+		[startButton setTitle:@"Continue" forState:UIControlStateNormal];
+		[startButton setBackgroundImage:greenButton forState:UIControlStateNormal];
+		paused = YES;
+		scrollPaused = YES;
+	}
+	
+}
+
+-(void)lectureOver {
+	NSLog(@"lecture over");
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];	
+	[self.repeatingTimer invalidate];
+	if (completedLesson) {
+		//save this lecture to completed lectures list for this teacher
+		CompletedLesson *compLesson = (CompletedLesson *)[NSEntityDescription insertNewObjectForEntityForName:@"CompletedLesson" inManagedObjectContext:delegate.managedObjectContext];
+		[compLesson setPoints:[NSNumber numberWithInt:bonusPoints]];
+		[compLesson setTime:[NSNumber numberWithInt:secondsRemaining]];
+		[compLesson setUser:delegate.teacher];
+		[compLesson setChapter:chapter];
+		//add teacher's points
+		[delegate.teacher setTotalPoints:[NSNumber numberWithInt:([delegate.teacher.totalPoints intValue] + bonusPoints)]];
+		NSString *msg = [NSString stringWithFormat:@"Principal Wilson says:\rNice work!.\r You have earned %d points", bonusPoints];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"You Finished the Lesson On Time!" 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		
+	} else {
+		//did not complete lesson in time.
+		NSMutableString *msg = [[NSMutableString alloc] initWithFormat:@"Oops, time's up for today kids. It's time for recess. We'll do this lesson again another day."];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"Time Ran Out!" 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		[msg release];
+
+	}
+	MainMenu *vc = [[[MainMenu alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+
+
+}
+
+- (void)timerFireMethod:(NSTimer*)theTimer {
+	if (scrollView.contentOffset.y >= (scrollView.contentSize.height-20)) {
+		//got to end of lecture
+		completedLesson = YES;
+		[self lectureOver];
+	}
+	if (!scrollPaused) {
+		CGPoint scrollPoint = scrollView.contentOffset;
+		scrollPoint.y= scrollPoint.y+scrollSpeed;
+		[scrollView setContentOffset:scrollPoint animated:YES];		
+	}
+	if (!paused) {
+		//find the new position for the scrolling text
+		counter = counter - .2;
+		
+		if (counter <= 0.0) {
+			secondsRemaining --;
+			counter = 1.0;
+		}
+		self.timerLabel.text = [NSString stringWithFormat:@"%d",secondsRemaining];
+	}
+	if (secondsRemaining <= 0) {
+		paused = YES;
+		[self lectureOver];
+	}
+}
+
+
+- (void)clickedButton:(UIButton *)button {
+	[self setCurrentButton:button];
+	if (!paused) {
+		scrollPaused = YES;
+		//if there is a keyword on screen, go to the highest one and display it
+		keywordIndex = button.tag;
+		if (keywordIndex <= [[chapter.lecture keywordSetArray] count]) {
+			NSArray *words = [[[[chapter.lecture keywordSetArray] objectAtIndex:keywordIndex] words] allObjects];
+			Keyword *choice1 = [words objectAtIndex:0];
+			Keyword *choice2 = [words objectAtIndex:1];
+			Keyword *choice3 = [words objectAtIndex:2];
+			UIActionSheet *actionSheet = [[UIActionSheet alloc]
+										  initWithTitle:@"Choose one!"
+										  delegate:self
+										  cancelButtonTitle:nil
+										  destructiveButtonTitle:nil
+										  otherButtonTitles:choice1.word, choice2.word, choice3.word, nil];
+			[actionSheet showInView:self.view];
+			[actionSheet release];
+		}
+	}
+	button.enabled = NO;
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	NSLog(@"%d",buttonIndex);
+	scrollPaused = NO;
+	NSArray *words = [[[[chapter.lecture keywordSetArray] objectAtIndex:keywordIndex] words] allObjects];
+	Keyword *choice1 = [words objectAtIndex:buttonIndex];
+	
+	if ([choice1.correct intValue] == 1) {
+		NSLog(@"correct");
+		bonusPoints += 10;
+		
+	} else {
+		NSLog(@"incorrect");
+		
+	}
+	[currentButton setTitle:choice1.word forState:UIControlStateNormal];
+	keywordIndex++;
+
+}
+
+-(void)timeRanOut {
+	[self.repeatingTimer invalidate];
+}
+
+
+
+
+-(void)scrollSpeedPlus{
+	scrollSpeed ++;
+}
+
+-(void)scrollSpeedMinus{
+	scrollSpeed --;
+}
+
+-(void)toChalkboard {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ChalkboardHome *vc = [[[ChalkboardHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
+-(void)toQuestion {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
+}
+-(void)toWorksheets {
+	//go back to previous page
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	PassOutWorksheets *vc = [[[PassOutWorksheets alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
 }
 
 - (void)didReceiveMemoryWarning {

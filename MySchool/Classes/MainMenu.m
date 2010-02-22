@@ -13,6 +13,7 @@
 #import "LoungeHome.h"
 #import "LibraryHome.h"
 #import "ClassroomHome.h"
+#import "StoreHome.h"
 
 @implementation MainMenu
 
@@ -23,8 +24,10 @@
 @synthesize loungeButton;
 @synthesize libraryButton;
 @synthesize classroomButton;
+@synthesize storeButton;
 
 - (void)dealloc {
+	[storeButton release];
 	[loungeButton release];
 	[libraryButton release];
 	[classroomButton release];
@@ -68,6 +71,12 @@
 
 -(void)classroomButtonClicked {
 	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)storeButtonClicked {
+	StoreHome *vc = [[[StoreHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
