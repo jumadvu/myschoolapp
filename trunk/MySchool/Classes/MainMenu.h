@@ -17,6 +17,7 @@
 	IBOutlet UIButton *loungeButton;
 	IBOutlet UIButton *libraryButton;
 	IBOutlet UIButton *classroomButton;
+	IBOutlet UIButton *storeButton;
 }
 
 @property (nonatomic, retain) UIButton *button1;
@@ -26,6 +27,7 @@
 @property (nonatomic, retain) UIButton *libraryButton;
 @property (nonatomic, retain) UIButton *loungeButton;
 @property (nonatomic, retain) UIButton *classroomButton;
+@property (nonatomic, retain) UIButton *storeButton;
 
 -(IBAction)clickButton1;
 -(IBAction)clickButton2;
@@ -33,5 +35,7 @@
 -(IBAction)loungeButtonClicked;
 -(IBAction)libraryButtonClicked;
 -(IBAction)classroomButtonClicked;
+-(IBAction)storeButtonClicked;
+
 
 @end

@@ -13,6 +13,8 @@
 #import "Library.h"
 #import "StudentHome.h"
 #import "ClassroomHome.h"
+#import "User.h"
+#import "ChapterPlus.h"
 
 @implementation LessonsTaught
 
@@ -37,16 +39,18 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
 	[self setBackgroundColor];
-	[delegate.navCon setNavigationBarHidden:NO];
-	self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	//[delegate.navCon setNavigationBarHidden:NO];
+	//self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
 	[tableView setBackgroundColor:[UIColor clearColor]];
+	
 	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
 	//if there are no modules in the library, add the dinosaur module
 	if ([modules count] == 0) {
 		[Library addXMLModule:@"dinosaurs" toDatabaseContext:delegate.managedObjectContext];
 		modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];		
 	}
+	 
 }
 
 
@@ -80,23 +84,44 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Set up the cell...
-
-	cell.textLabel.text = [[[[modules objectAtIndex:indexPath.section] chaptersArray] objectAtIndex:indexPath.row] title];
-	 
-    return cell;
+	Chapter *chapter = [[[modules objectAtIndex:indexPath.section] chaptersArray] objectAtIndex:indexPath.row];
+	cell.textLabel.text = [chapter title];
+	cell.detailTextLabel.text = [chapter maxPointsForUsersCompletedLessonsAsString:[delegate.teacher.completedLessons allObjects]];
+    //cell.detailTextLabel.text = @"10pts";
+	if (cell.detailTextLabel.text == nil) {
+		cell.textLabel.font = [UIFont systemFontOfSize:12.0];
+		cell.textLabel.backgroundColor = [UIColor clearColor];
+		cell.textLabel.textColor = [UIColor grayColor];
+	}
+	
+	return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)aTableView heightForHeaderInSection:(NSInteger)section
 {
 	return 45;
+}
+
+- (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	Chapter *chapter = [[[modules objectAtIndex:indexPath.section] chaptersArray] objectAtIndex:indexPath.row];
+	NSString *aString = [chapter maxPointsForUsersCompletedLessonsAsString:[delegate.teacher.completedLessons allObjects]];
+	
+    if (aString == nil) {
+		return 22;
+	} else {
+		return 35;
+	}
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -119,7 +144,7 @@
 	label.textAlignment = UITextAlignmentLeft;
 	label.font = [UIFont boldSystemFontOfSize:17];
 	label.frame = CGRectMake(10.0, 10.0, 300.0, 30.0);
-	label.text = [[modules objectAtIndex:section] title];
+	label.text = [NSString stringWithFormat:@"Module: %@",[[modules objectAtIndex:section] title]];
 	[customView addSubview:label];
 	[label release];
 

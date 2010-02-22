@@ -20,7 +20,7 @@
 			</article>
 			<lecture>
 				<title>Dinosaurs: The Terrible Lizards</title>
-				<text>Dinosaurs were reptiles that lived [millions] of years ago. The word "dinosaur" comes from [Greek], meaning "terrible lizard". The name was coined by the English [biologist] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [extinct]. Birds are the descendants of dinosaurs. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [herbivores], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like [Apatosaurus and Brachiosaurus]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [three horns] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [fossil bones] that have been found. Most meat-eaters were bipedal (walked on their back legs), though not as we are. Their body was more towards the horizontal, balanced at the back by their tail. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. It was the smaller sized meat-eaters that may have evolved into birds. One of the first birds was Archaeopteryx; most of its skeleton looked much like that of a dinosaur. There were large flying reptiles that lived at the same time as dinosaurs called [pterosaurs]. There were also various kinds of large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
+				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. Birds are the descendants of dinosaurs. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Most meat-eaters were bipedal (walked on their back legs), though not as we are. Their body was more towards the horizontal, balanced at the back by their tail. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. It was the smaller sized meat-eaters that may have evolved into birds. One of the first birds was Archaeopteryx; most of its skeleton looked much like that of a dinosaur. There were large flying reptiles that lived at the same time as dinosaurs called [emus]. There were also various kinds of large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
 				</text>
 				<keywordSet word="millions">
 					<word>thousands</word>
@@ -42,9 +42,9 @@
 					<word>carnivores</word>
 					<word>tuskivores</word>
 				</keywordSet>
-				<keywordSet word="Apatosaurus and Brachiosaurus">
-					<word>Tyrannosaurus Rex and Allosaurus</word>
-					<word>Fred and George Weasley</word>
+				<keywordSet word="Apatosaurus">
+					<word>Tyrannosaurus Rex</word>
+					<word>Allosaurus</word>
 				</keywordSet>
 				<keywordSet word="three horns">
 					<word>poisonous spikes</word>

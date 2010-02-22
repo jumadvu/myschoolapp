@@ -91,6 +91,7 @@
 		[alert show];
 		[alert release];
 		[msg release];
+		
 	} else {
 		if (delegate.teacher == nil) {
 			//create new teacher

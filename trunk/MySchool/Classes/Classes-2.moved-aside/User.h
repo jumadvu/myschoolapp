@@ -2,7 +2,7 @@
 //  User.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/22/10.
+//  Created by Ashley Kayler on 2/3/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -18,16 +18,15 @@
 {
 }
 
-@property (nonatomic, retain) NSNumber * gradeLevel;
 @property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * gender;
 @property (nonatomic, retain) NSNumber * totalPoints;
 @property (nonatomic, retain) NSSet* completedLessons;
-@property (nonatomic, retain) NSSet* userAwards;
 @property (nonatomic, retain) NSSet* students;
-@property (nonatomic, retain) Avatar * avatar;
+@property (nonatomic, retain) NSSet* userAwards;
 @property (nonatomic, retain) NSSet* worksheets;
+@property (nonatomic, retain) Avatar * avatar;
 
 @end
 
@@ -38,15 +37,15 @@
 - (void)addCompletedLessons:(NSSet *)value;
 - (void)removeCompletedLessons:(NSSet *)value;
 
-- (void)addUserAwardsObject:(UserAwards *)value;
-- (void)removeUserAwardsObject:(UserAwards *)value;
-- (void)addUserAwards:(NSSet *)value;
-- (void)removeUserAwards:(NSSet *)value;
-
 - (void)addStudentsObject:(Student *)value;
 - (void)removeStudentsObject:(Student *)value;
 - (void)addStudents:(NSSet *)value;
 - (void)removeStudents:(NSSet *)value;
+
+- (void)addUserAwardsObject:(UserAwards *)value;
+- (void)removeUserAwardsObject:(UserAwards *)value;
+- (void)addUserAwards:(NSSet *)value;
+- (void)removeUserAwards:(NSSet *)value;
 
 - (void)addWorksheetsObject:(Worksheet *)value;
 - (void)removeWorksheetsObject:(Worksheet *)value;
