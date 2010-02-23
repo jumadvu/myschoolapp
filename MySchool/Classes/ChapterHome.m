@@ -41,6 +41,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
 	textView.text = nil;
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
