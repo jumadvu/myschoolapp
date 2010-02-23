@@ -9,23 +9,24 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ModuleHome : baseViewController {
-	IBOutlet UIButton *chapterButton;
-	IBOutlet UITableView *tableview;
+@interface ModuleHome : baseViewController <UIScrollViewDelegate>{
 	IBOutlet UILabel *moduleNameLabel;
-	NSMutableArray *chapters;
+	IBOutlet UIScrollView *scrollview;
 	NSString *moduleName;
+	IBOutlet UILabel* pcurrent;
+	IBOutlet UILabel* ptotal;
+	NSMutableArray *moduleNames;	
+	BOOL pageControlIsChangingPage;
 	NSString *fileName;
+	
 }
 
-@property (nonatomic,retain) UIButton *chapterButton;
-@property (nonatomic,retain) NSMutableArray *chapters;
-@property (nonatomic,retain) UITableView *tableview;
 @property (nonatomic, retain) UILabel *moduleNameLabel;
 @property (nonatomic, retain) NSString *moduleName;
+@property (nonatomic, retain) UIScrollView *scrollview;
+@property (nonatomic, retain) UILabel* pcurrent;
+@property (nonatomic, retain) UILabel* ptotal;
+@property (nonatomic, retain) NSMutableArray *moduleNames;
 @property (nonatomic, retain) NSString *fileName;
-
-
--(IBAction)toChapter;
 
 @end

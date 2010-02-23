@@ -10,19 +10,24 @@
 #import "ChapterHome.h"
 #import "TBXML.h"
 #import "ChapterCell.h"
-
+#import "ModuleTable.h"
 
 @implementation ModuleHome
 
-@synthesize chapterButton, tableview, moduleNameLabel, chapters, moduleName, fileName;
+@synthesize backButton, moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName;
 
 - (void)dealloc {
-	[fileName release];
-	[chapterButton release];
-	[tableview release];
+	[backButton release];
 	[moduleName release];
+	[scrollview release];
+	[moduleNameLabel release];
+	[ptotal release];
+	[pcurrent release];
+	[moduleNames release];
+	[fileName release];
     [super dealloc];
 }
+
 
 
 -(void)toChapter {
@@ -35,60 +40,73 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setBackgroundColor];
-	NSLog(@"file name %@", fileName);
-	moduleNameLabel.text=moduleName;
+	scrollview.delegate = self;
+	[self.scrollview setBackgroundColor:[UIColor whiteColor]];
+	[scrollview setCanCancelContentTouches:NO];
+	scrollview.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+	scrollview.clipsToBounds = YES;
+	scrollview.scrollEnabled = YES;
+	scrollview.pagingEnabled = YES;
+	
+	CGFloat cx = 0;
+
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
-	chapters= [NSMutableArray new];
 	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
+	moduleNames= [NSMutableArray new];
 	while (module!=nil) {
-		if( [moduleName isEqualToString:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]]]){
-			TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
-			while (chapter!=nil){
-				[chapters addObject:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-				chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
-			}
-			break;
-		}
-		else{module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];}
+		NSString * mName = [tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]];
+		[moduleNames addObject:mName];
+		
+		ModuleTable *tableview = [[ModuleTable alloc] retain];
+		tableview.fileName = self.fileName;
+		tableview.moduleName = mName;
+		
+		CGRect rect = tableview.view.frame;
+		rect.size.height = 345;
+		rect.size.width = 300;
+		rect.origin.x = cx;
+		rect.origin.y = 0;
+		
+		tableview.view.frame = rect;
+		tableview.tableview.rowHeight = 60;
+		tableview.tableview.backgroundColor = [UIColor clearColor];
+		[scrollview addSubview:tableview.view];
+		[tableview release];
+		
+		cx += scrollview.frame.size.width; 
+		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];
 	}
-	tableview.rowHeight = 60;
-	tableview.backgroundColor = [UIColor clearColor];
+	
+	moduleNameLabel.text = [moduleNames objectAtIndex: 0];
+	pcurrent.text = [NSString stringWithFormat:@"1"];
+	ptotal.text = [NSString stringWithFormat:@"%d", [moduleNames count]];
+	[scrollview setContentSize:CGSizeMake(cx, [scrollview bounds].size.height)];
 	[tbxml release];
 }
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate stuff
+- (void)scrollViewDidScroll:(UIScrollView *)_scrollview
 {
-	return [chapters count];
+    if (pageControlIsChangingPage) {
+        return;
+    }
+	
+	/*
+	 *	We switch page at 50% across
+	 */
+    CGFloat pageWidth = _scrollview.frame.size.width;
+    int page = floor((_scrollview.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+	moduleNameLabel.text = [moduleNames objectAtIndex: page];
+    pcurrent.text = [NSString stringWithFormat:@"%d", page+1];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)_scrollView 
 {
-	
-	static NSString *CellIdentifier = @"Cell";
-	ChapterCell *cell = (ChapterCell*)[aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	if (cell == nil)
-	{
-		//
-		// Create the cell.
-		//
-		cell =
-		[[[ChapterCell alloc]
-		  initWithFrame:CGRectZero
-		  reuseIdentifier:CellIdentifier]
-		 autorelease];
-		
-	}
-	[cell setFileName:fileName];
-	cell.textLabel.text = [chapters objectAtIndex:[indexPath row]];
-	return cell;
+    pageControlIsChangingPage = NO;
 }
+
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
