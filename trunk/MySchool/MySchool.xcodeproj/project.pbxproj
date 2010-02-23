@@ -45,8 +45,6 @@
 		AB26205B11121CEE005D02F4 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205911121CEE005D02F4 /* woman.png */; };
 		AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3889CB110ED78800217E8F /* DesignAvatar1.m */; };
 		AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3889CC110ED78800217E8F /* DesignAvatar1.xib */; };
-		AB388A42110FAF3800217E8F /* ModuleHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A40110FAF3800217E8F /* ModuleHome.m */; };
-		AB388A43110FAF3800217E8F /* ModuleHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A41110FAF3800217E8F /* ModuleHome.xib */; };
 		AB388A4D110FB24B00217E8F /* ChapterHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A4B110FB24B00217E8F /* ChapterHome.m */; };
 		AB388A4E110FB24B00217E8F /* ChapterHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A4C110FB24B00217E8F /* ChapterHome.xib */; };
 		AB388A64110FB71F00217E8F /* ArticleHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A62110FB71F00217E8F /* ArticleHome.m */; };
@@ -116,8 +114,12 @@
 		F50B4818111A1368003231FB /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B4817111A1368003231FB /* TBXML.m */; };
 		F50B481B111A1378003231FB /* ModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B481A111A1378003231FB /* ModuleCell.m */; };
 		F50B481E111A13D6003231FB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B481D111A13D6003231FB /* libz.dylib */; };
+		F5132F8C1134525200798586 /* ModuleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F5132F8B1134525200798586 /* ModuleTable.m */; };
+		F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5132F8D1134525B00798586 /* ModuleTable.xib */; };
 		F55EBC2D111B3BFE00F84DDF /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = F55EBC2B111B3BFE00F84DDF /* Avatar.m */; };
 		F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D79D0111A42940020C2DE /* ChapterCell.m */; };
+		F5BBC32A1134615200A0B737 /* ModuleHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBC3271134615200A0B737 /* ModuleHome.xib */; };
+		F5BBC32B1134615200A0B737 /* ModuleHome.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBC3281134615200A0B737 /* ModuleHome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,9 +186,6 @@
 		AB3889CA110ED78800217E8F /* DesignAvatar1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignAvatar1.h; sourceTree = "<group>"; };
 		AB3889CB110ED78800217E8F /* DesignAvatar1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignAvatar1.m; sourceTree = "<group>"; };
 		AB3889CC110ED78800217E8F /* DesignAvatar1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignAvatar1.xib; sourceTree = "<group>"; };
-		AB388A3F110FAF3800217E8F /* ModuleHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHome.h; sourceTree = "<group>"; };
-		AB388A40110FAF3800217E8F /* ModuleHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleHome.m; sourceTree = "<group>"; };
-		AB388A41110FAF3800217E8F /* ModuleHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleHome.xib; sourceTree = "<group>"; };
 		AB388A4A110FB24B00217E8F /* ChapterHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterHome.h; sourceTree = "<group>"; };
 		AB388A4B110FB24B00217E8F /* ChapterHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterHome.m; sourceTree = "<group>"; };
 		AB388A4C110FB24B00217E8F /* ChapterHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterHome.xib; sourceTree = "<group>"; };
@@ -284,10 +283,16 @@
 		F50B4819111A1378003231FB /* ModuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleCell.h; sourceTree = "<group>"; };
 		F50B481A111A1378003231FB /* ModuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleCell.m; sourceTree = "<group>"; };
 		F50B481D111A13D6003231FB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F5132F8A1134524900798586 /* ModuleTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTable.h; sourceTree = "<group>"; };
+		F5132F8B1134525200798586 /* ModuleTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTable.m; sourceTree = "<group>"; };
+		F5132F8D1134525B00798586 /* ModuleTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTable.xib; sourceTree = "<group>"; };
 		F55EBC2B111B3BFE00F84DDF /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		F55EBC2C111B3BFE00F84DDF /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
 		F57D79CF111A42940020C2DE /* ChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterCell.h; sourceTree = "<group>"; };
 		F57D79D0111A42940020C2DE /* ChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterCell.m; sourceTree = "<group>"; };
+		F5BBC3271134615200A0B737 /* ModuleHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleHome.xib; sourceTree = "<group>"; };
+		F5BBC3281134615200A0B737 /* ModuleHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleHome.m; sourceTree = "<group>"; };
+		F5BBC3291134615200A0B737 /* ModuleHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHome.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -498,9 +503,12 @@
 				F50B481A111A1378003231FB /* ModuleCell.m */,
 				AB07F25811098B4B00204AFE /* LibraryHome.h */,
 				AB07F25911098B4B00204AFE /* LibraryHome.m */,
-				AB388A3F110FAF3800217E8F /* ModuleHome.h */,
-				AB388A40110FAF3800217E8F /* ModuleHome.m */,
-				AB388A41110FAF3800217E8F /* ModuleHome.xib */,
+				F5BBC3271134615200A0B737 /* ModuleHome.xib */,
+				F5BBC3281134615200A0B737 /* ModuleHome.m */,
+				F5BBC3291134615200A0B737 /* ModuleHome.h */,
+				F5132F8D1134525B00798586 /* ModuleTable.xib */,
+				F5132F8A1134524900798586 /* ModuleTable.h */,
+				F5132F8B1134525200798586 /* ModuleTable.m */,
 				F57D79CF111A42940020C2DE /* ChapterCell.h */,
 				F57D79D0111A42940020C2DE /* ChapterCell.m */,
 				AB388A4A110FB24B00217E8F /* ChapterHome.h */,
@@ -742,7 +750,6 @@
 				AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */,
 				AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */,
 				AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */,
-				AB388A43110FAF3800217E8F /* ModuleHome.xib in Resources */,
 				AB388A4E110FB24B00217E8F /* ChapterHome.xib in Resources */,
 				AB388A65110FB71F00217E8F /* ArticleHome.xib in Resources */,
 				AB388A7D110FBE0C00217E8F /* ChalkboardHome.xib in Resources */,
@@ -782,6 +789,8 @@
 				AB72E33B112B64A600055DBE /* teacher.png in Resources */,
 				AB72E380112C76B300055DBE /* green_button.png in Resources */,
 				AB72E381112C76B300055DBE /* red_button.png in Resources */,
+				F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */,
+				F5BBC32A1134615200A0B737 /* ModuleHome.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,7 +814,6 @@
 				AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */,
 				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
 				AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */,
-				AB388A42110FAF3800217E8F /* ModuleHome.m in Sources */,
 				AB388A4D110FB24B00217E8F /* ChapterHome.m in Sources */,
 				AB388A64110FB71F00217E8F /* ArticleHome.m in Sources */,
 				AB388A7C110FBE0C00217E8F /* ChalkboardHome.m in Sources */,
@@ -847,6 +855,8 @@
 				AB612056112E1FDA00F31B72 /* KeywordSet.m in Sources */,
 				AB95CA691132E50200203EA4 /* ChapterPlus.m in Sources */,
 				AB95CAD91132FBEC00203EA4 /* User.m in Sources */,
+				F5132F8C1134525200798586 /* ModuleTable.m in Sources */,
+				F5BBC32B1134615200A0B737 /* ModuleHome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
