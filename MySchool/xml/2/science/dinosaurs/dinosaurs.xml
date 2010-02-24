@@ -20,7 +20,7 @@
 			</article>
 			<lecture>
 				<title>Dinosaurs: The Terrible Lizards</title>
-				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. Birds are the descendants of dinosaurs. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Most meat-eaters were bipedal (walked on their back legs), though not as we are. Their body was more towards the horizontal, balanced at the back by their tail. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. It was the smaller sized meat-eaters that may have evolved into birds. One of the first birds was Archaeopteryx; most of its skeleton looked much like that of a dinosaur. There were large flying reptiles that lived at the same time as dinosaurs called [emus]. There were also various kinds of large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
+				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. The smaller sized meat-eaters that may have grown wings and evolved into birds. One of the first [fish]-like dinosaurs was Archaeopteryx; it had wings and feathers, but a dinosaur-like skeleton. These large flying reptiles that lived at the same time as dinosaurs were called [emus], or winged lizards. There were also large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
 				</text>
 				<keywordSet word="millions">
 					<word>thousands</word>
@@ -53,6 +53,10 @@
 				<keywordSet word="fossil bones">
 					<word>living dinosaurs</word>
 					<word>dinosaur photographs</word>
+				</keywordSet>
+                <keywordSet word="birds">
+					<word>lizards</word>
+					<word>wizards</word>
 				</keywordSet>
 				<keywordSet word="pterosaurs">
 					<word>bald eagles</word>
@@ -149,7 +153,11 @@
 		</chapter>
 		<chapter>
 			<title>All about fossils</title>
-			<article>article...
+			<article>
+            A fossil is a living thing which has been preserved in rock. 
+            Some pieces survive inside the rock, like bone, some pieces become rock, and some just leave impressions. Even bugs preserved in amber are fossils.
+            As living things die they are covered in sand and mud. Newer sand and mud covers the old, forming layers. Some of these are preserved over millions of years and fossilize. When scientists dig them up, they look at the layers and the living things that were preserved in them. In this way, we know what plants and animals lived at what times. This is the fossil record.
+            We know a lot about dinosaur bones because bone has a lot of minerals which help it fossilize. Skin and feathers don't, so scientists rely on rare impressions of dinosaur skin to tell them what it was like. For this reason, no one knows what colors the dinosaurs were!
 			</article>
 			<lecture>
 				<title>title</title>
@@ -169,7 +177,13 @@
 		</chapter>
 		<chapter>
 			<title>The Triassic period</title>
-			<article>article...
+			<article>
+            Just before the Triassic period, there was a massive extinction of life on earth. Prehistoric animals like the trilobite went extinct, but this paved the way for the evolution of the dinosaurs and mammals.
+            The Triassic was from about 250-200 million years ago.
+            The first plesiosaurs and icthyosaurs lived in the oceans
+            Archosaurs were common--walked on two legs like an ostrich, had small front legs. Some were crocodilian, and had short legs like crocodiles and alligators.
+            The first turtles, frogs, and lizards appeared. The first mammals appeared in the late Triassic, and were mostly small and nocturnal.
+            Another extinction at the end of the Triassic, because of major volcanic eruptions. Some repiles, like Dimetrodon, went extinct, but many mammals and dinosaurs survived and went on to flourish in the Jurassic period.
 			</article>
 			<lecture>
 				<title>title</title>
@@ -189,7 +203,13 @@
 		</chapter>
 		<chapter>
 			<title>The Jurassic period</title>
-			<article>article...
+			<article>
+            The supercontinent of Pangea broke up.
+            Great diversity of aquatic reptiles like icthyosaurs.
+            Warm, humid climate. This was "the age of reptiles"
+            On land, large herbivores flourished, especially the giant sauropods like brachiosaurus, diplodocus, and apatosaurus. They ate  the fields of ferns that grew during this period, as well as trees that looked like modern-day pine and palm trees. Large predators like allosaurus preyed upon these giants.
+            Pterosaurs ruled the skies, although the first birds evolved at the end of the Jurassic.
+            Many of the enourmous sauropods and setgosaurus-like dinosaurs died out at the end of the Jurassic.
 			</article>
 			<lecture>
 				<title>title</title>
