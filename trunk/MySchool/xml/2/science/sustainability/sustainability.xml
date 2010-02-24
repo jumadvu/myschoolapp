@@ -1,14 +1,330 @@
 <?xml version="1.0"?>
 <myschool>
 	<module>
-		<title>Building a Sustainable World</title>
-		<superSubject>Environmental Science</superSubject>
+		<title>All About Sustainability</title>
+		<superSubject>What is Sustainability?</superSubject>
 		<gradeLevel>2</gradeLevel>
 		<chapter>
-			<title>Recycling!</title>
+			<title>You and your environment</title>
+			<article>
+				Sustainability comes from the word sustainable. Something that is sustainable means that it can last. When you hear about sustainability, usually it is used in the context of the environment and the nature around us.
+				Sustainability means to conserve our surroundings and prevent our natural resources from disappearing. 
+				What we do everyday impacts the earth and our surroundings. For instance, the cars and trucks that we drive emit harmful gases that go into our atmosphere. 
+				These gases form part of what we call greenhouse gases. These gases allow sunlight to enter the Earth's atmosphere. Some of this light is re-radiated back towards space as infrared radiation. But greenhouse gases absorb this infrared radiation and traps its heat in the atmosphere. 
+				As more greenhouse gases get emitted into our atmosphere, it contributes to the warming of our planet.     
+				The main sources of greenhouse gases due to human activity are burning of fossil fuels and deforestation. Fossil fuels are fuels formed by the earth from the fossilized remains of dead plants and animals that have been exposed to the pressue of the earth's crust over hundreds of millions of years! Deforestaion is cutting down and clearing forests to make more room for people or buildings. 
+				Carbon footprint indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. It is trying to measure how much greenhouse gas went into the production of an activity. In order to lower greenhouse emissions, we want to lower our carbon footprint. 
+				If we want to be more sustainble, we need to be mindful of energy. We use energy in everything we do from breathing, to doing jumping jacks, or watching television. There are two different sources of energy: renewable, an energy source that can easily be recreated, and nonrenewable, an energy source that we use up and cannot recreate.
+				In the US, most of our energy comes from nonrenewable energy sources. Coal, petroleum, natural gas are all nonrenewable energy sources because their supplies on earth are limited and we cannot recreate them easily. 
+				Meanwhile, renewable energy sources include solar and wind energy. They are renewable because they are replenished in a short time. Day after day the sun shines, the wind blows and the rivers flow. 
+				
+			</article>
+			<lecture>
+				<title>Sustainability and Energy</title>
+				<text>
+				    Sustainability means to [conserve] our environment and prevent our natural resources from disappearing. 
+				    Natural resources occur naturally within environments and include [air, wind, water, plants and minerals].
+				    What we do [everyday] impacts the earth and our surroundings. 
+				    Cars and trucks emit gases that contribute to the [greenhouse gases] in the atmosphere. 
+				    We do not emit greenhouse gases [when we walk to the park]. 
+				    Fossil fuels are formed from the fossilized remains of dead plants and animals that have been exposed to the pressue of the earth's crust over [hundreds of millions] of years!
+				    Scientists have found that more greenhouse gases in the atmostphere in recent years has made the planet [warmer]. 
+				    [Carbon footprint] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. 
+				    In the US, most of our energy comes from [nonrenewable] energy sources. 
+				</text>
+				<keywordSet word="conserve">
+					<word>destroy</word>
+					<word>fight</word>
+				</keywordSet>
+			    <keywordSet word="air, wind, water, plants and minerals">
+					<word>kit kat, snickers, skittles, starburst and hersheys</word>
+					<word>ipod, dvd player, cds, laptop and cell phones</word>
+				</keywordSet>
+				<keywordSet word="everyday">
+					<word>every year</word>
+					<word>every ten years</word>
+				</keywordSet>
+				<keywordSet word="greenhouse gases">
+					<word>milky way</word>
+					<word>rainbows</word>
+				</keywordSet>
+				<keywordSet word="when we walk to the park">
+					<word>when we ride a plane</word>
+					<word>when we wash our clothes in the washer and dryer</word>
+				</keywordSet>
+				<keywordSet word="hundreds of millions">
+					<word>1</word>
+					<word>1000</word>
+				</keywordSet>
+				<keywordSet word="warmer">
+					<word>windier</word>
+					<word>flatter</word>
+				</keywordSet>
+				<keywordSet word="Carbon footprint">
+					<word>Bigfoot's footprint</word>
+					<word>Barney's pawprint</word>
+				</keywordSet>
+				<keywordSet word="nonrenewable">
+					<word>green</word>
+					<word>intergalactic</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>How do I create carbon footprint?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="0">By eating flowers.</answer>
+					<answer correctness="5">By not turning off the lights when I leave the room.</answer>
+					<answer correctness="0">By playing jump rope.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why is fossil fuel nonrenewable?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">Fossil fuel takes a very long time for the earth to create. It is difficult to replenish.</answer>
+					<answer correctness="1">Because fossils are buried deep down in the earth.</answer>
+					<answer correctness="0">Because t-rex was a carnivore.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why do they call it carbon footprint?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">Because they are referring to how much carbon dioxide is produced when we use energy.</answer>
+					<answer correctness="1">Because dinosaurs have left footprints on our world.</answer>
+					<answer correctness="0">Because it's a cool name.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why do we want to be more sustainable?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">Because we want to preserve earth and our environment.</answer>
+					<answer correctness="3">If we don't then we'll have to move to the moon.</answer>
+					<answer correctness="1">Because all the cool kids are doing it.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Who is most affected by greenhouse gas effects and high level carbon emissions?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">Every species living on the planet.</answer>
+					<answer correctness="1">Just the humans.</answer>
+					<answer correctness="1">Just the sunflowers.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>How do greenhouse gases make the earth warmer?</text>
+					<studenttype>1</studenttype>
+				    <answer correctness="5">By absorbing infrared radiation and trapping its heat in the atmosphere.</answer>
+					<answer correctness="1">By sucking all the cold air in the atmosphere and emitting it to space.</answer>
+					<answer correctness="0">By penetrating small cracks in the earth's crust allowing heat from center of the earth to rise up to the atmosphere</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why are trees good for the environment?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">They renew our air supply by absorbing carbon dioxide and producing oxygen</answer>
+					<answer correctness="5">They create shades protecting us from the sun.</answer>
+					<answer correctness="0">They heat up the air around us and make the atmoshpere warmer.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Can deforestation lead to certain species disappearing forever?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="0">Yes, when we get rid of forests, many species lose their homes and can die.</answer>
+					<answer correctness="5">No, they can find another home easily.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Solar and wind energy are renewable(True/False).</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">True, both solar and wind energy, once consumed can easily be replenished.</answer>
+					<answer correctness="0">False, solar and wind energy are types of fossil fuels which are nonrenewable.</answer>
+				</studentQuestion>
+			</lecture> 
 		</chapter>
 		<chapter>
-			<title>Compost</title>
+			<title>Things we can do</title>
+			<article>
+				We can recycle. Recycling involves processing used materials to create new ones. Old newspapers can be used to make new newspapers. Old aluminum cans can be used to make new aluminum cans.  
+				Recycling is one of the three Rs that form the waste hierarchy: Reduce, Reuse, Recycle. Reduce is to buy less and use less. Reuse is to use things over again like by purchasing at garage sales or wearing hand-me-downs from your older sister/brother.
+				We can recycle anything from glass, paper, metal, plastic, textiles, and electronics.
+				Recycling saves energy and natural resources.
+				Natural resources are the things that the Earth provides for us such as land, plants, minerals and water. By using materials more than once, we are able to conserve. 
+				It almost always takes less energy to make a product from recycled materials than it does to make it from new materials. Making paper from recycled paper saves up to 17 trees and uses 50% less water. 
+				Yup, you need water to produce paper. 
+				We can switch to compact fluorescent lights (CFLs). The average life of a compact fluorescent light is between 8 to 15 times greater than a regular light bulb, also known as an incandescent light bulb. 
+				According to the Environmental Proteciton Agency, if every American household were to swap just one incandescent bulb to a compact fluorescent light, we would save enough energy to we would save enough energy to light more than 2.5 million homes for a year and prevent greenhouse gases equivalent to the emissions of 800,000 cars!
+				You can ask your mom to buy local and seasonal food. That means to buy food from your neighborhood farmers. The typical carrot or apple at your big grocery store travles hundreds of thousand of miles before landing on your table. That's a lot of carbon footprint. 
+				When you buy from local farmers, it travels much less and your food is much fresher too. 
+				Instead of asking a parent of older sibling for a ride in the car, think about walking or riding your bike. Cars are a leading cause of greenhouse gas emissions, so try to avoid their use when you can.
+				You can turn off your electronic appliances when they are not in use. These can include your lights, TV, computer, video games, stereo, iPod and cell phone chargers. Some electronic devices even use energy when they are not turned on. So you might want to unplug them. Every device that plugs into an electrical socket is using energy that emits carbon dioxide into the air. When you reduce your energy use and you reduce your carbon footprint.
+			</article>
+			<lecture>
+				<title>What we can to be more sustainable</title>
+				<text>
+					[Recycling] involves taking materials that have already been used to create new ones.
+						
+				</text>
+				<keywordSet word="Recycling">
+					<word>Cycling</word>
+					<word>Remembering</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>All about fossils</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The Triassic period</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The Jurassic period</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The Cretaceous Period</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>Dinosaur anatomy</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>Dinosaur society</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>Dinosaur food</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The end of the dinosaurs</title>
+			<article>article...
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studenttype>1</studenttype>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
 		</chapter>
 	</module>
 </myschool>
