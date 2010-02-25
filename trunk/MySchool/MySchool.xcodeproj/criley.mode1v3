@@ -273,7 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>27</integer>
+									<integer>34</integer>
 									<integer>17</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ModuleTable.m</string>
+								<string>LibraryShelves.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ModuleTable.m</string>
+										<string>LibraryShelves.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F5A9C15B1136FE5300F74134</string>
+										<string>F5A9C1631137446500F74134</string>
 										<key>history</key>
 										<array>
 											<string>F531BCD011165B9C008829E3</string>
@@ -369,12 +369,12 @@
 											<string>F5A9C1041136FE5300F74134</string>
 											<string>F5A9C1051136FE5300F74134</string>
 											<string>F5A9C1061136FE5300F74134</string>
-											<string>F5A9C1071136FE5300F74134</string>
-											<string>F5A9C1081136FE5300F74134</string>
 											<string>F5A9C1091136FE5300F74134</string>
 											<string>F5A9C10A1136FE5300F74134</string>
 											<string>F5A9C10B1136FE5300F74134</string>
-											<string>F5A9C10C1136FE5300F74134</string>
+											<string>F5A9C15F1137446500F74134</string>
+											<string>F5A9C1601137446500F74134</string>
+											<string>F5A9C1071136FE5300F74134</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -517,6 +517,8 @@
 											<string>F5A9C1581136FE5300F74134</string>
 											<string>F5A9C1591136FE5300F74134</string>
 											<string>F5A9C15A1136FE5300F74134</string>
+											<string>F5A9C1611137446500F74134</string>
+											<string>F5A9C1621137446500F74134</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
