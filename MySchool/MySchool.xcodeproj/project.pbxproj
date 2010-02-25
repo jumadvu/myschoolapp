@@ -78,10 +78,6 @@
 		AB53B36F1121EC120017AFAB /* dinosaurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3661121EC120017AFAB /* dinosaurs.xml */; };
 		AB53B3701121EC120017AFAB /* triceratops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3671121EC120017AFAB /* triceratops.jpg */; };
 		AB53B3711121EC120017AFAB /* sustainability.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3691121EC120017AFAB /* sustainability.xml */; };
-<<<<<<< .mine
-=======
-		AB53B3721121EC120017AFAB /* modules.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B36E1121EC120017AFAB /* modules.xml */; };
->>>>>>> .r97
 		AB53B3791121F39D0017AFAB /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = AB53B3781121F39D0017AFAB /* Library.m */; };
 		AB53B46E112314840017AFAB /* Boy1Aha.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B45E112314840017AFAB /* Boy1Aha.png */; };
 		AB53B46F112314840017AFAB /* Boy1Confused.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B45F112314840017AFAB /* Boy1Confused.png */; };
@@ -288,10 +284,6 @@
 		AB53B3661121EC120017AFAB /* dinosaurs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dinosaurs.xml; sourceTree = "<group>"; };
 		AB53B3671121EC120017AFAB /* triceratops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = triceratops.jpg; sourceTree = "<group>"; };
 		AB53B3691121EC120017AFAB /* sustainability.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sustainability.xml; sourceTree = "<group>"; };
-<<<<<<< .mine
-=======
-		AB53B36E1121EC120017AFAB /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
->>>>>>> .r97
 		AB53B3771121F39D0017AFAB /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		AB53B3781121F39D0017AFAB /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
 		AB53B45E112314840017AFAB /* Boy1Aha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy1Aha.png; sourceTree = "<group>"; };
@@ -708,11 +700,7 @@
 			children = (
 				AB53B3621121EC120017AFAB /* 2 */,
 				AB53B36A1121EC120017AFAB /* 3 */,
-<<<<<<< .mine
 				F5A9C0B71136EFB600F74134 /* modules.xml */,
-=======
-				AB53B36E1121EC120017AFAB /* modules.xml */,
->>>>>>> .r97
 			);
 			path = xml;
 			sourceTree = "<group>";
@@ -943,10 +931,6 @@
 				AB53B36F1121EC120017AFAB /* dinosaurs.xml in Resources */,
 				AB53B3701121EC120017AFAB /* triceratops.jpg in Resources */,
 				AB53B3711121EC120017AFAB /* sustainability.xml in Resources */,
-<<<<<<< .mine
-=======
-				AB53B3721121EC120017AFAB /* modules.xml in Resources */,
->>>>>>> .r97
 				AB53B46E112314840017AFAB /* Boy1Aha.png in Resources */,
 				AB53B46F112314840017AFAB /* Boy1Confused.png in Resources */,
 				AB53B470112314840017AFAB /* Boy1Happy.png in Resources */,
@@ -972,7 +956,6 @@
 				AB72E33B112B64A600055DBE /* teacher.png in Resources */,
 				AB72E380112C76B300055DBE /* green_button.png in Resources */,
 				AB72E381112C76B300055DBE /* red_button.png in Resources */,
-<<<<<<< .mine
 				AB95CB2E11332F6B00203EA4 /* Boy1wave1.png in Resources */,
 				AB95CB2F11332F6B00203EA4 /* Boy1wave2.png in Resources */,
 				AB95CB3011332F6B00203EA4 /* Boy1wave3.png in Resources */,
@@ -996,10 +979,8 @@
 				AB0BAEA7113636E100442373 /* book7.png in Resources */,
 				AB0BAEA8113636E100442373 /* book8.png in Resources */,
 				AB0BAECC1136477700442373 /* bookshelf2.png in Resources */,
-=======
 				F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */,
 				F5BBC32A1134615200A0B737 /* ModuleHome.xib in Resources */,
-<<<<<<< .mine
 				F5A9C0811136EDF300F74134 /* bookshelf.png in Resources */,
 				F5A9C0821136EDF300F74134 /* book3.png in Resources */,
 				F5A9C0831136EDF300F74134 /* book4.png in Resources */,
@@ -1028,9 +1009,6 @@
 				F5A9C0AA1136EE6F00F74134 /* Girl1Body.png in Resources */,
 				F5A9C0AE1136EEB400F74134 /* LibraryShelves.xib in Resources */,
 				F5A9C0B81136EFB600F74134 /* modules.xml in Resources */,
-=======
->>>>>>> .r93
->>>>>>> .r97
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1094,17 +1072,11 @@
 				AB612056112E1FDA00F31B72 /* KeywordSet.m in Sources */,
 				AB95CA691132E50200203EA4 /* ChapterPlus.m in Sources */,
 				AB95CAD91132FBEC00203EA4 /* User.m in Sources */,
-<<<<<<< .mine
 				AB95CBC11133482300203EA4 /* Student.m in Sources */,
 				AB95CE591135AA6C00203EA4 /* LibraryShelves.m in Sources */,
-=======
 				F5132F8C1134525200798586 /* ModuleTable.m in Sources */,
 				F5BBC32B1134615200A0B737 /* ModuleHome.m in Sources */,
-<<<<<<< .mine
 				F5A9C0AF1136EEB400F74134 /* LibraryShelves.m in Sources */,
-=======
->>>>>>> .r93
->>>>>>> .r97
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
