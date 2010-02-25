@@ -5,15 +5,17 @@
 //  Created by Connor Riley on 2/9/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
-
+#import "ModulePlus.h"
+#import "Module.h"
 #import "ModuleTable.h"
 #import "TBXML.h"
 #import "ChapterCell.h"
 
 
+
 @implementation ModuleTable
 
-@synthesize chapters, moduleName, tableview, fileName;
+@synthesize chapters, moduleName, tableview, fileName, module;
 
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
