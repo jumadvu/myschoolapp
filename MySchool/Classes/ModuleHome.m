@@ -14,9 +14,16 @@
 
 @implementation ModuleHome
 
+<<<<<<< .mine
+@synthesize chapterButton, tableview, moduleNameLabel, chapters, moduleName, fileName, module;
+=======
 @synthesize backButton, moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName;
+>>>>>>> .r93
 
 - (void)dealloc {
+<<<<<<< .mine
+	[module release];
+=======
 	[backButton release];
 	[moduleName release];
 	[scrollview release];
@@ -24,6 +31,7 @@
 	[ptotal release];
 	[pcurrent release];
 	[moduleNames release];
+>>>>>>> .r93
 	[fileName release];
     [super dealloc];
 }

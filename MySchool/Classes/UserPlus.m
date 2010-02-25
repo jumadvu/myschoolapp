@@ -24,5 +24,16 @@
 	return image;
 }
 
-
+-(NSArray*)studentsArray {
+	
+	NSArray *array = [[NSArray alloc] initWithArray:[self.students allObjects]];
+	NSSortDescriptor *descriptor =
+    [[[NSSortDescriptor alloc] initWithKey:@"order"
+								 ascending:YES] autorelease];
+	
+	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
+	NSArray *sortedArray = [array sortedArrayUsingDescriptors:descriptors];
+	
+	return sortedArray;
+}
 @end

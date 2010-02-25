@@ -24,4 +24,20 @@
 	return sortedArray;
 }
 
++(Module*) getModuleWithName:(NSString *)moduleName {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];	
+	
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(title = 'All About Dinosaurs')"];
+	[request setPredicate:predicate];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Module" inManagedObjectContext:delegate.managedObjectContext];
+	[request setEntity:entity];
+		
+	//fetch the data
+	NSError *error;
+	NSMutableArray *mutableFetchResults = [[delegate.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	
+	return (Module*)[mutableFetchResults objectAtIndex:0];
+}
+
 @end

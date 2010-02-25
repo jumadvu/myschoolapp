@@ -12,5 +12,6 @@
 @interface Module (ModulePlus) 
 
 -(NSArray*)chaptersArray;
++(Module*) getModuleWithName:(NSString *)moduleName;
 
 @end

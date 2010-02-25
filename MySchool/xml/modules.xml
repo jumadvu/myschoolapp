@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<myschool>
+	<subject name="Science">
+		<module>
+			<category>Biology</category>
+			<fileName>dinosaurs</fileName>
+			<title>All About Dinosaurs</title>
+		</module>
+		<module>
+			<category>Earth Science</category>
+			<fileName>sustainability</fileName>
+			<title>Building a Sustainable World</title>
+		</module>
+		<module>
+			<category>Chemistry</category>
+			<fileName>chemistry</fileName>
+			<title>What's It Made Of?</title>
+		</module>
+		<module>
+			<category>Geography</category>
+			<fileName>geography</fileName>
+			<title>Countries and Continents</title>
+		</module>
+	</subject>
+	<subject name="History">
+		<module>
+			<category>U.S.</category>
+			<fileName>independence</fileName>
+			<title>1776: A Brave New World</title>
+		</module>
+		<module>
+			<category>U.S.</category>
+			<fileName>civilwar</fileName>
+			<title>1861-1865: A Nation Divided</title>
+		</module>
+		<module>
+			<category>U.S.</category>
+			<fileName>civilrights</fileName>
+			<title>1910-1970: Equal Rights</title>
+		</module>
+		<module>
+			<category>U.S.</category>
+			<fileName>wwII</fileName>
+			<title>1939-1945: Allies vs Axis</title>
+		</module>
+	</subject>
+	<subject name="Math">
+		<module>
+			<category>Fractions</category>
+			<fileName>fractions</fileName>
+			<title>Fractions and Music</title>
+		</module>
+		<module>
+			<category>Addition</category>
+			<fileName>addition</fileName>
+			<title>Adding Numbers Up to 10</title>
+		</module>
+		<module>
+			<category>Multiplication</category>
+			<fileName>multiplication</fileName>
+			<title>12 Times Table</title>
+		</module>
+	</subject>
+</myschool>
