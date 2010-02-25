@@ -14,6 +14,7 @@
 	NSString *moduleName;
 	IBOutlet UITableView *tableview;
 	NSString *fileName;
+	Module *module;
 }
 
 @property (nonatomic,retain) NSMutableArray *chapters;
@@ -21,5 +22,6 @@
 @property (nonatomic,retain) NSString *moduleName;
 @property (nonatomic,retain) UITableView *tableview;
 @property (nonatomic,retain) NSString *fileName;
+@property (nonatomic,retain) Module *module;
 
 @end

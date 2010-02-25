@@ -18,11 +18,8 @@
 	NSMutableArray *moduleNames;	
 	BOOL pageControlIsChangingPage;
 	NSString *fileName;
-<<<<<<< .mine
-	Module *module;
-=======
-	
->>>>>>> .r93
+	Module *targetModule;
+	NSArray *modules;
 }
 
 @property (nonatomic, retain) UILabel *moduleNameLabel;
@@ -32,11 +29,10 @@
 @property (nonatomic, retain) UILabel* ptotal;
 @property (nonatomic, retain) NSMutableArray *moduleNames;
 @property (nonatomic, retain) NSString *fileName;
-@property (nonatomic, retain) Module *module;
+@property (nonatomic, retain) Module *targetModule;
+@property (nonatomic, retain) NSArray *modules;
 
-<<<<<<< .mine
+
 -(IBAction)toChapter;
 
 @end
-=======
-@end>>>>>>> .r93

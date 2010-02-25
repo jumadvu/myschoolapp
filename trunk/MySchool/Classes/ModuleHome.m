@@ -11,19 +11,16 @@
 #import "TBXML.h"
 #import "ChapterCell.h"
 #import "ModuleTable.h"
+#import "Library.h"
+#import "Module.h"
+#import "ModulePlus.h"
 
 @implementation ModuleHome
 
-<<<<<<< .mine
-@synthesize chapterButton, tableview, moduleNameLabel, chapters, moduleName, fileName, module;
-=======
-@synthesize backButton, moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName;
->>>>>>> .r93
+@synthesize backButton, moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName, targetModule, modules;
+
 
 - (void)dealloc {
-<<<<<<< .mine
-	[module release];
-=======
 	[backButton release];
 	[moduleName release];
 	[scrollview release];
@@ -31,8 +28,9 @@
 	[ptotal release];
 	[pcurrent release];
 	[moduleNames release];
->>>>>>> .r93
 	[fileName release];
+	[targetModule release];
+	[modules release];
     [super dealloc];
 }
 
@@ -56,19 +54,20 @@
 	scrollview.scrollEnabled = YES;
 	scrollview.pagingEnabled = YES;
 	
+	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
 	CGFloat cx = 0;
-
-	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
-	TBXMLElement * root = tbxml.rootXMLElement;
-	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
-	moduleNames= [NSMutableArray new];
-	while (module!=nil) {
-		NSString * mName = [tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]];
-		[moduleNames addObject:mName];
-		
+	CGFloat tx = 0;
+	NSArray *module;
+	for(module in modules){
+	//create a table
+	//give it the targetmodule
 		ModuleTable *tableview = [[ModuleTable alloc] retain];
 		tableview.fileName = self.fileName;
-		tableview.moduleName = mName;
+		tableview.module = [Module getModuleWithName:[module objectAtIndex:0]];
+		tableview.moduleName = [module objectAtIndex:0];
+		if([module objectAtIndex:0]==targetModule.title){
+			tx = cx;
+		}
 		
 		CGRect rect = tableview.view.frame;
 		rect.size.height = 345;
@@ -83,14 +82,14 @@
 		[tableview release];
 		
 		cx += scrollview.frame.size.width; 
-		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];
 	}
 	
-	moduleNameLabel.text = [moduleNames objectAtIndex: 0];
+	moduleNameLabel.text = [[modules objectAtIndex: 0] objectAtIndex:0];
 	pcurrent.text = [NSString stringWithFormat:@"1"];
-	ptotal.text = [NSString stringWithFormat:@"%d", [moduleNames count]];
+	ptotal.text = [NSString stringWithFormat:@"%d", [modules count]];
 	[scrollview setContentSize:CGSizeMake(cx, [scrollview bounds].size.height)];
-	[tbxml release];
+	
+	[scrollview setContentOffset:CGPointMake(tx, 0) animated:YES];
 }
 
 #pragma mark -
@@ -106,7 +105,7 @@
 	 */
     CGFloat pageWidth = _scrollview.frame.size.width;
     int page = floor((_scrollview.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-	moduleNameLabel.text = [moduleNames objectAtIndex: page];
+	moduleNameLabel.text = [[modules objectAtIndex: page] objectAtIndex:0];
     pcurrent.text = [NSString stringWithFormat:@"%d", page+1];
 }
 

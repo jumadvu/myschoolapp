@@ -148,7 +148,7 @@
 	
 	
 	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.module= [Module getModuleWithName:button.titleLabel.text];
+	vc.targetModule= [Module getModuleWithName:button.titleLabel.text];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
