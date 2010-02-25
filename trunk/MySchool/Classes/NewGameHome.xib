@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">784</int>
-		<string key="IBDocument.SystemVersion">10A432</string>
+		<string key="IBDocument.SystemVersion">10C540</string>
 		<string key="IBDocument.InterfaceBuilderVersion">732</string>
-		<string key="IBDocument.AppKitVersion">1038</string>
-		<string key="IBDocument.HIToolboxVersion">437.00</string>
+		<string key="IBDocument.AppKitVersion">1038.25</string>
+		<string key="IBDocument.HIToolboxVersion">458.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">62</string>
@@ -82,7 +82,7 @@
 							<int key="NSfFlags">16</int>
 						</object>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Save &amp; Continue</string>
+						<string key="IBUINormalTitle">Continue</string>
 						<object class="NSColor" key="IBUIHighlightedTitleColor" id="546520208">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
@@ -99,13 +99,13 @@
 					<object class="IBUILabel" id="255373111">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{30, 225}, {180, 21}}</string>
+						<string key="NSFrame">{{30, 204}, {180, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">Select your basic look</string>
+						<string key="IBUIText">Select your basic look:</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">16</double>
@@ -119,7 +119,7 @@
 					<object class="IBUIButton" id="269278836">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{30, 260}, {119, 107}}</string>
+						<string key="NSFrame">{{41, 245}, {114, 145}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -133,15 +133,15 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="198703259"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">woman.png</string>
+							<string key="NSResourceName">teacher.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="975660429">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{167, 260}, {119, 107}}</string>
+						<string key="NSFrame">{{167, 232}, {119, 170}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -156,9 +156,9 @@
 						</object>
 						<reference key="IBUISelectedTitleShadowColor" ref="198703259"/>
 						<reference key="IBUINormalTitleShadowColor" ref="933374000"/>
-						<object class="NSCustomResource" key="IBUINormalImage">
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">man.png</string>
+							<string key="NSResourceName">Teacher_M.png</string>
 						</object>
 					</object>
 					<object class="IBUITextField" id="831754274">
@@ -188,7 +188,7 @@
 					<object class="IBUITextField" id="18362617">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{158, 155}, {119, 31}}</string>
+						<string key="NSFrame">{{158, 144}, {119, 31}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -224,7 +224,7 @@
 					<object class="IBUILabel" id="105567025">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{52, 160}, {85, 21}}</string>
+						<string key="NSFrame">{{52, 149}, {85, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -243,7 +243,7 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">Pick a name</string>
+						<string key="IBUIText">Choose a name:</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">17</double>
@@ -359,15 +359,15 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="316413197"/>
+							<reference ref="831754274"/>
+							<reference ref="173014014"/>
+							<reference ref="1004990817"/>
+							<reference ref="797482454"/>
 							<reference ref="255373111"/>
 							<reference ref="269278836"/>
 							<reference ref="975660429"/>
-							<reference ref="831754274"/>
 							<reference ref="18362617"/>
-							<reference ref="173014014"/>
 							<reference ref="105567025"/>
-							<reference ref="1004990817"/>
-							<reference ref="797482454"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -540,11 +540,13 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goBack</string>
+							<string>raiseMenu:</string>
 							<string>toMainMenu</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
+							<string>UIButton</string>
 							<string>id</string>
 						</object>
 					</object>

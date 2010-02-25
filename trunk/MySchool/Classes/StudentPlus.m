@@ -34,12 +34,14 @@
 			girlNum++;
 			[student setAvatarImage:[NSString stringWithFormat:@"Girl%d", girlNum]];
 			[student setFirstName:[girlsNames objectAtIndex:l]];
+			[student setOrder:[NSNumber numberWithInt:x]];
+			[student setGender:@"Girl"];			
 			isGirl = NO;
-			[student setGender:@"Girl"];
 		} else {
 			boyNum++;
 			[student setAvatarImage:[NSString stringWithFormat:@"Boy%d", boyNum]];
 			[student setFirstName:[boysNames objectAtIndex:m]];
+			[student setOrder:[NSNumber numberWithInt:x]];
 			[student setGender:@"Boy"];
 			isGirl = YES;
 		}
@@ -56,6 +58,74 @@
 	NSString *imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
 	UIImage *image = [UIImage imageNamed:imageFile];
 	return image;
+}
+
+-(void)setImageView:(UIImageView*)basicView forMood:(NSString*)mood isWaving:(BOOL)waving{
+	NSLog(@"setting image for student %@", [self firstName]);
+	//face and head
+	NSString *imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
+	UIImage *image = [UIImage imageNamed:imageFile];
+	//UIImageView * basicView = [[UIImageView alloc] initWithImage:image];
+	
+	basicView.image = image;
+
+	//body
+	NSString *bodyImageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], @"Body"];
+	UIImage *bodyImage = [UIImage imageNamed:bodyImageFile];
+	UIImageView * bodyView = [[UIImageView alloc] initWithFrame:basicView.frame];
+	bodyView.image = bodyImage;
+	bodyView.contentMode = UIViewContentModeScaleAspectFit;
+	
+	//waving? add animation
+	if (waving) {
+		
+		bodyView.animationImages = [self wavingImageView];
+		bodyView.animationDuration = 1.1;
+		//bodyView.contentMode = UIViewContentModeBottomLeft;
+		bodyView.contentMode = UIViewContentModeScaleAspectFit;
+		[bodyView startAnimating];
+		bodyView.image = nil;
+		basicView.image = nil;
+	} else {
+		[bodyView stopAnimating];
+		bodyView.animationImages = nil;
+	}
+
+	[basicView addSubview:bodyView];
+	//return basicView;
+}
+
+//CGAffineTransform rotate = CGAffineTransformMakeRotation(1.57079633);
+//		 [myImageView setTransform:rotate];
+
+-(UIImage *)frontViewForMood:(NSString*)mood {
+	//moods: Happy, Confused, Aha, Unhappy
+	NSString *imageFile = imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
+	UIImage *image = [UIImage imageNamed:imageFile];
+	
+	return image;
+}
+
+-(NSArray*)wavingImageView {
+	NSArray * imageArray  = [[NSArray alloc] initWithObjects:
+							 [UIImage imageNamed:@"Girl1wave1.png"],
+							 [UIImage imageNamed:@"Girl1wave2.png"],
+							 [UIImage imageNamed:@"Girl1wave3.png"],
+							 [UIImage imageNamed:@"Girl1wave2.png"],
+							 nil];
+	return imageArray;
+}
+
+-(BOOL)hasQuestion {
+	//NSLog(@"forMood %d", [self.armRaised intValue]);
+	int i = arc4random() % 100;
+	if (i%25 == 0 && ![self.armRaised intValue]) {
+		NSLog(@"has question? yes");
+		[self setArmRaised:[NSNumber numberWithInt:1]];
+		return YES;
+	} else {
+		return NO;
+	}
 }
 
 @end

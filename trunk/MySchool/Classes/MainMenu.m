@@ -14,6 +14,7 @@
 #import "LibraryHome.h"
 #import "ClassroomHome.h"
 #import "StoreHome.h"
+#import "LibraryShelves.h"
 
 @implementation MainMenu
 
@@ -64,7 +65,7 @@
 }
 
 -(void)libraryButtonClicked {
-	LibraryHome *vc = [[[LibraryHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	LibraryShelves *vc = [[[LibraryShelves alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }

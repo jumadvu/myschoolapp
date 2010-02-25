@@ -65,10 +65,10 @@
 	NSString *xmlFileName;
 	switch (myGradeLevel) {
 		case 2:
-			xmlFileName = [NSString stringWithFormat:@"2ndGradeModules"];
+			xmlFileName = [NSString stringWithFormat:@"modules"];
 			break;
 		case 3:
-			xmlFileName = [NSString stringWithFormat:@"3rdGradeModules"];
+			xmlFileName = [NSString stringWithFormat:@"modules"];
 			break;
 		default:
 			break;

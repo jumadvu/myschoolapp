@@ -15,5 +15,8 @@
 +(NSSet*)createStudentsInContext:(NSManagedObjectContext*)context;
 
 -(UIImage *)frontView;
-
+-(UIImage *)frontViewForMood:(NSString*)mood;
+-(NSArray*)wavingImageView;
+-(BOOL)hasQuestion;
+-(void)setImageView:(UIImageView*)basicView forMood:(NSString*)mood isWaving:(BOOL)waving;
 @end

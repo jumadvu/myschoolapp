@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Module;
 
 @interface ModuleHome : baseViewController <UIScrollViewDelegate>{
 	IBOutlet UILabel *moduleNameLabel;
@@ -18,7 +18,11 @@
 	NSMutableArray *moduleNames;	
 	BOOL pageControlIsChangingPage;
 	NSString *fileName;
+<<<<<<< .mine
+	Module *module;
+=======
 	
+>>>>>>> .r93
 }
 
 @property (nonatomic, retain) UILabel *moduleNameLabel;
@@ -28,5 +32,11 @@
 @property (nonatomic, retain) UILabel* ptotal;
 @property (nonatomic, retain) NSMutableArray *moduleNames;
 @property (nonatomic, retain) NSString *fileName;
+@property (nonatomic, retain) Module *module;
+
+<<<<<<< .mine
+-(IBAction)toChapter;
 
 @end
+=======
+@end>>>>>>> .r93

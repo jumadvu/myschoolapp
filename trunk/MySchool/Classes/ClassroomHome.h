@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class Module;
 @class Chapter;
-
+@class Student;
 
 @interface ClassroomHome : baseViewController <UIActionSheetDelegate, UIScrollViewDelegate> {
 	IBOutlet UIButton *chalkboardButton;
@@ -26,6 +26,8 @@
 	UITextView *lectureText;
 	
 	IBOutlet UIScrollView *scrollView;
+	
+	IBOutlet Student *student0;
 	
 	
 	IBOutlet UILabel *timerLabel;
@@ -54,6 +56,7 @@
 
 }
 
+@property (nonatomic, retain) Student *student0;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSTimer *repeatingTimer;
 @property (nonatomic, retain) UILabel *timerLabel;
