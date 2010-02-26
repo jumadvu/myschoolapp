@@ -11,6 +11,7 @@
 #import "UserPlus.h"
 #import "MainMenu.h"
 #import "AccountSelection.h"
+#import "Library.h"
 
 @implementation MySchoolAppDelegate
 
@@ -51,10 +52,22 @@
     [window makeKeyAndVisible];
 	
 	//fetch stored data from the sqlite database and send user to appropriate page
-	[self fetchData];
+	[self fetchModuleData];
+	[self fetchUserData];
 }
 
-- (void)fetchData {
+- (void)fetchModuleData {
+	//if there are no modules in the library, add the xml modules
+	NSArray *modules = [[NSArray alloc] init];
+	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
+	if ([modules count] == 0) {
+		[Library addXMLModule:@"dinosaurs" toDatabaseContext:managedObjectContext];
+		[Library addXMLModule:@"sustainability" toDatabaseContext:managedObjectContext];
+	}
+	[modules release];
+}
+
+- (void)fetchUserData {
 	
 	NSLog(@"fetching data from sql lite store");
 	//fetch data from the sql lite database

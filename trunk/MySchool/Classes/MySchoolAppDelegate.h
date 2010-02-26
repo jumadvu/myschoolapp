@@ -35,7 +35,8 @@
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (NSString *)applicationDocumentsDirectory;
-- (void)fetchData;
+- (void)fetchUserData;
+- (void)fetchModuleData;
 
 @end
 
