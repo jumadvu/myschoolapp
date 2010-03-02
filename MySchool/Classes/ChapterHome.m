@@ -9,20 +9,21 @@
 #import "ChapterHome.h"
 #import "Chapter.h"
 #import "ArticleHome.h"
-
 #import "TBXML.h"
 
 
 @implementation ChapterHome
 
-@synthesize learnButton, chapterNameLabel, chapterName, textView, fileName, article;
+@synthesize currentButton, numLabel, learnButton, chapterNameLabel, chapterName, scrollView, fileName, article;
 
 - (void)dealloc {
 	[fileName release];
 	[learnButton release];
+	[currentButton release];
 	[chapterName release];
 	[chapterNameLabel release];
-	[textView release];
+	[numLabel release];
+	[scrollView release];
 	[article release];
     [super dealloc];
 }
@@ -49,7 +50,93 @@
 	[super viewDidLoad];
 	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
-	textView.text = article.text;
+	[self loadTextIntoScrollView];
+}
+
+- (void)loadTextIntoScrollView {
+	//create a UILabel for each regular word in the text and a UIButton for each keyword
+	//add these labels and buttons to the scrollview
+	
+	scrollView.backgroundColor = [UIColor whiteColor];
+	NSMutableArray *words = [[NSMutableArray alloc] init];
+	NSArray *lines = [article.text componentsSeparatedByString:@"\n"];
+	NSEnumerator *enumerator = [lines objectEnumerator];
+	id obj;
+	while(obj = [enumerator nextObject]) {
+		[words addObjectsFromArray:[obj componentsSeparatedByString:@" "]];
+	}
+	NSString *word;
+	int x = 0;
+	int y = 0;
+	int spacer = 5;
+	NSEnumerator *wordEnumerator = [words objectEnumerator];
+	UIColor *labelColor;
+	labelColor = [UIColor clearColor]; //default
+	int tagCount = 0;
+	while (word = [wordEnumerator nextObject]) {
+		//turn on label coloring
+		if ([[word substringToIndex:1] isEqualToString:@"["]) {
+			NSMutableString *buttonWord = (NSMutableString*)[word stringByReplacingOccurrencesOfString:@"[" withString:@""];
+			while ([word rangeOfString:@"]"].location == NSNotFound) {
+				word = [wordEnumerator nextObject];
+				[buttonWord appendFormat:@" %@", word];
+			}			
+			buttonWord = (NSMutableString*)[buttonWord stringByReplacingOccurrencesOfString:@"]" withString:@""];
+			
+			UIButton *memberButt = [UIButton buttonWithType:UIButtonTypeCustom]; 
+			memberButt.titleLabel.font = [UIFont systemFontOfSize:17.0];
+			memberButt.backgroundColor = [UIColor redColor];
+			[memberButt setTitle:buttonWord forState:UIControlStateNormal];
+			memberButt.tag = tagCount;
+			[scrollView addSubview:memberButt];
+			[memberButt addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
+			memberButt.frame = CGRectMake(x, y, 145.0, 30.0);  
+			[memberButt sizeToFit];
+			x = x + memberButt.frame.size.width + spacer;
+			if (x > (scrollView.frame.size.width-10)) {
+				x = 0;
+				y = y + 30;
+				//move label to next row
+				CGRect newFrame = CGRectMake(x, y, 140, 30.0);
+				memberButt.frame = newFrame;
+				[memberButt sizeToFit];
+				x = x + memberButt.frame.size.width + spacer;
+			}
+			tagCount++;
+			
+		} else {
+			UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
+			label.backgroundColor = [UIColor clearColor];
+			label.font = [UIFont systemFontOfSize:17.0];
+			label.text = word;
+			
+			CGRect labelFrame = CGRectMake(x, y, 240, 30.0);
+			label.frame = labelFrame;
+			[label sizeToFit];
+			x = x + label.frame.size.width + spacer;
+			
+			if (x > (scrollView.frame.size.width-10)) {
+				x = 0;
+				y = y + 30;
+				//move label to next row
+				CGRect newLabelFrame = CGRectMake(x, y, 240, 30.0);
+				label.frame = newLabelFrame;
+				[label sizeToFit];
+				x = x + label.frame.size.width + spacer;
+			}
+			[scrollView addSubview:label];
+			[label release];
+		}
+		//NSLog(@"%@ isButton: %d", word, isButton);
+		/*
+		 if ([word rangeOfString:@"]"].location != NSNotFound) {
+		 isButton = NO;
+		 }
+		 */
+	}
+	[scrollView setContentSize:CGSizeMake(280, y+30)];
+
+	numLabel.text=[NSString stringWithFormat:@"%d", tagCount];
 }
 
 
@@ -73,7 +160,12 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
-
+- (void)clickedButton:(UIButton *)button {
+	UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Really reset?" message:@"Do you really want to reset this game?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil] autorelease];
+    [alert show];
+	button.backgroundColor = [UIColor clearColor];
+	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	numLabel.text = [NSString stringWithFormat:@"%d", [numLabel.text intValue]-1];
+}
 
 @end

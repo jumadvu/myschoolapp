@@ -170,7 +170,8 @@
 		
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
 		Article *article = (Article *)[NSEntityDescription insertNewObjectForEntityForName:@"Article" inManagedObjectContext:moc];;
-		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]]];
+		TBXMLElement * art =[tbxml childElementNamed:@"article" parentElement:chapter];
+		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:art]]];
 		[chapterMO setArticle:article];
 		[chapterMO setModule:moduleMO];
 		[chapterMO setLecture:lectureMO];

@@ -13,20 +13,26 @@
 @interface ChapterHome : baseViewController {
 	IBOutlet UIButton *learnButton;
 	IBOutlet UILabel *chapterNameLabel;
-	IBOutlet UITextView *textView;
+	IBOutlet UILabel *numLabel;
 	NSString *chapterName;
 	NSString *fileName;
 	Article *article;
+	IBOutlet UIScrollView *scrollView;
+	UIButton *currentButton;
 
 }
 
 @property (nonatomic,retain) UIButton *learnButton;
+@property (nonatomic,retain) UIButton *currentButton;
 @property (nonatomic,retain) UILabel *chapterNameLabel;
+@property (nonatomic,retain) UILabel *numLabel;
 @property (nonatomic, retain) NSString *chapterName;
-@property (nonatomic, retain) UITextView *textView;
 @property (nonatomic, retain) NSString *fileName;
 @property (nonatomic, retain) Article *article;
+@property (nonatomic, retain) UIScrollView *scrollView;
 
 -(IBAction)toArticle;
+-(void)loadTextIntoScrollView;
+
 
 @end
