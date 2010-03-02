@@ -5,19 +5,25 @@
 //  Created by Ashley Kayler on 1/26/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
-
+#import "Article.h"
 #import "ChapterHome.h"
+#import "Chapter.h"
 #import "ArticleHome.h"
+
 #import "TBXML.h"
 
 
 @implementation ChapterHome
 
-@synthesize learnButton, chapterNameLabel, chapterName, textView, fileName;
+@synthesize learnButton, chapterNameLabel, chapterName, textView, fileName, article;
 
 - (void)dealloc {
 	[fileName release];
 	[learnButton release];
+	[chapterName release];
+	[chapterNameLabel release];
+	[textView release];
+	[article release];
     [super dealloc];
 }
 
@@ -43,27 +49,7 @@
 	[super viewDidLoad];
 	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
-	textView.text = nil;
-	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
-	TBXMLElement * root = tbxml.rootXMLElement;
-	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
-	while (module!=nil) {
-		if([textView.text isEqualToString:nil]){
-		NSLog(@"In the loop.");}
-		TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
-			while (chapter!=nil){
-				if ([chapterName isEqualToString:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]]){
-					textView.text=[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]];
-					break;
-				}
-				else{
-					chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
-				}
-			}
-		module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];
-	}
-	[tbxml release];
-	
+	textView.text = article.text;
 }
 
 

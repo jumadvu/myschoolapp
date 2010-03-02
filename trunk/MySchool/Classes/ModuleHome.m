@@ -54,42 +54,28 @@
 	scrollview.scrollEnabled = YES;
 	scrollview.pagingEnabled = YES;
 	
-	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
-	CGFloat cx = 0;
-	CGFloat tx = 0;
-	NSArray *module;
-	for(module in modules){
-	//create a table
-	//give it the targetmodule
-		ModuleTable *tableview = [[ModuleTable alloc] retain];
-		tableview.fileName = self.fileName;
-		tableview.module = [Module getModuleWithName:[module objectAtIndex:0]];
-		tableview.moduleName = [module objectAtIndex:0];
-		if([module objectAtIndex:0]==targetModule.title){
-			tx = cx;
-		}
+	ModuleTable *tableview = [[ModuleTable alloc] retain];
+	tableview.fileName = self.fileName;
+	tableview.module = targetModule;
+	tableview.moduleName = targetModule.title;
 		
-		CGRect rect = tableview.view.frame;
-		rect.size.height = 345;
-		rect.size.width = 300;
-		rect.origin.x = cx;
-		rect.origin.y = 0;
+	CGRect rect = tableview.view.frame;
+	rect.size.height = 345;
+	rect.size.width = 300;
+	rect.origin.x = 0;
+	rect.origin.y = 0;
 		
-		tableview.view.frame = rect;
-		tableview.tableview.rowHeight = 60;
-		tableview.tableview.backgroundColor = [UIColor clearColor];
-		[scrollview addSubview:tableview.view];
-		[tableview release];
+	tableview.view.frame = rect;
+	tableview.tableview.rowHeight = 60;
+	tableview.tableview.backgroundColor = [UIColor clearColor];
+	[scrollview addSubview:tableview.view];
+	[tableview release];
 		
-		cx += scrollview.frame.size.width; 
-	}
 	
-	moduleNameLabel.text = [[modules objectAtIndex: 0] objectAtIndex:0];
-	pcurrent.text = [NSString stringWithFormat:@"1"];
-	ptotal.text = [NSString stringWithFormat:@"%d", [modules count]];
-	[scrollview setContentSize:CGSizeMake(cx, [scrollview bounds].size.height)];
+	moduleNameLabel.text = targetModule.title;
+	//[scrollview setContentSize:CGSizeMake(cx, [scrollview bounds].size.height)];
 	
-	[scrollview setContentOffset:CGPointMake(tx, 0) animated:YES];
+	//[scrollview setContentOffset:CGPointMake(tx, 0) animated:YES];
 }
 
 #pragma mark -

@@ -15,6 +15,7 @@
 #import "Keyword.h"
 #import "KeywordSet.h"
 #import "StudentAnswer.h"
+#import "Article.h"
 
 @implementation Library
 
@@ -168,7 +169,9 @@
 		[chapterMO setOrder:[NSNumber numberWithInt:chapterCount]];
 		
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-		[chapterMO setOverview:[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]]];
+		Article *article = (Article *)[NSEntityDescription insertNewObjectForEntityForName:@"Article" inManagedObjectContext:moc];;
+		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]]];
+		[chapterMO setArticle:article];
 		[chapterMO setModule:moduleMO];
 		[chapterMO setLecture:lectureMO];
 		chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
