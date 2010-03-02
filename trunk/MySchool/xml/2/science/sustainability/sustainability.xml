@@ -6,7 +6,7 @@
 		<gradeLevel>2</gradeLevel>
 		<chapter>
 			<title>You and your environment</title>
-			<article>
+			<article><text>
 				Sustainability comes from the word sustainable. Something that is sustainable means that it can last. 
 				When you hear about sustainability, usually it is used in the context of the environment and the nature around us.
 				Sustainability means to conserve our surroundings and prevent our natural resources from disappearing. 
@@ -24,7 +24,7 @@
 				In the US, most of our energy comes from nonrenewable energy sources. Coal, petroleum, natural gas are all nonrenewable energy sources because their supplies on earth are limited and we cannot recreate them easily. 
 				Meanwhile, renewable energy sources include solar and wind energy. They are renewable because they are replenished in a short time. Day after day the sun shines, the wind blows and the rivers flow. 
 				
-			</article>
+			</text></article>
 			<lecture>
 				<title>Sustainability and Energy</title>
 				<text>
@@ -139,7 +139,7 @@
 		</chapter>
 		<chapter>
 			<title>Things we can do</title>
-			<article>
+			<article><text>
 				We can recycle. Recycling involves processing used materials to create new ones. Old newspapers can be used to make new newspapers. 
 				Old aluminum cans can be used to make new aluminum cans. Recycling is one of the three Rs that form the waste hierarchy: Reduce, Reuse, Recycle. 
 				Reduce is to buy less and use less. Reuse is to use things over again like by purchasing at garage sales or wearing hand-me-downs from your older sister/brother.
@@ -155,7 +155,7 @@
 				You can turn off your electronic appliances when they are not in use. These can include your lights, TV, computer, video games, stereo, iPod and cell phone chargers. 
 				Some electronic devices even use energy when they are not turned on. So you might want to unplug them. Every device that plugs into an electrical socket is using energy that emits carbon dioxide into the air. 
 				When you reduce your energy use and you reduce your carbon footprint.
-			</article>
+			</text></article>
 			<lecture>
 				<title>What we can to be more sustainable</title>
 				<text>
@@ -176,7 +176,7 @@
 		</chapter>
 		<chapter>
 			<title>All about energy</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -196,7 +196,7 @@
 		</chapter>
 		<chapter>
 			<title>The effect of oil on the environment</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -216,7 +216,7 @@
 		</chapter>
 		<chapter>
 			<title>The effect of natural gas on the environment</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -236,7 +236,7 @@
 		</chapter>
 		<chapter>
 			<title>The effect of coal on the environment</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -256,7 +256,7 @@
 		</chapter>
 		<chapter>
 			<title>The role of renewable energy</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -276,7 +276,7 @@
 		</chapter>
 		<chapter>
 			<title>Deforestation</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -296,7 +296,7 @@
 		</chapter>
 		<chapter>
 			<title>Biodiversity</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -316,7 +316,7 @@
 		</chapter>
 		<chapter>
 			<title>Local foods</title>
-			<article>article...
+			<article><text>article...</text>
 			</article>
 			<lecture>
 				<title>title</title>
