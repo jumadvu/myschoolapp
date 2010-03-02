@@ -6,6 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#import "Article.h"
 #import "ChapterCell.h"
 #import "ChapterHome.h"
 #import "MySchoolAppDelegate.h"
@@ -18,12 +19,17 @@
 @synthesize lblTitle;
 @synthesize tButton;
 @synthesize lButton;
+@synthesize article;
 
 - (void)dealloc {
 	//[lblTitle release];//not currently using this
 	//[tButton release]; //don't need to release because it is created with an autorelease
 	//[lButton release];
 	[fileName release];
+	[lblTitle release];
+	[tButton release];
+	[lButton release];
+	[article release];
     [super dealloc];
 }
 
@@ -97,6 +103,7 @@
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.textLabel.text;
 	vc.fileName = fileName;
+	vc.article = article;
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 

@@ -20,17 +20,8 @@
 @property (nonatomic, retain) NSNumber * order;
 @property (nonatomic, retain) NSString * overview;
 @property (nonatomic, retain) Module * module;
-@property (nonatomic, retain) NSSet* articles;
 @property (nonatomic, retain) Lecture * lecture;
-
-@end
-
-
-@interface Chapter (CoreDataGeneratedAccessors)
-- (void)addArticlesObject:(Article *)value;
-- (void)removeArticlesObject:(Article *)value;
-- (void)addArticles:(NSSet *)value;
-- (void)removeArticles:(NSSet *)value;
+@property (nonatomic, retain) Article * article;
 
 @end
 

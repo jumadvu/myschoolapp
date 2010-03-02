@@ -18,7 +18,7 @@
 @dynamic order;
 @dynamic overview;
 @dynamic module;
-@dynamic articles;
 @dynamic lecture;
+@dynamic article;
 
 @end

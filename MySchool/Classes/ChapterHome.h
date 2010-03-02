@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Chapter;
+@class Article;
 
 @interface ChapterHome : baseViewController {
 	IBOutlet UIButton *learnButton;
@@ -15,6 +16,7 @@
 	IBOutlet UITextView *textView;
 	NSString *chapterName;
 	NSString *fileName;
+	Article *article;
 
 }
 
@@ -23,6 +25,7 @@
 @property (nonatomic, retain) NSString *chapterName;
 @property (nonatomic, retain) UITextView *textView;
 @property (nonatomic, retain) NSString *fileName;
+@property (nonatomic, retain) Article *article;
 
 -(IBAction)toArticle;
 

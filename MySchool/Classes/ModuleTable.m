@@ -5,11 +5,13 @@
 //  Created by Connor Riley on 2/9/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
+#import "Article.h"
 #import "ModulePlus.h"
 #import "Module.h"
 #import "ModuleTable.h"
 #import "TBXML.h"
 #import "ChapterCell.h"
+#import "Chapter.h"
 
 
 
@@ -29,23 +31,6 @@
 
 
 - (void)viewDidLoad {
-	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:fileName fileExtension:@"xml"];
-	TBXMLElement * root = tbxml.rootXMLElement;
-	chapters= [NSMutableArray new];
-	TBXMLElement * module = [tbxml childElementNamed:@"module" parentElement:root];
-	while (module!=nil) {
-		if( [moduleName isEqualToString:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:module]]]){
-			TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
-			while (chapter!=nil){
-				[chapters addObject:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-				chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];
-			}
-			break;
-		}
-		else{module = [tbxml nextSiblingNamed:@"module" searchFromElement:module];}
-	}
-
-	[tbxml release];
     [super viewDidLoad];
 }
 
@@ -59,7 +44,7 @@
 */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return [chapters count];
+	return [[module chaptersArray] count];
 }
 
 /*
@@ -87,7 +72,11 @@
 		
 	}
 	[cell setFileName:fileName];
-	cell.textLabel.text = [chapters objectAtIndex:[indexPath row]];
+	Chapter *chapter = [[module chaptersArray] objectAtIndex:indexPath.row];
+	cell.textLabel.text = [chapter title];
+	cell.article = chapter.article;
+	//cell.textLabel.text = [chapters objectAtIndex:[indexPath row]];
+	[chapter release];
 	return cell;
 }
 
