@@ -143,6 +143,7 @@
 		F5A9C0AE1136EEB400F74134 /* LibraryShelves.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0AB1136EEB400F74134 /* LibraryShelves.xib */; };
 		F5A9C0AF1136EEB400F74134 /* LibraryShelves.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A9C0AC1136EEB400F74134 /* LibraryShelves.m */; };
 		F5A9C0B81136EFB600F74134 /* modules.xml in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0B71136EFB600F74134 /* modules.xml */; };
+		F5B38118113DDB97004DBDAF /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B38116113DDB97004DBDAF /* Image.m */; };
 		F5BBC32A1134615200A0B737 /* ModuleHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BBC3271134615200A0B737 /* ModuleHome.xib */; };
 		F5BBC32B1134615200A0B737 /* ModuleHome.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BBC3281134615200A0B737 /* ModuleHome.m */; };
 /* End PBXBuildFile section */
@@ -341,6 +342,8 @@
 		F5A9C0AC1136EEB400F74134 /* LibraryShelves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryShelves.m; sourceTree = "<group>"; };
 		F5A9C0AD1136EEB400F74134 /* LibraryShelves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryShelves.h; sourceTree = "<group>"; };
 		F5A9C0B71136EFB600F74134 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
+		F5B38115113DDB97004DBDAF /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		F5B38116113DDB97004DBDAF /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		F5BBC3271134615200A0B737 /* ModuleHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleHome.xib; sourceTree = "<group>"; };
 		F5BBC3281134615200A0B737 /* ModuleHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleHome.m; sourceTree = "<group>"; };
 		F5BBC3291134615200A0B737 /* ModuleHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHome.h; sourceTree = "<group>"; };
@@ -450,6 +453,8 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F5B38115113DDB97004DBDAF /* Image.h */,
+				F5B38116113DDB97004DBDAF /* Image.m */,
 				AB95CBBF1133482300203EA4 /* Student.h */,
 				AB95CBC01133482300203EA4 /* Student.m */,
 				AB95CAD71132FBEC00203EA4 /* User.h */,
@@ -967,6 +972,7 @@
 				F5132F8C1134525200798586 /* ModuleTable.m in Sources */,
 				F5BBC32B1134615200A0B737 /* ModuleHome.m in Sources */,
 				F5A9C0AF1136EEB400F74134 /* LibraryShelves.m in Sources */,
+				F5B38118113DDB97004DBDAF /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

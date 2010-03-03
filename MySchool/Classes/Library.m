@@ -16,6 +16,7 @@
 #import "KeywordSet.h"
 #import "StudentAnswer.h"
 #import "Article.h"
+#import "Image.h"
 
 @implementation Library
 
@@ -172,6 +173,22 @@
 		Article *article = (Article *)[NSEntityDescription insertNewObjectForEntityForName:@"Article" inManagedObjectContext:moc];;
 		TBXMLElement * art =[tbxml childElementNamed:@"article" parentElement:chapter];
 		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:art]]];
+		
+		//get the keyword sets
+		TBXMLElement * image=[tbxml childElementNamed:@"image" parentElement:art];
+		int imageCount = 0;
+		while (image!=nil) {
+			Image *imageMO = (Image *)[NSEntityDescription insertNewObjectForEntityForName:@"Image" inManagedObjectContext:moc];
+			[imageMO setFileName:[tbxml textForElement:[tbxml childElementNamed:@"file" parentElement:image]]];
+			[imageMO setDesc:[tbxml textForElement:[tbxml childElementNamed:@"desc" parentElement:image]]];
+			[imageMO setArticle:article];
+			[imageMO setOrder:[NSNumber numberWithInt:imageCount]];
+			[article addImagesObject:imageMO];
+			
+			image = [tbxml nextSiblingNamed:@"image" searchFromElement:image];
+			imageCount++;
+		}
+		
 		[chapterMO setArticle:article];
 		[chapterMO setModule:moduleMO];
 		[chapterMO setLecture:lectureMO];
