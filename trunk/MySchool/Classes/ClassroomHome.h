@@ -22,6 +22,7 @@
 	IBOutlet UIImageView *student2;
 	IBOutlet UIImageView *student3;
 	IBOutlet UIImageView *student4;
+	NSArray *studentViews;
 	IBOutlet UIImageView *teacher;
 	UITextView *lectureText;
 	
@@ -86,6 +87,7 @@
 @property (nonatomic, retain) UIImageView *student2;
 @property (nonatomic, retain) UIImageView *student3;
 @property (nonatomic, retain) UIImageView *student4;
+@property (nonatomic, retain) NSArray *studentViews;
 @property (nonatomic, retain) UIImageView *teacher;
 @property (nonatomic, retain) UITextView *lectureText;
 

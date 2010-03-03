@@ -190,6 +190,7 @@
 		}
 		
 		[chapterMO setArticle:article];
+		//[chapterMO addArticles:[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]]];
 		[chapterMO setModule:moduleMO];
 		[chapterMO setLecture:lectureMO];
 		chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];

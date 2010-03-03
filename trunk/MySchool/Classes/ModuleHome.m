@@ -17,11 +17,12 @@
 
 @implementation ModuleHome
 
-@synthesize backButton, moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName, targetModule, modules;
+//@synthesize backButton;
+@synthesize moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName, targetModule, modules;
 
 
 - (void)dealloc {
-	[backButton release];
+	//[backButton release];
 	[moduleName release];
 	[scrollview release];
 	[moduleNameLabel release];

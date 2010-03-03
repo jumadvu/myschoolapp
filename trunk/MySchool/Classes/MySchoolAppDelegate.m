@@ -12,6 +12,7 @@
 #import "MainMenu.h"
 #import "AccountSelection.h"
 #import "Library.h"
+#import "testing123.h"
 
 @implementation MySchoolAppDelegate
 
@@ -52,8 +53,17 @@
     [window makeKeyAndVisible];
 	
 	//fetch stored data from the sqlite database and send user to appropriate page
-	[self fetchModuleData];
-	[self fetchUserData];
+	
+	//use this boolean to go directly to the testing page: testing123
+	BOOL testing = NO;
+	if (testing) {
+		testing123 *vc = [[[testing123 alloc] initWithNibName:nil bundle:nil] autorelease];
+		[navCon pushViewController:vc animated:YES];
+	} else {
+		[self fetchModuleData];
+		[self fetchUserData];
+	}
+
 }
 
 - (void)fetchModuleData {
