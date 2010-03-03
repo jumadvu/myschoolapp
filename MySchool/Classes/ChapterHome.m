@@ -64,6 +64,7 @@
 	id obj;
 	while(obj = [enumerator nextObject]) {
 		[words addObjectsFromArray:[obj componentsSeparatedByString:@" "]];
+		[words addObject:@"zzz"];	
 	}
 	NSString *word;
 	int x = 0;
@@ -75,6 +76,11 @@
 	int tagCount = 0;
 	while (word = [wordEnumerator nextObject]) {
 		//turn on label coloring
+		if ([word isEqualToString:@"zzz"]) {
+			y = y + 30;
+			x = 0;
+			break;
+		}
 		if ([[word substringToIndex:1] isEqualToString:@"["]) {
 			NSMutableString *buttonWord = (NSMutableString*)[word stringByReplacingOccurrencesOfString:@"[" withString:@""];
 			while ([word rangeOfString:@"]"].location == NSNotFound) {
