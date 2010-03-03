@@ -99,6 +99,7 @@
 	[moduleName release];
     [tableview release];
 	[fileName release];
+	[module release];
 	[super dealloc];
 }
 

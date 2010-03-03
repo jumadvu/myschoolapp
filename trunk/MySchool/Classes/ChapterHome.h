@@ -19,6 +19,7 @@
 	Article *article;
 	IBOutlet UIScrollView *scrollView;
 	UIButton *currentButton;
+	NSArray *imageArray;
 
 }
 
@@ -30,9 +31,11 @@
 @property (nonatomic, retain) NSString *fileName;
 @property (nonatomic, retain) Article *article;
 @property (nonatomic, retain) UIScrollView *scrollView;
+@property (nonatomic, retain) NSArray *imageArray;
 
 -(IBAction)toArticle;
 -(void)loadTextIntoScrollView;
+-(void)arrangeImageArray;
 
 
 @end

@@ -10,11 +10,12 @@
 #import "Chapter.h"
 #import "ArticleHome.h"
 #import "TBXML.h"
+#import "Image.h"
 
 
 @implementation ChapterHome
 
-@synthesize currentButton, numLabel, learnButton, chapterNameLabel, chapterName, scrollView, fileName, article;
+@synthesize imageArray, currentButton, numLabel, learnButton, chapterNameLabel, chapterName, scrollView, fileName, article;
 
 - (void)dealloc {
 	[fileName release];
@@ -25,6 +26,7 @@
 	[numLabel release];
 	[scrollView release];
 	[article release];
+	[imageArray release];
     [super dealloc];
 }
 
@@ -50,7 +52,19 @@
 	[super viewDidLoad];
 	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
+	imageArray = [[NSArray alloc] init];
+	[self arrangeImageArray];
+	//NSArray * narray = [[NSArray alloc] initWithObjects:@"String",nil];
+	//imageArray = narray;
+	//[narray release];
+	NSLog(@"%@", [self.imageArray objectAtIndex:0]);
+	//NSString *strin = [[imageArray objectAtIndex:0] desc];
+	//NSLog(@"%@", strin);
 	[self loadTextIntoScrollView];
+	//NSString *strin2 = [[imageArray objectAtIndex:0] desc];
+	//NSLog(@"%@", strin2);
+
+
 }
 
 - (void)loadTextIntoScrollView {
@@ -91,7 +105,8 @@
 			
 			UIButton *memberButt = [UIButton buttonWithType:UIButtonTypeCustom]; 
 			memberButt.titleLabel.font = [UIFont systemFontOfSize:17.0];
-			memberButt.backgroundColor = [UIColor redColor];
+			[memberButt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+			memberButt.backgroundColor = [UIColor clearColor];
 			[memberButt setTitle:buttonWord forState:UIControlStateNormal];
 			memberButt.tag = tagCount;
 			[scrollView addSubview:memberButt];
@@ -167,11 +182,24 @@
 }
 
 - (void)clickedButton:(UIButton *)button {
-	UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Really reset?" message:@"Do you really want to reset this game?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil] autorelease];
+	NSString *str = [[imageArray objectAtIndex:button.tag] desc];
+	UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Secret found!" message:[NSString stringWithFormat:@"%@", str] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
     [alert show];
 	button.backgroundColor = [UIColor clearColor];
-	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
 	numLabel.text = [NSString stringWithFormat:@"%d", [numLabel.text intValue]-1];
+	
+
 }
 
+- (void)arrangeImageArray {
+	NSArray *array = [[NSArray alloc] initWithArray:[article.images allObjects]];
+	NSSortDescriptor *descriptor =
+    [[NSSortDescriptor alloc] initWithKey:@"order"
+								 ascending:YES];
+	
+	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
+	[self setImageArray:[array sortedArrayUsingDescriptors:descriptors]];
+	
+}
 @end
