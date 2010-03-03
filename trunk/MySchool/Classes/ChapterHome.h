@@ -20,6 +20,7 @@
 	IBOutlet UIScrollView *scrollView;
 	UIButton *currentButton;
 	NSArray *imageArray;
+	Chapter *chapter;
 
 }
 
@@ -32,6 +33,7 @@
 @property (nonatomic, retain) Article *article;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSArray *imageArray;
+@property (nonatomic, retain) Chapter *chapter;
 
 -(IBAction)toArticle;
 -(void)loadTextIntoScrollView;

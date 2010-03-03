@@ -15,9 +15,12 @@
 
 @implementation ChapterHome
 
-@synthesize imageArray, currentButton, numLabel, learnButton, chapterNameLabel, chapterName, scrollView, fileName, article;
+@synthesize imageArray, currentButton, numLabel, learnButton;
+@synthesize chapterNameLabel, chapterName, scrollView, fileName, article;
+@synthesize chapter;
 
 - (void)dealloc {
+	[chapter release];
 	[fileName release];
 	[learnButton release];
 	[currentButton release];

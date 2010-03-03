@@ -120,10 +120,10 @@
 
 -(NSArray*)wavingImageView {
 	NSArray * imageArray  = [[NSArray alloc] initWithObjects:
-							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave1.png", [self avatarImage]]],
-							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave2.png", [self avatarImage]]],
-							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave3.png", [self avatarImage]]],
-							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave2.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@Wave1.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@Wave2.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@Wave3.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@Wave2.png", [self avatarImage]]],
 							 nil];
 	return imageArray;
 }

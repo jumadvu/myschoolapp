@@ -20,11 +20,13 @@
 @synthesize tButton;
 @synthesize lButton;
 @synthesize article;
+@synthesize chapter;
 
 - (void)dealloc {
 	//[lblTitle release];//not currently using this
 	//[tButton release]; //don't need to release because it is created with an autorelease
 	//[lButton release];
+	[chapter release];
 	[fileName release];
 	[lblTitle release];
 	[tButton release];
@@ -37,7 +39,8 @@
 	//go to classroom
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	//[delegate setCurrentChapter:];
+	//[delegate setCurrentChapter:[(ModuleTable*)[self superview] chapter]];
+	[delegate setCurrentChapter:[self chapter]];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
