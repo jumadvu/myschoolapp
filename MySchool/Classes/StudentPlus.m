@@ -62,36 +62,48 @@
 
 -(void)setImageView:(UIImageView*)basicView forMood:(NSString*)mood isWaving:(BOOL)waving{
 	NSLog(@"setting image for student %@", [self firstName]);
-	//face and head
+	//add face
 	NSString *imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
 	UIImage *image = [UIImage imageNamed:imageFile];
-	//UIImageView * basicView = [[UIImageView alloc] initWithImage:image];
 	
+	basicView.contentMode = UIViewContentModeScaleAspectFit;
 	basicView.image = image;
-
-	//body
-	NSString *bodyImageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], @"Body"];
-	UIImage *bodyImage = [UIImage imageNamed:bodyImageFile];
-	UIImageView * bodyView = [[UIImageView alloc] initWithFrame:basicView.frame];
-	bodyView.image = bodyImage;
-	bodyView.contentMode = UIViewContentModeScaleAspectFit;
 	
-	//waving? add animation
-	if (waving) {
+	//remove any subviews
+	for (UIView *view in basicView.subviews) {
+		[view removeFromSuperview];
+	}
 		
-		bodyView.animationImages = [self wavingImageView];
-		bodyView.animationDuration = 1.1;
-		//bodyView.contentMode = UIViewContentModeBottomLeft;
-		bodyView.contentMode = UIViewContentModeScaleAspectFit;
-		[bodyView startAnimating];
-		bodyView.image = nil;
-		basicView.image = nil;
+	if (waving) {
+		//add waving animation
+		UIImageView * wavingView = [[UIImageView alloc] initWithFrame:
+									CGRectMake(0, 0, basicView.frame.size.width, basicView.frame.size.height)];
+		wavingView.contentMode = UIViewContentModeScaleAspectFit;
+		wavingView.animationImages = [self wavingImageView];
+		wavingView.animationDuration = 1.1;
+		[wavingView startAnimating];
+		[basicView insertSubview:wavingView atIndex:0];
+		[self setArmRaised:[NSNumber numberWithInt:1]];
+
 	} else {
-		[bodyView stopAnimating];
-		bodyView.animationImages = nil;
+		//just show still body
+		NSString *bodyImageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], @"Body"];
+		UIImage *bodyImage = [UIImage imageNamed:bodyImageFile];
+		//UIImageView * bodyView = [[UIImageView alloc] initWithFrame:basicView.frame];
+		UIImageView * bodyView = [[UIImageView alloc] initWithImage:bodyImage];
+		bodyView.contentMode = UIViewContentModeScaleAspectFit;
+
+		CGRect rect = bodyView.frame;
+		rect.size.height = basicView.frame.size.height;
+		rect.size.width = basicView.frame.size.width;
+		rect.origin.x = 0;
+		rect.origin.y = 0;
+		bodyView.frame = rect;
+		
+		[basicView insertSubview:bodyView atIndex:0];
+		[self setArmRaised:[NSNumber numberWithInt:0]];
 	}
 
-	[basicView addSubview:bodyView];
 	//return basicView;
 }
 
@@ -108,10 +120,10 @@
 
 -(NSArray*)wavingImageView {
 	NSArray * imageArray  = [[NSArray alloc] initWithObjects:
-							 [UIImage imageNamed:@"Girl1wave1.png"],
-							 [UIImage imageNamed:@"Girl1wave2.png"],
-							 [UIImage imageNamed:@"Girl1wave3.png"],
-							 [UIImage imageNamed:@"Girl1wave2.png"],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave1.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave2.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave3.png", [self avatarImage]]],
+							 [UIImage imageNamed:[NSString stringWithFormat:@"%@wave2.png", [self avatarImage]]],
 							 nil];
 	return imageArray;
 }

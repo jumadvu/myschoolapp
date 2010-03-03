@@ -21,10 +21,12 @@
 @synthesize firstField;
 @synthesize lastField;
 @synthesize avatarImages;
+@synthesize avatarImagesWaistUp;
 @synthesize selectedImage;
 
 - (void)dealloc {
 	[avatarImages release];
+	[avatarImagesWaistUp release];
 	[avatar1Button release];
 	[avatar2Button release];
 	[firstField release];
@@ -34,10 +36,15 @@
 }
 
 - (void)viewDidLoad {
-	NSArray *array = [[NSArray alloc] initWithObjects:@"teacher.png", @"Teacher_M.png", nil];
 	[self setBackgroundColor];
+
+	NSArray *array = [[NSArray alloc] initWithObjects:@"TeacherFBody.png", @"TeacherMBody.png", nil];
 	[self setAvatarImages:array];
 	[array release];
+	
+	NSArray *array2= [[NSArray alloc] initWithObjects:@"TeacherFWaistUp.png", @"TeacherMWaistUp.png", nil];
+	[self setAvatarImagesWaistUp:array2];
+	[array2 release];
 	
 	[firstField setDelegate:self];
 	[lastField setDelegate:self];
@@ -100,6 +107,7 @@
 			[aTeacher setFirstName:[NSString stringWithFormat:firstField.text]];
 			[aTeacher setLastName:[NSString stringWithFormat:lastField.text]];
 			[avatar setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+			[avatar setAvatarImageWaistUp:[avatarImagesWaistUp objectAtIndex:selectedImage]];
 			[aTeacher setStudents:[Student createStudentsInContext:delegate.managedObjectContext]];
 			[aTeacher setAvatar:avatar];
 			//assign the main account holder to this parent

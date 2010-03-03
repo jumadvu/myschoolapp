@@ -69,7 +69,7 @@
 					<object class="IBUIButton" id="797482454">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{85, 403}, {144, 37}}</string>
+						<string key="NSFrame">{{85, 410}, {144, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -99,7 +99,7 @@
 					<object class="IBUILabel" id="255373111">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{30, 204}, {180, 21}}</string>
+						<string key="NSFrame">{{30, 188}, {180, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -119,7 +119,7 @@
 					<object class="IBUIButton" id="269278836">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{41, 245}, {114, 145}}</string>
+						<string key="NSFrame">{{41, 222}, {96, 174}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -135,13 +135,13 @@
 						<reference key="IBUINormalTitleShadowColor" ref="198703259"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">teacher.png</string>
+							<string key="NSResourceName">TeacherFBody.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="975660429">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{167, 232}, {119, 170}}</string>
+						<string key="NSFrame">{{194, 217}, {92, 178}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="632931717"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -158,7 +158,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="933374000"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Teacher_M.png</string>
+							<string key="NSResourceName">TeacherMBody.png</string>
 						</object>
 					</object>
 					<object class="IBUITextField" id="831754274">
@@ -363,11 +363,11 @@
 							<reference ref="173014014"/>
 							<reference ref="1004990817"/>
 							<reference ref="797482454"/>
-							<reference ref="255373111"/>
-							<reference ref="269278836"/>
 							<reference ref="975660429"/>
 							<reference ref="18362617"/>
 							<reference ref="105567025"/>
+							<reference ref="269278836"/>
+							<reference ref="255373111"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>

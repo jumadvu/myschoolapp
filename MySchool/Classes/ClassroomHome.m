@@ -36,6 +36,7 @@
 @synthesize student2;
 @synthesize student3;
 @synthesize student4;
+@synthesize studentViews;
 @synthesize teacher;
 @synthesize lectureText;
 @synthesize students;
@@ -70,6 +71,7 @@
 	[student2 release];
 	[student3 release];
 	[student4 release];
+	[studentViews release];
 	[teacher release];
 	[worksheetsButton release];
 	[startButton release];
@@ -96,35 +98,31 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[startButton setTitle:@"Begin" forState:UIControlStateNormal];
 	
-	
+	//set the students
 	[self setStudents:[delegate.teacher studentsArray]];
-	
-	//[self setStudent0:[[delegate.teacher studentsArray] objectAtIndex:1]];
-	
-	//add the lecture to teach to the database
+		
+	//all students start happy
 	[[students objectAtIndex:0] setImageView:student1 forMood:@"Happy" isWaving:NO];
 	[[students objectAtIndex:1] setImageView:student2 forMood:@"Happy" isWaving:NO];
 	[[students objectAtIndex:2] setImageView:student3 forMood:@"Happy" isWaving:NO];
 	[[students objectAtIndex:3] setImageView:student4 forMood:@"Happy" isWaving:NO];
-	/*
-	[self setStudent1:[[students objectAtIndex:0] myImageViewForMood:@"Happy" isWaving:NO]];
-	[self setStudent2:[[students objectAtIndex:1] myImageViewForMood:@"Happy" isWaving:NO]];
-	[self setStudent3:[[students objectAtIndex:2] myImageViewForMood:@"Happy" isWaving:NO]];
-	[self setStudent4:[[students objectAtIndex:3] myImageViewForMood:@"Happy" isWaving:NO]];
-	 
-	 */
 	
+	//an array of the nib of student imageViews
+	NSArray *anArray = [[NSArray alloc] initWithObjects:student1, student2, student3, student4, nil];
+	[self setStudentViews:anArray];
+	[anArray release];
+	
+	//enable interaction with students
 	student1.userInteractionEnabled	= YES;
 	student2.userInteractionEnabled	= YES;
 	student3.userInteractionEnabled	= YES;
 	student4.userInteractionEnabled	= YES;
 	
-	[self.teacher setImage:[delegate.teacher avatarImage]];
+	//set teacher image
+	[self.teacher setImage:[delegate.teacher avatarImageWaistUp]];
 	
 	scrollSpeed = 5;
 	
-	//add modules to sqlite db
-	//[Library addXMLModule:@"dinosaurs" toDatabaseContext:delegate.managedObjectContext];
 }
 
 
@@ -169,7 +167,8 @@
 }
 
 -(void)loadTextIntoScrollView {
-	//create a UILabel for each regular word in the text and a UIButton for each keyword
+	//create a UILabel for each regular word in the text 
+	//create a UIButton for each keyword
 	//add these labels and buttons to the scrollview
 	
 	scrollView.backgroundColor = [UIColor clearColor];
@@ -242,25 +241,37 @@
 			[scrollView addSubview:label];
 			[label release];
 		}
-		//NSLog(@"%@ isButton: %d", word, isButton);
-		/*
-		if ([word rangeOfString:@"]"].location != NSNotFound) {
-			isButton = NO;
-		}
-		*/
+		
 	}
 	[scrollView setContentSize:CGSizeMake(200, y+30)];
 	
 }
 
+//clicked on a student to answer their question
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"clicked on student");
 	//answer student question in modal window
-	scrollPaused = YES;
+	
+	//scrollPaused = YES;
+	
 	UITouch *touch = [[UITouch alloc] init];
 	touch = [touches anyObject];
 	UIImageView *touchedView = (UIImageView*)touch.view;
-	[[students objectAtIndex:0] setImageView:touchedView forMood:@"Happy" isWaving:NO];
+	if (touchedView == student1) {
+		NSLog(@"clicked student 1");
+		[[students objectAtIndex:0] setImageView:student1 forMood:@"Happy" isWaving:NO];
+	}
+	if (touchedView == student2) {
+		NSLog(@"clicked student 2");
+		[[students objectAtIndex:1] setImageView:student2 forMood:@"Happy" isWaving:NO];
+	}
+	if (touchedView == student3) {
+		NSLog(@"clicked student 3");
+		[[students objectAtIndex:2] setImageView:student3 forMood:@"Happy" isWaving:NO];
+	}
+	if (touchedView == student4) {
+		NSLog(@"clicked student 4");
+		[[students objectAtIndex:3] setImageView:student4 forMood:@"Happy" isWaving:NO];
+	}
 	//[touch release];
 }
 
@@ -336,7 +347,7 @@
 }
 
 - (void)interruption {
-	
+	//handle student question
 	
 }
 
@@ -347,6 +358,7 @@
 		[self lectureOver];
 	}
 	if (!scrollPaused) {
+		//scroll the text
 		CGPoint scrollPoint = scrollView.contentOffset;
 		scrollPoint.y= scrollPoint.y+scrollSpeed;
 		[scrollView setContentOffset:scrollPoint animated:YES];		
@@ -360,20 +372,17 @@
 			counter = 1.0;
 		}
 		self.timerLabel.text = [NSString stringWithFormat:@"%d",secondsRemaining];
-		//student question at random
-		if ([[students objectAtIndex:1] hasQuestion]) {
-			NSLog(@"set student 1 waving");
-			/*
-			student2.animationImages = [[students objectAtIndex:0] wavingImageView];
-			student2.animationDuration = 1.1;
-			student2.contentMode = UIViewContentModeBottomLeft;
-			
-			[student2 startAnimating];
-			*/
-			//[self setStudent1:[[students objectAtIndex:0] myImageViewForMood:@"Confused" isWaving:YES]];
-			[[students objectAtIndex:0] setImageView:student1 forMood:@"Confused" isWaving:YES];
 
+		//check to see if there are any student questions
+		Student *student;
+		int x=0;
+		for (student in students) {
+			if ([student hasQuestion]) {
+				[student setImageView:[studentViews objectAtIndex:x] forMood:@"Confused" isWaving:YES];
+			}
+			x++;
 		}
+		
 	}
 	if (secondsRemaining <= 0) {
 		paused = YES;
@@ -414,30 +423,28 @@
 	if ([choice1.correct intValue] == 1) {
 		NSLog(@"correct");
 		bonusPoints += 10;
-		//change faces to happy
-		[[students objectAtIndex:0] setImageView:student1 forMood:@"Aha" isWaving:NO];
-		[[students objectAtIndex:1] setImageView:student2 forMood:@"Aha" isWaving:NO];
-		[[students objectAtIndex:2] setImageView:student3 forMood:@"Aha" isWaving:NO];
-		[[students objectAtIndex:3] setImageView:student4 forMood:@"Aha" isWaving:NO];
-		/*
-		[self setStudent1:[[students objectAtIndex:0] myImageViewForMood:@"Aha" isWaving:NO]];
-		[self setStudent2:[[students objectAtIndex:1] myImageViewForMood:@"Aha" isWaving:NO]];
-		[self setStudent3:[[students objectAtIndex:2] myImageViewForMood:@"Aha" isWaving:NO]];
-		[self setStudent4:[[students objectAtIndex:3] myImageViewForMood:@"Aha" isWaving:NO]];
-		 */
+		//change faces to happy if student is not waving arm
+		Student *student;
+		int x=0;
+		for (student in students) {
+			if (![[student armRaised] intValue]) {
+				[student setImageView:[studentViews objectAtIndex:x] forMood:@"Aha" isWaving:NO];
+				//NSLog(@"here");
+			}
+			x++;
+		}
 	} else {
 		NSLog(@"incorrect");
 		//change faces to confused
-		[[students objectAtIndex:0] setImageView:student1 forMood:@"Confused" isWaving:NO];
-		[[students objectAtIndex:1] setImageView:student2 forMood:@"Confused" isWaving:NO];
-		[[students objectAtIndex:2] setImageView:student3 forMood:@"Confused" isWaving:NO];
-		[[students objectAtIndex:3] setImageView:student4 forMood:@"Confused" isWaving:NO];
-		/*
-		[self setStudent1:[[students objectAtIndex:0] myImageViewForMood:@"Confused" isWaving:NO]];
-		[self setStudent2:[[students objectAtIndex:1] myImageViewForMood:@"Confused" isWaving:NO]];
-		[self setStudent3:[[students objectAtIndex:2] myImageViewForMood:@"Confused" isWaving:NO]];
-		[self setStudent4:[[students objectAtIndex:3] myImageViewForMood:@"Confused" isWaving:NO]];
-		 */
+		Student *student;
+		int x=0;
+		for (student in students) {
+			if (![[student armRaised] intValue]) {
+				[student setImageView:[studentViews objectAtIndex:x] forMood:@"Confused" isWaving:NO];
+				
+			}
+			x++;
+		}
 	}
 	[currentButton setTitle:choice1.word forState:UIControlStateNormal];
 	keywordIndex++;
@@ -452,11 +459,11 @@
 
 
 -(void)scrollSpeedPlus{
-	scrollSpeed ++;
+	scrollSpeed = scrollSpeed + 6;
 }
 
 -(void)scrollSpeedMinus{
-	scrollSpeed --;
+	scrollSpeed = scrollSpeed - 6;
 }
 
 -(void)toChalkboard {

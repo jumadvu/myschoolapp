@@ -17,6 +17,7 @@
 	IBOutlet UITextField *lastField;
 	int selectedImage;
 	NSArray *avatarImages;
+	NSArray *avatarImagesWaistUp;
 }
 
 @property (nonatomic, retain) UIButton *continueButton;
@@ -25,6 +26,7 @@
 @property (nonatomic, retain) UITextField *firstField;
 @property (nonatomic, retain) UITextField *lastField;
 @property (nonatomic, retain) NSArray *avatarImages;
+@property (nonatomic, retain) NSArray *avatarImagesWaistUp;
 @property int selectedImage;
 
 -(IBAction)continueAvatarDesign;

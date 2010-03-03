@@ -13,6 +13,7 @@
 
 -(NSString *)fullName;
 -(UIImage *)avatarImage;
+-(UIImage *)avatarImageWaistUp;
 -(NSArray*)studentsArray;
 
 @end
