@@ -433,6 +433,7 @@
 			}
 			x++;
 		}
+		[currentButton setBackgroundColor:[UIColor greenColor]];
 	} else {
 		NSLog(@"incorrect");
 		//change faces to confused
