@@ -15,5 +15,6 @@
 -(UIImage *)avatarImage;
 -(UIImage *)avatarImageWaistUp;
 -(NSArray*)studentsArray;
+-(NSString*)title;
 
 @end

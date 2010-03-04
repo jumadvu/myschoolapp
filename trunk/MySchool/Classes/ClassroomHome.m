@@ -16,7 +16,7 @@
 #import "UserPlus.h"
 #import "Student.h"
 #import "StudentPlus.h"
-#import "LibraryHome.h"
+#import "LibraryShelves.h"
 #import "Lecture.h"
 #import "LecturePlus.h"
 #import "Keyword.h"
@@ -56,6 +56,7 @@
 @synthesize completedLesson;
 @synthesize currentButton;
 @synthesize student0;
+@synthesize whichQuestion;
 
 - (void)dealloc {
 	[student0 release];
@@ -89,13 +90,31 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	NSLog(@"classroom home view did load");
     [super viewDidLoad];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	//if they are coming directly to the classroom, show alert message and reroute to library
+	if (delegate.currentChapter == nil) {
+		//go to library to choose current chapter
+		LibraryShelves *vc = [[[LibraryShelves alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];	
+		
+		NSString *msg = [NSString stringWithFormat:@"You first need to choose today's lesson. So let's go to the library."];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"Hold on a second!" 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+
 	[self setBackgroundColor];
 	
 	greenButton = [UIImage imageNamed:@"green_button.png"];
 	redButton = [UIImage imageNamed:@"red_button.png"];
 	
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[startButton setTitle:@"Begin" forState:UIControlStateNormal];
 	
 	//set the students
@@ -122,20 +141,11 @@
 	[self.teacher setImage:[delegate.teacher avatarImageWaistUp]];
 	
 	scrollSpeed = 5;
-	
-}
-
-
--(void)viewDidAppear:(BOOL)animated {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	if (delegate.currentChapter == nil) {
-		//go to library to choose current chapter
-		LibraryHome *vc = [[[LibraryHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
-		[delegate.navCon pushViewController:vc animated:YES];		
-	}
+		
 	[self setChapter:delegate.currentChapter];
 	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:.2 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
-	self.repeatingTimer = timer;		
+	self.repeatingTimer = timer;	
+	whichQuestion = 0;
 	paused = YES;
 	scrollPaused = YES;
 	secondsRemaining = 120;
@@ -164,6 +174,13 @@
 	scrollView.showsVerticalScrollIndicator = YES;
 	//add main lecture text
 	[self loadTextIntoScrollView];
+	
+}
+
+
+-(void)viewDidAppear:(BOOL)animated {
+	NSLog(@"classroom home view did appear");
+	
 }
 
 -(void)loadTextIntoScrollView {
@@ -247,30 +264,32 @@
 	
 }
 
-//clicked on a student to answer their question
+//handle click on student
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	//answer student question in modal window
-	
-	//scrollPaused = YES;
-	
+		
 	UITouch *touch = [[UITouch alloc] init];
 	touch = [touches anyObject];
 	UIImageView *touchedView = (UIImageView*)touch.view;
 	if (touchedView == student1) {
 		NSLog(@"clicked student 1");
 		[[students objectAtIndex:0] setImageView:student1 forMood:@"Happy" isWaving:NO];
+		[self answerQuestionFromStudent:[students objectAtIndex:0]];
 	}
 	if (touchedView == student2) {
 		NSLog(@"clicked student 2");
 		[[students objectAtIndex:1] setImageView:student2 forMood:@"Happy" isWaving:NO];
+		[self answerQuestionFromStudent:[students objectAtIndex:1]];
 	}
 	if (touchedView == student3) {
 		NSLog(@"clicked student 3");
 		[[students objectAtIndex:2] setImageView:student3 forMood:@"Happy" isWaving:NO];
+		[self answerQuestionFromStudent:[students objectAtIndex:2]];
 	}
 	if (touchedView == student4) {
 		NSLog(@"clicked student 4");
 		[[students objectAtIndex:3] setImageView:student4 forMood:@"Happy" isWaving:NO];
+		[self answerQuestionFromStudent:[students objectAtIndex:3]];
 	}
 	//[touch release];
 }
@@ -346,9 +365,27 @@
 
 }
 
-- (void)interruption {
+//present modal window to answer student question
+-(void)answerQuestionFromStudent:(Student *)student{
 	//handle student question
-	
+	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	scrollPaused = YES;
+	StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.delegate = self;
+	vc.student = student;
+	vc.whichQuestion = whichQuestion;
+	vc.chapter = chapter;
+	whichQuestion++; //increment the questions for this chapter
+	[self presentModalViewController:vc animated:YES];
+
+}
+
+- (void)dismissQuestionWindow:(NSNumber *)points {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[self dismissModalViewControllerAnimated:YES];
+	[self setScrollPaused:NO];
+	delegate.teacher.totalPoints += [points intValue];
+	NSLog(@"dismissed window");
 }
 
 - (void)timerFireMethod:(NSTimer*)theTimer {
@@ -362,7 +399,11 @@
 		CGPoint scrollPoint = scrollView.contentOffset;
 		scrollPoint.y= scrollPoint.y+scrollSpeed;
 		[scrollView setContentOffset:scrollPoint animated:YES];		
+	} else {
+		//scrollPaused
+		//NSLog(@"scroll paused");
 	}
+
 	if (!paused) {
 		//find the new position for the scrolling text
 		counter = counter - .2;

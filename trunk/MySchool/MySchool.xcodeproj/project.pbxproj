@@ -64,6 +64,9 @@
 		AB17670B113EDFCC00BA887D /* ClassWall.png in Resources */ = {isa = PBXBuildFile; fileRef = AB176707113EDFCB00BA887D /* ClassWall.png */; };
 		AB17670C113EDFCC00BA887D /* KidsBGWall.png in Resources */ = {isa = PBXBuildFile; fileRef = AB176708113EDFCB00BA887D /* KidsBGWall.png */; };
 		AB17670D113EDFCC00BA887D /* StudentDesk.png in Resources */ = {isa = PBXBuildFile; fileRef = AB176709113EDFCB00BA887D /* StudentDesk.png */; };
+		AB1767C3113F5D7B00BA887D /* yellowbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1767C2113F5D7B00BA887D /* yellowbutton.png */; };
+		AB17689B113F9EBE00BA887D /* smallspeechbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = AB17689A113F9EBE00BA887D /* smallspeechbubble.png */; };
+		AB176905113FB09F00BA887D /* StudentQuestionPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB176904113FB09F00BA887D /* StudentQuestionPlus.m */; };
 		AB2054D811191E2B00ED8E61 /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054B911191E2B00ED8E61 /* CompletedWorksheet.m */; };
 		AB2054D911191E2B00ED8E61 /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054BB11191E2B00ED8E61 /* WorksheetAnswer.m */; };
 		AB2054DA11191E2B00ED8E61 /* StudentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054BD11191E2B00ED8E61 /* StudentQuestion.m */; };
@@ -245,6 +248,10 @@
 		AB176707113EDFCB00BA887D /* ClassWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClassWall.png; sourceTree = "<group>"; };
 		AB176708113EDFCB00BA887D /* KidsBGWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KidsBGWall.png; sourceTree = "<group>"; };
 		AB176709113EDFCB00BA887D /* StudentDesk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StudentDesk.png; sourceTree = "<group>"; };
+		AB1767C2113F5D7B00BA887D /* yellowbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowbutton.png; sourceTree = "<group>"; };
+		AB17689A113F9EBE00BA887D /* smallspeechbubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallspeechbubble.png; sourceTree = "<group>"; };
+		AB176903113FB09F00BA887D /* StudentQuestionPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentQuestionPlus.h; sourceTree = "<group>"; };
+		AB176904113FB09F00BA887D /* StudentQuestionPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentQuestionPlus.m; sourceTree = "<group>"; };
 		AB2054B811191E2B00ED8E61 /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
 		AB2054B911191E2B00ED8E61 /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
 		AB2054BA11191E2B00ED8E61 /* WorksheetAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetAnswer.h; sourceTree = "<group>"; };
@@ -557,6 +564,8 @@
 				AB61202A112E06A600F31B72 /* LecturePlus.m */,
 				AB95CA671132E50100203EA4 /* ChapterPlus.h */,
 				AB95CA681132E50200203EA4 /* ChapterPlus.m */,
+				AB176903113FB09F00BA887D /* StudentQuestionPlus.h */,
+				AB176904113FB09F00BA887D /* StudentQuestionPlus.m */,
 			);
 			name = Model;
 			path = Classes;
@@ -842,6 +851,8 @@
 		AB53B519112349DE0017AFAB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AB17689A113F9EBE00BA887D /* smallspeechbubble.png */,
+				AB1767C2113F5D7B00BA887D /* yellowbutton.png */,
 				AB95CE4611358DDF00203EA4 /* gradient_button.png */,
 				AB95CDE311350B8800203EA4 /* Teacher_M.png */,
 				AB95CDD81135038C00203EA4 /* supplies.png */,
@@ -1014,6 +1025,8 @@
 				AB17670B113EDFCC00BA887D /* ClassWall.png in Resources */,
 				AB17670C113EDFCC00BA887D /* KidsBGWall.png in Resources */,
 				AB17670D113EDFCC00BA887D /* StudentDesk.png in Resources */,
+				AB1767C3113F5D7B00BA887D /* yellowbutton.png in Resources */,
+				AB17689B113F9EBE00BA887D /* smallspeechbubble.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,6 +1096,7 @@
 				AB176524113D719100BA887D /* testing123.m in Sources */,
 				AB17666F113DA15E00BA887D /* Avatar.m in Sources */,
 				F5B38118113DDB97004DBDAF /* Image.m in Sources */,
+				AB176905113FB09F00BA887D /* StudentQuestionPlus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

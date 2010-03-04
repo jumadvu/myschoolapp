@@ -67,64 +67,57 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>How did the cavemen avoid getting eaten by dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="0">They hid in caves</answer>
 					<answer correctness="5">There were no cavemen in the time of the dinosaurs</answer>
-					<answer correctness="0">Scientists don't know how cavemen avoided getting eaten.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why don't dinosaurs exist anymore?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">A big meteor hit the earth and caused a cloud that blocked the sun's warming rays.</answer>
 					<answer correctness="1">They ate each other until there were no more left.</answer>
-					<answer correctness="0">The cavemen wiped them all out.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>How do scientists know if a dinosaur was an carnivore or a herbivore?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">They look at the fossil teeth. Carnivore teeth are bigger and pointier than herbivore teeth</answer>
 					<answer correctness="1">They look on wikipedia</answer>
-					<answer correctness="1">The big ones were herbivores and the small ones were carnivores.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>What made scientists decide to look for dinosaur bones?</text>
-					<studenttype>1</studenttype>
-					<answer correctness="4">The first dinosaur bones were not found by scientists.</answer>
+					<studentType>1</studentType>
 					<answer correctness="4">Scientists have always looked for bones for answers about our past.</answer>
 					<answer correctness="0">Albert Einstein had a vision about dinosaurs.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why did some dinosaurs eat plants, and others eat only meat?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">The process of evolution has created this division throughout the animal kingdom.</answer>
-					<answer correctness="0">Some dinosaurs could not afford meat.</answer>
-					<answer correctness="3">The short dinosaurs could not reach the leaves on the trees.</answer>
+					<answer correctness="1">The short dinosaurs could not reach the leaves on the trees.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why were dinosaurs so big?</text>
-					<studenttype>1</studenttype>
-					<answer correctness="3">There was an abundant food supply in the Mesozoic period</answer>
+					<studentType>1</studentType>
 					<answer correctness="4">Scientists are not sure of the reason.</answer>
 					<answer correctness="0">Because being big was cool back then.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>How heavy was a Tyrannosaurus Rex?</text>
-					<studenttype>1</studenttype>
-					<answer correctness="5">5-7 tons</answer>
-					<answer correctness="5">500-700 pounds</answer>
-					<answer correctness="0">50-80 tons</answer>
+					<studentType>1</studentType>
+					<answer correctness="5">About 6 tons</answer>
+					<answer correctness="0">About 100 tons</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Were dinosaurs mammals?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="0">Yes, they were the earliest mammals</answer>
 					<answer correctness="5">No, they were reptiles</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
 				</studentQuestion>
 			</lecture> 
 		</chapter>
@@ -148,8 +141,8 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
-					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Humans evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
 			</lecture>
@@ -172,7 +165,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -198,7 +191,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -224,7 +217,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -249,7 +242,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -274,7 +267,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -294,7 +287,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -314,7 +307,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
@@ -334,7 +327,7 @@
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
-					<studenttype>1</studenttype>
+					<studentType>1</studentType>
 					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
 					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>

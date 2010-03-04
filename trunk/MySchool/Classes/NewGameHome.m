@@ -110,6 +110,14 @@
 			[avatar setAvatarImageWaistUp:[avatarImagesWaistUp objectAtIndex:selectedImage]];
 			[aTeacher setStudents:[Student createStudentsInContext:delegate.managedObjectContext]];
 			[aTeacher setAvatar:avatar];
+			if (selectedImage == 0) {
+				//its the woman
+				[aTeacher setGender:@"female"];
+			} else {
+				//its a guy
+				[aTeacher setGender:@"male"];
+			}
+
 			//assign the main account holder to this parent
 			delegate.teacher = aTeacher;
 		} else {

@@ -31,6 +31,14 @@
 	return image;
 }
 
+-(NSString*)title {
+	if ([self.gender isEqualToString:@"male"]) {
+		return [NSString stringWithFormat:@"Mister %@", self.lastName];
+	} else {
+		return [NSString stringWithFormat:@"Ms %@", self.lastName];
+	}
+}
+
 -(NSArray*)studentsArray {
 	
 	NSArray *array = [[NSArray alloc] initWithArray:[self.students allObjects]];

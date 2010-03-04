@@ -9,8 +9,22 @@
 #import "ChapterPlus.h"
 #import "User.h"
 #import "CompletedLesson.h"
+#import "Lecture.h"
 
 @implementation Chapter (ChapterPlus)
+
+-(NSArray*)studentQuestionsArray {
+	
+	NSArray *array = [[NSArray alloc] initWithArray:[self.lecture.studentQuestions allObjects]];
+	NSSortDescriptor *descriptor =
+    [[[NSSortDescriptor alloc] initWithKey:@"text"
+								 ascending:YES] autorelease];
+	
+	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
+	NSArray *sortedArray = [array sortedArrayUsingDescriptors:descriptors];
+	
+	return sortedArray;
+}
 
 - (NSNumber*)maxPointsForUsersCompletedLessons:(NSArray*)completedLessons {
 	
