@@ -130,8 +130,8 @@
 
 -(BOOL)hasQuestion {
 	//NSLog(@"forMood %d", [self.armRaised intValue]);
-	int i = arc4random() % 100;
-	if (i%25 == 0 && ![self.armRaised intValue]) {
+	int i = arc4random() % 200;
+	if (i%117 == 0 && ![self.armRaised intValue]) {
 		NSLog(@"has question? yes");
 		[self setArmRaised:[NSNumber numberWithInt:1]];
 		return YES;

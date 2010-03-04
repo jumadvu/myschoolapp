@@ -10,8 +10,10 @@
 @class Module;
 @class Chapter;
 @class Student;
+@class StudentQuestionHome;
+@protocol QuestionDelegate;
 
-@interface ClassroomHome : baseViewController <UIActionSheetDelegate, UIScrollViewDelegate> {
+@interface ClassroomHome : baseViewController <UIActionSheetDelegate, UIScrollViewDelegate, QuestionDelegate> {
 	IBOutlet UIButton *chalkboardButton;
 	IBOutlet UIButton *startButton;
 	IBOutlet UIButton *faster;
@@ -39,6 +41,7 @@
 	BOOL start;
 	
 	int keywordIndex;
+	int whichQuestion;
 	
 	UIImage *greenButton;
 	UIImage *redButton;
@@ -66,6 +69,7 @@
 @property (nonatomic) BOOL scrollPaused;
 @property (nonatomic) BOOL start;
 @property (nonatomic) int secondsRemaining;
+@property (nonatomic) int whichQuestion;
 @property (nonatomic) float counter;
 @property (nonatomic) int scrollSpeed;
 @property (nonatomic) int keywordIndex;
@@ -102,5 +106,7 @@
 -(void)loadTextIntoScrollView;
 -(void)clickedButton:(UIButton *)button;
 -(void)lectureOver;
+-(void)answerQuestionFromStudent:(Student *)student;
+- (void)dismissQuestionWindow:(NSNumber *)points;
 
 @end

@@ -150,16 +150,18 @@
 		}
 		
 		//grab the student questions
-		TBXMLElement * studentQ=[tbxml childElementNamed:@"studentQuestion" parentElement:chapter];		
+		TBXMLElement * studentQ=[tbxml childElementNamed:@"studentQuestion" parentElement:lecture];		
 		while (studentQ!=nil) {
+			NSLog(@"adding question");
 			StudentQuestion *studentQMO = (StudentQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentQuestion" inManagedObjectContext:moc];
 			[studentQMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:studentQ]]];
 			[studentQMO setStudentType:[NSNumber numberWithInt:[[tbxml textForElement:[tbxml childElementNamed:@"studentType" parentElement:studentQ]] intValue]]];
 			[studentQMO setLecture:lectureMO];
 			TBXMLElement * answer=[tbxml childElementNamed:@"answer" parentElement:studentQ];		
 			while (answer!=nil) {
+				NSLog(@"adding answer");
 				StudentAnswer *answerMO = (StudentAnswer *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentAnswer" inManagedObjectContext:moc];
-				[answerMO setAnswer:[tbxml textForElement:[tbxml childElementNamed:@"answer" parentElement:studentQ]]];
+				[answerMO setAnswer:[tbxml textForElement:answer]];
 				[answerMO setCorrectness:[NSNumber numberWithInt:[[tbxml valueOfAttributeNamed:@"correctness" forElement:answer] intValue]]];
 				[studentQMO addAnswersObject:answerMO];
 				answer = [tbxml nextSiblingNamed:@"answer" searchFromElement:answer];
@@ -170,7 +172,7 @@
 		[chapterMO setOrder:[NSNumber numberWithInt:chapterCount]];
 		
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-		Article *article = (Article *)[NSEntityDescription insertNewObjectForEntityForName:@"Article" inManagedObjectContext:moc];;
+		Article *article = (Article *)[NSEntityDescription insertNewObjectForEntityForName:@"Article" inManagedObjectContext:moc];
 		TBXMLElement * art =[tbxml childElementNamed:@"article" parentElement:chapter];
 		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:art]]];
 		

@@ -13,5 +13,6 @@
 
 - (NSNumber*)maxPointsForUsersCompletedLessons:(NSArray*)completedLessons;
 - (NSString*)maxPointsForUsersCompletedLessonsAsString:(NSArray*)completedLessons;
+-(NSArray*)studentQuestionsArray;
 
 @end
