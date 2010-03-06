@@ -20,6 +20,7 @@
 
 -(IBAction)toMainMenu;
 -(IBAction)raiseMenu:(UIButton*)sender;
+-(IBAction)lowerMenu:(UIButton*)sender;
 -(IBAction)goBack;
 -(void)setBackgroundColor;
 

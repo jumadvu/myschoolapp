@@ -17,6 +17,9 @@
 #import "StudentAnswer.h"
 #import "Article.h"
 #import "Image.h"
+#import "Worksheet.h"
+#import "WorksheetQuestion.h"
+#import "WorksheetAnswer.h"
 
 @implementation Library
 
@@ -152,14 +155,12 @@
 		//grab the student questions
 		TBXMLElement * studentQ=[tbxml childElementNamed:@"studentQuestion" parentElement:lecture];		
 		while (studentQ!=nil) {
-			NSLog(@"adding question");
 			StudentQuestion *studentQMO = (StudentQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentQuestion" inManagedObjectContext:moc];
 			[studentQMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:studentQ]]];
 			[studentQMO setStudentType:[NSNumber numberWithInt:[[tbxml textForElement:[tbxml childElementNamed:@"studentType" parentElement:studentQ]] intValue]]];
 			[studentQMO setLecture:lectureMO];
 			TBXMLElement * answer=[tbxml childElementNamed:@"answer" parentElement:studentQ];		
 			while (answer!=nil) {
-				NSLog(@"adding answer");
 				StudentAnswer *answerMO = (StudentAnswer *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentAnswer" inManagedObjectContext:moc];
 				[answerMO setAnswer:[tbxml textForElement:answer]];
 				[answerMO setCorrectness:[NSNumber numberWithInt:[[tbxml valueOfAttributeNamed:@"correctness" forElement:answer] intValue]]];
@@ -176,7 +177,7 @@
 		TBXMLElement * art =[tbxml childElementNamed:@"article" parentElement:chapter];
 		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:art]]];
 		
-		//get the keyword sets
+		//get the article images
 		TBXMLElement * image=[tbxml childElementNamed:@"image" parentElement:art];
 		int imageCount = 0;
 		while (image!=nil) {
@@ -190,9 +191,33 @@
 			image = [tbxml nextSiblingNamed:@"image" searchFromElement:image];
 			imageCount++;
 		}
+
+		//get the worksheet questions images
+		Worksheet *worksheetMO = (Worksheet *)[NSEntityDescription insertNewObjectForEntityForName:@"Worksheet" inManagedObjectContext:moc];
+		[worksheetMO setLecture:lectureMO];
+		TBXMLElement * wQuestion=[tbxml childElementNamed:@"worksheetQuestion" parentElement:chapter];
+		while (wQuestion!=nil) {
+			NSLog(@"adding worksheet question");
+			WorksheetQuestion *worksheetQuestionMO = (WorksheetQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"WorksheetQuestion" inManagedObjectContext:moc];
+			NSLog(@"1");
+			[worksheetQuestionMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:wQuestion]]];
+			NSLog(@"2");
+			[worksheetQuestionMO setWorksheet:worksheetMO];
+			NSLog(@"3");
+			TBXMLElement * answer=[tbxml childElementNamed:@"answer" parentElement:wQuestion];		
+			NSLog(@"4");
+			while (answer!=nil) {
+				NSLog(@"adding answer");
+				WorksheetAnswer *answerMO = (WorksheetAnswer *)[NSEntityDescription insertNewObjectForEntityForName:@"WorksheetAnswer" inManagedObjectContext:moc];
+				[answerMO setAnswer:[tbxml textForElement:answer]];
+				[answerMO setCorrectness:[NSNumber numberWithInt:[[tbxml valueOfAttributeNamed:@"correctness" forElement:answer] intValue]]];
+				[worksheetQuestionMO addAnswersObject:answerMO];
+				answer = [tbxml nextSiblingNamed:@"answer" searchFromElement:answer];
+			}
+			wQuestion = [tbxml nextSiblingNamed:@"worksheetQuestion" searchFromElement:wQuestion];
+		}
 		
 		[chapterMO setArticle:article];
-		//[chapterMO addArticles:[tbxml textForElement:[tbxml childElementNamed:@"article" parentElement:chapter]]];
 		[chapterMO setModule:moduleMO];
 		[chapterMO setLecture:lectureMO];
 		chapter = [tbxml nextSiblingNamed:@"chapter" searchFromElement:chapter];

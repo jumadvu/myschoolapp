@@ -9,14 +9,20 @@
 #import "PapersToGrade.h"
 #import "GradePaper.h"
 #import "User.h"
-
+#import "Worksheet.h"
+#import "Student.h"
+#import "StudentPlus.h"
+#import "CompletedWorksheet.h"
+#import "Lecture.h"
 
 @implementation PapersToGrade
 
 @synthesize students;
+@synthesize myTableView;
 
 - (void)dealloc {
 	[students release];
+	[myTableView release];
     [super dealloc];
 }
 
@@ -28,12 +34,22 @@
     return self;
 }
 
-
+/*
+- (UITableView*)tableView{
+    return myTableView;
+}
+*/
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	//self.tableView.frame = CGRectMake(0,50,320,380);
+	
+	/*
+    myTableView = [super tableView];
+    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame]; 
+    self.view = view;
+    myTableView.frame = CGRectMake(0, 50, 320, 380);
+    [view addSubview:myTableView];
+	 */
 }
 
 
@@ -69,14 +85,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 
-    //return [[[students objectAtIndex:section] worksheets] count];
-	return 1;
-}
-
-- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
-{
-	//return UITableViewCellAccessoryDetailDisclosureButton;
-	return UITableViewCellAccessoryDisclosureIndicator;
+    return [[[students objectAtIndex:section] worksheets] count];
+	//return 1;
 }
 
 // Customize the appearance of table view cells.
@@ -86,11 +96,15 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
+	CompletedWorksheet *completedWorksheet = [[[students objectAtIndex:indexPath.section] completedWorksheetsArray] objectAtIndex:indexPath.row];
     // Set up the cell...
-	cell.textLabel.text = [NSString stringWithFormat:@"%@'s dinosaur worksheet", [[students objectAtIndex:indexPath.section] firstName]];
+	cell.textLabel.font = [UIFont systemFontOfSize:14];
+	cell.textLabel.text = [NSString stringWithFormat:@"%@", completedWorksheet.worksheet.lecture.title];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", completedWorksheet.date];
+	//cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", [completedWorksheet.answers count]];
     return cell;
 }
 
@@ -99,6 +113,10 @@
     // Navigation logic may go here. Create and push another view controller.
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	GradePaper *vc = [[[GradePaper alloc] initWithNibName:nil bundle:nil] autorelease];
+	CompletedWorksheet *completedWorksheet = [[[students objectAtIndex:indexPath.section] completedWorksheetsArray] objectAtIndex:indexPath.row];
+	vc.answers = [completedWorksheet.answers allObjects];
+	vc.completedWorksheet = completedWorksheet;
+	NSLog(@"papers to grade: how many answers: %d", [vc.answers count]);
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 

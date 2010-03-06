@@ -164,12 +164,12 @@
  If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
  */
 - (NSManagedObjectContext *)managedObjectContext {
-	NSLog(@"getting managed object context");
+	//NSLog(@"getting managed object context");
 	
     if (managedObjectContext != nil) {
         return managedObjectContext;
     }
-	NSLog(@"creating a managed object context");
+	//NSLog(@"creating a managed object context");
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         managedObjectContext = [NSManagedObjectContext new];

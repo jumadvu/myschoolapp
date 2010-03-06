@@ -198,7 +198,7 @@
 						<int key="NSvFlags">292</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIImageView" id="216175640">
+							<object class="IBUIImageView" id="984633232">
 								<reference key="NSNextResponder" ref="1058605588"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 230}</string>
@@ -243,7 +243,7 @@
 									<string key="NSResourceName">Boy1Happy.png</string>
 								</object>
 							</object>
-							<object class="IBUIImageView" id="417487192">
+							<object class="IBUIImageView" id="541337337">
 								<reference key="NSNextResponder" ref="1058605588"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{16, 130}, {106, 81}}</string>
@@ -252,12 +252,12 @@
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 								<int key="IBUIContentMode">1</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<object class="NSCustomResource" key="IBUIImage" id="684063116">
+								<object class="NSCustomResource" key="IBUIImage" id="637523774">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">StudentDesk.png</string>
 								</object>
 							</object>
-							<object class="IBUIImageView" id="656366252">
+							<object class="IBUIImageView" id="184177150">
 								<reference key="NSNextResponder" ref="1058605588"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{136, 130}, {106, 81}}</string>
@@ -266,7 +266,7 @@
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 								<int key="IBUIContentMode">1</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<reference key="IBUIImage" ref="684063116"/>
+								<reference key="IBUIImage" ref="637523774"/>
 							</object>
 							<object class="IBUIImageView" id="457379554">
 								<reference key="NSNextResponder" ref="1058605588"/>
@@ -296,7 +296,7 @@
 									<string key="NSResourceName">Boy2Happy.png</string>
 								</object>
 							</object>
-							<object class="IBUIImageView" id="977475263">
+							<object class="IBUIImageView" id="780905771">
 								<reference key="NSNextResponder" ref="1058605588"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{197, 165}, {106, 81}}</string>
@@ -305,9 +305,9 @@
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 								<int key="IBUIContentMode">1</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<reference key="IBUIImage" ref="684063116"/>
+								<reference key="IBUIImage" ref="637523774"/>
 							</object>
-							<object class="IBUIImageView" id="190392443">
+							<object class="IBUIImageView" id="808418010">
 								<reference key="NSNextResponder" ref="1058605588"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{73, 165}, {106, 81}}</string>
@@ -316,7 +316,7 @@
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 								<int key="IBUIContentMode">1</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<reference key="IBUIImage" ref="684063116"/>
+								<reference key="IBUIImage" ref="637523774"/>
 							</object>
 						</object>
 						<string key="NSFrame">{{0, 230}, {320, 230}}</string>
@@ -413,15 +413,6 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">7</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">raiseMenu:</string>
-						<reference key="source" ref="1011922919"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">1</int>
-					</object>
-					<int key="connectionID">17</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -530,6 +521,24 @@
 					</object>
 					<int key="connectionID">60</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">lowerMenu:</string>
+						<reference key="source" ref="1011922919"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">8</int>
+					</object>
+					<int key="connectionID">66</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">raiseMenu:</string>
+						<reference key="source" ref="1011922919"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">1</int>
+					</object>
+					<int key="connectionID">67</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -576,12 +585,12 @@
 							<reference ref="170849914"/>
 							<reference ref="457379554"/>
 							<reference ref="406077276"/>
-							<reference ref="216175640"/>
+							<reference ref="984633232"/>
 							<reference ref="222910651"/>
-							<reference ref="977475263"/>
-							<reference ref="190392443"/>
-							<reference ref="656366252"/>
-							<reference ref="417487192"/>
+							<reference ref="780905771"/>
+							<reference ref="808418010"/>
+							<reference ref="184177150"/>
+							<reference ref="541337337"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -671,27 +680,27 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">61</int>
-						<reference key="object" ref="216175640"/>
+						<reference key="object" ref="984633232"/>
 						<reference key="parent" ref="1058605588"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">62</int>
-						<reference key="object" ref="977475263"/>
+						<reference key="object" ref="780905771"/>
 						<reference key="parent" ref="1058605588"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">63</int>
-						<reference key="object" ref="190392443"/>
+						<reference key="object" ref="808418010"/>
 						<reference key="parent" ref="1058605588"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">64</int>
-						<reference key="object" ref="417487192"/>
+						<reference key="object" ref="541337337"/>
 						<reference key="parent" ref="1058605588"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">65</int>
-						<reference key="object" ref="656366252"/>
+						<reference key="object" ref="184177150"/>
 						<reference key="parent" ref="1058605588"/>
 					</object>
 				</object>
@@ -771,7 +780,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">65</int>
+			<int key="maxID">67</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -863,12 +872,14 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goBack</string>
+							<string>lowerMenu:</string>
 							<string>raiseMenu:</string>
 							<string>toMainMenu</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
+							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>id</string>
 						</object>

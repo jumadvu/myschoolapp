@@ -2,7 +2,7 @@
 //  Lecture.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/2/10.
+//  Created by Ashley Kayler on 3/5/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -11,6 +11,7 @@
 @class Chapter;
 @class KeywordSet;
 @class StudentQuestion;
+@class Worksheet;
 
 @interface Lecture :  NSManagedObject  
 {
@@ -21,6 +22,7 @@
 @property (nonatomic, retain) Chapter * chapter;
 @property (nonatomic, retain) NSSet* studentQuestions;
 @property (nonatomic, retain) NSSet* keywordSets;
+@property (nonatomic, retain) Worksheet * worksheet;
 
 @end
 

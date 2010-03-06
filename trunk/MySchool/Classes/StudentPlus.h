@@ -19,4 +19,6 @@
 -(NSArray*)wavingImageView;
 -(BOOL)hasQuestion;
 -(void)setImageView:(UIImageView*)basicView forMood:(NSString*)mood isWaving:(BOOL)waving;
+-(NSArray*)completedWorksheetsArray;
+
 @end
