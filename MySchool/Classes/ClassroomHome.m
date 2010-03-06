@@ -23,6 +23,8 @@
 #import "KeywordSet.h"
 #import "MainMenu.h"
 #import "CompletedLesson.h"
+#import "Worksheet.h"
+#import "WorksheetPlus.h"
 
 @implementation ClassroomHome
 
@@ -57,6 +59,7 @@
 @synthesize currentButton;
 @synthesize student0;
 @synthesize whichQuestion;
+@synthesize numQuestionsAssigned;
 
 - (void)dealloc {
 	[student0 release];
@@ -144,7 +147,8 @@
 		
 	[self setChapter:delegate.currentChapter];
 	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:.2 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
-	self.repeatingTimer = timer;	
+	self.repeatingTimer = timer;
+	numQuestionsAssigned = 0;
 	whichQuestion = 0;
 	paused = YES;
 	scrollPaused = YES;
@@ -162,15 +166,17 @@
 	[[students objectAtIndex:3] setArmRaised:[NSNumber numberWithInt:0]];
 	
 	
-	lectureText = [[UITextView alloc] init];
-	CGRect lectureTextFrame = CGRectMake(0, 0, 200, 140.0);
-	lectureText.frame = lectureTextFrame;
-	lectureText.backgroundColor = [UIColor clearColor];
-	lectureText.font = [UIFont systemFontOfSize:17];
+	//lectureText = [[UITextView alloc] init];
+	//CGRect lectureTextFrame = CGRectMake(0, 0, 200, 140.0);
+	//lectureText.frame = lectureTextFrame;
+	//lectureText.backgroundColor = [UIColor clearColor];
+	//lectureText.font = [UIFont systemFontOfSize:17];
 	//add opening remarks
-	[self.lectureText setText:[NSString stringWithFormat:@"Hello Class!\rToday we are going to talk about, %@", self.chapter.title]];
-	[self.lectureText setEditable:NO];
-	[scrollView addSubview:self.lectureText];
+	NSString *openingRemark = [NSString stringWithFormat:@"Hello Class!\rThe topic for today's lesson is "];
+	NSString *endingRemark = [NSString stringWithFormat:@"\r\r\rThat's all for now kids. Don't forget to do your homework!"];
+	lectureText = [NSString stringWithFormat:@"%@%@\r\r\r%@%@", openingRemark, self.chapter.title, chapter.lecture.text, endingRemark];
+	//[self.lectureText setEditable:NO];
+	//[scrollView addSubview:self.lectureText];
 	scrollView.showsVerticalScrollIndicator = YES;
 	//add main lecture text
 	[self loadTextIntoScrollView];
@@ -189,16 +195,19 @@
 	//add these labels and buttons to the scrollview
 	
 	scrollView.backgroundColor = [UIColor clearColor];
-	NSMutableArray *words = [[NSMutableArray alloc] init];
-	NSArray *lines = [chapter.lecture.text componentsSeparatedByString:@"\n"];
-	NSEnumerator *enumerator = [lines objectEnumerator];
+	//NSArray *lines = [chapter.lecture.text componentsSeparatedByString:@"\n"];
+
+	//get all the lines from the lecture text
+	NSArray *lines = [lectureText componentsSeparatedByString:@"\r"];
+	NSEnumerator *linesEnumerator = [lines objectEnumerator];
 	id obj;
-	while(obj = [enumerator nextObject]) {
+	NSMutableArray *words = [[NSMutableArray alloc] init];
+	while(obj = [linesEnumerator nextObject]) {
 		[words addObjectsFromArray:[obj componentsSeparatedByString:@" "]];
 	}
 	NSString *word;
 	int x = 0;
-	int y = 130;
+	int y = 10;
 	int spacer = 5;
 	NSEnumerator *wordEnumerator = [words objectEnumerator];
 	UIColor *labelColor;
@@ -206,6 +215,12 @@
 	int tagCount = 0;
 	while (word = [wordEnumerator nextObject]) {
 		//turn on label coloring
+		if ([word length] < 1) {
+			//it's a line break
+			y +=30;
+			x = 0;
+			continue;
+		}
 		if ([[word substringToIndex:1] isEqualToString:@"["]) {
 			NSMutableString *buttonWord = (NSMutableString*)[word stringByReplacingOccurrencesOfString:@"[" withString:@"  "];
 			while ([word rangeOfString:@"]"].location == NSNotFound) {
@@ -335,7 +350,13 @@
 		[compLesson setChapter:chapter];
 		//add teacher's points
 		[delegate.teacher setTotalPoints:[NSNumber numberWithInt:([delegate.teacher.totalPoints intValue] + bonusPoints)]];
-		NSString *msg = [NSString stringWithFormat:@"Principal Wilson says:\rNice work!.\r You have earned %d points", bonusPoints];
+		NSString *msg;
+		if (bonusPoints > 40) {
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rNice work!.\r Your students are really getting smarter, and you earned %d teaching points too! Don't forget to grade the homework!", bonusPoints];
+		} else {
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHmm you kind of rushed that one!.\r Your students aren't going to learn that way. Don't forget to grade the homework!", bonusPoints];
+		}
+
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:@"You Finished the Lesson On Time!" 
 							  message:msg 
@@ -344,6 +365,7 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
+		[Worksheet createCompletedWorksheetsForTeacher:delegate.teacher forChapter:chapter];
 		
 	} else {
 		//did not complete lesson in time.
@@ -381,15 +403,15 @@
 }
 
 - (void)dismissQuestionWindow:(NSNumber *)points {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[self dismissModalViewControllerAnimated:YES];
 	[self setScrollPaused:NO];
-	delegate.teacher.totalPoints += [points intValue];
+	bonusPoints += [points intValue];
 	NSLog(@"dismissed window");
 }
 
 - (void)timerFireMethod:(NSTimer*)theTimer {
-	if (scrollView.contentOffset.y >= (scrollView.contentSize.height-20)) {
+	if (scrollView.contentOffset.y >= (scrollView.contentSize.height-70)) {
 		//got to end of lecture
 		completedLesson = YES;
 		[self lectureOver];
@@ -415,14 +437,18 @@
 		self.timerLabel.text = [NSString stringWithFormat:@"%d",secondsRemaining];
 
 		//check to see if there are any student questions
-		Student *student;
-		int x=0;
-		for (student in students) {
-			if ([student hasQuestion]) {
-				[student setImageView:[studentViews objectAtIndex:x] forMood:@"Confused" isWaving:YES];
+			Student *student;
+			int x=0;
+			for (student in students) {
+				if (self.numQuestionsAssigned < [chapter.lecture.studentQuestions count]) {
+					if ([student hasQuestion]) {
+						[student setImageView:[studentViews objectAtIndex:x] forMood:@"Confused" isWaving:YES];
+						self.numQuestionsAssigned++;
+					}
+				}
+				x++;
 			}
-			x++;
-		}
+		
 		
 	}
 	if (secondsRemaining <= 0) {

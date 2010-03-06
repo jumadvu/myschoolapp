@@ -53,10 +53,10 @@
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
-- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
-	if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 		UIImage *teachImage = [UIImage imageNamed:@"teach.png"];
 		UIImage *learnImage = [UIImage imageNamed:@"learn.png"];
 		

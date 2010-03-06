@@ -34,17 +34,12 @@
 	
 	sender.transform = CGAffineTransformTranslate(sender.transform, 0.0, -30.0);
 	
-	//send it back to original position
-	//sender.transform = CGAffineTransformIdentity;
-	/*
-	NSLog(@"raising menu");
-	int newX = sender.frame.origin.x;
-	int y = sender.frame.origin.y;
-	if (newX>420) {
-		newX = newX-1;
-	}
-	[sender.frame setOrigin:CGMakePoint(newX, y)];
-	*/
+}
+
+-(void)lowerMenu:(UIButton*)sender {
+	
+	sender.transform = CGAffineTransformIdentity;
+	
 }
 
 @end

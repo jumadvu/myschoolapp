@@ -2,7 +2,7 @@
 //  CompletedWorksheet.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/2/10.
+//  Created by Ashley Kayler on 3/5/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 {
 }
 
+@property (nonatomic, retain) NSDate * date;
 @property (nonatomic, retain) NSNumber * grade;
 @property (nonatomic, retain) Student * student;
 @property (nonatomic, retain) Worksheet * worksheet;

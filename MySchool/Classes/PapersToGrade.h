@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PapersToGrade : UITableViewController {
+@interface PapersToGrade : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
 	NSArray *students;
+	UITableView *myTableView;
 }
 
 @property (nonatomic, retain) NSArray *students;
+@property (nonatomic, retain) UITableView *myTableView;
 
 @end

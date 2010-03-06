@@ -7,7 +7,7 @@
 //
 
 #import "StudentPlus.h"
-
+#import "CompletedWorksheet.h"
 
 @implementation Student (StudentPlus)
 
@@ -61,7 +61,6 @@
 }
 
 -(void)setImageView:(UIImageView*)basicView forMood:(NSString*)mood isWaving:(BOOL)waving{
-	NSLog(@"setting image for student %@", [self firstName]);
 	//add face
 	NSString *imageFile = [NSString stringWithFormat:@"%@%@.png", [self avatarImage], mood];
 	UIImage *image = [UIImage imageNamed:imageFile];
@@ -132,12 +131,25 @@
 	//NSLog(@"forMood %d", [self.armRaised intValue]);
 	int i = arc4random() % 200;
 	if (i%117 == 0 && ![self.armRaised intValue]) {
-		NSLog(@"has question? yes");
+		//NSLog(@"has question? yes");
 		[self setArmRaised:[NSNumber numberWithInt:1]];
 		return YES;
 	} else {
 		return NO;
 	}
+}
+
+-(NSArray*)completedWorksheetsArray {
+	
+	NSArray *array = [[NSArray alloc] initWithArray:[self.worksheets allObjects]];
+	NSSortDescriptor *descriptor =
+    [[[NSSortDescriptor alloc] initWithKey:@"date"
+								 ascending:YES] autorelease];
+	
+	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
+	NSArray *sortedArray = [array sortedArrayUsingDescriptors:descriptors];
+	
+	return sortedArray;
 }
 
 @end

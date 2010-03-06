@@ -23,7 +23,7 @@
 			</article>
 			<lecture>
 				<title>Dinosaurs: The Terrible Lizards</title>
-				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. The smaller sized meat-eaters that may have grown wings and evolved into birds. One of the first [fish]-like dinosaurs was Archaeopteryx; it had wings and feathers, but a dinosaur-like skeleton. These large flying reptiles that lived at the same time as dinosaurs were called [emus], or winged lizards. There were also large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
+				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. The smaller sized meat-eaters that may have grown wings and evolved into birds. One of the first [fish] dinosaurs was Archaeopteryx; it had wings and feathers, but a dinosaur-like skeleton. These large flying reptiles that lived at the same time as dinosaurs were called [emus], or winged lizards. There were also large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
 				</text>
 				<keywordSet word="millions">
 					<word>thousands</word>
@@ -57,9 +57,9 @@
 					<word>living dinosaurs</word>
 					<word>dinosaur photographs</word>
 				</keywordSet>
-                <keywordSet word="birds">
-					<word>lizards</word>
-					<word>wizards</word>
+                <keywordSet word="bird-like">
+					<word>lizard</word>
+					<word>wizard</word>
 				</keywordSet>
 				<keywordSet word="pterosaurs">
 					<word>bald eagles</word>
@@ -114,12 +114,36 @@
 					<answer correctness="5">No, they were reptiles</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
-					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 					<text>Did humans evolve from dinosaurs?</text>
 					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
 				</studentQuestion>
-			</lecture> 
+			</lecture>
+			<worksheetQuestion>
+					<text>How many years ago did dinosaurs live?</text>
+					<answer correctness="5">60 million years ago</answer>
+					<answer correctness="0">10 thousand years ago</answer>
+					<answer correctness="0">500 years ago</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What is the name of a small dinosaur?</text>
+					<answer correctness="5">Compsognathus</answer>
+					<answer correctness="0">Apatosaurus</answer>
+					<answer correctness="0">Hedgehog</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What does the term 'dinosaur' mean?</text>
+					<answer correctness="5">Terrible lizard</answer>
+					<answer correctness="0">Flying reptile</answer>
+					<answer correctness="0">Sharp Teeth</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>Which animals living today do scientists think are most like a dinosaur?</text>
+					<answer correctness="5">Birds</answer>
+					<answer correctness="1">Sharks</answer>
+					<answer correctness="1">Elephants</answer>
+			</worksheetQuestion>
 		</chapter>
 		<chapter>
 			<title>Dinosaur origins</title>

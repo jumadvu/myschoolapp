@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StudentQuestionHome.h"
+
 @class Module;
 @class Chapter;
 @class Student;
@@ -26,7 +28,7 @@
 	IBOutlet UIImageView *student4;
 	NSArray *studentViews;
 	IBOutlet UIImageView *teacher;
-	UITextView *lectureText;
+	NSString *lectureText;
 	
 	IBOutlet UIScrollView *scrollView;
 	
@@ -42,6 +44,7 @@
 	
 	int keywordIndex;
 	int whichQuestion;
+	int numQuestionsAssigned;
 	
 	UIImage *greenButton;
 	UIImage *redButton;
@@ -70,6 +73,7 @@
 @property (nonatomic) BOOL start;
 @property (nonatomic) int secondsRemaining;
 @property (nonatomic) int whichQuestion;
+@property (nonatomic) int numQuestionsAssigned;
 @property (nonatomic) float counter;
 @property (nonatomic) int scrollSpeed;
 @property (nonatomic) int keywordIndex;
@@ -93,7 +97,7 @@
 @property (nonatomic, retain) UIImageView *student4;
 @property (nonatomic, retain) NSArray *studentViews;
 @property (nonatomic, retain) UIImageView *teacher;
-@property (nonatomic, retain) UITextView *lectureText;
+@property (nonatomic, retain) NSString *lectureText;
 
 -(IBAction)toChalkboard;
 -(IBAction)toQuestion;
