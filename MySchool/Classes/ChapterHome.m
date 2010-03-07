@@ -57,17 +57,7 @@
 	chapterNameLabel.text=chapterName;
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];
-	//NSArray * narray = [[NSArray alloc] initWithObjects:@"String",nil];
-	//imageArray = narray;
-	//[narray release];
-	NSLog(@"%@", [self.imageArray objectAtIndex:0]);
-	//NSString *strin = [[imageArray objectAtIndex:0] desc];
-	//NSLog(@"%@", strin);
 	[self loadTextIntoScrollView];
-	//NSString *strin2 = [[imageArray objectAtIndex:0] desc];
-	//NSLog(@"%@", strin2);
-
-
 }
 
 - (void)loadTextIntoScrollView {
@@ -96,7 +86,7 @@
 		if ([word isEqualToString:@"zzz"]) {
 			y = y + 30;
 			x = 0;
-			break;
+			continue;
 		}
 		if ([[word substringToIndex:1] isEqualToString:@"["]) {
 			NSMutableString *buttonWord = (NSMutableString*)[word stringByReplacingOccurrencesOfString:@"[" withString:@""];
@@ -151,12 +141,6 @@
 			[scrollView addSubview:label];
 			[label release];
 		}
-		//NSLog(@"%@ isButton: %d", word, isButton);
-		/*
-		 if ([word rangeOfString:@"]"].location != NSNotFound) {
-		 isButton = NO;
-		 }
-		 */
 	}
 	[scrollView setContentSize:CGSizeMake(280, y+30)];
 
@@ -190,6 +174,37 @@
     [alert show];
 	button.backgroundColor = [UIColor clearColor];
 	[button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+	NSString *imgStr = [[imageArray objectAtIndex:button.tag] fileName];
+	
+	UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@", imgStr]];
+	int maxWidth = 250;
+	int maxHeight = 250;
+	int newWidth = 0;
+	int newHeight = 0;
+	if(img.size.width>img.size.height){
+		newHeight = (maxWidth*img.size.height/img.size.width);
+		newWidth = maxWidth;
+	}
+	else{
+		newWidth = (maxHeight*img.size.width/img.size.height);
+		newHeight = maxHeight;
+	}
+	int hspacer = (maxWidth-newWidth)/2;
+	int vspacer = 10;
+	UILabel *title = [alert.subviews objectAtIndex:0];
+	UIImageView *imgView = [[[UIImageView alloc] initWithFrame:CGRectMake(16+hspacer, title.frame.origin.y+title.frame.size.height+vspacer, newWidth, newHeight)] autorelease];
+    imgView.contentMode = UIViewContentModeScaleAspectFit;
+	imgView.image = img;
+	UILabel *message = [alert.subviews objectAtIndex:1];
+	message.frame = CGRectMake(message.frame.origin.x,message.frame.origin.y+newHeight+vspacer*2,
+								 message.frame.size.width,message.frame.size.height);
+	UIButton *buttons = [alert.subviews objectAtIndex:2];
+	buttons.frame = CGRectMake(buttons.frame.origin.x,buttons.frame.origin.y+newHeight+vspacer*2, buttons.frame.size.width,buttons.frame.size.height);
+	
+	[alert setFrame:CGRectMake(0, 0, alert.frame.size.width, alert.frame.size.height+newHeight+vspacer*4)];
+	alert.center = CGPointMake(320/2, 480/2);
+    [alert addSubview:imgView];	
+	
 	numLabel.text = [NSString stringWithFormat:@"%d", [numLabel.text intValue]-1];
 	
 
@@ -198,9 +213,7 @@
 - (void)arrangeImageArray {
 	NSArray *array = [[NSArray alloc] initWithArray:[article.images allObjects]];
 	NSSortDescriptor *descriptor =
-    [[NSSortDescriptor alloc] initWithKey:@"order"
-								 ascending:YES];
-	
+    [[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES];
 	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
 	[self setImageArray:[array sortedArrayUsingDescriptors:descriptors]];
 	

@@ -169,6 +169,12 @@
 		F5132F8C1134525200798586 /* ModuleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F5132F8B1134525200798586 /* ModuleTable.m */; };
 		F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5132F8D1134525B00798586 /* ModuleTable.xib */; };
 		F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D79D0111A42940020C2DE /* ChapterCell.m */; };
+		F58371891144415700273336 /* bluewhale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F58371871144415700273336 /* bluewhale.jpg */; };
+		F583718A1144415700273336 /* compsognathus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F58371881144415700273336 /* compsognathus.jpg */; };
+		F583718F1144415F00273336 /* terriblelizard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718B1144415F00273336 /* terriblelizard.jpg */; };
+		F58371901144415F00273336 /* shark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718C1144415F00273336 /* shark.jpg */; };
+		F58371911144415F00273336 /* richardowen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718D1144415F00273336 /* richardowen.jpg */; };
+		F58371921144415F00273336 /* icthyosaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718E1144415F00273336 /* icthyosaur.jpg */; };
 		F5A9C0821136EDF300F74134 /* book3.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0781136EDF300F74134 /* book3.png */; };
 		F5A9C0831136EDF300F74134 /* book4.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0791136EDF300F74134 /* book4.png */; };
 		F5A9C0841136EDF300F74134 /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07A1136EDF300F74134 /* book1.png */; };
@@ -414,6 +420,12 @@
 		F5132F8D1134525B00798586 /* ModuleTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTable.xib; sourceTree = "<group>"; };
 		F57D79CF111A42940020C2DE /* ChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterCell.h; sourceTree = "<group>"; };
 		F57D79D0111A42940020C2DE /* ChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterCell.m; sourceTree = "<group>"; };
+		F58371871144415700273336 /* bluewhale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluewhale.jpg; sourceTree = "<group>"; };
+		F58371881144415700273336 /* compsognathus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = compsognathus.jpg; sourceTree = "<group>"; };
+		F583718B1144415F00273336 /* terriblelizard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terriblelizard.jpg; sourceTree = "<group>"; };
+		F583718C1144415F00273336 /* shark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shark.jpg; sourceTree = "<group>"; };
+		F583718D1144415F00273336 /* richardowen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = richardowen.jpg; sourceTree = "<group>"; };
+		F583718E1144415F00273336 /* icthyosaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icthyosaur.jpg; sourceTree = "<group>"; };
 		F5A9C0781136EDF300F74134 /* book3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book3.png; path = images/book3.png; sourceTree = "<group>"; };
 		F5A9C0791136EDF300F74134 /* book4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book4.png; path = images/book4.png; sourceTree = "<group>"; };
 		F5A9C07A1136EDF300F74134 /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book1.png; path = images/book1.png; sourceTree = "<group>"; };
@@ -808,6 +820,12 @@
 		AB53B3651121EC120017AFAB /* dinosaurs */ = {
 			isa = PBXGroup;
 			children = (
+				F583718B1144415F00273336 /* terriblelizard.jpg */,
+				F583718C1144415F00273336 /* shark.jpg */,
+				F583718D1144415F00273336 /* richardowen.jpg */,
+				F583718E1144415F00273336 /* icthyosaur.jpg */,
+				F58371871144415700273336 /* bluewhale.jpg */,
+				F58371881144415700273336 /* compsognathus.jpg */,
 				AB53B3661121EC120017AFAB /* dinosaurs.xml */,
 				AB53B3671121EC120017AFAB /* triceratops.jpg */,
 			);
@@ -1097,6 +1115,12 @@
 				ABF85795114108AE007419EB /* teacherslounge.png in Resources */,
 				ABF8591E1141E13C007419EB /* checkmark.png in Resources */,
 				ABF8591F1141E13C007419EB /* xmark.png in Resources */,
+				F58371891144415700273336 /* bluewhale.jpg in Resources */,
+				F583718A1144415700273336 /* compsognathus.jpg in Resources */,
+				F583718F1144415F00273336 /* terriblelizard.jpg in Resources */,
+				F58371901144415F00273336 /* shark.jpg in Resources */,
+				F58371911144415F00273336 /* richardowen.jpg in Resources */,
+				F58371921144415F00273336 /* icthyosaur.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
