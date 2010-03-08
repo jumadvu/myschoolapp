@@ -28,14 +28,14 @@
 			<lecture>
 				<title>Sustainability and Energy</title>
 				<text>
-				    Sustainability means to [conserve] our environment and prevent our natural resources from disappearing. 
-				    Natural resources occur naturally within environments and include [air, wind, water, plants and minerals].
-				    What we do [everyday] impacts the earth and our surroundings. 
-				    Cars and trucks emit gases that contribute to the [greenhouse gases] in the atmosphere. 
-				    We do not emit greenhouse gases [when we walk to the park]. 
-				    Fossil fuels are formed from the fossilized remains of dead plants and animals that have been exposed to the pressue of the earth's crust over [hundreds of millions] of years!
-				    Scientists have found that more greenhouse gases in the atmostphere in recent years has made the planet [warmer]. 
-				    [Carbon footprint] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. 
+				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. 
+				    Natural resources occur naturally within environments and include [sweaters, pants, shirts, and dresses].
+				    What we do [every earth day] impacts the earth and our surroundings. 
+				    Cars and trucks emit gases that contribute to the [stars] in the atmosphere. 
+				    We do not emit greenhouse gases [when we stick our head into the refrigerator]. 
+				    Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [a 100] years!
+				    Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. 
+				    [Tree rings] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. 
 				    In the US, most of our energy comes from [nonrenewable] energy sources. 
 				</text>
 				<keywordSet word="conserve">
@@ -43,11 +43,11 @@
 					<word>fight</word>
 				</keywordSet>
 			    <keywordSet word="air, wind, water, plants and minerals">
-					<word>kit kat, snickers, skittles, starburst and hersheys</word>
+					<word>kit kats, snickers, skittles, starburst and hersheys</word>
 					<word>ipod, dvd player, cds, laptop and cell phones</word>
 				</keywordSet>
 				<keywordSet word="everyday">
-					<word>every year</word>
+					<word>every other earth year</word>
 					<word>every ten years</word>
 				</keywordSet>
 				<keywordSet word="greenhouse gases">
@@ -58,9 +58,16 @@
 					<word>when we ride a plane</word>
 					<word>when we wash our clothes in the washer and dryer</word>
 				</keywordSet>
-				<keywordSet word="hundreds of millions">
-					<word>1</word>
-					<word>1000</word>
+				<keywordSet word="dead plants and animals">
+					<word>shoes</word>
+					<word>cars</word>
+				</keywordSet>
+				<keywordSet word="hundreds of millions of">
+					<word>10</word>
+					<word>a 1000</word>
+				<keywordSet word="in the atmosphere">
+					<word>in California</word>
+					<word>on Jupiter</word>	
 				</keywordSet>
 				<keywordSet word="warmer">
 					<word>windier</word>
@@ -121,7 +128,7 @@
 					<studentType>1</studentType>
 					<answer correctness="5">They renew our air supply by absorbing carbon dioxide and producing oxygen</answer>
 					<answer correctness="5">They create shades protecting us from the sun.</answer>
-					<answer correctness="0">They heat up the air around us and make the atmoshpere warmer.</answer>
+					<answer correctness="0">They heat up the air around us and make the atmosphere warmer.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Can deforestation lead to certain species disappearing forever?</text>
@@ -159,12 +166,27 @@
 			<lecture>
 				<title>What we can to be more sustainable</title>
 				<text>
-					[Recycling] involves taking materials that have already been used to create new ones.
+					[Remodeling] involves taking materials that have already been used to create new ones.
+					It is one of the three Rs that form the [food groups]: reduce, reuse, recycle. 
+					[Reuse] is to buy less and use less. 
+					[Reduce] is to use things over again. 
 						
 				</text>
 				<keywordSet word="Recycling">
 					<word>Cycling</word>
-					<word>Remembering</word>
+					<word>Animating</word>
+				</keywordSet>
+				<keywordSet word="waste hierarchy">
+					<word>filing system hierarchy</word>
+					<word>body mass index</word>
+				</keywordSet>
+				<keywordSet word="Reduce">
+					<word>Reuse</word>
+					<word>Recycling</word>
+				</keywordSet>
+				<keywordSet word="Reuse">
+					<word>Reduce</word>
+					<word>Recycling</word>
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
@@ -315,7 +337,7 @@
 			</lecture>
 		</chapter>
 		<chapter>
-			<title>Local foods</title>
+			<title>Foods and sustainability</title>
 			<article><text>article...</text>
 			</article>
 			<lecture>
