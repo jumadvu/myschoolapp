@@ -57,12 +57,12 @@
 					<object class="IBUILabel" id="556673660">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{93, 12}, {137, 21}}</string>
+						<string key="NSFrame">{{43, 12}, {221, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">Teacher's Lounge</string>
+						<string key="IBUIText">My Office</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -70,6 +70,7 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
+						<int key="IBUITextAlignment">1</int>
 					</object>
 					<object class="IBUIButton" id="975671207">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -110,7 +111,7 @@
 					<object class="IBUIButton" id="33278433">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{190, 244}, {123, 37}}</string>
+						<string key="NSFrame">{{213, 226}, {123, 71}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="177531636"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -118,14 +119,16 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="46078737"/>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Grade Papers</string>
 						<reference key="IBUIHighlightedTitleColor" ref="239097742"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="1053338791"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">stackofpapers.png</string>
+						</object>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
@@ -219,9 +222,9 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="622627646"/>
-							<reference ref="556673660"/>
 							<reference ref="975671207"/>
 							<reference ref="33278433"/>
+							<reference ref="556673660"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
