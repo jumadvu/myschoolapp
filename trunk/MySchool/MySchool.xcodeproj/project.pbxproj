@@ -104,7 +104,6 @@
 		AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AC2110FE20E00217E8F /* PassOutWorksheets.xib */; };
 		AB388ADC110FE51200217E8F /* PapersToGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388ADB110FE51200217E8F /* PapersToGrade.m */; };
 		AB388AE2110FE5F300217E8F /* GradePaper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AE0110FE5F300217E8F /* GradePaper.m */; };
-		AB388AE3110FE5F300217E8F /* GradePaper.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AE1110FE5F300217E8F /* GradePaper.xib */; };
 		AB388AFD110FEA8600217E8F /* AwardsHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AFB110FEA8600217E8F /* AwardsHome.m */; };
 		AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AFC110FEA8600217E8F /* AwardsHome.xib */; };
 		AB388B04110FEA9500217E8F /* StoreHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B02110FEA9500217E8F /* StoreHome.m */; };
@@ -330,7 +329,6 @@
 		AB388ADB110FE51200217E8F /* PapersToGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PapersToGrade.m; sourceTree = "<group>"; };
 		AB388ADF110FE5F300217E8F /* GradePaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradePaper.h; sourceTree = "<group>"; };
 		AB388AE0110FE5F300217E8F /* GradePaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradePaper.m; sourceTree = "<group>"; };
-		AB388AE1110FE5F300217E8F /* GradePaper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradePaper.xib; sourceTree = "<group>"; };
 		AB388AFA110FEA8600217E8F /* AwardsHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwardsHome.h; sourceTree = "<group>"; };
 		AB388AFB110FEA8600217E8F /* AwardsHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwardsHome.m; sourceTree = "<group>"; };
 		AB388AFC110FEA8600217E8F /* AwardsHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AwardsHome.xib; sourceTree = "<group>"; };
@@ -740,7 +738,6 @@
 				AB388ADB110FE51200217E8F /* PapersToGrade.m */,
 				AB388ADF110FE5F300217E8F /* GradePaper.h */,
 				AB388AE0110FE5F300217E8F /* GradePaper.m */,
-				AB388AE1110FE5F300217E8F /* GradePaper.xib */,
 				ABF858F11141DAE2007419EB /* GradePaperCell.h */,
 				ABF858F21141DAE2007419EB /* GradePaperCell.m */,
 			);
@@ -1019,7 +1016,6 @@
 				AB388A7D110FBE0C00217E8F /* ChalkboardHome.xib in Resources */,
 				AB388A90110FC5E200217E8F /* StudentQuestionHome.xib in Resources */,
 				AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */,
-				AB388AE3110FE5F300217E8F /* GradePaper.xib in Resources */,
 				AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */,
 				AB388B05110FEA9500217E8F /* StoreHome.xib in Resources */,
 				AB26205A11121CEE005D02F4 /* man.png in Resources */,
@@ -1118,16 +1114,13 @@
 				ABF85795114108AE007419EB /* teacherslounge.png in Resources */,
 				ABF8591E1141E13C007419EB /* checkmark.png in Resources */,
 				ABF8591F1141E13C007419EB /* xmark.png in Resources */,
-<<<<<<< .mine
 				AB8AF1031142EF6A00D2DDD8 /* stackofpapers.png in Resources */,
-=======
 				F58371891144415700273336 /* bluewhale.jpg in Resources */,
 				F583718A1144415700273336 /* compsognathus.jpg in Resources */,
 				F583718F1144415F00273336 /* terriblelizard.jpg in Resources */,
 				F58371901144415F00273336 /* shark.jpg in Resources */,
 				F58371911144415F00273336 /* richardowen.jpg in Resources */,
 				F58371921144415F00273336 /* icthyosaur.jpg in Resources */,
->>>>>>> .r140
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
