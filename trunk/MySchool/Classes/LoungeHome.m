@@ -26,8 +26,22 @@
 -(void)toPapersToGrade {
 	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	GradePaper *vc = [[[GradePaper alloc] initWithStyle:UITableViewStylePlain] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
+	if ([[delegate.teacher ungradedPapers] count] < 1) {
+		NSString *msg = [NSString stringWithFormat:@"You may want to prepare for your next class."];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"You have no papers to grade at this time." 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		
+	} else {
+		GradePaper *vc = [[[GradePaper alloc] initWithStyle:UITableViewStylePlain] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];
+	}
+
 	
 }
 
