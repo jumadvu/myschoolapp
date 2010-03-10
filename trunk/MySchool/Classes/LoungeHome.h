@@ -11,10 +11,12 @@
 
 @interface LoungeHome : baseViewController {
 	IBOutlet UIButton *gradeButton;
+	IBOutlet UILabel *numPapersLabel;
 
 }
 
 @property (nonatomic, retain) UIButton *gradeButton;
+@property (nonatomic, retain) UILabel *numPapersLabel;
 
 -(IBAction)toPapersToGrade;
 

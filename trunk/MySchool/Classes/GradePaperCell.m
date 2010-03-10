@@ -8,6 +8,8 @@
 
 #import "MySchoolAppDelegate.h"
 #import "GradePaperCell.h"
+#import "WorksheetAnswer.h"
+#import "GradePaper.h"
 
 @implementation GradePaperCell
 
@@ -15,23 +17,37 @@
 @synthesize wrongButton;
 @synthesize lblQuestion;
 @synthesize lblAnswer;
+@synthesize delegate;
 
 - (void)dealloc {
-	[correctButton release];
-	[wrongButton release];
+	//[correctButton release];
+	//[wrongButton release];
 	[lblAnswer release];
 	[lblQuestion release];
     [super dealloc];
 }
 
--(void)correctButtonSelected:(id)sender {
+-(void)correctButtonSelected:(UIButton*)sender {
 	//go to classroom
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	int row = sender.tag;
+	self.wrongButton.alpha = .1;
+	self.correctButton.alpha = 1;
+	[delegate gradedQuestion:[NSNumber numberWithInt:row] value:[NSNumber numberWithInt:1]];
 	
 }
--(void)wrongButtonSelected:(id)sender {
+-(void)wrongButtonSelected:(UIButton*)sender {
 	//go to learn interaction
+	int row = sender.tag;
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	//NSIndexPath *indexPath = [(UITableView*)self.superview indexPathForCell:(UITableViewCell *)[sender superview]];
+	//WorksheetAnswer *answer = [[(UITableView*)self.superview answers] objectAtIndex:[sender tag]];
+	//do something here if this is actually the right answer
+	self.wrongButton.alpha = 1;
+	self.correctButton.alpha = .1;
+	//UITableView *tableView = (UITableView*)self.superview;
+	//GradePaper *gradePaper = [tableView super];
+	[delegate gradedQuestion:[NSNumber numberWithInt:row] value:[NSNumber numberWithInt:0]];
 	
 }
 
@@ -61,8 +77,10 @@
 	lblAnswer.backgroundColor = [UIColor clearColor];
 	[self.contentView addSubview:lblAnswer];
 	
-	correctButton.frame = CGRectMake(260, lblAnswer.frame.origin.y-10, 40.0, 40.0);  
+	correctButton.frame = CGRectMake(260, lblAnswer.frame.origin.y-10, 40.0, 40.0);
+	//correctButton.tag = [[(UITableView*)self.superview indexPathForCell:self] row];
 	wrongButton.frame = CGRectMake(210, lblAnswer.frame.origin.y-10, 40.0, 40.0);  
+	//wrongButton.tag = [[(UITableView*)self.superview indexPathForCell:self] row];
 
 }
 

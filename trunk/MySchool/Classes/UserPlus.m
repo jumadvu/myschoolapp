@@ -9,6 +9,7 @@
 #import "UserPlus.h"
 #import "Avatar.h"
 #import "Student.h"
+#import "CompletedWorksheet.h"
 
 @implementation User (UserPlus)
 
@@ -51,4 +52,29 @@
 	
 	return sortedArray;
 }
+
+-(NSArray*)ungradedPapers {
+	
+	NSArray *array = [[[NSArray alloc] initWithArray:[self.students allObjects]] autorelease];
+	NSMutableArray *completedWorksheets = [[NSMutableArray alloc] init];
+	Student *student;
+	for (student in array) {
+		CompletedWorksheet *cWorksheet;
+		for (cWorksheet in [student.worksheets allObjects]) {
+			//add worksheet if not yet graded
+			if ([cWorksheet.grade intValue] == 0) {
+				[completedWorksheets addObject:cWorksheet];
+			}
+		}
+	}
+	NSSortDescriptor *descriptor =
+    [[[NSSortDescriptor alloc] initWithKey:@"date"
+								 ascending:YES] autorelease];
+	
+	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
+	NSArray *sortedArray = [completedWorksheets sortedArrayUsingDescriptors:descriptors];
+	
+	return sortedArray;
+}
+
 @end

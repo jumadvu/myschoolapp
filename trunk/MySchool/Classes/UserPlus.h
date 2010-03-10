@@ -16,5 +16,6 @@
 -(UIImage *)avatarImageWaistUp;
 -(NSArray*)studentsArray;
 -(NSString*)title;
+-(NSArray*)ungradedPapers;
 
 @end

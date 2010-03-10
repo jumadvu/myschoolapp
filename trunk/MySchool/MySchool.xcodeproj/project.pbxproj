@@ -102,7 +102,6 @@
 		AB388A90110FC5E200217E8F /* StudentQuestionHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A8E110FC5E200217E8F /* StudentQuestionHome.xib */; };
 		AB388AC3110FE20E00217E8F /* PassOutWorksheets.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AC1110FE20E00217E8F /* PassOutWorksheets.m */; };
 		AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AC2110FE20E00217E8F /* PassOutWorksheets.xib */; };
-		AB388ADC110FE51200217E8F /* PapersToGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388ADB110FE51200217E8F /* PapersToGrade.m */; };
 		AB388AE2110FE5F300217E8F /* GradePaper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AE0110FE5F300217E8F /* GradePaper.m */; };
 		AB388AFD110FEA8600217E8F /* AwardsHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AFB110FEA8600217E8F /* AwardsHome.m */; };
 		AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AFC110FEA8600217E8F /* AwardsHome.xib */; };
@@ -325,8 +324,6 @@
 		AB388AC0110FE20E00217E8F /* PassOutWorksheets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassOutWorksheets.h; sourceTree = "<group>"; };
 		AB388AC1110FE20E00217E8F /* PassOutWorksheets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassOutWorksheets.m; sourceTree = "<group>"; };
 		AB388AC2110FE20E00217E8F /* PassOutWorksheets.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassOutWorksheets.xib; sourceTree = "<group>"; };
-		AB388ADA110FE51200217E8F /* PapersToGrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PapersToGrade.h; sourceTree = "<group>"; };
-		AB388ADB110FE51200217E8F /* PapersToGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PapersToGrade.m; sourceTree = "<group>"; };
 		AB388ADF110FE5F300217E8F /* GradePaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradePaper.h; sourceTree = "<group>"; };
 		AB388AE0110FE5F300217E8F /* GradePaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradePaper.m; sourceTree = "<group>"; };
 		AB388AFA110FEA8600217E8F /* AwardsHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwardsHome.h; sourceTree = "<group>"; };
@@ -734,8 +731,6 @@
 				AB07F26611098B7600204AFE /* LoungeHome.h */,
 				AB07F26711098B7600204AFE /* LoungeHome.m */,
 				AB07F26811098B7600204AFE /* LoungeHome.xib */,
-				AB388ADA110FE51200217E8F /* PapersToGrade.h */,
-				AB388ADB110FE51200217E8F /* PapersToGrade.m */,
 				AB388ADF110FE5F300217E8F /* GradePaper.h */,
 				AB388AE0110FE5F300217E8F /* GradePaper.m */,
 				ABF858F11141DAE2007419EB /* GradePaperCell.h */,
@@ -1149,7 +1144,6 @@
 				AB388A7C110FBE0C00217E8F /* ChalkboardHome.m in Sources */,
 				AB388A8F110FC5E200217E8F /* StudentQuestionHome.m in Sources */,
 				AB388AC3110FE20E00217E8F /* PassOutWorksheets.m in Sources */,
-				AB388ADC110FE51200217E8F /* PapersToGrade.m in Sources */,
 				AB388AE2110FE5F300217E8F /* GradePaper.m in Sources */,
 				AB388AFD110FEA8600217E8F /* AwardsHome.m in Sources */,
 				AB388B04110FEA9500217E8F /* StoreHome.m in Sources */,
