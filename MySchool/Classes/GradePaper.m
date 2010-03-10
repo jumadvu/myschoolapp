@@ -14,22 +14,31 @@
 #import "Lecture.h"
 #import "GradePaperCell.h"
 #import "Student.h"
+#import "User.h"
+#import "UserPlus.h"
 
 @implementation GradePaper
 
 @synthesize answers;
 @synthesize completedWorksheet;
+@synthesize completedWorksheets;
+@synthesize answersGradedArray;
+@synthesize gradeLabel;
+@synthesize currentPaper;
 
 - (void)dealloc {
+	[gradeLabel release];
+	[answersGradedArray release];
 	[completedWorksheet release];
+	[completedWorksheets release];
 	[answers release];
     [super dealloc];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-		self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];	
+    if (self = [super initWithStyle:UITableViewStylePlain]) {
+		self.view.backgroundColor = [UIColor whiteColor];	
     }
     return self;
 }
@@ -37,9 +46,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+	[self setCompletedWorksheets:[delegate.teacher ungradedPapers]];
+	
+	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:0]];
+	[self setAnswers:[[completedWorksheet answers] allObjects]];
+	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
+	[self setAnswersGradedArray:anArray];
+	self.tableView.allowsSelection = NO;
+	currentPaper = 0;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -51,6 +67,49 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+}
+
+-(void)gradedQuestion:(NSNumber*)row value:(NSNumber*)value{
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	
+	NSLog(@"%d", [row intValue]);
+	[self.answersGradedArray replaceObjectAtIndex:[row intValue] withObject:value];
+	BOOL completed = YES;
+	int score = 0;
+	for (int x=0; x<[self.answersGradedArray count]; x++) {
+		if ([[self.answersGradedArray objectAtIndex:x] intValue] == 2) {
+			NSLog(@"not yet graded");
+			completed = NO;
+		} else {
+			NSLog(@"graded");
+			score += [[self.answersGradedArray objectAtIndex:x] intValue];
+		}
+	}
+	if (completed) {
+		self.completedWorksheet.grade = [NSNumber numberWithInt:score];
+		NSError *error;
+		if (![delegate.managedObjectContext save:&error]) {
+			NSLog(@"error saving managed object");
+			// Handle the error.
+		}
+		switch (score) {
+			case 0:
+				gradeLabel.text = @"D";
+				break;
+			case 1:
+				gradeLabel.text = @"B-";
+				break;
+			case 2:
+				gradeLabel.text = @"A-";
+				break;
+			case 3:
+				gradeLabel.text = @"A+";
+				break;
+			default:
+				break;
+		}
+		
+	}
 }
 
 
@@ -94,9 +153,13 @@
     GradePaperCell *cell = (GradePaperCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[GradePaperCell alloc] initWithFrame:cellFrame reuseIdentifier:CellIdentifier] autorelease];
+		cell.delegate = self;
+		cell.wrongButton.tag = indexPath.row;
+		cell.correctButton.tag = indexPath.row;
+		cell.wrongButton.alpha = 1;
+		cell.correctButton.alpha = 1;
     }
     
-	NSLog(@"qHeight %2f", myHeight1);
 	[cell setQuestion:text andAnswer:text2 qHeight:[NSNumber numberWithFloat:myHeight1] aHeight:[NSNumber numberWithFloat:myHeight2]];
     
 	return cell;
@@ -157,6 +220,16 @@
 	[label release];
 	
 	// create the heading label object
+	self.gradeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+	self.gradeLabel.backgroundColor = [UIColor clearColor];
+	self.gradeLabel.font = [UIFont boldSystemFontOfSize:30];
+	self.gradeLabel.textAlignment = UITextAlignmentCenter;
+	self.gradeLabel.frame = CGRectMake(130.0, 10.0, 60.0, 45.0);
+	self.gradeLabel.text = @"";
+	[customView addSubview:self.gradeLabel];
+	[self.gradeLabel release];
+	
+	// create the heading label object
 	UILabel * datelabel = [[UILabel alloc] initWithFrame:CGRectZero];
 	datelabel.backgroundColor = [UIColor clearColor];
 	datelabel.font = [UIFont systemFontOfSize:12];
@@ -192,6 +265,7 @@
 	[customView addSubview:studentNamelabel];
 	[studentNamelabel release];
 	
+	
 	return customView;
 }
 
@@ -201,32 +275,58 @@
 	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 100.0)] autorelease];
 	customView.backgroundColor = [UIColor clearColor];
 	
+
 	UIButton *backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
 	backButton.titleLabel.font = [UIFont boldSystemFontOfSize:12.0];
 	[backButton setTitle:@"Back" forState:UIControlStateNormal];
-	backButton.frame = CGRectMake(20, 10, 80.0, 30.0);  
-	[backButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];  
+	backButton.frame = CGRectMake(20, 10, 70.0, 30.0);  
+	[backButton addTarget:self action:@selector(goBackwards:) forControlEvents:UIControlEventTouchUpInside];  
 	[customView addSubview:backButton];
-
+	 
+	
 	UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
 	nextButton.titleLabel.font = [UIFont boldSystemFontOfSize:12.0];
 	[nextButton setTitle:@"Next Paper" forState:UIControlStateNormal];
-	nextButton.frame = CGRectMake(170, 10, 130.0, 30.0);  
+	nextButton.frame = CGRectMake(200, 10, 100.0, 30.0);  
 	[nextButton addTarget:self action:@selector(goNext) forControlEvents:UIControlEventTouchUpInside];  
 	[customView addSubview:nextButton];
-	
+		
 	return customView;
 }
 
--(void)goBack {
+-(void)goBackwards:(id)sender {
+	NSLog(@"going back");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon popViewControllerAnimated:YES];		
 	
 }
 
 -(void)goNext {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon popViewControllerAnimated:YES];		
+	NSLog(@"go next");
+	currentPaper++;
+	if (currentPaper < [completedWorksheets count]) {
+		[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
+		[self setAnswers:[[completedWorksheet answers] allObjects]];
+		NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
+		[self setAnswersGradedArray:anArray];
+		[self.tableView reloadData];
+	} else {
+		//message that all worksheets are graded
+		NSString *msg = [NSString stringWithFormat:@"You have graded all your papers! Your students will be excited to get their grades."];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"Way to go!" 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		[delegate.navCon popViewControllerAnimated:YES];		
+
+	}
+
+	
 	
 }
 
@@ -234,5 +334,11 @@
 {
 	return 85;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+	return 85;
+}
+
 
 @end

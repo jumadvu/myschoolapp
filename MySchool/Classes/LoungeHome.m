@@ -7,13 +7,17 @@
 //
 
 #import "LoungeHome.h"
-#import "PapersToGrade.h"
+#import "GradePaper.h"
+#import "User.h"
+#import "UserPlus.h"
 
 @implementation LoungeHome
 
 @synthesize gradeButton;
+@synthesize numPapersLabel;
 
 - (void)dealloc {
+	[numPapersLabel release];
 	[gradeButton release];
     [super dealloc];
 }
@@ -22,7 +26,7 @@
 -(void)toPapersToGrade {
 	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	PapersToGrade *vc = [[[PapersToGrade alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	GradePaper *vc = [[[GradePaper alloc] initWithStyle:UITableViewStylePlain] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
@@ -37,22 +41,17 @@
 }
 */
 
+- (void)viewDidAppear:(BOOL)animated {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[self.numPapersLabel setText:[[NSNumber numberWithInt:[[delegate.teacher ungradedPapers] count]] stringValue]];
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	NSLog(@"lounge view did load");
     [super viewDidLoad];
 	[self setBackgroundColor];
-
 }
-
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
