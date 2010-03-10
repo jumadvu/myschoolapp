@@ -50,8 +50,8 @@
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.textLabel.text;
 	vc.fileName = fileName;
+	vc.article = article;
 	[delegate.navCon pushViewController:vc animated:YES];
-	
 }
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
