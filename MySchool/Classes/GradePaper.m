@@ -108,6 +108,8 @@
 			default:
 				break;
 		}
+		[self goNext];
+		
 		
 	}
 }
@@ -154,11 +156,11 @@
     if (cell == nil) {
         cell = [[[GradePaperCell alloc] initWithFrame:cellFrame reuseIdentifier:CellIdentifier] autorelease];
 		cell.delegate = self;
-		cell.wrongButton.tag = indexPath.row;
-		cell.correctButton.tag = indexPath.row;
-		cell.wrongButton.alpha = 1;
-		cell.correctButton.alpha = 1;
     }
+	cell.wrongButton.tag = indexPath.row;
+	cell.correctButton.tag = indexPath.row;
+	cell.wrongButton.alpha = 1;
+	cell.correctButton.alpha = 1;
     
 	[cell setQuestion:text andAnswer:text2 qHeight:[NSNumber numberWithFloat:myHeight1] aHeight:[NSNumber numberWithFloat:myHeight2]];
     
@@ -304,7 +306,17 @@
 -(void)goNext {
 	NSLog(@"go next");
 	currentPaper++;
+	NSString *gradeMessage = [NSString stringWithFormat:@"Paper graded. %@ got a %@.", completedWorksheet.student.firstName, gradeLabel.text];
 	if (currentPaper < [completedWorksheets count]) {
+		NSString *msg = [NSString stringWithFormat:@"Click OK to grade the next paper."];
+		UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:gradeMessage 
+							  message:msg 
+							  delegate:self 
+							  cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil];
+		[alert show];
+		[alert release];
 		[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
 		[self setAnswers:[[completedWorksheet answers] allObjects]];
 		NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
@@ -314,7 +326,7 @@
 		//message that all worksheets are graded
 		NSString *msg = [NSString stringWithFormat:@"You have graded all your papers! Your students will be excited to get their grades."];
 		UIAlertView *alert = [[UIAlertView alloc] 
-							  initWithTitle:@"Way to go!" 
+							  initWithTitle:gradeMessage
 							  message:msg 
 							  delegate:self 
 							  cancelButtonTitle:@"OK" 

@@ -63,7 +63,6 @@
 - (void)loadTextIntoScrollView {
 	//create a UILabel for each regular word in the text and a UIButton for each keyword
 	//add these labels and buttons to the scrollview
-	
 	scrollView.backgroundColor = [UIColor whiteColor];
 	NSMutableArray *words = [[NSMutableArray alloc] init];
 	NSArray *lines = [article.text componentsSeparatedByString:@"\n"];
