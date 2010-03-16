@@ -41,7 +41,6 @@
 		AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26111098B6600204AFE /* ClassroomHome.xib */; };
 		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
 		AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26811098B7600204AFE /* LoungeHome.xib */; };
-		AB0BAECC1136477700442373 /* bookshelf2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BAECB1136477700442373 /* bookshelf2.png */; };
 		AB176524113D719100BA887D /* testing123.m in Sources */ = {isa = PBXBuildFile; fileRef = AB176522113D719100BA887D /* testing123.m */; };
 		AB176525113D719100BA887D /* testing123.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB176523113D719100BA887D /* testing123.xib */; };
 		AB1765AF113D7F5600BA887D /* Girl1Body.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1765AA113D7F5600BA887D /* Girl1Body.png */; };
@@ -167,6 +166,13 @@
 		F50B481E111A13D6003231FB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B481D111A13D6003231FB /* libz.dylib */; };
 		F5132F8C1134525200798586 /* ModuleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F5132F8B1134525200798586 /* ModuleTable.m */; };
 		F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5132F8D1134525B00798586 /* ModuleTable.xib */; };
+		F57B9AED114FFF570077811E /* bookshelf_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE6114FFF570077811E /* bookshelf_bg.png */; };
+		F57B9AEE114FFF570077811E /* bookw6.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE7114FFF570077811E /* bookw6.png */; };
+		F57B9AEF114FFF570077811E /* bookw5.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE8114FFF570077811E /* bookw5.png */; };
+		F57B9AF0114FFF570077811E /* bookw4.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE9114FFF570077811E /* bookw4.png */; };
+		F57B9AF1114FFF570077811E /* bookw3.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AEA114FFF570077811E /* bookw3.png */; };
+		F57B9AF2114FFF570077811E /* bookw2.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AEB114FFF570077811E /* bookw2.png */; };
+		F57B9AF3114FFF570077811E /* bookw1.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AEC114FFF570077811E /* bookw1.png */; };
 		F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D79D0111A42940020C2DE /* ChapterCell.m */; };
 		F58371891144415700273336 /* bluewhale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F58371871144415700273336 /* bluewhale.jpg */; };
 		F583718A1144415700273336 /* compsognathus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F58371881144415700273336 /* compsognathus.jpg */; };
@@ -174,14 +180,6 @@
 		F58371901144415F00273336 /* shark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718C1144415F00273336 /* shark.jpg */; };
 		F58371911144415F00273336 /* richardowen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718D1144415F00273336 /* richardowen.jpg */; };
 		F58371921144415F00273336 /* icthyosaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718E1144415F00273336 /* icthyosaur.jpg */; };
-		F5A9C0821136EDF300F74134 /* book3.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0781136EDF300F74134 /* book3.png */; };
-		F5A9C0831136EDF300F74134 /* book4.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0791136EDF300F74134 /* book4.png */; };
-		F5A9C0841136EDF300F74134 /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07A1136EDF300F74134 /* book1.png */; };
-		F5A9C0851136EDF300F74134 /* book7.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07B1136EDF300F74134 /* book7.png */; };
-		F5A9C0861136EDF300F74134 /* book5.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07C1136EDF300F74134 /* book5.png */; };
-		F5A9C0871136EDF300F74134 /* book6.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07D1136EDF300F74134 /* book6.png */; };
-		F5A9C0881136EDF300F74134 /* book8.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07E1136EDF300F74134 /* book8.png */; };
-		F5A9C0891136EDF300F74134 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C07F1136EDF300F74134 /* book2.png */; };
 		F5A9C08A1136EDF300F74134 /* bookshelf copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0801136EDF300F74134 /* bookshelf copy.png */; };
 		F5A9C08D1136EE0A00F74134 /* chalkboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C08B1136EE0A00F74134 /* chalkboard.png */; };
 		F5A9C0921136EE1600F74134 /* mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0901136EE1600F74134 /* mainmenu.png */; };
@@ -245,7 +243,6 @@
 		AB07F26611098B7600204AFE /* LoungeHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoungeHome.h; sourceTree = "<group>"; };
 		AB07F26711098B7600204AFE /* LoungeHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoungeHome.m; sourceTree = "<group>"; };
 		AB07F26811098B7600204AFE /* LoungeHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoungeHome.xib; sourceTree = "<group>"; };
-		AB0BAECB1136477700442373 /* bookshelf2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookshelf2.png; path = Classes/bookshelf2.png; sourceTree = "<group>"; };
 		AB176521113D719100BA887D /* testing123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testing123.h; sourceTree = "<group>"; };
 		AB176522113D719100BA887D /* testing123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testing123.m; sourceTree = "<group>"; };
 		AB176523113D719100BA887D /* testing123.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = testing123.xib; sourceTree = "<group>"; };
@@ -415,6 +412,13 @@
 		F5132F8A1134524900798586 /* ModuleTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTable.h; sourceTree = "<group>"; };
 		F5132F8B1134525200798586 /* ModuleTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTable.m; sourceTree = "<group>"; };
 		F5132F8D1134525B00798586 /* ModuleTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTable.xib; sourceTree = "<group>"; };
+		F57B9AE6114FFF570077811E /* bookshelf_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookshelf_bg.png; path = bookshelf/bookshelf_bg.png; sourceTree = "<group>"; };
+		F57B9AE7114FFF570077811E /* bookw6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw6.png; path = bookshelf/bookw6.png; sourceTree = "<group>"; };
+		F57B9AE8114FFF570077811E /* bookw5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw5.png; path = bookshelf/bookw5.png; sourceTree = "<group>"; };
+		F57B9AE9114FFF570077811E /* bookw4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw4.png; path = bookshelf/bookw4.png; sourceTree = "<group>"; };
+		F57B9AEA114FFF570077811E /* bookw3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw3.png; path = bookshelf/bookw3.png; sourceTree = "<group>"; };
+		F57B9AEB114FFF570077811E /* bookw2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw2.png; path = bookshelf/bookw2.png; sourceTree = "<group>"; };
+		F57B9AEC114FFF570077811E /* bookw1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw1.png; path = bookshelf/bookw1.png; sourceTree = "<group>"; };
 		F57D79CF111A42940020C2DE /* ChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterCell.h; sourceTree = "<group>"; };
 		F57D79D0111A42940020C2DE /* ChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterCell.m; sourceTree = "<group>"; };
 		F58371871144415700273336 /* bluewhale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluewhale.jpg; sourceTree = "<group>"; };
@@ -423,14 +427,6 @@
 		F583718C1144415F00273336 /* shark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shark.jpg; sourceTree = "<group>"; };
 		F583718D1144415F00273336 /* richardowen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = richardowen.jpg; sourceTree = "<group>"; };
 		F583718E1144415F00273336 /* icthyosaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icthyosaur.jpg; sourceTree = "<group>"; };
-		F5A9C0781136EDF300F74134 /* book3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book3.png; path = images/book3.png; sourceTree = "<group>"; };
-		F5A9C0791136EDF300F74134 /* book4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book4.png; path = images/book4.png; sourceTree = "<group>"; };
-		F5A9C07A1136EDF300F74134 /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book1.png; path = images/book1.png; sourceTree = "<group>"; };
-		F5A9C07B1136EDF300F74134 /* book7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book7.png; path = images/book7.png; sourceTree = "<group>"; };
-		F5A9C07C1136EDF300F74134 /* book5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book5.png; path = images/book5.png; sourceTree = "<group>"; };
-		F5A9C07D1136EDF300F74134 /* book6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book6.png; path = images/book6.png; sourceTree = "<group>"; };
-		F5A9C07E1136EDF300F74134 /* book8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book8.png; path = images/book8.png; sourceTree = "<group>"; };
-		F5A9C07F1136EDF300F74134 /* book2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book2.png; path = images/book2.png; sourceTree = "<group>"; };
 		F5A9C0801136EDF300F74134 /* bookshelf copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookshelf copy.png"; sourceTree = "<group>"; };
 		F5A9C08B1136EE0A00F74134 /* chalkboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chalkboard.png; sourceTree = "<group>"; };
 		F5A9C0901136EE1600F74134 /* mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenu.png; sourceTree = "<group>"; };
@@ -742,15 +738,13 @@
 		AB0BAE4B1136287500442373 /* book images */ = {
 			isa = PBXGroup;
 			children = (
-				F5A9C07F1136EDF300F74134 /* book2.png */,
-				F5A9C0781136EDF300F74134 /* book3.png */,
-				F5A9C0791136EDF300F74134 /* book4.png */,
-				F5A9C07A1136EDF300F74134 /* book1.png */,
-				F5A9C07B1136EDF300F74134 /* book7.png */,
-				F5A9C07C1136EDF300F74134 /* book5.png */,
-				F5A9C07D1136EDF300F74134 /* book6.png */,
-				F5A9C07E1136EDF300F74134 /* book8.png */,
-				AB0BAECB1136477700442373 /* bookshelf2.png */,
+				F57B9AE6114FFF570077811E /* bookshelf_bg.png */,
+				F57B9AE7114FFF570077811E /* bookw6.png */,
+				F57B9AE8114FFF570077811E /* bookw5.png */,
+				F57B9AE9114FFF570077811E /* bookw4.png */,
+				F57B9AEA114FFF570077811E /* bookw3.png */,
+				F57B9AEB114FFF570077811E /* bookw2.png */,
+				F57B9AEC114FFF570077811E /* bookw1.png */,
 			);
 			name = "book images";
 			sourceTree = "<group>";
@@ -1043,17 +1037,8 @@
 				AB95CDD91135038C00203EA4 /* supplies.png in Resources */,
 				AB95CDE411350B8800203EA4 /* Teacher_M.png in Resources */,
 				AB95CE4711358DDF00203EA4 /* gradient_button.png in Resources */,
-				AB0BAECC1136477700442373 /* bookshelf2.png in Resources */,
 				F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */,
 				F5BBC32A1134615200A0B737 /* ModuleHome.xib in Resources */,
-				F5A9C0821136EDF300F74134 /* book3.png in Resources */,
-				F5A9C0831136EDF300F74134 /* book4.png in Resources */,
-				F5A9C0841136EDF300F74134 /* book1.png in Resources */,
-				F5A9C0851136EDF300F74134 /* book7.png in Resources */,
-				F5A9C0861136EDF300F74134 /* book5.png in Resources */,
-				F5A9C0871136EDF300F74134 /* book6.png in Resources */,
-				F5A9C0881136EDF300F74134 /* book8.png in Resources */,
-				F5A9C0891136EDF300F74134 /* book2.png in Resources */,
 				F5A9C08A1136EDF300F74134 /* bookshelf copy.png in Resources */,
 				F5A9C08D1136EE0A00F74134 /* chalkboard.png in Resources */,
 				F5A9C0921136EE1600F74134 /* mainmenu.png in Resources */,
@@ -1116,6 +1101,13 @@
 				F58371901144415F00273336 /* shark.jpg in Resources */,
 				F58371911144415F00273336 /* richardowen.jpg in Resources */,
 				F58371921144415F00273336 /* icthyosaur.jpg in Resources */,
+				F57B9AED114FFF570077811E /* bookshelf_bg.png in Resources */,
+				F57B9AEE114FFF570077811E /* bookw6.png in Resources */,
+				F57B9AEF114FFF570077811E /* bookw5.png in Resources */,
+				F57B9AF0114FFF570077811E /* bookw4.png in Resources */,
+				F57B9AF1114FFF570077811E /* bookw3.png in Resources */,
+				F57B9AF2114FFF570077811E /* bookw2.png in Resources */,
+				F57B9AF3114FFF570077811E /* bookw1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
