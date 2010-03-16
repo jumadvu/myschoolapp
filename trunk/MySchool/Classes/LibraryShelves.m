@@ -51,14 +51,12 @@
 	[anArray release];
 	
 	bookImages  = [[NSArray alloc] initWithObjects:
-				   [UIImage imageNamed:@"book1.png"],
-				   [UIImage imageNamed:@"book2.png"],
-				   [UIImage imageNamed:@"book3.png"],
-				   [UIImage imageNamed:@"book4.png"],
-				   [UIImage imageNamed:@"book5.png"],
-				   [UIImage imageNamed:@"book6.png"],
-				   [UIImage imageNamed:@"book7.png"],
-				   [UIImage imageNamed:@"book8.png"],
+				   [UIImage imageNamed:@"bookw1.png"],
+				   [UIImage imageNamed:@"bookw2.png"],
+				   [UIImage imageNamed:@"bookw3.png"],
+				   [UIImage imageNamed:@"bookw4.png"],
+				   [UIImage imageNamed:@"bookw5.png"],
+				   [UIImage imageNamed:@"bookw6.png"],
 							 nil];
 	
 	[self setSubjects:[Library subjectsForGrade:[NSNumber numberWithInt:2]]];
@@ -93,6 +91,9 @@
 	
 	scrollView.backgroundColor = [UIColor clearColor];
 	int x = 0;
+	int y = 0;
+	int ytop = 20;
+	int ybottom = 180;
 	int spacer = 0;
 	int tagCount = 0;
 	
@@ -107,32 +108,40 @@
 		NSArray *module;
 		[shelfMarkers addObject:[NSNumber numberWithInt:x]];
 		[subjectNames addObject:[[subjects objectAtIndex:i] objectAtIndex:0]];
-		
+		y = ytop;
 		for (module in modulesInSubject) {
 			//shelf marker marks the x value for the content offset for segment controller
 			UIButton *bookButton = [UIButton buttonWithType:UIButtonTypeCustom]; 
-			bookButton.titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
+			bookButton.titleLabel.font = [UIFont boldSystemFontOfSize:12.0];
 
 			//set book background
-			int randomNum = arc4random() % 8;
-			int bookwidth = 30 + arc4random() % 30;
+			NSString *title = [module objectAtIndex:0];
+			int randomNum = [title length] % 6;
 			//this probably shouldn't be random. Book should retain its look
-			[bookButton setBackgroundImage:[bookImages objectAtIndex:randomNum] forState:UIControlStateNormal];
+			UIImage *bimage = [bookImages objectAtIndex:randomNum];
+			[bookButton setBackgroundImage:bimage forState:UIControlStateNormal];
 			[bookButton setTitle:[module objectAtIndex:0] forState:UIControlStateNormal];
 			bookButton.contentMode = UIViewContentModeScaleAspectFit;
+			bookButton.titleLabel.lineBreakMode= UILineBreakModeWordWrap;
+			bookButton.titleEdgeInsets = UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0);
+			[bookButton.titleLabel setTextAlignment:UITextAlignmentCenter];
 			
 			bookButton.tag = tagCount;
 			[bookButton addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
-			bookButton.transform = CGAffineTransformRotate(bookButton.transform, -M_PI/2);
-			bookButton.frame = CGRectMake(x, 0, bookwidth, 320.0);  
-			[bookButton sizeToFit];
+			bookButton.frame = CGRectMake(x, y, bimage.size.width, bimage.size.height);  
 			
-			CGRect newFrame = CGRectMake(x, (320 - (bookButton.frame.size.height+100)), bookwidth, bookButton.frame.size.height+100);
-			bookButton.frame = newFrame;
+			//CGRect newFrame = CGRectMake(x, (320 - (bookButton.frame.size.height+100)), bookButton.frame.size.width, bookButton.frame.size.height+100);
+			//bookButton.frame = newFrame;
 			
 			[scrollView addSubview:bookButton];
 			tagCount++;
-			x = x + bookwidth + spacer;
+			if(y == ytop){
+				y = ybottom;
+			}else{
+				x = x + bookButton.frame.size.width + spacer;
+				y = ytop;
+				NSLog(@"%d, %d", x, y);
+			}
 		}
 		
 		x = x+30; //add space between subjects
