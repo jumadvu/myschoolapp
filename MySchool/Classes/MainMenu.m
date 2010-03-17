@@ -15,6 +15,7 @@
 #import "ClassroomHome.h"
 #import "StoreHome.h"
 #import "LibraryShelves.h"
+#import "ParentEmail.h"
 
 
 @implementation MainMenu
@@ -83,7 +84,7 @@
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
-/*
+
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -91,7 +92,7 @@
     }
     return self;
 }
-*/
+
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -100,7 +101,41 @@
     [super viewDidLoad];
 	[self setBackgroundColor];
 	[delegate.navCon setNavigationBarHidden:YES];
+	[self getParentEmail];
 
+}
+
+-(void)getParentEmail {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+
+	if ([delegate.parentEmail1 length] < 7 && [delegate.parentEmail2 length] < 7) {
+		UIActionSheet *actionSheet = [[UIActionSheet alloc]
+									  initWithTitle:@"Your parent(s) would love to know what you're learning in MySchool. If you enter their email address(es) they can receive automatic updates on your progress in the game!"
+									  delegate:self
+									  cancelButtonTitle:@"Maybe Later"
+									  destructiveButtonTitle:@"OK"
+									  otherButtonTitles:nil];
+		[actionSheet showInView:self.view];
+		[actionSheet release];
+		
+	} else {
+		NSLog(@"has parent email");
+	}
+
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 0) {
+		//get emails
+		NSLog(@"get email addresses");
+		ParentEmail *vc = [[[ParentEmail alloc] initWithNibName:nil bundle:nil] autorelease];
+		MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		[delegate.navCon pushViewController:vc animated:YES];
+		
+	} else {
+		//do nothing
+		NSLog(@"do nothing");
+	}
 }
 
 

@@ -22,6 +22,9 @@
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
 	User *teacher;
 	Chapter *currentChapter;
+	NSMutableDictionary* pListContents;
+	NSString* parentEmail1;
+	NSString* parentEmail2;
 }
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navCon;
@@ -34,9 +37,16 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property (nonatomic, retain) NSMutableDictionary* pListContents;
+@property (nonatomic, retain) NSString *parentEmail1;
+@property (nonatomic, retain) NSString *parentEmail2;
+
 - (NSString *)applicationDocumentsDirectory;
 - (void)fetchUserData;
 - (void)fetchModuleData;
+- (void)fetchPListData;
+- (void)savingDataToPlist;
+-(NSString*)pathToPList;
 
 @end
 

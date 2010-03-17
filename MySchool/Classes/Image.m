@@ -2,8 +2,8 @@
 //  Image.m
 //  MySchool
 //
-//  Created by Connor Riley on 3/2/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Ashley Kayler on 3/17/10.
+//  Copyright 2010 DataJedi. All rights reserved.
 //
 
 #import "Image.h"
@@ -12,9 +12,10 @@
 
 @implementation Image 
 
-@dynamic desc;
-@dynamic fileName;
 @dynamic order;
+@dynamic fileName;
+@dynamic desc;
+@dynamic storeItem;
 @dynamic article;
 
 @end
