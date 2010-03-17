@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "StoreItem.h"
 
 @interface StoreItem (StoreItemPlus)
 

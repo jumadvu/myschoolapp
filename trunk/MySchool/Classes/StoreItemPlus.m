@@ -16,15 +16,15 @@
 +(void)createStoreItems {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
-	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Alphabet Chart",@"12 Times Table Chart",@"Globe",@"Hamster" nil];
-	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:25],[NSNumber numberWithInt:50],[NSNumber numberWithInt:100],[NSNumber numberWithInt:300] nil];
-	NSArray *storeItemImages = [NSArray arrayWithObjects:@"AlphabetChart.png",@"TimesTables.png",@"Globe.png",@"Hamster.png" nil];
+	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Alphabet Chart", @"12 Times Table Chart", @"Globe", @"Hamster", nil];
+	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:25],[NSNumber numberWithInt:50],[NSNumber numberWithInt:100],[NSNumber numberWithInt:300], nil];
+	NSArray *storeItemImages = [NSArray arrayWithObjects:@"AlphabetChart.png",@"TimesTables.png",@"Globe.png",@"Hamster.png", nil];
 	
 	for (int x=0; x<4; x++) {
 		StoreItem *storeItemMO = (StoreItem *)[NSEntityDescription insertNewObjectForEntityForName:@"StoreItem" inManagedObjectContext:delegate.managedObjectContext];
 		[storeItemMO setTitle:[storeItemNames objectAtIndex:x]];
 		[storeItemMO setCost:[storeItemCosts objectAtIndex:x]];
-		Image *imageMO = (StoreItem *)[NSEntityDescription insertNewObjectForEntityForName:@"Image" inManagedObjectContext:delegate.managedObjectContext];
+		Image *imageMO = (Image *)[NSEntityDescription insertNewObjectForEntityForName:@"Image" inManagedObjectContext:delegate.managedObjectContext];
 		[imageMO setFileName:[storeItemImages objectAtIndex:x]];
 		[storeItemMO setImage:imageMO];
 	}
@@ -39,11 +39,11 @@
 
 +(NSArray*)storeItemsArray {
 	
-	NSArray *array = [[NSArray alloc] initWithArray:[self fetchStoreItems]];
+	NSArray *array = [[NSArray alloc] initWithArray:[StoreItem fetchStoreItems]];
 	if ([array count] == 0) {
 		//if first time, add store items and fetch again
-		[self createStoreItems];
-		[array = fetchStoreItems];
+		[StoreItem createStoreItems];
+		array = [StoreItem fetchStoreItems];
 	}
 	//NSLog(@"%@", sortedArray);
 	return array;
