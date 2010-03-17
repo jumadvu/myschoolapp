@@ -153,12 +153,17 @@
 - (void)clickedButton:(UIButton *)button {
 	//int keywordIndex = button.tag;
 	//get the module from the sqllite db and pass it to the next view
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	
-	
-	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.targetModule= [Module getModuleWithName:button.titleLabel.text];
-	[delegate.navCon pushViewController:vc animated:YES];
+	@try {
+		MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		vc.targetModule= [Module getModuleWithName:button.titleLabel.text];
+		[delegate.navCon pushViewController:vc animated:YES];
+	}
+	@catch (NSException* ex) {
+		UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Uh-oh!" message:@"This book isn't available yet! Try another one." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+		[alert show];
+	}
+
 	
 }
 
