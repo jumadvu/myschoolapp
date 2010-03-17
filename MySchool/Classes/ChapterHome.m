@@ -72,6 +72,8 @@
 		[words addObjectsFromArray:[obj componentsSeparatedByString:@" "]];
 		[words addObject:@"zzz"];	
 	}
+	
+	NSLog(@"%@", words);
 	NSString *word;
 	int x = 0;
 	int y = 0;
@@ -85,6 +87,9 @@
 		if ([word isEqualToString:@"zzz"]) {
 			y = y + 30;
 			x = 0;
+			continue;
+		}
+		if ([word isEqualToString:@""]) {
 			continue;
 		}
 		if ([[word substringToIndex:1] isEqualToString:@"["]) {
