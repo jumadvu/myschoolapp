@@ -83,13 +83,13 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 		[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }
-	
+	/*
 	UIImage *image = [UIImage imageNamed:@"gradient_button.png"];
 	UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
 	imageView.contentMode = UIViewContentModeScaleToFill;
 	cell.backgroundView = imageView;
 	[imageView release];
-	
+	*/
     // Set up the cell...
 	cell.imageView.image = [[students objectAtIndex:indexPath.row] frontView];
 	cell.textLabel.backgroundColor = [UIColor clearColor];

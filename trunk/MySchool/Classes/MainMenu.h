@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MainMenu : baseViewController {
+@interface MainMenu : baseViewController <UIActionSheetDelegate> {
 	IBOutlet UIButton *button1;
 	IBOutlet UIButton *button2;
 	IBOutlet UIButton *button3;
@@ -36,6 +36,7 @@
 -(IBAction)libraryButtonClicked;
 -(IBAction)classroomButtonClicked;
 -(IBAction)storeButtonClicked;
+-(void)getParentEmail;
 
 
 @end

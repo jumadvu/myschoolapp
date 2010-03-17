@@ -2,7 +2,7 @@
 //  User.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/22/10.
+//  Created by Ashley Kayler on 3/17/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -21,6 +21,7 @@
 @dynamic firstName;
 @dynamic gender;
 @dynamic totalPoints;
+@dynamic purchases;
 @dynamic completedLessons;
 @dynamic userAwards;
 @dynamic students;

@@ -2,7 +2,7 @@
 //  User.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/22/10.
+//  Created by Ashley Kayler on 3/17/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -23,6 +23,7 @@
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * gender;
 @property (nonatomic, retain) NSNumber * totalPoints;
+@property (nonatomic, retain) NSSet* purchases;
 @property (nonatomic, retain) NSSet* completedLessons;
 @property (nonatomic, retain) NSSet* userAwards;
 @property (nonatomic, retain) NSSet* students;
@@ -33,6 +34,11 @@
 
 
 @interface User (CoreDataGeneratedAccessors)
+- (void)addPurchasesObject:(NSManagedObject *)value;
+- (void)removePurchasesObject:(NSManagedObject *)value;
+- (void)addPurchases:(NSSet *)value;
+- (void)removePurchases:(NSSet *)value;
+
 - (void)addCompletedLessonsObject:(CompletedLesson *)value;
 - (void)removeCompletedLessonsObject:(CompletedLesson *)value;
 - (void)addCompletedLessons:(NSSet *)value;

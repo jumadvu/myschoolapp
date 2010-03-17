@@ -25,6 +25,7 @@
 #import "CompletedLesson.h"
 #import "Worksheet.h"
 #import "WorksheetPlus.h"
+#import "ParentEmail.h"
 
 @implementation ClassroomHome
 
@@ -366,6 +367,7 @@
 		[alert show];
 		[alert release];
 		[Worksheet createCompletedWorksheetsForTeacher:delegate.teacher forChapter:chapter];
+		[ParentEmail sendEmailForChapter:chapter];
 		
 	} else {
 		//did not complete lesson in time.

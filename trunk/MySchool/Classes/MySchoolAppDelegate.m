@@ -24,8 +24,14 @@
 @synthesize persistentStoreCoordinator;
 @synthesize teacher;
 @synthesize currentChapter;
+@synthesize pListContents;
+@synthesize parentEmail1;
+@synthesize parentEmail2;
 
 - (void)dealloc {
+	[pListContents release];
+	[parentEmail1 release];
+	[parentEmail2 release];
 	[currentChapter release];
     [managedObjectContext release];
     [managedObjectModel release];
@@ -64,6 +70,7 @@
 		[self fetchUserData];
 	}
 
+	[self fetchPListData];
 }
 
 - (void)fetchModuleData {
@@ -134,6 +141,40 @@
 	[request release];
 	
 	
+}
+
+-(void)fetchPListData {
+	// Check for data in Documents directory. Copy default data.plist to Documents if not found.
+	NSString *pathToFile = [self pathToPList];
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSError *error;
+	if ([fileManager fileExistsAtPath:pathToFile] == NO) {
+		NSString *pathToDefaultPlist = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"];
+		if ([fileManager copyItemAtPath:pathToDefaultPlist toPath:pathToFile error:&error] == NO) {
+			NSAssert1(0, @"Failed to copy data with error message '%@'.", [error localizedDescription]);
+		}
+	}
+	// grab the parent email data
+	self.pListContents = [[[NSMutableDictionary alloc] initWithContentsOfFile:pathToFile] autorelease];
+	self.parentEmail1 = [pListContents valueForKey:@"ParentEmail1"];
+	self.parentEmail2 = [pListContents valueForKey:@"ParentEmail2"];
+	NSLog(@"%@", self.parentEmail1);
+	
+}
+
+-(void)savingDataToPlist {
+	
+	[self.pListContents setObject:self.parentEmail1 forKey:@"ParentEmail1"];
+	[self.pListContents setObject:self.parentEmail2 forKey:@"ParentEmail2"];
+	[self.pListContents writeToFile:[self pathToPList] atomically:YES];		
+	
+}
+
+-(NSString*)pathToPList {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	NSString *pathToFile = [documentsDirectory stringByAppendingPathComponent:@"data.plist"];
+	return pathToFile;
 }
 
 /**

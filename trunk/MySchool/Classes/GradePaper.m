@@ -16,6 +16,7 @@
 #import "Student.h"
 #import "User.h"
 #import "UserPlus.h"
+#import "CompletedWorksheetPlus.h"
 
 @implementation GradePaper
 
@@ -46,12 +47,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	NSLog(@"view did load");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	[self setCompletedWorksheets:[delegate.teacher ungradedPapers]];
 	
 	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:0]];
-	[self setAnswers:[[completedWorksheet answers] allObjects]];
+	[self setAnswers:[[self.completedWorksheet answers] allObjects]];
+	NSLog(@"answers: %d", [answers count]);
 	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
 	[self setAnswersGradedArray:anArray];
 	self.tableView.allowsSelection = NO;
@@ -92,22 +95,8 @@
 			NSLog(@"error saving managed object");
 			// Handle the error.
 		}
-		switch (score) {
-			case 0:
-				gradeLabel.text = @"D";
-				break;
-			case 1:
-				gradeLabel.text = @"B-";
-				break;
-			case 2:
-				gradeLabel.text = @"A-";
-				break;
-			case 3:
-				gradeLabel.text = @"A+";
-				break;
-			default:
-				break;
-		}
+		gradeLabel.text = [self.completedWorksheet letterGrade];
+
 		[self goNext];
 		
 		

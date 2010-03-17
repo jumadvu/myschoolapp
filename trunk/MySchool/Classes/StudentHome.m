@@ -9,7 +9,11 @@
 #import "StudentHome.h"
 #import "User.h"
 #import "Student.h"
-
+#import "StudentPlus.h"
+#import "CompletedWorksheet.h"
+#import "Worksheet.h"
+#import "Lecture.h"
+#import "CompletedWorksheetPlus.h"
 
 @implementation StudentHome
 
@@ -68,7 +72,11 @@
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
 	//student worksheets
-    return 4;
+	if ([[student.worksheets allObjects] count] > 0) {
+		return [[student completedWorksheetsArray] count];
+	} else {
+		return 0;
+	}
 }
 
 
@@ -82,10 +90,12 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
 	//	[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }
-    
+    CompletedWorksheet *cWorksheet = [[student completedWorksheetsArray] objectAtIndex:indexPath.row];
     // Set up the cell...
-	cell.textLabel.text = [NSString stringWithFormat:@"Worksheet %d", indexPath.row];
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"B+"];
+	cell.textLabel.font = [UIFont systemFontOfSize:13];
+	cell.textLabel.text = [NSString stringWithFormat:cWorksheet.worksheet.lecture.title];
+	cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
+	cell.detailTextLabel.text = [cWorksheet letterGrade];
     return cell;
 }
 
