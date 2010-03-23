@@ -152,4 +152,56 @@
 	return sortedArray;
 }
 
+-(NSString*)overallGrade {
+	CompletedWorksheet *cWorksheet;
+	float points = 0;
+	for (cWorksheet in [self completedWorksheetsArray]) {
+		points += [[cWorksheet grade] floatValue];
+	}
+	points = points / [[self completedWorksheetsArray] count];
+	
+	int pointsAsInt = points * 3;
+	
+	NSLog(@"Grade Points: %d", pointsAsInt);
+	NSString *myGrade;
+	switch (pointsAsInt) {
+		case 0:
+			myGrade = [NSString stringWithFormat:@"D"];
+			break;
+		case 1:
+			myGrade = [NSString stringWithFormat:@"C-"];
+			break;
+		case 2:
+			myGrade = [NSString stringWithFormat:@"C"];
+			break;
+		case 3:
+			myGrade = [NSString stringWithFormat:@"C+"];
+			break;
+		case 4:
+			myGrade = [NSString stringWithFormat:@"B-"];
+			break;
+		case 5:
+			myGrade = [NSString stringWithFormat:@"B"];
+			break;
+		case 6:
+			myGrade = [NSString stringWithFormat:@"B+"];
+			break;
+		case 7:
+			myGrade = [NSString stringWithFormat:@"A-"];
+			break;
+		case 8:
+			myGrade = [NSString stringWithFormat:@"A"];
+			break;
+		case 9:
+			myGrade = [NSString stringWithFormat:@"A+"];
+			break;
+		default:
+			myGrade = [NSString stringWithFormat:@"A++"];
+			break;
+	}
+	return myGrade;
+	
+}
+
+
 @end

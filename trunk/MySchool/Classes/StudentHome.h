@@ -9,13 +9,20 @@
 #import <UIKit/UIKit.h>
 @class Student;
 
-@interface StudentHome : UITableViewController {
+@interface StudentHome : baseViewController <UITableViewDelegate, UITableViewDataSource> {
 
 	Student *student;
+	IBOutlet UITableView *tableView;
+	IBOutlet UILabel *heading;
+	IBOutlet UIImageView *frontView;
+	IBOutlet UILabel *gradeLabel;
+	
 }
 
 @property (nonatomic, retain) Student *student;
-
--(void)toMainMenu;
+@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) UILabel *heading;
+@property (nonatomic, retain) UILabel *gradeLabel;
+@property (nonatomic, retain) UIImageView *frontView;
 
 @end

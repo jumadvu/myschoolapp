@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-@interface StoreHome : baseViewController {
-
+@interface StoreHome : baseViewController <UITableViewDelegate, UITableViewDataSource> {
+	IBOutlet UITableView *tableView;
+	NSArray* storeItems;
+	IBOutlet UILabel * pointsLabel;
 }
+
+@property (nonatomic, retain) UITableView * tableView;
+@property (nonatomic, retain) NSArray *storeItems;
+@property (nonatomic, retain) UILabel *pointsLabel;
 
 @end

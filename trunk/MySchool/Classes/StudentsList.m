@@ -110,7 +110,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	StudentHome *vc = [[[StudentHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	StudentHome *vc = [[[StudentHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.student = [students objectAtIndex:indexPath.row];
 	[delegate.navCon pushViewController:vc animated:YES];
 }

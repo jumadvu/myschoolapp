@@ -16,11 +16,11 @@
 +(void)createStoreItems {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
-	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Alphabet Chart", @"12 Times Table Chart", @"Globe", @"Hamster", nil];
-	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:25],[NSNumber numberWithInt:50],[NSNumber numberWithInt:100],[NSNumber numberWithInt:300], nil];
-	NSArray *storeItemImages = [NSArray arrayWithObjects:@"AlphabetChart.png",@"TimesTables.png",@"Globe.png",@"Hamster.png", nil];
+	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Alphabet Chart", @"Art Supplies", @"Globe", @"World Map",@"Cash Register", @"Baseball Bat & Ball", @"Fish Tank", @"Hamster", nil];
+	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:25],[NSNumber numberWithInt:30],[NSNumber numberWithInt:40],[NSNumber numberWithInt:40],[NSNumber numberWithInt:80],[NSNumber numberWithInt:60],[NSNumber numberWithInt:100],[NSNumber numberWithInt:200],nil];
+	NSArray *storeItemImages = [NSArray arrayWithObjects:@"alphabet.png",@"artsupplies.png",@"globe.png",@"worldmap.png",@"cashregister.png",@"baseballglove.png",@"fishtank.png",@"hamster.png", nil];
 	
-	for (int x=0; x<4; x++) {
+	for (int x=0; x<[storeItemNames count]; x++) {
 		StoreItem *storeItemMO = (StoreItem *)[NSEntityDescription insertNewObjectForEntityForName:@"StoreItem" inManagedObjectContext:delegate.managedObjectContext];
 		[storeItemMO setTitle:[storeItemNames objectAtIndex:x]];
 		[storeItemMO setCost:[storeItemCosts objectAtIndex:x]];
@@ -61,7 +61,7 @@
 	[request setEntity:entity];
 
 	//set up the sort orderings
-	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"cost" ascending:NO];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"cost" ascending:YES];
 	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
 	[request setSortDescriptors:sortDescriptors];
 	[sortDescriptors release];

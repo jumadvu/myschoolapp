@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class CompletedWorksheet;
 
-@interface GradePaper : UITableViewController {
+@interface GradePaper : UITableViewController <UIAlertViewDelegate> {
 	NSArray *answers;
 	NSArray *completedWorksheets;
 	CompletedWorksheet *completedWorksheet;
