@@ -73,7 +73,7 @@
 	}
 	[cell setFileName:fileName];
 	Chapter *chapter = [[module chaptersArray] objectAtIndex:indexPath.row];
-	cell.textLabel.text = [chapter title];
+	cell.lblTitle.text = [chapter title];
 	cell.article = chapter.article;
 	cell.chapter = chapter;
 	//cell.textLabel.text = [chapters objectAtIndex:[indexPath row]];

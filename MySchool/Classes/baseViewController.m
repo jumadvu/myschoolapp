@@ -27,7 +27,7 @@
 }
 
 -(void)setBackgroundColor {
-	self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];	
+	self.view.backgroundColor = [UIColor colorWithRed:.99 green:.98 blue:.82 alpha:1];	
 }
 
 -(void)raiseMenu:(UIButton*)sender {

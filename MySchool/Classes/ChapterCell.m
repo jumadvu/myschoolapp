@@ -60,14 +60,13 @@
 		UIImage *teachImage = [UIImage imageNamed:@"teach.png"];
 		UIImage *learnImage = [UIImage imageNamed:@"learn.png"];
 		
-		/*
-		// Initialization code 
+		
 		lblTitle = [[UILabel alloc] initWithFrame:CGRectZero];
 		lblTitle.textColor = [UIColor blackColor];
-		lblTitle.font = [UIFont boldSystemFontOfSize:19.0];
+		lblTitle.font = [UIFont boldSystemFontOfSize:15.0];
 		lblTitle.backgroundColor = [UIColor clearColor];
 		[self.contentView addSubview:lblTitle];
-			*/
+		
 		tButton = [UIButton buttonWithType: UIButtonTypeCustom]; 
 		[tButton setBackgroundImage:teachImage forState:UIControlStateNormal];
 		[self.contentView addSubview:tButton];
@@ -87,16 +86,16 @@
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	
-	//CGRect baseRect = CGRectInset(self.contentView.bounds, 10, 0);
-	//CGRect rect = baseRect;
+	CGRect baseRect = CGRectInset(self.contentView.bounds, 10, 0);
+	CGRect rect = baseRect;
 	
-	//rect.origin.x += 2;
-	//rect.origin.y += -22;
-	//rect.size.width = 220;
-	//lblTitle.frame = rect;
+	rect.origin.x += 2;
+	rect.origin.y += 0;
+	rect.size.width = 200;
+	lblTitle.frame = rect;
 		
-	tButton.frame = CGRectMake(280, 11, 30.0, 30.0);  
-	lButton.frame = CGRectMake(240, 11, 30.0, 30.0);  
+	tButton.frame = CGRectMake(270, 10, 35.0, 35.0);  
+	lButton.frame = CGRectMake(220, 10, 35.0, 35.0);  
 	
 }
 
