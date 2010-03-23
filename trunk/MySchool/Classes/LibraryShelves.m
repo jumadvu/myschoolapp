@@ -154,6 +154,7 @@
 	//int keywordIndex = button.tag;
 	//get the module from the sqllite db and pass it to the next view
 	@try {
+		NSLog(@"Clicked: %@", button.titleLabel.text);
 		MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 		ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
 		vc.targetModule= [Module getModuleWithName:button.titleLabel.text];
