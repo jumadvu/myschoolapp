@@ -18,31 +18,27 @@
 @implementation StudentHome
 
 @synthesize student;
+@synthesize tableView;
+@synthesize heading;
+@synthesize gradeLabel;
+@synthesize frontView;
 
 - (void)dealloc {
+	[gradeLabel release];
+	[frontView release];
+	[heading release];
+	[tableView release];
 	[student release];
     [super dealloc];
 }
 
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-		self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];	
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-
--(void)toMainMenu {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon popToRootViewControllerAnimated:YES];		
+	frontView.contentMode = UIViewContentModeScaleAspectFit;
+	frontView.image = [student frontView];
+	tableView.backgroundColor = [UIColor clearColor];
+	heading.text = [self.student firstName];
+	gradeLabel.text = [NSString stringWithFormat:@"Overall Grade: %@",[self.student overallGrade]];
 }
 
 
@@ -81,11 +77,11 @@
 
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
 	//	[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
@@ -101,7 +97,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-	return 100;
+	return 40;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,26 +107,19 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
 	// create the parent view that will hold header Label
-	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 100.0)] autorelease];
+	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40)] autorelease];
 	customView.backgroundColor = [UIColor clearColor];
-	
-	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
-	button.titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
-	[button setTitle:@"Main Menu" forState:UIControlStateNormal];
-	button.frame = CGRectMake(110, 10, 100.0, 30.0);  
-	[button addTarget:self action:@selector(toMainMenu) forControlEvents:UIControlEventTouchUpInside];  
-	
+		
 	// create the heading label object
 	UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
 	label.backgroundColor = [UIColor clearColor];
 	label.textAlignment = UITextAlignmentCenter;
-	label.font = [UIFont boldSystemFontOfSize:22];
-	label.frame = CGRectMake(10.0, 60.0, 280.0, 30.0);
-	label.text = [NSString stringWithFormat:@"%@'s Worksheets", [self.student firstName]];
+	label.font = [UIFont systemFontOfSize:15];
+	label.frame = CGRectMake(10.0, 10.0, 280.0, 30.0);
+	label.text = @"Worksheets";
 	[customView addSubview:label];
-	
-	[customView addSubview:button];
 	[label release];
+	
 	return customView;
 }
 

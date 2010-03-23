@@ -61,7 +61,7 @@
 }
 
 -(void)clickButton5 {
-	AwardsHome *vc = [[[AwardsHome alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	AwardsHome *vc = [[[AwardsHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }

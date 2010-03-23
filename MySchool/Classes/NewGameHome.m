@@ -139,8 +139,11 @@
 			// Handle the error.
 		}
 		//go to second phase of avatar design
+		/*
 		DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];
+		 */
+		[self toMainMenu];
 	}
 }
 

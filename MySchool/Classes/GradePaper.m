@@ -97,6 +97,7 @@
 		}
 		gradeLabel.text = [self.completedWorksheet letterGrade];
 
+		//go to the next paper
 		[self goNext];
 		
 		
@@ -273,14 +274,6 @@
 	backButton.frame = CGRectMake(20, 10, 70.0, 30.0);  
 	[backButton addTarget:self action:@selector(goBackwards:) forControlEvents:UIControlEventTouchUpInside];  
 	[customView addSubview:backButton];
-	 
-	
-	UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
-	nextButton.titleLabel.font = [UIFont boldSystemFontOfSize:12.0];
-	[nextButton setTitle:@"Next Paper" forState:UIControlStateNormal];
-	nextButton.frame = CGRectMake(200, 10, 100.0, 30.0);  
-	[nextButton addTarget:self action:@selector(goNext) forControlEvents:UIControlEventTouchUpInside];  
-	[customView addSubview:nextButton];
 		
 	return customView;
 }
@@ -294,10 +287,11 @@
 
 -(void)goNext {
 	NSLog(@"go next");
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	currentPaper++;
-	NSString *gradeMessage = [NSString stringWithFormat:@"Paper graded. %@ got a %@.", completedWorksheet.student.firstName, gradeLabel.text];
+	NSString *gradeMessage = [NSString stringWithFormat:@"%@'s Grade: %@", completedWorksheet.student.firstName, gradeLabel.text];
 	if (currentPaper < [completedWorksheets count]) {
-		NSString *msg = [NSString stringWithFormat:@"Click OK to grade the next paper."];
+		NSString *msg = [NSString stringWithFormat:@"You have %d more papers to grade. Click OK to grade the next paper.", [[delegate.teacher ungradedPapers] count]];
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:gradeMessage 
 							  message:msg 
@@ -306,29 +300,35 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
-		[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
-		[self setAnswers:[[completedWorksheet answers] allObjects]];
-		NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
-		[self setAnswersGradedArray:anArray];
-		[self.tableView reloadData];
+		//okay button handled in selector: alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 	} else {
 		//message that all worksheets are graded
 		NSString *msg = [NSString stringWithFormat:@"You have graded all your papers! Your students will be excited to get their grades."];
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:gradeMessage
 							  message:msg 
-							  delegate:self 
+							  delegate:nil 
 							  cancelButtonTitle:@"OK" 
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
-		MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		//go back to lounge
 		[delegate.navCon popViewControllerAnimated:YES];		
 
 	}
 
 	
 	
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	NSLog(@"dismiss alert move on to next paper");
+	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
+	[self setAnswers:[[completedWorksheet answers] allObjects]];
+	//reset answers graded
+	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
+	[self setAnswersGradedArray:anArray];
+	[self.tableView reloadData];	
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
