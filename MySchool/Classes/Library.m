@@ -121,6 +121,7 @@
 	//grab each chapter
 	TBXMLElement * chapter=[tbxml childElementNamed:@"chapter" parentElement:module];
 	int chapterCount = 0;
+	
 	while (chapter!=nil){
 		Chapter *chapterMO = (Chapter *)[NSEntityDescription insertNewObjectForEntityForName:@"Chapter" inManagedObjectContext:moc];
 		Lecture *lectureMO = (Lecture *)[NSEntityDescription insertNewObjectForEntityForName:@"Lecture" inManagedObjectContext:moc];
@@ -173,10 +174,11 @@
 		[chapterMO setOrder:[NSNumber numberWithInt:chapterCount]];
 		
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
+		NSLog(@"Adding chapter %@", chapterMO.title);
 		Article *article = (Article *)[NSEntityDescription insertNewObjectForEntityForName:@"Article" inManagedObjectContext:moc];
 		TBXMLElement * art =[tbxml childElementNamed:@"article" parentElement:chapter];
 		[article setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:art]]];
-		
+		NSLog(@"Adding chapter %@", article.text);
 		//get the article images
 		TBXMLElement * image=[tbxml childElementNamed:@"image" parentElement:art];
 		int imageCount = 0;

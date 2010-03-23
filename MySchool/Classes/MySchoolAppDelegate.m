@@ -77,10 +77,10 @@
 	//if there are no modules in the library, add the xml modules
 	NSArray *modules = [[NSArray alloc] init];
 	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
-	if ([modules count] == 0) {
+	//if ([modules count] == 0) {
 		[Library addXMLModule:@"dinosaurs" toDatabaseContext:managedObjectContext];
 		[Library addXMLModule:@"sustainability" toDatabaseContext:managedObjectContext];
-	}
+	//}
 	[modules release];
 }
 

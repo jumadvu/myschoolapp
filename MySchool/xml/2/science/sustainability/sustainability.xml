@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <?xml version="1.0"?>
 <myschool>
     <module>
-		<title>All About Sustainability</title>
+		<title>Building a Sustainable World</title>
 		<superSubject>What is Sustainability?</superSubject>
 		<gradeLevel>2</gradeLevel>
 		<chapter>
@@ -126,6 +125,12 @@
 					<answer correctness="0">False, solar and wind energy are types of fossil fuels which are nonrenewable.</answer>
 				</studentQuestion>
 			</lecture> 
+			<worksheetQuestion>
+					<text>What does the term 'dinosaur' mean?</text>
+					<answer correctness="5">Terrible lizard</answer>
+					<answer correctness="0">Flying reptile</answer>
+					<answer correctness="0">Sharp Teeth</answer>
+			</worksheetQuestion>
 		</chapter>
 		<chapter>
 			<title>Things we can do</title>
