@@ -14,5 +14,9 @@
 - (NSNumber*)maxPointsForUsersCompletedLessons:(NSArray*)completedLessons;
 - (NSString*)maxPointsForUsersCompletedLessonsAsString:(NSArray*)completedLessons;
 -(NSArray*)studentQuestionsArray;
+- (NSData*)createFormData:(NSDictionary*)myDictionary withBoundary:(NSString*)myBounds;
+- (void)sendEmail;
+-(NSString*)emailMessage;
+
 
 @end
