@@ -106,7 +106,7 @@
 					<object class="IBUIButton" id="526604347">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{94, 426}, {132, 75}}</string>
+						<string key="NSFrame">{{94, 422}, {132, 98}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -132,7 +132,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">mainmenu.png</string>
+							<string key="NSResourceName">myschoolButton.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="735542720">

@@ -65,7 +65,7 @@
 					<object class="IBUIButton" id="839482323">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{112, 391}, {103, 37}}</string>
+						<string key="NSFrame">{{91, 413}, {139, 107}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -76,7 +76,6 @@
 							<double key="NSSize">15</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Main Menu</string>
 						<object class="NSColor" key="IBUIHighlightedTitleColor" id="581731436">
 							<int key="NSColorSpace">3</int>
@@ -89,6 +88,10 @@
 						<object class="NSColor" key="IBUINormalTitleShadowColor" id="311628385">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">myschoolButton.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="957474108">
@@ -175,7 +178,7 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">Points Earned: 0</string>
+						<string key="IBUIText">Points: 0</string>
 						<reference key="IBUITextColor" ref="775661315"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -338,13 +341,13 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="400231967"/>
-							<reference ref="839482323"/>
 							<reference ref="556866321"/>
 							<reference ref="957474108"/>
 							<reference ref="615170098"/>
 							<reference ref="10391147"/>
 							<reference ref="285048076"/>
 							<reference ref="492201812"/>
+							<reference ref="839482323"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -362,11 +365,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
 						<reference key="object" ref="400231967"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">5</int>
-						<reference key="object" ref="839482323"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -397,6 +395,11 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">26</int>
 						<reference key="object" ref="492201812"/>
+						<reference key="parent" ref="191373211"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">5</int>
+						<reference key="object" ref="839482323"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -513,12 +516,14 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>goBack</string>
+							<string>lowerMenu:</string>
 							<string>raiseMenu:</string>
 							<string>toMainMenu</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
+							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>id</string>
 						</object>
