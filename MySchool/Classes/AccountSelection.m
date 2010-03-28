@@ -132,7 +132,7 @@
 	headerLabel.highlightedTextColor = [UIColor whiteColor];
 	headerLabel.font = [UIFont boldSystemFontOfSize:22];
 	headerLabel.frame = CGRectMake(10.0, 20.0, 290.0, 45.0);
-	headerLabel.text = @"Choose Your Avatar";
+	headerLabel.text = @"Who Are Ya?";
 	
 	[customView addSubview:headerLabel];
 	

@@ -153,7 +153,7 @@
 	whichQuestion = 0;
 	paused = YES;
 	scrollPaused = YES;
-	secondsRemaining = 120;
+	secondsRemaining = 180;
 	counter = 1;
 	start = YES;
 	keywordIndex = 0;
