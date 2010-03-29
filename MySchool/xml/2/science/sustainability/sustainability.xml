@@ -12,10 +12,10 @@
 				<image><file>atmosphere.jpg</file><desc>The earth's atmosphere is a layer of gases surrounding the planet Earth that is held together by Earth's gravity.</desc></image>
 				<image><file>infrared_dog.jpg</file><desc>Infrared radiation is electromagnetic radiation with wavelength between 0.7 and 300 micrometers. It can be used to remotely determine the temperature of objects.</desc></image>
 				<image><file>fossilfuel_coal.jpg</file><desc>Fossil fuels are fuels formed by the earth from the fossilized remains of dead plants and animals that have been exposed to the pressure of the earth's crust over hundreds of millions of years!</desc></image>
-				<image><file>atmosphere.jpg</file><desc>Deforestation is cutting down and clearing forests to make more room for people or buildings.</desc></image>
+				<image><file>deforestation.jpg</file><desc>Deforestation is cutting down and clearing forests to make more room for people or buildings.</desc></image>
 				<image><file>energy_lightning.jpg</file><desc>In physics, energy describes the amount of work that can be performed by a force. We use energy in everything we do from breathing, to doing jumping jacks, or watching television.</desc></image>
 			</article>
-			<lecture>
+			<lecture>	
 				<title>Sustainability and Energy</title>
 				<text>
 				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. Natural resources occur naturally within environments and include [sweaters, pants, shirts, and dresses]. What we do [every earth day] impacts the earth and our surroundings. Cars and trucks emit gases that contribute to the [stars] in the atmosphere. We do not emit greenhouse gases [when we stick our head into the refrigerator]. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [a 100] years! Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. [Tree rings] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. In the US, most of our energy comes from [nonrenewable] energy sources. 
@@ -126,10 +126,40 @@
 				</studentQuestion>
 			</lecture> 
 			<worksheetQuestion>
-					<text>What does the term 'dinosaur' mean?</text>
-					<answer correctness="5">Terrible lizard</answer>
-					<answer correctness="0">Flying reptile</answer>
-					<answer correctness="0">Sharp Teeth</answer>
+				<text>What do we call the gases that re-radiate sunlight back towards space as infrared radiation (heat)?</text>
+				<answer correctness="5">Greenhouse gases</answer>
+				<answer correctness="0">Ozone</answer>
+				<answer correctness="0">Laughing gases</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call energy sources that can easily be recreated?</text>
+				<answer correctness="5">Renewable energy</answer>
+				<answer correctness="0">Happy energy</answer>
+				<answer correctness="0">Toxic energy</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What gas is created when fossil fuels are burned?</text>
+				<answer correctness="5">Carbon dioxide</answer>
+				<answer correctness="0">Oxygen</answer>
+				<answer correctness="0">Helium</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call the amount of greenhouse gases that have been emitted by someone?</text>
+				<answer correctness="5">Carbon footprint</answer>
+				<answer correctness="0">Fossil fuel</answer>
+				<answer correctness="0">Greenhouse effect</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>Where does most of the energy consumed in the US come from today?</text>
+				<answer correctness="5">Fossil fuels</answer>
+				<answer correctness="0">Solar</answer>
+				<answer correctness="0">Wind</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What is the activity of cutting down and clearing forests to make more room for people or buildings?</text>
+				<answer correctness="5">Deforestation</answer>
+				<answer correctness="2">City planning</answer>
+				<answer correctness="0">Forest preservation</answer>
 			</worksheetQuestion>
 		</chapter>
 		<chapter>
@@ -147,7 +177,6 @@
 				<title>What we can to be more sustainable</title>
 				<text>
 					[Remodeling] involves taking materials that have already been used to create new ones. It is one of the three Rs that form the [food groups]: reduce, reuse, recycle. [Reuse] is to buy less and use less. [Reduce] is to use things over again. When we make paper from recycled paper, we save not only trees but also [tigers]. We can also switch out our light bulbs. Approximately 90% of the power consumed by [an electric socket] is emitted as heat, rather than visible light. The average life of a compact fluorescent light is [500 times] greater than an incandescent light bulb. [Flash lights] use energy much more efficiently by using 20 - 30% of the power equivalent of incandescent light bulbs. You can also buy local seasonal food. Often fruits and vegetables at your large grocery store travel [light years]. That creates a lot of carbon footprint. If you eat [genetically modified food], it's not only helping to reduce carbon footprint but also it's cheap and fresh! 
-						
 				</text>
 				<keywordSet word="Recycling">
 					<word>Cycling</word>
@@ -248,12 +277,42 @@
 					<answer correctness="0">No, electronic devices do not use energy when not in use.</answer>
 				</studentQuestion>
 				</studentQuestion><studentQuestion>
-					<text>Cars are NOT a leading cause of greenhouse gas emissions in the US. True or False?</text>
+					<text>Is it true that cars are NOT a leading cause of greenhouse gas emissions in the US.</text>
 					<studentType>1</studentType>
 					<answer correctness="5">False. Cars account for almost a quarter of annual US emissions of carbon dioxide (CO2).</answer>
 					<answer correctness="0">True. Cars emit much less greenhouse gases than airplanes.</answer>
 				</studentQuestion>
 			</lecture>
+			<worksheetQuestion>
+				<text>What do we call the activity of processing used materials to create new ones?</text>
+				<answer correctness="5">Recycling</answer>
+				<answer correctness="0">Sustainability</answer>
+				<answer correctness="0"></answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What light bulbs allow us to save energy in our every day lives?</text>
+				<answer correctness="5">Compact fluorescent lights</answer>
+				<answer correctness="0">Incandescent lights</answer>
+				<answer correctness="0">Traffic lights</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do the 3Rs of Reduce, Reuse and Recycle refer to?</text>
+				<answer correctness="5">Waste Hierarchy</answer>
+				<answer correctness="0">Food Chain</answer>
+				<answer correctness="0">Circle of Life</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>In an incandescent light bulb what percentage of the power consumed is emitted as heat as opposed to light?</text>
+				<answer correctness="5">90%</answer>
+				<answer correctness="0">0%</answer>
+				<answer correctness="0">100%</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What is the US Federal government agency that is charged with protecting the environment called?</text>
+				<answer correctness="5">EPA</answer>
+				<answer correctness="2">FCC</answer>
+				<answer correctness="0">SEC</answer>
+			</worksheetQuestion>
 		</chapter>
 		<chapter>
 			<title>All about energy</title>
