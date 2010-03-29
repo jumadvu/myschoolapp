@@ -16,9 +16,9 @@
 				<image><file>energy_lightning.jpg</file><desc>In physics, energy describes the amount of work that can be performed by a force. We use energy in everything we do from breathing, to doing jumping jacks, or watching television.</desc></image>
 			</article>
 			<lecture>	
-				<title>Sustainability and Energy</title>
+				<title>Sustainability and Your Environment</title>
 				<text>
-				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. Natural resources occur naturally within environments and include [sweaters, pants, shirts, and dresses]. What we do [every earth day] impacts the earth and our surroundings. Cars and trucks emit gases that contribute to the [stars] in the atmosphere. We do not emit greenhouse gases [when we stick our head into the refrigerator]. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [a 100] years! Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. [Tree rings] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. In the US, most of our energy comes from [nonrenewable] energy sources. 
+				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. Natural resources occur naturally within environments and include [sweaters, pants, shirts, and dresses]. What we do [every earth day] impacts the earth and our surroundings. Cars and trucks emit gases that contribute to the [stars] in the atmosphere. We do not emit greenhouse gases when we [open the refrigerator]. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [a 100] years! Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. [Tree rings] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. In the US, most of our energy comes from [nonrenewable] energy sources. 
 				</text>
 				<keywordSet word="conserve">
 					<word>destroy</word>
@@ -37,8 +37,8 @@
 					<word>rainbows</word>
 				</keywordSet>
 				<keywordSet word="when we walk to the park">
-					<word>when we ride a plane</word>
-					<word>when we wash our clothes in the washer and dryer</word>
+					<word>ride a plane</word>
+					<word>wash our clothes in the washer</word>
 				</keywordSet>
 				<keywordSet word="dead plants and animals">
 					<word>shoes</word>
@@ -174,9 +174,8 @@
 				<image><file>car.jpg</file><desc>Cars are a leading cause of greenhouse gas emissions. They account for almost a quarter of annual US emissions of carbon dioxide (CO2). The US has the 2nd highest rate of carbon emissions in the world, just behind China, with about 20% of the world's total.</desc></image>
 			</article>
 			<lecture>
-				<title>What we can to be more sustainable</title>
-				<text>
-					[Remodeling] involves taking materials that have already been used to create new ones. It is one of the three Rs that form the [food groups]: reduce, reuse, recycle. [Reuse] is to buy less and use less. [Reduce] is to use things over again. When we make paper from recycled paper, we save not only trees but also [tigers]. We can also switch out our light bulbs. Approximately 90% of the power consumed by [an electric socket] is emitted as heat, rather than visible light. The average life of a compact fluorescent light is [500 times] greater than an incandescent light bulb. [Flash lights] use energy much more efficiently by using 20 - 30% of the power equivalent of incandescent light bulbs. You can also buy local seasonal food. Often fruits and vegetables at your large grocery store travel [light years]. That creates a lot of carbon footprint. If you eat [genetically modified food], it's not only helping to reduce carbon footprint but also it's cheap and fresh! 
+				<title>What we can do to be more sustainable</title>
+				<text>[Remodeling] involves taking materials that have already been used to create new ones. It is one of the three Rs that form the [food groups]: reduce, reuse, recycle. [Reuse] is to buy less and use less. [Reduce] is to use things over again. When we make paper from recycled paper, we save not only trees but also [tigers]. We can also switch out our light bulbs. Approximately 90% of the power consumed by [an electric socket] is emitted as heat, rather than visible light. The average life of a compact fluorescent light is [500 times] greater than an incandescent light bulb. [Flash lights] use energy much more efficiently by using 20 - 30% of the power equivalent of incandescent light bulbs. You can also buy local seasonal food. Often fruits and vegetables at your large grocery store travel [light years]. That creates a lot of carbon footprint. If you eat [genetically modified food], it's not only helping to reduce carbon footprint but also it's cheap and fresh!
 				</text>
 				<keywordSet word="Recycling">
 					<word>Cycling</word>
@@ -314,6 +313,7 @@
 				<answer correctness="0">SEC</answer>
 			</worksheetQuestion>
 		</chapter>
+		<!--
 		<chapter>
 			<title>All about energy</title>
 			<article><text>article...</text>
@@ -474,5 +474,6 @@
 				</studentQuestion>
 			</lecture>
 		</chapter>
+		-->
 	</module>
 </myschool>
