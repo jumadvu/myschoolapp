@@ -5,6 +5,32 @@
 		<superSubject>What is Sustainability?</superSubject>
 		<gradeLevel>2</gradeLevel>
 		<chapter>
+			<title>All about energy</title>
+			<article><text>article...</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+			<worksheetQuestion>
+				<text>What is the activity of cutting down and clearing forests to make more room for people or buildings?</text>
+				<answer correctness="5">Deforestation</answer>
+				<answer correctness="2">City planning</answer>
+				<answer correctness="0">Forest preservation</answer>
+			</worksheetQuestion>
+		</chapter>
+		<chapter>
 			<title>You and your environment</title>
 			<article>
 				<text>Sustainability comes from the word sustainable. When you hear about sustainability, usually it is used in the context of the environment and the nature around us. Sustainability means to conserve our surroundings and prevent our [natural resources] from disappearing. What we do everyday impacts the earth and our surroundings. For instance, the cars and trucks that we drive emit harmful gases that go into our [atmosphere]. These gases form part of what we call greenhouse gases. These gases allow sunlight to enter the Earth's atmosphere. Some of this light is re-radiated back towards space as infrared radiation. But greenhouse gases absorb this [infrared radiation] and traps its heat in the atmosphere. As more greenhouse gases get emitted into our atmosphere, it contributes to the warming of our planet. The main sources of greenhouse gases due to human activity are burning of [fossil fuels] and [deforestation]. Carbon footprint indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. It is trying to measure how much greenhouse gas went into the production of an activity. In order to lower greenhouse emissions, we want to lower our carbon footprint. If we want to be more sustainable, we need to be mindful of [energy]. There are two different sources of energy: renewable, an energy source that can easily be recreated, and nonrenewable, an energy source that we use up and cannot recreate. In the US, most of our energy comes from nonrenewable energy sources. Coal, petroleum, natural gas are all nonrenewable energy sources because their supplies on earth are limited and we cannot recreate them easily. Meanwhile, renewable energy sources include solar and wind energy.</text>
@@ -18,7 +44,7 @@
 			<lecture>	
 				<title>Sustainability and Your Environment</title>
 				<text>
-				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. Natural resources occur naturally within environments and include [sweaters, pants, shirts, and dresses]. What we do [every earth day] impacts the earth and our surroundings. Cars and trucks emit gases that contribute to the [stars] in the atmosphere. We do not emit greenhouse gases when we [open the refrigerator]. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [a 100] years! Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. [Tree rings] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. In the US, most of our energy comes from [nonrenewable] energy sources. 
+				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. Natural resources occur naturally within environments and include [sweaters, pants, shirts, and dresses]. What we do [every earth day] impacts the earth and our surroundings. Cars and trucks emit gases that contribute to the [stars] in the atmosphere. We do not emit greenhouse gases when we [open the refrigerator]. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [100] years! Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. [Tree rings] indicates the amount of greenhouse gases that have been emitted by an organization, a product or a person. In the US, most of our energy comes from [nonrenewable] energy sources. 
 				</text>
 				<keywordSet word="conserve">
 					<word>destroy</word>
@@ -46,7 +72,7 @@
 				</keywordSet>
 				<keywordSet word="hundreds of millions of">
 					<word>10</word>
-					<word>a 1000</word>
+					<word>1000</word>
 				<keywordSet word="in the atmosphere">
 					<word>in California</word>
 					<word>on Jupiter</word>	
@@ -64,7 +90,7 @@
 					<word>intergalactic</word>
 				</keywordSet>
 				<studentQuestion>
-					<text>How do I create carbon footprint?</text>
+					<text>How do I create a carbon footprint?</text>
 					<studentType>1</studentType>
 					<answer correctness="0">By eating flowers.</answer>
 					<answer correctness="5">By not turning off the lights when I leave the room.</answer>
@@ -126,7 +152,7 @@
 				</studentQuestion>
 			</lecture> 
 			<worksheetQuestion>
-				<text>What do we call the gases that re-radiate sunlight back towards space as infrared radiation (heat)?</text>
+				<text>What do we aaacall the gases that re-radiate sunlight back towards space as infrared radiation (heat)?</text>
 				<answer correctness="5">Greenhouse gases</answer>
 				<answer correctness="0">Ozone</answer>
 				<answer correctness="0">Laughing gases</answer>
@@ -144,6 +170,12 @@
 				<answer correctness="0">Helium</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
+				<text>What do we call the activity of cutting down and clearing forests to make more room for people or buildings?</text>
+				<answer correctness="5">Deforestation</answer>
+				<answer correctness="2">City planning</answer>
+				<answer correctness="0">Forest preservation</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
 				<text>What do we call the amount of greenhouse gases that have been emitted by someone?</text>
 				<answer correctness="5">Carbon footprint</answer>
 				<answer correctness="0">Fossil fuel</answer>
@@ -154,12 +186,6 @@
 				<answer correctness="5">Fossil fuels</answer>
 				<answer correctness="0">Solar</answer>
 				<answer correctness="0">Wind</answer>
-			</worksheetQuestion>
-			<worksheetQuestion>
-				<text>What is the activity of cutting down and clearing forests to make more room for people or buildings?</text>
-				<answer correctness="5">Deforestation</answer>
-				<answer correctness="2">City planning</answer>
-				<answer correctness="0">Forest preservation</answer>
 			</worksheetQuestion>
 		</chapter>
 		<chapter>
