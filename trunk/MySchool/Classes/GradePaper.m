@@ -137,6 +137,7 @@
 	float myHeight1 = size1.height;
 
 	NSString *text2 = answer.answer;
+	NSLog(@"%@", text2);
 	CGSize constraint2 = CGSizeMake (200,700);
 	CGSize size2 = [text2 sizeWithFont:[UIFont fontWithName:@"Zapfino" size:14] constrainedToSize:constraint2 lineBreakMode:UILineBreakModeWordWrap];
 	float myHeight2 = size2.height;
@@ -145,11 +146,9 @@
 
 	CGRect cellFrame = CGRectMake(0,0,myTotalHeight,320);
 
-    GradePaperCell *cell = (GradePaperCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[GradePaperCell alloc] initWithFrame:cellFrame reuseIdentifier:CellIdentifier] autorelease];
-		cell.delegate = self;
-    }
+    GradePaperCell *cell = [[[GradePaperCell alloc] initWithFrame:cellFrame reuseIdentifier:CellIdentifier] autorelease];
+	cell.delegate = self;
+    
 	cell.wrongButton.tag = indexPath.row;
 	cell.correctButton.tag = indexPath.row;
 	cell.wrongButton.alpha = 1;
@@ -267,7 +266,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
 	// create the parent view that will hold header Label
-	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 100.0)] autorelease];
+	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40.0)] autorelease];
 	customView.backgroundColor = [UIColor clearColor];
 	
 
@@ -291,7 +290,7 @@
 -(void)goNext {
 	NSLog(@"go next");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	currentPaper++;
+	self.currentPaper++;
 	NSString *gradeMessage = [NSString stringWithFormat:@"%@'s Grade: %@", completedWorksheet.student.firstName, gradeLabel.text];
 	if (currentPaper < [completedWorksheets count]) {
 		NSString *msg = [NSString stringWithFormat:@"You have %d more papers to grade. Click OK to grade the next paper.", [[delegate.teacher ungradedPapers] count]];
@@ -303,6 +302,7 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
+
 		//okay button handled in selector: alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 	} else {
 		//message that all worksheets are graded
@@ -325,7 +325,7 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-	NSLog(@"dismiss alert move on to next paper");
+	NSLog(@"dismiss alert move on to paper #: %d", currentPaper);
 	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
 	[self setAnswers:[[completedWorksheet answers] allObjects]];
 	//reset answers graded
@@ -341,7 +341,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-	return 85;
+	return 40;
 }
 
 
