@@ -281,6 +281,7 @@
 					<answer correctness="0">Playground</answer>
 			</worksheetQuestion>
 		</chapter>
+		<!--
 		<chapter>
 			<title>All about fossils</title>
 			<article>
@@ -482,5 +483,6 @@
 				</studentQuestion>
 			</lecture>
 		</chapter>
+		-->
 	</module>
 </myschool>

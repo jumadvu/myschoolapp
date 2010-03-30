@@ -78,6 +78,7 @@
 		AB0998E4115FCA7000787969 /* schoolhouse.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0998E3115FCA7000787969 /* schoolhouse.png */; };
 		AB0998EB115FCD7A00787969 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0998EA115FCD7A00787969 /* logo.png */; };
 		AB0998F9115FD40F00787969 /* black_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0998F8115FD40F00787969 /* black_rect.png */; };
+		AB099A441161A39600787969 /* sustain.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB099A431161A39600787969 /* sustain.xml */; };
 		AB160C5C114F5266004DC0C1 /* CompletedWorksheetPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB160C5B114F5266004DC0C1 /* CompletedWorksheetPlus.m */; };
 		AB160CB1114F6723004DC0C1 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB160CB0114F6723004DC0C1 /* data.plist */; };
 		AB160CD3114FD5FC004DC0C1 /* ParentEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = AB160CD1114FD5FC004DC0C1 /* ParentEmail.m */; };
@@ -187,7 +188,6 @@
 		AB4607E9111CEA0A00E9C445 /* StudentPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4607E8111CEA0A00E9C445 /* StudentPlus.m */; };
 		AB53B36F1121EC120017AFAB /* dinosaurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3661121EC120017AFAB /* dinosaurs.xml */; };
 		AB53B3701121EC120017AFAB /* triceratops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3671121EC120017AFAB /* triceratops.jpg */; };
-		AB53B3711121EC120017AFAB /* sustainability.xml in Resources */ = {isa = PBXBuildFile; fileRef = AB53B3691121EC120017AFAB /* sustainability.xml */; };
 		AB53B3791121F39D0017AFAB /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = AB53B3781121F39D0017AFAB /* Library.m */; };
 		AB53B46E112314840017AFAB /* Boy1Aha.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B45E112314840017AFAB /* Boy1Aha.png */; };
 		AB53B46F112314840017AFAB /* Boy1Confused.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B45F112314840017AFAB /* Boy1Confused.png */; };
@@ -352,6 +352,8 @@
 		AB0998E3115FCA7000787969 /* schoolhouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schoolhouse.png; sourceTree = "<group>"; };
 		AB0998EA115FCD7A00787969 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		AB0998F8115FD40F00787969 /* black_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_rect.png; sourceTree = "<group>"; };
+		AB0999A6116168E100787969 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		AB099A431161A39600787969 /* sustain.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sustain.xml; sourceTree = "<group>"; };
 		AB160C5A114F5266004DC0C1 /* CompletedWorksheetPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheetPlus.h; sourceTree = "<group>"; };
 		AB160C5B114F5266004DC0C1 /* CompletedWorksheetPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheetPlus.m; sourceTree = "<group>"; };
 		AB160CB0114F6723004DC0C1 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
@@ -496,7 +498,6 @@
 		AB4607E8111CEA0A00E9C445 /* StudentPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentPlus.m; sourceTree = "<group>"; };
 		AB53B3661121EC120017AFAB /* dinosaurs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dinosaurs.xml; sourceTree = "<group>"; };
 		AB53B3671121EC120017AFAB /* triceratops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = triceratops.jpg; sourceTree = "<group>"; };
-		AB53B3691121EC120017AFAB /* sustainability.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sustainability.xml; sourceTree = "<group>"; };
 		AB53B3771121F39D0017AFAB /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		AB53B3781121F39D0017AFAB /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
 		AB53B45E112314840017AFAB /* Boy1Aha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy1Aha.png; sourceTree = "<group>"; };
@@ -556,7 +557,6 @@
 		ABF8591D1141E13C007419EB /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xmark.png; path = ../Classes/xmark.png; sourceTree = "<group>"; };
 		F50B4813111A1356003231FB /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		F50B4814111A1356003231FB /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
-		F50B4816111A1368003231FB /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		F50B4817111A1368003231FB /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		F50B4819111A1378003231FB /* ModuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleCell.h; sourceTree = "<group>"; };
 		F50B481A111A1378003231FB /* ModuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleCell.m; sourceTree = "<group>"; };
@@ -613,7 +613,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F50B4816111A1368003231FB /* TBXML.h */,
+				F50B4817111A1368003231FB /* TBXML.m */,
+				AB0999A6116168E100787969 /* TBXML.h */,
 				AB53B3771121F39D0017AFAB /* Library.h */,
 				AB53B3781121F39D0017AFAB /* Library.m */,
 				F50B4813111A1356003231FB /* NSDataAdditions.h */,
@@ -675,6 +676,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB160EAC11515B55004DC0C1 /* store_items */,
 				AB34B0A1115934EB00BC950F /* music */,
 				AB160CB0114F6723004DC0C1 /* data.plist */,
 				AB0541A911408A2D001045D7 /* mainmenu */,
@@ -776,7 +778,6 @@
 				AB95CA681132E50200203EA4 /* ChapterPlus.m */,
 				AB176903113FB09F00BA887D /* StudentQuestionPlus.h */,
 				AB176904113FB09F00BA887D /* StudentQuestionPlus.m */,
-				F50B4817111A1368003231FB /* TBXML.m */,
 				AB0542321140E979001045D7 /* WorksheetPlus.h */,
 				AB0542331140E979001045D7 /* WorksheetPlus.m */,
 				AB160C5A114F5266004DC0C1 /* CompletedWorksheetPlus.h */,
@@ -835,7 +836,6 @@
 		AB07F24F11098B1800204AFE /* library */ = {
 			isa = PBXGroup;
 			children = (
-				AB160EAC11515B55004DC0C1 /* store_items */,
 				F50B4819111A1378003231FB /* ModuleCell.h */,
 				F50B481A111A1378003231FB /* ModuleCell.m */,
 				AB07F25811098B4B00204AFE /* LibraryHome.h */,
@@ -962,7 +962,8 @@
 				AB160EB311515B55004DC0C1 /* hamster.png */,
 				AB160EB411515B55004DC0C1 /* worldmap.png */,
 			);
-			path = store_items;
+			name = store_items;
+			path = Classes/store_items;
 			sourceTree = "<group>";
 		};
 		AB160EDB11516216004DC0C1 /* store */ = {
@@ -1041,7 +1042,6 @@
 			isa = PBXGroup;
 			children = (
 				AB53B3621121EC120017AFAB /* 2 */,
-				AB53B36A1121EC120017AFAB /* 3 */,
 				F5A9C0B71136EFB600F74134 /* modules.xml */,
 			);
 			path = xml;
@@ -1090,40 +1090,9 @@
 		AB53B3681121EC120017AFAB /* sustainability */ = {
 			isa = PBXGroup;
 			children = (
-				AB53B3691121EC120017AFAB /* sustainability.xml */,
+				AB099A431161A39600787969 /* sustain.xml */,
 			);
 			path = sustainability;
-			sourceTree = "<group>";
-		};
-		AB53B36A1121EC120017AFAB /* 3 */ = {
-			isa = PBXGroup;
-			children = (
-				AB53B36B1121EC120017AFAB /* english */,
-				AB53B36C1121EC120017AFAB /* math */,
-				AB53B36D1121EC120017AFAB /* science */,
-			);
-			path = 3;
-			sourceTree = "<group>";
-		};
-		AB53B36B1121EC120017AFAB /* english */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = english;
-			sourceTree = "<group>";
-		};
-		AB53B36C1121EC120017AFAB /* math */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = math;
-			sourceTree = "<group>";
-		};
-		AB53B36D1121EC120017AFAB /* science */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = science;
 			sourceTree = "<group>";
 		};
 		AB53B45D112314840017AFAB /* Student Faces */ = {
@@ -1281,7 +1250,6 @@
 				AB26205B11121CEE005D02F4 /* woman.png in Resources */,
 				AB53B36F1121EC120017AFAB /* dinosaurs.xml in Resources */,
 				AB53B3701121EC120017AFAB /* triceratops.jpg in Resources */,
-				AB53B3711121EC120017AFAB /* sustainability.xml in Resources */,
 				AB53B46E112314840017AFAB /* Boy1Aha.png in Resources */,
 				AB53B46F112314840017AFAB /* Boy1Confused.png in Resources */,
 				AB53B470112314840017AFAB /* Boy1Happy.png in Resources */,
@@ -1438,6 +1406,7 @@
 				AB0998E4115FCA7000787969 /* schoolhouse.png in Resources */,
 				AB0998EB115FCD7A00787969 /* logo.png in Resources */,
 				AB0998F9115FD40F00787969 /* black_rect.png in Resources */,
+				AB099A441161A39600787969 /* sustain.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

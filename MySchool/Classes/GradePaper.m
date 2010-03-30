@@ -51,14 +51,16 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	[self setCompletedWorksheets:[delegate.teacher ungradedPapers]];
+	NSLog(@"how many completed worksheets: %d", [completedWorksheets count]);
 	
 	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:0]];
 	[self setAnswers:[[self.completedWorksheet answers] allObjects]];
-	NSLog(@"answers: %d", [answers count]);
+	NSLog(@"how many answers on first worksheet: %d", [answers count]);
 	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
 	[self setAnswersGradedArray:anArray];
 	self.tableView.allowsSelection = NO;
 	currentPaper = 0;
+	NSLog(@"finished view did load");
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -124,6 +126,7 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+	NSLog(@"cell for row at index path:%d", indexPath.row);
     static NSString *CellIdentifier = @"Cell";
     
 	WorksheetAnswer *answer = [self.answers objectAtIndex:indexPath.row];
