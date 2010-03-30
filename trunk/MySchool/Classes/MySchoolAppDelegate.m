@@ -79,7 +79,7 @@
 	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
 	if ([modules count] == 0) {
 		[Library addXMLModule:@"dinosaurs" toDatabaseContext:managedObjectContext];
-		[Library addXMLModule:@"sustainability" toDatabaseContext:managedObjectContext];
+		[Library addXMLModule:@"sustain" toDatabaseContext:managedObjectContext];
 	}
 	[modules release];
 }
