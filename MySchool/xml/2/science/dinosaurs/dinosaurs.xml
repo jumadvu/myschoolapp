@@ -23,7 +23,7 @@
 			</article>
 			<lecture>
 				<title>Dinosaurs: The Terrible Lizards</title>
-				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. They were the largest animals to ever walk on dry land. Other plant-eaters had special weapons, to help them fight off the meat-eaters. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. The smaller sized meat-eaters that may have grown wings and evolved into birds. One of the first [fish] dinosaurs was Archaeopteryx; it had wings and feathers, but a dinosaur-like skeleton. These large flying reptiles that lived at the same time as dinosaurs were called [emus], or winged lizards. There were also large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
+				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. Some plant-eaters had special weapons and armor to protect themselves. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. One of the first [fish] dinosaurs was Archaeopteryx; it had wings and feathers, but a dinosaur-like skeleton. These large flying reptiles that lived at the same time as dinosaurs were called [emus], or winged lizards. There were also large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
 				</text>
 				<keywordSet word="millions">
 					<word>thousands</word>
@@ -171,7 +171,7 @@
 			</article>
 			<lecture>
 				<title>Where Did Dinosaurs Live?</title>
-				<text>Long ago, the earth was warmer and covered with plants and [jungles]. Huge volcanoes created [lava and smoke], which created a warmer climate. All of the continents we know today were collected in one big mass which we call [Pangea]. It was so large that we call it a [supercontinent]! The first dinosaurs appeared in the jungles of Pangea, evolving from reptiles which looked like [crocodiles]. Some of the first dinosaurs were small, but could [run fast] to avoid predators. Since Pangea was made up of all the continents combined, early dinosaurs moved all over Pangea. Later, the continents began to [drift apart], and are now separated by [oceans]. So even though Antarctica is covered in ice today, it was once a jungle where many dinosaurs lived. Humans have been finding dinosaur bones for many centuries, which early cultures may have thought were the bones of [dragons] or giants. Now, some of the most famous dinosaur finds come from places like Montana and [China], but dinosaur bones have been found almost every place on earth.
+				<text>Long ago, before the first dinosaurs, the earth was warmer and covered with plants and [farms]. Huge volcanoes created [thunder], which created a warmer climate. All of the continents we know today were collected in one big mass which we call [Thunderdome]. This mass was so large that we call it a [microcontinent]! The first dinosaurs appeared in the jungles of Pangea, evolving from reptiles which looked like [bears]. Some of the first dinosaurs were small, but could [grow taller] to avoid predators. Since Pangea was made up of all the continents combined, early dinosaurs moved to all parts of Pangea and adapted in unique ways. Over millions of years, the continents began to [spin], and are now separated by [rivers]. So even though Antarctica is covered in ice today, it was once a jungle where many dinosaurs lived. Humans have been finding dinosaur bones for many centuries, which early cultures may have thought were the bones of [marsupials] or giants. Now, some of the most famous dinosaur finds come from places like Montana and [the Moon], but dinosaur bones and other fossils have been found almost every place on earth.
 				</text>
 				<keywordSet word="jungles">
 					<word>deserts</word>
@@ -281,15 +281,15 @@
 					<answer correctness="0">Playground</answer>
 			</worksheetQuestion>
 		</chapter>
-		
+				<!--
 		<chapter>
 			<title>All about fossils</title>
 			<article>
 				<text>When we think about dinosaurs, we often think of the dinosaur fossils which are found buried in the earth. A fossil is a piece or an imprint of a living thing which has been preserved in rock.
-				Some pieces, like bones, survive inside the rock, some pieces [become rock], and some leave impressions in mud which are preserved. Even bugs preserved in [amber] are fossils.
+				Some pieces, like shells, survive inside the rock, some pieces [become rock], and some leave impressions in mud which are preserved. Even bugs preserved in [amber] are fossils.
 				As living things die they are covered in sand and mud. Newer sand and mud covers the old, forming layers. Some of these layers are preserved over millions of years and fossilize into rock. When scientists dig into the rock, they look at the layers and the living things that were preserved in them. In this way, we know what plants and animals lived at what times. This is the [fossil record].
-				We know a lot about dinosaur bones because bone has a lot of minerals which help it fossilize. Skin and feathers don't fossilize very often. Scientists rely on rare impressions of [dinosaur skin] to tell them what it was like. For this reason, no one knows what colors the dinosaurs were!
-				However, most fossils are not parts of dinosaurs. Huge numbers of fossils of tiny sea creatures exist, like spiral-shelled [ammonites]. The hard shells of millions of sea creatures are part of [chalk cliffs] all over Europe. 
+				We know a lot about dinosaur bones because bone lasts a long time, helping it to absorb minerals and fossilize. Skin and feathers don't fossilize very often. Scientists rely on rare impressions of [dinosaur skin] to tell them what it was like. Because we can only see an imprint of dinosaur skin, no one knows what colors the dinosaurs were! In order for a fossil of a dinosaur or other land animal to form, the animal had to have been covered with sand or mud very quickly after it died. If the environment was just right, the bones would absorb minerals and become more like rock than bone, allowing the to last millions of years. You can imagine how rarely fossilization has happened!
+				However, most fossils are not parts of dinosaurs. Huge numbers of fossils of tiny sea creatures exist, like spiral-shelled [ammonites]. The hard shells of millions of sea creatures are what make up the [chalk cliffs] found in parts of Europe. 
 				Chalk itself is a mineral composed of calcite, which comes from the shells of fossilized sea creatures. Blackboard chalk is man-made though, so teachers aren't writing with fossils!</text>
 				<image><file>petrifiedwood.jpg</file><desc>Petrified wood is wood which has been completely replaced with minerals, and turned to stone.</desc></image>
 				<image><file>amber.jpg</file><desc>Amber is preserved tree sap. It can be many colors, and is sometimes made into jewelery.</desc></image>
@@ -299,10 +299,46 @@
 				<image><file>chalkcliffs.jpg</file><desc>Chalk cliffs erode easily, exposing fossils of sponges, sea urchins and other sea creatures.</desc></image>
 			</article>
 			<lecture>
-				<title>title</title>
-				<text>text...
+				<title>How are Fossils Made?</title>
+				<text>How do we know anything about prehistoric life? When living things die, they [shrink], so it must be very rare for any part of a living thing to survive after it dies. However, [fires] and minerals can last millions of years without decaying. The parts of animals that are made mostly of minerals include bones and [organs], which survive in layers of mud and rock as fossils. More rarely, parts of plants and animals which are [soft], like skin and leaves, make [imprints] in mud which hardens into rock. Petrified [wood] is a special fossil because it turns into rock from the inside out. When wood is soaked in water rich in minerals for many years, the minerals enter the plant's cells and create molds of them. Every tiny [cell] in the wood becomes a fossil. Most of the fossils we find are parts of [sea creatures], not huge animals. Life began in the ocean, so many more animals have lived in the sea than [on land]. The shells of dead sea animals formed thick layers on the ocean floor, which over time were compressed into what we now call [chalk]. It is much easier for fossils to form underwater than on land, which means that dinosaur fossils are really special and rare. Dinosaurs and other organisms had to be quickly covered in [sand, sediment or mud] and left undisturbed to even have a chance at becoming a fossil!
 				</text>
-				<keywordSet word="millions">
+				<keywordSet word="decay">
+					<word>disappear</word>
+					<word>explode</word>
+				</keywordSet>
+				<keywordSet word="rocks">
+					<word>wood</word>
+					<word>ice</word>
+				</keywordSet>
+				<keywordSet word="hard shells">
+					<word>muscles</word>
+					<word>nerves</word>
+				</keywordSet>
+				<keywordSet word="soft">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+								<keywordSet word="imprints">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+								<keywordSet word="wood">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+								<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+								<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+								<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+								<keywordSet word="millions">
 					<word>thousands</word>
 					<word>gazillions</word>
 				</keywordSet>
@@ -314,14 +350,13 @@
 				</studentQuestion>
 			</lecture>
 		</chapter>
-		<!--
 		<chapter>
 			<title>The Triassic period</title>
 			<article>
             <text>Just before the Triassic period, there was a massive extinction of life on earth. Prehistoric animals like the trilobite went extinct, but this paved the way for the evolution of the dinosaurs and mammals.
 			The Triassic was from about 250-200 million years ago.
 			The first plesiosaurs and icthyosaurs lived in the oceans
-			Archosaurs were common--walked on two legs like an ostrich, had small front legs. Some were crocodilian, and had short legs like crocodiles and alligators.
+			Archosaurs were common, walked on two legs like an ostrich, had small front legs. Some were crocodilian, and had short legs like crocodiles and alligators.
 			The first turtles, frogs, and lizards appeared. The first mammals appeared in the late Triassic, and were mostly small and nocturnal.
 			Another extinction at the end of the Triassic, because of major volcanic eruptions. Some repiles, like Dimetrodon, went extinct, but many mammals and dinosaurs survived and went on to flourish in the Jurassic period.</text>
 			</article>
