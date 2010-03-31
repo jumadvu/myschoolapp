@@ -251,6 +251,31 @@
 		F58371901144415F00273336 /* shark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718C1144415F00273336 /* shark.jpg */; };
 		F58371911144415F00273336 /* richardowen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718D1144415F00273336 /* richardowen.jpg */; };
 		F58371921144415F00273336 /* icthyosaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F583718E1144415F00273336 /* icthyosaur.jpg */; };
+		F588D97D1162F89600FF14F9 /* antarctica.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D97B1162F89600FF14F9 /* antarctica.jpg */; };
+		F588D97E1162F89600FF14F9 /* amber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D97C1162F89600FF14F9 /* amber.jpg */; };
+		F588D9801162F8A300FF14F9 /* crocodile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D97F1162F8A300FF14F9 /* crocodile.jpg */; };
+		F588D9831162F8C500FF14F9 /* fossilrecord.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9811162F8C500FF14F9 /* fossilrecord.jpg */; };
+		F588D9841162F8C500FF14F9 /* dinosaurskin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9821162F8C500FF14F9 /* dinosaurskin.jpg */; };
+		F588D9871162F8CF00FF14F9 /* PetrifiedWood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9851162F8CF00FF14F9 /* PetrifiedWood.jpg */; };
+		F588D9881162F8CF00FF14F9 /* pangea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9861162F8CF00FF14F9 /* pangea.jpg */; };
+		F588D98A1162F8E000FF14F9 /* skeleton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9891162F8E000FF14F9 /* skeleton.jpg */; };
+		F588D98D1162F8EA00FF14F9 /* volcano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D98B1162F8EA00FF14F9 /* volcano.jpg */; };
+		F588D98E1162F8EA00FF14F9 /* trilobite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D98C1162F8EA00FF14F9 /* trilobite.jpg */; };
+		F588D99B1162F90100FF14F9 /* Atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D98F1162F90100FF14F9 /* Atmosphere.jpg */; };
+		F588D99C1162F90100FF14F9 /* energy_lightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9901162F90100FF14F9 /* energy_lightning.jpg */; };
+		F588D99D1162F90100FF14F9 /* deforestation.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F588D9911162F90100FF14F9 /* deforestation.JPG */; };
+		F588D99E1162F90100FF14F9 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9921162F90100FF14F9 /* car.jpg */; };
+		F588D99F1162F90100FF14F9 /* Aluminium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9931162F90100FF14F9 /* Aluminium.jpg */; };
+		F588D9A01162F90100FF14F9 /* seasonal_food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9941162F90100FF14F9 /* seasonal_food.jpg */; };
+		F588D9A11162F90100FF14F9 /* Recycling_can.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F588D9951162F90100FF14F9 /* Recycling_can.JPG */; };
+		F588D9A21162F90100FF14F9 /* fossilfuel_coal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9961162F90100FF14F9 /* fossilfuel_coal.jpg */; };
+		F588D9A31162F90100FF14F9 /* farmersmarket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9971162F90100FF14F9 /* farmersmarket.jpg */; };
+		F588D9A41162F90100FF14F9 /* Compact-Fluorescent-Bulb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9981162F90100FF14F9 /* Compact-Fluorescent-Bulb.jpg */; };
+		F588D9A51162F90100FF14F9 /* naturalresources.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9991162F90100FF14F9 /* naturalresources.jpg */; };
+		F588D9A61162F90100FF14F9 /* infrared_dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D99A1162F90100FF14F9 /* infrared_dog.jpg */; };
+		F588D9A91162FBDE00FF14F9 /* ammonite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9A81162FBDE00FF14F9 /* ammonite.jpg */; };
+		F588D9AB1162FBE200FF14F9 /* petrifiedwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9AA1162FBE200FF14F9 /* petrifiedwood.jpg */; };
+		F588D9AD1162FC1100FF14F9 /* chalkcliffs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9AC1162FC1100FF14F9 /* chalkcliffs.jpg */; };
 		F5A9C08A1136EDF300F74134 /* bookshelf copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0801136EDF300F74134 /* bookshelf copy.png */; };
 		F5A9C08D1136EE0A00F74134 /* chalkboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C08B1136EE0A00F74134 /* chalkboard.png */; };
 		F5A9C0921136EE1600F74134 /* mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0901136EE1600F74134 /* mainmenu.png */; };
@@ -579,6 +604,31 @@
 		F583718C1144415F00273336 /* shark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shark.jpg; sourceTree = "<group>"; };
 		F583718D1144415F00273336 /* richardowen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = richardowen.jpg; sourceTree = "<group>"; };
 		F583718E1144415F00273336 /* icthyosaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icthyosaur.jpg; sourceTree = "<group>"; };
+		F588D97B1162F89600FF14F9 /* antarctica.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = antarctica.jpg; sourceTree = "<group>"; };
+		F588D97C1162F89600FF14F9 /* amber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amber.jpg; sourceTree = "<group>"; };
+		F588D97F1162F8A300FF14F9 /* crocodile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crocodile.jpg; sourceTree = "<group>"; };
+		F588D9811162F8C500FF14F9 /* fossilrecord.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fossilrecord.jpg; sourceTree = "<group>"; };
+		F588D9821162F8C500FF14F9 /* dinosaurskin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dinosaurskin.jpg; sourceTree = "<group>"; };
+		F588D9851162F8CF00FF14F9 /* PetrifiedWood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PetrifiedWood.jpg; sourceTree = "<group>"; };
+		F588D9861162F8CF00FF14F9 /* pangea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pangea.jpg; sourceTree = "<group>"; };
+		F588D9891162F8E000FF14F9 /* skeleton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skeleton.jpg; sourceTree = "<group>"; };
+		F588D98B1162F8EA00FF14F9 /* volcano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volcano.jpg; sourceTree = "<group>"; };
+		F588D98C1162F8EA00FF14F9 /* trilobite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trilobite.jpg; sourceTree = "<group>"; };
+		F588D98F1162F90100FF14F9 /* Atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Atmosphere.jpg; sourceTree = "<group>"; };
+		F588D9901162F90100FF14F9 /* energy_lightning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = energy_lightning.jpg; sourceTree = "<group>"; };
+		F588D9911162F90100FF14F9 /* deforestation.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deforestation.JPG; sourceTree = "<group>"; };
+		F588D9921162F90100FF14F9 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		F588D9931162F90100FF14F9 /* Aluminium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Aluminium.jpg; sourceTree = "<group>"; };
+		F588D9941162F90100FF14F9 /* seasonal_food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasonal_food.jpg; sourceTree = "<group>"; };
+		F588D9951162F90100FF14F9 /* Recycling_can.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Recycling_can.JPG; sourceTree = "<group>"; };
+		F588D9961162F90100FF14F9 /* fossilfuel_coal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fossilfuel_coal.jpg; sourceTree = "<group>"; };
+		F588D9971162F90100FF14F9 /* farmersmarket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = farmersmarket.jpg; sourceTree = "<group>"; };
+		F588D9981162F90100FF14F9 /* Compact-Fluorescent-Bulb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Compact-Fluorescent-Bulb.jpg"; sourceTree = "<group>"; };
+		F588D9991162F90100FF14F9 /* naturalresources.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naturalresources.jpg; sourceTree = "<group>"; };
+		F588D99A1162F90100FF14F9 /* infrared_dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = infrared_dog.jpg; sourceTree = "<group>"; };
+		F588D9A81162FBDE00FF14F9 /* ammonite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ammonite.jpg; sourceTree = "<group>"; };
+		F588D9AA1162FBE200FF14F9 /* petrifiedwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = petrifiedwood.jpg; sourceTree = "<group>"; };
+		F588D9AC1162FC1100FF14F9 /* chalkcliffs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chalkcliffs.jpg; sourceTree = "<group>"; };
 		F5A9C0801136EDF300F74134 /* bookshelf copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookshelf copy.png"; sourceTree = "<group>"; };
 		F5A9C08B1136EE0A00F74134 /* chalkboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chalkboard.png; sourceTree = "<group>"; };
 		F5A9C0901136EE1600F74134 /* mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenu.png; sourceTree = "<group>"; };
@@ -1078,9 +1128,22 @@
 				F583718B1144415F00273336 /* terriblelizard.jpg */,
 				F583718C1144415F00273336 /* shark.jpg */,
 				F583718D1144415F00273336 /* richardowen.jpg */,
+				F588D97B1162F89600FF14F9 /* antarctica.jpg */,
+				F588D97C1162F89600FF14F9 /* amber.jpg */,
+				F588D9851162F8CF00FF14F9 /* PetrifiedWood.jpg */,
+				F588D9861162F8CF00FF14F9 /* pangea.jpg */,
+				F588D9A81162FBDE00FF14F9 /* ammonite.jpg */,
 				F583718E1144415F00273336 /* icthyosaur.jpg */,
+				F588D9AC1162FC1100FF14F9 /* chalkcliffs.jpg */,
+				F588D97F1162F8A300FF14F9 /* crocodile.jpg */,
+				F588D9811162F8C500FF14F9 /* fossilrecord.jpg */,
+				F588D9821162F8C500FF14F9 /* dinosaurskin.jpg */,
 				F58371871144415700273336 /* bluewhale.jpg */,
+				F588D9AA1162FBE200FF14F9 /* petrifiedwood.jpg */,
+				F588D98B1162F8EA00FF14F9 /* volcano.jpg */,
+				F588D98C1162F8EA00FF14F9 /* trilobite.jpg */,
 				F58371881144415700273336 /* compsognathus.jpg */,
+				F588D9891162F8E000FF14F9 /* skeleton.jpg */,
 				AB53B3661121EC120017AFAB /* dinosaurs.xml */,
 				AB53B3671121EC120017AFAB /* triceratops.jpg */,
 			);
@@ -1090,6 +1153,18 @@
 		AB53B3681121EC120017AFAB /* sustainability */ = {
 			isa = PBXGroup;
 			children = (
+				F588D98F1162F90100FF14F9 /* Atmosphere.jpg */,
+				F588D9901162F90100FF14F9 /* energy_lightning.jpg */,
+				F588D9911162F90100FF14F9 /* deforestation.JPG */,
+				F588D9921162F90100FF14F9 /* car.jpg */,
+				F588D9931162F90100FF14F9 /* Aluminium.jpg */,
+				F588D9941162F90100FF14F9 /* seasonal_food.jpg */,
+				F588D9951162F90100FF14F9 /* Recycling_can.JPG */,
+				F588D9961162F90100FF14F9 /* fossilfuel_coal.jpg */,
+				F588D9971162F90100FF14F9 /* farmersmarket.jpg */,
+				F588D9981162F90100FF14F9 /* Compact-Fluorescent-Bulb.jpg */,
+				F588D9991162F90100FF14F9 /* naturalresources.jpg */,
+				F588D99A1162F90100FF14F9 /* infrared_dog.jpg */,
 				AB099A431161A39600787969 /* sustain.xml */,
 			);
 			path = sustainability;
@@ -1407,6 +1482,31 @@
 				AB0998EB115FCD7A00787969 /* logo.png in Resources */,
 				AB0998F9115FD40F00787969 /* black_rect.png in Resources */,
 				AB099A441161A39600787969 /* sustain.xml in Resources */,
+				F588D97D1162F89600FF14F9 /* antarctica.jpg in Resources */,
+				F588D97E1162F89600FF14F9 /* amber.jpg in Resources */,
+				F588D9801162F8A300FF14F9 /* crocodile.jpg in Resources */,
+				F588D9831162F8C500FF14F9 /* fossilrecord.jpg in Resources */,
+				F588D9841162F8C500FF14F9 /* dinosaurskin.jpg in Resources */,
+				F588D9871162F8CF00FF14F9 /* PetrifiedWood.jpg in Resources */,
+				F588D9881162F8CF00FF14F9 /* pangea.jpg in Resources */,
+				F588D98A1162F8E000FF14F9 /* skeleton.jpg in Resources */,
+				F588D98D1162F8EA00FF14F9 /* volcano.jpg in Resources */,
+				F588D98E1162F8EA00FF14F9 /* trilobite.jpg in Resources */,
+				F588D99B1162F90100FF14F9 /* Atmosphere.jpg in Resources */,
+				F588D99C1162F90100FF14F9 /* energy_lightning.jpg in Resources */,
+				F588D99D1162F90100FF14F9 /* deforestation.JPG in Resources */,
+				F588D99E1162F90100FF14F9 /* car.jpg in Resources */,
+				F588D99F1162F90100FF14F9 /* Aluminium.jpg in Resources */,
+				F588D9A01162F90100FF14F9 /* seasonal_food.jpg in Resources */,
+				F588D9A11162F90100FF14F9 /* Recycling_can.JPG in Resources */,
+				F588D9A21162F90100FF14F9 /* fossilfuel_coal.jpg in Resources */,
+				F588D9A31162F90100FF14F9 /* farmersmarket.jpg in Resources */,
+				F588D9A41162F90100FF14F9 /* Compact-Fluorescent-Bulb.jpg in Resources */,
+				F588D9A51162F90100FF14F9 /* naturalresources.jpg in Resources */,
+				F588D9A61162F90100FF14F9 /* infrared_dog.jpg in Resources */,
+				F588D9A91162FBDE00FF14F9 /* ammonite.jpg in Resources */,
+				F588D9AB1162FBE200FF14F9 /* petrifiedwood.jpg in Resources */,
+				F588D9AD1162FC1100FF14F9 /* chalkcliffs.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

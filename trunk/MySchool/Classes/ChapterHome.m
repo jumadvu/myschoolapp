@@ -55,6 +55,7 @@
 	[super viewDidLoad];
 	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
+	NSLog(@"%@", chapterName);
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];
 	[self loadTextIntoScrollView];
@@ -73,7 +74,6 @@
 		[words addObject:@"zzz"];	
 	}
 	
-	NSLog(@"%@", words);
 	NSString *word;
 	int x = 0;
 	int y = 0;
@@ -209,7 +209,10 @@
 	alert.center = CGPointMake(320/2, 480/2);
     [alert addSubview:imgView];	
 	
-	numLabel.text = [NSString stringWithFormat:@"%d", [numLabel.text intValue]-1];
+	int remaining = [numLabel.text intValue]-1;
+	if(remaining>=0){
+		numLabel.text = [NSString stringWithFormat:@"%d", remaining];
+	}
 	
 
 }
