@@ -47,6 +47,7 @@
 -(void)learnButtonSelected:(id)sender {
 	//go to learn interaction
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate setCurrentChapter:[self chapter]];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.lblTitle.text;
 	vc.fileName = fileName;
@@ -102,6 +103,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	//selected the cell. Default to learning not teaching
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate setCurrentChapter:[self chapter]];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.chapterName=self.lblTitle.text;
 	vc.fileName = fileName;

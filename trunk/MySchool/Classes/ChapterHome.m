@@ -11,18 +11,19 @@
 #import "ArticleHome.h"
 #import "TBXML.h"
 #import "Image.h"
+#import "ClassroomHome.h"
 
 
 @implementation ChapterHome
 
-@synthesize imageArray, currentButton, numLabel, learnButton;
+@synthesize imageArray, currentButton, numLabel, teachButton;
 @synthesize chapterNameLabel, chapterName, scrollView, fileName, article;
 @synthesize chapter;
 
 - (void)dealloc {
 	[chapter release];
 	[fileName release];
-	[learnButton release];
+	[teachButton release];
 	[currentButton release];
 	[chapterName release];
 	[chapterNameLabel release];
@@ -33,21 +34,14 @@
     [super dealloc];
 }
 
--(void)toArticle {
+-(void)teachButtonSelected:(id)sender {
+	//go to classroom
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ArticleHome *vc = [[[ArticleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];	
+	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	//[delegate setCurrentChapter:[(ModuleTable*)[self superview] chapter]];
+	[delegate.navCon pushViewController:vc animated:YES];
+	
 }
-
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -55,6 +49,7 @@
 	[super viewDidLoad];
 	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
+	[teachButton addTarget:self action:@selector(teachButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];
 	[self loadTextIntoScrollView];

@@ -11,7 +11,7 @@
 @class Article;
 
 @interface ChapterHome : baseViewController {
-	IBOutlet UIButton *learnButton;
+	IBOutlet UIButton *teachButton;
 	IBOutlet UILabel *chapterNameLabel;
 	IBOutlet UILabel *numLabel;
 	NSString *chapterName;
@@ -24,7 +24,7 @@
 
 }
 
-@property (nonatomic,retain) UIButton *learnButton;
+@property (nonatomic,retain) UIButton *teachButton;
 @property (nonatomic,retain) UIButton *currentButton;
 @property (nonatomic,retain) UILabel *chapterNameLabel;
 @property (nonatomic,retain) UILabel *numLabel;
@@ -35,9 +35,9 @@
 @property (nonatomic, retain) NSArray *imageArray;
 @property (nonatomic, retain) Chapter *chapter;
 
--(IBAction)toArticle;
 -(void)loadTextIntoScrollView;
 -(void)arrangeImageArray;
+-(IBAction)teachButtonSelected;
 
 
 @end
