@@ -18,13 +18,12 @@
 @implementation ModuleHome
 
 //@synthesize backButton;
-@synthesize moduleNameLabel, moduleName, scrollview, pcurrent, ptotal, moduleNames, fileName, targetModule, modules;
+@synthesize moduleNameLabel, moduleName, pcurrent, ptotal, moduleNames, fileName, targetModule, modules;
 
 
 - (void)dealloc {
 	//[backButton release];
 	[moduleName release];
-	[scrollview release];
 	[moduleNameLabel release];
 	[ptotal release];
 	[pcurrent release];
@@ -47,13 +46,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setBackgroundColor];
-	scrollview.delegate = self;
-	[self.scrollview setBackgroundColor:[UIColor whiteColor]];
-	[scrollview setCanCancelContentTouches:NO];
-	scrollview.indicatorStyle = UIScrollViewIndicatorStyleWhite;
-	scrollview.clipsToBounds = YES;
-	scrollview.scrollEnabled = YES;
-	scrollview.pagingEnabled = YES;
+	//scrollview.delegate = self;
+	//[self.scrollview setBackgroundColor:[UIColor whiteColor]];
+	//[scrollview setCanCancelContentTouches:NO];
+	//scrollview.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+	//scrollview.clipsToBounds = YES;
+	//scrollview.scrollEnabled = YES;
+	//scrollview.pagingEnabled = YES;
 	
 	ModuleTable *tableview = [[ModuleTable alloc] retain];
 	tableview.fileName = self.fileName;
@@ -61,15 +60,15 @@
 	tableview.moduleName = targetModule.title;
 		
 	CGRect rect = tableview.view.frame;
-	rect.size.height = 345;
-	rect.size.width = 300;
+	rect.size.height = 340;
+	rect.size.width = 320;
 	rect.origin.x = 0;
-	rect.origin.y = 0;
+	rect.origin.y = 70;
 		
 	tableview.view.frame = rect;
 	tableview.tableview.rowHeight = 60;
 	tableview.tableview.backgroundColor = [UIColor clearColor];
-	[scrollview addSubview:tableview.view];
+	[self.view addSubview:tableview.view];
 	[tableview release];
 		
 	
@@ -77,28 +76,6 @@
 	//[scrollview setContentSize:CGSizeMake(cx, [scrollview bounds].size.height)];
 	
 	//[scrollview setContentOffset:CGPointMake(tx, 0) animated:YES];
-}
-
-#pragma mark -
-#pragma mark UIScrollViewDelegate stuff
-- (void)scrollViewDidScroll:(UIScrollView *)_scrollview
-{
-    if (pageControlIsChangingPage) {
-        return;
-    }
-	
-	/*
-	 *	We switch page at 50% across
-	 */
-    CGFloat pageWidth = _scrollview.frame.size.width;
-    int page = floor((_scrollview.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-	moduleNameLabel.text = [[modules objectAtIndex: page] objectAtIndex:0];
-    pcurrent.text = [NSString stringWithFormat:@"%d", page+1];
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)_scrollView 
-{
-    pageControlIsChangingPage = NO;
 }
 
 
