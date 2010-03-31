@@ -55,7 +55,6 @@
 	[super viewDidLoad];
 	[self setBackgroundColor];
 	chapterNameLabel.text=chapterName;
-	NSLog(@"%@", chapterName);
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];
 	[self loadTextIntoScrollView];

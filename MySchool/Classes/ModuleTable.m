@@ -69,6 +69,7 @@
 		  initWithFrame:CGRectZero
 		  reuseIdentifier:CellIdentifier]
 		 autorelease];
+		[cell setSelectionStyle:UITableViewCellSelectionStyleNone];
 		
 	}
 	[cell setFileName:fileName];
