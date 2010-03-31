@@ -162,12 +162,12 @@
 				These tiny predators become very successful hunters and were able to move all over Pangea. Millions of years passed, and dinosaurs adapted to many different environments and evolved into the shapes we know today. Some stayed small, others became huge. Some adapted to walk on four legs and eat plants, some grew sharp teeth and preyed on other dinosaurs.
 				As time went on, pieces of Pangea drifted apart and became the continents we live on today. The [skeletons] of the dinosaurs that had lived there millions of years ago remained in the rocs as fossils. So, we can still find bones in the Antarctic ice from animals that lived there when it was a jungle!
 				Many dinosaur bones have been found in rocky areas, where wind and rain washed away the rock to expose the bones inside. China's Gobi Desert and the badlands of Montana are two dry, rocky places where many famous dinosaurs have been found.</text>
-                <image><file>compsognathus.jpg</file><desc>The only land animals in Antarctica today are birds and seals.</desc></image>
-				<image><file>bluewhale.jpg</file><desc>Pangea was a massive supercontinent containing all of the current continents.</desc></image>
-				<image><file>terriblelizard.jpg</file><desc>Volcanoes created smoke and pollution which kept the Earth warmer in ancient times.</desc></image>
-				<image><file>richardowen.jpg</file><desc>Ancient hard-shelled creatures like this trilobite have been found in great numbers.</desc></image>
-				<image><file>icthyosaur.jpg</file><desc>Like sharks, crocodiles have not changed their shape in millions of years!</desc></image>
-				<image><file>shark.jpg</file><desc>These skeletal dinosaur remains were found in China.</desc></image>
+                <image><file>antarctica.jpg</file><desc>The only land animals in Antarctica today are birds and seals.</desc></image>
+				<image><file>pangea.jpg</file><desc>Pangea was a massive supercontinent containing all of the current continents.</desc></image>
+				<image><file>volcano.jpg</file><desc>Volcanoes created smoke and pollution which kept the Earth warmer in ancient times.</desc></image>
+				<image><file>trilobite.jpg</file><desc>Ancient hard-shelled creatures like this trilobite have been found in great numbers.</desc></image>
+				<image><file>shark.jpg</file><desc>Like sharks, crocodiles have not changed their shape in millions of years!</desc></image>
+				<image><file>skeleton.jpg</file><desc>These skeletal dinosaur remains were found in China.</desc></image>
 			</article>
 			<lecture>
 				<title>Where Did Dinosaurs Live?</title>
@@ -281,7 +281,7 @@
 					<answer correctness="0">Playground</answer>
 			</worksheetQuestion>
 		</chapter>
-		<!--
+		
 		<chapter>
 			<title>All about fossils</title>
 			<article>
@@ -291,12 +291,12 @@
 				We know a lot about dinosaur bones because bone has a lot of minerals which help it fossilize. Skin and feathers don't fossilize very often. Scientists rely on rare impressions of [dinosaur skin] to tell them what it was like. For this reason, no one knows what colors the dinosaurs were!
 				However, most fossils are not parts of dinosaurs. Huge numbers of fossils of tiny sea creatures exist, like spiral-shelled [ammonites]. The hard shells of millions of sea creatures are part of [chalk cliffs] all over Europe. 
 				Chalk itself is a mineral composed of calcite, which comes from the shells of fossilized sea creatures. Blackboard chalk is man-made though, so teachers aren't writing with fossils!</text>
-				<image><file>compsognathus.jpg</file><desc>Petrified wood is wood which has been completely replaced with minerals, and turned to stone.</desc></image>
-				<image><file>bluewhale.jpg</file><desc>Amber is preserved tree sap. It can be many colors, and is sometimes made into jewelery.</desc></image>
-				<image><file>terriblelizard.jpg</file><desc>The older the layer, the lower down it will be. </desc></image>
-				<image><file>richardowen.jpg</file><desc>Dinosaur skin was sometimes rough and pebbled, sometimes smooth or scaly.</desc></image>
-				<image><file>terriblelizard.jpg</file><desc>Ammonites were early relatives of squids and octopi. </desc></image>
-				<image><file>richardowen.jpg</file><desc>Chalk cliffs erode easily, exposing fossils of sponges, sea urchins and other sea creatures.</desc></image>
+				<image><file>petrifiedwood.jpg</file><desc>Petrified wood is wood which has been completely replaced with minerals, and turned to stone.</desc></image>
+				<image><file>amber.jpg</file><desc>Amber is preserved tree sap. It can be many colors, and is sometimes made into jewelery.</desc></image>
+				<image><file>fossilrecord.jpg</file><desc>The older the layer, the lower down it will be. </desc></image>
+				<image><file>dinosaurskin.jpg</file><desc>Dinosaur skin was sometimes rough and pebbled, sometimes smooth or scaly.</desc></image>
+				<image><file>ammonite.jpg</file><desc>Ammonites were early relatives of squids and octopi. </desc></image>
+				<image><file>chalkcliffs.jpg</file><desc>Chalk cliffs erode easily, exposing fossils of sponges, sea urchins and other sea creatures.</desc></image>
 			</article>
 			<lecture>
 				<title>title</title>
@@ -314,6 +314,7 @@
 				</studentQuestion>
 			</lecture>
 		</chapter>
+		<!--
 		<chapter>
 			<title>The Triassic period</title>
 			<article>

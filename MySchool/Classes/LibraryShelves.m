@@ -100,12 +100,8 @@
 	
 	NSArray *modulesInSubject;
 	
-	NSLog(@"how many subjects %d", [subjects count]);
-	
 	for (int i = 0; i< [subjects count]; i++) {
 		modulesInSubject = [NSArray arrayWithArray:[[subjects objectAtIndex:i] objectAtIndex:1]];
-		
-		NSLog(@"how many modules %d", [modulesInSubject count]);
 		NSArray *module;
 		[shelfMarkers addObject:[NSNumber numberWithInt:x]];
 		[subjectNames addObject:[[subjects objectAtIndex:i] objectAtIndex:0]];
@@ -141,7 +137,6 @@
 			}else{
 				x = x + bookButton.frame.size.width + spacer;
 				y = ytop;
-				NSLog(@"%d, %d", x, y);
 			}
 		}
 		
