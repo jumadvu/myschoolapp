@@ -94,8 +94,8 @@
 	rect.size.width = 200;
 	lblTitle.frame = rect;
 		
-	tButton.frame = CGRectMake(270, 10, 35.0, 35.0);  
-	lButton.frame = CGRectMake(220, 10, 35.0, 35.0);  
+	tButton.frame = CGRectMake(270, 5, 45.0, 45.0);  
+	lButton.frame = CGRectMake(215, 5, 45.0, 45.0);  
 	
 }
 
