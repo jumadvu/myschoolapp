@@ -159,7 +159,6 @@
 		[delegate.navCon pushViewController:vc animated:YES];		
 	} else {
 		@try {
-			NSLog(@"Clicked: %@", button.titleLabel.text);
 			ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
 			vc.targetModule= [Module getModuleWithName:button.titleLabel.text];
 			[delegate.navCon pushViewController:vc animated:YES];

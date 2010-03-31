@@ -48,7 +48,7 @@
 	//go to learn interaction
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.chapterName=self.textLabel.text;
+	vc.chapterName=self.lblTitle.text;
 	vc.fileName = fileName;
 	vc.article = article;
 	[delegate.navCon pushViewController:vc animated:YES];
@@ -103,17 +103,14 @@
 	//selected the cell. Default to learning not teaching
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.chapterName=self.textLabel.text;
+	vc.chapterName=self.lblTitle.text;
 	vc.fileName = fileName;
 	vc.article = article;
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 
