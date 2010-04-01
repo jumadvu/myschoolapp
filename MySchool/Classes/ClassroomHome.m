@@ -135,12 +135,11 @@
 	[self setStudentViews:anArray];
 	[anArray release];
 	
-	//enable interaction with students
-	student1.userInteractionEnabled	= YES;
-	student2.userInteractionEnabled	= YES;
-	student3.userInteractionEnabled	= YES;
-	student4.userInteractionEnabled	= YES;
-	
+	//disable interaction with students
+	student1.userInteractionEnabled	= NO;
+	student2.userInteractionEnabled	= NO;
+	student3.userInteractionEnabled	= NO;
+	student4.userInteractionEnabled	= NO;
 	//set teacher image
 	[self.teacher setImage:[delegate.teacher avatarImageWaistUp]];
 	
@@ -173,11 +172,12 @@
 	//lectureText.backgroundColor = [UIColor clearColor];
 	//lectureText.font = [UIFont systemFontOfSize:17];
 	//add opening remarks
-	NSString *openingRemark = [NSString stringWithFormat:@"Hello Class!\rThe topic for today's lesson is "];
+	NSString *openingRemark = [NSString stringWithFormat:@"Hello Class!\rThe topic for today's lesson is: "];
 	NSString *endingRemark = [NSString stringWithFormat:@"\r\r\rThat's all for now kids. Don't forget to do your homework!"];
-	lectureText = [NSString stringWithFormat:@"%@%@\r\r\r%@%@", openingRemark, self.chapter.title, chapter.lecture.text, endingRemark];
+	lectureText = [NSString stringWithFormat:@"%@%@\r\r\r%@%@", openingRemark, chapter.lecture.title, chapter.lecture.text, endingRemark];
 	//[self.lectureText setEditable:NO];
 	//[scrollView addSubview:self.lectureText];
+	scrollView.scrollEnabled = NO;
 	scrollView.showsVerticalScrollIndicator = YES;
 	//add main lecture text
 	[self loadTextIntoScrollView];
@@ -288,24 +288,40 @@
 	touch = [touches anyObject];
 	UIImageView *touchedView = (UIImageView*)touch.view;
 	if (touchedView == student1) {
-		NSLog(@"clicked student 1");
-		[[students objectAtIndex:0] setImageView:student1 forMood:@"Happy" isWaving:NO];
-		[self answerQuestionFromStudent:[students objectAtIndex:0]];
+		Student *stu = [students objectAtIndex:0];
+		NSLog(@"clicked student 1, %@", stu.armRaised);
+		if([stu.armRaised intValue]!=0){
+			[[students objectAtIndex:0] setImageView:student1 forMood:@"Happy" isWaving:NO];
+			[[students objectAtIndex:0] setArmRaised:[NSNumber numberWithInt:0]];
+			[self answerQuestionFromStudent:[students objectAtIndex:0]];
+		}
 	}
 	if (touchedView == student2) {
-		NSLog(@"clicked student 2");
-		[[students objectAtIndex:1] setImageView:student2 forMood:@"Happy" isWaving:NO];
-		[self answerQuestionFromStudent:[students objectAtIndex:1]];
+		Student *stu = [students objectAtIndex:1];
+		NSLog(@"clicked student 2, %@", stu.armRaised);
+		if([stu.armRaised intValue]!=0){
+			[[students objectAtIndex:1] setImageView:student2 forMood:@"Happy" isWaving:NO];
+			[self answerQuestionFromStudent:[students objectAtIndex:1]];
+			[[students objectAtIndex:1] setArmRaised:[NSNumber numberWithInt:0]];
+		}
 	}
 	if (touchedView == student3) {
-		NSLog(@"clicked student 3");
-		[[students objectAtIndex:2] setImageView:student3 forMood:@"Happy" isWaving:NO];
-		[self answerQuestionFromStudent:[students objectAtIndex:2]];
+		Student *stu = [students objectAtIndex:2];
+		NSLog(@"clicked student 3, %@", stu.armRaised);
+		if([stu.armRaised intValue]!=0){
+			[[students objectAtIndex:2] setImageView:student3 forMood:@"Happy" isWaving:NO];
+			[self answerQuestionFromStudent:[students objectAtIndex:2]];
+			[[students objectAtIndex:2] setArmRaised:[NSNumber numberWithInt:0]];
+		}
 	}
 	if (touchedView == student4) {
-		NSLog(@"clicked student 4");
-		[[students objectAtIndex:3] setImageView:student4 forMood:@"Happy" isWaving:NO];
-		[self answerQuestionFromStudent:[students objectAtIndex:3]];
+		Student *stu = [students objectAtIndex:3];
+		NSLog(@"clicked student 4, %@", stu.armRaised);
+		if([stu.armRaised intValue]!=0){
+			[[students objectAtIndex:3] setImageView:student4 forMood:@"Happy" isWaving:NO];
+			[self answerQuestionFromStudent:[students objectAtIndex:3]];
+			[[students objectAtIndex:3] setArmRaised:[NSNumber numberWithInt:0]];
+		}
 	}
 	//[touch release];
 }
@@ -313,7 +329,12 @@
 -(IBAction)startEvent:(id)sender{
 	NSLog(@"starting lecture");
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];	
-	
+	//enable interaction with students
+	student1.userInteractionEnabled	= YES;
+	student2.userInteractionEnabled	= YES;
+	student3.userInteractionEnabled	= YES;
+	student4.userInteractionEnabled	= YES;
+	scrollView.scrollEnabled = YES;
 	if (start) {
 		start = NO;
 		scrollPaused = NO;
@@ -393,15 +414,17 @@
 -(void)answerQuestionFromStudent:(Student *)student{
 	//handle student question
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	scrollPaused = YES;
-	StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.delegate = self;
-	vc.student = student;
-	vc.whichQuestion = whichQuestion;
-	vc.chapter = chapter;
-	whichQuestion++; //increment the questions for this chapter
-	[self presentModalViewController:vc animated:YES];
-
+	if([[chapter studentQuestionsArray] count]>whichQuestion){
+		scrollPaused = YES;
+		
+		StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		vc.delegate = self;
+		vc.student = student;
+		vc.whichQuestion = whichQuestion;
+		vc.chapter = chapter;
+		whichQuestion++; //increment the questions for this chapter
+		[self presentModalViewController:vc animated:YES];
+	}
 }
 
 - (void)dismissQuestionWindow:(NSNumber *)points {
@@ -445,6 +468,7 @@
 				if (self.numQuestionsAssigned < [chapter.lecture.studentQuestions count]) {
 					if ([student hasQuestion]) {
 						[student setImageView:[studentViews objectAtIndex:x] forMood:@"Confused" isWaving:YES];
+						[student setArmRaised:[NSNumber numberWithInt:1]];
 						self.numQuestionsAssigned++;
 					}
 				}
