@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+
 @class MusicNote;
 
-@interface MusicFreestyle : baseViewController {
+@interface MusicFreestyle : baseViewController <AVAudioPlayerDelegate> {
 	IBOutlet UIScrollView *scrollView;
 	IBOutlet UIImageView *pie;
 	IBOutlet UIButton *rewindButton;
@@ -25,9 +27,11 @@
 	int currentNoteNumber;
 	int currentBeatNumber;
 	NSMutableArray *measures;
+	AVAudioPlayer *player;
 	
 }
 
+@property (nonatomic, retain) AVAudioPlayer *player;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) UIImageView *pie;
 @property (nonatomic, retain) UIButton *rewindButton;

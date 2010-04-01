@@ -28,11 +28,12 @@
 @synthesize currentPaper;
 
 - (void)dealloc {
-	[gradeLabel release];
+	NSLog(@"grade paper dealloc");
+	//[gradeLabel release];
 	[answersGradedArray release];
 	[completedWorksheet release];
 	[completedWorksheets release];
-	[answers release];
+	//[answers release];
     [super dealloc];
 }
 
@@ -50,17 +51,17 @@
 	NSLog(@"view did load");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+	//get all the completed worksheets
 	[self setCompletedWorksheets:[delegate.teacher ungradedPapers]];
-	NSLog(@"how many completed worksheets: %d", [completedWorksheets count]);
-	
+	//set up first worksheet
 	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:0]];
+	//grab the students answers
 	[self setAnswers:[[self.completedWorksheet answers] allObjects]];
-	NSLog(@"how many answers on first worksheet: %d", [answers count]);
+	//create an array to hold the yes/no answer for each question
 	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
 	[self setAnswersGradedArray:anArray];
 	self.tableView.allowsSelection = NO;
 	currentPaper = 0;
-	NSLog(@"finished view did load");
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -97,7 +98,7 @@
 			NSLog(@"error saving managed object");
 			// Handle the error.
 		}
-		gradeLabel.text = [self.completedWorksheet letterGrade];
+		[self.gradeLabel setText:[self.completedWorksheet letterGrade]];
 
 		//go to the next paper
 		[self goNext];
@@ -219,9 +220,9 @@
 	self.gradeLabel.font = [UIFont boldSystemFontOfSize:30];
 	self.gradeLabel.textAlignment = UITextAlignmentCenter;
 	self.gradeLabel.frame = CGRectMake(130.0, 10.0, 60.0, 45.0);
-	self.gradeLabel.text = @"";
+	[self.gradeLabel setText:@""];
 	[customView addSubview:self.gradeLabel];
-	[self.gradeLabel release];
+	//[self.gradeLabel release];
 	
 	// create the heading label object
 	UILabel * datelabel = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -267,7 +268,7 @@
 {
 	// create the parent view that will hold header Label
 	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40.0)] autorelease];
-	customView.backgroundColor = [UIColor clearColor];
+	customView.backgroundColor = [UIColor whiteColor];
 	
 
 	UIButton *backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 

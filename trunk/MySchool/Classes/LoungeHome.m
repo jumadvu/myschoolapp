@@ -17,6 +17,7 @@
 @synthesize numPapersLabel;
 
 - (void)dealloc {
+	NSLog(@"lounge home dealloc");
 	[numPapersLabel release];
 	[gradeButton release];
     [super dealloc];
