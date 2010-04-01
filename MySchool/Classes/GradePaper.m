@@ -25,15 +25,15 @@
 @synthesize completedWorksheets;
 @synthesize answersGradedArray;
 @synthesize gradeLabel;
-@synthesize currentPaper;
+@synthesize currentPaper; //int
 
 - (void)dealloc {
 	NSLog(@"grade paper dealloc");
-	//[gradeLabel release];
+	[gradeLabel release];
 	[answersGradedArray release];
+	[answers release];
 	[completedWorksheet release];
 	[completedWorksheets release];
-	//[answers release];
     [super dealloc];
 }
 
@@ -60,6 +60,8 @@
 	//create an array to hold the yes/no answer for each question
 	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
 	[self setAnswersGradedArray:anArray];
+	
+	//prevent selection of table view cells
 	self.tableView.allowsSelection = NO;
 	currentPaper = 0;
 }
@@ -73,6 +75,11 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+	self.answersGradedArray = nil;
+	self.answers = nil;
+	self.completedWorksheet = nil;
+	self.completedWorksheets = nil;
+	
 }
 
 -(void)gradedQuestion:(NSNumber*)row value:(NSNumber*)value{

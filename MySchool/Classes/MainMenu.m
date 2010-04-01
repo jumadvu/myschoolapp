@@ -97,12 +97,18 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	NSLog(@"main menu view did load");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
 	[self setBackgroundColor];
 	[delegate.navCon setNavigationBarHidden:YES];
 	[self getParentEmail];
 
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	NSLog(@"main menu view did appear");
 }
 
 -(void)getParentEmail {

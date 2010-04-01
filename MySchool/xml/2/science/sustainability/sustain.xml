@@ -67,63 +67,56 @@
 				<studentQuestion>
 					<text>How do I create a carbon footprint?</text>
 					<studentType>1</studentType>
-					<answer correctness="0">By eating flowers.</answer>
 					<answer correctness="5">By not turning off the lights when I leave the room.</answer>
 					<answer correctness="0">By playing jump rope.</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Why is fossil fuel nonrenewable?</text>
+					<text>Why are fossil fuels not renewable?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Fossil fuel takes a very long time for the earth to create. It is difficult to replenish.</answer>
 					<answer correctness="1">Because fossils are buried deep down in the earth.</answer>
-					<answer correctness="0">Because t-rex was a carnivore.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why do they call it carbon footprint?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Because they are referring to how much carbon dioxide is produced when we use energy.</answer>
 					<answer correctness="1">Because dinosaurs have left footprints on our world.</answer>
-					<answer correctness="0">Because it's a cool name.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why do we want to be more sustainable?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Because we want to preserve earth and our environment.</answer>
 					<answer correctness="3">If we don't then we'll have to move to the moon.</answer>
-					<answer correctness="1">Because all the cool kids are doing it.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Who is most affected by greenhouse gas effects and high level carbon emissions?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Every species living on the planet.</answer>
-					<answer correctness="1">Just the humans.</answer>
-					<answer correctness="1">Just the sunflowers.</answer>
+					<answer correctness="1">Humans.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>How do greenhouse gases make the earth warmer?</text>
 					<studentType>1</studentType>
 				    <answer correctness="5">By absorbing infrared radiation and trapping its heat in the atmosphere.</answer>
 					<answer correctness="1">By sucking all the cold air in the atmosphere and emitting it to space.</answer>
-					<answer correctness="0">By penetrating small cracks in the earth's crust allowing heat from center of the earth to rise up to the atmosphere</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why are trees good for the environment?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">They renew our air supply by absorbing carbon dioxide and producing oxygen</answer>
-					<answer correctness="5">They create shades protecting us from the sun.</answer>
 					<answer correctness="0">They heat up the air around us and make the atmosphere warmer.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Can deforestation lead to certain species disappearing forever?</text>
 					<studentType>1</studentType>
-					<answer correctness="0">Yes, when we get rid of forests, many species lose their homes and can die.</answer>
-					<answer correctness="5">No, they can find another home easily.</answer>
+					<answer correctness="5">Yes, when we get rid of forests, many species lose their homes and can die.</answer>
+					<answer correctness="0">No, they can find another home easily.</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Solar and wind energy are renewable(True/False).</text>
+					<text>Are solar and wind energy both renewable?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">True, both solar and wind energy, once consumed can easily be replenished.</answer>
-					<answer correctness="0">False, solar and wind energy are types of fossil fuels which are nonrenewable.</answer>
+					<answer correctness="5">Yes, both solar and wind energy are renewable.</answer>
+					<answer correctness="0">No, once we have used them up, they'll be gone forever.</answer>
 				</studentQuestion>
 			</lecture> 
 			<worksheetQuestion>
@@ -289,7 +282,7 @@
 				<text>What do we call the activity of processing used materials to create new ones?</text>
 				<answer correctness="5">Recycling</answer>
 				<answer correctness="0">Sustainability</answer>
-				<answer correctness="0"></answer>
+				<answer correctness="0">Garbage Collection</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
 				<text>What light bulbs allow us to save energy in our every day lives?</text>

@@ -18,7 +18,7 @@
 
 - (void)dealloc {
 	NSLog(@"lounge home dealloc");
-	[numPapersLabel release];
+	//[numPapersLabel release];
 	[gradeButton release];
     [super dealloc];
 }
@@ -76,6 +76,7 @@
 }
 
 - (void)viewDidUnload {
+	NSLog(@"lounge home view did unload");
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
