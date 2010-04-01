@@ -200,7 +200,7 @@
 	
 	// create the parent view that will hold header Label
 	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 50.0)] autorelease];
-	customView.backgroundColor = [UIColor clearColor];
+	customView.backgroundColor = [UIColor whiteColor];
 	
 	// create the heading label object
 	UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
