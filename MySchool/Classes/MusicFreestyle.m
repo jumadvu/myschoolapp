@@ -29,8 +29,10 @@
 @synthesize currentBeatNumber;
 @synthesize measures;
 @synthesize draggedNote;
+@synthesize player; // the audio player object
 
 - (void)dealloc {
+	[player release];
 	[draggedNote release];
 	[halfNote release];
 	[quarterNote release];
@@ -55,6 +57,10 @@
     return self;
 }
 */
+
+
+
+
 
 //set up the draggable notes
 - (void)setUpNotes {
@@ -132,6 +138,23 @@
 	
 	//[self.scrollView setContentOffset:CGPointMake(contentWidth - 440, 0) animated:NO];
 	
+	//set up audio player
+	NSString *soundFilePath =
+	[[NSBundle mainBundle] pathForResource: @"A"
+									ofType: @"mp3"];
+	
+	NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
+	
+	AVAudioPlayer *newPlayer =
+	[[AVAudioPlayer alloc] initWithContentsOfURL: fileURL
+										   error: nil];
+	[fileURL release];
+	
+	self.player = newPlayer;
+	[newPlayer release];
+	
+	[player prepareToPlay];
+	[player setDelegate: self];
 	
 }
 
@@ -148,6 +171,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	NSLog(@"touches began");
+	[player play];
 	// We only support single touches, so anyObject retrieves just that touch from touches
 	UITouch *touch = [touches anyObject];
 	

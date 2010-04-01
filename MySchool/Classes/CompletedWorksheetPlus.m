@@ -17,10 +17,10 @@
 			myGrade = [NSString stringWithFormat:@"D"];
 			break;
 		case 1:
-			myGrade = [NSString stringWithFormat:@"B-"];
+			myGrade = [NSString stringWithFormat:@"C+"];
 			break;
 		case 2:
-			myGrade = [NSString stringWithFormat:@"A-"];
+			myGrade = [NSString stringWithFormat:@"B+"];
 			break;
 		case 3:
 			myGrade = [NSString stringWithFormat:@"A+"];

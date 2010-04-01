@@ -20,6 +20,7 @@
 @synthesize delegate;
 
 - (void)dealloc {
+	NSLog(@"grade paper cell dealloc");
 	//[correctButton release];
 	//[wrongButton release];
 	[lblAnswer release];

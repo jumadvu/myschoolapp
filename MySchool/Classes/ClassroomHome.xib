@@ -222,7 +222,7 @@
 								<int key="IBUIContentMode">1</int>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">Girl1Unhappy.png</string>
+									<string key="NSResourceName">Girl1Happy.png</string>
 								</object>
 							</object>
 							<object class="IBUIImageView" id="170849914">
