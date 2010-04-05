@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+	<?xml version="1.0"?>
 <myschool>
     <module>
 		<title>Building a Sustainable World</title>
@@ -317,22 +317,51 @@
 		<chapter>
 			<title>Rainforests</title>
 			<article>
-				<text>Rainforests are forests with [high rainfall]. 40 - 75% of all species call the rainforest their home. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. Tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis]. When the leaf canopy is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees, this area becomes a [jungle]. There are two types of rainforests: tropical and temperate. Tropical rainforests are rainforests in the tropics, found near the [equator]. Temperate rainforests are in temperate regions, including North America, Europe, and East Asia. However, rainforests have been shrinking due to deforestation. Bioligists have estimated that large numbers of species are being driven to [extinction]. Tropical rainforests are a valuable part of our ecosystem. They not only provide timber but also animal products, plants, and medicines. 
+				<text>Rainforests are forests with [high rainfall]. More than half of the world's species are found in the rainforest. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. Tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis]. When the leaf [canopy] is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees, this area becomes a jungle. There are two types of rainforests: tropical and temperate. [Tropical rainforests] are rainforests in the tropics, found near the [equator]. Temperate rainforests are in temperate regions, including North America, Europe, and East Asia. However, rainforests have been shrinking due to deforestation. Bioligists have estimated that large numbers of species are being driven to [extinction]. Tropical rainforests are a valuable part of our ecosystem. They not only provide timber but also animal products, plants, and medicines. 
 				</text>
 				<image><file>rainfall.jpg</file><desc>Minimum normal annual rainfall for a rainforest is between 68 and 78 inches.</desc></image>
 				<image><file>ecoli.jpg</file><desc>Microorganism is an organism that is microscopic, ie, too small to be seen by the naked human eye. They include bacteria, fungi, archaea, and protists.</desc></image>
-				<image><file>photosynthesis.png</file><desc>Photosynthesis is a process that converts carbon dioxide into sugars and oxygen. It occurs in plants, algae and many species of bacteria.</desc></image>
-				<image><file>jungle.jpg</file><desc>Jungle refers to the most dense areas of a tropical rainforest with an abundance of animal and plant life.</desc></image>
+				<image><file>photosynthesis.png</file><desc>Photosynthesis is a process that converts carbon dioxide into energy in the form of sugars and oxygen. It occurs in plants, algae and many species of bacteria.</desc></image>
+				<image><file>canopy.png</file><desc>Canopy is the layer of branches and leaves formed by closely spaced rainforest trees. Most of the plants and animals in the rainforest live in the canopy.</desc></image>
+				<image><file>amazon.jpg</file><desc>The Amazon rainforest in South America is the largest and most species-rich tropical rainforest in the world.</desc></image>
 				<image><file>equator.jpg</file><desc>The equator is the imaginary line on the Earth's surface that is the same distance from the North and South Pole that divides the earth into Northern and Southern hemispheres.</desc></image>
 				<image><file>dinosaur.jpg</file><desc>Extinction is considered the death of the last individual of that species. Dinosaurs that used to roam the earth became extinct and no longer exist.</desc></image>
 			</article>
 			<lecture>
-				<title>title</title>
-				<text>text...
+				<title>Why Rainforests are Important to Us</title>
+				<text>Rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there. Rainforests are forests with tall trees, warm climate and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. One reason for this is because rainforests receive a lot of [rainbows]. This is converted to energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [canopy]. Many well-known animals including monkeys, frogs, lizards, birds, snakes and sloths are found in the canopy. Rainforests also help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
 				</text>
-				<keywordSet word="millions">
-					<word>thousands</word>
-					<word>gazillions</word>
+				<keywordSet word="more than half">
+					<word>less than half</word>
+					<word>all</word>
+				</keywordSet>
+				<keywordSet word="pharmacy">
+					<word>candy store</word>
+					<word>super market</word>
+				</keywordSet>
+				<keywordSet word="rain">
+					<word>hail</word>
+					<word>clouds</word>
+				</keywordSet>
+				<keywordSet word="the Amazon rainforest">
+					<word>North Pole</word>
+					<word>Sequoia national forest</word>
+				</keywordSet>
+				<keywordSet word="biodiversity">
+					<word>precipitation</word>
+					<word>fidelity</word>
+				</keywordSet>
+				<keywordSet word="sunlight">
+					<word>attention</word>
+					<word>water</word>
+				</keywordSet>
+				<keywordSet word="photosynthesis">
+					<word>digestion</word>
+					<word>exercise</word>
+				</keywordSet>
+				<keywordSet word="carbon dioxide">
+					<word>hydrogen</word>
+					<word>acid rain</word>
 				</keywordSet>
 				<studentQuestion>
 					<text>Did humans evolve from dinosaurs?</text>
