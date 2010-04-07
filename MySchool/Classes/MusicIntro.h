@@ -13,12 +13,29 @@
 	NSString *level;
 	IBOutlet UILabel *heading;
 	IBOutlet UITextView *instructions;
+	IBOutlet UIImageView *imageView;
+	int pageNum;
+	IBOutlet UIButton *continueButton;
+	IBOutlet UIButton *prevButton;
+	IBOutlet UIButton *skipToGameButton;
 }
 
 @property (nonatomic, retain) NSString *level;
 @property (nonatomic, retain) UITextView *instructions;
 @property (nonatomic, retain) UILabel *heading;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic) int pageNum;
+@property (nonatomic, retain) UIButton *continueButton;
+@property (nonatomic, retain) UIButton *prevButton;
+@property (nonatomic, retain) UIButton *skipToGameButton;
 
--(IBAction) continueOn;
+-(IBAction) goNext;
+-(IBAction) goPrevious;
+-(IBAction) toGame;
+
+-(void)showPage1;
+-(void)showPage2;
+-(void)showPage3;
+-(void)showPage4;
 
 @end

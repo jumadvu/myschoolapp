@@ -17,6 +17,8 @@
 	NSNumber *height;
 	NSString *name;
 	NSString *fractionString;
+	int noteNum;
+	UIColor *color;
 	
 }
 
@@ -27,9 +29,11 @@
 @property (nonatomic, retain) NSNumber *height;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *fractionString;
+@property (nonatomic) int noteNum;
+@property (nonatomic, retain) UIColor *color;
 
 -(void)setNoteType:(NSNumber*)type atHeight:(NSNumber*)dropHeight;
 -(void)setFractionStringText:(NSNumber *)num;
--(NSString*)noteNameWithColor:(NSString*)color type:(NSNumber*)type;
+-(NSString*)noteNameWithColor:(NSString*)mycolor type:(NSNumber*)type;
 
 @end
