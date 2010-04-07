@@ -184,6 +184,13 @@
 		AB388B0A110FEAC600217E8F /* LessonsTaught.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B09110FEAC600217E8F /* LessonsTaught.m */; };
 		AB388B10110FEB2900217E8F /* StudentsList.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B0F110FEB2900217E8F /* StudentsList.m */; };
 		AB388B15110FEB5000217E8F /* StudentHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388B14110FEB5000217E8F /* StudentHome.m */; };
+		AB417908116BC86800FF8634 /* pie.png in Resources */ = {isa = PBXBuildFile; fileRef = AB417907116BC86800FF8634 /* pie.png */; };
+		AB417936116BD5FD00FF8634 /* Pie.m in Sources */ = {isa = PBXBuildFile; fileRef = AB417935116BD5FD00FF8634 /* Pie.m */; };
+		AB4179A6116C00DE00FF8634 /* musicInstructions1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4179A4116C00DE00FF8634 /* musicInstructions1.png */; };
+		AB4179A7116C00DE00FF8634 /* musicInstructions2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4179A5116C00DE00FF8634 /* musicInstructions2.png */; };
+		AB4179DE116C29A600FF8634 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4179DD116C29A600FF8634 /* AudioToolbox.framework */; };
+		AB417A93116CF87200FF8634 /* musicInstructions3.png in Resources */ = {isa = PBXBuildFile; fileRef = AB417A92116CF87200FF8634 /* musicInstructions3.png */; };
+		AB417AD9116D16DD00FF8634 /* musicInstructions4.png in Resources */ = {isa = PBXBuildFile; fileRef = AB417AD8116D16DD00FF8634 /* musicInstructions4.png */; };
 		AB4607E9111CEA0A00E9C445 /* StudentPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4607E8111CEA0A00E9C445 /* StudentPlus.m */; };
 		AB4CF345116441720071624F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4CF344116441720071624F /* AVFoundation.framework */; };
 		AB4CF365116442D10071624F /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB4CF359116442D10071624F /* A.mp3 */; };
@@ -530,6 +537,14 @@
 		AB388B0F110FEB2900217E8F /* StudentsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsList.m; sourceTree = "<group>"; };
 		AB388B13110FEB5000217E8F /* StudentHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentHome.h; sourceTree = "<group>"; };
 		AB388B14110FEB5000217E8F /* StudentHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentHome.m; sourceTree = "<group>"; };
+		AB417907116BC86800FF8634 /* pie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pie.png; sourceTree = "<group>"; };
+		AB417934116BD5FD00FF8634 /* Pie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pie.h; sourceTree = "<group>"; };
+		AB417935116BD5FD00FF8634 /* Pie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pie.m; sourceTree = "<group>"; };
+		AB4179A4116C00DE00FF8634 /* musicInstructions1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicInstructions1.png; sourceTree = "<group>"; };
+		AB4179A5116C00DE00FF8634 /* musicInstructions2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicInstructions2.png; sourceTree = "<group>"; };
+		AB4179DD116C29A600FF8634 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		AB417A92116CF87200FF8634 /* musicInstructions3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicInstructions3.png; sourceTree = "<group>"; };
+		AB417AD8116D16DD00FF8634 /* musicInstructions4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicInstructions4.png; sourceTree = "<group>"; };
 		AB4607E7111CEA0A00E9C445 /* StudentPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentPlus.h; sourceTree = "<group>"; };
 		AB4607E8111CEA0A00E9C445 /* StudentPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentPlus.m; sourceTree = "<group>"; };
 		AB4CF344116441720071624F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -679,6 +694,7 @@
 				AB07F12D11090B7500204AFE /* CoreData.framework in Frameworks */,
 				F50B481E111A13D6003231FB /* libz.dylib in Frameworks */,
 				AB4CF345116441720071624F /* AVFoundation.framework in Frameworks */,
+				AB4179DE116C29A600FF8634 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +793,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				AB4179DD116C29A600FF8634 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1092,6 +1109,8 @@
 				AB0996A2115C0D1500787969 /* MusicNote.m */,
 				AB0996D5115C292800787969 /* Measure.h */,
 				AB0996D6115C292800787969 /* Measure.m */,
+				AB417934116BD5FD00FF8634 /* Pie.h */,
+				AB417935116BD5FD00FF8634 /* Pie.m */,
 			);
 			name = music;
 			sourceTree = "<group>";
@@ -1099,6 +1118,8 @@
 		AB34B0A1115934EB00BC950F /* music */ = {
 			isa = PBXGroup;
 			children = (
+				AB4179A3116C00DE00FF8634 /* instructions */,
+				AB417907116BC86800FF8634 /* pie.png */,
 				AB4CF358116442D10071624F /* note_sounds */,
 				AB0997B1115D4BD100787969 /* notes */,
 				AB2F3C64115AF1AF00A3BE91 /* blackBG.png */,
@@ -1113,6 +1134,17 @@
 				AB34B0A3115934EB00BC950F /* musicbg.png */,
 			);
 			path = music;
+			sourceTree = "<group>";
+		};
+		AB4179A3116C00DE00FF8634 /* instructions */ = {
+			isa = PBXGroup;
+			children = (
+				AB417AD8116D16DD00FF8634 /* musicInstructions4.png */,
+				AB417A92116CF87200FF8634 /* musicInstructions3.png */,
+				AB4179A4116C00DE00FF8634 /* musicInstructions1.png */,
+				AB4179A5116C00DE00FF8634 /* musicInstructions2.png */,
+			);
+			path = instructions;
 			sourceTree = "<group>";
 		};
 		AB4CF358116442D10071624F /* note_sounds */ = {
@@ -1563,6 +1595,11 @@
 				AB4CF36E116442D10071624F /* F-middle.mp3 in Resources */,
 				AB4CF36F116442D10071624F /* G-high.mp3 in Resources */,
 				AB4CF370116442D10071624F /* G-middle.mp3 in Resources */,
+				AB417908116BC86800FF8634 /* pie.png in Resources */,
+				AB4179A6116C00DE00FF8634 /* musicInstructions1.png in Resources */,
+				AB4179A7116C00DE00FF8634 /* musicInstructions2.png in Resources */,
+				AB417A93116CF87200FF8634 /* musicInstructions3.png in Resources */,
+				AB417AD9116D16DD00FF8634 /* musicInstructions4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1644,6 +1681,7 @@
 				AB34B0681159281600BC950F /* MusicMenu.m in Sources */,
 				AB0996A3115C0D1500787969 /* MusicNote.m in Sources */,
 				AB0996D7115C292800787969 /* Measure.m in Sources */,
+				AB417936116BD5FD00FF8634 /* Pie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
