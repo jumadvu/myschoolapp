@@ -18,6 +18,8 @@
 	IBOutlet UIButton *libraryButton;
 	IBOutlet UIButton *classroomButton;
 	IBOutlet UIButton *storeButton;
+	IBOutlet UILabel *pointsLabel;
+	IBOutlet UIButton *pointsButton;
 }
 
 @property (nonatomic, retain) UIButton *button1;
@@ -28,12 +30,15 @@
 @property (nonatomic, retain) UIButton *loungeButton;
 @property (nonatomic, retain) UIButton *classroomButton;
 @property (nonatomic, retain) UIButton *storeButton;
+@property (nonatomic, retain) UIButton *pointsButton;
+@property (nonatomic, retain) UILabel *pointsLabel;
 
 -(IBAction)clickButton1;
--(IBAction)clickButton2;
+-(IBAction)pointsButtonClicked;
 -(IBAction)clickButton3;
 -(IBAction)loungeButtonClicked;
 -(IBAction)libraryButtonClicked;
+-(IBAction)activitiesButtonClicked;
 -(IBAction)classroomButtonClicked;
 -(IBAction)storeButtonClicked;
 -(void)getParentEmail;

@@ -162,7 +162,7 @@
 	//NSLog(@"x:%f  y:%f", location.x, location.y);
 	if ([self draggedNote] != nil) {
 		CGPoint location = [touch locationInView:self.view];
-		draggedNote.center = location;		
+		draggedNote.center = CGPointMake(location.x -25, location.y);		
 		return;
 	}
 }

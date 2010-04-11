@@ -16,6 +16,8 @@
 #import "StoreHome.h"
 #import "LibraryShelves.h"
 #import "ParentEmail.h"
+#import "User.h"
+#import "ActivitiesHome.h"
 
 
 @implementation MainMenu
@@ -28,8 +30,12 @@
 @synthesize libraryButton;
 @synthesize classroomButton;
 @synthesize storeButton;
+@synthesize pointsButton;
+@synthesize pointsLabel;
 
 - (void)dealloc {
+	[pointsButton release];
+	[pointsLabel release];
 	[storeButton release];
 	[loungeButton release];
 	[libraryButton release];
@@ -47,7 +53,7 @@
 	[delegate.navCon pushViewController:vc animated:YES];
 }
 
--(void)clickButton2 {
+-(void)pointsButtonClicked {
 	GameStatusHome *vc = [[[GameStatusHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
@@ -62,6 +68,12 @@
 
 -(void)loungeButtonClicked {
 	LoungeHome *vc = [[[LoungeHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)activitiesButtonClicked {
+	ActivitiesHome *vc = [[[ActivitiesHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
@@ -83,7 +95,6 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
-
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -109,6 +120,8 @@
 -(void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	NSLog(@"main menu view did appear");
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	pointsLabel.text = [delegate.teacher.totalPoints stringValue];
 }
 
 -(void)getParentEmail {
