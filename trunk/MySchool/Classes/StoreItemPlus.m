@@ -16,9 +16,9 @@
 +(void)createStoreItems {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
-	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Alphabet Chart", @"Art Supplies", @"Globe", @"World Map",@"Cash Register", @"Baseball Bat & Ball", @"Fish Tank", @"Hamster", nil];
-	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:25],[NSNumber numberWithInt:30],[NSNumber numberWithInt:40],[NSNumber numberWithInt:40],[NSNumber numberWithInt:80],[NSNumber numberWithInt:60],[NSNumber numberWithInt:100],[NSNumber numberWithInt:200],nil];
-	NSArray *storeItemImages = [NSArray arrayWithObjects:@"alphabet.png",@"artsupplies.png",@"globe.png",@"worldmap.png",@"cashregister.png",@"baseballglove.png",@"fishtank.png",@"hamster.png", nil];
+	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Piano", @"Alphabet Chart", @"Art Supplies", @"Globe", @"Cash Register", @"Baseball Bat & Ball", @"Fish Tank", @"Hamster", nil];
+	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:225],[NSNumber numberWithInt:330],[NSNumber numberWithInt:340],[NSNumber numberWithInt:440],[NSNumber numberWithInt:580],[NSNumber numberWithInt:660],[NSNumber numberWithInt:700],[NSNumber numberWithInt:900],nil];
+	NSArray *storeItemImages = [NSArray arrayWithObjects:@"musiclesson.png",@"alphabet.png",@"artsupplies.png",@"globe.png",@"cashregister.png",@"baseballglove.png",@"fishtank.png",@"hamster.png", nil];
 	
 	for (int x=0; x<[storeItemNames count]; x++) {
 		StoreItem *storeItemMO = (StoreItem *)[NSEntityDescription insertNewObjectForEntityForName:@"StoreItem" inManagedObjectContext:delegate.managedObjectContext];

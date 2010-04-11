@@ -17,39 +17,25 @@
 
 @implementation GameStatusHome
 
-@synthesize button1;
 @synthesize button2;
-@synthesize button3;
 @synthesize button4;
 @synthesize button5;
 @synthesize points;
 @synthesize gradeLevel;
+@synthesize approvalLabel;
 
 - (void)dealloc {
+	[approvalLabel release];
 	[gradeLevel release];
 	[points release];
-	[button1 release];
 	[button2 release];
-	[button3 release];
 	[button4 release];
 	[button5 release];
     [super dealloc];
 }
 
--(void)clickButton1 {
-	StoreHome *vc = [[[StoreHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon pushViewController:vc animated:YES];
-}
-
 -(void)clickButton2 {
 	LessonsTaught *vc = [[[LessonsTaught alloc] initWithNibName:nil bundle:nil] autorelease];
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon pushViewController:vc animated:YES];
-}
-
--(void)clickButton3 {
-	StudentsList *vc = [[[StudentsList alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
@@ -90,11 +76,12 @@
 -(void)viewWillAppear:(BOOL)animated {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	if (delegate.teacher.totalPoints == nil) {
-		[self.points setText:[NSString stringWithFormat:@"Points Earned: 0"]];		
+		[self.points setText:[NSString stringWithFormat:@"0"]];		
 	} else {
-		[self.points setText:[NSString stringWithFormat:@"Points Earned: %d", [delegate.teacher.totalPoints intValue]]];
+		[self.points setText:[NSString stringWithFormat:@"%d", [delegate.teacher.totalPoints intValue]]];
 	}
-	[self.gradeLevel setText:[NSString stringWithFormat:@"Grade Level %d", [delegate.teacher.gradeLevel intValue]]];
+	[self.gradeLevel setText:[NSString stringWithFormat:@"%d", [delegate.teacher.gradeLevel intValue]]];
+	[self.approvalLabel setText:[NSString stringWithFormat:@"75%"]];
 }
 
 /*

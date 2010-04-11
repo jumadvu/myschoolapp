@@ -10,11 +10,13 @@
 #import "GradePaper.h"
 #import "User.h"
 #import "UserPlus.h"
+#import "StudentsList.h"
 
 @implementation LoungeHome
 
 @synthesize gradeButton;
 @synthesize numPapersLabel;
+@synthesize gradeBookButton;
 
 - (void)dealloc {
 	NSLog(@"lounge home dealloc");
@@ -23,6 +25,11 @@
     [super dealloc];
 }
 
+-(void)toStudents {
+	StudentsList *vc = [[[StudentsList alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
 
 -(void)toPapersToGrade {
 	//go back to previous page

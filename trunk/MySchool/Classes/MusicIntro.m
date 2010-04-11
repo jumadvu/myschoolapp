@@ -86,7 +86,7 @@
 		UIImage *myImage = [UIImage imageNamed:@"musicInstructions3.png"];
 		[imageView setImage:myImage];
 		heading.text = @"Instructions - 2 of 4";
-		instructions.text = @"There are four types of note. Each note type plays its sound for a fraction of time as indicated below.";
+		instructions.text = @"There are four types of notes. Each note type plays its sound for a fraction of a measure. For example, the second note below is called a half note because it fills half a measure.";
 	} else {
 		//level 2
 		heading.text = @"Make a Song";

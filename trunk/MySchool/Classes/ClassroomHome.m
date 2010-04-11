@@ -26,6 +26,7 @@
 #import "Worksheet.h"
 #import "WorksheetPlus.h"
 #import "ParentEmail.h"
+#import "ChapterPlus.h"
 
 @implementation ClassroomHome
 
