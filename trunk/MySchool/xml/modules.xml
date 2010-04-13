@@ -39,9 +39,9 @@
 			<title>1910-1970: Equal Rights</title>
 		</module>
 		<module>
-			<category>U.S.</category>
-			<fileName>wwII</fileName>
-			<title>1939-1945: Allies vs Axis</title>
+			<category>general</category>
+			<fileName>dates</fileName>
+			<title>Today in History</title>
 		</module>
 	</subject>
 	<subject name="Math">

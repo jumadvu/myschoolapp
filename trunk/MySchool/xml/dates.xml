@@ -1,36 +1,30 @@
-{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww9000\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
-
-\f0\fs24 \cf0 <items>\
-<date month="April" day="10">\
-<event tags="animals, organizations" year="1866" >THe American Society for the Prevention of Cruelty to Animals (ASPCA) is founded.</event>\
-<event tags="music" year="1970">Paul McCartney announces the breakup of the Beatles.</event>\
-</date>\
-<date month="April" day="11">\
-<event tags="politics" year="1814" >Emperor Napoleon of France gives up his throne as is exiled to the Mediterranean isle of Elba.</event>\
-<event tags="space" year="1970">The Apollo 13 lunar lander is successfully launched from Cape Canaveral, Florida.</event>\
-</date>\
-<date month="April" day="12">\
-<event tags="war" year="1861" >The Civil War begins with a Confederate attack on Fort Sumter.</event>\
-<event tags="death, politics" year="1945">President Franklin Delano Roosevelt dies after 12 years in office.</event>\
-</date>\
-<date month="April" day="13">\
-<event tags="sports" year="1997" >Tiger Woods wins his first major golf tournament at age 21.</event>\
-<event tags="entertainment" year="1963">Sidney Poitier becomes the first African American to win the Best Actor Oscar for his role in Lilies of the Field.</event>\
-</date>\
-<date month="April" day="14">\
-<event tags="death, politics" year="1865" >President Abraham Lincoln is shot by John Wilkes Booth at Ford's Theater in Washington.</event>\
-<event tags="books" year="1888">Webster's American Dictionary of the English Language is first published.</event>\
-</date>\
-<date month="April" day="15">\
-<event tags="sports" year="1947" >Jackie Robinson becomes the first African American player of major league baseball.</event>\
-<event tags="disaster" year="1912">The RMS Titanic sinks in the North Atlantic ocean after striking an iceberg.</event>\
-</date>\
-<date month="April" day="16">\
-<event tags="russia" year="1917" >Vladimir Lenin returns to Russia from exile to lead the Russian Revolution.</event>\
-<event tags="entertainment" year="1889">Hollywood legend Charlie Chaplin is born in London, England.</event>\
-</date>\
-</items>}
+<items>
+	<date value="April 10">
+		<event tags="animals, organizations" year="1866" >The American Society for the Prevention of Cruelty to Animals (ASPCA) is founded.</event>
+		<event tags="music" year="1970">Paul McCartney announces the breakup of the Beatles.</event>
+	</date>
+	<date value="April 11">
+		<event tags="politics" year="1814" >Emperor Napoleon of France gives up his throne and is exiled to the Mediterranean isle of Elba.</event>
+		<event tags="space" year="1970">The Apollo 13 lunar lander is successfully launched from Cape Canaveral, Florida.</event>
+	</date>
+	<date value="April 12">
+		<event tags="war" year="1861" >The Civil War begins with a Confederate attack on Fort Sumter.</event>
+		<event tags="death, politics" year="1945">President Franklin Delano Roosevelt dies after 12 years in office.</event>
+	</date>
+	<date value="April 13">
+		<event tags="sports" year="1997" >Tiger Woods wins his first major golf tournament at age 21.</event>
+		<event tags="entertainment" year="1963">Sidney Poitier becomes the first African American to win the Best Actor Oscar for his role in Lilies of the Field.</event>
+	</date>
+	<date value="April 14">
+		<event tags="death, politics" year="1865" >President Abraham Lincoln is shot by John Wilkes Booth at Ford's Theater in Washington.</event>
+		<event tags="books" year="1888">Webster's American Dictionary of the English Language is first published.</event>
+	</date>
+	<date value="April 15">
+		<event tags="sports" year="1947" >Jackie Robinson becomes the first African American player of major league baseball.</event>
+		<event tags="disaster" year="1912">The RMS Titanic sinks in the North Atlantic ocean after striking an iceberg.</event>
+	</date>
+	<date value="April 16">
+		<event tags="russia" year="1917" >Vladimir Lenin returns to Russia from exile to lead the Russian Revolution.</event>
+		<event tags="entertainment" year="1889">Hollywood legend Charlie Chaplin is born in London, England.</event>
+	</date>
+</items>
