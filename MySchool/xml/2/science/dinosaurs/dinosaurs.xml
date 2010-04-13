@@ -96,12 +96,6 @@
 					<answer correctness="1">The short dinosaurs could not reach the leaves on the trees.</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Why were dinosaurs so big?</text>
-					<studentType>1</studentType>
-					<answer correctness="4">Scientists are not sure of the reason.</answer>
-					<answer correctness="0">Because being big was cool back then.</answer>
-				</studentQuestion>
-				<studentQuestion>
 					<text>How heavy was a Tyrannosaurus Rex?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">About 6 tons</answer>
@@ -160,7 +154,7 @@
 				The closest ancestors of dinosaurs likely looked a lot like [crocodiles]. They ate meat, walked on four legs, and had long tails.
 				Over time, these reptiles evolved to walk on two legs and become the very first dinosaurs. These dinosaurs were small and fast, about the size of chickens.
 				These tiny predators become very successful hunters and were able to move all over Pangea. Millions of years passed, and dinosaurs adapted to many different environments and evolved into the shapes we know today. Some stayed small, others became huge. Some adapted to walk on four legs and eat plants, some grew sharp teeth and preyed on other dinosaurs.
-				As time went on, pieces of Pangea drifted apart and became the continents we live on today. The [skeletons] of the dinosaurs that had lived there millions of years ago remained in the rocs as fossils. So, we can still find bones in the Antarctic ice from animals that lived there when it was a jungle!
+				As time went on, pieces of Pangea drifted apart and became the continents we live on today. The [skeletons] of the dinosaurs that had lived there millions of years ago remained in the rocks as fossils. So, we can still find bones in the Antarctic ice from animals that lived there when it was a jungle!
 				Many dinosaur bones have been found in rocky areas, where wind and rain washed away the rock to expose the bones inside. China's Gobi Desert and the badlands of Montana are two dry, rocky places where many famous dinosaurs have been found.</text>
                 <image><file>antarctica.jpg</file><desc>The only land animals in Antarctica today are birds and seals.</desc></image>
 				<image><file>pangea.jpg</file><desc>Pangea was a massive supercontinent containing all of the current continents.</desc></image>
@@ -234,7 +228,7 @@
 				<studentQuestion>
 					<text>Are crocodiles dinosaurs?</text>
 					<studentType>1</studentType>
-					<answer correctness="0">No, because crocodiles are still alive today.</answer>
+					<answer correctness="1">No, because crocodiles are still alive today.</answer>
 					<answer correctness="5">No, crocodiles are a different kind of reptile.</answer>
 				</studentQuestion>
 				<studentQuestion>
@@ -248,6 +242,12 @@
 					<studentType>1</studentType>
 					<answer correctness="5">Yes, some places have many fossils; check with your local museum.</answer>
 					<answer correctness="0">No, only scientists are allowed to dig up bones.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Was Antarctica really a jungle once?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, a long time ago. It was much further north and much warmer than it is today.</answer>
+					<answer correctness="0">No, it's always been a cold, rocky place where nothing has ever lived.</answer>
 				</studentQuestion>
 			</lecture>
 			<worksheetQuestion>
@@ -384,7 +384,6 @@
 					<answer correctness="5">Yes, because wood is spongy and absorbs minerals quickly.</answer>
 					<answer correctness="0">No, because bones have smaller cells than wood does.</answer>
 				</studentQuestion>
-		
 			</lecture>
 			<worksheetQuestion>
 					<text>Most fossils are from what kind of animal?</text>

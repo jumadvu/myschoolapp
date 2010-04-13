@@ -128,8 +128,8 @@
 }
 
 -(BOOL)hasQuestion {
-	//NSLog(@"forMood %d", [self.armRaised intValue]);
-	int i = arc4random() % 200;
+	//adjusting the size of this number adjusts the frequency at which students raise their arms with questions.
+	int i = arc4random() % 300;
 	if (i%117 == 0 && ![self.armRaised intValue]) {
 		//NSLog(@"has question? yes");
 		[self setArmRaised:[NSNumber numberWithInt:1]];

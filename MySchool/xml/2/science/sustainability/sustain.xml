@@ -107,12 +107,6 @@
 					<answer correctness="0">They heat up the air around us and make the atmosphere warmer.</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Can deforestation lead to certain species disappearing forever?</text>
-					<studentType>1</studentType>
-					<answer correctness="5">Yes, when we get rid of forests, many species lose their homes and can die.</answer>
-					<answer correctness="0">No, they can find another home easily.</answer>
-				</studentQuestion>
-				<studentQuestion>
 					<text>Are solar and wind energy both renewable?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Yes, both solar and wind energy are renewable.</answer>
@@ -260,12 +254,6 @@
 					<answer correctness="0">It means there were a lot of bugs that left footprints on the food item.</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Which country has the highest carbon emissions in the world?</text>
-					<studentType>1</studentType>
-					<answer correctness="5">China</answer>
-					<answer correctness="0">The U.S.</answer>
-				</studentQuestion>
-				<studentQuestion>
 					<text>Should we unplug electronic devices when we're not using them?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Yes, some electronic devices even use energy when they are not turned on.</answer>
@@ -281,12 +269,8 @@
 			<worksheetQuestion>
 				<text>What do we call the activity of processing used materials to create new ones?</text>
 				<answer correctness="5">Recycling</answer>
-				<answer correctness="0">Sustainability</answer>
-<<<<<<< .mine
-				<answer correctness="0">Waste hierarchy</answer>
-=======
+				<answer correctness="0">Waste Hierarchy</answer>
 				<answer correctness="0">Garbage Collection</answer>
->>>>>>> .r209
 			</worksheetQuestion>
 			<worksheetQuestion>
 				<text>What light bulbs allow us to save energy in our every day lives?</text>
@@ -317,7 +301,7 @@
 		<chapter>
 			<title>Rainforests</title>
 			<article>
-				<text>Rainforests are forests with [high rainfall]. More than half of the world's species are found in the rainforest. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. Tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis]. When the leaf [canopy] is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees, this area becomes a jungle. There are two types of rainforests: tropical and temperate. [Tropical rainforests] are rainforests in the tropics, found near the [equator]. Temperate rainforests are in temperate regions, including North America, Europe, and East Asia. However, rainforests have been shrinking due to deforestation. Bioligists have estimated that large numbers of species are being driven to [extinction]. Tropical rainforests are a valuable part of our ecosystem. They not only provide timber but also animal products, plants, and medicines. 
+				<text>Rainforests are forests with [high rainfall]. More than half of the world's species are found in the rainforest. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. Tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis]. When the leaf [canopy] is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees, this area becomes a jungle. There are two types of rainforests: tropical and temperate. [Tropical rainforests] are rainforests in the tropics, found near the [equator]. Temperate rainforests are in temperate regions, including North America, Europe, and East Asia. However, rainforests have been shrinking due to deforestation. Bioligists have estimated that large numbers of species are being driven to [extinction]. Tropical rainforests are a valuable part of our ecosystem. They provide a home for many interesting types of animals and plants. Plus all the trees in the rainforest absorb carbon dioxide, which helps stop global warming.
 				</text>
 				<image><file>rainfall.jpg</file><desc>Minimum normal annual rainfall for a rainforest is between 68 and 78 inches.</desc></image>
 				<image><file>ecoli.jpg</file><desc>Microorganism is an organism that is microscopic, ie, too small to be seen by the naked human eye. They include bacteria, fungi, archaea, and protists.</desc></image>
@@ -364,10 +348,16 @@
 					<word>acid rain</word>
 				</keywordSet>
 				<studentQuestion>
-					<text>Did humans evolve from dinosaurs?</text>
+					<text>How do rain forests help stop global warming?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
-					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+					<answer correctness="5">The trees absorb carbon dioxide, a 'greenhouse gas' that causes global warming.</answer>
+					<answer correctness="0">Because it's warm in the rain forest, and the animals like warmth.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Can deforestation lead to certain species disappearing forever?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, when we get rid of forests, many species lose their homes and can become extinct.</answer>
+					<answer correctness="0">No, they can find another home easily.</answer>
 				</studentQuestion>
 			</lecture>
 		</chapter>

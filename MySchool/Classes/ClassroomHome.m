@@ -392,8 +392,8 @@
 		[ParentEmail sendEmailForChapter:chapter];
 		
 	} else {
-		//did not complete lesson in time.
-		NSMutableString *msg = [[NSMutableString alloc] initWithFormat:@"Oops, time's up for today kids. It's time for recess. We'll do this lesson again another day."];
+		//did not complete lesson in time. No points assigned
+		NSMutableString *msg = [[NSMutableString alloc] initWithFormat:@"Oops, you didn't finish the lecture. It's time for recess. Why don't you do this lesson again another day."];
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:@"Time Ran Out!" 
 							  message:msg 
