@@ -13,6 +13,7 @@
 #import "ModuleHome.h"
 #import "ModulePlus.h"
 #import "MusicMenu.h"
+#import "DayinHistory.h"
 
 
 @implementation LibraryShelves
@@ -156,6 +157,10 @@
 	if ([button.titleLabel.text isEqualToString:@"Fractions and Music"]) {
 		//go to music area
 		MusicMenu *vc = [[[MusicMenu alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];		
+	} else 	if ([button.titleLabel.text isEqualToString:@"Today in History"]) {
+		//go to music area
+		DayinHistory *vc = [[[DayinHistory alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];		
 	} else {
 		@try {
