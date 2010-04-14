@@ -279,6 +279,7 @@
 		F577F6C31174F48000387EAE /* DayinHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = F577F6C11174F48000387EAE /* DayinHistory.xib */; };
 		F577F6C61174F85100387EAE /* dates.xml in Resources */ = {isa = PBXBuildFile; fileRef = F577F6C51174F85100387EAE /* dates.xml */; };
 		F577F8091175824400387EAE /* fwd_button.png in Resources */ = {isa = PBXBuildFile; fileRef = F577F8081175824400387EAE /* fwd_button.png */; };
+		F577F81411762CCC00387EAE /* ScoreAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = F577F81311762CCC00387EAE /* ScoreAnim.m */; };
 		F57B9AED114FFF570077811E /* bookshelf_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE6114FFF570077811E /* bookshelf_bg.png */; };
 		F57B9AEE114FFF570077811E /* bookw6.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE7114FFF570077811E /* bookw6.png */; };
 		F57B9AEF114FFF570077811E /* bookw5.png in Resources */ = {isa = PBXBuildFile; fileRef = F57B9AE8114FFF570077811E /* bookw5.png */; };
@@ -665,6 +666,8 @@
 		F577F6C11174F48000387EAE /* DayinHistory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayinHistory.xib; sourceTree = "<group>"; };
 		F577F6C51174F85100387EAE /* dates.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dates.xml; sourceTree = "<group>"; };
 		F577F8081175824400387EAE /* fwd_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fwd_button.png; sourceTree = "<group>"; };
+		F577F81211762CCC00387EAE /* ScoreAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreAnim.h; sourceTree = "<group>"; };
+		F577F81311762CCC00387EAE /* ScoreAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreAnim.m; sourceTree = "<group>"; };
 		F57B9AE6114FFF570077811E /* bookshelf_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookshelf_bg.png; path = bookshelf/bookshelf_bg.png; sourceTree = "<group>"; };
 		F57B9AE7114FFF570077811E /* bookw6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw6.png; path = bookshelf/bookw6.png; sourceTree = "<group>"; };
 		F57B9AE8114FFF570077811E /* bookw5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bookw5.png; path = bookshelf/bookw5.png; sourceTree = "<group>"; };
@@ -756,6 +759,8 @@
 				AB07F1D61109669200204AFE /* Help */,
 				AB07F1B5110962C700204AFE /* Status */,
 				AB34B03D115924EA00BC950F /* music */,
+				F577F81211762CCC00387EAE /* ScoreAnim.h */,
+				F577F81311762CCC00387EAE /* ScoreAnim.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -989,8 +994,8 @@
 			children = (
 				AB07F26611098B7600204AFE /* LoungeHome.h */,
 				AB07F26711098B7600204AFE /* LoungeHome.m */,
-				AB07F26811098B7600204AFE /* LoungeHome.xib */,
 				AB388ADF110FE5F300217E8F /* GradePaper.h */,
+				AB07F26811098B7600204AFE /* LoungeHome.xib */,
 				AB388AE0110FE5F300217E8F /* GradePaper.m */,
 				ABF858F11141DAE2007419EB /* GradePaperCell.h */,
 				ABF858F21141DAE2007419EB /* GradePaperCell.m */,
@@ -1780,6 +1785,7 @@
 				ABAD47681171AEF000C33FCA /* User.m in Sources */,
 				ABAD47691171AEF000C33FCA /* Rating.m in Sources */,
 				F577F6C21174F48000387EAE /* DayinHistory.m in Sources */,
+				F577F81411762CCC00387EAE /* ScoreAnim.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
