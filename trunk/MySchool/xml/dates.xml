@@ -1,4 +1,40 @@
 <items>
+	<date value="April 1">
+		<event tags="holidays" year="1700" >Pranksters in England begin popularizing the practice of April Fool's jokes.</event>
+		<event tags="law, entertainment" year="1970">President RIchard Nixon bans radio and television advertisements for tobacco products.</event>
+	</date>
+	<date value="April 2">
+		<event tags="religion, death" year="2005" >Pope John Paul II, history's most well-traveled pope, dies in Rome.</event>
+		<event tags="books, birth" year="1805">Hans Christian Andersen, writer of The Little Mermaid and The Ugly Duckling, is born in Denmark.</event>
+	</date>
+	<date value="April 3">
+		<event tags="transportation, organizations" year="1860" >The Pony Express debuts, setting a new standard for speedy mail delivery.</event>
+		<event tags="entertainment" year="1978">Woody Allen's movie Annie Hall beats George Lucas' Star Wars for the Best Picture Oscar.</event>
+	</date>
+	<date value="April 4">
+		<event tags="death" year="1968" >Dr. Martin Luther King,Jr. is assassinated in Memphis, Tennessee.</event>
+		<event tags="sports" year="1982">Wayne Gretzky finishes the NHL season with 212 points, becoming the first and only player to score more than 200 in one season.</event>
+	</date>
+	<date value="April 5">
+		<event tags="america, colonialization" year="1614" >Pocahontas of the Powhatan Indian confederacy marries English colonist John Rolfe.</event>
+		<event tags="music, death" year="1994">Kurt Cobain of the band Nirvana commits suicide in Seattle at age 27.</event>
+	</date>
+	<date value="April 6">
+		<event tags="sports, organizations" year="1896" >The first modern Olympics, modeled after the ancient Grecian games, is held in Athens.</event>
+		<event tags="exploration" year="1909">American Admiral Robert Peary becomes the first person to reach what he calculates to be the North Pole, although he is now thought to have been a few miles away.</event>
+	</date>
+	<date value="April 7">
+		<event tags="war" year="1994" >Civil war and genocide erupts between the Hutu and Tutsi tribes of Rwanda.</event>
+		<event tags="war" year="1945">The great Japanese battleship Yamato is sunk during the battle of Okinawa.</event>
+	</date>
+	<date value="April 8">
+		<event tags="sports" year="1974" >Hank Aaron hits his 715th home run, breaking Babe Ruth's record.</event>
+		<event tags="law" year="1935">Congress establishes the Works Progress Association to employ people displaced by the Great Depression.</event>
+	</date>
+	<date value="April 9">
+		<event tags="war" year="1865" >General Robert E. Lee surrenders, effectively ending the American Civil War.</event>
+		<event tags="music" year="1959">The NASA's first astronauts, all military test pilots, are introduced proir to NASA's first missions in 1961.</event>
+	</date>
 	<date value="April 10">
 		<event tags="animals, organizations" year="1866" >The American Society for the Prevention of Cruelty to Animals (ASPCA) is founded.</event>
 		<event tags="music" year="1970">Paul McCartney announces the breakup of the Beatles.</event>
@@ -26,5 +62,61 @@
 	<date value="April 16">
 		<event tags="russia" year="1917" >Vladimir Lenin returns to Russia from exile to lead the Russian Revolution.</event>
 		<event tags="entertainment" year="1889">Hollywood legend Charlie Chaplin is born in London, England.</event>
+	</date>
+	<date value="April 17">
+		<event tags="space, disaster" year="1970" >After suffering serious equipment malfunctions on their way to the moon, the Apollo 13 lander and its crew returns successfully to Earth.</event>
+		<event tags="america, politics,death" year="1790">American statesman, printer inventor and diplomat Bejamin Frianklin dies at age 84.</event>
+	</date>
+	<date value="April 18">
+		<event tags="california, disaster" year="1906" >An earthquake estimated at over 8.0 on the Richter scale hits San Francisco, causing widespread fires and destruction.</event>
+		<event tags="entertainment, marriage" year="1956">American movie star Grace Kelly marries Prince Rainier of Monaco.</event>
+	</date>
+	<date value="April 19">
+		<event tags="sports" year="1897" >The first Boston Marathon is won by John McDermott of New York. Fifteen runners started the race, but only 10 finished.</event>
+		<event tags="america, war" year="1775">The American Revolutionary War begins with the Battle of Lexington in Massachusetts.</event>
+	</date>
+	<date value="April 20">
+		<event tags="sports" year="2008" >Danica Patrick wins the Indy Japan 300, becoming the first female driver to win an IndyCar race.</event>
+		<event tags="death, disaster" year="1999">Two teenage gunment kill 13 people at Columbine High School in Colorado.</event>
+	</date>
+	<date value="April 21">
+		<event tags="tradition, myth" year="753" >According to tradition, Rome was founded by twin brothers Romulus and Remus.</event>
+		<event tags="america, war" year="1918">The feared German dogfighter known as the Red Baron is killed in action in France during the first World War.</event>
+	</date>
+	<date value="April 22">
+		<event tags="holidays" year="1970" >The first Earth Day is celebrated in the United States.</event>
+		<event tags="war" year="1775">Adolf Hitler admits to his confederates that Germany has lost the second World War.</event>
+	</date>
+	<date value="April 23">
+		<event tags="books" year="1564" >Poet and playwright William Shakespeare is likely born in the town of Stratford-on-Avon, England; he died on the same day in 1616.</event>
+		<event tags="sports" year="1954">Hank Aaron hits the first home run of his Major League baseball career.</event>
+	</date>
+	<date value="April 24">
+		<event tags="war" year="1916" >On Easter Monday, Irish militants begin a violent rebellion against British rule.</event>
+		<event tags="books, organizations" year="1800">The Library of Congress is established and eventually becomes the de facto national library of the United States.</event>
+	</date>
+	<date value="April 25">
+		<event tags="transportation" year="1859" >Construction begins on the Suez Canal, to connect the Red Sea and Mediterranean.</event>
+		<event tags="books" year="1719">Daniel Defoe's novel Robinson Crusoe is first published.</event>
+	</date>
+	<date value="April 26">
+		<event tags="medicine" year="1954" >The first polio vaccine trials begin, preventing the disease in over 1.8 million children.</event>
+		<event tags="disaster" year="1986">The world's worst nuclear power plant accident occurs at the Chernobyl nuclear power station in the Soviet Union.</event>
+	</date>
+	<date value="April 27">
+		<event tags="colonization,law" year="1773" >British Parliament passes the Tea Act, granting a monopoly to the East India Company and angering American colonists.</event>
+		<event tags="politics" year="1994">South Africa holds its first multiracial elections, choosing Nelson Mandela as its new leader.</event>
+	</date>
+	<date value="April 28">
+		<event tags="politics, death" year="1945" >Benito Mussolini, the exiled former dictator of Italy, is executed.</event>
+		<event tags="birth, transportation" year="1916">Ferruccio Lamborghini, the founder of the company that bears his name and is known for stylish, high-performance cars, is born in Italy.</event>
+	</date>
+	<date value="April 29">
+		<event tags="war" year="2004" >The National World War II Memorial opens in Washington, D.C., to thousands of visitors.</event>
+		<event tags="france, war" year="1429">17-year-old French peasant Joan of Arc leads a French force in relieving the city of Orleans to aid French crown prince Charles in expelling British troops.</event>
+	</date>
+	<date value="April 30">
+		<event tags="america, politics" year="1789" >The first American presidential inauguration is held, officially making George Washington the first President of the United States.</event>
+		<event tags="vietnam, war" year="1975">South Vietnam surrenders, effectively ending the Vietnam War and uniting the country.</event>
 	</date>
 </items>

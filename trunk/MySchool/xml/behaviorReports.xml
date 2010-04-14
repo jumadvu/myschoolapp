@@ -2,10 +2,10 @@
 <myschool>
 	<negative>
 		<report>I'm sorry to have to report that studentname was involved in a fight in the playground during recess today. Please talk to studentname about how we solve problems peacefully at MySchool.</report>
-		<report>studentname shared lots of her friend Jenny's secrets with the whole class. This caused Jenny to break down crying.  Please talk to studentname about why this really hurt Jenny's feelings.</report>
-		<report>studentname keeps reporting to me about some of the not so great things that some kids are doing in the school.  Of course this is sometimes very important to tell a grown up about dangerous or hurtful situations, but it would be useful if you talked to studentname about when this is just tattling, and will only cause more problems.</report>
+		<report>studentname shared lots of her friend Jenny's secrets with the whole class. Jenny become very upset and had to be sent home.  Please talk to studentname about why this really hurt Jenny's feelings.</report>
+		<report>studentname keeps reporting to me about some of the not so great things that some kids are doing in the school.  Of course, it is sometimes very important to tell a grown up about dangerous or hurtful situations, but it would be useful if you talked to studentname about the difference between tattling and asking an adult for help.</report>
 		<report>studentname was very loud and disruptive during reading time in the library today.  Please talk to studentname about why it is important to be quiet during reading time.</report>
-		<report>.</report>
+		<report>studentname stole another student's hat at recess and threw it in the dirt. Please talk with studentname about treating others' belongings with respect.</report>
 		<report>studentname was running through the halls today and knocked down a kindergartner named Jimmy.</report>
 		<report>studentname threw potato chips all over the cafeteria today.</report>
 		<report>studentname poked Sally with a pencil during recess.  studentname claims he was just trying to get her attention. Please explain to studentname why this behavior is not allowed in our school.</report>
@@ -17,13 +17,15 @@
 	<positive>
 		<report>studentname was seen helping a kindergartner to her feet after she fell off the monkey bars. Be sure to let her know you appreciate that.</report>
 		<report>studentname talked out a difficult problem with a classmate today.  Tell studentname we really appreciate how studentname is able to settle problems without using violence.</report>
-		<report>studentname befriended Ronaldo the new kid, and introduced him to some friends. Let studentname know how great that is.</report>
+		<report>studentname befriended the new student, Ronaldo, and introduced him to some friends. Let studentname know how great that is.</report>
 		<report>studentname cleared her own lunch mess and some of her friend's in the cafeteria today.  She sure is helpful.</report>
-		<report>studentname tutored Lena on some math problems today after school. What a friend!</report>
+		<report>studentname tutored Lena on some math problems today after school. What a good friend!</report>
 		<report>studentname showed great honesty today when she turned in a twenty dollar bill that she found in the yard to the office.</report>
 		<report>studentname won the school four square tournament last Friday.  But he didn't brag about it, and showed great humility in accepting the prize.</report>
 		<report>studentname was runner up in the spelling bee last week, but was very quick to congratulate the winner. Let him know how much we appreciate this sportsmanship.</report>
 		<report>studentname consoled a 1st grader who had dropped her lunch onto the ground.  This kind of empathy is wonderful.</report>
 		<report>studentname thanked the janitor today for cleaning the bathroom.  It really made Mr Smith's day. Such thoughful behavior should not go unnoticed.</report>
+		<report>studentname volunteered to give a speech on the environment at the school's Earth Day assembly. Please thank studentname for taking the time to help out.</report>
+		<report>studentname and a friend came in to the office at lunch and helped us stuff envelopes for our fall PTA fundraising drive. Their assistance is much appreciated!</report>
 	</positive>
 </myschool>
