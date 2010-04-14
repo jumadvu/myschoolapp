@@ -1,4 +1,4 @@
-	<?xml version="1.0"?>
+<?xml version="1.0"?>
 <myschool>
     <module>
 		<title>Building a Sustainable World</title>
@@ -313,7 +313,7 @@
 			</article>
 			<lecture>
 				<title>Why Rainforests are Important to Us</title>
-				<text>Rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there. Rainforests are forests with tall trees, warm climate and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. One reason for this is because rainforests receive a lot of [rainbows]. This is converted to energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [canopy]. Many well-known animals including monkeys, frogs, lizards, birds, snakes and sloths are found in the canopy. Rainforests also help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
+				<text>Rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there. Rainforests are forests with tall trees, [dry] climate and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. One reason for this is because rainforests receive a lot of [rainbows]. This is converted to energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [canopy]. Many well-known animals including monkeys, frogs, lizards, birds, snakes and sloths are found in the canopy. Rainforests also help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
 				</text>
 				<keywordSet word="more than half">
 					<word>less than half</word>
@@ -322,6 +322,10 @@
 				<keywordSet word="pharmacy">
 					<word>candy store</word>
 					<word>super market</word>
+				</keywordSet>
+				<keywordSet word="warm">
+					<word>windy</word>
+					<word>cool</word>
 				</keywordSet>
 				<keywordSet word="rain">
 					<word>hail</word>
@@ -359,7 +363,55 @@
 					<answer correctness="5">Yes, when we get rid of forests, many species lose their homes and can become extinct.</answer>
 					<answer correctness="0">No, they can find another home easily.</answer>
 				</studentQuestion>
+				<studentQuestion>
+					<text>Why do rainforests have so many kinds of plants and animals?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">The sunlight helps to produce lots of energy and the canopies provide many more places for plants to grow and animals to live.</answer>
+					<answer correctness="0">Because there are no lions that live in the rainforest.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why are rainforests being destroyed?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Human beings are the main cause. They cut down rainforests to make more room for themselves.</answer>
+					<answer correctness="0">Because there is little need for them in our lives.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Is a jungle different from a rainforest?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes. When the leaf canopies are thinned or destroyed and the ground becomes a dense tangle of vines and shrubs, this becomes a jungle.</answer>
+					<answer correctness="0">No. they are the same thing.</answer>
+				</studentQuestion>
 			</lecture>
+			<worksheetQuestion>
+				<text>What is the name of the largest rainforest in the world?</text>
+				<answer correctness="5">Amazon</answer>
+				<answer correctness="0">Antarctica</answer>
+				<answer correctness="0">Sahara</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>Where are tropical rainforests typically located at?</text>
+				<answer correctness="5">Near the equator</answer>
+				<answer correctness="0">In the south pole</answer>
+				<answer correctness="0">In North America</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call the death of the last individual of that species?</text>
+				<answer correctness="5">Extinction</answer>
+				<answer correctness="0">Tragedy</answer>
+				<answer correctness="0">Evolution</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>In the rainforest, most plant and animal life is found in the leafy world know as?</text>
+				<answer correctness="5">the canopy</answer>
+				<answer correctness="0">forest floor</answer>
+				<answer correctness="0">shrub layer</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>The process in which carbon dioxide and water with sunlight is converted into energy in the form of sugars and oxygen is known as?</text>
+				<answer correctness="5">Photosynthesis</answer>
+				<answer correctness="0">Digestion</answer>
+				<answer correctness="0">Greenhouse Effect</answer>
+			</worksheetQuestion>
 		</chapter>
 		<!--		
 		<chapter>
