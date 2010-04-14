@@ -8,6 +8,7 @@
 
 #import "DayinHistory.h"
 #import "TBXML.h"
+#import "ScoreAnim.h"
 
 
 @implementation DayinHistory
@@ -75,9 +76,22 @@
 }
 - (void)backOneDay{
 	[self changeDate:[NSNumber numberWithInt:-1]];
+	NSString *val = @"+5";
+	NSNumber *loc = [NSNumber numberWithInt:0];
+	ScoreAnim *anim = [[ScoreAnim alloc] initWithData:val x:loc y:loc];
+	[self.view addSubview:anim];
+	[anim setBackgroundColor: [UIColor clearColor]];
+	[anim release];
 }
 - (void)forwardOneDay{
 	[self changeDate:[NSNumber numberWithInt:1]];
+	NSString *val = @"-5";
+	NSNumber *loc = [NSNumber numberWithInt:200];
+	ScoreAnim *anim = [[ScoreAnim alloc] initWithData:val x:loc y:loc];
+	[self.view addSubview:anim];
+	[anim setBackgroundColor: [UIColor clearColor]];
+	[anim release];
+	
 }
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
