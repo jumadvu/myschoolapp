@@ -21,6 +21,7 @@
     }
 	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
 	[self setScoreLabel:label];
+	[self setBackgroundColor:[UIColor clearColor]];
 	[label release];
 	scoreLabel.backgroundColor = [UIColor clearColor];
 	scoreLabel.font = [UIFont systemFontOfSize:25.0];
