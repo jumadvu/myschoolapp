@@ -27,7 +27,7 @@
 }
 
 -(void)toStudents {
-	StudentsList *vc = [[[StudentsList alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+	StudentsList *vc = [[[StudentsList alloc] initWithNibName:nil bundle:nil] autorelease];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }

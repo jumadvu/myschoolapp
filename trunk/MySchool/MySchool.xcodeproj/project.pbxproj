@@ -268,6 +268,7 @@
 		ABE9A1EA1176288F00C9CA4F /* counter.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A1E91176288F00C9CA4F /* counter.png */; };
 		ABE9A23A117662B300C9CA4F /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A239117662B300C9CA4F /* topbar.png */; };
 		ABE9A2441176842500C9CA4F /* chalk_back.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A2431176842500C9CA4F /* chalk_back.png */; };
+		ABE9A37A1176B97700C9CA4F /* StudentsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A3791176B97700C9CA4F /* StudentsList.xib */; };
 		ABF85795114108AE007419EB /* teacherslounge.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF85794114108AE007419EB /* teacherslounge.png */; };
 		ABF857DD1141AC86007419EB /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF857DC1141AC86007419EB /* CompletedWorksheet.m */; };
 		ABF858F31141DAE2007419EB /* GradePaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF858F21141DAE2007419EB /* GradePaperCell.m */; };
@@ -649,6 +650,7 @@
 		ABE9A1E91176288F00C9CA4F /* counter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = counter.png; path = images/BackgroundsFurniture/counter.png; sourceTree = "<group>"; };
 		ABE9A239117662B300C9CA4F /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
 		ABE9A2431176842500C9CA4F /* chalk_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chalk_back.png; path = images/chalk_back.png; sourceTree = "<group>"; };
+		ABE9A3791176B97700C9CA4F /* StudentsList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentsList.xib; sourceTree = "<group>"; };
 		ABF85794114108AE007419EB /* teacherslounge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacherslounge.png; sourceTree = "<group>"; };
 		ABF857DB1141AC86007419EB /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
 		ABF857DC1141AC86007419EB /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
@@ -986,13 +988,14 @@
 			children = (
 				AB07F26611098B7600204AFE /* LoungeHome.h */,
 				AB07F26711098B7600204AFE /* LoungeHome.m */,
-				AB388ADF110FE5F300217E8F /* GradePaper.h */,
 				AB07F26811098B7600204AFE /* LoungeHome.xib */,
+				AB388ADF110FE5F300217E8F /* GradePaper.h */,
 				AB388AE0110FE5F300217E8F /* GradePaper.m */,
 				ABF858F11141DAE2007419EB /* GradePaperCell.h */,
 				ABF858F21141DAE2007419EB /* GradePaperCell.m */,
 				AB388B0E110FEB2900217E8F /* StudentsList.h */,
 				AB388B0F110FEB2900217E8F /* StudentsList.m */,
+				ABE9A3791176B97700C9CA4F /* StudentsList.xib */,
 				AB388B13110FEB5000217E8F /* StudentHome.h */,
 				AB388B14110FEB5000217E8F /* StudentHome.m */,
 				AB34AFA81157E4DC00BC950F /* StudentHome.xib */,
@@ -1701,6 +1704,7 @@
 				ABE9A23A117662B300C9CA4F /* topbar.png in Resources */,
 				ABE9A2441176842500C9CA4F /* chalk_back.png in Resources */,
 				F577F8091175824400387EAE /* fwd_button.png in Resources */,
+				ABE9A37A1176B97700C9CA4F /* StudentsList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

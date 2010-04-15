@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface StudentsList : UITableViewController {
+@interface StudentsList : baseViewController <UITableViewDelegate, UITableViewDataSource>{
 	NSArray *students;
+	IBOutlet UITableView *tableview;
 }
 
 @property (nonatomic, retain) NSArray *students;
-
--(void)toMainMenu;
+@property (nonatomic, retain) UITableView *tableview;
 
 @end
