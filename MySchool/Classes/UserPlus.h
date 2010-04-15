@@ -17,5 +17,6 @@
 -(NSArray*)studentsArray;
 -(NSString*)title;
 -(NSArray*)ungradedPapers;
+-(NSNumber*)pointsAvailable;
 
 @end

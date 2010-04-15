@@ -77,4 +77,8 @@
 	return sortedArray;
 }
 
+-(NSNumber*)pointsAvailable {
+	
+	return [NSNumber numberWithInt:[self.totalPoints intValue] - [self.pointsSpent intValue]];
+}
 @end

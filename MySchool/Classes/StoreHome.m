@@ -43,6 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self setBackgroundColor];
+	[self setTopBarTitle:@"School Store" withLogo:YES backButton:YES];
 	
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 
@@ -83,14 +84,18 @@
 		[view removeFromSuperview];
 	}
 	
+	//if the item costs more than the user has points gray it out.
 	UIColor* myColor;
 	if ([[storeItem cost] intValue] > [delegate.teacher.totalPoints intValue]) {
 		//can't afford it
-		myColor = [UIColor grayColor];
+		//myColor = [UIColor grayColor];
+		cell.contentView.alpha = .3;
 	} else {
 		//can afford it
-		myColor = [UIColor blackColor];
+		//myColor = [UIColor blackColor];
+		cell.contentView.alpha = 1;
 	}
+	myColor = [UIColor blackColor];
 
 	//set item image (as button)
 	UIButton *myButton = [UIButton buttonWithType:UIButtonTypeCustom]; 
@@ -98,7 +103,8 @@
 	myButton.imageView.frame = CGRectMake(0, 0, 90, 75); 
 	myButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
 	[myButton setBackgroundImage:image forState:UIControlStateNormal];
-	myButton.frame = CGRectMake(200, 10, 90, 75); 
+	myButton.frame = CGRectMake(200, 10, 90, 75);
+	myButton.userInteractionEnabled = NO;
 	[cell setItemButton:myButton];
 	[cell.contentView addSubview:cell.itemButton];
 

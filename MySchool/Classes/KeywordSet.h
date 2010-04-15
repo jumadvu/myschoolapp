@@ -2,7 +2,7 @@
 //  KeywordSet.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 2/18/10.
+//  Created by Ashley Kayler on 4/14/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -16,8 +16,8 @@
 }
 
 @property (nonatomic, retain) NSNumber * order;
-@property (nonatomic, retain) NSSet* words;
 @property (nonatomic, retain) Lecture * lecture;
+@property (nonatomic, retain) NSSet* words;
 
 @end
 

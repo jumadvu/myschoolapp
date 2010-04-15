@@ -17,12 +17,14 @@
 @implementation ChapterHome
 
 @synthesize imageArray, currentButton, numLabel, teachButton;
-@synthesize chapterNameLabel, chapterName, scrollView, fileName, article;
+@synthesize chapterNameLabel, chapterName, scrollView;
+//@synthesize fileName;
+@synthesize article;
 @synthesize chapter;
 
 - (void)dealloc {
 	[chapter release];
-	[fileName release];
+	//[fileName release];
 	[teachButton release];
 	[currentButton release];
 	[chapterName release];
@@ -38,7 +40,6 @@
 	//go to classroom
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	//[delegate setCurrentChapter:[(ModuleTable*)[self superview] chapter]];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }

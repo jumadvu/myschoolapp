@@ -2,13 +2,14 @@
 //  Article.m
 //  MySchool
 //
-//  Created by Connor Riley on 3/2/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Ashley Kayler on 4/14/10.
+//  Copyright 2010 DataJedi. All rights reserved.
 //
 
 #import "Article.h"
 
 #import "Chapter.h"
+#import "Image.h"
 
 @implementation Article 
 

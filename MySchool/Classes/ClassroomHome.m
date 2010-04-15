@@ -104,9 +104,9 @@
 		LibraryShelves *vc = [[[LibraryShelves alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];	
 		
-		NSString *msg = [NSString stringWithFormat:@"You first need to choose today's lesson. So let's go to the library."];
+		NSString *msg = [NSString stringWithFormat:@"Let's go to the library to choose a lesson to teach."];
 		UIAlertView *alert = [[UIAlertView alloc] 
-							  initWithTitle:@"Hold on a second!" 
+							  initWithTitle:@"Choose a Lesson" 
 							  message:msg 
 							  delegate:self 
 							  cancelButtonTitle:@"OK" 
@@ -374,7 +374,7 @@
 		//add teacher's points
 		[delegate.teacher setTotalPoints:[NSNumber numberWithInt:([delegate.teacher.totalPoints intValue] + bonusPoints)]];
 		NSString *msg;
-		if (bonusPoints > 40) {
+		if (bonusPoints > 35) {
 			msg = [NSString stringWithFormat:@"Principal Wilson says:\rNice work!.\r Your students are really getting smarter, and you earned %d teaching points too! Don't forget to grade the homework!", bonusPoints];
 		} else {
 			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHmm you kind of rushed that one!.\r Your students aren't going to learn that way. Don't forget to grade the homework!", bonusPoints];
@@ -484,7 +484,7 @@
 	}
 }
 
-
+//clicked on a button in the lecture
 - (void)clickedButton:(UIButton *)button {
 	[self setCurrentButton:button];
 	if (!paused) {
@@ -509,6 +509,7 @@
 	button.enabled = NO;
 }
 
+//selected an answer for a lecture word
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 	scrollPaused = NO;
 	NSArray *words = [[[[chapter.lecture keywordSetArray] objectAtIndex:keywordIndex] words] allObjects];
@@ -516,7 +517,8 @@
 	
 	if ([choice1.correct intValue] == 1) {
 		NSLog(@"correct");
-		bonusPoints += 10;
+		//this is how many teaching points the student gets for correcting a word.
+		bonusPoints += 5;
 		//change faces to happy if student is not waving arm
 		Student *student;
 		int x=0;

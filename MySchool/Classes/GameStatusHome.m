@@ -69,6 +69,8 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
 	[self setBackgroundColor];
+	[self setTopBarTitle:@"Principal's Office" withLogo:YES backButton:YES];
+
 	[delegate.navCon setNavigationBarHidden:YES];
 
 }

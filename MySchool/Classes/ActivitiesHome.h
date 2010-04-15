@@ -10,7 +10,11 @@
 
 
 @interface ActivitiesHome : baseViewController {
-
+	IBOutlet UIScrollView *scroller;
+	NSArray *activities;
 }
+
+@property (nonatomic, retain) UIScrollView *scroller;
+@property (nonatomic, retain) NSArray *activities;
 
 @end

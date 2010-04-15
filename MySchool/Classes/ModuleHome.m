@@ -10,74 +10,78 @@
 #import "ChapterHome.h"
 #import "TBXML.h"
 #import "ChapterCell.h"
-#import "ModuleTable.h"
 #import "Library.h"
 #import "Module.h"
 #import "ModulePlus.h"
+#import "Article.h"
+#import "Chapter.h"
 
 @implementation ModuleHome
 
-//@synthesize backButton;
-@synthesize moduleNameLabel, moduleName, pcurrent, ptotal, moduleNames, fileName, targetModule, modules;
-
+@synthesize moduleNameLabel;
+@synthesize targetModule;
+@synthesize tableview;
 
 - (void)dealloc {
-	//[backButton release];
-	[moduleName release];
+	[tableview release];
 	[moduleNameLabel release];
-	[ptotal release];
-	[pcurrent release];
-	[moduleNames release];
-	[fileName release];
 	[targetModule release];
-	[modules release];
+	NSLog(@"module home dealloc");
     [super dealloc];
 }
 
 
-
+/*
 -(void)toChapter {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];	
 }
+*/
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setBackgroundColor];
-	//scrollview.delegate = self;
-	//[self.scrollview setBackgroundColor:[UIColor whiteColor]];
-	//[scrollview setCanCancelContentTouches:NO];
-	//scrollview.indicatorStyle = UIScrollViewIndicatorStyleWhite;
-	//scrollview.clipsToBounds = YES;
-	//scrollview.scrollEnabled = YES;
-	//scrollview.pagingEnabled = YES;
+	//[self setBackgroundColor];
 	
-	ModuleTable *tableview = [[ModuleTable alloc] retain];
-	tableview.fileName = self.fileName;
-	tableview.module = targetModule;
-	tableview.moduleName = targetModule.title;
-		
-	CGRect rect = tableview.view.frame;
-	rect.size.height = 340;
-	rect.size.width = 320;
-	rect.origin.x = 0;
-	rect.origin.y = 70;
-		
-	tableview.view.frame = rect;
-	tableview.tableview.rowHeight = 60;
-	tableview.tableview.backgroundColor = [UIColor clearColor];
-	[self.view addSubview:tableview.view];
-	[tableview release];
-		
+	self.tableview.rowHeight = 55;
 	
 	moduleNameLabel.text = targetModule.title;
-	//[scrollview setContentSize:CGSizeMake(cx, [scrollview bounds].size.height)];
-	
-	//[scrollview setContentOffset:CGPointMake(tx, 0) animated:YES];
+
+	[self setTopBarTitle:@"Book" withLogo:YES backButton:YES];
+
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [[targetModule chaptersArray] count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	
+	static NSString *CellIdentifier = @"Cell";
+	ChapterCell *cell = (ChapterCell*)[aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil)
+	{
+		cell =
+		[[[ChapterCell alloc]
+		  initWithFrame:CGRectZero
+		  reuseIdentifier:CellIdentifier]
+		 autorelease];
+		[cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+		
+	}
+	//[cell setFileName:fileName];
+	Chapter *chapter = [[self.targetModule chaptersArray] objectAtIndex:indexPath.row];
+	cell.lblTitle.text = [NSString stringWithFormat:@"%d. %@", indexPath.row+1, [chapter title]];
+	cell.article = chapter.article;
+	cell.chapter = chapter;
+	//cell.textLabel.text = [chapters objectAtIndex:[indexPath row]];
+	//[chapter release];
+	return cell;
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
