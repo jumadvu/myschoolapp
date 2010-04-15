@@ -11,13 +11,13 @@
 #import "NewGameHome.h"
 #import "HelpHome.h"
 #import "LoungeHome.h"
-#import "LibraryHome.h"
 #import "ClassroomHome.h"
 #import "StoreHome.h"
 #import "LibraryShelves.h"
 #import "ParentEmail.h"
 #import "User.h"
 #import "ActivitiesHome.h"
+#import "UserPlus.h"
 
 
 @implementation MainMenu
@@ -32,8 +32,10 @@
 @synthesize storeButton;
 @synthesize pointsButton;
 @synthesize pointsLabel;
+@synthesize teacherAtDesk;
 
 - (void)dealloc {
+	[teacherAtDesk release];
 	[pointsButton release];
 	[pointsLabel release];
 	[storeButton release];
@@ -85,9 +87,17 @@
 }
 
 -(void)classroomButtonClicked {
-	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon pushViewController:vc animated:YES];
+	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	UIActionSheet *actionSheet = [[UIActionSheet alloc]
+								  initWithTitle:@""
+								  delegate:self
+								  cancelButtonTitle:nil
+								  destructiveButtonTitle:nil
+								  otherButtonTitles:@"Teach Lesson",@"Do Activities", nil];
+	[actionSheet showInView:self.view];
+	[actionSheet setTag:2];
+	[actionSheet release];
+	
 }
 
 -(void)storeButtonClicked {
@@ -114,7 +124,7 @@
 	[self setBackgroundColor];
 	[delegate.navCon setNavigationBarHidden:YES];
 	[self getParentEmail];
-
+	[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -135,6 +145,7 @@
 									  destructiveButtonTitle:@"OK"
 									  otherButtonTitles:nil];
 		[actionSheet showInView:self.view];
+		[actionSheet setTag:1];
 		[actionSheet release];
 		
 	} else {
@@ -144,27 +155,38 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	if (buttonIndex == 0) {
-		//get emails
-		NSLog(@"get email addresses");
-		ParentEmail *vc = [[[ParentEmail alloc] initWithNibName:nil bundle:nil] autorelease];
-		MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-		[delegate.navCon pushViewController:vc animated:YES];
-		
+	if (actionSheet.tag == 1) {
+		//email action sheet
+		if (buttonIndex == 0) {
+			//get emails
+			NSLog(@"get email addresses");
+			ParentEmail *vc = [[[ParentEmail alloc] initWithNibName:nil bundle:nil] autorelease];
+			MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			[delegate.navCon pushViewController:vc animated:YES];
+			
+		} else {
+			//do nothing
+			NSLog(@"do nothing");
+		}
 	} else {
-		//do nothing
-		NSLog(@"do nothing");
+		//classroom action sheet
+		if (buttonIndex == 0) {
+			//to to classroom
+			NSLog(@"get email addresses");
+			MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+			[delegate.navCon pushViewController:vc animated:YES];
+			
+		} else {
+			//go to activities view
+			MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			ActivitiesHome *vc = [[[ActivitiesHome alloc] initWithNibName:nil bundle:nil] autorelease];
+			[delegate.navCon pushViewController:vc animated:YES];
+		}
+		
 	}
-}
 
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

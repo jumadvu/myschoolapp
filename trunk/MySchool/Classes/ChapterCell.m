@@ -15,7 +15,6 @@
 
 @implementation ChapterCell
 
-@synthesize fileName;
 @synthesize lblTitle;
 @synthesize tButton;
 @synthesize lButton;
@@ -23,15 +22,12 @@
 @synthesize chapter;
 
 - (void)dealloc {
-	//[lblTitle release];//not currently using this
-	//[tButton release]; //don't need to release because it is created with an autorelease
-	//[lButton release];
 	[chapter release];
-	[fileName release];
 	[lblTitle release];
-	[tButton release];
-	[lButton release];
+	//[tButton release];
+	//[lButton release];
 	[article release];
+	NSLog(@"chapter cell dealloc");
     [super dealloc];
 }
 
@@ -39,28 +35,27 @@
 	//go to classroom
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	//[delegate setCurrentChapter:[(ModuleTable*)[self superview] chapter]];
 	[delegate setCurrentChapter:[self chapter]];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
+
 -(void)learnButtonSelected:(id)sender {
 	//go to learn interaction
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate setCurrentChapter:[self chapter]];
 	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.chapterName=self.lblTitle.text;
-	vc.fileName = fileName;
-	vc.article = article;
+	[vc setChapterName:self.lblTitle.text];
+	[vc setArticle:self.article];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
 	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 		UIImage *teachImage = [UIImage imageNamed:@"teach.png"];
 		UIImage *learnImage = [UIImage imageNamed:@"learn.png"];
-		
 		
 		lblTitle = [[UILabel alloc] initWithFrame:CGRectZero];
 		lblTitle.textColor = [UIColor blackColor];
@@ -98,17 +93,6 @@
 	tButton.frame = CGRectMake(270, 5, 45.0, 45.0);  
 	lButton.frame = CGRectMake(215, 5, 45.0, 45.0);  
 	
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	//selected the cell. Default to learning not teaching
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate setCurrentChapter:[self chapter]];
-	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.chapterName=self.lblTitle.text;
-	vc.fileName = fileName;
-	vc.article = article;
-	[delegate.navCon pushViewController:vc animated:YES];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -17,10 +17,11 @@
 @synthesize gradeButton;
 @synthesize numPapersLabel;
 @synthesize gradeBookButton;
+@synthesize teacherAtDesk;
 
 - (void)dealloc {
-	NSLog(@"lounge home dealloc");
 	//[numPapersLabel release];
+	[teacherAtDesk release];
 	[gradeButton release];
     [super dealloc];
 }
@@ -54,7 +55,6 @@
 }
 
 /*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
@@ -72,7 +72,9 @@
 - (void)viewDidLoad {
 	NSLog(@"lounge view did load");
     [super viewDidLoad];
-	[self setBackgroundColor];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[self setTopBarTitle:@"My Office" withLogo:YES backButton:YES];
+	[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
 }
 
 - (void)didReceiveMemoryWarning {

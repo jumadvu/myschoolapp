@@ -2,7 +2,7 @@
 //  WorksheetAnswer.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 3/5/10.
+//  Created by Ashley Kayler on 4/14/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -15,7 +15,7 @@
 
 @dynamic answer;
 @dynamic correctness;
-@dynamic question;
 @dynamic completedWorksheets;
+@dynamic question;
 
 @end

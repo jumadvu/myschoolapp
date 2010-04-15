@@ -11,7 +11,7 @@
 @class Chapter;
 
 @interface ChapterCell : UITableViewCell {
-	NSString *fileName;
+	//NSString *fileName;
 	UILabel *lblTitle;
 	UIButton *tButton;
 	UIButton *lButton;
@@ -19,7 +19,7 @@
 	Chapter *chapter;
 }
 
-@property (nonatomic, retain) NSString *fileName;
+//@property (nonatomic, retain) NSString *fileName;
 @property (nonatomic, retain) UILabel *lblTitle;
 @property (nonatomic, retain) UIButton *tButton;
 @property (nonatomic, retain) UIButton *lButton;

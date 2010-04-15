@@ -13,12 +13,14 @@
 	IBOutlet UIButton *gradeButton;
 	IBOutlet UILabel *numPapersLabel;
 	IBOutlet UIButton *gradeBookButton;
+	IBOutlet UIImageView *teacherAtDesk;
 
 }
 
 @property (nonatomic, retain) UIButton *gradeButton;
 @property (nonatomic, retain) UILabel *numPapersLabel;
 @property (nonatomic, retain) UIButton *gradeBookButton;
+@property (nonatomic, retain) UIImageView *teacherAtDesk;
 
 -(IBAction)toPapersToGrade;
 -(IBAction)toStudents;

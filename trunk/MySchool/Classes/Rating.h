@@ -2,7 +2,7 @@
 //  Rating.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/11/10.
+//  Created by Ashley Kayler on 4/14/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 

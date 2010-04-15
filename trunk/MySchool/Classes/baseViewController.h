@@ -23,5 +23,6 @@
 -(IBAction)lowerMenu:(UIButton*)sender;
 -(IBAction)goBack;
 -(void)setBackgroundColor;
+-(void)setTopBarTitle:(NSString*)title withLogo:(BOOL)addLogo backButton:(BOOL)addBackButton;
 
 @end

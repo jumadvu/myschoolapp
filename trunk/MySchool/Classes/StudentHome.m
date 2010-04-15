@@ -39,6 +39,9 @@
 	tableView.backgroundColor = [UIColor clearColor];
 	heading.text = [self.student firstName];
 	gradeLabel.text = [NSString stringWithFormat:@"Overall Grade: %@",[self.student overallGrade]];
+	
+	[self setTopBarTitle:[NSString stringWithFormat:@"%@'s Report Card",[self.student firstName]] withLogo:YES backButton:YES];
+
 }
 
 

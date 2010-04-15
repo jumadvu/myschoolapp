@@ -32,6 +32,7 @@
 	[subjects release];
 	[scrollView release];
 	[segmentControl release];
+	NSLog(@"library shelves dealloc");
     [super dealloc];
 }
 
@@ -47,6 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self.view setBackgroundColor:[UIColor colorWithRed:.5 green:.2 blue:.1 alpha:1]];
+	[self setTopBarTitle:@"The Library" withLogo:YES backButton:YES];
 	
 	NSMutableArray *anArray = [[NSMutableArray alloc] init];
 	self.shelfMarkers = anArray;
@@ -77,6 +79,11 @@
 	segmentControl.segmentedControlStyle = UISegmentedControlStyleBar;	
 	segmentControl.tintColor = [UIColor colorWithRed:0.70 green:0.171 blue:0.1 alpha:1.0];
 	*/
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	NSLog(@"view did appear in library shelves");
 }
 
 - (void)segmentAction:(id)sender
