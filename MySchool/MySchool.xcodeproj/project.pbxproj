@@ -14,7 +14,6 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		AB0542341140E979001045D7 /* WorksheetPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0542331140E979001045D7 /* WorksheetPlus.m */; };
-		AB0542641140FCB7001045D7 /* Lecture.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0542631140FCB7001045D7 /* Lecture.m */; };
 		AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07EFEF1108EA1D00204AFE /* MainMenu.m */; };
 		AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFF01108EA1D00204AFE /* MainMenu.xib */; };
 		AB07F01A1108F15F00204AFE /* model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = AB07F0191108F15F00204AFE /* model.xcdatamodel */; };
@@ -26,7 +25,6 @@
 		AB07F1E7110966F800204AFE /* NewGameHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F1E5110966F800204AFE /* NewGameHome.m */; };
 		AB07F1E8110966F800204AFE /* NewGameHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F1E6110966F800204AFE /* NewGameHome.xib */; };
 		AB07F2151109858000204AFE /* baseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F2141109858000204AFE /* baseViewController.m */; };
-		AB07F25B11098B4B00204AFE /* LibraryHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F25911098B4B00204AFE /* LibraryHome.m */; };
 		AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26011098B6600204AFE /* ClassroomHome.m */; };
 		AB07F26311098B6600204AFE /* ClassroomHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07F26111098B6600204AFE /* ClassroomHome.xib */; };
 		AB07F26911098B7600204AFE /* LoungeHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07F26711098B7600204AFE /* LoungeHome.m */; };
@@ -119,12 +117,7 @@
 		AB17689B113F9EBE00BA887D /* smallspeechbubble.png in Resources */ = {isa = PBXBuildFile; fileRef = AB17689A113F9EBE00BA887D /* smallspeechbubble.png */; };
 		AB176905113FB09F00BA887D /* StudentQuestionPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB176904113FB09F00BA887D /* StudentQuestionPlus.m */; };
 		AB2054DA11191E2B00ED8E61 /* StudentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054BD11191E2B00ED8E61 /* StudentQuestion.m */; };
-		AB2054DB11191E2B00ED8E61 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054BF11191E2B00ED8E61 /* Module.m */; };
 		AB2054DC11191E2B00ED8E61 /* CompletedLesson.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054C111191E2B00ED8E61 /* CompletedLesson.m */; };
-		AB2054DD11191E2B00ED8E61 /* Award.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054C311191E2B00ED8E61 /* Award.m */; };
-		AB2054DE11191E2B00ED8E61 /* StudentAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054C511191E2B00ED8E61 /* StudentAnswer.m */; };
-		AB2054E111191E2B00ED8E61 /* Worksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CB11191E2B00ED8E61 /* Worksheet.m */; };
-		AB2054E211191E2B00ED8E61 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CD11191E2B00ED8E61 /* Article.m */; };
 		AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CF11191E2B00ED8E61 /* UserAwards.m */; };
 		AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */; };
 		AB26205A11121CEE005D02F4 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205811121CEE005D02F4 /* man.png */; };
@@ -206,9 +199,7 @@
 		AB53B47D112314840017AFAB /* Girl2Unhappy.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B46D112314840017AFAB /* Girl2Unhappy.png */; };
 		AB53B51C112349DE0017AFAB /* learn.png in Resources */ = {isa = PBXBuildFile; fileRef = AB53B51A112349DE0017AFAB /* learn.png */; };
 		AB61202B112E06A600F31B72 /* LecturePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61202A112E06A600F31B72 /* LecturePlus.m */; };
-		AB612032112E0B1000F31B72 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61202F112E0B1000F31B72 /* Chapter.m */; };
 		AB61204F112E1EA500F31B72 /* Keyword.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61204E112E1EA500F31B72 /* Keyword.m */; };
-		AB612056112E1FDA00F31B72 /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB612055112E1FDA00F31B72 /* KeywordSet.m */; };
 		AB72E20F1128E78A00055DBE /* ModulePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB72E20E1128E78A00055DBE /* ModulePlus.m */; };
 		AB72E23C1128FCBA00055DBE /* LessonsTaught.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB72E23B1128FCBA00055DBE /* LessonsTaught.xib */; };
 		AB72E324112B1E1E00055DBE /* UserPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB72E323112B1E1E00055DBE /* UserPlus.m */; };
@@ -218,7 +209,6 @@
 		AB7A166F10FBBE5F00902689 /* Welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A166D10FBBE5F00902689 /* Welcome.m */; };
 		AB8AF1031142EF6A00D2DDD8 /* stackofpapers.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8AF1021142EF6A00D2DDD8 /* stackofpapers.png */; };
 		AB95CA691132E50200203EA4 /* ChapterPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB95CA681132E50200203EA4 /* ChapterPlus.m */; };
-		AB95CBC11133482300203EA4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AB95CBC01133482300203EA4 /* Student.m */; };
 		AB95CDD11135029700203EA4 /* lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95CDD01135029700203EA4 /* lounge.png */; };
 		AB95CDD51135030800203EA4 /* bookshelf.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95CDD41135030800203EA4 /* bookshelf.png */; };
 		AB95CDD91135038C00203EA4 /* supplies.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95CDD81135038C00203EA4 /* supplies.png */; };
@@ -228,8 +218,6 @@
 		ABAD46E51171608500C33FCA /* musiclesson.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD46E41171608500C33FCA /* musiclesson.png */; };
 		ABAD472D1171815A00C33FCA /* ActivitiesHome.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD472B1171815A00C33FCA /* ActivitiesHome.m */; };
 		ABAD472E1171815A00C33FCA /* ActivitiesHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAD472C1171815A00C33FCA /* ActivitiesHome.xib */; };
-		ABAD47681171AEF000C33FCA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD47651171AEF000C33FCA /* User.m */; };
-		ABAD47691171AEF000C33FCA /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD47671171AEF000C33FCA /* Rating.m */; };
 		ABAD47AD11723D0900C33FCA /* grayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47AC11723D0900C33FCA /* grayButton.png */; };
 		ABAD47B511723D3800C33FCA /* blackboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47B111723D3800C33FCA /* blackboard.png */; };
 		ABAD47B611723D3800C33FCA /* ClassWall.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47B211723D3800C33FCA /* ClassWall.png */; };
@@ -263,18 +251,31 @@
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
 		ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAA6811116B7D700D3956F /* AccountSelection.m */; };
+		ABE9A0D911754DE200C9CA4F /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A0D811754DE200C9CA4F /* calendar.png */; };
+		ABE9A12F1175980E00C9CA4F /* behaviorReports.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */; };
+		ABE9A1A11175AE4400C9CA4F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A18A1175AE4400C9CA4F /* User.m */; };
+		ABE9A1A21175AE4400C9CA4F /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A18C1175AE4400C9CA4F /* Article.m */; };
+		ABE9A1A31175AE4400C9CA4F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A18E1175AE4400C9CA4F /* Student.m */; };
+		ABE9A1A41175AE4400C9CA4F /* Worksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1901175AE4400C9CA4F /* Worksheet.m */; };
+		ABE9A1A51175AE4400C9CA4F /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1921175AE4400C9CA4F /* WorksheetAnswer.m */; };
+		ABE9A1A61175AE4400C9CA4F /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1941175AE4400C9CA4F /* Module.m */; };
+		ABE9A1A71175AE4400C9CA4F /* StudentAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1961175AE4400C9CA4F /* StudentAnswer.m */; };
+		ABE9A1A81175AE4400C9CA4F /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1981175AE4400C9CA4F /* Rating.m */; };
+		ABE9A1A91175AE4400C9CA4F /* Lecture.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A19A1175AE4400C9CA4F /* Lecture.m */; };
+		ABE9A1AA1175AE4400C9CA4F /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A19C1175AE4400C9CA4F /* KeywordSet.m */; };
+		ABE9A1AB1175AE4400C9CA4F /* Award.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A19E1175AE4400C9CA4F /* Award.m */; };
+		ABE9A1AC1175AE4400C9CA4F /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1A01175AE4400C9CA4F /* Chapter.m */; };
+		ABE9A1EA1176288F00C9CA4F /* counter.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A1E91176288F00C9CA4F /* counter.png */; };
+		ABE9A23A117662B300C9CA4F /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A239117662B300C9CA4F /* topbar.png */; };
+		ABE9A2441176842500C9CA4F /* chalk_back.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A2431176842500C9CA4F /* chalk_back.png */; };
 		ABF85795114108AE007419EB /* teacherslounge.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF85794114108AE007419EB /* teacherslounge.png */; };
 		ABF857DD1141AC86007419EB /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF857DC1141AC86007419EB /* CompletedWorksheet.m */; };
-		ABF858DF1141D87B007419EB /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF858DE1141D87B007419EB /* WorksheetAnswer.m */; };
 		ABF858F31141DAE2007419EB /* GradePaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF858F21141DAE2007419EB /* GradePaperCell.m */; };
 		ABF8591E1141E13C007419EB /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF8591C1141E13B007419EB /* checkmark.png */; };
 		ABF8591F1141E13C007419EB /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF8591D1141E13C007419EB /* xmark.png */; };
 		F50B4815111A1356003231FB /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B4814111A1356003231FB /* NSDataAdditions.m */; };
 		F50B4818111A1368003231FB /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B4817111A1368003231FB /* TBXML.m */; };
-		F50B481B111A1378003231FB /* ModuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50B481A111A1378003231FB /* ModuleCell.m */; };
 		F50B481E111A13D6003231FB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B481D111A13D6003231FB /* libz.dylib */; };
-		F5132F8C1134525200798586 /* ModuleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F5132F8B1134525200798586 /* ModuleTable.m */; };
-		F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5132F8D1134525B00798586 /* ModuleTable.xib */; };
 		F577F6C21174F48000387EAE /* DayinHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = F577F6C01174F48000387EAE /* DayinHistory.m */; };
 		F577F6C31174F48000387EAE /* DayinHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = F577F6C11174F48000387EAE /* DayinHistory.xib */; };
 		F577F6C61174F85100387EAE /* dates.xml in Resources */ = {isa = PBXBuildFile; fileRef = F577F6C51174F85100387EAE /* dates.xml */; };
@@ -333,8 +334,6 @@
 		8D1107310486CEB800E47090 /* MySchool-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MySchool-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AB0542321140E979001045D7 /* WorksheetPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetPlus.h; sourceTree = "<group>"; };
 		AB0542331140E979001045D7 /* WorksheetPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetPlus.m; sourceTree = "<group>"; };
-		AB0542621140FCB7001045D7 /* Lecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lecture.h; sourceTree = "<group>"; };
-		AB0542631140FCB7001045D7 /* Lecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lecture.m; sourceTree = "<group>"; };
 		AB07EFEE1108EA1D00204AFE /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		AB07EFEF1108EA1D00204AFE /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		AB07EFF01108EA1D00204AFE /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -351,8 +350,6 @@
 		AB07F1E6110966F800204AFE /* NewGameHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewGameHome.xib; sourceTree = "<group>"; };
 		AB07F2131109858000204AFE /* baseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseViewController.h; sourceTree = "<group>"; };
 		AB07F2141109858000204AFE /* baseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseViewController.m; sourceTree = "<group>"; };
-		AB07F25811098B4B00204AFE /* LibraryHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHome.h; sourceTree = "<group>"; };
-		AB07F25911098B4B00204AFE /* LibraryHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryHome.m; sourceTree = "<group>"; };
 		AB07F25F11098B6600204AFE /* ClassroomHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassroomHome.h; sourceTree = "<group>"; };
 		AB07F26011098B6600204AFE /* ClassroomHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomHome.m; sourceTree = "<group>"; };
 		AB07F26111098B6600204AFE /* ClassroomHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassroomHome.xib; sourceTree = "<group>"; };
@@ -460,18 +457,8 @@
 		AB176904113FB09F00BA887D /* StudentQuestionPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentQuestionPlus.m; sourceTree = "<group>"; };
 		AB2054BC11191E2B00ED8E61 /* StudentQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentQuestion.h; sourceTree = "<group>"; };
 		AB2054BD11191E2B00ED8E61 /* StudentQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentQuestion.m; sourceTree = "<group>"; };
-		AB2054BE11191E2B00ED8E61 /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
-		AB2054BF11191E2B00ED8E61 /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 		AB2054C011191E2B00ED8E61 /* CompletedLesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedLesson.h; sourceTree = "<group>"; };
 		AB2054C111191E2B00ED8E61 /* CompletedLesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedLesson.m; sourceTree = "<group>"; };
-		AB2054C211191E2B00ED8E61 /* Award.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Award.h; sourceTree = "<group>"; };
-		AB2054C311191E2B00ED8E61 /* Award.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Award.m; sourceTree = "<group>"; };
-		AB2054C411191E2B00ED8E61 /* StudentAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentAnswer.h; sourceTree = "<group>"; };
-		AB2054C511191E2B00ED8E61 /* StudentAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentAnswer.m; sourceTree = "<group>"; };
-		AB2054CA11191E2B00ED8E61 /* Worksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worksheet.h; sourceTree = "<group>"; };
-		AB2054CB11191E2B00ED8E61 /* Worksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worksheet.m; sourceTree = "<group>"; };
-		AB2054CC11191E2B00ED8E61 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
-		AB2054CD11191E2B00ED8E61 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		AB2054CE11191E2B00ED8E61 /* UserAwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAwards.h; sourceTree = "<group>"; };
 		AB2054CF11191E2B00ED8E61 /* UserAwards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAwards.m; sourceTree = "<group>"; };
 		AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetQuestion.h; sourceTree = "<group>"; };
@@ -574,12 +561,8 @@
 		AB53B51A112349DE0017AFAB /* learn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = learn.png; sourceTree = "<group>"; };
 		AB612029112E06A600F31B72 /* LecturePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LecturePlus.h; sourceTree = "<group>"; };
 		AB61202A112E06A600F31B72 /* LecturePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LecturePlus.m; sourceTree = "<group>"; };
-		AB61202E112E0B1000F31B72 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
-		AB61202F112E0B1000F31B72 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
 		AB61204D112E1EA500F31B72 /* Keyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyword.h; sourceTree = "<group>"; };
 		AB61204E112E1EA500F31B72 /* Keyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyword.m; sourceTree = "<group>"; };
-		AB612054112E1FDA00F31B72 /* KeywordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSet.h; sourceTree = "<group>"; };
-		AB612055112E1FDA00F31B72 /* KeywordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSet.m; sourceTree = "<group>"; };
 		AB72E20D1128E78A00055DBE /* ModulePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulePlus.h; sourceTree = "<group>"; };
 		AB72E20E1128E78A00055DBE /* ModulePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulePlus.m; sourceTree = "<group>"; };
 		AB72E23B1128FCBA00055DBE /* LessonsTaught.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonsTaught.xib; sourceTree = "<group>"; };
@@ -593,8 +576,6 @@
 		AB8AF1021142EF6A00D2DDD8 /* stackofpapers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stackofpapers.png; sourceTree = "<group>"; };
 		AB95CA671132E50100203EA4 /* ChapterPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterPlus.h; sourceTree = "<group>"; };
 		AB95CA681132E50200203EA4 /* ChapterPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterPlus.m; sourceTree = "<group>"; };
-		AB95CBBF1133482300203EA4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		AB95CBC01133482300203EA4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		AB95CDD01135029700203EA4 /* lounge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lounge.png; sourceTree = "<group>"; };
 		AB95CDD41135030800203EA4 /* bookshelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookshelf.png; sourceTree = "<group>"; };
 		AB95CDD81135038C00203EA4 /* supplies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supplies.png; sourceTree = "<group>"; };
@@ -605,10 +586,6 @@
 		ABAD472A1171815A00C33FCA /* ActivitiesHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesHome.h; sourceTree = "<group>"; };
 		ABAD472B1171815A00C33FCA /* ActivitiesHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesHome.m; sourceTree = "<group>"; };
 		ABAD472C1171815A00C33FCA /* ActivitiesHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesHome.xib; sourceTree = "<group>"; };
-		ABAD47641171AEF000C33FCA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		ABAD47651171AEF000C33FCA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		ABAD47661171AEF000C33FCA /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
-		ABAD47671171AEF000C33FCA /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
 		ABAD47AC11723D0900C33FCA /* grayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayButton.png; path = images/grayButton.png; sourceTree = "<group>"; };
 		ABAD47B111723D3800C33FCA /* blackboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackboard.png; path = images/BackgroundsFurniture/blackboard.png; sourceTree = "<group>"; };
 		ABAD47B211723D3800C33FCA /* ClassWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ClassWall.png; path = images/BackgroundsFurniture/ClassWall.png; sourceTree = "<group>"; };
@@ -643,11 +620,38 @@
 		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ABCAA6801116B7D700D3956F /* AccountSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelection.h; sourceTree = "<group>"; };
 		ABCAA6811116B7D700D3956F /* AccountSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelection.m; sourceTree = "<group>"; };
+		ABE9A0D811754DE200C9CA4F /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = images/store_items/calendar.png; sourceTree = SOURCE_ROOT; };
+		ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = behaviorReports.xml; sourceTree = "<group>"; };
+		ABE9A1891175AE4400C9CA4F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		ABE9A18A1175AE4400C9CA4F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		ABE9A18B1175AE4400C9CA4F /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		ABE9A18C1175AE4400C9CA4F /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		ABE9A18D1175AE4400C9CA4F /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		ABE9A18E1175AE4400C9CA4F /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		ABE9A18F1175AE4400C9CA4F /* Worksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worksheet.h; sourceTree = "<group>"; };
+		ABE9A1901175AE4400C9CA4F /* Worksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worksheet.m; sourceTree = "<group>"; };
+		ABE9A1911175AE4400C9CA4F /* WorksheetAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetAnswer.h; sourceTree = "<group>"; };
+		ABE9A1921175AE4400C9CA4F /* WorksheetAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetAnswer.m; sourceTree = "<group>"; };
+		ABE9A1931175AE4400C9CA4F /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		ABE9A1941175AE4400C9CA4F /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		ABE9A1951175AE4400C9CA4F /* StudentAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentAnswer.h; sourceTree = "<group>"; };
+		ABE9A1961175AE4400C9CA4F /* StudentAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentAnswer.m; sourceTree = "<group>"; };
+		ABE9A1971175AE4400C9CA4F /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
+		ABE9A1981175AE4400C9CA4F /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
+		ABE9A1991175AE4400C9CA4F /* Lecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lecture.h; sourceTree = "<group>"; };
+		ABE9A19A1175AE4400C9CA4F /* Lecture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lecture.m; sourceTree = "<group>"; };
+		ABE9A19B1175AE4400C9CA4F /* KeywordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordSet.h; sourceTree = "<group>"; };
+		ABE9A19C1175AE4400C9CA4F /* KeywordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordSet.m; sourceTree = "<group>"; };
+		ABE9A19D1175AE4400C9CA4F /* Award.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Award.h; sourceTree = "<group>"; };
+		ABE9A19E1175AE4400C9CA4F /* Award.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Award.m; sourceTree = "<group>"; };
+		ABE9A19F1175AE4400C9CA4F /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		ABE9A1A01175AE4400C9CA4F /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		ABE9A1E91176288F00C9CA4F /* counter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = counter.png; path = images/BackgroundsFurniture/counter.png; sourceTree = "<group>"; };
+		ABE9A239117662B300C9CA4F /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
+		ABE9A2431176842500C9CA4F /* chalk_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chalk_back.png; path = images/chalk_back.png; sourceTree = "<group>"; };
 		ABF85794114108AE007419EB /* teacherslounge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacherslounge.png; sourceTree = "<group>"; };
 		ABF857DB1141AC86007419EB /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
 		ABF857DC1141AC86007419EB /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
-		ABF858DD1141D87B007419EB /* WorksheetAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetAnswer.h; sourceTree = "<group>"; };
-		ABF858DE1141D87B007419EB /* WorksheetAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetAnswer.m; sourceTree = "<group>"; };
 		ABF858F11141DAE2007419EB /* GradePaperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradePaperCell.h; sourceTree = "<group>"; };
 		ABF858F21141DAE2007419EB /* GradePaperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradePaperCell.m; sourceTree = "<group>"; };
 		ABF8591C1141E13B007419EB /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = ../Classes/checkmark.png; sourceTree = "<group>"; };
@@ -655,12 +659,7 @@
 		F50B4813111A1356003231FB /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		F50B4814111A1356003231FB /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		F50B4817111A1368003231FB /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
-		F50B4819111A1378003231FB /* ModuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleCell.h; sourceTree = "<group>"; };
-		F50B481A111A1378003231FB /* ModuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleCell.m; sourceTree = "<group>"; };
 		F50B481D111A13D6003231FB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		F5132F8A1134524900798586 /* ModuleTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTable.h; sourceTree = "<group>"; };
-		F5132F8B1134525200798586 /* ModuleTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTable.m; sourceTree = "<group>"; };
-		F5132F8D1134525B00798586 /* ModuleTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTable.xib; sourceTree = "<group>"; };
 		F577F6BF1174F48000387EAE /* DayinHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayinHistory.h; sourceTree = "<group>"; };
 		F577F6C01174F48000387EAE /* DayinHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayinHistory.m; sourceTree = "<group>"; };
 		F577F6C11174F48000387EAE /* DayinHistory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayinHistory.xib; sourceTree = "<group>"; };
@@ -834,51 +833,51 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ABAD47641171AEF000C33FCA /* User.h */,
-				ABAD47651171AEF000C33FCA /* User.m */,
-				ABAD47661171AEF000C33FCA /* Rating.h */,
-				ABAD47671171AEF000C33FCA /* Rating.m */,
+				ABE9A1891175AE4400C9CA4F /* User.h */,
+				ABE9A18A1175AE4400C9CA4F /* User.m */,
+				ABE9A18B1175AE4400C9CA4F /* Article.h */,
+				ABE9A18C1175AE4400C9CA4F /* Article.m */,
+				ABE9A18D1175AE4400C9CA4F /* Student.h */,
+				ABE9A18E1175AE4400C9CA4F /* Student.m */,
+				ABE9A18F1175AE4400C9CA4F /* Worksheet.h */,
+				ABE9A1901175AE4400C9CA4F /* Worksheet.m */,
+				ABE9A1911175AE4400C9CA4F /* WorksheetAnswer.h */,
+				ABE9A1921175AE4400C9CA4F /* WorksheetAnswer.m */,
+				ABE9A1931175AE4400C9CA4F /* Module.h */,
+				ABE9A1941175AE4400C9CA4F /* Module.m */,
+				ABE9A1951175AE4400C9CA4F /* StudentAnswer.h */,
+				ABE9A1961175AE4400C9CA4F /* StudentAnswer.m */,
+				ABE9A1971175AE4400C9CA4F /* Rating.h */,
+				ABE9A1981175AE4400C9CA4F /* Rating.m */,
+				ABE9A1991175AE4400C9CA4F /* Lecture.h */,
+				ABE9A19A1175AE4400C9CA4F /* Lecture.m */,
+				ABE9A19B1175AE4400C9CA4F /* KeywordSet.h */,
+				ABE9A19C1175AE4400C9CA4F /* KeywordSet.m */,
+				ABE9A19D1175AE4400C9CA4F /* Award.h */,
+				ABE9A19E1175AE4400C9CA4F /* Award.m */,
+				ABE9A19F1175AE4400C9CA4F /* Chapter.h */,
+				ABE9A1A01175AE4400C9CA4F /* Chapter.m */,
 				AB160E6411514B11004DC0C1 /* Image.h */,
 				AB160E6511514B11004DC0C1 /* Image.m */,
 				AB160E6611514B11004DC0C1 /* StoreItem.h */,
 				AB160E6711514B11004DC0C1 /* StoreItem.m */,
-				ABF858DD1141D87B007419EB /* WorksheetAnswer.h */,
-				ABF858DE1141D87B007419EB /* WorksheetAnswer.m */,
 				ABF857DB1141AC86007419EB /* CompletedWorksheet.h */,
 				ABF857DC1141AC86007419EB /* CompletedWorksheet.m */,
-				AB0542621140FCB7001045D7 /* Lecture.h */,
-				AB0542631140FCB7001045D7 /* Lecture.m */,
 				AB17666D113DA15E00BA887D /* Avatar.h */,
 				AB17666E113DA15E00BA887D /* Avatar.m */,
-				AB95CBBF1133482300203EA4 /* Student.h */,
-				AB95CBC01133482300203EA4 /* Student.m */,
-				AB612054112E1FDA00F31B72 /* KeywordSet.h */,
-				AB612055112E1FDA00F31B72 /* KeywordSet.m */,
 				AB61204D112E1EA500F31B72 /* Keyword.h */,
 				AB61204E112E1EA500F31B72 /* Keyword.m */,
-				AB61202E112E0B1000F31B72 /* Chapter.h */,
-				AB61202F112E0B1000F31B72 /* Chapter.m */,
-				AB72E322112B1E1E00055DBE /* UserPlus.h */,
-				AB72E323112B1E1E00055DBE /* UserPlus.m */,
 				AB2054BC11191E2B00ED8E61 /* StudentQuestion.h */,
 				AB2054BD11191E2B00ED8E61 /* StudentQuestion.m */,
-				AB2054BE11191E2B00ED8E61 /* Module.h */,
-				AB2054BF11191E2B00ED8E61 /* Module.m */,
 				AB2054C011191E2B00ED8E61 /* CompletedLesson.h */,
 				AB2054C111191E2B00ED8E61 /* CompletedLesson.m */,
-				AB2054C211191E2B00ED8E61 /* Award.h */,
-				AB2054C311191E2B00ED8E61 /* Award.m */,
-				AB2054C411191E2B00ED8E61 /* StudentAnswer.h */,
-				AB2054C511191E2B00ED8E61 /* StudentAnswer.m */,
-				AB2054CA11191E2B00ED8E61 /* Worksheet.h */,
-				AB2054CB11191E2B00ED8E61 /* Worksheet.m */,
-				AB2054CC11191E2B00ED8E61 /* Article.h */,
-				AB2054CD11191E2B00ED8E61 /* Article.m */,
 				AB2054CE11191E2B00ED8E61 /* UserAwards.h */,
 				AB2054CF11191E2B00ED8E61 /* UserAwards.m */,
 				AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */,
 				AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */,
 				AB07F0191108F15F00204AFE /* model.xcdatamodel */,
+				AB72E322112B1E1E00055DBE /* UserPlus.h */,
+				AB72E323112B1E1E00055DBE /* UserPlus.m */,
 				AB4607E7111CEA0A00E9C445 /* StudentPlus.h */,
 				AB4607E8111CEA0A00E9C445 /* StudentPlus.m */,
 				AB72E20D1128E78A00055DBE /* ModulePlus.h */,
@@ -942,16 +941,9 @@
 		AB07F24F11098B1800204AFE /* library */ = {
 			isa = PBXGroup;
 			children = (
-				F50B4819111A1378003231FB /* ModuleCell.h */,
-				F50B481A111A1378003231FB /* ModuleCell.m */,
-				AB07F25811098B4B00204AFE /* LibraryHome.h */,
-				AB07F25911098B4B00204AFE /* LibraryHome.m */,
 				F5BBC3291134615200A0B737 /* ModuleHome.h */,
 				F5BBC3281134615200A0B737 /* ModuleHome.m */,
 				F5BBC3271134615200A0B737 /* ModuleHome.xib */,
-				F5132F8D1134525B00798586 /* ModuleTable.xib */,
-				F5132F8A1134524900798586 /* ModuleTable.h */,
-				F5132F8B1134525200798586 /* ModuleTable.m */,
 				F57D79CF111A42940020C2DE /* ChapterCell.h */,
 				F57D79D0111A42940020C2DE /* ChapterCell.m */,
 				AB388A4A110FB24B00217E8F /* ChapterHome.h */,
@@ -1064,6 +1056,7 @@
 		AB160EAC11515B55004DC0C1 /* store_items */ = {
 			isa = PBXGroup;
 			children = (
+				ABE9A0D811754DE200C9CA4F /* calendar.png */,
 				ABAD46E41171608500C33FCA /* musiclesson.png */,
 				AB160EAD11515B55004DC0C1 /* alphabet.png */,
 				AB160EAE11515B55004DC0C1 /* artsupplies.png */,
@@ -1093,6 +1086,7 @@
 		AB17663A113D9F6D00BA887D /* furniture */ = {
 			isa = PBXGroup;
 			children = (
+				ABE9A1E91176288F00C9CA4F /* counter.png */,
 				ABAD47B111723D3800C33FCA /* blackboard.png */,
 				ABAD47B211723D3800C33FCA /* ClassWall.png */,
 				ABAD47B311723D3800C33FCA /* KidsBGWall.png */,
@@ -1186,6 +1180,7 @@
 		AB53B3611121EC120017AFAB /* xml */ = {
 			isa = PBXGroup;
 			children = (
+				ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */,
 				AB53B3621121EC120017AFAB /* 2 */,
 				F5A9C0B71136EFB600F74134 /* modules.xml */,
 				F577F6C51174F85100387EAE /* dates.xml */,
@@ -1305,6 +1300,7 @@
 		AB53B519112349DE0017AFAB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ABE9A239117662B300C9CA4F /* topbar.png */,
 				ABAD46DA1171490F00C33FCA /* Principal.png */,
 				AB0998F8115FD40F00787969 /* black_rect.png */,
 				AB0998EA115FCD7A00787969 /* logo.png */,
@@ -1338,6 +1334,7 @@
 		ABAD46F411717E1100C33FCA /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				ABE9A2431176842500C9CA4F /* chalk_back.png */,
 				ABAD47C711723DAF00C33FCA /* helpButton.png */,
 				ABAD47C811723DAF00C33FCA /* myschoolButton.png */,
 				ABAD47C911723DAF00C33FCA /* newgameButton.png */,
@@ -1515,7 +1512,6 @@
 				AB95CDD91135038C00203EA4 /* supplies.png in Resources */,
 				AB95CDE411350B8800203EA4 /* Teacher_M.png in Resources */,
 				AB95CE4711358DDF00203EA4 /* gradient_button.png in Resources */,
-				F5132F8E1134525B00798586 /* ModuleTable.xib in Resources */,
 				F5BBC32A1134615200A0B737 /* ModuleHome.xib in Resources */,
 				F5A9C08A1136EDF300F74134 /* bookshelf copy.png in Resources */,
 				F5A9C08D1136EE0A00F74134 /* chalkboard.png in Resources */,
@@ -1699,6 +1695,11 @@
 				ABAD480511723EA900C33FCA /* rainfall.jpg in Resources */,
 				F577F6C31174F48000387EAE /* DayinHistory.xib in Resources */,
 				F577F6C61174F85100387EAE /* dates.xml in Resources */,
+				ABE9A0D911754DE200C9CA4F /* calendar.png in Resources */,
+				ABE9A12F1175980E00C9CA4F /* behaviorReports.xml in Resources */,
+				ABE9A1EA1176288F00C9CA4F /* counter.png in Resources */,
+				ABE9A23A117662B300C9CA4F /* topbar.png in Resources */,
+				ABE9A2441176842500C9CA4F /* chalk_back.png in Resources */,
 				F577F8091175824400387EAE /* fwd_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1719,7 +1720,6 @@
 				AB07F1DF110966CD00204AFE /* HelpHome.m in Sources */,
 				AB07F1E7110966F800204AFE /* NewGameHome.m in Sources */,
 				AB07F2151109858000204AFE /* baseViewController.m in Sources */,
-				AB07F25B11098B4B00204AFE /* LibraryHome.m in Sources */,
 				AB07F26211098B6600204AFE /* ClassroomHome.m in Sources */,
 				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
 				AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */,
@@ -1736,38 +1736,26 @@
 				AB388B15110FEB5000217E8F /* StudentHome.m in Sources */,
 				ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */,
 				AB2054DA11191E2B00ED8E61 /* StudentQuestion.m in Sources */,
-				AB2054DB11191E2B00ED8E61 /* Module.m in Sources */,
 				AB2054DC11191E2B00ED8E61 /* CompletedLesson.m in Sources */,
-				AB2054DD11191E2B00ED8E61 /* Award.m in Sources */,
-				AB2054DE11191E2B00ED8E61 /* StudentAnswer.m in Sources */,
-				AB2054E111191E2B00ED8E61 /* Worksheet.m in Sources */,
-				AB2054E211191E2B00ED8E61 /* Article.m in Sources */,
 				AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */,
 				AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */,
 				F50B4815111A1356003231FB /* NSDataAdditions.m in Sources */,
 				F50B4818111A1368003231FB /* TBXML.m in Sources */,
-				F50B481B111A1378003231FB /* ModuleCell.m in Sources */,
 				F57D79D1111A42940020C2DE /* ChapterCell.m in Sources */,
 				AB4607E9111CEA0A00E9C445 /* StudentPlus.m in Sources */,
 				AB53B3791121F39D0017AFAB /* Library.m in Sources */,
 				AB72E20F1128E78A00055DBE /* ModulePlus.m in Sources */,
 				AB72E324112B1E1E00055DBE /* UserPlus.m in Sources */,
 				AB61202B112E06A600F31B72 /* LecturePlus.m in Sources */,
-				AB612032112E0B1000F31B72 /* Chapter.m in Sources */,
 				AB61204F112E1EA500F31B72 /* Keyword.m in Sources */,
-				AB612056112E1FDA00F31B72 /* KeywordSet.m in Sources */,
 				AB95CA691132E50200203EA4 /* ChapterPlus.m in Sources */,
-				AB95CBC11133482300203EA4 /* Student.m in Sources */,
-				F5132F8C1134525200798586 /* ModuleTable.m in Sources */,
 				F5BBC32B1134615200A0B737 /* ModuleHome.m in Sources */,
 				F5A9C0AF1136EEB400F74134 /* LibraryShelves.m in Sources */,
 				AB176524113D719100BA887D /* testing123.m in Sources */,
 				AB17666F113DA15E00BA887D /* Avatar.m in Sources */,
 				AB176905113FB09F00BA887D /* StudentQuestionPlus.m in Sources */,
 				AB0542341140E979001045D7 /* WorksheetPlus.m in Sources */,
-				AB0542641140FCB7001045D7 /* Lecture.m in Sources */,
 				ABF857DD1141AC86007419EB /* CompletedWorksheet.m in Sources */,
-				ABF858DF1141D87B007419EB /* WorksheetAnswer.m in Sources */,
 				ABF858F31141DAE2007419EB /* GradePaperCell.m in Sources */,
 				AB160C5C114F5266004DC0C1 /* CompletedWorksheetPlus.m in Sources */,
 				AB160CD3114FD5FC004DC0C1 /* ParentEmail.m in Sources */,
@@ -1782,9 +1770,19 @@
 				AB0996D7115C292800787969 /* Measure.m in Sources */,
 				AB417936116BD5FD00FF8634 /* Pie.m in Sources */,
 				ABAD472D1171815A00C33FCA /* ActivitiesHome.m in Sources */,
-				ABAD47681171AEF000C33FCA /* User.m in Sources */,
-				ABAD47691171AEF000C33FCA /* Rating.m in Sources */,
 				F577F6C21174F48000387EAE /* DayinHistory.m in Sources */,
+				ABE9A1A11175AE4400C9CA4F /* User.m in Sources */,
+				ABE9A1A21175AE4400C9CA4F /* Article.m in Sources */,
+				ABE9A1A31175AE4400C9CA4F /* Student.m in Sources */,
+				ABE9A1A41175AE4400C9CA4F /* Worksheet.m in Sources */,
+				ABE9A1A51175AE4400C9CA4F /* WorksheetAnswer.m in Sources */,
+				ABE9A1A61175AE4400C9CA4F /* Module.m in Sources */,
+				ABE9A1A71175AE4400C9CA4F /* StudentAnswer.m in Sources */,
+				ABE9A1A81175AE4400C9CA4F /* Rating.m in Sources */,
+				ABE9A1A91175AE4400C9CA4F /* Lecture.m in Sources */,
+				ABE9A1AA1175AE4400C9CA4F /* KeywordSet.m in Sources */,
+				ABE9A1AB1175AE4400C9CA4F /* Award.m in Sources */,
+				ABE9A1AC1175AE4400C9CA4F /* Chapter.m in Sources */,
 				F577F81411762CCC00387EAE /* ScoreAnim.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
