@@ -269,7 +269,7 @@
 		ABE9A23A117662B300C9CA4F /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A239117662B300C9CA4F /* topbar.png */; };
 		ABE9A2441176842500C9CA4F /* chalk_back.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A2431176842500C9CA4F /* chalk_back.png */; };
 		ABE9A37A1176B97700C9CA4F /* StudentsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A3791176B97700C9CA4F /* StudentsList.xib */; };
-		ABE9A48F1178BFDC00C9CA4F /* famousPeople.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A48E1178BFDC00C9CA4F /* famousPeople.xml */; };
+		ABE9A4AA1178C2E400C9CA4F /* famousPeople.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A4A91178C2E400C9CA4F /* famousPeople.xml */; };
 		ABF85795114108AE007419EB /* teacherslounge.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF85794114108AE007419EB /* teacherslounge.png */; };
 		ABF857DD1141AC86007419EB /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF857DC1141AC86007419EB /* CompletedWorksheet.m */; };
 		ABF858F31141DAE2007419EB /* GradePaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF858F21141DAE2007419EB /* GradePaperCell.m */; };
@@ -652,7 +652,7 @@
 		ABE9A239117662B300C9CA4F /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
 		ABE9A2431176842500C9CA4F /* chalk_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chalk_back.png; path = images/chalk_back.png; sourceTree = "<group>"; };
 		ABE9A3791176B97700C9CA4F /* StudentsList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentsList.xib; sourceTree = "<group>"; };
-		ABE9A48E1178BFDC00C9CA4F /* famousPeople.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = famousPeople.xml; sourceTree = "<group>"; };
+		ABE9A4A91178C2E400C9CA4F /* famousPeople.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = famousPeople.xml; path = famous_people/famousPeople.xml; sourceTree = "<group>"; };
 		ABF85794114108AE007419EB /* teacherslounge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacherslounge.png; sourceTree = "<group>"; };
 		ABF857DB1141AC86007419EB /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
 		ABF857DC1141AC86007419EB /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
@@ -1205,7 +1205,7 @@
 		AB53B3631121EC120017AFAB /* history */ = {
 			isa = PBXGroup;
 			children = (
-				ABE9A48E1178BFDC00C9CA4F /* famousPeople.xml */,
+				ABE9A4921178C1D000C9CA4F /* famous_people */,
 			);
 			path = history;
 			sourceTree = "<group>";
@@ -1421,6 +1421,14 @@
 				ABCAA6811116B7D700D3956F /* AccountSelection.m */,
 			);
 			name = welcome;
+			sourceTree = "<group>";
+		};
+		ABE9A4921178C1D000C9CA4F /* famous_people */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9A4A91178C2E400C9CA4F /* famousPeople.xml */,
+			);
+			name = famous_people;
 			sourceTree = "<group>";
 		};
 		F577F6BB1174F40900387EAE /* day_in_history */ = {
@@ -1708,7 +1716,7 @@
 				ABE9A2441176842500C9CA4F /* chalk_back.png in Resources */,
 				F577F8091175824400387EAE /* fwd_button.png in Resources */,
 				ABE9A37A1176B97700C9CA4F /* StudentsList.xib in Resources */,
-				ABE9A48F1178BFDC00C9CA4F /* famousPeople.xml in Resources */,
+				ABE9A4AA1178C2E400C9CA4F /* famousPeople.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
