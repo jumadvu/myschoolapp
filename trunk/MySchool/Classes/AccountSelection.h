@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AccountSelection : UITableViewController {
+@interface AccountSelection : baseViewController <UITableViewDelegate, UITableViewDataSource> {
 	NSArray *accounts;
+	IBOutlet UITableView *tableview;
 }
 
 @property (nonatomic, retain) NSArray *accounts;
+@property (nonatomic, retain) UITableView *tableview;
 
 @end

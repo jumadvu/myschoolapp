@@ -39,8 +39,8 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
 	[self setBackgroundColor];
-	//[delegate.navCon setNavigationBarHidden:NO];
-	//self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+	[self setTopBarTitle:@"My Best Lessons" withLogo:YES backButton:YES];
 
 	[tableView setBackgroundColor:[UIColor clearColor]];
 	
@@ -94,13 +94,18 @@
     
     // Set up the cell...
 	Chapter *chapter = [[[modules objectAtIndex:indexPath.section] chaptersArray] objectAtIndex:indexPath.row];
+	cell.textLabel.font = [UIFont systemFontOfSize:14.0];
 	cell.textLabel.text = [chapter title];
-	cell.detailTextLabel.text = [chapter maxPointsForUsersCompletedLessonsAsString:[delegate.teacher.completedLessons allObjects]];
-    //cell.detailTextLabel.text = @"10pts";
-	if (cell.detailTextLabel.text == nil) {
+	NSString *maxPoints = [chapter maxPointsForUsersCompletedLessonsAsString:[delegate.teacher.completedLessons allObjects]];
+	cell.detailTextLabel.font = [UIFont systemFontOfSize:12.0];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ points", maxPoints];
+
+	//have not yet done this chapter
+	if (maxPoints == nil) {
 		cell.textLabel.font = [UIFont systemFontOfSize:12.0];
 		cell.textLabel.backgroundColor = [UIColor clearColor];
 		cell.textLabel.textColor = [UIColor grayColor];
+		cell.detailTextLabel.text = [NSString stringWithFormat:@"--"];
 	}
 	
 	return cell;
@@ -142,9 +147,9 @@
 	UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
 	label.backgroundColor = [UIColor clearColor];
 	label.textAlignment = UITextAlignmentLeft;
-	label.font = [UIFont boldSystemFontOfSize:17];
+	label.font = [UIFont systemFontOfSize:15];
 	label.frame = CGRectMake(10.0, 10.0, 300.0, 30.0);
-	label.text = [NSString stringWithFormat:@"Module: %@",[[modules objectAtIndex:section] title]];
+	label.text = [NSString stringWithFormat:@"%@",[[modules objectAtIndex:section] title]];
 	[customView addSubview:label];
 	[label release];
 

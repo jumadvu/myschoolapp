@@ -65,11 +65,14 @@
 	
 	//add topbar
 	if (addLogo) {
-		UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
-		UIImageView * logoImageView = [[UIImageView alloc] initWithImage:logoImage];
-		logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-		logoImageView.frame = CGRectMake(250, 0, 70, 30);
-		[self.view addSubview:logoImageView];
+		mainMenuButton = [UIButton buttonWithType:UIButtonTypeCustom]; 
+		UIImage *image = [UIImage imageNamed:@"logo2.png"];
+		mainMenuButton.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height); 
+		mainMenuButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
+		[self.mainMenuButton setBackgroundImage:image forState:UIControlStateNormal];
+		mainMenuButton.frame = CGRectMake(263, 5, 50, 25);
+		[self.mainMenuButton addTarget:self action:@selector(toMainMenu) forControlEvents:UIControlEventTouchUpInside];  
+		[self.view addSubview:mainMenuButton];
 	}
 	
 }

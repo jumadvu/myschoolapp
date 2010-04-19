@@ -14,52 +14,21 @@
 @implementation AccountSelection
 
 @synthesize accounts;
+@synthesize tableview;
 
 - (void)dealloc {
+	[tableview release];
 	[accounts release];
     [super dealloc];
 }
 
-
-
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
-		self.view.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];
-    }
-    return self;
-}
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.tableview.backgroundColor = [UIColor clearColor];
 	
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	[self setBackgroundColor];
+	[self setTopBarTitle:@"Welcome Back!" withLogo:NO backButton:NO];
 }
-
-
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-/*
- - (void)viewDidAppear:(BOOL)animated {
- [super viewDidAppear:animated];
- }
- */
-/*
- - (void)viewWillDisappear:(BOOL)animated {
- [super viewWillDisappear:animated];
- }
- */
-/*
- - (void)viewDidDisappear:(BOOL)animated {
- [super viewDidDisappear:animated];
- }
- */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -97,7 +66,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	User *anAccount = (User*)[accounts objectAtIndex:indexPath.row];
-	cell.imageView.image = [anAccount avatarImage];
+	cell.imageView.image = [anAccount avatarImageWaistUp];
 	
 	cell.textLabel.text = [anAccount fullName];
 	
@@ -115,37 +84,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return 100;
+	return 70;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-	// create the parent view that will hold header Label
-	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 80.0)] autorelease];
-	customView.backgroundColor = [UIColor colorWithRed:.7 green:.85 blue:.85 alpha:1];
-	
-	// create the button object
-	UILabel * headerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-	headerLabel.backgroundColor = [UIColor clearColor];
-	headerLabel.opaque = NO;
-	headerLabel.textColor = [UIColor blackColor];
-	headerLabel.textAlignment = UITextAlignmentCenter;
-	headerLabel.highlightedTextColor = [UIColor whiteColor];
-	headerLabel.font = [UIFont boldSystemFontOfSize:22];
-	headerLabel.frame = CGRectMake(10.0, 20.0, 290.0, 45.0);
-	headerLabel.text = @"Who Are Ya?";
-	
-	[customView addSubview:headerLabel];
-	
-	[headerLabel release];
-	
-	return customView;
-	
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-	return 80;
-}
 
 /*
  // Override to support conditional editing of the table view.

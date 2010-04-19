@@ -17,5 +17,7 @@
 +(NSString*) whichXMLFile:(NSNumber*)gradeLevel;
 +(void)addXMLModule:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc;
 +(NSArray*)fetchModulesFromDBforGrade:(NSNumber*)gradeLevel;
++(void)addBehaviorReports:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc;
++(NSArray*)fetchBehaviorReports:(NSString*)type;
 
 @end

@@ -62,7 +62,7 @@
 		CompletedWorksheet *cWorksheet;
 		for (cWorksheet in [student.worksheets allObjects]) {
 			//add worksheet if not yet graded
-			if ([cWorksheet.grade intValue] == 0) {
+			if ([cWorksheet.grade intValue] == -1) {
 				[completedWorksheets addObject:cWorksheet];
 			}
 		}
@@ -81,4 +81,20 @@
 	
 	return [NSNumber numberWithInt:[self.totalPoints intValue] - [self.pointsSpent intValue]];
 }
+
+-(void) adjustApprovalRating:(NSNumber*)value {
+	if ([value intValue] > 0) {
+		if ([self.rating intValue] < 100) {
+			int newRating = [self.rating intValue]+1;
+			[self setRating:[NSNumber numberWithInt:newRating]];
+		}
+	} else {
+		if ([self.rating intValue] > 3) {
+			int newRating = [self.rating intValue]-3;
+			[self setRating:[NSNumber numberWithInt:newRating]];
+		}
+	}
+
+}
+
 @end

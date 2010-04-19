@@ -8,6 +8,8 @@
 
 #import "StudentPlus.h"
 #import "CompletedWorksheet.h"
+#import "Library.h"
+#import "BehaviorReport.h"
 
 @implementation Student (StudentPlus)
 
@@ -129,9 +131,10 @@
 
 -(BOOL)hasQuestion {
 	//adjusting the size of this number adjusts the frequency at which students raise their arms with questions.
-	int i = arc4random() % 300;
-	if (i%117 == 0 && ![self.armRaised intValue]) {
-		//NSLog(@"has question? yes");
+	int i = arc4random() % 500;
+	NSLog(@"i:%d",i);
+	if (i%417 == 0 && ![self.armRaised intValue]) {
+		NSLog(@"@ has question", self.firstName);
 		[self setArmRaised:[NSNumber numberWithInt:1]];
 		return YES;
 	} else {
@@ -203,5 +206,64 @@
 	
 }
 
+-(void)addPossibleReports {
+	
+	NSLog(@"checking for new behavior reports for %@", [self firstName]);
+	if (self.lastCheckedReports == nil) {
+		self.lastCheckedReports = [NSDate date];
+	}
+	float seconds = [self.lastCheckedReports timeIntervalSinceNow];
+	float days = (-seconds) / 86400;
+	NSLog(@"days: %f", days);
+	
+	//if its been at least a day since we last checked reports.
+	if (days > 1) {
+		//potentially add new behavior reports.  1 in 3 chance.
+		int i = arc4random() % 3;
+		if (i%1 == 0) {
+			//yes add report
+			NSLog(@"%@ add report", self.firstName);
+			int x = arc4random() % 100;
+			if (x < [self.politeness intValue]) {
+				//get positive report
+				NSArray *posReports = [Library fetchBehaviorReports:@"positive"];
+				int y = arc4random() % [posReports count];
+				BehaviorReport *report = [posReports objectAtIndex:y];
+				NSLog(@"report: %@", report.text);
+				[self addReportsObject:report];
+			} else {
+				//get negative report
+				NSArray *negReports = [Library fetchBehaviorReports:@"negative"];
+				int z = arc4random() % [negReports count];
+				BehaviorReport *report = [negReports objectAtIndex:z];
+				NSLog(@"report: %@", report.text);
+				[self addReportsObject:report];
+			}
+		} else {
+			NSLog(@"no report today");
+		}
+
+	} else {
+		NSLog(@"not long enough since last check");
+	}
+
+	//update date last checked
+	self.lastCheckedReports = [NSDate date];
+}
+
+-(void)adjustBehavior:(NSString*)posNeg {
+	if ([posNeg isEqualToString:@"positive"]) {
+		if ([self.politeness intValue] < 99) {
+			int newScore = [self.politeness intValue] + 2;
+			[self setPoliteness:[NSNumber numberWithInt:newScore]];
+		}
+	} else {
+		if ([self.politeness intValue] > 1) {
+			int newScore = [self.politeness intValue] - 2;
+			[self setPoliteness:[NSNumber numberWithInt:newScore]];
+		}
+	}
+
+}
 
 @end

@@ -33,6 +33,7 @@
 
 -(void)goNext {
 	pageNum++;
+	[self setTopBarTitle:[NSString stringWithFormat:@"Instructions %d of 4", pageNum] withLogo:YES backButton:YES];
 	prevButton.hidden = NO;
 	if (pageNum == 2) {
 		continueButton.hidden = NO;
@@ -50,6 +51,7 @@
 
 -(void)goPrevious {
 	pageNum--;
+	[self setTopBarTitle:[NSString stringWithFormat:@"Instructions %d of 4", pageNum] withLogo:YES backButton:YES];
 	continueButton.hidden = NO;
 	if (pageNum == 1) {
 		prevButton.hidden = YES;
@@ -154,6 +156,7 @@
 	prevButton.hidden = YES;
 	pageNum = 1;
 	imageView.contentMode = UIViewContentModeScaleAspectFit;
+	[self setTopBarTitle:[NSString stringWithFormat:@"Instructions %d of 4", pageNum] withLogo:YES backButton:YES];
 
 	[self showPage1];
     [super viewDidLoad];

@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 @class CompletedWorksheet;
 
-@interface GradePaper : UITableViewController <UIAlertViewDelegate> {
+@interface GradePaper : baseViewController <UIAlertViewDelegate, UITableViewDelegate, UITableViewDataSource> {
 	NSArray *answers;
 	NSArray *completedWorksheets;
 	CompletedWorksheet *completedWorksheet;
 	NSMutableArray *answersGradedArray;
 	UILabel *gradeLabel;
 	int currentPaper;
+	IBOutlet UITableView *tableview;
+	BOOL allDone;
 }
 
 @property (nonatomic, retain) NSArray *answers;
@@ -24,6 +26,8 @@
 @property (nonatomic, retain) NSMutableArray *answersGradedArray;
 @property (nonatomic, retain) UILabel *gradeLabel;
 @property (nonatomic) int currentPaper;
+@property (nonatomic, retain) UITableView *tableview;
+@property (nonatomic) BOOL allDone;
 
 -(void)goBackwards:(id)sender;
 -(void)goNext;

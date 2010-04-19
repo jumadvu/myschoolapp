@@ -48,6 +48,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[self setBackgroundColor];
+	[self setTopBarTitle:@"Parent Email" withLogo:NO backButton:NO];
 	[email1 setDelegate:self];
 	[email2 setDelegate:self];
     [super viewDidLoad];

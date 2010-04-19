@@ -21,5 +21,6 @@
 -(void)setImageView:(UIImageView*)basicView forMood:(NSString*)mood isWaving:(BOOL)waving;
 -(NSArray*)completedWorksheetsArray;
 -(NSString*)overallGrade;
-
+-(void)addPossibleReports;
+-(void)adjustBehavior:(NSString*)posNeg;
 @end
