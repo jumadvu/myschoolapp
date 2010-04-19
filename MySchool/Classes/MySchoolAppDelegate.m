@@ -74,12 +74,17 @@
 }
 
 - (void)fetchModuleData {
-	//if there are no modules in the library, add the xml modules
+	//if there are no modules in the library, its the first time through
+	//add the xml modules
 	NSArray *modules = [[NSArray alloc] init];
 	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
 	if ([modules count] == 0) {
+		//add modules
 		[Library addXMLModule:@"dinosaurs" toDatabaseContext:managedObjectContext];
 		[Library addXMLModule:@"sustain" toDatabaseContext:managedObjectContext];
+		//add behavior reports
+		[Library addBehaviorReports:@"behaviorReports" toDatabaseContext:managedObjectContext];
+		
 	}
 	[modules release];
 }
@@ -123,7 +128,7 @@
 				//more than one teacher account. Go to account selection page
 				NSLog(@"Found this many teachers: %d", [mutableFetchResults count]);
 				[self setUsers:mutableFetchResults];
-				AccountSelection *vc = [[[AccountSelection alloc] initWithStyle:UITableViewStylePlain] autorelease];
+				AccountSelection *vc = [[[AccountSelection alloc] initWithNibName:nil bundle:nil] autorelease];
 				[vc setAccounts:users];
 				[navCon pushViewController:vc animated:YES];					 			
 			} else {

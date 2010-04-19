@@ -13,16 +13,24 @@
 
 	Student *student;
 	IBOutlet UITableView *tableView;
-	IBOutlet UILabel *heading;
 	IBOutlet UIImageView *frontView;
-	IBOutlet UILabel *gradeLabel;
+	IBOutlet UIImageView *smartsBox;
+	IBOutlet UILabel *smartsScore;
+	IBOutlet UIImageView *respectBox;
+	IBOutlet UILabel *respectScore;
+	IBOutlet UIImageView *enthusiasmBox;
+	IBOutlet UILabel *enthusiasmScore;
 	
 }
 
 @property (nonatomic, retain) Student *student;
 @property (nonatomic, retain) UITableView *tableView;
-@property (nonatomic, retain) UILabel *heading;
-@property (nonatomic, retain) UILabel *gradeLabel;
 @property (nonatomic, retain) UIImageView *frontView;
+@property (nonatomic, retain)  UIImageView *smartsBox;
+@property (nonatomic, retain)  UILabel *smartsScore;
+@property (nonatomic, retain)  UIImageView *respectBox;
+@property (nonatomic, retain)  UILabel *respectScore;
+@property (nonatomic, retain)  UIImageView *enthusiasmBox;
+@property (nonatomic, retain)  UILabel *enthusiasmScore;
 
 @end

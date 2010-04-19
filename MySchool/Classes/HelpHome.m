@@ -11,6 +11,14 @@
 
 @implementation HelpHome
 
+@synthesize textview;
+
+- (void)dealloc {
+	[textview release];
+    [super dealloc];
+}
+
+
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -25,6 +33,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[self setBackgroundColor];
+	[self setTopBarTitle:@"Help" withLogo:YES backButton:YES];
 
     [super viewDidLoad];
 }
@@ -51,9 +60,6 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

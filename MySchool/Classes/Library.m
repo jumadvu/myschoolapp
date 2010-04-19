@@ -20,6 +20,7 @@
 #import "Worksheet.h"
 #import "WorksheetQuestion.h"
 #import "WorksheetAnswer.h"
+#import "BehaviorReport.h"
 
 @implementation Library
 
@@ -233,6 +234,74 @@
 	}
 
 
+}
+
++(void)addBehaviorReports:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc {
+	NSLog(@"Adding xml module %@", xmlFile);
+	
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:xmlFile fileExtension:@"xml"];
+	TBXMLElement * root = tbxml.rootXMLElement;
+	TBXMLElement * negative = [tbxml childElementNamed:@"negative" parentElement:root];
+	TBXMLElement * report=[tbxml childElementNamed:@"report" parentElement:negative];
+	int count = 0;
+	
+	while (report!=nil){
+		BehaviorReport *reportMO = (BehaviorReport *)[NSEntityDescription insertNewObjectForEntityForName:@"BehaviorReport" inManagedObjectContext:moc];
+		[reportMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:report]]];
+		[reportMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:report]]];
+		[reportMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:report]]];
+		[reportMO setPosNeg:@"negative"];
+		[reportMO setId:[NSNumber numberWithInt:count]];
+		report = [tbxml nextSiblingNamed:@"report" searchFromElement:report];
+		count++;
+	}
+	
+	TBXMLElement * positive = [tbxml childElementNamed:@"positive" parentElement:root];
+	report=[tbxml childElementNamed:@"report" parentElement:positive];
+	
+	while (report!=nil){
+		BehaviorReport *reportMO = (BehaviorReport *)[NSEntityDescription insertNewObjectForEntityForName:@"BehaviorReport" inManagedObjectContext:moc];
+		[reportMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:report]]];
+		[reportMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:report]]];
+		[reportMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:report]]];
+		[reportMO setPosNeg:@"positive"];
+		[reportMO setId:[NSNumber numberWithInt:count]];
+		report = [tbxml nextSiblingNamed:@"report" searchFromElement:report];
+		count++;
+	}
+	
+	//save the managed object
+	NSError *error;
+	if (![moc save:&error]) {
+		NSLog(@"error saving managed object");
+		// Handle the error.
+	}
+	
+}
+
++(NSArray*)fetchBehaviorReports:(NSString*)type {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSLog(@"attempting to fetch positive behavior reports");
+	//fetch data from the sql lite database
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	//finds all users who don't have parents (these are the parents)
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"posNeg like '%@'", type]];
+	[request setPredicate:predicate];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"BehaviorReport" inManagedObjectContext:delegate.managedObjectContext];
+	[request setEntity:entity];
+	
+	//set up the sort orderings
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"id" ascending:YES];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];
+	[sortDescriptors release];
+	[sortDescriptor release];
+	
+	//fetch the data
+	NSError *error;
+	NSMutableArray *mutableFetchResults = [[delegate.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	return (NSArray*)mutableFetchResults;
+	
 }
 
 @end

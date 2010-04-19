@@ -2,7 +2,7 @@
 //  User.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/14/10.
+//  Created by Ashley Kayler on 4/16/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -10,7 +10,6 @@
 
 @class Avatar;
 @class CompletedLesson;
-@class Rating;
 @class StoreItem;
 @class Student;
 @class UserAwards;
@@ -23,13 +22,13 @@
 @property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSNumber * pointsSpent;
+@property (nonatomic, retain) NSNumber * rating;
 @property (nonatomic, retain) NSNumber * gradeLevel;
 @property (nonatomic, retain) NSString * gender;
 @property (nonatomic, retain) NSNumber * totalPoints;
 @property (nonatomic, retain) NSSet* completedLessons;
 @property (nonatomic, retain) Avatar * avatar;
 @property (nonatomic, retain) NSSet* userAwards;
-@property (nonatomic, retain) Rating * ratings;
 @property (nonatomic, retain) NSSet* purchases;
 @property (nonatomic, retain) NSSet* students;
 @property (nonatomic, retain) NSSet* worksheets;

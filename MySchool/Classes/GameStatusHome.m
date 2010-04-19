@@ -83,7 +83,7 @@
 		[self.points setText:[NSString stringWithFormat:@"%d", [delegate.teacher.totalPoints intValue]]];
 	}
 	[self.gradeLevel setText:[NSString stringWithFormat:@"%d", [delegate.teacher.gradeLevel intValue]]];
-	[self.approvalLabel setText:[NSString stringWithFormat:@"75%"]];
+	[self.approvalLabel setText:[NSString stringWithFormat:@"%d%%",[delegate.teacher.rating intValue]]];
 }
 
 /*

@@ -17,6 +17,7 @@
 #import "User.h"
 #import "UserPlus.h"
 #import "CompletedWorksheetPlus.h"
+#import "ScoreAnim.h"
 
 @implementation GradePaper
 
@@ -26,9 +27,12 @@
 @synthesize answersGradedArray;
 @synthesize gradeLabel;
 @synthesize currentPaper; //int
+@synthesize tableview;
+@synthesize allDone;
 
 - (void)dealloc {
 	NSLog(@"grade paper dealloc");
+	[tableview release];
 	[gradeLabel release];
 	[answersGradedArray release];
 	[answers release];
@@ -37,32 +41,30 @@
     [super dealloc];
 }
 
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:UITableViewStylePlain]) {
-		self.view.backgroundColor = [UIColor whiteColor];	
-    }
-    return self;
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	NSLog(@"view did load");
+	NSLog(@"grade paper view did load");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+	[self setTopBarTitle:@"Grade Homework" withLogo:YES backButton:YES];
+
 	//get all the completed worksheets
 	[self setCompletedWorksheets:[delegate.teacher ungradedPapers]];
+
 	//set up first worksheet
 	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:0]];
+
 	//grab the students answers
 	[self setAnswers:[[self.completedWorksheet answers] allObjects]];
+
 	//create an array to hold the yes/no answer for each question
 	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
 	[self setAnswersGradedArray:anArray];
 	
 	//prevent selection of table view cells
-	self.tableView.allowsSelection = NO;
+	self.tableview.allowsSelection = NO;
+	self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
+	
 	currentPaper = 0;
 }
 
@@ -84,21 +86,58 @@
 
 -(void)gradedQuestion:(NSNumber*)row value:(NSNumber*)value{
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		
+	WorksheetAnswer *answer = [self.answers objectAtIndex:[row intValue]];
+
+	NSLog(@"Correctness value: %d", [answer.correctness intValue]);
+
+	NSNumber *gotItRight;
+	if ([value intValue] == 0) {
+		//marked it wrong
+		if ([answer.correctness intValue] > 0) {
+			//oops it was a good answer
+			gotItRight = [NSNumber numberWithInt:0];
+		} else {
+			//thats right, it was the wrong answer
+			gotItRight = [NSNumber numberWithInt:1];
+		}
+	} else {
+		//marked it right
+		if ([answer.correctness intValue] > 0) {
+			//that's right it was a right answer
+			gotItRight = [NSNumber numberWithInt:1];
+		} else {
+			//oops, it was a wrong answer
+			gotItRight = [NSNumber numberWithInt:0];
+		}
+
+	}
+
+	//flash the principal head image
+	ScoreAnim *anim = [[ScoreAnim alloc] showApproval:gotItRight];
+	[self.view addSubview:anim];
+	[anim release];
 	
-	NSLog(@"%d", [row intValue]);
+	//adjust this user's "principal's approval rating"
+	[delegate.teacher adjustApprovalRating:gotItRight];
+	
+
+	//check to see if all the questions have been graded	
 	[self.answersGradedArray replaceObjectAtIndex:[row intValue] withObject:value];
-	BOOL completed = YES;
+	self.allDone = YES;
 	int score = 0;
 	for (int x=0; x<[self.answersGradedArray count]; x++) {
 		if ([[self.answersGradedArray objectAtIndex:x] intValue] == 2) {
 			NSLog(@"not yet graded");
-			completed = NO;
+			self.allDone = NO;
 		} else {
 			NSLog(@"graded");
 			score += [[self.answersGradedArray objectAtIndex:x] intValue];
 		}
 	}
-	if (completed) {
+	
+	//if all questions are graded, then show a dialog box and move on
+	if (self.allDone) {
 		self.completedWorksheet.grade = [NSNumber numberWithInt:score];
 		NSError *error;
 		if (![delegate.managedObjectContext save:&error]) {
@@ -271,23 +310,6 @@
 	return customView;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
-	// create the parent view that will hold header Label
-	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40.0)] autorelease];
-	customView.backgroundColor = [UIColor whiteColor];
-	
-
-	UIButton *backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect]; 
-	backButton.titleLabel.font = [UIFont boldSystemFontOfSize:12.0];
-	[backButton setTitle:@"Back" forState:UIControlStateNormal];
-	backButton.frame = CGRectMake(20, 10, 70.0, 30.0);  
-	[backButton addTarget:self action:@selector(goBackwards:) forControlEvents:UIControlEventTouchUpInside];  
-	[customView addSubview:backButton];
-		
-	return customView;
-}
-
 -(void)goBackwards:(id)sender {
 	NSLog(@"going back");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -318,13 +340,12 @@
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:gradeMessage
 							  message:msg 
-							  delegate:nil 
+							  delegate:self 
 							  cancelButtonTitle:@"OK" 
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
 		//go back to lounge
-		[delegate.navCon popViewControllerAnimated:YES];		
 
 	}
 
@@ -333,23 +354,30 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-	NSLog(@"dismiss alert move on to paper #: %d", currentPaper);
-	[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
-	[self setAnswers:[[completedWorksheet answers] allObjects]];
-	//reset answers graded
-	NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
-	[self setAnswersGradedArray:anArray];
-	[self.tableView reloadData];	
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (currentPaper < [completedWorksheets count]) {
+		//show next paper
+		NSLog(@"dismiss alert move on to paper #: %d", currentPaper);
+		[self setCompletedWorksheet:[completedWorksheets objectAtIndex:currentPaper]];
+		[self setAnswers:[[completedWorksheet answers] allObjects]];
+		//reset answers graded
+		NSMutableArray *anArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:2], [NSNumber numberWithInt:2], [NSNumber numberWithInt:2], nil];
+		[self setAnswersGradedArray:anArray];
+		[self.tableview reloadData];
+		[self.tableview scrollToRowAtIndexPath:0 atScrollPosition:0 animated:YES];
+	} else {
+		NSLog(@"last paper. return to office with paper #%d", currentPaper);
+		//go back to my office view
+		[delegate.navCon popViewControllerAnimated:YES];		
+	}
+
+	
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
 	return 85;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-	return 40;
 }
 
 

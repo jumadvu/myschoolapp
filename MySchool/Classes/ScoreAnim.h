@@ -21,4 +21,6 @@
 @property (nonatomic, retain) NSString *scoreValue;
 -(id)initWithData:(NSString*)labelvalue x:(NSNumber*)xval y:(NSNumber*)yval;
 -(void)drawLabel;
+-(id) showApproval:(NSNumber*)value;
+
 @end

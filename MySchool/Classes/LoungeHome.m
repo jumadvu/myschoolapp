@@ -47,7 +47,7 @@
 		[alert release];
 		
 	} else {
-		GradePaper *vc = [[[GradePaper alloc] initWithStyle:UITableViewStylePlain] autorelease];
+		GradePaper *vc = [[[GradePaper alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];
 	}
 

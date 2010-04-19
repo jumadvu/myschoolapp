@@ -37,6 +37,7 @@
 
 - (void)viewDidLoad {
 	[self setBackgroundColor];
+	[self setTopBarTitle:@"Design Your Avatar" withLogo:NO backButton:NO];
 
 	NSArray *array = [[NSArray alloc] initWithObjects:@"TeacherFBody.png", @"TeacherMBody.png", nil];
 	[self setAvatarImages:array];

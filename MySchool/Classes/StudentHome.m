@@ -14,19 +14,29 @@
 #import "Worksheet.h"
 #import "Lecture.h"
 #import "CompletedWorksheetPlus.h"
+#import "StudentGrades.h"
+#import "StudentReports.h"
 
 @implementation StudentHome
 
 @synthesize student;
 @synthesize tableView;
-@synthesize heading;
-@synthesize gradeLabel;
 @synthesize frontView;
+@synthesize smartsBox;
+@synthesize smartsScore;
+@synthesize respectBox;
+@synthesize respectScore;
+@synthesize enthusiasmBox;
+@synthesize enthusiasmScore;
 
 - (void)dealloc {
-	[gradeLabel release];
+	[smartsScore release];
+	[smartsBox release];
+	[respectScore release];
+	[respectBox release];
+	[enthusiasmBox release];
+	[enthusiasmScore release];
 	[frontView release];
-	[heading release];
 	[tableView release];
 	[student release];
     [super dealloc];
@@ -34,22 +44,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	frontView.contentMode = UIViewContentModeScaleAspectFit;
-	frontView.image = [student frontView];
+	//frontView.contentMode = UIViewContentModeScaleAspectFit;
+	//frontView.image = [student frontView];
 	tableView.backgroundColor = [UIColor clearColor];
-	heading.text = [self.student firstName];
-	gradeLabel.text = [NSString stringWithFormat:@"Overall Grade: %@",[self.student overallGrade]];
 	
-	[self setTopBarTitle:[NSString stringWithFormat:@"%@'s Report Card",[self.student firstName]] withLogo:YES backButton:YES];
+	[self setTopBarTitle:[self.student firstName] withLogo:YES backButton:YES];
+	
+	[self.student setImageView:frontView forMood:@"Happy" isWaving:NO];
+	
 
 }
-
 
 - (void)viewDidAppear:(BOOL)animated {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
     [super viewDidAppear:animated];
 	//[self.tableView reloadData];
+	
+	//set personality scores
+	self.smartsScore.text = [[self.student intelligence] stringValue];
+	self.respectScore.text = [[self.student politeness] stringValue];
+	self.enthusiasmScore.text = [[self.student friendliness] stringValue];
+	
+	//move personality score labels into position
+	self.smartsScore.center = CGPointMake(115+(1.78*[[self.student intelligence] intValue]), self.smartsScore.center.y);
+	self.respectScore.center = CGPointMake(115+(1.78*[[self.student politeness] intValue]), self.respectScore.center.y);
+	self.enthusiasmScore.center = CGPointMake(115+(1.78*[[self.student friendliness] intValue]), self.enthusiasmScore.center.y);
+	
+	//move personality scores boxes into position
+	self.smartsBox.center = CGPointMake(115+(1.78*[[self.student intelligence] intValue]), self.smartsBox.center.y);
+	self.respectBox.center = CGPointMake(115+(1.78*[[self.student politeness] intValue]), self.respectBox.center.y);
+	self.enthusiasmBox.center = CGPointMake(115+(1.78*[[self.student friendliness] intValue]), self.enthusiasmBox.center.y);
+
 }
 
 - (void)viewDidUnload {
@@ -70,12 +96,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
-	//student worksheets
-	if ([[student.worksheets allObjects] count] > 0) {
-		return [[student completedWorksheetsArray] count];
-	} else {
-		return 0;
-	}
+	return 2;
+
 }
 
 
@@ -89,41 +111,37 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
 	//	[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }
-    CompletedWorksheet *cWorksheet = [[student completedWorksheetsArray] objectAtIndex:indexPath.row];
-    // Set up the cell...
 	cell.textLabel.font = [UIFont systemFontOfSize:13];
-	cell.textLabel.text = [NSString stringWithFormat:cWorksheet.worksheet.lecture.title];
 	cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
-	cell.detailTextLabel.text = [cWorksheet letterGrade];
+	if (indexPath.row == 0) {
+		//grades row
+		cell.textLabel.text = [NSString stringWithFormat:@"%@'s Grades", [student firstName]];
+		//cell.detailTextLabel.text = [NSString stringWithFormat:@"Average: %@",[self.student overallGrade]];		
+	} else {
+		//behaviors row
+		cell.textLabel.text = [NSString stringWithFormat:@"%@'s Behavior Reports", [student firstName]];
+		//cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[self.student overallGrade]];		
+	}
+
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-	return 40;
-}
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	//do we want to show the completed worksheet?
-}
+- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	//
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (indexPath.row == 0) {
+		StudentGrades *vc = [[[StudentGrades alloc] initWithNibName:nil bundle:nil] autorelease];
+		vc.student = self.student;
+		[delegate.navCon pushViewController:vc animated:YES];
+	} else {
+		StudentReports *vc = [[[StudentReports alloc] initWithNibName:nil bundle:nil] autorelease];
+		vc.student = self.student;
+		[delegate.navCon pushViewController:vc animated:YES];
+	}
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-	// create the parent view that will hold header Label
-	UIView* customView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 40)] autorelease];
-	customView.backgroundColor = [UIColor clearColor];
-		
-	// create the heading label object
-	UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
-	label.backgroundColor = [UIColor clearColor];
-	label.textAlignment = UITextAlignmentCenter;
-	label.font = [UIFont systemFontOfSize:15];
-	label.frame = CGRectMake(10.0, 10.0, 280.0, 30.0);
-	label.text = @"Worksheets";
-	[customView addSubview:label];
-	[label release];
+	[aTableView deselectRowAtIndexPath:indexPath animated:YES];
 	
-	return customView;
 }
 
 

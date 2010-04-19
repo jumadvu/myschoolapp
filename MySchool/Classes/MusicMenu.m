@@ -23,12 +23,13 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self setTopBarTitle:@"Piano" withLogo:YES backButton:YES];
 }
-*/
+
 
 -(void) gotoLevel1 {
 	MusicIntro *vc = [[[MusicIntro alloc] initWithNibName:nil bundle:nil] autorelease];

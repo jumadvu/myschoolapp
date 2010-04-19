@@ -27,7 +27,7 @@
     [super viewDidLoad];
 	self.tableview.rowHeight = 80;
 
-	[self setTopBarTitle:@"Gradebook" withLogo:YES backButton:YES];
+	[self setTopBarTitle:@"My Students" withLogo:YES backButton:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

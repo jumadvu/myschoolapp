@@ -13,6 +13,7 @@
 #import "StoreHomeCell.h"
 #import "MySchoolAppDelegate.h"
 #import "User.h"
+#import "UserPlus.h"
 
 @implementation StoreHome
 
@@ -50,7 +51,7 @@
 	[self setStoreItems:[StoreItem storeItemsArray]];
 	tableView.backgroundColor = [UIColor clearColor];
 	tableView.rowHeight = 100;
-	pointsLabel.text = [delegate.teacher.totalPoints stringValue];
+	pointsLabel.text = [[delegate.teacher pointsAvailable] stringValue];
 
 }
 
@@ -86,7 +87,7 @@
 	
 	//if the item costs more than the user has points gray it out.
 	UIColor* myColor;
-	if ([[storeItem cost] intValue] > [delegate.teacher.totalPoints intValue]) {
+	if ([[storeItem cost] intValue] > [[delegate.teacher pointsAvailable] intValue]) {
 		//can't afford it
 		//myColor = [UIColor grayColor];
 		cell.contentView.alpha = .3;
@@ -139,7 +140,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	StoreItem *storeItem = [storeItems objectAtIndex:indexPath.row];
-	if ([[storeItem cost] intValue] > [delegate.teacher.totalPoints intValue]) {
+	if ([[storeItem cost] intValue] > [[delegate.teacher pointsAvailable] intValue]) {
 		//can't afford it
 		NSString *msg = [NSString stringWithFormat:@"You don't have enough teaching points to purchase this item.  You can earn more teaching points by teaching more lessons!"];
 		UIAlertView *alert = [[UIAlertView alloc] 
@@ -152,8 +153,8 @@
 		[alert release];
 	} else {
 		//can afford it
-		delegate.teacher.totalPoints = [NSNumber numberWithInt:[delegate.teacher.totalPoints intValue] - [[storeItem cost] intValue]];
-		[self.pointsLabel setText:[delegate.teacher.totalPoints stringValue]];
+		delegate.teacher.pointsSpent = [NSNumber numberWithInt:[delegate.teacher.pointsSpent intValue] + [[storeItem cost] intValue]];
+		[self.pointsLabel setText:[[delegate.teacher pointsAvailable] stringValue]];
 		[delegate.teacher addPurchasesObject:storeItem];
 		NSString *msg = [NSString stringWithFormat:@"You can see your new %@ in your classroom!", [storeItem title]];
 		UIAlertView *alert = [[UIAlertView alloc] 
@@ -165,6 +166,14 @@
 		[alert show];
 		[alert release];
 		[self.tableView reloadData];
+		
+		//save the managed object
+		NSError *error;
+		if (![delegate.managedObjectContext save:&error]) {
+			NSLog(@"error saving managed object");
+			// Handle the error.
+		}
+		
 	}
 	
 }

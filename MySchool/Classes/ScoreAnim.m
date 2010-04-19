@@ -49,30 +49,53 @@
 	[UIView commitAnimations];
     return self;
 }
+
+-(id) showApproval:(NSNumber*)value {
+	NSLog(@"show approval");
+
+	//create UIView
+    CGRect frame = CGRectMake(100,50,100,100);
+	if ((self = [self initWithFrame:frame])) {
+    }
+	[self setBackgroundColor:[UIColor clearColor]];
+
+	//create imageview
+	UIImage *image;
+	UIImageView *imageView;
+	if ([value intValue]>0) {
+		image = [UIImage imageNamed:@"PrincipalHappy.png"];
+	} else {
+		image = [UIImage imageNamed:@"PrincipalSad.png"];
+	}
+	imageView = [[UIImageView alloc] initWithImage:image];
+	imageView.contentMode = UIViewContentModeScaleToFill;
+	
+	//add view to uiview
+	[self addSubview:imageView];
+	
+	//create animation
+	imageView.alpha = 1;
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+	[UIView setAnimationDuration:2.5];
+	[UIView setAnimationDelegate:self];
+	imageView.alpha = 0;
+	[UIView commitAnimations];
+	
+    return self;
+	
+}
+
 -(void)drawRect:(CGRect)rect {
 	// Your stuff goes here
 	[super drawRect: rect];
 }
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)drawLabel {
 
 }
 
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.

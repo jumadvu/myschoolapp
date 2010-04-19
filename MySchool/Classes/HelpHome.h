@@ -10,7 +10,9 @@
 
 
 @interface HelpHome : baseViewController {
-
+	IBOutlet UITextView *textview;
 }
+
+@property (nonatomic, retain) UITextView *textview;
 
 @end

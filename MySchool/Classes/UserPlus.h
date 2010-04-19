@@ -18,5 +18,6 @@
 -(NSString*)title;
 -(NSArray*)ungradedPapers;
 -(NSNumber*)pointsAvailable;
+-(void) adjustApprovalRating:(NSNumber*)value;
 
 @end
