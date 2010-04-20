@@ -49,7 +49,7 @@
 		<report>
 			<text>studentname climbed the fence and left the school grounds to retrieve a soccer ball during lunch recess today.</text>
 			<correct>I must go over the school safety rules with studentname to ensure studentname's safety while at school.</correct>
-			<wrong>I must tell studentname that they should have asked me first before going to retrieve the soccer ball.</wrong>
+			<wrong>I must tell studentname that I like climbing fences too and next time we can to do together.</wrong>
 		</report>
 		<report>
 			<text>studentname was using her cell phone during class today.</text>
@@ -69,15 +69,15 @@
 		<report>
 			<text>studentname said a curse word during recess while playing handball.</text>
 			<correct>I must explain to studentname that bad words are not allowed in MySchool and can hurt people's feelings.</correct>
-			<wrong>I must explain to studentname that bad words should be used carefully.</wrong>
+			<wrong>I must explain to studentname that bad words should be used only when the other kid deserves it.</wrong>
 		</report>
 		<report>
-			<text>studentname brought a whoopee cushion to school today and put it on his friend's chair as she was about to sit down.</text>
-			<correct>I must explain to studentname that pranks that embarrass your fellow classmates can be hurtful and should not be done.</correct>
+			<text>studentname brought a whoopee cushion to school today and put it on Taylor's chair as she was about to sit down.</text>
+			<correct>I must explain to studentname that pranks that embarrass fellow classmates can be hurtful and should not be done.</correct>
 			<wrong>I must tell studentname that I used to pull such pranks as a kid too!</wrong>
 		</report>
 		<report>
-			<text>studentname became very upset when studentname lost a game of handball against Suzy and threw the ball across the school field.</text>
+			<text>studentname became very upset when he/she lost a game of handball against Suzy and threw the ball across the school field.</text>
 			<correct>I must explain to studentname that it is important to learn sportsmanship and how to lose gracefully.</correct>
 			<wrong>I must tell studentname that if some famous athletes throw tantrums, they can throw tantrums too!</wrong>
 		</report>
@@ -111,7 +111,7 @@
 		<report>
 			<text>studentname tutored Lena on some math problems today after school.</text>
 			<correct>I should tell studentname that helping a friend learn helps you learn better too!</correct>
-			<wrong>I should tell studentname that next time studentname should charge Lena for tutoring services.</correct>
+			<wrong>I should tell studentname that next time studentname should charge Lena for tutoring services.</wrong>
 		</report>
 		<report>
 			<text>studentname showed great honesty today when she turned in a twenty dollar bill that she found in the yard to the office.</text>
@@ -125,7 +125,7 @@
 		</report>
 		<report>
 			<text>studentname was runner up in the spelling bee last week, but was very quick to congratulate the winner.</text>
-			<correct>I should tell studentname that displaying sportsmanship makes him a more respected person.</correct>
+			<correct>I should tell studentname that displaying sportsmanship makes him/her a more respected person.</correct>
 			<wrong>I should tell studentname that sometimes it's ok to be upset and throw tantrums when you lose.</wrong>
 		</report>
 		<report>
@@ -144,7 +144,7 @@
 			<wrong>I should tell studentname that volunteering is only important in order to get into good colleges.</wrong>
 		</report>
 		<report>
-			<text>studentname and a friend came in to the office at lunch and helped us stuff envelopes for our fall PTA fundraising drive.</text>
+			<text>studentname and a friend came in to the office at lunch and helped stuff envelopes for the fall PTA fundraising drive.</text>
 			<correct>I should tell studentname that taking time out of the day to help with school events is incredibly appreciated.</correct>
 			<wrong>I should question studentname's motives for wanting to help.</wrong>
 		</report>
@@ -159,7 +159,7 @@
 			<wrong>I should tell studentname that it's ok to cut in line only when no one is watching.</wrong>
 		</report>
 		<report>
-			<text>studentname put all the art supplies where they came from after using it.</text>
+			<text>studentname put the art supplies back where they came from in the art cabinet after using them.</text>
 			<correct>I should tell studentname that cleaning up after yourself is important and studentname's actions are exemplary.</correct>
 			<wrong>I should tell studentname that cleaning up is only important when the teacher is watching.</wrong>
 		</report>
