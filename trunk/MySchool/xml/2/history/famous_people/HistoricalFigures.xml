@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<myschool>
+    <module>
+	    <title>Famous People</title>
+	    <superSubject>History</superSubject>
+	    <gradeLevel>2</gradeLevel>
+	    <chapter>
+		    <title>Martin Luther King, Jr.</title>
+		    <article>
+                <text>Dr Martin Luther King, Junior was a famous American who fought for human rights. He was born in Atlanta, Georgia on January 15th 1929. His father, Martin Luther King Sr., was also a civil rights leader. He became a Baptist minister. He worked hard to make people understand that black people should 'always' be treated equally to white people. He gave speeches and led rallies to encourage African Americans to protest without the need for violence. One peaceful strategy was for African Americans to have sit-ins, where they would sit in a restaurant seat that was supposed to be only for white people, politely ask for some food, and refuse to leave until someone gave them food. He first began to be well-known in 1955 when he led a protest against the way black people were segregated on buses. At that time they had to sit at the back of the bus, separate from white people. He soon became world famous when he told his supporters, and the people who were against equal rights, that only peaceful ways should be used to solve the problem. In 1964 black people finally were allowed to vote in elections. In this year he was given the Nobel Peace Prize. After this he continued to work with many others to fight against poverty and the Vietnam War. In 1986, the United States created a national holiday, commonly known as 'Martin Luther King Day', in his honor. It is celebrated on the third Monday of the month of January; around the time of his birthday. The holiday was created because people had campaigned (called for) this to happen. King said to his mother he would turn this world upside down, and he followed through with that promise. On the evening of April 4, 1968, while standing on the balcony of his motel room in Memphis, Tennessee, where he was preparing to lead a protest march in sympathy with striking garbage workers of that city, he was assassinated.
+
+After graduating from college in 1948, he was not sure about which profession to join. He considered a career in medicine and law but rejected both and joined the Baptist Church. He studied at a Theological Seminary in Pennsylvania. It was while studying here that King learned about the non-violent methods used by Mahatma Gandhi against the British in India. King was convinced that such methods would be of great value to the civil rights movement. He was appointed the president of the Montgomery Improvement Association, which was created during the boycott, and he became a prominent leader of the boycott. 
+
+King was arrested for starting a boycott and fined $500 with $500 costs. His house was fire-bombed and others involved with MIA were also intimidated - but by the end of 1956, segregation had been lifted in Montgomery and bus integration had been introduced. Another result of the boycott was the establishment of the Southern Christian Leadership Conference (SCLC). This organization was committed to the use of non-violence and its motto was 'Not one hair of one head of one person should be harmed.' Martin Luther King was elected its president. 
+
+The march - officially the March on Washington for Jobs and Freedom - was a major success. Held on August 28th, 1963. The final speaker was Martin Luther King and it was here that he made his legendary 'I have a Dream' speech which was heard throughout the world and did a huge amount to publicize the civil rights movement in America across the world.
+
+King then moved on to a bill that would guarantee the voting rights of the black community in America. This led to the 1965 Voting Rights Act.
+</text>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+		</article>
+		<lecture>
+			<title>Martin Luther King, Jr.</title>
+			<text>lecture text</text>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+	</chapter>
+	<chapter>
+		<title>Andrew Jackson</title>
+		<article>
+            <text>Andrew Jackson, born in March 15, 1767 was a hero in the War of 1812. He became the seventh President of the United States of America. He was the first United States Democratic Party Democrat and is on the Twenty Dollar Bill. He is famous for forcing Native Americans to move west in the Trail of Tears. He opposed the Bank of the United States.He is one of Bill Clinton's favorite historical figures.
+
+
+</text>
+
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+		</article>
+		<lecture>
+			<title>Andrew Jackson</title>
+			<text>lecture text</text>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+	</chapter>
+	<chapter>
+		<title>Marie Curie</title>
+		<article>
+            <text>Marie Curie (7 November 1867 to 4 July 1934) was a physicist and chemist from Poland but lived in France. She was an expert in the field of radioactivity and the only person to get the Nobel Prize in two different sciences. She was the first woman professor at the University of Paris. She was born under the name Maria Sklodowska in Warsaw, Poland, and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and did her important scientific work. She founded the Curie Institutes in Paris and Warsaw. Her husband Pierre Curie also won a Nobel Prize, and so did her daughter Irene Joliot-Curie and son-in-law Frederic Joliot-Curie. 
+                Her achievements include the creation of a theory of 'radioactivity' (a term coined by her and Pierre), techniques for separate radioactive isotopes, and she discovered two new elements, radium and polonium. It was also under her own direction that the world's first studies were used into the treatment of cancers, using the radioactive isotopes. While being a French citizen, she never lost her Polish identity. She named the first new [chemical element] that she discovered (1898) 'polonium' after her home country, Poland, and in 1932 she founded a Radium Institute in her home town Warsaw, run by her physician-sister Bronislawa.
+</text>
+
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>image.jpg</file><desc>description</desc></image>
+		</article>
+		<lecture>
+			<title>Marie Curie</title>
+			<text>lecture text</text>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>question</text>
+			<answer correctness="5">text</answer>
+			<answer correctness="0">text</answer>
+			<answer correctness="0">text</answer>
+		</worksheetQuestion>
+	</chapter>
+</module>
+</myschool>
+</xml>
