@@ -13,7 +13,7 @@
 #import "ModuleHome.h"
 #import "ModulePlus.h"
 #import "MusicMenu.h"
-#import "DayinHistory.h"
+#import "Color.h"
 
 
 @implementation LibraryShelves
@@ -167,7 +167,7 @@
 		[delegate.navCon pushViewController:vc animated:YES];		
 	} else 	if ([button.titleLabel.text isEqualToString:@"Today in History"]) {
 		//go to music area
-		DayinHistory *vc = [[[DayinHistory alloc] initWithNibName:nil bundle:nil] autorelease];
+		Color *vc = [[[Color alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];		
 	} else {
 		@try {
