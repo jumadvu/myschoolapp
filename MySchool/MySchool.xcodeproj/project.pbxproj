@@ -1918,11 +1918,8 @@
 				AB408043117BE52F0002C1B2 /* Student.m in Sources */,
 				ABD56A8A117CB0B1001AB41D /* BehaviorReportPlus.m in Sources */,
 				ABD56AB9117CC2F3001AB41D /* HandleReport.m in Sources */,
-<<<<<<< .mine
 				ABD56F39117EC7B7001AB41D /* HelpCell.m in Sources */,
-=======
 				F583375A117E49CA0077F1C8 /* Color.m in Sources */,
->>>>>>> .r268
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
