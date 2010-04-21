@@ -159,7 +159,7 @@
 	label.font = [UIFont systemFontOfSize:13];
 	label.frame = CGRectMake(10.0, 10.0, 280.0, 30.0);
 	if ([student.reports count] == 0) {
-		label.text = @"No behavior reports today.";
+		label.text = @"No unread behavior reports.";
 	} else {
 		label.text = @"Click report to handle it.";
 	}
