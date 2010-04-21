@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface HelpHome : baseViewController {
-	IBOutlet UITextView *textview;
+@interface HelpHome : baseViewController <UITableViewDelegate, UITableViewDataSource> {
+	IBOutlet UITableView *tableview;
+	NSArray *helpitems;
 }
 
-@property (nonatomic, retain) UITextView *textview;
+@property (nonatomic, retain) UITableView *tableview;
+@property (nonatomic, retain) NSArray *helpitems;
 
 @end

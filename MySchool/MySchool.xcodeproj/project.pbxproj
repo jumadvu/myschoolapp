@@ -267,6 +267,7 @@
 		ABD56AB9117CC2F3001AB41D /* HandleReport.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD56AB7117CC2F3001AB41D /* HandleReport.m */; };
 		ABD56ABA117CC2F3001AB41D /* HandleReport.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD56AB8117CC2F3001AB41D /* HandleReport.xib */; };
 		ABD56B2C117CD5B3001AB41D /* bluebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD56B2B117CD5B3001AB41D /* bluebutton.png */; };
+		ABD56F39117EC7B7001AB41D /* HelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD56F38117EC7B7001AB41D /* HelpCell.m */; };
 		ABE9A0D911754DE200C9CA4F /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A0D811754DE200C9CA4F /* calendar.png */; };
 		ABE9A12F1175980E00C9CA4F /* behaviorReports.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */; };
 		ABE9A1A21175AE4400C9CA4F /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A18C1175AE4400C9CA4F /* Article.m */; };
@@ -668,6 +669,8 @@
 		ABD56AB7117CC2F3001AB41D /* HandleReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleReport.m; sourceTree = "<group>"; };
 		ABD56AB8117CC2F3001AB41D /* HandleReport.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandleReport.xib; sourceTree = "<group>"; };
 		ABD56B2B117CD5B3001AB41D /* bluebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebutton.png; sourceTree = "<group>"; };
+		ABD56F37117EC7B7001AB41D /* HelpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpCell.h; sourceTree = "<group>"; };
+		ABD56F38117EC7B7001AB41D /* HelpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCell.m; sourceTree = "<group>"; };
 		ABE9A0D811754DE200C9CA4F /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = images/store_items/calendar.png; sourceTree = SOURCE_ROOT; };
 		ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = behaviorReports.xml; sourceTree = "<group>"; };
 		ABE9A18B1175AE4400C9CA4F /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
@@ -981,6 +984,8 @@
 				AB07F1DC110966CD00204AFE /* HelpHome.h */,
 				AB07F1DD110966CD00204AFE /* HelpHome.m */,
 				AB07F1DE110966CD00204AFE /* HelpHome.xib */,
+				ABD56F37117EC7B7001AB41D /* HelpCell.h */,
+				ABD56F38117EC7B7001AB41D /* HelpCell.m */,
 			);
 			name = Help;
 			sourceTree = "<group>";
@@ -1913,7 +1918,11 @@
 				AB408043117BE52F0002C1B2 /* Student.m in Sources */,
 				ABD56A8A117CB0B1001AB41D /* BehaviorReportPlus.m in Sources */,
 				ABD56AB9117CC2F3001AB41D /* HandleReport.m in Sources */,
+<<<<<<< .mine
+				ABD56F39117EC7B7001AB41D /* HelpCell.m in Sources */,
+=======
 				F583375A117E49CA0077F1C8 /* Color.m in Sources */,
+>>>>>>> .r268
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

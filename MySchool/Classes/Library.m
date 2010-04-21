@@ -304,4 +304,26 @@
 	
 }
 
++(NSArray*)getHelp {
+	NSLog(@"get help");
+	
+	NSMutableArray *helpArray = [[[NSMutableArray alloc] init] autorelease];
+	
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"help" fileExtension:@"xml"];
+	TBXMLElement * root = tbxml.rootXMLElement;
+	TBXMLElement * help = [tbxml childElementNamed:@"help" parentElement:root];
+	TBXMLElement * issue=[tbxml childElementNamed:@"issue" parentElement:help];
+	int count = 0;
+	
+	while (issue!=nil){
+		NSArray *helpBit = [[NSArray alloc] initWithObjects:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:issue]],[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:issue]], nil];
+
+		[helpArray addObject:helpBit];
+		issue = [tbxml nextSiblingNamed:@"issue" searchFromElement:issue];
+		count++;
+	}
+	
+	return (NSArray*)helpArray;	
+}
+
 @end
