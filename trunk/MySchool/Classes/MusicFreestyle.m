@@ -58,20 +58,6 @@
     [super dealloc];
 }
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-
-
-
-
 //set up the draggable notes
 - (void)setUpNotes {
 	// wholenote
@@ -85,24 +71,24 @@
 	
 	MusicNote *hNote = [[MusicNote alloc] init];
 	[hNote setNoteType:[NSNumber numberWithFloat:.5] atHeight:[NSNumber numberWithInt:1000]];
-	hNote.center = CGPointMake(180, 60);
-	hNote.startingPoint = CGPointMake(180, 60);
+	hNote.center = CGPointMake(200, 60);
+	hNote.startingPoint = CGPointMake(200, 60);
 	[self setHalfNote:hNote];
 	[hNote release];
 	[self.view insertSubview:halfNote belowSubview:feedback];
 	
 	MusicNote *qNote = [[MusicNote alloc] init];
 	[qNote setNoteType:[NSNumber numberWithFloat:.25] atHeight:[NSNumber numberWithInt:1000]];
-	qNote.center = CGPointMake(220, 60);
-	qNote.startingPoint = CGPointMake(220, 60);
+	qNote.center = CGPointMake(260, 60);
+	qNote.startingPoint = CGPointMake(260, 60);
 	[self setQuarterNote:qNote];
 	[qNote release];
 	[self.view insertSubview:quarterNote belowSubview:feedback];
 	
 	MusicNote *eNote = [[MusicNote alloc] init];
 	[eNote setNoteType:[NSNumber numberWithFloat:.125] atHeight:[NSNumber numberWithInt:1000]];
-	eNote.center = CGPointMake(260, 60);
-	eNote.startingPoint = CGPointMake(260, 60);
+	eNote.center = CGPointMake(320, 60);
+	eNote.startingPoint = CGPointMake(320, 60);
 	[self setEighthNote:eNote];
 	[eNote release];
 	[self.view insertSubview:eighthNote belowSubview:feedback];
@@ -111,6 +97,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	NSLog(@"music - view did load start");
     [super viewDidLoad];
 	[[UIApplication sharedApplication] setStatusBarHidden:YES animated:NO];         
 	if (self.interfaceOrientation == UIInterfaceOrientationPortrait) {      
@@ -152,8 +139,8 @@
 	pieView = [[Pie alloc] init];
 	pieView.center = CGPointMake(45, 276);
 	[self.view addSubview:pieView];
-	//[self.view insertSubview:pieView belowSubview:pie];
-	
+
+	NSLog(@"music - view did load end");
 }
 
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
@@ -162,7 +149,7 @@
 	//NSLog(@"x:%f  y:%f", location.x, location.y);
 	if ([self draggedNote] != nil) {
 		CGPoint location = [touch locationInView:self.view];
-		draggedNote.center = CGPointMake(location.x -25, location.y);		
+		draggedNote.center = CGPointMake(location.x -40, location.y);		
 		return;
 	}
 }

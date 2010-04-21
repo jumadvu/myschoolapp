@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<myschool>
+	<interruption type="respect">May I go to the bathroom?</interruption>
+	<interruption type="respect">Can I get some water?</interruption>
+	<interruption type="respect">What's that thing in the sky out the window?</interruption>
+	<interruption type="respect">She touched me</interruption>
+	<interruption type="sociability"></interruption>
+</myschool>

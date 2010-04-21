@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class MusicFreestyle;
 
 @interface MusicIntro : baseViewController {
 	NSString *level;
@@ -37,5 +37,7 @@
 -(void)showPage2;
 -(void)showPage3;
 -(void)showPage4;
+- (void)loadGame;
+- (void)startGame:(MusicFreestyle*)vc;
 
 @end

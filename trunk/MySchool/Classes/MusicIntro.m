@@ -31,6 +31,16 @@
     [super dealloc];
 }
 
+- (void)viewDidLoad {
+	prevButton.hidden = YES;
+	pageNum = 1;
+	imageView.contentMode = UIViewContentModeScaleAspectFit;
+	[self setTopBarTitle:[NSString stringWithFormat:@"Instructions %d of 4", pageNum] withLogo:YES backButton:YES];
+	
+	[self showPage1];
+    [super viewDidLoad];
+}
+
 -(void)goNext {
 	pageNum++;
 	[self setTopBarTitle:[NSString stringWithFormat:@"Instructions %d of 4", pageNum] withLogo:YES backButton:YES];
@@ -134,42 +144,39 @@
 
 
 -(void)toGame {
-	MusicFreestyle *vc = [[[MusicFreestyle alloc] initWithNibName:nil bundle:nil] autorelease];
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
-
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+	//hide interface
+	instructions.textAlignment = UITextAlignmentCenter;
+	instructions.center = CGPointMake(160, 200);
+	instructions.text = @"Loading music game...";
+	imageView.hidden = YES;
+	skipToGameButton.hidden = YES;
 	prevButton.hidden = YES;
-	pageNum = 1;
-	imageView.contentMode = UIViewContentModeScaleAspectFit;
-	[self setTopBarTitle:[NSString stringWithFormat:@"Instructions %d of 4", pageNum] withLogo:YES backButton:YES];
+	continueButton.hidden = YES;
+	
+	//show loading animation
+	UIActivityIndicatorView *loadingIcon = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	loadingIcon.center = CGPointMake(160, 240);
+	[loadingIcon startAnimating];
+	[self.view addSubview:loadingIcon];
+	[loadingIcon release];
+	
+	//load music game
+	[NSThread detachNewThreadSelector:@selector(loadGame) toTarget:self withObject:nil];
 
-	[self showPage1];
-    [super viewDidLoad];
 }
 
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (void)loadGame {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	MusicFreestyle *vc = [[[MusicFreestyle alloc] initWithNibName:nil bundle:nil] autorelease];
+	[self performSelectorOnMainThread:@selector(startGame:) withObject:vc waitUntilDone:YES];
+	[pool release];
 }
-*/
+
+- (void)startGame:(MusicFreestyle*)vc {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];	
+
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

@@ -86,6 +86,11 @@
 			<correct>I should tell studentname that respecting the line is important and everyone will get their turn.</correct>
 			<wrong>I should tell studentname that sometimes I cut in line at the movie theater so sometimes it's ok.</wrong>
 		</report>
+		<report>
+			<text>studentname hit Jose with a pencil.</text>
+			<correct>I should tell studentname to see a teacher when they are upset with a classmate.</correct>
+			<wrong>I should tell studentname that if you hit someone with a pencil, be sure to use the eraser end.</wrong>
+		</report>
 	</negative>
 	<positive>
 		<report>
@@ -116,7 +121,7 @@
 		<report>
 			<text>studentname showed great honesty today when she turned in a twenty dollar bill that she found in the yard to the office.</text>
 			<correct>I should tell studentname that being honest pays off.</correct>
-			<wrong>I should tell studentname finders keepers!</wrong>
+			<wrong>I should tell studentname finders keepers, losers weepers!</wrong>
 		</report>
 		<report>
 			<text>studentname won the school four square tournament last Friday. But he didn't brag about it, and showed great humility in accepting the prize.</text>
@@ -162,6 +167,11 @@
 			<text>studentname put the art supplies back where they came from in the art cabinet after using them.</text>
 			<correct>I should tell studentname that cleaning up after yourself is important and studentname's actions are exemplary.</correct>
 			<wrong>I should tell studentname that cleaning up is only important when the teacher is watching.</wrong>
+		</report>
+		<report>
+			<text>studentname took care of the school chickens all week without having to be reminded.</text>
+			<correct>I should thank her by giving her some of the chicken's eggs to take home.</correct>
+			<wrong>I should pay her $10 and make it her job.</wrong>
 		</report>
 	</positive>
 </myschool>
