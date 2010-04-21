@@ -239,8 +239,8 @@
 		ABAD47D611723E3400C33FCA /* desk.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47D311723E3400C33FCA /* desk.png */; };
 		ABAD47D711723E3400C33FCA /* gradebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47D411723E3400C33FCA /* gradebook.png */; };
 		ABAD47D811723E3400C33FCA /* homeworkstack.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47D511723E3400C33FCA /* homeworkstack.png */; };
-		ABAD47F311723EA900C33FCA /* Atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47DE11723EA900C33FCA /* Atmosphere.jpg */; };
-		ABAD47F411723EA900C33FCA /* deforestation.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47DF11723EA900C33FCA /* deforestation.JPG */; };
+		ABAD47F311723EA900C33FCA /* atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47DE11723EA900C33FCA /* atmosphere.jpg */; };
+		ABAD47F411723EA900C33FCA /* deforestation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47DF11723EA900C33FCA /* deforestation.jpg */; };
 		ABAD47F511723EA900C33FCA /* energy_lightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E011723EA900C33FCA /* energy_lightning.jpg */; };
 		ABAD47F611723EA900C33FCA /* fossilfuel_coal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E111723EA900C33FCA /* fossilfuel_coal.jpg */; };
 		ABAD47F711723EA900C33FCA /* infrared_dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E211723EA900C33FCA /* infrared_dog.jpg */; };
@@ -249,10 +249,10 @@
 		ABAD47FA11723EA900C33FCA /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E611723EA900C33FCA /* car.jpg */; };
 		ABAD47FB11723EA900C33FCA /* Compact-Fluorescent-Bulb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E711723EA900C33FCA /* Compact-Fluorescent-Bulb.jpg */; };
 		ABAD47FC11723EA900C33FCA /* farmersmarket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E811723EA900C33FCA /* farmersmarket.jpg */; };
-		ABAD47FD11723EA900C33FCA /* Recycling_can.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E911723EA900C33FCA /* Recycling_can.JPG */; };
+		ABAD47FD11723EA900C33FCA /* Recycling_can.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47E911723EA900C33FCA /* Recycling_can.jpg */; };
 		ABAD47FE11723EA900C33FCA /* seasonal_food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47EA11723EA900C33FCA /* seasonal_food.jpg */; };
 		ABAD47FF11723EA900C33FCA /* amazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47EC11723EA900C33FCA /* amazon.jpg */; };
-		ABAD480011723EA900C33FCA /* Canopy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47ED11723EA900C33FCA /* Canopy.jpg */; };
+		ABAD480011723EA900C33FCA /* canopy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47ED11723EA900C33FCA /* canopy.jpg */; };
 		ABAD480111723EA900C33FCA /* dinosaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47EE11723EA900C33FCA /* dinosaur.jpg */; };
 		ABAD480211723EA900C33FCA /* ecoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47EF11723EA900C33FCA /* ecoli.jpg */; };
 		ABAD480311723EA900C33FCA /* equator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47F011723EA900C33FCA /* equator.jpg */; };
@@ -638,8 +638,8 @@
 		ABAD47D311723E3400C33FCA /* desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desk.png; path = images/desk.png; sourceTree = "<group>"; };
 		ABAD47D411723E3400C33FCA /* gradebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradebook.png; path = images/gradebook.png; sourceTree = "<group>"; };
 		ABAD47D511723E3400C33FCA /* homeworkstack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homeworkstack.png; path = images/homeworkstack.png; sourceTree = "<group>"; };
-		ABAD47DE11723EA900C33FCA /* Atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Atmosphere.jpg; sourceTree = "<group>"; };
-		ABAD47DF11723EA900C33FCA /* deforestation.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deforestation.JPG; sourceTree = "<group>"; };
+		ABAD47DE11723EA900C33FCA /* atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atmosphere.jpg; sourceTree = "<group>"; };
+		ABAD47DF11723EA900C33FCA /* deforestation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deforestation.jpg; sourceTree = "<group>"; };
 		ABAD47E011723EA900C33FCA /* energy_lightning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = energy_lightning.jpg; sourceTree = "<group>"; };
 		ABAD47E111723EA900C33FCA /* fossilfuel_coal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fossilfuel_coal.jpg; sourceTree = "<group>"; };
 		ABAD47E211723EA900C33FCA /* infrared_dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = infrared_dog.jpg; sourceTree = "<group>"; };
@@ -648,10 +648,10 @@
 		ABAD47E611723EA900C33FCA /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 		ABAD47E711723EA900C33FCA /* Compact-Fluorescent-Bulb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Compact-Fluorescent-Bulb.jpg"; sourceTree = "<group>"; };
 		ABAD47E811723EA900C33FCA /* farmersmarket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = farmersmarket.jpg; sourceTree = "<group>"; };
-		ABAD47E911723EA900C33FCA /* Recycling_can.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Recycling_can.JPG; sourceTree = "<group>"; };
+		ABAD47E911723EA900C33FCA /* Recycling_can.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Recycling_can.jpg; sourceTree = "<group>"; };
 		ABAD47EA11723EA900C33FCA /* seasonal_food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasonal_food.jpg; sourceTree = "<group>"; };
 		ABAD47EC11723EA900C33FCA /* amazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amazon.jpg; sourceTree = "<group>"; };
-		ABAD47ED11723EA900C33FCA /* Canopy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Canopy.jpg; sourceTree = "<group>"; };
+		ABAD47ED11723EA900C33FCA /* canopy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = canopy.jpg; sourceTree = "<group>"; };
 		ABAD47EE11723EA900C33FCA /* dinosaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dinosaur.jpg; sourceTree = "<group>"; };
 		ABAD47EF11723EA900C33FCA /* ecoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ecoli.jpg; sourceTree = "<group>"; };
 		ABAD47F011723EA900C33FCA /* equator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = equator.jpg; sourceTree = "<group>"; };
@@ -1458,8 +1458,8 @@
 		ABAD47DD11723EA900C33FCA /* Ch1_SustainabilityOverview */ = {
 			isa = PBXGroup;
 			children = (
-				ABAD47DE11723EA900C33FCA /* Atmosphere.jpg */,
-				ABAD47DF11723EA900C33FCA /* deforestation.JPG */,
+				ABAD47DE11723EA900C33FCA /* atmosphere.jpg */,
+				ABAD47DF11723EA900C33FCA /* deforestation.jpg */,
 				ABAD47E011723EA900C33FCA /* energy_lightning.jpg */,
 				ABAD47E111723EA900C33FCA /* fossilfuel_coal.jpg */,
 				ABAD47E211723EA900C33FCA /* infrared_dog.jpg */,
@@ -1475,7 +1475,7 @@
 				ABAD47E611723EA900C33FCA /* car.jpg */,
 				ABAD47E711723EA900C33FCA /* Compact-Fluorescent-Bulb.jpg */,
 				ABAD47E811723EA900C33FCA /* farmersmarket.jpg */,
-				ABAD47E911723EA900C33FCA /* Recycling_can.JPG */,
+				ABAD47E911723EA900C33FCA /* Recycling_can.jpg */,
 				ABAD47EA11723EA900C33FCA /* seasonal_food.jpg */,
 			);
 			path = Ch2_WhatWeCanDo;
@@ -1485,7 +1485,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAD47EC11723EA900C33FCA /* amazon.jpg */,
-				ABAD47ED11723EA900C33FCA /* Canopy.jpg */,
+				ABAD47ED11723EA900C33FCA /* canopy.jpg */,
 				ABAD47EE11723EA900C33FCA /* dinosaur.jpg */,
 				ABAD47EF11723EA900C33FCA /* ecoli.jpg */,
 				ABAD47F011723EA900C33FCA /* equator.jpg */,
@@ -1783,8 +1783,8 @@
 				ABAD47D611723E3400C33FCA /* desk.png in Resources */,
 				ABAD47D711723E3400C33FCA /* gradebook.png in Resources */,
 				ABAD47D811723E3400C33FCA /* homeworkstack.png in Resources */,
-				ABAD47F311723EA900C33FCA /* Atmosphere.jpg in Resources */,
-				ABAD47F411723EA900C33FCA /* deforestation.JPG in Resources */,
+				ABAD47F311723EA900C33FCA /* atmosphere.jpg in Resources */,
+				ABAD47F411723EA900C33FCA /* deforestation.jpg in Resources */,
 				ABAD47F511723EA900C33FCA /* energy_lightning.jpg in Resources */,
 				ABAD47F611723EA900C33FCA /* fossilfuel_coal.jpg in Resources */,
 				ABAD47F711723EA900C33FCA /* infrared_dog.jpg in Resources */,
@@ -1793,10 +1793,10 @@
 				ABAD47FA11723EA900C33FCA /* car.jpg in Resources */,
 				ABAD47FB11723EA900C33FCA /* Compact-Fluorescent-Bulb.jpg in Resources */,
 				ABAD47FC11723EA900C33FCA /* farmersmarket.jpg in Resources */,
-				ABAD47FD11723EA900C33FCA /* Recycling_can.JPG in Resources */,
+				ABAD47FD11723EA900C33FCA /* Recycling_can.jpg in Resources */,
 				ABAD47FE11723EA900C33FCA /* seasonal_food.jpg in Resources */,
 				ABAD47FF11723EA900C33FCA /* amazon.jpg in Resources */,
-				ABAD480011723EA900C33FCA /* Canopy.jpg in Resources */,
+				ABAD480011723EA900C33FCA /* canopy.jpg in Resources */,
 				ABAD480111723EA900C33FCA /* dinosaur.jpg in Resources */,
 				ABAD480211723EA900C33FCA /* ecoli.jpg in Resources */,
 				ABAD480311723EA900C33FCA /* equator.jpg in Resources */,
