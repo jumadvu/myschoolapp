@@ -40,6 +40,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self setTopBarTitle:@"Your Activities" withLogo:YES backButton:YES];
 	[self setBackgroundColor];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[self setActivities:[delegate.teacher.purchases allObjects]];
