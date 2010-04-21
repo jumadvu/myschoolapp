@@ -13,11 +13,13 @@
 	IBOutlet UILabel *moduleNameLabel;
 	Module *targetModule;
 	IBOutlet UITableView *tableview;
+	BOOL goToLearn;
 }
 
 @property (nonatomic, retain) UILabel *moduleNameLabel;
 @property (nonatomic, retain) Module *targetModule;
 @property (nonatomic, retain) UITableView *tableview;
+@property (nonatomic) BOOL goToLearn;
 
 //-(IBAction)toChapter;
 

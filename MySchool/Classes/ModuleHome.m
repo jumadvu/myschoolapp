@@ -15,12 +15,14 @@
 #import "ModulePlus.h"
 #import "Article.h"
 #import "Chapter.h"
+#import "ClassroomHome.h"
 
 @implementation ModuleHome
 
 @synthesize moduleNameLabel;
 @synthesize targetModule;
 @synthesize tableview;
+@synthesize goToLearn;
 
 - (void)dealloc {
 	[tableview release];
@@ -44,7 +46,7 @@
     [super viewDidLoad];
 	//[self setBackgroundColor];
 	
-	self.tableview.rowHeight = 55;
+	self.tableview.rowHeight = 40;
 	
 	moduleNameLabel.text = targetModule.title;
 
@@ -83,6 +85,28 @@
 	return cell;
 }
 
+- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	//go to chapter home
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (goToLearn) {
+		//go to learning section
+		ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		//set up the learning page
+		Chapter *chapter = [[self.targetModule chaptersArray] objectAtIndex:indexPath.row];
+		[delegate setCurrentChapter:chapter];
+		vc.chapter = chapter;
+		[delegate.navCon pushViewController:vc animated:YES];	
+	} else {
+		//go to classroom
+		ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		//set up the learning page
+		Chapter *chapter = [[self.targetModule chaptersArray] objectAtIndex:indexPath.row];
+		[delegate setCurrentChapter:chapter];
+		[delegate.navCon pushViewController:vc animated:YES];	
+		
+	}
+
+}
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];

@@ -12,6 +12,7 @@
 #import "HelpHome.h"
 #import "LoungeHome.h"
 #import "ClassroomHome.h"
+#import "ClassroomDesk.h"
 #import "StoreHome.h"
 #import "LibraryShelves.h"
 #import "ParentEmail.h"
@@ -88,15 +89,9 @@
 
 -(void)classroomButtonClicked {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	UIActionSheet *actionSheet = [[UIActionSheet alloc]
-								  initWithTitle:@""
-								  delegate:self
-								  cancelButtonTitle:nil
-								  destructiveButtonTitle:nil
-								  otherButtonTitles:@"Teach Lesson",@"Do Activities", nil];
-	[actionSheet showInView:self.view];
-	[actionSheet setTag:2];
-	[actionSheet release];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	ClassroomDesk *vc = [[[ClassroomDesk alloc] initWithNibName:nil bundle:nil] autorelease];
+	[delegate.navCon pushViewController:vc animated:YES];
 	
 }
 
@@ -168,22 +163,6 @@
 			//do nothing
 			NSLog(@"do nothing");
 		}
-	} else {
-		//classroom action sheet
-		if (buttonIndex == 0) {
-			//to to classroom
-			NSLog(@"get email addresses");
-			MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-			ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-			[delegate.navCon pushViewController:vc animated:YES];
-			
-		} else {
-			//go to activities view
-			MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-			ActivitiesHome *vc = [[[ActivitiesHome alloc] initWithNibName:nil bundle:nil] autorelease];
-			[delegate.navCon pushViewController:vc animated:YES];
-		}
-		
 	}
 
 }

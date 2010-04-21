@@ -2,14 +2,13 @@
 //  Module.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/21/10.
+//  Created by Ashley Kayler on 4/14/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
 #import "Module.h"
 
 #import "Chapter.h"
-#import "User.h"
 
 @implementation Module 
 
@@ -17,6 +16,5 @@
 @dynamic subject;
 @dynamic gradeLevel;
 @dynamic chapters;
-@dynamic currentUser;
 
 @end

@@ -49,7 +49,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	[self setBackgroundColor];
-	chapterNameLabel.text=chapterName;
+	chapterNameLabel.text= self.chapter.title;
 	[teachButton addTarget:self action:@selector(teachButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];

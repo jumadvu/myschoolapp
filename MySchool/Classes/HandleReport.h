@@ -10,7 +10,7 @@
 @class BehaviorReport;
 @class StudentReports;
 
-@interface HandleReport : UIViewController {
+@interface HandleReport : baseViewController {
 	IBOutlet UIImageView *teacherAtDesk;
 	BehaviorReport *report;
 	BOOL answer1Correct;

@@ -5,7 +5,7 @@
 //  Created by Ashley Kayler on 3/23/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
-
+#import "MySchoolAppDelegate.h"
 #import "MusicFreestyle.h"
 #import "MusicNote.h"
 #import "Measure.h"
@@ -58,12 +58,19 @@
     [super dealloc];
 }
 
+-(void)toMusicWelcome {
+	NSLog(@"back to music welcome");
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	int count = [delegate.navCon.viewControllers count];
+	[delegate.navCon popToViewController:[delegate.navCon.viewControllers objectAtIndex:count-3] animated:NO];
+}
+
 //set up the draggable notes
 - (void)setUpNotes {
 	// wholenote
 	MusicNote *wNote = [[MusicNote alloc] init];
 	[wNote setNoteType:[NSNumber numberWithFloat:1] atHeight:[NSNumber numberWithInt:1000]];
-	wNote.center = CGPointMake(140, 60);
+	wNote.center = CGPointMake(150, 60);
 	wNote.startingPoint = CGPointMake(140, 60);
 	[self setWholeNote:wNote];
 	[wNote release];
@@ -71,7 +78,7 @@
 	
 	MusicNote *hNote = [[MusicNote alloc] init];
 	[hNote setNoteType:[NSNumber numberWithFloat:.5] atHeight:[NSNumber numberWithInt:1000]];
-	hNote.center = CGPointMake(200, 60);
+	hNote.center = CGPointMake(220, 60);
 	hNote.startingPoint = CGPointMake(200, 60);
 	[self setHalfNote:hNote];
 	[hNote release];
@@ -79,7 +86,7 @@
 	
 	MusicNote *qNote = [[MusicNote alloc] init];
 	[qNote setNoteType:[NSNumber numberWithFloat:.25] atHeight:[NSNumber numberWithInt:1000]];
-	qNote.center = CGPointMake(260, 60);
+	qNote.center = CGPointMake(290, 60);
 	qNote.startingPoint = CGPointMake(260, 60);
 	[self setQuarterNote:qNote];
 	[qNote release];
@@ -87,7 +94,7 @@
 	
 	MusicNote *eNote = [[MusicNote alloc] init];
 	[eNote setNoteType:[NSNumber numberWithFloat:.125] atHeight:[NSNumber numberWithInt:1000]];
-	eNote.center = CGPointMake(320, 60);
+	eNote.center = CGPointMake(360, 60);
 	eNote.startingPoint = CGPointMake(320, 60);
 	[self setEighthNote:eNote];
 	[eNote release];
@@ -143,16 +150,6 @@
 	NSLog(@"music - view did load end");
 }
 
-- (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
-    UITouch *touch = [touches anyObject];   
-	
-	//NSLog(@"x:%f  y:%f", location.x, location.y);
-	if ([self draggedNote] != nil) {
-		CGPoint location = [touch locationInView:self.view];
-		draggedNote.center = CGPointMake(location.x -40, location.y);		
-		return;
-	}
-}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	NSLog(@"touches began");
@@ -182,6 +179,17 @@
 	}
 	[self setDraggedNote:nil];
 	
+}
+
+- (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
+    UITouch *touch = [touches anyObject];   
+	
+	//NSLog(@"x:%f  y:%f", location.x, location.y);
+	if ([self draggedNote] != nil) {
+		CGPoint location = [touch locationInView:self.view];
+		draggedNote.center = CGPointMake(location.x -40, location.y);		
+		return;
+	}
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -282,6 +290,7 @@
 }
 
 -(void)playMySong {
+	playPauseButton.userInteractionEnabled = NO;
 	pulseIsOn = NO;
 	playPauseButton.transform = CGAffineTransformIdentity;
 	tempCurrentMeasure = currentMeasure;
@@ -310,10 +319,12 @@
 		[self.scrollView setContentOffset:CGPointMake(currentMeasure* 360, 0) animated:YES];
 		[aMeasure playMeasure];
 	} else {
-		//done with song, go to where you were when you hit play button
+		//done with song, go to where you were when you hit play button and re-enable play button
 		currentMeasure = tempCurrentMeasure;
 		NSLog(@"currentMeasure: %d", currentMeasure);
 		[self.scrollView setContentOffset:CGPointMake(currentMeasure* 360, 0) animated:YES];
+		playPauseButton.userInteractionEnabled = YES;
+
 	}
 
 }

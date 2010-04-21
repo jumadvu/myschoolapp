@@ -120,8 +120,6 @@
 		AB2054DC11191E2B00ED8E61 /* CompletedLesson.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054C111191E2B00ED8E61 /* CompletedLesson.m */; };
 		AB2054E311191E2B00ED8E61 /* UserAwards.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054CF11191E2B00ED8E61 /* UserAwards.m */; };
 		AB2054E611191E2B00ED8E61 /* WorksheetQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */; };
-		AB26205A11121CEE005D02F4 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205811121CEE005D02F4 /* man.png */; };
-		AB26205B11121CEE005D02F4 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB26205911121CEE005D02F4 /* woman.png */; };
 		AB2F3C24115AE17100A3BE91 /* ear.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F3C21115AE17100A3BE91 /* ear.png */; };
 		AB2F3C25115AE17100A3BE91 /* measure.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F3C22115AE17100A3BE91 /* measure.png */; };
 		AB2F3C2C115AE19D00A3BE91 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F3C28115AE19D00A3BE91 /* forward.png */; };
@@ -268,12 +266,16 @@
 		ABD56ABA117CC2F3001AB41D /* HandleReport.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD56AB8117CC2F3001AB41D /* HandleReport.xib */; };
 		ABD56B2C117CD5B3001AB41D /* bluebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD56B2B117CD5B3001AB41D /* bluebutton.png */; };
 		ABD56F39117EC7B7001AB41D /* HelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD56F38117EC7B7001AB41D /* HelpCell.m */; };
+		ABD57055117F7EF7001AB41D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD57052117F7EF7001AB41D /* User.m */; };
+		ABD57056117F7EF7001AB41D /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD57054117F7EF7001AB41D /* Module.m */; };
+		ABD57060117F805F001AB41D /* ClassroomDesk.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD5705E117F805F001AB41D /* ClassroomDesk.m */; };
+		ABD57061117F805F001AB41D /* ClassroomDesk.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD5705F117F805F001AB41D /* ClassroomDesk.xib */; };
+		ABD5707F117F84EA001AB41D /* open_book.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD5707E117F84EA001AB41D /* open_book.png */; };
 		ABE9A0D911754DE200C9CA4F /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A0D811754DE200C9CA4F /* calendar.png */; };
 		ABE9A12F1175980E00C9CA4F /* behaviorReports.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */; };
 		ABE9A1A21175AE4400C9CA4F /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A18C1175AE4400C9CA4F /* Article.m */; };
 		ABE9A1A41175AE4400C9CA4F /* Worksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1901175AE4400C9CA4F /* Worksheet.m */; };
 		ABE9A1A51175AE4400C9CA4F /* WorksheetAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1921175AE4400C9CA4F /* WorksheetAnswer.m */; };
-		ABE9A1A61175AE4400C9CA4F /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1941175AE4400C9CA4F /* Module.m */; };
 		ABE9A1A71175AE4400C9CA4F /* StudentAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A1961175AE4400C9CA4F /* StudentAnswer.m */; };
 		ABE9A1A91175AE4400C9CA4F /* Lecture.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A19A1175AE4400C9CA4F /* Lecture.m */; };
 		ABE9A1AA1175AE4400C9CA4F /* KeywordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A19C1175AE4400C9CA4F /* KeywordSet.m */; };
@@ -287,7 +289,6 @@
 		ABE9A4BD1178C3C400C9CA4F /* GradePaper.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A4BC1178C3C400C9CA4F /* GradePaper.xib */; };
 		ABE9A4F01178F6A600C9CA4F /* PrincipalHappy.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A4EE1178F6A600C9CA4F /* PrincipalHappy.png */; };
 		ABE9A4F11178F6A600C9CA4F /* PrincipalSad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE9A4EF1178F6A600C9CA4F /* PrincipalSad.png */; };
-		ABE9A52E117906F400C9CA4F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9A52D117906F400C9CA4F /* User.m */; };
 		ABF85795114108AE007419EB /* teacherslounge.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF85794114108AE007419EB /* teacherslounge.png */; };
 		ABF857DD1141AC86007419EB /* CompletedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF857DC1141AC86007419EB /* CompletedWorksheet.m */; };
 		ABF858F31141DAE2007419EB /* GradePaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF858F21141DAE2007419EB /* GradePaperCell.m */; };
@@ -490,8 +491,6 @@
 		AB2054CF11191E2B00ED8E61 /* UserAwards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAwards.m; sourceTree = "<group>"; };
 		AB2054D411191E2B00ED8E61 /* WorksheetQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetQuestion.h; sourceTree = "<group>"; };
 		AB2054D511191E2B00ED8E61 /* WorksheetQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetQuestion.m; sourceTree = "<group>"; };
-		AB26205811121CEE005D02F4 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = Classes/man.png; sourceTree = "<group>"; };
-		AB26205911121CEE005D02F4 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woman.png; path = Classes/woman.png; sourceTree = "<group>"; };
 		AB2F3C21115AE17100A3BE91 /* ear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear.png; sourceTree = "<group>"; };
 		AB2F3C22115AE17100A3BE91 /* measure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = measure.png; sourceTree = "<group>"; };
 		AB2F3C28115AE19D00A3BE91 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
@@ -671,6 +670,14 @@
 		ABD56B2B117CD5B3001AB41D /* bluebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebutton.png; sourceTree = "<group>"; };
 		ABD56F37117EC7B7001AB41D /* HelpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpCell.h; sourceTree = "<group>"; };
 		ABD56F38117EC7B7001AB41D /* HelpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCell.m; sourceTree = "<group>"; };
+		ABD57051117F7EF7001AB41D /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		ABD57052117F7EF7001AB41D /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		ABD57053117F7EF7001AB41D /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		ABD57054117F7EF7001AB41D /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		ABD5705D117F805F001AB41D /* ClassroomDesk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassroomDesk.h; sourceTree = "<group>"; };
+		ABD5705E117F805F001AB41D /* ClassroomDesk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassroomDesk.m; sourceTree = "<group>"; };
+		ABD5705F117F805F001AB41D /* ClassroomDesk.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassroomDesk.xib; sourceTree = "<group>"; };
+		ABD5707E117F84EA001AB41D /* open_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_book.png; sourceTree = "<group>"; };
 		ABE9A0D811754DE200C9CA4F /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = images/store_items/calendar.png; sourceTree = SOURCE_ROOT; };
 		ABE9A12E1175980E00C9CA4F /* behaviorReports.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = behaviorReports.xml; sourceTree = "<group>"; };
 		ABE9A18B1175AE4400C9CA4F /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
@@ -679,8 +686,6 @@
 		ABE9A1901175AE4400C9CA4F /* Worksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worksheet.m; sourceTree = "<group>"; };
 		ABE9A1911175AE4400C9CA4F /* WorksheetAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetAnswer.h; sourceTree = "<group>"; };
 		ABE9A1921175AE4400C9CA4F /* WorksheetAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorksheetAnswer.m; sourceTree = "<group>"; };
-		ABE9A1931175AE4400C9CA4F /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
-		ABE9A1941175AE4400C9CA4F /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 		ABE9A1951175AE4400C9CA4F /* StudentAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentAnswer.h; sourceTree = "<group>"; };
 		ABE9A1961175AE4400C9CA4F /* StudentAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentAnswer.m; sourceTree = "<group>"; };
 		ABE9A1991175AE4400C9CA4F /* Lecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lecture.h; sourceTree = "<group>"; };
@@ -699,8 +704,6 @@
 		ABE9A4BC1178C3C400C9CA4F /* GradePaper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradePaper.xib; sourceTree = "<group>"; };
 		ABE9A4EE1178F6A600C9CA4F /* PrincipalHappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrincipalHappy.png; sourceTree = "<group>"; };
 		ABE9A4EF1178F6A600C9CA4F /* PrincipalSad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrincipalSad.png; sourceTree = "<group>"; };
-		ABE9A52C117906F400C9CA4F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		ABE9A52D117906F400C9CA4F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		ABF85794114108AE007419EB /* teacherslounge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacherslounge.png; sourceTree = "<group>"; };
 		ABF857DB1141AC86007419EB /* CompletedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedWorksheet.h; sourceTree = "<group>"; };
 		ABF857DC1141AC86007419EB /* CompletedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedWorksheet.m; sourceTree = "<group>"; };
@@ -810,14 +813,14 @@
 				AB07F2141109858000204AFE /* baseViewController.m */,
 				F577F6BB1174F40900387EAE /* day_in_history */,
 				ABCAA67D1116B68000D3956F /* welcome */,
-				AB07F25511098B2A00204AFE /* office */,
+				AB07F25511098B2A00204AFE /* my office */,
 				AB07F25211098B2000204AFE /* classroom */,
 				AB07F24F11098B1800204AFE /* library */,
 				AB07F1D91109669E00204AFE /* New Teacher */,
 				ABAD47271171812E00C33FCA /* activities */,
 				AB160EDB11516216004DC0C1 /* store */,
 				AB07F1D61109669200204AFE /* Help */,
-				AB07F1B5110962C700204AFE /* Status */,
+				AB07F1B5110962C700204AFE /* Principals office */,
 				AB34B03D115924EA00BC950F /* music */,
 				F577F81211762CCC00387EAE /* ScoreAnim.h */,
 				F577F81311762CCC00387EAE /* ScoreAnim.m */,
@@ -894,20 +897,20 @@
 		AB07F0161108F0CD00204AFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ABD57051117F7EF7001AB41D /* User.h */,
+				ABD57052117F7EF7001AB41D /* User.m */,
+				ABD57053117F7EF7001AB41D /* Module.h */,
+				ABD57054117F7EF7001AB41D /* Module.m */,
 				AB408041117BE52F0002C1B2 /* Student.h */,
 				AB408042117BE52F0002C1B2 /* Student.m */,
 				AB40801F117BD7B00002C1B2 /* BehaviorReport.h */,
 				AB408020117BD7B00002C1B2 /* BehaviorReport.m */,
-				ABE9A52C117906F400C9CA4F /* User.h */,
-				ABE9A52D117906F400C9CA4F /* User.m */,
 				ABE9A18B1175AE4400C9CA4F /* Article.h */,
 				ABE9A18C1175AE4400C9CA4F /* Article.m */,
 				ABE9A18F1175AE4400C9CA4F /* Worksheet.h */,
 				ABE9A1901175AE4400C9CA4F /* Worksheet.m */,
 				ABE9A1911175AE4400C9CA4F /* WorksheetAnswer.h */,
 				ABE9A1921175AE4400C9CA4F /* WorksheetAnswer.m */,
-				ABE9A1931175AE4400C9CA4F /* Module.h */,
-				ABE9A1941175AE4400C9CA4F /* Module.m */,
 				ABE9A1951175AE4400C9CA4F /* StudentAnswer.h */,
 				ABE9A1961175AE4400C9CA4F /* StudentAnswer.m */,
 				ABE9A1991175AE4400C9CA4F /* Lecture.h */,
@@ -962,7 +965,7 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		AB07F1B5110962C700204AFE /* Status */ = {
+		AB07F1B5110962C700204AFE /* Principals office */ = {
 			isa = PBXGroup;
 			children = (
 				AB07F1AE110962BA00204AFE /* GameStatusHome.h */,
@@ -975,7 +978,7 @@
 				AB388B09110FEAC600217E8F /* LessonsTaught.m */,
 				AB72E23B1128FCBA00055DBE /* LessonsTaught.xib */,
 			);
-			name = Status;
+			name = "Principals office";
 			sourceTree = "<group>";
 		};
 		AB07F1D61109669200204AFE /* Help */ = {
@@ -1027,6 +1030,9 @@
 		AB07F25211098B2000204AFE /* classroom */ = {
 			isa = PBXGroup;
 			children = (
+				ABD5705D117F805F001AB41D /* ClassroomDesk.h */,
+				ABD5705E117F805F001AB41D /* ClassroomDesk.m */,
+				ABD5705F117F805F001AB41D /* ClassroomDesk.xib */,
 				AB07F25F11098B6600204AFE /* ClassroomHome.h */,
 				AB07F26011098B6600204AFE /* ClassroomHome.m */,
 				AB07F26111098B6600204AFE /* ClassroomHome.xib */,
@@ -1046,7 +1052,7 @@
 			name = classroom;
 			sourceTree = "<group>";
 		};
-		AB07F25511098B2A00204AFE /* office */ = {
+		AB07F25511098B2A00204AFE /* my office */ = {
 			isa = PBXGroup;
 			children = (
 				AB07F26611098B7600204AFE /* LoungeHome.h */,
@@ -1073,7 +1079,7 @@
 				ABD56AB7117CC2F3001AB41D /* HandleReport.m */,
 				ABD56AB8117CC2F3001AB41D /* HandleReport.xib */,
 			);
-			name = office;
+			name = "my office";
 			sourceTree = "<group>";
 		};
 		AB0997B1115D4BD100787969 /* notes */ = {
@@ -1174,8 +1180,6 @@
 		AB26207B1112204F005D02F4 /* avatar images */ = {
 			isa = PBXGroup;
 			children = (
-				AB26205811121CEE005D02F4 /* man.png */,
-				AB26205911121CEE005D02F4 /* woman.png */,
 			);
 			name = "avatar images";
 			sourceTree = "<group>";
@@ -1381,6 +1385,7 @@
 		AB53B519112349DE0017AFAB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ABD5707E117F84EA001AB41D /* open_book.png */,
 				F5833769117E4D720077F1C8 /* bucket_g.png */,
 				F583376A117E4D720077F1C8 /* bucket_b.png */,
 				F583376B117E4D720077F1C8 /* bucket_r.png */,
@@ -1595,8 +1600,6 @@
 				AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */,
 				AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */,
 				AB388B05110FEA9500217E8F /* StoreHome.xib in Resources */,
-				AB26205A11121CEE005D02F4 /* man.png in Resources */,
-				AB26205B11121CEE005D02F4 /* woman.png in Resources */,
 				AB53B36F1121EC120017AFAB /* dinosaurs.xml in Resources */,
 				AB53B3701121EC120017AFAB /* triceratops.jpg in Resources */,
 				AB53B46E112314840017AFAB /* Boy1Aha.png in Resources */,
@@ -1831,6 +1834,8 @@
 				F583376E117E4D720077F1C8 /* bucket_r.png in Resources */,
 				F583383C117EB6250077F1C8 /* help.xml in Resources */,
 				F583383D117EB6250077F1C8 /* interruptions.xml in Resources */,
+				ABD57061117F805F001AB41D /* ClassroomDesk.xib in Resources */,
+				ABD5707F117F84EA001AB41D /* open_book.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1904,14 +1909,12 @@
 				ABE9A1A21175AE4400C9CA4F /* Article.m in Sources */,
 				ABE9A1A41175AE4400C9CA4F /* Worksheet.m in Sources */,
 				ABE9A1A51175AE4400C9CA4F /* WorksheetAnswer.m in Sources */,
-				ABE9A1A61175AE4400C9CA4F /* Module.m in Sources */,
 				ABE9A1A71175AE4400C9CA4F /* StudentAnswer.m in Sources */,
 				ABE9A1A91175AE4400C9CA4F /* Lecture.m in Sources */,
 				ABE9A1AA1175AE4400C9CA4F /* KeywordSet.m in Sources */,
 				ABE9A1AB1175AE4400C9CA4F /* Award.m in Sources */,
 				ABE9A1AC1175AE4400C9CA4F /* Chapter.m in Sources */,
 				F577F81411762CCC00387EAE /* ScoreAnim.m in Sources */,
-				ABE9A52E117906F400C9CA4F /* User.m in Sources */,
 				AB407F06117A6E340002C1B2 /* StudentGrades.m in Sources */,
 				AB407F0D117A6E440002C1B2 /* StudentReports.m in Sources */,
 				AB408021117BD7B00002C1B2 /* BehaviorReport.m in Sources */,
@@ -1920,6 +1923,12 @@
 				ABD56AB9117CC2F3001AB41D /* HandleReport.m in Sources */,
 				ABD56F39117EC7B7001AB41D /* HelpCell.m in Sources */,
 				F583375A117E49CA0077F1C8 /* Color.m in Sources */,
+<<<<<<< .mine
+				ABD57055117F7EF7001AB41D /* User.m in Sources */,
+				ABD57056117F7EF7001AB41D /* Module.m in Sources */,
+				ABD57060117F805F001AB41D /* ClassroomDesk.m in Sources */,
+=======
+>>>>>>> .r277
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
