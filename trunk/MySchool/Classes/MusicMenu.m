@@ -30,6 +30,10 @@
 	[self setTopBarTitle:@"Piano" withLogo:YES backButton:YES];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	[[UIApplication sharedApplication] setStatusBarHidden:NO animated:NO];         
+}
 
 -(void) gotoLevel1 {
 	MusicIntro *vc = [[[MusicIntro alloc] initWithNibName:nil bundle:nil] autorelease];

@@ -14,6 +14,7 @@
 #import "ModulePlus.h"
 #import "MusicMenu.h"
 #import "Color.h"
+#import "User.h"
 
 
 @implementation LibraryShelves
@@ -160,25 +161,17 @@
 
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 
-	//if its the music module, go to music area
-	if ([button.titleLabel.text isEqualToString:@"Fractions and Music"]) {
-		//go to music area
-		MusicMenu *vc = [[[MusicMenu alloc] initWithNibName:nil bundle:nil] autorelease];
-		[delegate.navCon pushViewController:vc animated:YES];		
-	} else 	if ([button.titleLabel.text isEqualToString:@"Today in History"]) {
-		//go to music area
-		Color *vc = [[[Color alloc] initWithNibName:nil bundle:nil] autorelease];
-		[delegate.navCon pushViewController:vc animated:YES];		
-	} else {
-		@try {
-			ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-			vc.targetModule= [Module getModuleWithName:button.titleLabel.text];
-			[delegate.navCon pushViewController:vc animated:YES];
-		}
-		@catch (NSException* ex) {
-			UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Uh-oh!" message:@"This book isn't available yet! Try another one." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
-			[alert show];
-		}
+	@try {
+		ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		Module *selectedModule = [Module getModuleWithName:button.titleLabel.text];
+		vc.targetModule= selectedModule;
+		//save the current module that the user is working on.
+		[delegate.teacher setCurrentModule:selectedModule];
+		[delegate.navCon pushViewController:vc animated:YES];
+	}
+	@catch (NSException* ex) {
+		UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Uh-oh!" message:@"This book isn't available yet! Try another one." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+		[alert show];
 	}
 }
 

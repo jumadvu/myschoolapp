@@ -66,5 +66,6 @@
 -(void)playNextMeasure;
 -(void)growButton;
 -(void)shrinkButton;
+-(IBAction) toMusicWelcome;
 
 @end

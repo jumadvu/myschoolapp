@@ -34,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	//[self setBackgroundColor];
+	[self setTopBarTitle:@"What Should You Do?" withLogo:NO backButton:NO];
 	MySchoolAppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
 	//[self setTopBarTitle:@"Handle Report" withLogo:NO backButton:NO];
 	[self.teacherAtDesk setImage:[appdelegate.teacher avatarImageWaistUp]];
@@ -75,7 +76,7 @@
 	//a1Button.titleLabel.textColor = [UIColor blackColor];
 	[a1Button setTitle:answer1 forState:UIControlStateNormal];
 	[a1Button setBackgroundImage:stretchableButtonImageNormal2 forState:UIControlStateNormal];
-	CGRect frame2 = CGRectMake(10, 10, 130.0, myHeight1);
+	CGRect frame2 = CGRectMake(10, 45, 130.0, myHeight1);
 	a1Button.frame = frame2;	
 	[a1Button addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
 	a1Button.tag = 0;
@@ -91,7 +92,7 @@
 	//a1Button.titleLabel.textColor = [UIColor blackColor];
 	a2Button.titleEdgeInsets = UIEdgeInsetsMake(5.0, 10.0, 10.0, 10.0);
 	[a2Button setTitle:answer2 forState:UIControlStateNormal];
-	CGRect frame3 = CGRectMake(190, 10, 130.0, myHeight2);
+	CGRect frame3 = CGRectMake(190, 45, 130.0, myHeight2);
 	a2Button.frame = frame3;	
 	[a2Button setBackgroundImage:stretchableButtonImageNormal3 forState:UIControlStateNormal];
 	[a2Button addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
