@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<myschool>
+	<help>
+		<issue>
+			<title>Principal Wilson's Approval Rating</title>
+			<text>Secret Tip: Principal Wilson thinks homework is really important.  She often double checks how well the teachers at MySchool grade their student's homework.  You will find that if you grade your student's homework correctly, your approval rating will go up!</text>
+		</issue>
+		<issue>
+			<title>Student Personality: Respect Score</title>
+			<text>Secret Tip: Some of your students are a little disrespectful to you and their fellow students.  To help them learn to be more respectful, be sure to look at their 'behavior reports' and choose the best way to deal with each situation. You can find these reports in the Student Book in your office.</text>
+		</issue>
+	</help>
+</myschool>

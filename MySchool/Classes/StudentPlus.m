@@ -217,7 +217,7 @@
 	NSLog(@"days: %f", days);
 	
 	//if its been at least a day since we last checked reports.
-	if (days > 1) {
+	if (days > 0) {
 		//potentially add new behavior reports.  1 in 3 chance.
 		int i = arc4random() % 3;
 		if (i%1 == 0) {
