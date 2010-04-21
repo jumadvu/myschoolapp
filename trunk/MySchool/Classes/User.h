@@ -2,7 +2,7 @@
 //  User.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/16/10.
+//  Created by Ashley Kayler on 4/21/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 @class Avatar;
 @class CompletedLesson;
+@class Module;
 @class StoreItem;
 @class Student;
 @class UserAwards;
@@ -29,6 +30,7 @@
 @property (nonatomic, retain) NSSet* completedLessons;
 @property (nonatomic, retain) Avatar * avatar;
 @property (nonatomic, retain) NSSet* userAwards;
+@property (nonatomic, retain) Module * currentModule;
 @property (nonatomic, retain) NSSet* purchases;
 @property (nonatomic, retain) NSSet* students;
 @property (nonatomic, retain) NSSet* worksheets;
