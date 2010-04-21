@@ -2,7 +2,7 @@
 //  User.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/16/10.
+//  Created by Ashley Kayler on 4/21/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 #import "Avatar.h"
 #import "CompletedLesson.h"
+#import "Module.h"
 #import "StoreItem.h"
 #import "Student.h"
 #import "UserAwards.h"
@@ -27,6 +28,7 @@
 @dynamic completedLessons;
 @dynamic avatar;
 @dynamic userAwards;
+@dynamic currentModule;
 @dynamic purchases;
 @dynamic students;
 @dynamic worksheets;
