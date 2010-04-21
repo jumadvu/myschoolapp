@@ -79,7 +79,8 @@
 	[self changeDate:[NSNumber numberWithInt:-1]];
 }
 - (void)forwardOneDay{
-	[self changeDate:[NSNumber numberWithInt:1]];	
+	[self changeDate:[NSNumber numberWithInt:1]];
+	//ScoreAnim *anim = [ScoreAnim alloc]
 }
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
