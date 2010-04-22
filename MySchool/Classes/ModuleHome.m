@@ -50,7 +50,7 @@
 	
 	moduleNameLabel.text = targetModule.title;
 
-	[self setTopBarTitle:@"Book" withLogo:YES backButton:YES];
+	[self setTopBarTitle:@"Table of Contents" withLogo:YES backButton:YES];
 
 }
 

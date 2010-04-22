@@ -165,6 +165,7 @@
 		ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
 		Module *selectedModule = [Module getModuleWithName:button.titleLabel.text];
 		vc.targetModule= selectedModule;
+		vc.goToLearn = YES;
 		//save the current module that the user is working on.
 		[delegate.teacher setCurrentModule:selectedModule];
 		[delegate.navCon pushViewController:vc animated:YES];

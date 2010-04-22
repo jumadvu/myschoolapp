@@ -48,6 +48,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	[self setTopBarTitle:@"Book Chapter" withLogo:YES backButton:YES];
 	[self setBackgroundColor];
 	chapterNameLabel.text= self.chapter.title;
 	[teachButton addTarget:self action:@selector(teachButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
@@ -61,7 +62,7 @@
 	//add these labels and buttons to the scrollview
 	scrollView.backgroundColor = [UIColor whiteColor];
 	NSMutableArray *words = [[NSMutableArray alloc] init];
-	NSArray *lines = [article.text componentsSeparatedByString:@"\n"];
+	NSArray *lines = [chapter.article.text componentsSeparatedByString:@"\n"];
 	NSEnumerator *enumerator = [lines objectEnumerator];
 	id obj;
 	while(obj = [enumerator nextObject]) {
@@ -213,7 +214,7 @@
 }
 
 - (void)arrangeImageArray {
-	NSArray *array = [[NSArray alloc] initWithArray:[article.images allObjects]];
+	NSArray *array = [[NSArray alloc] initWithArray:[chapter.article.images allObjects]];
 	NSSortDescriptor *descriptor =
     [[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES];
 	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
