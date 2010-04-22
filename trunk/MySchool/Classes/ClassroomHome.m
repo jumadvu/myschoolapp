@@ -98,13 +98,12 @@
 	NSLog(@"classroom home view did load");
     [super viewDidLoad];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	
+	[self setTopBarTitle:@"Classroom" withLogo:YES backButton:YES];	
 	//if they are coming directly to the classroom, show alert message and reroute to library
 	if (delegate.currentChapter == nil) {
 		//go to library to choose current chapter
 		LibraryShelves *vc = [[[LibraryShelves alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];	
-		[self setTopBarTitle:@"Classroom" withLogo:YES backButton:YES];	
 		NSString *msg = [NSString stringWithFormat:@"Let's go to the library to choose a lesson to teach."];
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:@"Choose a Lesson" 
@@ -220,7 +219,7 @@
 		//turn on label coloring
 		if ([word length] < 1) {
 			//it's a line break
-			y +=30;
+			y +=25;
 			x = 0;
 			continue;
 		}
