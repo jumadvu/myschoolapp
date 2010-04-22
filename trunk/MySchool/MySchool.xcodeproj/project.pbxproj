@@ -1923,12 +1923,9 @@
 				ABD56AB9117CC2F3001AB41D /* HandleReport.m in Sources */,
 				ABD56F39117EC7B7001AB41D /* HelpCell.m in Sources */,
 				F583375A117E49CA0077F1C8 /* Color.m in Sources */,
-<<<<<<< .mine
 				ABD57055117F7EF7001AB41D /* User.m in Sources */,
 				ABD57056117F7EF7001AB41D /* Module.m in Sources */,
 				ABD57060117F805F001AB41D /* ClassroomDesk.m in Sources */,
-=======
->>>>>>> .r277
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
