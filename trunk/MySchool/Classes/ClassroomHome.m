@@ -30,6 +30,7 @@
 
 @implementation ClassroomHome
 
+@synthesize speedControl;
 @synthesize chalkboardButton;
 @synthesize startButton;
 @synthesize faster;
@@ -64,6 +65,7 @@
 @synthesize numQuestionsAssigned;
 
 - (void)dealloc {
+	[speedControl release];
 	[student0 release];
 	[currentButton release];
 	[scrollView release];
@@ -97,6 +99,7 @@
 - (void)viewDidLoad {
 	NSLog(@"classroom home view did load");
     [super viewDidLoad];
+	[self setTopBarTitle:@"" withLogo:YES backButton:YES];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[self setTopBarTitle:@"Classroom" withLogo:YES backButton:YES];	
 	//if they are coming directly to the classroom, show alert message and reroute to library
@@ -167,28 +170,29 @@
 	[[students objectAtIndex:3] setArmRaised:[NSNumber numberWithInt:0]];
 	
 	
-	//lectureText = [[UITextView alloc] init];
-	//CGRect lectureTextFrame = CGRectMake(0, 0, 200, 140.0);
-	//lectureText.frame = lectureTextFrame;
-	//lectureText.backgroundColor = [UIColor clearColor];
-	//lectureText.font = [UIFont systemFontOfSize:17];
 	//add opening remarks
 	NSString *openingRemark = [NSString stringWithFormat:@"Hello Class!\rThe topic for today's lesson is: "];
 	NSString *endingRemark = [NSString stringWithFormat:@"\r\r\rThat's all for now kids. Don't forget to do your homework!"];
 	lectureText = [NSString stringWithFormat:@"%@%@\r\r\r%@%@", openingRemark, chapter.lecture.title, chapter.lecture.text, endingRemark];
-	//[self.lectureText setEditable:NO];
-	//[scrollView addSubview:self.lectureText];
 	scrollView.scrollEnabled = NO;
 	scrollView.showsVerticalScrollIndicator = YES;
+
 	//add main lecture text
 	[self loadTextIntoScrollView];
 	
+	//add speed control slider target
+	[self.speedControl addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
+	[self.view bringSubviewToFront:speedControl];
 }
 
 
 -(void)viewDidAppear:(BOOL)animated {
 	NSLog(@"classroom home view did appear");
 	
+}
+
+- (void)sliderAction:(id)sender {
+	self.scrollSpeed = speedControl.value;
 }
 
 -(void)loadTextIntoScrollView {
@@ -446,7 +450,8 @@
 		//scroll the text
 		CGPoint scrollPoint = scrollView.contentOffset;
 		scrollPoint.y= scrollPoint.y+scrollSpeed;
-		[scrollView setContentOffset:scrollPoint animated:YES];		
+		[scrollView setContentOffset:scrollPoint animated:YES];
+		[scrollView flashScrollIndicators];
 	} else {
 		//scrollPaused
 		//NSLog(@"scroll paused");
@@ -460,7 +465,7 @@
 			secondsRemaining --;
 			counter = 1.0;
 		}
-		self.timerLabel.text = [NSString stringWithFormat:@"%d",secondsRemaining];
+		self.timerLabel.text = [NSString stringWithFormat:@"Time Left: %d",secondsRemaining];
 
 		//check to see if there are any student questions
 			Student *student;
@@ -468,9 +473,9 @@
 			for (student in students) {
 				if (self.numQuestionsAssigned < [chapter.lecture.studentQuestions count]) {
 					if ([student hasQuestion]) {
+						self.numQuestionsAssigned++;
 						[student setImageView:[studentViews objectAtIndex:x] forMood:@"Confused" isWaving:YES];
 						[student setArmRaised:[NSNumber numberWithInt:1]];
-						self.numQuestionsAssigned++;
 					}
 				}
 				x++;
@@ -550,17 +555,6 @@
 
 -(void)timeRanOut {
 	[self.repeatingTimer invalidate];
-}
-
-
-
-
--(void)scrollSpeedPlus{
-	scrollSpeed = scrollSpeed + 6;
-}
-
--(void)scrollSpeedMinus{
-	scrollSpeed = scrollSpeed - 6;
 }
 
 -(void)toChalkboard {

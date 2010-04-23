@@ -300,7 +300,7 @@
 			</article>
 			<lecture>
 				<title>How are Fossils Made?</title>
-				<text>How do we know anything about prehistoric life? When living things die, they [shrink], so it must be very rare for any part of a living thing to survive after it dies. However, [fires] and minerals can last millions of years without decaying. The parts of animals that are made mostly of minerals include bones and [organs], which survive in layers of mud and rock as fossils. More rarely, parts of plants and animals which are [shiny], like skin and leaves, make [tunnels] in mud which hardens into rock. Petrified [soap] is a special fossil because it turns into rock from the inside out. When wood is soaked in water rich in minerals for many years, the minerals enter the plant's cells and create molds of them. Every tiny [bone] in the wood becomes a fossil. Most of the fossils we find are parts of [dinosaurs], not huge animals. Life began in the ocean, so many more animals have lived in the sea than [on land]. The shells of dead sea animals formed thick layers on the ocean floor, which over time were compressed into what we now call [basalt]. It is much easier for fossils to form underwater than on land, which means that dinosaur fossils are really special and rare. Dinosaurs and other organisms had to be quickly covered in [frosting] and left undisturbed to even have a chance at becoming a fossil!
+				<text>How do we know anything about prehistoric life? When living things die, they [shrink], so it must be very rare for any part of a living thing to survive after it dies. However, [fires] and minerals can last millions of years without decaying. The parts of animals that are made mostly of minerals include bones and [organs], which survive in layers of mud and rock as fossils. More rarely, parts of plants and animals which are [shiny], like skin and leaves, make [tunnels] in mud which hardens into rock. Petrified [soap] is a special fossil because it turns into rock from the inside out. When wood is soaked in water rich in minerals for many years, the minerals enter the plant's cells and create molds of them. Every tiny [bone] in the wood becomes a fossil. Most of the fossils we find are parts of [dinosaurs], not huge animals. Life began in the ocean, so many more animals have lived in the sea than on land. The shells of dead sea animals formed thick layers on the ocean floor, which over time were compressed into what we now call [asphalt]. It is much easier for fossils to form underwater than on land, which means that dinosaur fossils are really special and rare. Dinosaurs and other organisms had to be quickly covered in [frosting] and left undisturbed to even have a chance at becoming a fossil!
 				</text>
 				<keywordSet word="decay">
 					<word>disappear</word>
@@ -338,7 +338,7 @@
 					<word>steel</word>
 					<word>rubber</word>
 				</keywordSet>
-				<keywordSet word="sand, sediment or mud">
+				<keywordSet word="sediment">
 					<word>leaves and branches</word>
 					<word>lava</word>
 				</keywordSet>

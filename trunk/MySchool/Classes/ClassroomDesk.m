@@ -15,8 +15,12 @@
 @implementation ClassroomDesk
 
 @synthesize teacherAtDesk;
+@synthesize book;
+@synthesize transformed;
+@synthesize clicked;
 
 - (void)dealloc {
+	[book release];
 	[teacherAtDesk release];
     [super dealloc];
 }
@@ -41,29 +45,45 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
+	} else {
+		
+		//we show the teacher at desk and set a timer to automatically move on
+		[NSTimer scheduledTimerWithTimeInterval:2 target:self 
+									   selector:@selector(stopIt) userInfo:nil repeats:NO];
 	}
-	
+
 	[self setTopBarTitle:@"Classroom" withLogo:YES backButton:YES];
 	[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
-	
-	//NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
-	[NSTimer scheduledTimerWithTimeInterval:2 target:self 
-								   selector:@selector(stopIt) userInfo:nil repeats:NO];
+	transformed = NO;
+	clicked = NO;
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (transformed) {
+		//pop back one further view
+		[delegate.navCon popViewControllerAnimated:NO];
+	}
 }
 
 -(void)stopIt {
-	NSLog(@"timer fired");
-	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:2];
-	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDidStopSelector:@selector(moveOn)];
-	self.view.transform = CGAffineTransformMakeScale(4.3,4.3);
-	[UIView commitAnimations];
-
+	if (!self.clicked) {
+		self.clicked = YES;
+		NSLog(@"timer fired");
+		[UIView beginAnimations:nil context:NULL];
+		[UIView setAnimationDuration:2];
+		[UIView setAnimationDelegate:self];
+		[UIView setAnimationDidStopSelector:@selector(moveOn)];
+		self.view.transform = CGAffineTransformMakeScale(4.3,4.3);
+		[UIView commitAnimations];
+	}
+	
 }
 
 -(void)moveOn {
-	
+	transformed = YES;
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
 	vc.targetModule= delegate.teacher.currentModule;

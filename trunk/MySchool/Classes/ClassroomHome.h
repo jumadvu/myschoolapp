@@ -29,6 +29,7 @@
 	NSArray *studentViews;
 	IBOutlet UIImageView *teacher;
 	NSString *lectureText;
+	IBOutlet UISlider *speedControl;
 	
 	IBOutlet UIScrollView *scrollView;
 	
@@ -62,7 +63,7 @@
 	Chapter *chapter;
 
 }
-
+@property (nonatomic, retain) UISlider *speedControl;
 @property (nonatomic, retain) Student *student0;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSTimer *repeatingTimer;
@@ -103,10 +104,8 @@
 -(IBAction)toQuestion;
 -(IBAction)toWorksheets;
 -(IBAction)startEvent:(id)sender;
-- (void)timerFireMethod:(NSTimer*)theTimer;
+-(void)timerFireMethod:(NSTimer*)theTimer;
 -(void)timeRanOut;
--(IBAction)scrollSpeedPlus;
--(IBAction)scrollSpeedMinus;
 -(void)loadTextIntoScrollView;
 -(void)clickedButton:(UIButton *)button;
 -(void)lectureOver;
