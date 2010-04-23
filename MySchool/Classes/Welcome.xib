@@ -117,7 +117,7 @@
 						<bool key="IBUIDelaysContentTouches">NO</bool>
 						<bool key="IBUICanCancelContentTouches">NO</bool>
 						<bool key="IBUIBouncesZoom">NO</bool>
-						<string key="IBUIText">Hi, I'm Principal Wilson. Welcome to MySchool Elementary.  There's so much to learn. You can begin by designing your teacher avatar!</string>
+						<string key="IBUIText">Hi, I'm Principal Wilson. Welcome to MySchool Elementary.  There's so much to learn. You will begin by designing your teacher avatar!</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>

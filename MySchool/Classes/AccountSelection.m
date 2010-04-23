@@ -27,7 +27,7 @@
 	self.tableview.backgroundColor = [UIColor clearColor];
 	
 	[self setBackgroundColor];
-	[self setTopBarTitle:@"Welcome Back!" withLogo:NO backButton:NO];
+	[self setTopBarTitle:@"Who Are Ya?" withLogo:NO backButton:NO];
 }
 
 - (void)didReceiveMemoryWarning {

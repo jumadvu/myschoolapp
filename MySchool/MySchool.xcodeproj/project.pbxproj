@@ -231,9 +231,7 @@
 		ABAD47B611723D3800C33FCA /* ClassWall.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47B211723D3800C33FCA /* ClassWall.png */; };
 		ABAD47B711723D3800C33FCA /* KidsBGWall.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47B311723D3800C33FCA /* KidsBGWall.png */; };
 		ABAD47B811723D3800C33FCA /* StudentDesk.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47B411723D3800C33FCA /* StudentDesk.png */; };
-		ABAD47CA11723DAF00C33FCA /* helpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47C711723DAF00C33FCA /* helpButton.png */; };
 		ABAD47CB11723DAF00C33FCA /* myschoolButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47C811723DAF00C33FCA /* myschoolButton.png */; };
-		ABAD47CC11723DAF00C33FCA /* newgameButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47C911723DAF00C33FCA /* newgameButton.png */; };
 		ABAD47D611723E3400C33FCA /* desk.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47D311723E3400C33FCA /* desk.png */; };
 		ABAD47D711723E3400C33FCA /* gradebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47D411723E3400C33FCA /* gradebook.png */; };
 		ABAD47D811723E3400C33FCA /* homeworkstack.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47D511723E3400C33FCA /* homeworkstack.png */; };
@@ -256,6 +254,10 @@
 		ABAD480311723EA900C33FCA /* equator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47F011723EA900C33FCA /* equator.jpg */; };
 		ABAD480411723EA900C33FCA /* photosynthesis.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47F111723EA900C33FCA /* photosynthesis.png */; };
 		ABAD480511723EA900C33FCA /* rainfall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABAD47F211723EA900C33FCA /* rainfall.jpg */; };
+		ABB3ABFB1181FB6E00A889C7 /* helpicon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3ABF91181FB6E00A889C7 /* helpicon.png */; };
+		ABB3ABFC1181FB6E00A889C7 /* newgameicon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3ABFA1181FB6E00A889C7 /* newgameicon.png */; };
+		ABB3AC321182095300A889C7 /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3AC301182095300A889C7 /* rabbit.png */; };
+		ABB3AC331182095300A889C7 /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3AC311182095300A889C7 /* turtle.png */; };
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
 		ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAA6811116B7D700D3956F /* AccountSelection.m */; };
@@ -631,9 +633,7 @@
 		ABAD47B211723D3800C33FCA /* ClassWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ClassWall.png; path = images/BackgroundsFurniture/ClassWall.png; sourceTree = "<group>"; };
 		ABAD47B311723D3800C33FCA /* KidsBGWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KidsBGWall.png; path = images/BackgroundsFurniture/KidsBGWall.png; sourceTree = "<group>"; };
 		ABAD47B411723D3800C33FCA /* StudentDesk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StudentDesk.png; path = images/BackgroundsFurniture/StudentDesk.png; sourceTree = "<group>"; };
-		ABAD47C711723DAF00C33FCA /* helpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = helpButton.png; path = images/helpButton.png; sourceTree = "<group>"; };
 		ABAD47C811723DAF00C33FCA /* myschoolButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myschoolButton.png; path = images/myschoolButton.png; sourceTree = "<group>"; };
-		ABAD47C911723DAF00C33FCA /* newgameButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newgameButton.png; path = images/newgameButton.png; sourceTree = "<group>"; };
 		ABAD47D311723E3400C33FCA /* desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desk.png; path = images/desk.png; sourceTree = "<group>"; };
 		ABAD47D411723E3400C33FCA /* gradebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradebook.png; path = images/gradebook.png; sourceTree = "<group>"; };
 		ABAD47D511723E3400C33FCA /* homeworkstack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homeworkstack.png; path = images/homeworkstack.png; sourceTree = "<group>"; };
@@ -656,6 +656,10 @@
 		ABAD47F011723EA900C33FCA /* equator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = equator.jpg; sourceTree = "<group>"; };
 		ABAD47F111723EA900C33FCA /* photosynthesis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photosynthesis.png; sourceTree = "<group>"; };
 		ABAD47F211723EA900C33FCA /* rainfall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainfall.jpg; sourceTree = "<group>"; };
+		ABB3ABF91181FB6E00A889C7 /* helpicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpicon.png; sourceTree = "<group>"; };
+		ABB3ABFA1181FB6E00A889C7 /* newgameicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newgameicon.png; sourceTree = "<group>"; };
+		ABB3AC301182095300A889C7 /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
+		ABB3AC311182095300A889C7 /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle.png; sourceTree = "<group>"; };
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ABCAA6801116B7D700D3956F /* AccountSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelection.h; sourceTree = "<group>"; };
@@ -812,11 +816,10 @@
 				AB07F2131109858000204AFE /* baseViewController.h */,
 				AB07F2141109858000204AFE /* baseViewController.m */,
 				F577F6BB1174F40900387EAE /* day_in_history */,
-				ABCAA67D1116B68000D3956F /* welcome */,
+				ABCAA67D1116B68000D3956F /* welcome new game */,
 				AB07F25511098B2A00204AFE /* my office */,
 				AB07F25211098B2000204AFE /* classroom */,
 				AB07F24F11098B1800204AFE /* library */,
-				AB07F1D91109669E00204AFE /* New Teacher */,
 				ABAD47271171812E00C33FCA /* activities */,
 				AB160EDB11516216004DC0C1 /* store */,
 				AB07F1D61109669200204AFE /* Help */,
@@ -991,19 +994,6 @@
 				ABD56F38117EC7B7001AB41D /* HelpCell.m */,
 			);
 			name = Help;
-			sourceTree = "<group>";
-		};
-		AB07F1D91109669E00204AFE /* New Teacher */ = {
-			isa = PBXGroup;
-			children = (
-				AB07F1E4110966F800204AFE /* NewGameHome.h */,
-				AB07F1E5110966F800204AFE /* NewGameHome.m */,
-				AB07F1E6110966F800204AFE /* NewGameHome.xib */,
-				AB3889CA110ED78800217E8F /* DesignAvatar1.h */,
-				AB3889CB110ED78800217E8F /* DesignAvatar1.m */,
-				AB3889CC110ED78800217E8F /* DesignAvatar1.xib */,
-			);
-			name = "New Teacher";
 			sourceTree = "<group>";
 		};
 		AB07F24F11098B1800204AFE /* library */ = {
@@ -1385,6 +1375,8 @@
 		AB53B519112349DE0017AFAB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ABB3AC301182095300A889C7 /* rabbit.png */,
+				ABB3AC311182095300A889C7 /* turtle.png */,
 				ABD5707E117F84EA001AB41D /* open_book.png */,
 				F5833769117E4D720077F1C8 /* bucket_g.png */,
 				F583376A117E4D720077F1C8 /* bucket_b.png */,
@@ -1429,10 +1421,10 @@
 		ABAD46F411717E1100C33FCA /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				ABB3ABF91181FB6E00A889C7 /* helpicon.png */,
+				ABB3ABFA1181FB6E00A889C7 /* newgameicon.png */,
 				ABE9A2431176842500C9CA4F /* chalk_back.png */,
-				ABAD47C711723DAF00C33FCA /* helpButton.png */,
 				ABAD47C811723DAF00C33FCA /* myschoolButton.png */,
-				ABAD47C911723DAF00C33FCA /* newgameButton.png */,
 				AB72E37E112C76B300055DBE /* green_button.png */,
 				ABAD47AC11723D0900C33FCA /* grayButton.png */,
 				AB1767C2113F5D7B00BA887D /* yellowbutton.png */,
@@ -1500,17 +1492,23 @@
 			path = Ch3_Rainforests;
 			sourceTree = "<group>";
 		};
-		ABCAA67D1116B68000D3956F /* welcome */ = {
+		ABCAA67D1116B68000D3956F /* welcome new game */ = {
 			isa = PBXGroup;
 			children = (
-				AB72E329112B1E4C00055DBE /* Welcome.xib */,
 				AB7A166C10FBBE5F00902689 /* Welcome.h */,
 				AB7A166D10FBBE5F00902689 /* Welcome.m */,
+				AB72E329112B1E4C00055DBE /* Welcome.xib */,
 				ABCAA6801116B7D700D3956F /* AccountSelection.h */,
 				ABCAA6811116B7D700D3956F /* AccountSelection.m */,
 				AB407FA6117AD0890002C1B2 /* AccountSelection.xib */,
+				AB07F1E4110966F800204AFE /* NewGameHome.h */,
+				AB07F1E5110966F800204AFE /* NewGameHome.m */,
+				AB07F1E6110966F800204AFE /* NewGameHome.xib */,
+				AB3889CA110ED78800217E8F /* DesignAvatar1.h */,
+				AB3889CB110ED78800217E8F /* DesignAvatar1.m */,
+				AB3889CC110ED78800217E8F /* DesignAvatar1.xib */,
 			);
-			name = welcome;
+			name = "welcome new game";
 			sourceTree = "<group>";
 		};
 		ABE9A4921178C1D000C9CA4F /* famous_people */ = {
@@ -1780,9 +1778,7 @@
 				ABAD47B611723D3800C33FCA /* ClassWall.png in Resources */,
 				ABAD47B711723D3800C33FCA /* KidsBGWall.png in Resources */,
 				ABAD47B811723D3800C33FCA /* StudentDesk.png in Resources */,
-				ABAD47CA11723DAF00C33FCA /* helpButton.png in Resources */,
 				ABAD47CB11723DAF00C33FCA /* myschoolButton.png in Resources */,
-				ABAD47CC11723DAF00C33FCA /* newgameButton.png in Resources */,
 				ABAD47D611723E3400C33FCA /* desk.png in Resources */,
 				ABAD47D711723E3400C33FCA /* gradebook.png in Resources */,
 				ABAD47D811723E3400C33FCA /* homeworkstack.png in Resources */,
@@ -1836,6 +1832,10 @@
 				F583383D117EB6250077F1C8 /* interruptions.xml in Resources */,
 				ABD57061117F805F001AB41D /* ClassroomDesk.xib in Resources */,
 				ABD5707F117F84EA001AB41D /* open_book.png in Resources */,
+				ABB3ABFB1181FB6E00A889C7 /* helpicon.png in Resources */,
+				ABB3ABFC1181FB6E00A889C7 /* newgameicon.png in Resources */,
+				ABB3AC321182095300A889C7 /* rabbit.png in Resources */,
+				ABB3AC331182095300A889C7 /* turtle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
