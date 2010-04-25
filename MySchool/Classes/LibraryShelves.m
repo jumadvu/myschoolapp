@@ -33,7 +33,6 @@
 	[subjects release];
 	[scrollView release];
 	[segmentControl release];
-	NSLog(@"library shelves dealloc");
     [super dealloc];
 }
 

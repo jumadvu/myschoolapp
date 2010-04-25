@@ -18,20 +18,16 @@
 
 @synthesize imageArray, currentButton, numLabel, teachButton;
 @synthesize chapterNameLabel, chapterName, scrollView;
-//@synthesize fileName;
-@synthesize article;
 @synthesize chapter;
 
 - (void)dealloc {
 	[chapter release];
-	//[fileName release];
 	[teachButton release];
 	[currentButton release];
 	[chapterName release];
 	[chapterNameLabel release];
 	[numLabel release];
 	[scrollView release];
-	[article release];
 	[imageArray release];
     [super dealloc];
 }

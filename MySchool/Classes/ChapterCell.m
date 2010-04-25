@@ -23,7 +23,6 @@
 	[chapter release];
 	[lblTitle release];
 	[article release];
-	NSLog(@"chapter cell dealloc");
     [super dealloc];
 }
 

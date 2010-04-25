@@ -143,8 +143,6 @@
 		AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3889CC110ED78800217E8F /* DesignAvatar1.xib */; };
 		AB388A4D110FB24B00217E8F /* ChapterHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A4B110FB24B00217E8F /* ChapterHome.m */; };
 		AB388A4E110FB24B00217E8F /* ChapterHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A4C110FB24B00217E8F /* ChapterHome.xib */; };
-		AB388A64110FB71F00217E8F /* ArticleHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A62110FB71F00217E8F /* ArticleHome.m */; };
-		AB388A65110FB71F00217E8F /* ArticleHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A63110FB71F00217E8F /* ArticleHome.xib */; };
 		AB388A7C110FBE0C00217E8F /* ChalkboardHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A7A110FBE0C00217E8F /* ChalkboardHome.m */; };
 		AB388A7D110FBE0C00217E8F /* ChalkboardHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A7B110FBE0C00217E8F /* ChalkboardHome.xib */; };
 		AB388A8F110FC5E200217E8F /* StudentQuestionHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A8D110FC5E200217E8F /* StudentQuestionHome.m */; };
@@ -521,9 +519,6 @@
 		AB388A4A110FB24B00217E8F /* ChapterHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterHome.h; sourceTree = "<group>"; };
 		AB388A4B110FB24B00217E8F /* ChapterHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterHome.m; sourceTree = "<group>"; };
 		AB388A4C110FB24B00217E8F /* ChapterHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterHome.xib; sourceTree = "<group>"; };
-		AB388A61110FB71F00217E8F /* ArticleHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleHome.h; sourceTree = "<group>"; };
-		AB388A62110FB71F00217E8F /* ArticleHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleHome.m; sourceTree = "<group>"; };
-		AB388A63110FB71F00217E8F /* ArticleHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleHome.xib; sourceTree = "<group>"; };
 		AB388A79110FBE0C00217E8F /* ChalkboardHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChalkboardHome.h; sourceTree = "<group>"; };
 		AB388A7A110FBE0C00217E8F /* ChalkboardHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChalkboardHome.m; sourceTree = "<group>"; };
 		AB388A7B110FBE0C00217E8F /* ChalkboardHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChalkboardHome.xib; sourceTree = "<group>"; };
@@ -1010,9 +1005,6 @@
 				F5A9C0AB1136EEB400F74134 /* LibraryShelves.xib */,
 				F5A9C0AC1136EEB400F74134 /* LibraryShelves.m */,
 				F5A9C0AD1136EEB400F74134 /* LibraryShelves.h */,
-				AB388A61110FB71F00217E8F /* ArticleHome.h */,
-				AB388A62110FB71F00217E8F /* ArticleHome.m */,
-				AB388A63110FB71F00217E8F /* ArticleHome.xib */,
 			);
 			name = library;
 			sourceTree = "<group>";
@@ -1592,7 +1584,6 @@
 				AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */,
 				AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */,
 				AB388A4E110FB24B00217E8F /* ChapterHome.xib in Resources */,
-				AB388A65110FB71F00217E8F /* ArticleHome.xib in Resources */,
 				AB388A7D110FBE0C00217E8F /* ChalkboardHome.xib in Resources */,
 				AB388A90110FC5E200217E8F /* StudentQuestionHome.xib in Resources */,
 				AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */,
@@ -1859,7 +1850,6 @@
 				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
 				AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */,
 				AB388A4D110FB24B00217E8F /* ChapterHome.m in Sources */,
-				AB388A64110FB71F00217E8F /* ArticleHome.m in Sources */,
 				AB388A7C110FBE0C00217E8F /* ChalkboardHome.m in Sources */,
 				AB388A8F110FC5E200217E8F /* StudentQuestionHome.m in Sources */,
 				AB388AC3110FE20E00217E8F /* PassOutWorksheets.m in Sources */,

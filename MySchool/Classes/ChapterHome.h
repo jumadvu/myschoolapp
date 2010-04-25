@@ -15,8 +15,6 @@
 	IBOutlet UILabel *chapterNameLabel;
 	IBOutlet UILabel *numLabel;
 	NSString *chapterName;
-	//NSString *fileName;
-	Article *article;
 	IBOutlet UIScrollView *scrollView;
 	UIButton *currentButton;
 	NSArray *imageArray;
@@ -29,8 +27,6 @@
 @property (nonatomic,retain) UILabel *chapterNameLabel;
 @property (nonatomic,retain) UILabel *numLabel;
 @property (nonatomic, retain) NSString *chapterName;
-//@property (nonatomic, retain) NSString *fileName;
-@property (nonatomic, retain) Article *article;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSArray *imageArray;
 @property (nonatomic, retain) Chapter *chapter;
@@ -38,7 +34,6 @@
 -(void)loadTextIntoScrollView;
 -(void)arrangeImageArray;
 -(void)pulseInOut:(NSTimer *)timer;
-//-(IBAction)teachButtonSelected;
 
 
 @end
