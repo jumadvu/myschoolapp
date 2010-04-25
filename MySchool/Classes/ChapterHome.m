@@ -8,7 +8,6 @@
 #import "Article.h"
 #import "ChapterHome.h"
 #import "Chapter.h"
-#import "ArticleHome.h"
 #import "TBXML.h"
 #import "Image.h"
 #import "ClassroomHome.h"
