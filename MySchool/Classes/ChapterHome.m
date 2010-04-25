@@ -106,15 +106,9 @@
 			[memberButt addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
 			memberButt.frame = CGRectMake(x, y, 145.0, 30.0);  
 			[memberButt sizeToFit];
+			NSTimer *timer;
 			
-			CGAffineTransform bigger = CGAffineTransformMakeScale(1.25, 1.25);
-			
-			[UIView beginAnimations:nil context:nil];
-			[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-			[UIView setAnimationDuration:10];
-			[UIView setAnimationDelegate:self];
-			[memberButt setTransform:bigger];
-			[UIView commitAnimations];
+			timer = [NSTimer scheduledTimerWithTimeInterval: 5.0 target: self selector: @selector(pulseInOut:) userInfo: memberButt repeats: NO];			
 			
 			x = x + memberButt.frame.size.width + spacer;
 			if (x > (scrollView.frame.size.width-10)) {
@@ -230,5 +224,29 @@
 	NSArray *descriptors = [NSArray arrayWithObjects:descriptor, nil];
 	[self setImageArray:[array sortedArrayUsingDescriptors:descriptors]];
 	
+}
+
+-(void)pulseInOut:(NSTimer *)timer {
+	UIButton *mB = [timer userInfo];
+	CGAffineTransform smaller = CGAffineTransformMakeScale(1.0, 1.0);
+	CGAffineTransform bigger = CGAffineTransformMakeScale(1.1, 1.1);
+	
+	[UIView beginAnimations:nil context:nil];
+	
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	[UIView setAnimationDuration:0.5];
+	[UIView setAnimationDelegate:self];
+	[mB setTransform:bigger];
+	
+
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	[UIView setAnimationDuration:0.5];
+	[UIView setAnimationDelegate:self];
+	[mB setTransform:smaller];
+	
+	[UIView commitAnimations];
+	NSTimer *newTimer;
+		
+	newTimer = [NSTimer scheduledTimerWithTimeInterval: 7.0 target: self selector: @selector(pulseInOut:) userInfo: mB repeats: NO];
 }
 @end
