@@ -37,6 +37,7 @@
 
 -(void)loadTextIntoScrollView;
 -(void)arrangeImageArray;
+-(void)pulseInOut:(NSTimer *)timer;
 //-(IBAction)teachButtonSelected;
 
 

@@ -247,7 +247,7 @@
 			x = x + memberButt.frame.size.width + spacer;
 			if (x > (scrollView.frame.size.width-10)) {
 				x = 0;
-				y = y + 30;
+				y = y + 25;
 				//move label to next row
 				CGRect newFrame = CGRectMake(x, y, 140, 30.0);
 				memberButt.frame = newFrame;
@@ -262,16 +262,16 @@
 			label.font = [UIFont systemFontOfSize:17];
 			label.text = word;
 			
-			CGRect labelFrame = CGRectMake(x, y, 240, 30.0);
+			CGRect labelFrame = CGRectMake(x, y, 240, 25.0);
 			label.frame = labelFrame;
 			[label sizeToFit];
 			x = x + label.frame.size.width + spacer;
 			
 			if (x > (scrollView.frame.size.width-10)) {
 				x = 0;
-				y = y + 30;
+				y = y + 25;
 				//move label to next row
-				CGRect newLabelFrame = CGRectMake(x, y, 240, 30.0);
+				CGRect newLabelFrame = CGRectMake(x, y, 240, 25.0);
 				label.frame = newLabelFrame;
 				[label sizeToFit];
 				x = x + label.frame.size.width + spacer;
