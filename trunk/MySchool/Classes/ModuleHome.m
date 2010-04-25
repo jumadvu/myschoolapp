@@ -28,7 +28,6 @@
 	[tableview release];
 	[moduleNameLabel release];
 	[targetModule release];
-	NSLog(@"module home dealloc");
     [super dealloc];
 }
 
