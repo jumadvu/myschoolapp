@@ -326,4 +326,47 @@
 	return (NSArray*)helpArray;	
 }
 
++(void)addPersonalQuestionsToDatabaseContext:(NSManagedObjectContext*)moc {
+	NSLog(@"Adding xml module %@", xmlFile);
+	
+	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"interruptions" fileExtension:@"xml"];
+	TBXMLElement * root = tbxml.rootXMLElement;
+	TBXMLElement * negative = [tbxml childElementNamed:@"negative" parentElement:root];
+	TBXMLElement * report=[tbxml childElementNamed:@"report" parentElement:negative];
+	int count = 0;
+	
+	while (report!=nil){
+		BehaviorReport *reportMO = (BehaviorReport *)[NSEntityDescription insertNewObjectForEntityForName:@"BehaviorReport" inManagedObjectContext:moc];
+		[reportMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:report]]];
+		[reportMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:report]]];
+		[reportMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:report]]];
+		[reportMO setPosNeg:@"negative"];
+		[reportMO setId:[NSNumber numberWithInt:count]];
+		report = [tbxml nextSiblingNamed:@"report" searchFromElement:report];
+		count++;
+	}
+	
+	TBXMLElement * positive = [tbxml childElementNamed:@"positive" parentElement:root];
+	report=[tbxml childElementNamed:@"report" parentElement:positive];
+	
+	while (report!=nil){
+		BehaviorReport *reportMO = (BehaviorReport *)[NSEntityDescription insertNewObjectForEntityForName:@"BehaviorReport" inManagedObjectContext:moc];
+		[reportMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:report]]];
+		[reportMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:report]]];
+		[reportMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:report]]];
+		[reportMO setPosNeg:@"positive"];
+		[reportMO setId:[NSNumber numberWithInt:count]];
+		report = [tbxml nextSiblingNamed:@"report" searchFromElement:report];
+		count++;
+	}
+	
+	//save the managed object
+	NSError *error;
+	if (![moc save:&error]) {
+		NSLog(@"error saving managed object");
+		// Handle the error.
+	}
+	
+}
+
 @end

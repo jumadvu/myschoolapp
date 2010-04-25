@@ -1,8 +1,23 @@
 <?xml version="1.0"?>
 <myschool>
-	<interruption type="respect">May I go to the bathroom?</interruption>
-	<interruption type="respect">Can I get some water?</interruption>
-	<interruption type="respect">What's that thing in the sky out the window?</interruption>
-	<interruption type="respect">She touched me</interruption>
-	<interruption type="sociability"></interruption>
+	<interruption type="respect">
+		<question>May I go to the bathroom?</question>
+		<correct>Please hold it until the end of the class</correct>
+		<wrong>Yes, go ahead</wrong>
+	</interruption>
+	<interruption type="respect">
+		<question>Can I get some water?</question>
+		<correct>Please hold it until the end of the class</correct>
+		<wrong>Yes, go ahead</wrong>
+	</interruption>
+	<interruption type="respect">
+		<question>What's that thing in the sky out the window?</question>
+		<correct>Please hold it until the end of the class</correct>
+		<wrong>Yes, go ahead</wrong>
+	</interruption>
+	<interruption type="sociability">
+		<question>studentname touched me</question>
+		<correct>Please hold it until the end of the class</correct>
+		<wrong>Yes, go ahead</wrong>
+	</interruption>
 </myschool>

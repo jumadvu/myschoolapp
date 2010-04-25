@@ -73,7 +73,7 @@
 	lblAnswer.textColor = [UIColor grayColor];
 	lblAnswer.lineBreakMode = UILineBreakModeWordWrap;
 	lblAnswer.numberOfLines = 0;
-	lblAnswer.font = [UIFont fontWithName:@"Zapfino" size:14.0];
+	lblAnswer.font = [UIFont fontWithName:@"Marker Felt" size:18.0];
 	//MarkerFelt-Thin
 	lblAnswer.backgroundColor = [UIColor clearColor];
 	[self.contentView addSubview:lblAnswer];

@@ -97,4 +97,19 @@
 
 }
 
+-(void)assignSmartsPoints:(int)value {
+	Student *student;
+	for (student in self.students) {
+		int intel = [student.intelligence intValue];
+		intel += value;
+		[student setIntelligence:[NSNumber numberWithInt:intel]];
+		if ([student.intelligence intValue] > 100) {
+			[student setIntelligence:[NSNumber numberWithInt:100]];
+		}
+		if ([student.intelligence intValue] < 1) {
+			[student setIntelligence:[NSNumber numberWithInt:1]];
+		}
+	}
+}
+
 @end

@@ -48,7 +48,7 @@
 	
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 
-	[self setStoreItems:[StoreItem storeItemsArray]];
+	[self setStoreItems:[StoreItem itemsAvailableForUser:delegate.teacher]];
 	tableView.backgroundColor = [UIColor clearColor];
 	tableView.rowHeight = 100;
 	pointsLabel.text = [[delegate.teacher pointsAvailable] stringValue];
@@ -142,9 +142,9 @@
 	StoreItem *storeItem = [storeItems objectAtIndex:indexPath.row];
 	if ([[storeItem cost] intValue] > [[delegate.teacher pointsAvailable] intValue]) {
 		//can't afford it
-		NSString *msg = [NSString stringWithFormat:@"You don't have enough teaching points to purchase this item.  You can earn more teaching points by teaching more lessons!"];
+		NSString *msg = [NSString stringWithFormat:@"You don't have enough store credits to purchase this item.  You earn store credits by teaching lessons!"];
 		UIAlertView *alert = [[UIAlertView alloc] 
-							  initWithTitle:@"Hold on a second!" 
+							  initWithTitle:@"Hold on a sec!" 
 							  message:msg 
 							  delegate:self 
 							  cancelButtonTitle:@"OK" 
@@ -152,7 +152,7 @@
 		[alert show];
 		[alert release];
 	} else {
-		//can afford it
+		//Yay! teacher can afford it
 		delegate.teacher.pointsSpent = [NSNumber numberWithInt:[delegate.teacher.pointsSpent intValue] + [[storeItem cost] intValue]];
 		[self.pointsLabel setText:[[delegate.teacher pointsAvailable] stringValue]];
 		[delegate.teacher addPurchasesObject:storeItem];
@@ -165,7 +165,6 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
-		[self.tableView reloadData];
 		
 		//save the managed object
 		NSError *error;
@@ -173,6 +172,10 @@
 			NSLog(@"error saving managed object");
 			// Handle the error.
 		}
+		
+		//refresh the list and reload the table
+		[self setStoreItems:[StoreItem itemsAvailableForUser:delegate.teacher]];
+		[self.tableView reloadData];
 		
 	}
 	
