@@ -106,6 +106,16 @@
 			[memberButt addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
 			memberButt.frame = CGRectMake(x, y, 145.0, 30.0);  
 			[memberButt sizeToFit];
+			
+			CGAffineTransform bigger = CGAffineTransformMakeScale(1.25, 1.25);
+			
+			[UIView beginAnimations:nil context:nil];
+			[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+			[UIView setAnimationDuration:10];
+			[UIView setAnimationDelegate:self];
+			[memberButt setTransform:bigger];
+			[UIView commitAnimations];
+			
 			x = x + memberButt.frame.size.width + spacer;
 			if (x > (scrollView.frame.size.width-10)) {
 				x = 0;
