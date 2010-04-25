@@ -34,8 +34,10 @@
 @synthesize pointsButton;
 @synthesize pointsLabel;
 @synthesize teacherAtDesk;
+@synthesize creditsLabel;
 
 - (void)dealloc {
+	[creditsLabel release];
 	[teacherAtDesk release];
 	[pointsButton release];
 	[pointsLabel release];
@@ -126,7 +128,8 @@
 	[super viewDidAppear:animated];
 	NSLog(@"main menu view did appear");
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	pointsLabel.text = [delegate.teacher.totalPoints stringValue];
+	[self.pointsLabel setText:[NSString stringWithFormat:@"%d%%",[delegate.teacher.rating intValue]]];
+	[self.creditsLabel setText:[[delegate.teacher pointsAvailable] stringValue]];
 }
 
 -(void)getParentEmail {

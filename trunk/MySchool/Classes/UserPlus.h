@@ -19,5 +19,6 @@
 -(NSArray*)ungradedPapers;
 -(NSNumber*)pointsAvailable;
 -(void) adjustApprovalRating:(NSNumber*)value;
+-(void)assignSmartsPoints:(int)value;
 
 @end

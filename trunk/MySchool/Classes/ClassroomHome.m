@@ -101,12 +101,12 @@
     [super viewDidLoad];
 	[self setTopBarTitle:@"" withLogo:YES backButton:YES];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[self setTopBarTitle:@"Classroom" withLogo:YES backButton:YES];	
 	//if they are coming directly to the classroom, show alert message and reroute to library
 	if (delegate.currentChapter == nil) {
 		//go to library to choose current chapter
 		LibraryShelves *vc = [[[LibraryShelves alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];	
+		
 		NSString *msg = [NSString stringWithFormat:@"Let's go to the library to choose a lesson to teach."];
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:@"Choose a Lesson" 
@@ -223,7 +223,7 @@
 		//turn on label coloring
 		if ([word length] < 1) {
 			//it's a line break
-			y +=25;
+			y +=30;
 			x = 0;
 			continue;
 		}
@@ -378,11 +378,22 @@
 		//add teacher's points
 		[delegate.teacher setTotalPoints:[NSNumber numberWithInt:([delegate.teacher.totalPoints intValue] + bonusPoints)]];
 		NSString *msg;
-		if (bonusPoints > 35) {
-			msg = [NSString stringWithFormat:@"Principal Wilson says:\rNice work!.\r Your students are really getting smarter, and you earned %d teaching points too! Don't forget to grade the homework!", bonusPoints];
+		
+		//assess the quality of the lecture and assign points
+		if (bonusPoints > 60) {
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rWow, nice class!.\r Your students are really getting smarter, and you earned %d store credits too! Don't forget to grade the homework!", bonusPoints];
+			[delegate.teacher assignSmartsPoints:2];
+		} else if (bonusPoints > 45) {
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHey, that was a pretty good lecture!.\r Don't forget to grade the homework!", bonusPoints];
+			[delegate.teacher assignSmartsPoints:1];
+		} else if (bonusPoints > 25) {
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHmm. Slow down a bit, I think you missed a few things!.\r Your students aren't going to learn much that way. Don't forget to grade the homework!", bonusPoints];
+			[delegate.teacher assignSmartsPoints:0];
 		} else {
-			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHmm you kind of rushed that one!.\r Your students aren't going to learn that way. Don't forget to grade the homework!", bonusPoints];
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rUm you really rushed that one!.\r Your students aren't going to learn that way. Don't forget to grade the homework!", bonusPoints];
+			[delegate.teacher assignSmartsPoints:-1];
 		}
+
 
 		UIAlertView *alert = [[UIAlertView alloc] 
 							  initWithTitle:@"You Finished the Lesson On Time!" 
@@ -466,8 +477,9 @@
 			counter = 1.0;
 		}
 		self.timerLabel.text = [NSString stringWithFormat:@"Time Left: %d",secondsRemaining];
-
-		//check to see if there are any student questions
+		
+		//after a delay of 15 seconds, we start checking for student questions
+		if (secondsRemaining < 165) {
 			Student *student;
 			int x=0;
 			for (student in students) {
@@ -480,8 +492,7 @@
 				}
 				x++;
 			}
-		
-		
+		}
 	}
 	if (secondsRemaining <= 0) {
 		paused = YES;
@@ -581,6 +592,7 @@
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
+	NSLog(@"did receive memory warning");
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.

@@ -14,5 +14,6 @@
 +(void)createStoreItems;
 +(NSArray*)storeItemsArray;
 +(NSArray*)fetchStoreItems;
++(NSArray*)itemsAvailableForUser:(User*)user;
 
 @end

@@ -186,7 +186,7 @@
 	NSString *text2 = answer.answer;
 	NSLog(@"%@", text2);
 	CGSize constraint2 = CGSizeMake (200,700);
-	CGSize size2 = [text2 sizeWithFont:[UIFont fontWithName:@"Zapfino" size:14] constrainedToSize:constraint2 lineBreakMode:UILineBreakModeWordWrap];
+	CGSize size2 = [text2 sizeWithFont:[UIFont fontWithName:@"Marker Felt" size:18] constrainedToSize:constraint2 lineBreakMode:UILineBreakModeWordWrap];
 	float myHeight2 = size2.height;
 
 	float myTotalHeight = myHeight1 + myHeight2 + 20;
@@ -218,7 +218,7 @@
 	
 	NSString *text2 = answer.answer;
 	CGSize constraint2 = CGSizeMake (200,700);
-	CGSize size2 = [text2 sizeWithFont:[UIFont fontWithName:@"Zapfino" size:14] constrainedToSize:constraint2 lineBreakMode:UILineBreakModeWordWrap];
+	CGSize size2 = [text2 sizeWithFont:[UIFont fontWithName:@"Marker Felt" size:18] constrainedToSize:constraint2 lineBreakMode:UILineBreakModeWordWrap];
 	float myHeight2 = size2.height;
 	
 	float myTotalHeight = myHeight1 + myHeight2 + 20;

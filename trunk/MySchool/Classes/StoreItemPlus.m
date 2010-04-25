@@ -10,6 +10,7 @@
 #import "StoreItem.h"
 #import "MySchoolAppDelegate.h"
 #import "Image.h"
+#import "User.h"
 
 @implementation StoreItem (StoreItemPlus)
 
@@ -47,6 +48,19 @@
 	}
 	//NSLog(@"%@", sortedArray);
 	return array;
+}
+
++(NSArray*)itemsAvailableForUser:(User*)user {
+	
+	NSArray *array = [self storeItemsArray];
+	NSMutableArray *itemsLeft = [[[NSMutableArray alloc] init] autorelease];
+	StoreItem *aStoreItem;
+	for (aStoreItem in array) {
+		if (![user.purchases containsObject:aStoreItem]) {
+			[itemsLeft addObject:aStoreItem];
+		}
+	}
+	return (NSArray*)itemsLeft;
 }
 
 +(NSArray*)fetchStoreItems {

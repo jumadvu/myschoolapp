@@ -13,6 +13,19 @@
 
 @implementation DayinHistory
 @synthesize month, entry, current, parsedDate;
+//@synthesize dateBack;
+//@synthesize dateForward;
+
+- (void)dealloc {
+	//[dateBack release];
+	//[dateForward release];
+	[entry release];
+	[month release];
+	[current release];
+	[parsedDate release];
+    [super dealloc];
+}
+
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -94,14 +107,6 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
-- (void)dealloc {
-	[entry release];
-	[month release];
-	[current release];
-	[parsedDate release];
-    [super dealloc];
-}
 
 
 @end

@@ -60,12 +60,17 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+	NSLog(@"view will appear");
 	[super viewWillAppear:animated];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	if (transformed) {
+		NSLog(@"transformed");		
 		//pop back one further view
-		[delegate.navCon popViewControllerAnimated:NO];
+		[delegate.navCon popToRootViewControllerAnimated:YES];
+	} else {
+		NSLog(@"not transformed");
 	}
+
 }
 
 -(void)stopIt {
