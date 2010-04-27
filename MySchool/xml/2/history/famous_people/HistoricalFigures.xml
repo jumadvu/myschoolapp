@@ -8,7 +8,7 @@
 		    <title>Martin Luther King, Jr.</title>
 		    <article>
 		    	<text>Dr Martin Luther King, Jr. was a famous American who fought for human rights. He was born in Atlanta, Georgia on January 15th 1929. After graduating from college in 1948, he was not sure about which profession to join. He considered a career in medicine and law but rejected both and joined the Baptist Church. He studied at a Theological Seminary in Pennsylvania. It was while studying there that King learned about the non-violent methods used by [Mahatma Gandhi] against the British in India. King was convinced that such methods would be of great value to the [civil rights movement]. He worked hard to make people understand that black people should always be treated equally to white people. He gave speeches and led rallies to encourage African Americans to protest without the need for violence. He first began to be well-known in 1955 when he led the [Montgomery Bus boycott]. In this year he was given the [Nobel Peace Prize]. After this he continued to work with many others to fight against poverty and the Vietnam War. King's efforts led to the 1963 [March on Washington], where he delivered his "I Have a Dream" speech. On the evening of April 4, 1968, while standing on the balcony of his motel room in Memphis, Tennessee, where he was preparing to lead a protest march in sympathy with striking garbage workers of that city, he was assassinated.</text>
-			<image><file>gandhi.jpg</file><desc>Gandhi, best known for his philosophy of resisting tyranny through mass civil disobedience, was the pre-eminent spiritual leader of India during the Indian independence movement.</desc></image>
+			<image><file>gandhi.jpg</file><desc>Gandhi, best known for his philosophy of resisting tyranny through mass civil disobedience, was the pre-eminent spiritual leader of India during the Indian independence movement against British colonial rule.</desc></image>
 			<image><file>civilrights.png</file><desc>Civil rights movement here refers to the movement in the US aimed at outlawing racial discrimination against African Americans and restoring the civil right to vote in Southern states.</desc></image>
 			<image><file>rosaparksbus.jpg</file><desc>This was a political and social protest opposing Montgomery, Alabama's policy of racial segregation on its public transit system. Rosa Parks famously was arrested for refusing to surrender her seat to a white person.</desc></image>
 		    <image><file>mlk.jpg</file><desc>King became the youngest person to receive the Nobel Peace Prize for his work to end racial segregation and racial discrimination through civil disobedience and other non-violent means.</desc></image>	
@@ -16,14 +16,26 @@
 		</article>
 		<lecture>
 			<title>Martin Luther King, Jr.</title>
-			<text>Martin Luther King was a famous American [astronaut]. </text>
+			<text>Martin Luther King was a famous American [astronaut] born in [Washington, D.C.]. While attending Seminary, King was introduced to the non-violent methods used by Mahatma Gandhi against the [Soviets] in India. King incorporated Gandhi's philosophy to resist tyranny through [use of violence] in the American civil rights movement. The civil rights movement aimed to outlaw racial discrimination against African Americans and restore the right to [free speech] in certain states.</text>
 			<keywordSet word="civil rights leader">
 				<word>President</word>
 				<word>Nuclear physicist</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="Atlanta, Georgia">
+				<word>Montgomery, Alabama</word>
+				<word>Chester, Pennsylvania</word>
+			</keywordSet>
+			<keywordSet word="British">
+				<word>Japanese</word>
+				<word>Spanish</word>
+			</keywordSet>
+			<keywordSet word="civil disobedience">
+				<word>laughter and love</word>
+				<word>acceptance</word>
+			</keywordSet>
+			<keywordSet word="vote">
+				<word>bear arms</word>
+				<word>remain silent</word>
 			</keywordSet>
 			<keywordSet word="">
 				<word>word</word>
