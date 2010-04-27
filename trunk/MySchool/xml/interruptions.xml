@@ -15,7 +15,7 @@
 		<correct>You know it is not appropriate to interrupt class for that sort of thing.</correct>
 		<wrong>I stepped in some mud on the way to school this morning.</wrong>
 	</interruption>
-	<interruption type="sociability">
+	<interruption type="respect">
 		<question>otherstudent touched me!</question>
 		<correct>otherstudent please keep your hands to yourself</correct>
 		<wrong>You just have to accept that.</wrong>

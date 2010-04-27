@@ -74,16 +74,20 @@
 }
 
 - (void)fetchModuleData {
-	//if there are no modules in the library, its the first time through
-	//add the xml modules
 	NSArray *modules = [[NSArray alloc] init];
 	modules = [Library fetchModulesFromDBforGrade:[NSNumber numberWithInt:2]];
 	if ([modules count] == 0) {
-		//add modules
+		//if there are no modules in the library, its the first time through
+		//add the xml modules
+		//add library modules
 		[Library addXMLModule:@"dinosaurs" toDatabaseContext:managedObjectContext];
 		[Library addXMLModule:@"sustain" toDatabaseContext:managedObjectContext];
+
 		//add behavior reports
 		[Library addBehaviorReports:@"behaviorReports" toDatabaseContext:managedObjectContext];
+
+		//add personal questions
+		[Library addPersonalQuestionsToDatabaseContext:managedObjectContext];
 		
 	}
 	[modules release];

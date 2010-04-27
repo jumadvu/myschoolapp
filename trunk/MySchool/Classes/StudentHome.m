@@ -49,9 +49,13 @@
 	tableView.backgroundColor = [UIColor clearColor];
 	
 	[self setTopBarTitle:[self.student firstName] withLogo:YES backButton:YES];
-	
+	[self addHelpButton:2 x:5 y:252];
+	[self addHelpButton:1 x:5 y:287];
 	[self.student setImageView:frontView forMood:@"Happy" isWaving:NO];
 	
+	//check to see if there are any new reports for this student
+	[self.student addPossibleReports];
+
 
 }
 
@@ -59,22 +63,23 @@
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
     [super viewDidAppear:animated];
-	//[self.tableView reloadData];
 	
 	//set personality scores
 	self.smartsScore.text = [[self.student intelligence] stringValue];
 	self.respectScore.text = [[self.student politeness] stringValue];
-	self.enthusiasmScore.text = [[self.student friendliness] stringValue];
+	//self.enthusiasmScore.text = [[self.student friendliness] stringValue];
 	
 	//move personality score labels into position
 	self.smartsScore.center = CGPointMake(115+(1.78*[[self.student intelligence] intValue]), self.smartsScore.center.y);
 	self.respectScore.center = CGPointMake(115+(1.78*[[self.student politeness] intValue]), self.respectScore.center.y);
-	self.enthusiasmScore.center = CGPointMake(115+(1.78*[[self.student friendliness] intValue]), self.enthusiasmScore.center.y);
+	//self.enthusiasmScore.center = CGPointMake(115+(1.78*[[self.student friendliness] intValue]), self.enthusiasmScore.center.y);
 	
 	//move personality scores boxes into position
 	self.smartsBox.center = CGPointMake(115+(1.78*[[self.student intelligence] intValue]), self.smartsBox.center.y);
 	self.respectBox.center = CGPointMake(115+(1.78*[[self.student politeness] intValue]), self.respectBox.center.y);
-	self.enthusiasmBox.center = CGPointMake(115+(1.78*[[self.student friendliness] intValue]), self.enthusiasmBox.center.y);
+	//self.enthusiasmBox.center = CGPointMake(115+(1.78*[[self.student friendliness] intValue]), self.enthusiasmBox.center.y);
+
+	[self.tableView reloadData];
 
 }
 
@@ -88,7 +93,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	
-    return 1;
+    return 2;
 }
 
 
@@ -96,7 +101,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
-	return 2;
+	return 1;
 
 }
 
@@ -113,14 +118,14 @@
     }
 	cell.textLabel.font = [UIFont systemFontOfSize:13];
 	cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
-	if (indexPath.row == 0) {
+	if (indexPath.section == 0) {
 		//grades row
 		cell.textLabel.text = [NSString stringWithFormat:@"%@'s Grades", [student firstName]];
-		//cell.detailTextLabel.text = [NSString stringWithFormat:@"Average: %@",[self.student overallGrade]];		
+		cell.detailTextLabel.text = [NSString stringWithFormat:@"Average: %@",[self.student overallGrade]];		
 	} else {
 		//behaviors row
 		cell.textLabel.text = [NSString stringWithFormat:@"%@'s Behavior Reports", [student firstName]];
-		//cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[self.student overallGrade]];		
+		cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Report(s)",[[self.student reports] count]];		
 	}
 
     return cell;
@@ -130,7 +135,7 @@
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	//
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	if (indexPath.row == 0) {
+	if (indexPath.section == 0) {
 		StudentGrades *vc = [[[StudentGrades alloc] initWithNibName:nil bundle:nil] autorelease];
 		vc.student = self.student;
 		[delegate.navCon pushViewController:vc animated:YES];

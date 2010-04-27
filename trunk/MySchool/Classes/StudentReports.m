@@ -33,10 +33,7 @@
 	frontView.contentMode = UIViewContentModeScaleAspectFit;
 	frontView.image = [student frontView];
 	tableView.backgroundColor = [UIColor clearColor];
-	
-	//check to see if there are any new reports for this student
-	[student addPossibleReports];
-	
+		
 	self.reports = (NSMutableArray*)[[self.student reports] allObjects];
 	[self setTopBarTitle:[NSString stringWithFormat:@"%@'s Behavior Reports",[self.student firstName]] withLogo:YES backButton:YES];
 	

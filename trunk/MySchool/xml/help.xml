@@ -7,7 +7,19 @@
 		</issue>
 		<issue>
 			<title>Student Respect Score</title>
-			<text>Some of your students can be disrespectful to you and their fellow students.  To help them learn to be more respectful, be sure to look at their 'behavior reports' and choose the best way to deal with each situation. You can find these reports in the Student Book in your office.</text>
+			<text>Some of your students can be disrespectful to you and their fellow students.  To help them learn to behave properly in school, be sure to look at their 'behavior reports' and choose the best way to deal with each situation.</text>
+		</issue>
+		<issue>
+			<title>Student Smarts Score</title>
+			<text>As you teach lessons and grade homeworks your students will gradually get smarter.  At least they will get smarter IF you do a good job!  The better you do, the smarter they get!</text>
+		</issue>
+		<issue>
+			<title>Teaching Points</title>
+			<text>Every lesson you teach, you receive 'Teaching Points'.  The better you do on the lesson, the more teaching points you earn.  Once you have enough teaching points, you can move up to teach the next grade level!</text>
+		</issue>
+		<issue>
+			<title>School Store Credit</title>
+			<text>Every lesson you teach, you receive 'Store Credit'.  The better you do on the lesson, the more store credit you earn.  When you have enough store credits, you can trade your store credits for activities that you can access in your classroom's 'Fun Zone'.</text>
 		</issue>
 	</help>
 </myschool>
