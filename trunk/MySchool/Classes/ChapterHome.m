@@ -11,6 +11,8 @@
 #import "TBXML.h"
 #import "Image.h"
 #import "ClassroomHome.h"
+#import "User.h"
+#import "ClassroomInstructions.h"
 
 
 @implementation ChapterHome
@@ -34,8 +36,13 @@
 -(void)teachButtonSelected:(id)sender {
 	//go to classroom
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
+	if ([delegate.teacher.completedLessons count]<3) {
+		ClassroomInstructions *vc = [[[ClassroomInstructions alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];	
+	} else {
+		ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];	
+	}
 	
 }
 

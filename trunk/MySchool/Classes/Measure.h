@@ -22,6 +22,7 @@
 	NSArray *noteSounds;
 	NSTimer *timer;
 	MusicFreestyle *delegate;
+	MusicNote *draggedNote;
 }
 
 @property (nonatomic, retain) UIImage *measureImage;
@@ -34,6 +35,7 @@
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, retain) NSArray *noteSounds;
 @property (nonatomic, retain) MusicFreestyle *delegate;
+@property (nonatomic, retain) MusicNote *draggedNote;
 
 -(NSNumber*)currentSum;
 -(BOOL)tryToAddNote:(MusicNote*)note;
@@ -42,5 +44,8 @@
 - (void)drawRectangleWithX:(int)x Y:(int)y width:(int)width height:(float)height color:(UIColor*)myFillColor;
 - (void)playNote;
 - (void)playMeasure;
+-(void)reattachNote:(MusicNote*)note atY:(NSNumber*)yLoc atX:(NSNumber*)xLoc;
+-(void)animateNote:(MusicNote*)note;
+-(void)moveNotesIntoPosition;
 
 @end

@@ -9,6 +9,7 @@
 #import "Measure.h"
 #import "MusicNote.h"
 #import "MusicFreestyle.h"
+#import "Pie.h"
 
 @implementation Measure
 
@@ -22,8 +23,10 @@
 @synthesize noteSounds;
 @synthesize currentNote;
 @synthesize delegate;
+@synthesize draggedNote;
 
 - (void)dealloc {
+	[draggedNote release];
 	[delegate release];
 	[noteSounds release];
 	[timer release];
@@ -38,7 +41,7 @@
 
 - (id)init {
 	UIImage *image = [UIImage imageNamed:@"measure.png"];
-	CGRect frame = CGRectMake(0, 0, image.size.width, image.size.height);
+	CGRect frame = CGRectMake(0, 0, image.size.width, image.size.height+20);
 	
 	// Set self's frame to encompass the image
 	if (self = [self initWithFrame:frame]) {
@@ -49,7 +52,7 @@
 		[self setMeasureNotes:anArray];
 		[anArray release];
 		NSLog(@"how many notes in this measure: %d", [measureNotes count]);
-		[self setNextSpace:[NSNumber numberWithInt:45]];
+		[self setNextSpace:[NSNumber numberWithInt:50]];
 		
 	}
 	
@@ -118,6 +121,7 @@
 	[player stop];
 }
 
+
 -(BOOL)tryToAddNote:(MusicNote*)note {
 	BOOL addedNote = NO;
 	NSLog(@"trying to add note");
@@ -126,16 +130,25 @@
 		//add the note to the measure
 		[measureNotes addObject:note];
 		[self addSubview:note];
+		
+		/*
 		note.center = CGPointMake([nextSpace intValue], [note.height intValue]);
 		int spacer = [nextSpace intValue] + measureLength * [note.fraction floatValue];
 		[self setNextSpace:[NSNumber numberWithInt:spacer]];
+		 */
+		
 		//play the sound
 		NSLog(@"%d", note.noteNum);
 		self.player = [noteSounds objectAtIndex:note.noteNum];
 		[player play];
+
 		//set a timer to stop the note after the correct interval
 		NSTimer *aTimer = [NSTimer scheduledTimerWithTimeInterval:2*[note.fraction floatValue] target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:NO];
 		[self setTimer:aTimer];
+		
+		//arrange notes
+		[self moveNotesIntoPosition];
+		
 		addedNote = YES;
 	}
 	if (newSum == 1) {
@@ -144,8 +157,10 @@
 		
 	}
 	if (newSum > 1) {
-		//can't fit this note. show feedback. vibrate
+		//can't fit this note. show feedback.
 	}
+	
+	//show math
 	MusicNote *enote;
 	NSMutableString *mString = [[NSMutableString alloc] init];
 	int count = 0;
@@ -206,6 +221,7 @@
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	[[UIColor clearColor] setFill];
 	[myFillColor setStroke];
+	CGContextSetLineWidth(context, 5);
 	
 	//draw rectangle
 	CGContextBeginPath(context);
@@ -228,7 +244,7 @@
 	
 	//if its a complete measure draw a green rectangle
 	if ([[self currentSum] intValue] == 1) {
-		[self drawRectangleWithX:0 Y:15 width:350 height:80 color:[UIColor greenColor]];
+		[self drawRectangleWithX:0 Y:45 width:356 height:78 color:[UIColor greenColor]];
 	}
 	
 }
@@ -265,5 +281,126 @@
 
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	NSLog(@"touches began");
+	// We only support single touches, so anyObject retrieves just that touch from touches
+	UITouch *touch = [touches anyObject];
+	
+	//NSLog([[touch view] description]);
 
+	for (int x=0; x<[self.measureNotes count]; x++) {
+		MusicNote *aNote = [self.measureNotes objectAtIndex:x];
+		NSLog(@"trying note %d", x);
+		if ([touch view] == aNote) {
+			NSLog(@"it's a placed note");
+			//disable movement of measure
+			delegate.scrollView.scrollEnabled = NO;
+			//do something when touches begin
+			[self setDraggedNote:aNote];
+			return;
+		}
+	}
+	
+	
+	
+}
+
+- (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
+    UITouch *touch = [touches anyObject];   
+	
+	
+	if ([self draggedNote] != nil) {
+		CGPoint location = [touch locationInView:self];
+		//NSLog(@"x:%f  y:%f", location.x, location.y);
+		if (location.y > 115) {
+			draggedNote.center = CGPointMake(location.x -30, 90);		
+		} else if (location.y < 53) {
+			draggedNote.center = CGPointMake(location.x -30, 28);		
+		} else {
+			draggedNote.center = CGPointMake(location.x -30, location.y-25);		
+		}
+		return;
+	}
+	 
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	NSLog(@"touches ended");
+	UITouch *touch = [touches anyObject];
+	
+    //CGPoint location = [touch locationInView:self];
+	if ([self draggedNote] != nil) {
+		CGPoint location = CGPointMake(draggedNote.center.x, draggedNote.center.y+25);
+		//reattach note to measure
+		[self reattachNote:(MusicNote*)draggedNote atY:[NSNumber numberWithFloat:location.y] atX:[NSNumber numberWithFloat:location.x]];
+		delegate.scrollView.scrollEnabled = YES;
+	}
+	draggedNote = nil;
+}
+
+-(void)reattachNote:(MusicNote*)note atY:(NSNumber*)yLoc atX:(NSNumber*)xLoc {
+	NSLog(@"reattaching note to measure");
+	if ([yLoc intValue] > 50 && [yLoc intValue] < 120) {
+		NSLog(@"y:%2f", [yLoc floatValue]);
+		[note setNoteType:[note fraction] atHeight:yLoc atX:xLoc];
+		note.center = CGPointMake(note.center.x, [note.height intValue]);		
+		
+		//play the sound
+		NSLog(@"note num: %d", note.noteNum);
+		self.player = [noteSounds objectAtIndex:note.noteNum];
+		[player play];
+		
+		//set a timer to stop the note after the correct interval
+		NSTimer *aTimer = [NSTimer scheduledTimerWithTimeInterval:2*[note.fraction floatValue] target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:NO];
+		[self setTimer:aTimer];
+		
+		[self moveNotesIntoPosition];
+		[delegate.pieView drawPiePiecesWithMeasure:self];
+
+		
+	} else {
+		//not in bounds, return to original y position
+		NSLog(@"not in bounds");
+		NSLog(@"y:%2f", [yLoc floatValue]);
+	}
+
+}
+
+-(void)moveNotesIntoPosition {
+	int numNotes = [measureNotes count];
+	numNotes++;
+	MusicNote *aNote;
+	int count = 1;
+	for (aNote in measureNotes) {
+		[aNote setNewPoint:CGPointMake(count*(measureLength/numNotes), [aNote.height intValue])];
+		//[aNote setNeedsDisplay]
+		[self animateNote:aNote];
+		
+		[aNote setStartingPoint:aNote.newPoint];
+		count++;
+	}
+	
+}
+		 
+-(void)animateNote:(MusicNote*)note {
+	float xFactor = note.newPoint.x - note.startingPoint.x;
+	float yFactor = note.newPoint.y - note.startingPoint.y;
+	note.center = CGPointMake(note.startingPoint.x, note.startingPoint.y);		
+
+	NSLog(@"starting point x: %2f",note.startingPoint.x);
+	NSLog(@"new point x: %2f",note.newPoint.x);
+	NSLog(@"final point x: %2f",xFactor);
+	
+	//CGAffineTransform moveIt = CGAffineTransformMakeTranslation(xFactor, yFactor);	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+	[UIView setAnimationDuration:.5];
+	[UIView setAnimationDelegate:self];
+	//[note setTransform:moveIt];
+	note.center = CGPointMake(note.newPoint.x, note.newPoint.y);		
+	
+	[UIView commitAnimations];
+	
+}
+		 
 @end

@@ -134,7 +134,7 @@
 		UIImage *myImage = [UIImage imageNamed:@"musicInstructions4.png"];
 		[imageView setImage:myImage];
 		heading.text = @"Instructions - 4 of 4";
-		instructions.text = @"As you add notes to the measure, you will see a 'pie' in the corner of the screen. This will guide you on how much room is left in the measure.";
+		instructions.text = @"As you add notes to the measure, you will see a 'pie' in the corner of the screen. The pie represents one measure. It will help you know how much room is left in the measure.";
 	} else {
 		//level 2
 		heading.text = @"Make a Song";

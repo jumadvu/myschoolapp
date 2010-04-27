@@ -7,17 +7,17 @@
 	</interruption>
 	<interruption type="respect">
 		<question>Can I get some water?</question>
-		<correct>Please hold it until the end of the class</correct>
+		<correct>No, you need to wait until break time.</correct>
 		<wrong>Yes, go ahead</wrong>
 	</interruption>
 	<interruption type="respect">
-		<question>What's that thing in the sky out the window?</question>
-		<correct>Please hold it until the end of the class</correct>
-		<wrong>Yes, go ahead</wrong>
+		<question>Did you know there is some dirt on your shoes?</question>
+		<correct>You know it is not appropriate to interrupt class for that sort of thing.</correct>
+		<wrong>I stepped in some mud on the way to school this morning.</wrong>
 	</interruption>
 	<interruption type="sociability">
-		<question>studentname touched me</question>
-		<correct>Please hold it until the end of the class</correct>
-		<wrong>Yes, go ahead</wrong>
+		<question>otherstudent touched me!</question>
+		<correct>otherstudent please keep your hands to yourself</correct>
+		<wrong>You just have to accept that.</wrong>
 	</interruption>
 </myschool>

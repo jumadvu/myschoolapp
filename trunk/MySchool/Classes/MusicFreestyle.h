@@ -12,15 +12,17 @@
 @class MusicNote;
 @class Pie;
 
-@interface MusicFreestyle : baseViewController {
+@interface MusicFreestyle : baseViewController <UIScrollViewDelegate> {
 	IBOutlet UIScrollView *scrollView;
 	IBOutlet UIImageView *pie;
+	IBOutlet UIImageView *feedbackBG;
 	IBOutlet UIView *feedback;
-	IBOutlet UITextView *feedbackMessage;
+	IBOutlet UILabel *feedbackMessage;
 	IBOutlet UIButton *rewindButton;
 	IBOutlet UIButton *playPauseButton;
 	IBOutlet UIButton *ffButton;
 	IBOutlet UILabel *fractionsLabel;
+	IBOutlet UILabel *measureNumLabel;
 	MusicNote *wholeNote;
 	MusicNote *halfNote;
 	MusicNote *quarterNote;
@@ -36,10 +38,11 @@
 	
 }
 
-@property (nonatomic, retain) UITextView *feedbackMessage;
+@property (nonatomic, retain) UILabel *feedbackMessage;
 @property (nonatomic, retain) UIView *feedback;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) UIImageView *pie;
+@property (nonatomic, retain) UIImageView *feedbackBG;
 @property (nonatomic, retain) UIButton *rewindButton;
 @property (nonatomic, retain) UIButton *playPauseButton;
 @property (nonatomic, retain) UIButton *ffButton;
@@ -56,10 +59,11 @@
 @property (nonatomic) BOOL pulseIsOn;
 @property (nonatomic, retain) NSMutableArray *measures;
 @property (nonatomic, retain) Pie *pieView;
+@property (nonatomic, retain) UILabel *measureNumLabel;
 
 
 - (void)setUpNotes;
--(void)addNoteToCurrentMeasureAtY:(NSNumber*)yLoc;
+-(void)addNoteToCurrentMeasureAtY:(NSNumber*)yLoc atX:(NSNumber*)xLoc;
 -(void)checkCompleteMeasure;
 -(void)showFeedback:(NSString*)message;
 -(IBAction)playMySong;

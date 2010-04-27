@@ -20,5 +20,6 @@
 +(void)addBehaviorReports:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc;
 +(NSArray*)fetchBehaviorReports:(NSString*)type;
 +(NSArray*)getHelp;
++(void)addPersonalQuestionsToDatabaseContext:(NSManagedObjectContext*)moc;
 
 @end
