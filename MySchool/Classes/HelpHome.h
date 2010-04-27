@@ -12,9 +12,11 @@
 @interface HelpHome : baseViewController <UITableViewDelegate, UITableViewDataSource> {
 	IBOutlet UITableView *tableview;
 	NSArray *helpitems;
+	NSNumber *helpNum;
 }
 
 @property (nonatomic, retain) UITableView *tableview;
 @property (nonatomic, retain) NSArray *helpitems;
+@property (nonatomic, retain) NSNumber *helpNum;
 
 @end

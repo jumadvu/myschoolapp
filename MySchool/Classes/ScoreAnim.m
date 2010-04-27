@@ -13,18 +13,22 @@
 @synthesize scoreValue, xValue, yValue, scoreLabel;
 
 - (id)initWithData:(NSString*)labelvalue x:(NSNumber*)xval y:(NSNumber*)yval {
-    CGRect frame = CGRectMake([xval intValue],[yval intValue],30,30);
+    CGRect frame = CGRectMake([xval intValue],[yval intValue],100,100);
 	if ((self = [self initWithFrame:frame])) {
         [self setScoreValue:labelvalue];
 		[self setYValue:yval];
 		[self setXValue:xval];
     }
-	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 90, 80)];
 	[self setScoreLabel:label];
 	[self setBackgroundColor:[UIColor clearColor]];
 	[label release];
 	scoreLabel.backgroundColor = [UIColor clearColor];
-	scoreLabel.font = [UIFont systemFontOfSize:25.0];
+	scoreLabel.font = [UIFont boldSystemFontOfSize:22.0];
+	scoreLabel.shadowColor = [UIColor blackColor];
+	scoreLabel.numberOfLines = 0;
+	scoreLabel.lineBreakMode = UILineBreakModeWordWrap;
+	scoreLabel.textAlignment = UITextAlignmentCenter;
 	NSRange range = {0,1};
 	NSString *subword = [scoreValue substringWithRange:range];
 	if([subword isEqualToString:@"+"]){
@@ -42,7 +46,7 @@
 
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-	[UIView setAnimationDuration:2];
+	[UIView setAnimationDuration:1.5];
 	[UIView setAnimationDelegate:self];
 	scoreLabel.alpha = 0;
 	[scoreLabel setTransform:moveUp];

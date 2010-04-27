@@ -15,8 +15,10 @@
 
 @synthesize tableview;
 @synthesize helpitems;
+@synthesize helpNum;
 
 - (void)dealloc {
+	[helpNum release];
 	[helpitems release];
 	[tableview release];
     [super dealloc];
@@ -30,6 +32,16 @@
     [super viewDidLoad];
 	
 	[self setHelpitems:[Library getHelp]];
+}
+
+//scrolls to the correct help tidbit if the helpNum variable is set
+-(void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	if (helpNum != nil) {
+		NSLog(@"scroll to correct place");
+		NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:[helpNum intValue] inSection:0];
+		[self.tableview scrollToRowAtIndexPath:scrollIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+	}
 }
 
 #pragma mark Table view methods

@@ -8,6 +8,7 @@
 
 #import "baseViewController.h"
 #import <CoreGraphics/CoreGraphics.h>
+#import "HelpHome.h"
 
 @implementation baseViewController
 
@@ -75,6 +76,32 @@
 		[self.view addSubview:mainMenuButton];
 	}
 	
+}
+
+-(void) addHelpButton:(int)helpNum x:(int)x y:(int)y {
+	
+	//create button
+	UIButton *myButton = [UIButton buttonWithType:UIButtonTypeCustom]; 
+	UIImage *image = [UIImage imageNamed:@"help.png"];
+	myButton.imageView.frame = CGRectMake(0, 0, 25, 25); 
+	[myButton setBackgroundImage:image forState:UIControlStateNormal];
+	myButton.frame = CGRectMake(x, y, 25, 25);
+	myButton.userInteractionEnabled = YES;
+	myButton.tag = helpNum;
+	[myButton addTarget:self action:@selector(toHelp:) forControlEvents:UIControlEventTouchUpInside];  
+	
+	//add button to view controller
+	[self.view addSubview:myButton];
+	
+}
+
+-(void)toHelp:(UIButton*)sender {
+	NSLog(@"help sender tag %d", sender.tag);
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	HelpHome *vc = [[[HelpHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.helpNum = [NSNumber numberWithInt:sender.tag];
+	[delegate.navCon pushViewController:vc animated:YES];
+		
 }
 
 -(void)raiseMenu:(UIButton*)sender {

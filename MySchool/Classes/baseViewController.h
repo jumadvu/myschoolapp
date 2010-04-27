@@ -24,5 +24,7 @@
 -(IBAction)goBack;
 -(void)setBackgroundColor;
 -(void)setTopBarTitle:(NSString*)title withLogo:(BOOL)addLogo backButton:(BOOL)addBackButton;
+-(void)addHelpButton:(int)helpNum x:(int)x y:(int)y;
+-(void)toHelp:(UIButton*)sender;
 
 @end

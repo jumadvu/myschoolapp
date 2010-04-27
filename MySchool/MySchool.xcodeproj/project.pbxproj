@@ -263,6 +263,7 @@
 		ABB3B0081186B2E100A889C7 /* ClassroomInstructions.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB3B0061186B2E100A889C7 /* ClassroomInstructions.xib */; };
 		ABB3B00F1186B39C00A889C7 /* classroomInstructions.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3B00E1186B39C00A889C7 /* classroomInstructions.png */; };
 		ABB3B0161186B61100A889C7 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3B0151186B61100A889C7 /* blackArrow.png */; };
+		ABB3B0AD11875FAF00A889C7 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3B0AC11875FAF00A889C7 /* help.png */; };
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
 		ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAA6811116B7D700D3956F /* AccountSelection.m */; };
@@ -671,6 +672,7 @@
 		ABB3B0061186B2E100A889C7 /* ClassroomInstructions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassroomInstructions.xib; sourceTree = "<group>"; };
 		ABB3B00E1186B39C00A889C7 /* classroomInstructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classroomInstructions.png; sourceTree = "<group>"; };
 		ABB3B0151186B61100A889C7 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		ABB3B0AC11875FAF00A889C7 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = help.png; path = images/help.png; sourceTree = "<group>"; };
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ABCAA6801116B7D700D3956F /* AccountSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelection.h; sourceTree = "<group>"; };
@@ -1437,6 +1439,7 @@
 		ABAD46F411717E1100C33FCA /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				ABB3B0AC11875FAF00A889C7 /* help.png */,
 				ABB3ABF91181FB6E00A889C7 /* helpicon.png */,
 				ABB3ABFA1181FB6E00A889C7 /* newgameicon.png */,
 				ABE9A2431176842500C9CA4F /* chalk_back.png */,
@@ -1865,6 +1868,7 @@
 				ABB3B0081186B2E100A889C7 /* ClassroomInstructions.xib in Resources */,
 				ABB3B00F1186B39C00A889C7 /* classroomInstructions.png in Resources */,
 				ABB3B0161186B61100A889C7 /* blackArrow.png in Resources */,
+				ABB3B0AD11875FAF00A889C7 /* help.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

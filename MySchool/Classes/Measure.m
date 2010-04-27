@@ -326,7 +326,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	NSLog(@"touches ended");
-	UITouch *touch = [touches anyObject];
+	//UITouch *touch = [touches anyObject];
 	
     //CGPoint location = [touch locationInView:self];
 	if ([self draggedNote] != nil) {
@@ -384,7 +384,7 @@
 		 
 -(void)animateNote:(MusicNote*)note {
 	float xFactor = note.newPoint.x - note.startingPoint.x;
-	float yFactor = note.newPoint.y - note.startingPoint.y;
+	//float yFactor = note.newPoint.y - note.startingPoint.y;
 	note.center = CGPointMake(note.startingPoint.x, note.startingPoint.y);		
 
 	NSLog(@"starting point x: %2f",note.startingPoint.x);

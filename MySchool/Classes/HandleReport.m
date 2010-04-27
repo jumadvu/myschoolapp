@@ -14,6 +14,7 @@
 #import "StudentReports.h"
 #import "Student.h"
 #import "StudentPlus.h"
+#import "ScoreAnim.h"
 
 @implementation HandleReport
 
@@ -21,6 +22,8 @@
 @synthesize report;
 @synthesize answer1Correct;
 @synthesize delegate;
+@synthesize gotItRight;
+@synthesize clicked;
 
 - (void)dealloc {
 	[delegate release];
@@ -38,6 +41,10 @@
 	MySchoolAppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
 	//[self setTopBarTitle:@"Handle Report" withLogo:NO backButton:NO];
 	[self.teacherAtDesk setImage:[appdelegate.teacher avatarImageWaistUp]];
+	
+	//default
+	gotItRight = NO;
+	clicked = NO;
 	
 	//randomize answer
 	int i = arc4random() % 2;
@@ -105,21 +112,39 @@
 - (void)clickedButton:(UIButton *)button {
 	int keywordIndex = button.tag;
 	
-	BOOL correct;
-	if ((keywordIndex == 0 && answer1Correct) || (keywordIndex == 1 && !answer1Correct)) {
-		//got it right
-		correct = YES;
-	} else {
-		//got it wrong
-		correct = NO;
-	}
+	//check this is the first button
+	if (!clicked) {
+		
+		if ((keywordIndex == 0 && answer1Correct) || (keywordIndex == 1 && !answer1Correct)) {
+			//got it right
+			gotItRight = YES;
+			ScoreAnim *anim = [[ScoreAnim alloc] initWithData:@"+2 Respect" x:[NSNumber numberWithInt:115] y:[NSNumber numberWithInt:300]];
+			[self.view addSubview:anim];
+			[anim release];
+			 
+		} else {
+			//got it wrong
+			gotItRight = NO;
+			ScoreAnim *anim = [[ScoreAnim alloc] initWithData:@"-2 Respect" x:[NSNumber numberWithInt:115] y:[NSNumber numberWithInt:300]];
+			[self.view addSubview:anim];
+			[anim release];
+		}
 
-	if ([self.delegate respondsToSelector:@selector(dismissQuestionWindow:)]) {
-		[self.delegate dismissQuestionWindow:correct];
+		clicked = YES;
+		
+		//delay until the feedback has shown, then dismiss modal window
+		[NSTimer scheduledTimerWithTimeInterval:2.5 target:self 
+										selector:@selector(returnToPreviousPage) userInfo:nil repeats:NO];
 	}
+ 
 	
 }
 
+-(void) returnToPreviousPage{
+	if ([self.delegate respondsToSelector:@selector(dismissQuestionWindow:)]) {
+		[self.delegate dismissQuestionWindow:gotItRight];
+	}	
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

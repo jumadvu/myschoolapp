@@ -199,7 +199,7 @@
 			myGrade = [NSString stringWithFormat:@"A+"];
 			break;
 		default:
-			myGrade = [NSString stringWithFormat:@"A++"];
+			myGrade = [NSString stringWithFormat:@"--"];
 			break;
 	}
 	return myGrade;

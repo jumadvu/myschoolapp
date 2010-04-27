@@ -21,6 +21,7 @@
 #import "WorksheetQuestion.h"
 #import "WorksheetAnswer.h"
 #import "BehaviorReport.h"
+#import "PersonalQuestion.h"
 
 @implementation Library
 
@@ -331,35 +332,18 @@
 	
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"interruptions" fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
-	TBXMLElement * negative = [tbxml childElementNamed:@"negative" parentElement:root];
-	TBXMLElement * report=[tbxml childElementNamed:@"report" parentElement:negative];
+	TBXMLElement * interruption = [tbxml childElementNamed:@"interruption" parentElement:root];
 	int count = 0;
 	
-	while (report!=nil){
-		BehaviorReport *reportMO = (BehaviorReport *)[NSEntityDescription insertNewObjectForEntityForName:@"BehaviorReport" inManagedObjectContext:moc];
-		[reportMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:report]]];
-		[reportMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:report]]];
-		[reportMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:report]]];
-		[reportMO setPosNeg:@"negative"];
-		[reportMO setId:[NSNumber numberWithInt:count]];
-		report = [tbxml nextSiblingNamed:@"report" searchFromElement:report];
+	while (interruption!=nil){
+		PersonalQuestion *questionMO = (PersonalQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"PersonalQuestion" inManagedObjectContext:moc];
+		[questionMO setQuestion:[tbxml textForElement:[tbxml childElementNamed:@"question" parentElement:interruption]]];
+		[questionMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:interruption]]];
+		[questionMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:interruption]]];
+		interruption = [tbxml nextSiblingNamed:@"report" searchFromElement:interruption];
 		count++;
 	}
-	
-	TBXMLElement * positive = [tbxml childElementNamed:@"positive" parentElement:root];
-	report=[tbxml childElementNamed:@"report" parentElement:positive];
-	
-	while (report!=nil){
-		BehaviorReport *reportMO = (BehaviorReport *)[NSEntityDescription insertNewObjectForEntityForName:@"BehaviorReport" inManagedObjectContext:moc];
-		[reportMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:report]]];
-		[reportMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:report]]];
-		[reportMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:report]]];
-		[reportMO setPosNeg:@"positive"];
-		[reportMO setId:[NSNumber numberWithInt:count]];
-		report = [tbxml nextSiblingNamed:@"report" searchFromElement:report];
-		count++;
-	}
-	
+		
 	//save the managed object
 	NSError *error;
 	if (![moc save:&error]) {
