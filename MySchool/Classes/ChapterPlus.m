@@ -112,12 +112,12 @@
 }
 
 -(NSString*)emailMessage {
-	NSMutableString *message = [NSMutableString stringWithFormat:@"Your child has just completed a MySchool chapter: %@.", [self title]];
-	[message appendString:@" We urge you to ask your child some questions about what they're learning. It helps reinforce the material. \n\nQuestions you could ask:"];
+	NSMutableString *message = [NSMutableString stringWithFormat:@"Your child has just completed a MySchool chapter titled: %@.", [self title]];
+	[message appendString:@" We urge you to ask your child some questions about what they are learning.\n\nSome questions you could ask:"];
 	StudentQuestion *question;
 	int x = 0;
 	for (question in self.lecture.studentQuestions) {
-		[message appendString:[NSString stringWithFormat:@"\n\n%d. ", x]];
+		[message appendString:[NSString stringWithFormat:@"\n\n%d. ", x+1]];
 		[message appendString:question.text];
 		x++;
 		if (x>1) {

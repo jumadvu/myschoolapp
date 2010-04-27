@@ -16,6 +16,8 @@
 #import "Article.h"
 #import "Chapter.h"
 #import "ClassroomHome.h"
+#import "ClassroomInstructions.h"
+#import "User.h"
 
 @implementation ModuleHome
 
@@ -30,15 +32,6 @@
 	[targetModule release];
     [super dealloc];
 }
-
-
-/*
--(void)toChapter {
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];	
-}
-*/
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -96,13 +89,17 @@
 		vc.chapter = chapter;
 		[delegate.navCon pushViewController:vc animated:YES];	
 	} else {
-		//go to classroom
-		ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
-		//set up the learning page
+		//set the current chapter
+		//go to classroom (if they have done less than 3 lessons, show them instructions first.
 		Chapter *chapter = [[self.targetModule chaptersArray] objectAtIndex:indexPath.row];
 		[delegate setCurrentChapter:chapter];
-		[delegate.navCon pushViewController:vc animated:YES];	
-		
+		if ([delegate.teacher.completedLessons count]<3) {
+			ClassroomInstructions *vc = [[[ClassroomInstructions alloc] initWithNibName:nil bundle:nil] autorelease];
+			[delegate.navCon pushViewController:vc animated:YES];	
+		} else {
+			ClassroomHome *vc = [[[ClassroomHome alloc] initWithNibName:nil bundle:nil] autorelease];
+			[delegate.navCon pushViewController:vc animated:YES];	
+		}		
 	}
 
 }

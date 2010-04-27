@@ -21,6 +21,4 @@
 @property (nonatomic, retain) UITableView *tableview;
 @property (nonatomic) BOOL goToLearn;
 
-//-(IBAction)toChapter;
-
 @end

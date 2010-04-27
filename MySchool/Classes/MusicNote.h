@@ -13,6 +13,7 @@
 	UIImage *noteImage;
 	UILabel *myString;
 	CGPoint startingPoint;
+	CGPoint newPoint;
 	NSNumber *fraction;
 	NSNumber *height;
 	NSString *name;
@@ -25,6 +26,7 @@
 @property (nonatomic, retain) UIImage *noteImage;
 @property (nonatomic, retain) UILabel *myString;
 @property (nonatomic) CGPoint startingPoint;
+@property (nonatomic) CGPoint newPoint;
 @property (nonatomic, retain) NSNumber *fraction;
 @property (nonatomic, retain) NSNumber *height;
 @property (nonatomic, retain) NSString *name;
@@ -32,7 +34,7 @@
 @property (nonatomic) int noteNum;
 @property (nonatomic, retain) UIColor *color;
 
--(void)setNoteType:(NSNumber*)type atHeight:(NSNumber*)dropHeight;
+-(void)setNoteType:(NSNumber*)type atHeight:(NSNumber*)dropHeight atX:(NSNumber*)xVal;
 -(void)setFractionStringText:(NSNumber *)num;
 -(NSString*)noteNameWithColor:(NSString*)mycolor type:(NSNumber*)type;
 

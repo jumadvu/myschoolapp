@@ -327,7 +327,7 @@
 }
 
 +(void)addPersonalQuestionsToDatabaseContext:(NSManagedObjectContext*)moc {
-	NSLog(@"Adding xml module %@", xmlFile);
+	NSLog(@"Adding personal questions to DB");
 	
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:@"interruptions" fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
