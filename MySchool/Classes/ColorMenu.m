@@ -56,8 +56,14 @@
 }
 -(void)startLight{
 	Color *vc = [[[Color alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.isLight = TRUE;
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[delegate.navCon pushViewController:vc animated:YES];
 }
-
+-(void)startPaint{
+	Color *vc = [[[Color alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.isLight = FALSE;
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
 @end

@@ -25,6 +25,7 @@
 	int tRed;
 	int tBlue;
 	int tGreen;
+	bool isLight;
 }
 @property (nonatomic, retain) UIButton *redButton;
 @property (nonatomic, retain) UIButton *greenButton;
@@ -41,6 +42,7 @@
 @property (nonatomic) int tRed;
 @property (nonatomic) int tBlue;
 @property (nonatomic) int tGreen;
+@property (nonatomic) bool isLight;
 
 -(IBAction)incRed;
 -(IBAction)incBlue;

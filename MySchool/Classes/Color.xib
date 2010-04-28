@@ -8,6 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -31,14 +32,14 @@
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 			</object>
 			<object class="IBUIView" id="191373211">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIButton" id="248834915">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 126}, {80, 90}}</string>
+						<string key="NSFrame">{{39, 125}, {65, 90}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -49,7 +50,7 @@
 							<double key="NSSize">4.800000e+01</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<double key="IBUIContentEdgeInsets.top">4.000000e+01</double>
+						<double key="IBUIContentEdgeInsets.top">-2.500000e+01</double>
 						<double key="IBUIContentEdgeInsets.bottom">0.000000e+00</double>
 						<double key="IBUIContentEdgeInsets.left">0.000000e+00</double>
 						<double key="IBUIContentEdgeInsets.right">0.000000e+00</double>
@@ -68,20 +69,20 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bucket_r.png</string>
+							<string key="NSResourceName">lb-red.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="1061379166">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{119, 126}, {80, 90}}</string>
+						<string key="NSFrame">{{127, 126}, {65, 90}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="749403642"/>
-						<double key="IBUIContentEdgeInsets.top">4.000000e+01</double>
+						<double key="IBUIContentEdgeInsets.top">-2.500000e+01</double>
 						<double key="IBUIContentEdgeInsets.bottom">0.000000e+00</double>
 						<double key="IBUIContentEdgeInsets.left">0.000000e+00</double>
 						<double key="IBUIContentEdgeInsets.right">0.000000e+00</double>
@@ -91,20 +92,20 @@
 						<reference key="IBUINormalTitleShadowColor" ref="565240339"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bucket_g.png</string>
+							<string key="NSResourceName">lb-g.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="626661956">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{220, 126}, {80, 90}}</string>
+						<string key="NSFrame">{{216, 126}, {65, 90}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="749403642"/>
-						<double key="IBUIContentEdgeInsets.top">4.000000e+01</double>
+						<double key="IBUIContentEdgeInsets.top">-2.500000e+01</double>
 						<double key="IBUIContentEdgeInsets.bottom">0.000000e+00</double>
 						<double key="IBUIContentEdgeInsets.left">0.000000e+00</double>
 						<double key="IBUIContentEdgeInsets.right">0.000000e+00</double>
@@ -114,7 +115,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="565240339"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bucket_b.png</string>
+							<string key="NSResourceName">lb-b.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="420975808">
@@ -289,6 +290,7 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
+				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -419,7 +421,6 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1061379166"/>
 							<reference ref="380609543"/>
 							<reference ref="625700370"/>
 							<reference ref="420975808"/>
@@ -427,11 +428,12 @@
 							<reference ref="1003075475"/>
 							<reference ref="764590653"/>
 							<reference ref="1026782973"/>
-							<reference ref="626661956"/>
-							<reference ref="248834915"/>
 							<reference ref="889093404"/>
 							<reference ref="739253048"/>
 							<reference ref="125954671"/>
+							<reference ref="248834915"/>
+							<reference ref="1061379166"/>
+							<reference ref="626661956"/>
 						</object>
 						<reference key="parent" ref="926758268"/>
 					</object>

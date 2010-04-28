@@ -2,9 +2,9 @@
 <myschool>
 	<negative>
 		<report>
-			<text>studentname was involved in a fight in the playground during recess today.</text>
+			<text>studentname got in a fight on the playground during recess today.</text>
 			<correct>I must talk to studentname about how we resolve problems peacefully at MySchool.</correct>
-			<wrong>I must reprimand the other kid involved as it must have been his/her fault.</wrong>
+			<wrong>I must reprimand the other child involved as it must have been his/her fault.</wrong>
 		</report>
 		<report>
 			<text>studentname shared lots of her friend Jenny's secrets with the whole class. Jenny became very upset and had to be sent home.</text>
@@ -19,7 +19,7 @@
 		<report>
 			<text>studentname was very loud and disruptive during reading time in the library today.</text>
 			<correct>I must talk to studentname about why it is important to be quiet during reading time.</correct>
-			<wrong>I must tell studentname to bring his ipod and listen to music instead of being loud during reading time.</wrong>
+			<wrong>I must tell studentname to bring his iPod and listen to music instead of being loud during reading time.</wrong>
 		</report>
 		<report>
 			<text>studentname stole another student's hat at recess and threw it in the dirt.</text>
