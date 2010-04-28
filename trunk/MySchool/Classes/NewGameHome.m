@@ -81,7 +81,7 @@
 }
 
 -(void)continueAvatarDesign {
-	//go back to previous page
+	
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	BOOL requiredDataMissing = NO;
 	if (firstField.text.length == 0) requiredDataMissing = YES;
@@ -125,6 +125,15 @@
 			//set the image only if it is changed
 			if (selectedImage != 101) {
 				[delegate.teacher.avatar setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
+				if (selectedImage == 0) {
+					//its the woman
+					[delegate.teacher setGender:@"female"];
+					[delegate.teacher.avatar setGenericWoman];
+				} else {
+					//its a guy
+					[delegate.teacher setGender:@"male"];
+					[delegate.teacher.avatar setGenericMan];
+				}
 			}
 			[delegate.teacher setFirstName:[NSString stringWithFormat:firstField.text]];
 			[delegate.teacher setLastName:[NSString stringWithFormat:lastField.text]];
@@ -140,11 +149,11 @@
 			// Handle the error.
 		}
 		//go to second phase of avatar design
-		/*
+		
 		DesignAvatar1 *vc = [[[DesignAvatar1 alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];
-		 */
-		[self toMainMenu];
+		
+		//[self toMainMenu];
 	}
 }
 

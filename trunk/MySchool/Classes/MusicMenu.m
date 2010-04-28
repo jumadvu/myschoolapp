@@ -27,7 +27,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setTopBarTitle:@"Piano" withLogo:YES backButton:YES];
+	[self setTopBarTitle:@"Music & Math" withLogo:YES backButton:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated {

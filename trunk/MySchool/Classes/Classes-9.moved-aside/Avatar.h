@@ -2,7 +2,7 @@
 //  Avatar.h
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/27/10.
+//  Created by Ashley Kayler on 3/2/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -15,12 +15,11 @@
 }
 
 @property (nonatomic, retain) NSString * eyes;
-@property (nonatomic, retain) NSString * skin;
 @property (nonatomic, retain) NSString * avatarImage;
-@property (nonatomic, retain) NSString * clothes;
+@property (nonatomic, retain) NSString * nose;
 @property (nonatomic, retain) NSString * avatarImageWaistUp;
 @property (nonatomic, retain) NSString * hair;
-@property (nonatomic, retain) NSNumber * glasses;
+@property (nonatomic, retain) NSString * mouth;
 @property (nonatomic, retain) User * user;
 
 @end

@@ -1973,7 +1973,6 @@
 				ABB3B00F1186B39C00A889C7 /* classroomInstructions.png in Resources */,
 				ABB3B0161186B61100A889C7 /* blackArrow.png in Resources */,
 				ABB3B0AD11875FAF00A889C7 /* help.png in Resources */,
-<<<<<<< .mine
 				ABBB428F1187D8AC006303D2 /* FClothes1.png in Resources */,
 				ABBB42901187D8AC006303D2 /* FClothes2.png in Resources */,
 				ABBB42911187D8AC006303D2 /* FClothes3.png in Resources */,
@@ -2000,13 +1999,11 @@
 				ABBB42A61187D8AC006303D2 /* MSkinDark.png in Resources */,
 				ABBB42A71187D8AC006303D2 /* MSkinMed.png in Resources */,
 				ABBB42A81187D8AC006303D2 /* MSkinPale.png in Resources */,
-=======
 				F5A7048C1187B1A000F8C678 /* ColorMenu.xib in Resources */,
 				F5A7048F1187B39C00F8C678 /* paintsplash.jpg in Resources */,
 				F57D632F1187C7100052F95D /* lb-g.png in Resources */,
 				F57D63301187C7100052F95D /* lb-b.png in Resources */,
 				F57D63311187C7100052F95D /* lb-red.png in Resources */,
->>>>>>> .r308
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2097,12 +2094,9 @@
 				ABD57060117F805F001AB41D /* ClassroomDesk.m in Sources */,
 				ABB3AD771182580200A889C7 /* PersonalQuestion.m in Sources */,
 				ABB3B0071186B2E100A889C7 /* ClassroomInstructions.m in Sources */,
-<<<<<<< .mine
 				ABB3B0EB11878EE900A889C7 /* Avatar.m in Sources */,
 				ABB3B0F311878F5C00A889C7 /* AvatarPlus.m in Sources */,
-=======
 				F5A7048B1187B1A000F8C678 /* ColorMenu.m in Sources */,
->>>>>>> .r308
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
