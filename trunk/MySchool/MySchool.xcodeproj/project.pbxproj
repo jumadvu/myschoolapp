@@ -344,6 +344,9 @@
 		F588D9A91162FBDE00FF14F9 /* ammonite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9A81162FBDE00FF14F9 /* ammonite.jpg */; };
 		F588D9AB1162FBE200FF14F9 /* petrifiedwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9AA1162FBE200FF14F9 /* petrifiedwood.jpg */; };
 		F588D9AD1162FC1100FF14F9 /* chalkcliffs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F588D9AC1162FC1100FF14F9 /* chalkcliffs.jpg */; };
+		F5A7048B1187B1A000F8C678 /* ColorMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A704891187B1A000F8C678 /* ColorMenu.m */; };
+		F5A7048C1187B1A000F8C678 /* ColorMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A7048A1187B1A000F8C678 /* ColorMenu.xib */; };
+		F5A7048F1187B39C00F8C678 /* paintsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5A7048E1187B39C00F8C678 /* paintsplash.jpg */; };
 		F5A9C08A1136EDF300F74134 /* bookshelf copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0801136EDF300F74134 /* bookshelf copy.png */; };
 		F5A9C08D1136EE0A00F74134 /* chalkboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C08B1136EE0A00F74134 /* chalkboard.png */; };
 		F5A9C0921136EE1600F74134 /* mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A9C0901136EE1600F74134 /* mainmenu.png */; };
@@ -775,6 +778,10 @@
 		F588D9A81162FBDE00FF14F9 /* ammonite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ammonite.jpg; sourceTree = "<group>"; };
 		F588D9AA1162FBE200FF14F9 /* petrifiedwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = petrifiedwood.jpg; sourceTree = "<group>"; };
 		F588D9AC1162FC1100FF14F9 /* chalkcliffs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chalkcliffs.jpg; sourceTree = "<group>"; };
+		F5A704881187B1A000F8C678 /* ColorMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMenu.h; sourceTree = "<group>"; };
+		F5A704891187B1A000F8C678 /* ColorMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorMenu.m; sourceTree = "<group>"; };
+		F5A7048A1187B1A000F8C678 /* ColorMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorMenu.xib; sourceTree = "<group>"; };
+		F5A7048E1187B39C00F8C678 /* paintsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paintsplash.jpg; sourceTree = "<group>"; };
 		F5A9C0801136EDF300F74134 /* bookshelf copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookshelf copy.png"; sourceTree = "<group>"; };
 		F5A9C08B1136EE0A00F74134 /* chalkboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chalkboard.png; sourceTree = "<group>"; };
 		F5A9C0901136EE1600F74134 /* mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenu.png; sourceTree = "<group>"; };
@@ -1392,6 +1399,7 @@
 		AB53B519112349DE0017AFAB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F5A7048E1187B39C00F8C678 /* paintsplash.jpg */,
 				ABB3B00D1186B39C00A889C7 /* instructions */,
 				ABB3AC301182095300A889C7 /* rabbit.png */,
 				ABB3AC311182095300A889C7 /* turtle.png */,
@@ -1563,6 +1571,9 @@
 				F5833757117E49CA0077F1C8 /* Color.h */,
 				F5833758117E49CA0077F1C8 /* Color.m */,
 				F5833759117E49CA0077F1C8 /* Color.xib */,
+				F5A704881187B1A000F8C678 /* ColorMenu.h */,
+				F5A704891187B1A000F8C678 /* ColorMenu.m */,
+				F5A7048A1187B1A000F8C678 /* ColorMenu.xib */,
 			);
 			name = color;
 			sourceTree = "<group>";
@@ -1869,6 +1880,8 @@
 				ABB3B00F1186B39C00A889C7 /* classroomInstructions.png in Resources */,
 				ABB3B0161186B61100A889C7 /* blackArrow.png in Resources */,
 				ABB3B0AD11875FAF00A889C7 /* help.png in Resources */,
+				F5A7048C1187B1A000F8C678 /* ColorMenu.xib in Resources */,
+				F5A7048F1187B39C00F8C678 /* paintsplash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1960,6 +1973,7 @@
 				ABD57060117F805F001AB41D /* ClassroomDesk.m in Sources */,
 				ABB3AD771182580200A889C7 /* PersonalQuestion.m in Sources */,
 				ABB3B0071186B2E100A889C7 /* ClassroomInstructions.m in Sources */,
+				F5A7048B1187B1A000F8C678 /* ColorMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
