@@ -6,7 +6,7 @@
 		<wrong>Yes, go ahead</wrong>
 	</interruption>
 	<interruption type="respect">
-		<question>Can I get some water?</question>
+		<question>Can I go get some water?</question>
 		<correct>No, you need to wait until break time.</correct>
 		<wrong>Yes, go ahead</wrong>
 	</interruption>
@@ -18,6 +18,16 @@
 	<interruption type="respect">
 		<question>otherstudent touched me!</question>
 		<correct>otherstudent please keep your hands to yourself</correct>
-		<wrong>You just have to accept that.</wrong>
+		<wrong>I doubt that.</wrong>
+	</interruption>
+	<interruption type="respect">
+		<question>When is recess?</question>
+		<correct>You need to concentrate more on listening than on the time.</correct>
+		<wrong>It's in thirteen minutes.</wrong>
+	</interruption>
+	<interruption type="respect">
+		<question>Is this going to be on the quiz?</question>
+		<correct>You need to pay attention, in case it is.</correct>
+		<wrong>Probably not.</wrong>
 	</interruption>
 </myschool>
