@@ -2,7 +2,7 @@
 //  Avatar.m
 //  MySchool
 //
-//  Created by Ashley Kayler on 4/27/10.
+//  Created by Ashley Kayler on 3/2/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
 
@@ -13,12 +13,11 @@
 @implementation Avatar 
 
 @dynamic eyes;
-@dynamic skin;
 @dynamic avatarImage;
-@dynamic clothes;
+@dynamic nose;
 @dynamic avatarImageWaistUp;
 @dynamic hair;
-@dynamic glasses;
+@dynamic mouth;
 @dynamic user;
 
 @end
