@@ -26,7 +26,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setTopBarTitle:@"Activity" withLogo:YES backButton:YES];
+	[self setTopBarTitle:@"Art Class" withLogo:YES backButton:YES];
 	levVal = 1;
 	pointVal = 0;
 	redValue = 0;
@@ -91,11 +91,19 @@
 	NSLog(@"c %f %f %f", ((CGFloat)(redValue)/(CGFloat)(levVal)), ((CGFloat)(greenValue)/(CGFloat)(levVal)), ((CGFloat)(blueValue)/(CGFloat)(levVal)));
 	[currentColor setBackgroundColor:[UIColor colorWithRed:((CGFloat)(redValue)/(CGFloat)(levVal)) green:((CGFloat)(greenValue)/(CGFloat)(levVal)) blue:((CGFloat)(blueValue)/(CGFloat)(levVal)) alpha:1.0f]];
 	if(redValue==tRed&&greenValue==tGreen&&blueValue==tBlue){
+		UIImageView *imgv = [[UIImageView alloc] init];
+		[imgv setImage:[UIImage imageNamed:@"checkmark.png"]];
+		[imgv setFrame:CGRectMake(10, 10, 100, 100)];
+		[targetColor addSubview:imgv];
+		[currentColor addSubview:imgv];
+		
 		[UIView beginAnimations:nil context:nil];
 		[UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
 		[UIView setAnimationDuration:1];
 		[UIView setAnimationDelegate:self];
 		[currentColor setBackgroundColor:[UIColor blackColor]];
+		[imgv setAlpha:0];
+		[imgv release];
 		[UIView commitAnimations];
 		pointVal++;
 		[points setText:[NSString stringWithFormat:@"%d", pointVal]];

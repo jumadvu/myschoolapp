@@ -12,8 +12,7 @@
 #import "Chapter.h"
 #import "ModuleHome.h"
 #import "ModulePlus.h"
-#import "MusicMenu.h"
-#import "Color.h"
+#import "ColorMenu.h"
 #import "User.h"
 
 
@@ -159,19 +158,24 @@
 	//get the module from the sqllite db and pass it to the next view
 
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-
-	@try {
-		ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
-		Module *selectedModule = [Module getModuleWithName:button.titleLabel.text];
-		vc.targetModule= selectedModule;
-		vc.goToLearn = YES;
-		//save the current module that the user is working on.
-		[delegate.teacher setCurrentModule:selectedModule];
-		[delegate.navCon pushViewController:vc animated:YES];
-	}
-	@catch (NSException* ex) {
-		UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Uh-oh!" message:@"This book isn't available yet! Try another one." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
-		[alert show];
+	if ([button.titleLabel.text isEqualToString:@"Today in History"]) {
+		//go to music area
+		ColorMenu *vc = [[[ColorMenu alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];		
+	} else {
+		@try {
+			ModuleHome *vc = [[[ModuleHome alloc] initWithNibName:nil bundle:nil] autorelease];
+			Module *selectedModule = [Module getModuleWithName:button.titleLabel.text];
+			vc.targetModule= selectedModule;
+			vc.goToLearn = YES;
+			//save the current module that the user is working on.
+			[delegate.teacher setCurrentModule:selectedModule];
+			[delegate.navCon pushViewController:vc animated:YES];
+		}
+		@catch (NSException* ex) {
+			UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Uh-oh!" message:@"This book isn't available yet! Try another one." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+			[alert show];
+		}
 	}
 }
 
