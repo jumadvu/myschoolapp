@@ -296,12 +296,13 @@
 	<chapter>
 		<title>Marie Curie</title>
 		<article>
-            <text>Marie Curie (7 November 1867 to 4 July 1934) was a physicist and chemist from Poland but lived in France. She was an expert in the field of radioactivity and the only person to get the Nobel Prize in two different sciences. She was the first woman professor at the University of Paris. She was born under the name Maria Sklodowska in Warsaw, Poland, and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and did her important scientific work. She founded the Curie Institutes in Paris and Warsaw. Her husband Pierre Curie also won a Nobel Prize, and so did her daughter Irene Joliot-Curie and son-in-law Frederic Joliot-Curie. 
+            <text>Marie Curie was a physicist and chemist from Poland but lived in France. She was an expert in the field of radioactivity and the only person to get the [Nobel Prize] in two different sciences. She was the first woman professor at the [University of Paris]. 
+            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and did her important scientific work. She founded the Curie Institutes in Paris and Warsaw. Her husband Pierre Curie also won a Nobel Prize, and so did her daughter Irene Joliot-Curie and son-in-law Frederic Joliot-Curie. 
                 Her achievements include the creation of a theory of 'radioactivity' (a term coined by her and Pierre), techniques for separate radioactive isotopes, and she discovered two new elements, radium and polonium. It was also under her own direction that the world's first studies were used into the treatment of cancers, using the radioactive isotopes. While being a French citizen, she never lost her Polish identity. She named the first new [chemical element] that she discovered (1898) 'polonium' after her home country, Poland, and in 1932 she founded a Radium Institute in her home town Warsaw, run by her physician-sister Bronislawa.
 </text>
-
-			<image><file>image.jpg</file><desc>description</desc></image>
-			<image><file>image.jpg</file><desc>description</desc></image>
+			<image><file>nobelprize.jpg</file><desc>The Nobel Prizes are annual international awards given to individuals for important cultural and scientific advances. Thy were established in 1895 by the Swedish chemist Alfred Nobel who was the inventor of dynamite.</desc></image>
+			<image><file>sorbonne.jpg</file><desc>The University of Paris was founded in the 11st century and is often referred to as the Sorbonne. The original college of Sorbonne was created for the use of 20 theology students in 1257 and became the most distinguished theological insitution in France.</desc></image>
+			<image><file>warsaw.jpg</file><desc>Warsaw is the capital and largest city of Poland. It is located on the Vistula River and was severely damaged during the World War II.</desc></image>
 			<image><file>image.jpg</file><desc>description</desc></image>
 			<image><file>image.jpg</file><desc>description</desc></image>
 		</article>
@@ -324,6 +325,38 @@
 				<word>word</word>
 				<word>word</word>
 			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>
+			<keywordSet word="">
+				<word>word</word>
+				<word>word</word>
+			</keywordSet>			
 			<studentQuestion>
 				<text>question</text>
 				<studentType>1</studentType>
@@ -348,6 +381,42 @@
 				<answer correctness="5">text</answer>
 				<answer correctness="0">text</answer>
 			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>			
 		</lecture>
 		<worksheetQuestion>
 			<text>question</text>
