@@ -215,10 +215,10 @@
 				<word>Footprints in the Sand</word>
 			</keywordSet>			
 			<studentQuestion>
-				<text>question</text>
+				<text>Which president was Andrew Jackson?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">The 7th. He was president from 1829 to 1837.</answer>
+				<answer correctness="0">The 5th. He was president from 1817 to 1825.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>question</text>
