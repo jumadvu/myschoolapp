@@ -157,41 +157,63 @@
 	<chapter>
 		<title>Andrew Jackson</title>
 		<article>
-            <text>Andrew Jackson was born in March 15, 1767 in [the Waxhaws] which is an area bordering North and South Carolina. Well-known for his toughness, he was nicknamed "Old Hickory". While he received education on and off throughout his youth, in his late teens he read law for about two years and became an outstanding young lawyer in Tennessee. 
+            <text>Andrew Jackson was born in March 15, 1767 in [the Waxhaws] which is an area bordering North and South Carolina. Well-known for his toughness, he was nicknamed "Old Hickory". 
+            	While he received education on and off throughout his youth, in his late teens he read law for about two years and became an outstanding young lawyer in Tennessee. 
             	He was fierce about protecting his honor, particularly that of his wife, and engaged in brawls and [duels]. He is known to have killed Charles Dickinson in a duel.
             	Jackson prospered sufficiently to buy slaves and to build a mansion, the Hermitage, near Nashville. He was the first man elected from Tennessee to the House of Representativs and he served briefly in the Senate. A major general in the [War of 1812], Jackson became a national hero when he defeated the British in the battle of New Orleans. 
-            	During the presidential election of 1828, Jackson's oppoents referred to him as a ["jackass"]. He won the election against John Quincy Adams handily. He was the first President to invite the public to the White House ball honoring his first inauguration. 
-            	
-            	He is famous for forcing Native Americans to move west in the Trail of Tears. He opposed the Bank of the United States. He is one of Bill Clinton's favorite historical figures.
-
-
-</text>
+            	During the presidential election of 1828, Jackson's opponents referred to him as a ["jackass"]. He won the election against John Quincy Adams handily and was the first President to invite the public to the White House ball honoring his first inauguration. 
+            	His most controversial policy was forcing Native Americans to move west in the [Trail of Tears]. 
+            	In 1835, in what is believed to be the first attempt to kill a sitting US President, Richard Lawrence aimed a pistol at Jackson which misfired.</text>
 			<image><file>carolinas.jpg</file><desc>Known as "the Waxhaw Settlement" the area was named for its first inhabitants, the Waxhaw Tribe. They were killed from infectious diseases and European immigrants, mostly Scots-Irish and German, began to settle in the area.</desc></image>
-			<image><file>dual.jpg</file><desc>A duel is an engagement in combat between two individuals, practiced from the 11th to 20th centuries in Western societies. Duels occurred to defend one's honor.</desc></image>
+			<image><file>duel.jpg</file><desc>A duel is an engagement in combat between two individuals, practiced from the 11th to 20th centuries in Western societies. Duels occurred to defend one's honor.</desc></image>
 			<image><file>hermitage.jpg</file><desc>Hermitage was a plantation Andrew Jackson owned. The primary crop was cotton grown by slaves.</desc></image>
 			<image><file>warof1812.jpg</file><desc>This was a war fought between the United States and the British Empire. The US declared war due to trade restrictions introduced by Britain and to uphold its national honor.</desc></image>
 			<image><file>donkey.jpg</file><desc>Jackass is another name for a donkey. Jackson liked the name and used it as a symbol. This later became the symbol for the Democratic party, popularized by cartoonist Thomas Nast.</desc></image>
-			<image><file>inauguration.jpg</file><desc>The crowd attending the inauguration became so large that Jackson's guards could not hold them out of the White House. </desc></image>			
-		</article>
+			<image><file>inauguration.jpg</file><desc>The crowd attending the inauguration became so large that Jackson's guards could not hold them out of the White House. To lure the people out, the attendants poured punch in tubs and put them on the lawn.</desc></image>
+			<image><file>trailoftears.jpg</file><desc>This was the relocation and movement of Native Americans from their homelands to Indian Territory in the Western United States. Many suffered and died from disease and starvation.</desc></image>			</article>
 		<lecture>
-			<title>Andrew Jackson</title>
+			<title>Andrew Jackson is the 7th US President and is on the [US 5 dollar bill]. Before becoming a politician, he was a [doctor]. He was born in the Waxhaw Settlement, which is between [North and South Dakota]. He is known to have engaged in duels and killed a man named [Alexander Hamilton] defending his wife's honor. In addition to his legal and political career, Jackson prospered as a slave and plantation owner. His mansion, [Monticello], grew primarily cotton. Jackson served in the [Creek War] against Britain and was known for his bravery and success. In the [Battle of Talledega] Jackson took command of the defenses and defeated the British who outnumbered them. He was a strict officer but was popular with his troops. It was said he was "tough as old [cedar]" wood on the battlefield which gave him his nickname. During the presidential election of 1828, Jackon's opponents referred to him as [an elephant] which became the symbol of the Democratic party. One of Jackson's most controversial policy was the forceful removal of Native Americans to the west in what is known as the [Grapes of Wrath].</title>
 			<text>lecture text</text>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="US 20 dollar bill">
+				<word>US 1 dollar bill</word>
+				<word>US 100 dollar bill</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="lawyer">
+				<word>orator</word>
+				<word>teacher</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="North and South Carolina">
+				<word>West Virginia and Virginia</word>
+				<word>New York and New Jersey</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="Charles Dickinson">
+				<word>Aaron Burr</word>
+				<word>Charles Dickens</word>
 			</keywordSet>
+			<keywordSet word="the Hermitage">
+				<word>Bellagio</word>
+				<word>Hermes</word>
+			</keywordSet>
+			<keywordSet word="War of 1812">
+				<word>Civil War</word>
+				<word>First Seminole War</word>
+			</keywordSet>
+			<keywordSet word="Battle of New Orleans">
+				<word>Battle of Horseshoe Bend</word>
+				<word>Battle of Pensacola</word>
+			</keywordSet>			
+			<keywordSet word="hickory">
+				<word>mahogany</word>
+				<word>chestnut</word>
+			</keywordSet>			
+			<keywordSet word="jackass">
+				<word>eagle</word>
+				<word>pig</word>
+			</keywordSet>
+			<keywordSet word="Trail of Tears">
+				<word>Dust Bowl</word>
+				<word>Footprints in the Sand</word>
+			</keywordSet>			
 			<studentQuestion>
 				<text>question</text>
 				<studentType>1</studentType>
@@ -216,6 +238,36 @@
 				<answer correctness="5">text</answer>
 				<answer correctness="0">text</answer>
 			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>question</text>
+				<studentType>1</studentType>
+				<answer correctness="5">text</answer>
+				<answer correctness="0">text</answer>
+			</studentQuestion>				
 		</lecture>
 		<worksheetQuestion>
 			<text>question</text>
