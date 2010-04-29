@@ -245,32 +245,32 @@
 				<answer correctness="0">No, he did not believe in slavery.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>Where did Andrew Jackson practice law?/text>
+				<text>Where did Andrew Jackson practice law before getting into politics?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">He practiced frontier law in what is now known as Tennessee.</answer>
 				<answer correctness="0">He practiced constitutional law in the Waxhaws region where he was born, in the border between the Carolinas.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>How did Jackson became a national hero?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">He defeated the British who outnumbered them in the battle of New Orleans.</answer>
+				<answer correctness="0">He defeated the Indians in the First Seminole War.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why is the Native Americans' forced relocation called "Trail of Tears"?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">En route to their destination in what is now Oklahoma, many Native Americans suffered from disease and starvation and many died.</answer>
+				<answer correctness="0">That was the Native American name for the road they traveled to get to their destination.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>What does Andrew Jackson have to do with the current day Democratic party symbol being a donkey?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">When he was campaigning for the 1828 Presidential elections, his opponents called him "jackass" which he liked and used on his campaign.</answer>
+				<answer correctness="0">Donkeys being his favoriate animal, he incorporated it into his 1828 Presidential campaign.</answer>
 			</studentQuestion>				
 		</lecture>
 		<worksheetQuestion>
-			<text>question</text>
+			<text></text>
 			<answer correctness="5">text</answer>
 			<answer correctness="0">text</answer>
 			<answer correctness="0">text</answer>
