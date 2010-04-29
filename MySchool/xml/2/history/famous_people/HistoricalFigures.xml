@@ -239,16 +239,16 @@
 				<answer correctness="0">The US declared war to gain independence from the British.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Did Andrew Jackson own slaves?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">Yes, he owned a plantation that produced cotton grown by slaves.</answer>
+				<answer correctness="0">No, he did not believe in slavery.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Where did Andrew Jackson practice law?/text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">He practiced frontier law in what is now known as Tennessee.</answer>
+				<answer correctness="0">He practiced constitutional law in the Waxhaws region where he was born, in the border between the Carolinas.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>question</text>
