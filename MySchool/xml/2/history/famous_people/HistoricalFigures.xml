@@ -215,28 +215,28 @@
 				<word>Footprints in the Sand</word>
 			</keywordSet>			
 			<studentQuestion>
-				<text>Which president was Andrew Jackson?</text>
+				<text>If President Obama is the 44th US President, which president was Andrew Jackson?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">The 7th. He was president from 1829 to 1837.</answer>
-				<answer correctness="0">The 5th. He was president from 1817 to 1825.</answer>
+				<answer correctness="5">The 7th. He was President from 1829 to 1837.</answer>
+				<answer correctness="0">The 5th. He was President from 1817 to 1825.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why was President Jackson nicknamed "Old Hickory?"</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">While on the battlefield he was known to be "tough as old hickory" wood.</answer>
+				<answer correctness="0">His favorite dish that the first lady prepared for him was hickory smoked ham.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why did people engage in duels back then?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">While now illegal and never practiced, duels were a way to defend honor among social equals.</answer>
+				<answer correctness="0">Duels are a way to settle real estate disputes in certain US States till this day.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why was the US fighting against the British in the War of 1812?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">The US declared war due to trade restrictions introduced by Britain and to uphold its national honor.</answer>
+				<answer correctness="0">The US declared war to gain independence from the British.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>question</text>
