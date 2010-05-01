@@ -310,7 +310,7 @@
 		</article>
 		<lecture>
 			<title>Marie Curie</title>
-			<text>Marie Curie was born in 1867 in [Moscow, Russia] and lived there until she was 24. She followed her elder sister, Bronislawa to Paris where she studied physics, chemistry and mathematics at [Cambridge]. There she met her husband, Pierre. When they joined as partners in life and science, Pierre was actually studying [cancer cells] but put his studies on hold when Marie made groundbreaking discoveries in radiactive elements. Together, Marie and Pierre went on to create the theory of [evolution] as well as discovering two new elements, [uranium] and polonium. They named polonium in honor of Marie's native country of [Prussia]. In 1903, Marie and Pierre Curie, with Henri Bacquerel were awarded the [French Legion of Honor] in Physics. 8 years later Marie Curie was awarded this honor again in the field of [Biology]. She was the [second] woman to win or share two Nobel Prizes. Despite this, the French Academy of Sciences refused to elect her as a member for being a woman. </text>
+			<text>Marie Curie was born in 1867 in [Moscow, Russia] and lived there until she was 24. She followed her elder sister, Bronislawa to Paris where she studied physics, chemistry and mathematics at [Cambridge]. There she met her husband, Pierre. When they joined as partners in life and science, Pierre was actually studying [cancer cells] but put his studies on hold when Marie made groundbreaking discoveries in radioactive elements. Together, Marie and Pierre went on to create the theory of [evolution] as well as discovering two new elements, [uranium] and polonium. They named polonium in honor of Marie's native country of [Prussia]. In 1903, Marie and Pierre Curie, with Henri Bacquerel were awarded the [French Legion of Honor] in Physics. 8 years later Marie Curie was awarded this honor again in the field of [Biology]. She was the [second] woman to win or share two Nobel Prizes. Despite this, [Doctors without Borders] refused to elect her as a member for being a woman. Her work has lasting effects till this day. It was under her direction that the world's first studies into the treatment of [migraines] using [acupuncture] were conducted.</text>
 			<keywordSet word="Warsaw, Poland">
 				<word>Paris, France</word>
 				<word>Prague, Czech Republic</word>
@@ -347,41 +347,41 @@
 				<word>third</word>
 				<word>fifteenth</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="the French Academy of Sciences">
+				<word>the Frech Legion</word>
+				<word>the Sorbonne Physics Society</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="cancer">
+				<word>ulcers</word>
+				<word>asthma</word>
 			</keywordSet>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<keywordSet word="radiation">
+				<word>diet and nutrition</word>
+				<word>surgery</word>
 			</keywordSet>			
 			<studentQuestion>
-				<text>question</text>
+				<text>Was Marie Curie Polish or French?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">She is originally from Poland but moved to France when she was 24 and spent the rest of her life there. She is embraced and celebrated by both countries.</answer>
+				<answer correctness="0">Marie Curie was actually a Russian Jewish woman.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why was Marie rejected membership into the French Academy of Sciences?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">She was rejected simply for being a woman.</answer>
+				<answer correctness="0">She was rejected for being a Polish citizen.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>What are the two elements that Marie and Pierre discovered?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">Radium and Polonium</answer>
+				<answer correctness="0">Kalium and Potassium</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why did Marie name the element she discovered with Pierre Polonium?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">She named it in honor of her native country of Poland.</answer>
+				<answer correctness="0">She </answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>question</text>
