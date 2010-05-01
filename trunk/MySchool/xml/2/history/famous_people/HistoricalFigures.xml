@@ -348,7 +348,7 @@
 				<word>fifteenth</word>
 			</keywordSet>
 			<keywordSet word="the French Academy of Sciences">
-				<word>the Frech Legion</word>
+				<word>the French Legion</word>
 				<word>the Sorbonne Physics Society</word>
 			</keywordSet>
 			<keywordSet word="cancer">
@@ -378,51 +378,51 @@
 				<answer correctness="0">Kalium and Potassium</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>Why did Marie name the element she discovered with Pierre Polonium?</text>
+				<text>Why did Marie name the element she discovered with Pierre, Polonium?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">She named it in honor of her native country of Poland.</answer>
-				<answer correctness="0">She </answer>
+				<answer correctness="0">She named it in honor of her favorite dish, Polenta.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>How did Marie's work affect cancer treatment?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">She introduced radation therapy to kill cancer cells from spreading in the body. This is a widely used cancer treatement method till this day.</answer>
+				<answer correctness="0">She has made little contribution to cancer. All the treatments that are used today were developed after her death.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>Why do they call the University of Paris the Sorbonne?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">They call it the Sorbonne after the College of Sorbonne which was the theological college of the University of Paris. Founded in 1257 by Robert de Sorbon it became the most distinguished theological institution in France.</answer>
+				<answer correctness="0">They call it the Sorbonne because that was the name of the biggest department store in Paris that was funding the University of Paris.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>What is the Nobel Prize?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">The Nobel Prizes were established in 1895 by Swedish chemist Alfred Nobel, and are annual international awards given to individuals for important cultural and scientific advances.</answer>
+				<answer correctness="0">The Nobel Prizes is an internationanl popularity contest. If you win it, that means you're popular and you have a lot of friends.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>In what fields did Marie Curie win her two Nobel Prizes?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">In 1903, she won her first in Physics along with her husband, Pierre and Henri Becquerel and her second in Chemistry in 1911.</answer>
+				<answer correctness="0">In 1903, she won her first in Astrology with her daughter, Irene Joliot-Curie, and later in 1911 in Medicine.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>In what city was Marie Curie born?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">She was born in Warsaw, which is the largest city of Poland but is known for the destruction it suffered during World War II.</answer>
+				<answer correctness="0">She was born in Krakow, the 2nd largest city in Poland. It is one of the oldest cities in Poland and a popular tourist destination.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>question</text>
+				<text>What is radiation therapy?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">text</answer>
-				<answer correctness="0">text</answer>
+				<answer correctness="5">Radiation therapy is usually used in the treatement of cancer which is a disease that causes cells to grow abnormally and out of control. In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</answer>
+				<answer correctness="0">Radiation therapy is influenced by Eastern alterantive treatments to illnesses. It uses yoga, massage, meditation and herbs to tackle the growing cancer cells.</answer>
 			</studentQuestion>			
 		</lecture>
 		<worksheetQuestion>
-			<text>question</text>
-			<answer correctness="5">text</answer>
+			<text>What element did Marie Curie discover and name after Poland?</text>
+			<answer correctness="5">Polonium</answer>
 			<answer correctness="0">text</answer>
 			<answer correctness="0">text</answer>
 		</worksheetQuestion>
