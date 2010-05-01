@@ -114,8 +114,8 @@
 		[UIView setAnimationDelegate:self];
 		[currentColor setBackgroundColor:[UIColor blackColor]];
 		[imgv setAlpha:0];
-		[imgv release];
 		[UIView commitAnimations];
+		[imgv release];
 		pointVal++;
 		[points setText:[NSString stringWithFormat:@"%d", pointVal]];
 		if(pointVal%10==0){
@@ -143,13 +143,13 @@
 }
 
 - (void)dealloc {
-	[redButton dealloc];
-	[blueButton dealloc];
-	[greenButton dealloc];
-	[level dealloc];
-	[points dealloc];
-	[currentColor dealloc];
-	[targetColor dealloc];
+	//[redButton dealloc];
+	//[blueButton dealloc];
+	//[greenButton dealloc];
+	//[level dealloc];
+	//[points dealloc];
+	//[currentColor dealloc];
+	//[targetColor dealloc];
     [super dealloc];
 }
 
