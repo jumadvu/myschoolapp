@@ -21,5 +21,9 @@
 			<title>School Store Credit</title>
 			<text>For every lesson you teach, you receive 'Store Credit'.  The better you do on the lesson, the more store credit you earn.  When you have enough store credits, you can trade your store credits for activities that you can access in your classroom's 'Fun Zone'.</text>
 		</issue>
+		<issue num="5">
+			<title>Chapter Secrets</title>
+			<text>As you read, look for words that stand out in the text. Tap them to find new facts and pictures!</text>
+		</issue>
 	</help>
 </myschool>
