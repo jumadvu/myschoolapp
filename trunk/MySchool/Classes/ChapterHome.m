@@ -57,6 +57,7 @@
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];
 	[self loadTextIntoScrollView];
+	[self addHelpButton:5 x:85 y:410];
 }
 
 - (void)loadTextIntoScrollView {
