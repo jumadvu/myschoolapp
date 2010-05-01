@@ -135,13 +135,13 @@
 			<worksheetQuestion>
 					<text>Which animals living today do scientists think are most like a dinosaur?</text>
 					<answer correctness="5">Birds</answer>
-					<answer correctness="1">Sharks</answer>
-					<answer correctness="1">Elephants</answer>
+					<answer correctness="0">Sharks</answer>
+					<answer correctness="0">Elephants</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
 					<text>Why is the blue whale a special animal?</text>
 					<answer correctness="5">It is bigger than any dinosaur or animal</answer>
-					<answer correctness="2">It was as big as the biggest dinosaur</answer>
+					<answer correctness="0">It was as big as the biggest dinosaur</answer>
 					<answer correctness="0">It ate dniosaurs</answer>
 			</worksheetQuestion>
 		</chapter>
@@ -253,7 +253,7 @@
 			<worksheetQuestion>
 					<text>What was Pangea made of?</text>
 					<answer correctness="5">All the continents squished together</answer>
-					<answer correctness="1">A bunch of jungles</answer>
+					<answer correctness="0">A bunch of jungles</answer>
 					<answer correctness="0">Pangea was made of dinosaurs</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
@@ -271,8 +271,8 @@
 			<worksheetQuestion>
 					<text>What continents did dinosaurs live on?</text>
 					<answer correctness="5">All of them</answer>
-					<answer correctness="2">North America, China and Antarctica</answer>
-					<answer correctness="1">Every one except Australia</answer>
+					<answer correctness="0">North America, China and Antarctica</answer>
+					<answer correctness="0">Every one except Australia</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
 					<text>Many dinosaur skeletons are found in ____ areas.</text>
@@ -388,8 +388,8 @@
 			<worksheetQuestion>
 					<text>Most fossils are from what kind of animal?</text>
 					<answer correctness="5">Hard-shelled sea creatures</answer>
-					<answer correctness="1">Reptiles and mammals</answer>
-					<answer correctness="1">Plants and trees</answer>
+					<answer correctness="0">Reptiles and mammals</answer>
+					<answer correctness="0">Plants and trees</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
 					<text>How did dinosaurs become fossils?</text>
@@ -401,12 +401,12 @@
 					<text>What parts of living things are the most likely to fossilize?</text>
 					<answer correctness="5">Hard parts like bones, shells and wood.</answer>
 					<answer correctness="0">Soft parts like skin and muscles.</answer>
-					<answer correctness="1">Individual cells of the plant or animal.</answer>
+					<answer correctness="0">Individual cells of the plant or animal.</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
 					<text>How is the fossil record arranged?</text>
 					<answer correctness="5">Older fossils are buried underneath newer fossils.</answer>
-					<answer correctness="1">Newer fossils are buried underneath older fossils.</answer>
+					<answer correctness="0">Newer fossils are buried underneath older fossils.</answer>
 					<answer correctness="0">All the fossils are on top of the rock.</answer>
 			</worksheetQuestion>
 		</chapter>
