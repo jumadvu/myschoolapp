@@ -296,24 +296,24 @@
 	<chapter>
 		<title>Marie Curie</title>
 		<article>
-            <text>Marie Curie was a physicist and chemist from Poland but lived in France. She was an expert in the field of radioactivity and the first person to get the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [woman professor] at the [University of Paris]. 
-            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and started her important scientific work. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well discovering two new elements, radium and [polonium]. 
-               Under her direction, the world's first studies into the treatment of cancers using the [radioactive isotopes] were conducted. 
+            <text>Marie Curie was a physicist and chemist from Poland but lived in France. She was an expert in the field of radioactivity and the first person to get the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [woman professor] at the [University of Paris] where she attended as a student and remained as a researcher. 
+            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and started her important scientific work. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well as discovering two new elements, radium and [polonium]. 
+               Under her direction, the world's first studies into the treatment of cancers using [radiation] were conducted. 
 </text>
 			<image><file>nobelprize.jpg</file><desc>The Nobel Prizes are annual international awards given to individuals for important cultural and scientific advances. Thy were established in 1895 by the Swedish chemist Alfred Nobel who was the inventor of dynamite.</desc></image>
 			<image><file>marie.jpg</file><desc>Marie was a trailblazer. She come up against a lot of prejudice just for being a woman throughout her career. Even after winning 2 Nobel Prizes, the French Academy of Sciences refused to elect her as a member for being a woman.</desc></image>			
 			<image><file>sorbonne.jpg</file><desc>The University of Paris was founded in the 11st century and is often referred to as the Sorbonne. The original college of Sorbonne was created for the use of 20 theology students in 1257 and became the most distinguished theological insitution in France.</desc></image>
-			<image><file>warsaw.jpg</file><desc>Warsaw is the capital and largest city of Poland. It is located on the Vistula River and was severely damaged during the World War II.</desc></image>
-			<image><file>pierre.jpg</file><desc>Pierre, who was actually working on chrystals, suspended his research and joined Marie's research efforts when she discovered elements besides uranium that were radioactive.</desc></image>
+			<image><file>warsaw.jpg</file><desc>Warsaw is the capital and largest city of Poland. It is located on the Vistula River and was severely damaged during World War II.</desc></image>
+			<image><file>pierre.jpg</file><desc>Pierre, who was actually working on chrystals, put his research on hold and joined Marie's research efforts when she discovered elements besides uranium that were radioactive.</desc></image>
 			<image><file>polonium.png</file><desc>Polonium is a highly radioactive chemical element discovered by Marie and Pierre Curie. They named it polonium in honor of her native country of Poland.</desc></image>
 			<image><file>radiationtherapy.png</file><desc>Cancer is a disease that causes cells to grow abnormally and out of control. In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</desc></image>			
 		</article>
 		<lecture>
 			<title>Marie Curie</title>
-			<text>lecture text</text>
-			<keywordSet word="">
-				<word>word</word>
-				<word>word</word>
+			<text>Marie Curie was born in 1867 in [Moscow, Russia] and lived there until she was 24. She followed her sister, Bronislawa to [Krakow] where she studied physics, chemistry and mathematics </text>
+			<keywordSet word="Warsaw, Poland">
+				<word>Paris, France</word>
+				<word>Prague, Czech Republic</word>
 			</keywordSet>
 			<keywordSet word="">
 				<word>word</word>
