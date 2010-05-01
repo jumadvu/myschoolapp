@@ -42,7 +42,7 @@
 	
 	moduleNameLabel.text = targetModule.title;
 
-	[self setTopBarTitle:@"Table of Contents" withLogo:YES backButton:YES];
+	[self setTopBarTitle:@"Choose a Chapter" withLogo:YES backButton:YES];
 
 }
 
