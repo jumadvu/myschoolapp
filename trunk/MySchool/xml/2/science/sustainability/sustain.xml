@@ -92,13 +92,13 @@
 					<text>Who is most affected by greenhouse gas effects and high level carbon emission?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Every species living on the planet.</answer>
-					<answer correctness="1">Humans.</answer>
+					<answer correctness="0">Humans.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>How do greenhouse gases make the earth warmer?</text>
 					<studentType>1</studentType>
 				    <answer correctness="5">By absorbing infrared radiation and trapping its heat in the atmosphere.</answer>
-					<answer correctness="1">By sucking all the cold air in the atmosphere and emitting it to space.</answer>
+					<answer correctness="0">By sucking all the cold air in the atmosphere and emitting it to space.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why are trees good for the environment?</text>
@@ -134,7 +134,7 @@
 			<worksheetQuestion>
 				<text>What do we call the activity of cutting down and clearing forests to make more room for people or buildings?</text>
 				<answer correctness="5">Deforestation</answer>
-				<answer correctness="2">City planning</answer>
+				<answer correctness="0">City planning</answer>
 				<answer correctness="0">Forest preservation</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
@@ -293,7 +293,7 @@
 			<worksheetQuestion>
 				<text>What is the US Federal government agency that is charged with protecting the environment called?</text>
 				<answer correctness="5">EPA</answer>
-				<answer correctness="2">FCC</answer>
+				<answer correctness="0">FCC</answer>
 				<answer correctness="0">SEC</answer>
 			</worksheetQuestion>
 		</chapter>
