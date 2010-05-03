@@ -12,7 +12,7 @@
 
 @implementation Avatar (AvatarPlus)
 
--(UIView*)customAvatar {
+-(UIView*)customAvatarAtSize:(float)scale {
 	BOOL isMale = NO;
 	if ([self.user.gender isEqualToString:@"male"]) {
 		isMale = YES;
@@ -78,6 +78,7 @@
 	
 	//create the container view
 	UIView* myView = [[[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 193, 346)] autorelease];
+	myView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	//myView.backgroundColor = [UIColor redColor];
 
 	//UIView * myView = [[UIView alloc] autorelease];
@@ -108,6 +109,10 @@
 	[myEyesImage release];
 	[myClothesImage release];
 	[myGlassesImage release];
+	
+	//adjust scale
+	myView.transform = CGAffineTransformMakeScale(scale,scale);
+	myView.frame = CGRectMake(0.0, 0.0, 193*scale, 346*scale);
 	
 	return myView;
 	

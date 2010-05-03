@@ -10,10 +10,11 @@
 @class Student;
 @class User;
 @class Chapter;
+@class BarScale;
 @protocol QuestionDelegate;
 
 @interface StudentQuestionHome : baseViewController {
-	IBOutlet UIImageView *teacherView;
+	IBOutlet UIView *teacherView;
 	IBOutlet UIImageView *studentView;
 	IBOutlet UIButton *sButton;
 	IBOutlet UIButton *a1Button;
@@ -22,12 +23,13 @@
 	int whichQuestion;
 	Student *student;
 	Chapter *chapter;
-	
+	BarScale *bar;
 	id<QuestionDelegate> delegate;
+	int answerKey;
 
 }
 
-@property (nonatomic, retain) UIImageView *teacherView;
+@property (nonatomic, retain) UIView *teacherView;
 @property (nonatomic, retain) UIImageView *studentView;
 @property (nonatomic, retain) Student *student;
 @property (nonatomic, retain) Chapter *chapter;
@@ -36,6 +38,8 @@
 @property (nonatomic, retain) UIButton *a2Button;
 @property (nonatomic, retain) UIButton *a3Button;
 @property (nonatomic) int whichQuestion;
+@property (nonatomic, retain) BarScale *bar;
+@property (nonatomic) int answerKey;
 
 @property (assign) id<QuestionDelegate> delegate;
 

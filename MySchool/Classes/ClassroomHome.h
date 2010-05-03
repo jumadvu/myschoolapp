@@ -27,7 +27,7 @@
 	IBOutlet UIImageView *student3;
 	IBOutlet UIImageView *student4;
 	NSArray *studentViews;
-	IBOutlet UIImageView *teacher;
+	IBOutlet UIView *teacher;
 	NSString *lectureText;
 	IBOutlet UISlider *speedControl;
 	
@@ -97,12 +97,10 @@
 @property (nonatomic, retain) UIImageView *student3;
 @property (nonatomic, retain) UIImageView *student4;
 @property (nonatomic, retain) NSArray *studentViews;
-@property (nonatomic, retain) UIImageView *teacher;
+@property (nonatomic, retain) UIView *teacher;
 @property (nonatomic, retain) NSString *lectureText;
 
--(IBAction)toChalkboard;
 -(IBAction)toQuestion;
--(IBAction)toWorksheets;
 -(IBAction)startEvent:(id)sender;
 -(void)timerFireMethod:(NSTimer*)theTimer;
 -(void)timeRanOut;

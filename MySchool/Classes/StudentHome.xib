@@ -117,7 +117,7 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">Respect</string>
+						<string key="IBUIText">Behavior</string>
 						<reference key="IBUIFont" ref="152315610"/>
 						<reference key="IBUITextColor" ref="281039865"/>
 						<nil key="IBUIHighlightedColor"/>
@@ -215,7 +215,7 @@
 					<object class="IBUIImageView" id="1011626074">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{69.5, 115}, {192, 102}}</string>
+						<string key="NSFrame">{{76.5, 123}, {178, 94}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -442,7 +442,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>StudentHome</string>
 					<string>UIResponder</string>
-					<string>{{441, 516}, {320, 480}}</string>
+					<string>{{498, 516}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

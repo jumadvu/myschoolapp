@@ -24,7 +24,7 @@
 	[self setBackgroundColor:[UIColor clearColor]];
 	[label release];
 	scoreLabel.backgroundColor = [UIColor clearColor];
-	scoreLabel.font = [UIFont boldSystemFontOfSize:22.0];
+	scoreLabel.font = [UIFont boldSystemFontOfSize:19.0];
 	scoreLabel.shadowColor = [UIColor blackColor];
 	scoreLabel.numberOfLines = 0;
 	scoreLabel.lineBreakMode = UILineBreakModeWordWrap;

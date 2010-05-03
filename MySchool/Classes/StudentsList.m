@@ -25,7 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.tableview.rowHeight = 80;
+	self.tableview.rowHeight = 105;
+	self.tableview.backgroundColor = [UIColor clearColor];
+	[self setBackgroundColor];
 
 	[self setTopBarTitle:@"My Students" withLogo:YES backButton:YES];
 }
@@ -68,17 +70,28 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-		[cell setAccessoryType:UITableViewCellAccessoryNone];
+		[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     }
-	/*
-	UIImage *image = [UIImage imageNamed:@"gradient_button.png"];
-	UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-	imageView.contentMode = UIViewContentModeScaleToFill;
-	cell.backgroundView = imageView;
-	[imageView release];
-	*/
+	
     // Set up the cell...
-	[cell.imageView setImage:[[students objectAtIndex:indexPath.row] frontView]];
+	
+	UIView *aView = [[UIView alloc] initWithFrame:CGRectMake(170, 0, 100, 100)];
+	aView.clipsToBounds = YES;
+					 
+	UIImageView *imageView = [[UIImageView alloc] initWithImage:[(Student*)[students objectAtIndex:indexPath.row] frontView]];
+	imageView.frame = CGRectMake(0, -30, 100, 200);
+	imageView.contentMode = UIViewContentModeScaleAspectFit;
+	//imageView.transform = CGAffineTransformMakeScale(.5,.5);
+	//imageView.frame = CGRectMake(0.0, 0.0, 193*scale, 346*scale);
+	[aView addSubview:imageView];
+	[cell addSubview:aView];
+	[aView release];
+	[imageView release];
+	
+	//[cell.imageView setImage:[(Student*)[students objectAtIndex:indexPath.row] frontView]];
+
+	//[(Student*)[students objectAtIndex:indexPath.row] setImageView:cell.imageView forMood:@"Happy" isWaving:NO];
+
 	cell.textLabel.backgroundColor = [UIColor clearColor];
 	cell.textLabel.text = [NSString stringWithFormat:@"%@", [[students objectAtIndex:indexPath.row] firstName]];
 	//cell.detailTextLabel.text = [NSString stringWithFormat:@"B+"];

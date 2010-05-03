@@ -11,6 +11,7 @@
 #import "LibraryShelves.h"
 #import "UserPlus.h"
 #import "ModuleHome.h"
+#import "AvatarPlus.h"
 
 @implementation ClassroomDesk
 
@@ -53,7 +54,7 @@
 	}
 
 	[self setTopBarTitle:@"Classroom" withLogo:YES backButton:YES];
-	[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
+	[self.teacherAtDesk addSubview:[delegate.teacher.avatar customAvatarAtSize:.6]];
 	transformed = NO;
 	clicked = NO;
 

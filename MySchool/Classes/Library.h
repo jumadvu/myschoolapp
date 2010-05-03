@@ -7,7 +7,7 @@
 //
 
 //#import <Cocoa/Cocoa.h>
-
+@class PersonalQuestion;
 
 @interface Library : NSObject {
 }
@@ -21,5 +21,6 @@
 +(NSArray*)fetchBehaviorReports:(NSString*)type;
 +(NSArray*)getHelp;
 +(void)addPersonalQuestionsToDatabaseContext:(NSManagedObjectContext*)moc;
++(PersonalQuestion*)fetchPersonalQuestion;
 
 @end

@@ -9,7 +9,7 @@
 #import "AccountSelection.h"
 #import "UserPlus.h"
 #import "User.h"
-
+#import "AvatarPlus.h"
 
 @implementation AccountSelection
 
@@ -59,6 +59,8 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"an account cell");
+  	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -66,9 +68,16 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	User *anAccount = (User*)[accounts objectAtIndex:indexPath.row];
-	cell.imageView.image = [anAccount avatarImageWaistUp];
-	
+	//cell.imageView.image = [anAccount avatarImageWaistUp];
+
+	[cell addSubview:[anAccount.avatar customAvatarAtSize:.18]];
+
+	for (UIView *view in cell.subviews) {
+		view.center = CGPointMake(250, 35);
+	}
+	//cell.textLabel.center = CGPointMake(100, 10);
 	cell.textLabel.text = [anAccount fullName];
+	
 	
     // Set up the cell...
 	

@@ -36,7 +36,8 @@
 		
 	self.reports = (NSMutableArray*)[[self.student reports] allObjects];
 	[self setTopBarTitle:[NSString stringWithFormat:@"%@'s Behavior Reports",[self.student firstName]] withLogo:YES backButton:YES];
-	
+	[self setBackgroundColor];
+
 	
 	
 }
@@ -46,12 +47,6 @@
 	NSLog(@"dismissed window");
 	[self dismissModalViewControllerAnimated:YES];
 	
-	//adjust student behavior rating
-	if (correct) {
-		[student adjustBehavior:@"positive"];
-	} else {
-		[student adjustBehavior:@"negative"];
-	}
 	[self.tableView reloadData];
 }
 

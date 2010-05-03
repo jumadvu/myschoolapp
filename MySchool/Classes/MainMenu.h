@@ -21,7 +21,7 @@
 	IBOutlet UILabel *pointsLabel;
 	IBOutlet UILabel *creditsLabel;
 	IBOutlet UIButton *pointsButton;
-	IBOutlet UIImageView *teacherAtDesk;
+	IBOutlet UIView *teacherAtDesk;
 }
 
 @property (nonatomic, retain) UIButton *button1;
@@ -35,7 +35,7 @@
 @property (nonatomic, retain) UIButton *pointsButton;
 @property (nonatomic, retain) UILabel *pointsLabel;
 @property (nonatomic, retain) UILabel *creditsLabel;
-@property (nonatomic, retain) UIImageView *teacherAtDesk;
+@property (nonatomic, retain) UIView *teacherAtDesk;
 
 -(IBAction)clickButton1;
 -(IBAction)pointsButtonClicked;

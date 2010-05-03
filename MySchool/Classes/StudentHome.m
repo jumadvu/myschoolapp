@@ -49,9 +49,10 @@
 	tableView.backgroundColor = [UIColor clearColor];
 	
 	[self setTopBarTitle:[self.student firstName] withLogo:YES backButton:YES];
-	[self addHelpButton:2 x:5 y:252];
-	[self addHelpButton:1 x:5 y:287];
+	[self addHelpButton:5 x:5 y:252];
+	[self addHelpButton:4 x:5 y:287];
 	[self.student setImageView:frontView forMood:@"Happy" isWaving:NO];
+	[self setBackgroundColor];
 	
 	//check to see if there are any new reports for this student
 	[self.student addPossibleReports];
@@ -114,7 +115,7 @@
     UITableViewCell *cell = [tView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
-	//	[cell setAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
+		[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     }
 	cell.textLabel.font = [UIFont systemFontOfSize:13];
 	cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
