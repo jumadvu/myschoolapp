@@ -63,23 +63,20 @@
 
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+    UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    
 	User *anAccount = (User*)[accounts objectAtIndex:indexPath.row];
-	//cell.imageView.image = [anAccount avatarImageWaistUp];
 
+	//add avatar image
 	[cell addSubview:[anAccount.avatar customAvatarAtSize:.18]];
 
+	//move image to right
 	for (UIView *view in cell.subviews) {
 		view.center = CGPointMake(250, 35);
 	}
+	
 	//cell.textLabel.center = CGPointMake(100, 10);
 	cell.textLabel.text = [anAccount fullName];
-	
-	
-    // Set up the cell...
 	
     return cell;
 }
