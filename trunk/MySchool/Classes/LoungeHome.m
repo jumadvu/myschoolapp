@@ -11,9 +11,14 @@
 #import "User.h"
 #import "UserPlus.h"
 #import "StudentsList.h"
+#import "AvatarPlus.h"
+#import "LessonsTaught.h"
+#import "NewGameHome.h"
 
 @implementation LoungeHome
 
+@synthesize button2;
+@synthesize button4;
 @synthesize gradeButton;
 @synthesize numPapersLabel;
 @synthesize gradeBookButton;
@@ -21,6 +26,8 @@
 
 - (void)dealloc {
 	//[numPapersLabel release];
+	[button2 release];
+	[button4 release];
 	[teacherAtDesk release];
 	[gradeButton release];
     [super dealloc];
@@ -74,7 +81,20 @@
     [super viewDidLoad];
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[self setTopBarTitle:@"My Office" withLogo:YES backButton:YES];
-	[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
+	[self.teacherAtDesk addSubview:[delegate.teacher.avatar customAvatarAtSize:.7]];
+
+}
+
+-(void)clickButton2 {
+	LessonsTaught *vc = [[[LessonsTaught alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
+}
+
+-(void)clickButton4 {
+	NewGameHome *vc = [[[NewGameHome alloc] initWithNibName:nil bundle:nil] autorelease];
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	[delegate.navCon pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

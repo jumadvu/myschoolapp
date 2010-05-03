@@ -353,4 +353,35 @@
 	
 }
 
++(PersonalQuestion*)fetchPersonalQuestion {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSLog(@"attempting to fetch personal question");
+	//fetch data from the sql lite database
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	//finds all users who don't have parents (these are the parents)
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"question != nil"]];
+	[request setPredicate:predicate];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"PersonalQuestion" inManagedObjectContext:delegate.managedObjectContext];
+	[request setEntity:entity];
+	
+	//set up the sort orderings
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"question" ascending:YES];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];
+	[sortDescriptors release];
+	[sortDescriptor release];
+	
+	
+	//fetch the data
+	NSError *error;
+	NSMutableArray *mutableFetchResults = [[delegate.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+
+	int randomNum = arc4random() % [mutableFetchResults count];
+
+	PersonalQuestion *pQuestion = [mutableFetchResults objectAtIndex:randomNum];
+	
+	return pQuestion;
+	
+}
+
 @end

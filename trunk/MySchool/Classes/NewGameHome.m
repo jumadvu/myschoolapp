@@ -12,6 +12,7 @@
 #import "Avatar.h"
 #import "Student.h"
 #import "StudentPlus.h"
+#import "AvatarPlus.h" 
 
 @implementation NewGameHome
 

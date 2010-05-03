@@ -142,12 +142,8 @@
 		AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3889CC110ED78800217E8F /* DesignAvatar1.xib */; };
 		AB388A4D110FB24B00217E8F /* ChapterHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A4B110FB24B00217E8F /* ChapterHome.m */; };
 		AB388A4E110FB24B00217E8F /* ChapterHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A4C110FB24B00217E8F /* ChapterHome.xib */; };
-		AB388A7C110FBE0C00217E8F /* ChalkboardHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A7A110FBE0C00217E8F /* ChalkboardHome.m */; };
-		AB388A7D110FBE0C00217E8F /* ChalkboardHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A7B110FBE0C00217E8F /* ChalkboardHome.xib */; };
 		AB388A8F110FC5E200217E8F /* StudentQuestionHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388A8D110FC5E200217E8F /* StudentQuestionHome.m */; };
 		AB388A90110FC5E200217E8F /* StudentQuestionHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388A8E110FC5E200217E8F /* StudentQuestionHome.xib */; };
-		AB388AC3110FE20E00217E8F /* PassOutWorksheets.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AC1110FE20E00217E8F /* PassOutWorksheets.m */; };
-		AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AC2110FE20E00217E8F /* PassOutWorksheets.xib */; };
 		AB388AE2110FE5F300217E8F /* GradePaper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AE0110FE5F300217E8F /* GradePaper.m */; };
 		AB388AFD110FEA8600217E8F /* AwardsHome.m in Sources */ = {isa = PBXBuildFile; fileRef = AB388AFB110FEA8600217E8F /* AwardsHome.m */; };
 		AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB388AFC110FEA8600217E8F /* AwardsHome.xib */; };
@@ -267,33 +263,41 @@
 		ABB3B0F311878F5C00A889C7 /* AvatarPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3B0F211878F5C00A889C7 /* AvatarPlus.m */; };
 		ABB3C54B1106ECA5006FEEDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C5491106ECA5006FEEDA /* Default.png */; };
 		ABB3C54C1106ECA5006FEEDA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB3C54A1106ECA5006FEEDA /* icon.png */; };
-		ABBB428F1187D8AC006303D2 /* FClothes1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42751187D8AC006303D2 /* FClothes1.png */; };
-		ABBB42901187D8AC006303D2 /* FClothes2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42761187D8AC006303D2 /* FClothes2.png */; };
-		ABBB42911187D8AC006303D2 /* FClothes3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42771187D8AC006303D2 /* FClothes3.png */; };
-		ABBB42921187D8AC006303D2 /* FEyesBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42781187D8AC006303D2 /* FEyesBlue.png */; };
-		ABBB42931187D8AC006303D2 /* FEyesBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42791187D8AC006303D2 /* FEyesBrown.png */; };
-		ABBB42941187D8AC006303D2 /* FEyesGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB427A1187D8AC006303D2 /* FEyesGreen.png */; };
-		ABBB42951187D8AC006303D2 /* FGlasses.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB427B1187D8AC006303D2 /* FGlasses.png */; };
-		ABBB42961187D8AC006303D2 /* FHairBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB427C1187D8AC006303D2 /* FHairBlack.png */; };
-		ABBB42971187D8AC006303D2 /* FHairBlond.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB427D1187D8AC006303D2 /* FHairBlond.png */; };
-		ABBB42981187D8AC006303D2 /* FHairRed.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB427E1187D8AC006303D2 /* FHairRed.png */; };
-		ABBB42991187D8AC006303D2 /* FSkinDark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB427F1187D8AC006303D2 /* FSkinDark.png */; };
-		ABBB429A1187D8AC006303D2 /* FSkinMed.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42801187D8AC006303D2 /* FSkinMed.png */; };
-		ABBB429B1187D8AC006303D2 /* FSkinPale.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42811187D8AC006303D2 /* FSkinPale.png */; };
-		ABBB429C1187D8AC006303D2 /* MClothes1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42821187D8AC006303D2 /* MClothes1.png */; };
-		ABBB429D1187D8AC006303D2 /* MClothes2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42831187D8AC006303D2 /* MClothes2.png */; };
-		ABBB429E1187D8AC006303D2 /* MClothes3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42841187D8AC006303D2 /* MClothes3.png */; };
-		ABBB429F1187D8AC006303D2 /* MEyesBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42851187D8AC006303D2 /* MEyesBlue.png */; };
-		ABBB42A01187D8AC006303D2 /* MEyesBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42861187D8AC006303D2 /* MEyesBrown.png */; };
-		ABBB42A11187D8AC006303D2 /* MEyesGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42871187D8AC006303D2 /* MEyesGreen.png */; };
-		ABBB42A21187D8AC006303D2 /* MGlasses.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42881187D8AC006303D2 /* MGlasses.png */; };
-		ABBB42A31187D8AC006303D2 /* MHairBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB42891187D8AC006303D2 /* MHairBlack.png */; };
-		ABBB42A41187D8AC006303D2 /* MHairBlond.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB428A1187D8AC006303D2 /* MHairBlond.png */; };
-		ABBB42A51187D8AC006303D2 /* MHairBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB428B1187D8AC006303D2 /* MHairBrown.png */; };
-		ABBB42A61187D8AC006303D2 /* MSkinDark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB428C1187D8AC006303D2 /* MSkinDark.png */; };
-		ABBB42A71187D8AC006303D2 /* MSkinMed.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB428D1187D8AC006303D2 /* MSkinMed.png */; };
-		ABBB42A81187D8AC006303D2 /* MSkinPale.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB428E1187D8AC006303D2 /* MSkinPale.png */; };
+		ABBB43C61188AADE006303D2 /* darkskin.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43A61188AADE006303D2 /* darkskin.png */; };
+		ABBB43C71188AADE006303D2 /* FClothes1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43A71188AADE006303D2 /* FClothes1.png */; };
+		ABBB43C81188AADE006303D2 /* FClothes1small.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43A81188AADE006303D2 /* FClothes1small.png */; };
+		ABBB43C91188AADE006303D2 /* FClothes2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43A91188AADE006303D2 /* FClothes2.png */; };
+		ABBB43CA1188AADE006303D2 /* FClothes2small.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43AA1188AADE006303D2 /* FClothes2small.png */; };
+		ABBB43CB1188AADE006303D2 /* FClothes3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43AB1188AADE006303D2 /* FClothes3.png */; };
+		ABBB43CC1188AADE006303D2 /* FClothes3small.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43AC1188AADE006303D2 /* FClothes3small.png */; };
+		ABBB43CD1188AADE006303D2 /* FEyesBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43AD1188AADE006303D2 /* FEyesBlue.png */; };
+		ABBB43CE1188AADE006303D2 /* FEyesBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43AE1188AADE006303D2 /* FEyesBrown.png */; };
+		ABBB43CF1188AADE006303D2 /* FEyesGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43AF1188AADE006303D2 /* FEyesGreen.png */; };
+		ABBB43D01188AADE006303D2 /* FGlasses.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B01188AADE006303D2 /* FGlasses.png */; };
+		ABBB43D11188AADE006303D2 /* FHairBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B11188AADE006303D2 /* FHairBlack.png */; };
+		ABBB43D21188AADE006303D2 /* FHairBlond.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B21188AADE006303D2 /* FHairBlond.png */; };
+		ABBB43D31188AADE006303D2 /* FHairRed.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B31188AADE006303D2 /* FHairRed.png */; };
+		ABBB43D41188AADE006303D2 /* FSkinDark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B41188AADE006303D2 /* FSkinDark.png */; };
+		ABBB43D51188AADE006303D2 /* FSkinMed.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B51188AADE006303D2 /* FSkinMed.png */; };
+		ABBB43D61188AADE006303D2 /* FSkinPale.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B61188AADE006303D2 /* FSkinPale.png */; };
+		ABBB43D71188AADE006303D2 /* lightskin.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B71188AADE006303D2 /* lightskin.png */; };
+		ABBB43D81188AADE006303D2 /* MClothes1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B81188AADE006303D2 /* MClothes1.png */; };
+		ABBB43D91188AADE006303D2 /* MClothes2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43B91188AADE006303D2 /* MClothes2.png */; };
+		ABBB43DA1188AADE006303D2 /* MClothes3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43BA1188AADE006303D2 /* MClothes3.png */; };
+		ABBB43DB1188AADE006303D2 /* medskin.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43BB1188AADE006303D2 /* medskin.png */; };
+		ABBB43DC1188AADE006303D2 /* MEyesBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43BC1188AADE006303D2 /* MEyesBlue.png */; };
+		ABBB43DD1188AADE006303D2 /* MEyesBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43BD1188AADE006303D2 /* MEyesBrown.png */; };
+		ABBB43DE1188AADE006303D2 /* MEyesGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43BE1188AADE006303D2 /* MEyesGreen.png */; };
+		ABBB43DF1188AADE006303D2 /* MGlasses.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43BF1188AADE006303D2 /* MGlasses.png */; };
+		ABBB43E01188AADE006303D2 /* MHairBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43C01188AADE006303D2 /* MHairBlack.png */; };
+		ABBB43E11188AADE006303D2 /* MHairBlond.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43C11188AADE006303D2 /* MHairBlond.png */; };
+		ABBB43E21188AADE006303D2 /* MHairBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43C21188AADE006303D2 /* MHairBrown.png */; };
+		ABBB43E31188AADE006303D2 /* MSkinDark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43C31188AADE006303D2 /* MSkinDark.png */; };
+		ABBB43E41188AADE006303D2 /* MSkinMed.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43C41188AADE006303D2 /* MSkinMed.png */; };
+		ABBB43E51188AADE006303D2 /* MSkinPale.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBB43C51188AADE006303D2 /* MSkinPale.png */; };
 		ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAA6811116B7D700D3956F /* AccountSelection.m */; };
+		ABCF6E7A11896E2A005C3642 /* award.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF6E7911896E2A005C3642 /* award.png */; };
+		ABCF7047118E6598005C3642 /* BarScale.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF7046118E6598005C3642 /* BarScale.m */; };
 		ABD56A8A117CB0B1001AB41D /* BehaviorReportPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD56A89117CB0B1001AB41D /* BehaviorReportPlus.m */; };
 		ABD56AA1117CB9DC001AB41D /* goldstar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD56A9F117CB9DC001AB41D /* goldstar.png */; };
 		ABD56AA2117CB9DC001AB41D /* warningmark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD56AA0117CB9DC001AB41D /* warningmark.png */; };
@@ -558,15 +562,9 @@
 		AB388A4A110FB24B00217E8F /* ChapterHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterHome.h; sourceTree = "<group>"; };
 		AB388A4B110FB24B00217E8F /* ChapterHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterHome.m; sourceTree = "<group>"; };
 		AB388A4C110FB24B00217E8F /* ChapterHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterHome.xib; sourceTree = "<group>"; };
-		AB388A79110FBE0C00217E8F /* ChalkboardHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChalkboardHome.h; sourceTree = "<group>"; };
-		AB388A7A110FBE0C00217E8F /* ChalkboardHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChalkboardHome.m; sourceTree = "<group>"; };
-		AB388A7B110FBE0C00217E8F /* ChalkboardHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChalkboardHome.xib; sourceTree = "<group>"; };
 		AB388A8C110FC5E200217E8F /* StudentQuestionHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentQuestionHome.h; sourceTree = "<group>"; };
 		AB388A8D110FC5E200217E8F /* StudentQuestionHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentQuestionHome.m; sourceTree = "<group>"; };
 		AB388A8E110FC5E200217E8F /* StudentQuestionHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentQuestionHome.xib; sourceTree = "<group>"; };
-		AB388AC0110FE20E00217E8F /* PassOutWorksheets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassOutWorksheets.h; sourceTree = "<group>"; };
-		AB388AC1110FE20E00217E8F /* PassOutWorksheets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassOutWorksheets.m; sourceTree = "<group>"; };
-		AB388AC2110FE20E00217E8F /* PassOutWorksheets.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassOutWorksheets.xib; sourceTree = "<group>"; };
 		AB388ADF110FE5F300217E8F /* GradePaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradePaper.h; sourceTree = "<group>"; };
 		AB388AE0110FE5F300217E8F /* GradePaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradePaper.m; sourceTree = "<group>"; };
 		AB388AFA110FEA8600217E8F /* AwardsHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwardsHome.h; sourceTree = "<group>"; };
@@ -710,34 +708,43 @@
 		ABB3B0F211878F5C00A889C7 /* AvatarPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarPlus.m; sourceTree = "<group>"; };
 		ABB3C5491106ECA5006FEEDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ABB3C54A1106ECA5006FEEDA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		ABBB42751187D8AC006303D2 /* FClothes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FClothes1.png; path = images/Avatars/FClothes1.png; sourceTree = "<group>"; };
-		ABBB42761187D8AC006303D2 /* FClothes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FClothes2.png; path = images/Avatars/FClothes2.png; sourceTree = "<group>"; };
-		ABBB42771187D8AC006303D2 /* FClothes3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FClothes3.png; path = images/Avatars/FClothes3.png; sourceTree = "<group>"; };
-		ABBB42781187D8AC006303D2 /* FEyesBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FEyesBlue.png; path = images/Avatars/FEyesBlue.png; sourceTree = "<group>"; };
-		ABBB42791187D8AC006303D2 /* FEyesBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FEyesBrown.png; path = images/Avatars/FEyesBrown.png; sourceTree = "<group>"; };
-		ABBB427A1187D8AC006303D2 /* FEyesGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FEyesGreen.png; path = images/Avatars/FEyesGreen.png; sourceTree = "<group>"; };
-		ABBB427B1187D8AC006303D2 /* FGlasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FGlasses.png; path = images/Avatars/FGlasses.png; sourceTree = "<group>"; };
-		ABBB427C1187D8AC006303D2 /* FHairBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FHairBlack.png; path = images/Avatars/FHairBlack.png; sourceTree = "<group>"; };
-		ABBB427D1187D8AC006303D2 /* FHairBlond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FHairBlond.png; path = images/Avatars/FHairBlond.png; sourceTree = "<group>"; };
-		ABBB427E1187D8AC006303D2 /* FHairRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FHairRed.png; path = images/Avatars/FHairRed.png; sourceTree = "<group>"; };
-		ABBB427F1187D8AC006303D2 /* FSkinDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FSkinDark.png; path = images/Avatars/FSkinDark.png; sourceTree = "<group>"; };
-		ABBB42801187D8AC006303D2 /* FSkinMed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FSkinMed.png; path = images/Avatars/FSkinMed.png; sourceTree = "<group>"; };
-		ABBB42811187D8AC006303D2 /* FSkinPale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FSkinPale.png; path = images/Avatars/FSkinPale.png; sourceTree = "<group>"; };
-		ABBB42821187D8AC006303D2 /* MClothes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MClothes1.png; path = images/Avatars/MClothes1.png; sourceTree = "<group>"; };
-		ABBB42831187D8AC006303D2 /* MClothes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MClothes2.png; path = images/Avatars/MClothes2.png; sourceTree = "<group>"; };
-		ABBB42841187D8AC006303D2 /* MClothes3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MClothes3.png; path = images/Avatars/MClothes3.png; sourceTree = "<group>"; };
-		ABBB42851187D8AC006303D2 /* MEyesBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MEyesBlue.png; path = images/Avatars/MEyesBlue.png; sourceTree = "<group>"; };
-		ABBB42861187D8AC006303D2 /* MEyesBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MEyesBrown.png; path = images/Avatars/MEyesBrown.png; sourceTree = "<group>"; };
-		ABBB42871187D8AC006303D2 /* MEyesGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MEyesGreen.png; path = images/Avatars/MEyesGreen.png; sourceTree = "<group>"; };
-		ABBB42881187D8AC006303D2 /* MGlasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MGlasses.png; path = images/Avatars/MGlasses.png; sourceTree = "<group>"; };
-		ABBB42891187D8AC006303D2 /* MHairBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHairBlack.png; path = images/Avatars/MHairBlack.png; sourceTree = "<group>"; };
-		ABBB428A1187D8AC006303D2 /* MHairBlond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHairBlond.png; path = images/Avatars/MHairBlond.png; sourceTree = "<group>"; };
-		ABBB428B1187D8AC006303D2 /* MHairBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHairBrown.png; path = images/Avatars/MHairBrown.png; sourceTree = "<group>"; };
-		ABBB428C1187D8AC006303D2 /* MSkinDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MSkinDark.png; path = images/Avatars/MSkinDark.png; sourceTree = "<group>"; };
-		ABBB428D1187D8AC006303D2 /* MSkinMed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MSkinMed.png; path = images/Avatars/MSkinMed.png; sourceTree = "<group>"; };
-		ABBB428E1187D8AC006303D2 /* MSkinPale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MSkinPale.png; path = images/Avatars/MSkinPale.png; sourceTree = "<group>"; };
+		ABBB43A61188AADE006303D2 /* darkskin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkskin.png; sourceTree = "<group>"; };
+		ABBB43A71188AADE006303D2 /* FClothes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClothes1.png; sourceTree = "<group>"; };
+		ABBB43A81188AADE006303D2 /* FClothes1small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClothes1small.png; sourceTree = "<group>"; };
+		ABBB43A91188AADE006303D2 /* FClothes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClothes2.png; sourceTree = "<group>"; };
+		ABBB43AA1188AADE006303D2 /* FClothes2small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClothes2small.png; sourceTree = "<group>"; };
+		ABBB43AB1188AADE006303D2 /* FClothes3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClothes3.png; sourceTree = "<group>"; };
+		ABBB43AC1188AADE006303D2 /* FClothes3small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FClothes3small.png; sourceTree = "<group>"; };
+		ABBB43AD1188AADE006303D2 /* FEyesBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEyesBlue.png; sourceTree = "<group>"; };
+		ABBB43AE1188AADE006303D2 /* FEyesBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEyesBrown.png; sourceTree = "<group>"; };
+		ABBB43AF1188AADE006303D2 /* FEyesGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEyesGreen.png; sourceTree = "<group>"; };
+		ABBB43B01188AADE006303D2 /* FGlasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FGlasses.png; sourceTree = "<group>"; };
+		ABBB43B11188AADE006303D2 /* FHairBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FHairBlack.png; sourceTree = "<group>"; };
+		ABBB43B21188AADE006303D2 /* FHairBlond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FHairBlond.png; sourceTree = "<group>"; };
+		ABBB43B31188AADE006303D2 /* FHairRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FHairRed.png; sourceTree = "<group>"; };
+		ABBB43B41188AADE006303D2 /* FSkinDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FSkinDark.png; sourceTree = "<group>"; };
+		ABBB43B51188AADE006303D2 /* FSkinMed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FSkinMed.png; sourceTree = "<group>"; };
+		ABBB43B61188AADE006303D2 /* FSkinPale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FSkinPale.png; sourceTree = "<group>"; };
+		ABBB43B71188AADE006303D2 /* lightskin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightskin.png; sourceTree = "<group>"; };
+		ABBB43B81188AADE006303D2 /* MClothes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MClothes1.png; sourceTree = "<group>"; };
+		ABBB43B91188AADE006303D2 /* MClothes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MClothes2.png; sourceTree = "<group>"; };
+		ABBB43BA1188AADE006303D2 /* MClothes3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MClothes3.png; sourceTree = "<group>"; };
+		ABBB43BB1188AADE006303D2 /* medskin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medskin.png; sourceTree = "<group>"; };
+		ABBB43BC1188AADE006303D2 /* MEyesBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEyesBlue.png; sourceTree = "<group>"; };
+		ABBB43BD1188AADE006303D2 /* MEyesBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEyesBrown.png; sourceTree = "<group>"; };
+		ABBB43BE1188AADE006303D2 /* MEyesGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MEyesGreen.png; sourceTree = "<group>"; };
+		ABBB43BF1188AADE006303D2 /* MGlasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MGlasses.png; sourceTree = "<group>"; };
+		ABBB43C01188AADE006303D2 /* MHairBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHairBlack.png; sourceTree = "<group>"; };
+		ABBB43C11188AADE006303D2 /* MHairBlond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHairBlond.png; sourceTree = "<group>"; };
+		ABBB43C21188AADE006303D2 /* MHairBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHairBrown.png; sourceTree = "<group>"; };
+		ABBB43C31188AADE006303D2 /* MSkinDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MSkinDark.png; sourceTree = "<group>"; };
+		ABBB43C41188AADE006303D2 /* MSkinMed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MSkinMed.png; sourceTree = "<group>"; };
+		ABBB43C51188AADE006303D2 /* MSkinPale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MSkinPale.png; sourceTree = "<group>"; };
 		ABCAA6801116B7D700D3956F /* AccountSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSelection.h; sourceTree = "<group>"; };
 		ABCAA6811116B7D700D3956F /* AccountSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSelection.m; sourceTree = "<group>"; };
+		ABCF6E7911896E2A005C3642 /* award.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award.png; sourceTree = "<group>"; };
+		ABCF7045118E6598005C3642 /* BarScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarScale.h; sourceTree = "<group>"; };
+		ABCF7046118E6598005C3642 /* BarScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarScale.m; sourceTree = "<group>"; };
 		ABD56A88117CB0B1001AB41D /* BehaviorReportPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorReportPlus.h; sourceTree = "<group>"; };
 		ABD56A89117CB0B1001AB41D /* BehaviorReportPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorReportPlus.m; sourceTree = "<group>"; };
 		ABD56A9F117CB9DC001AB41D /* goldstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldstar.png; sourceTree = "<group>"; };
@@ -908,6 +915,8 @@
 				AB34B03D115924EA00BC950F /* music */,
 				F577F81211762CCC00387EAE /* ScoreAnim.h */,
 				F577F81311762CCC00387EAE /* ScoreAnim.m */,
+				ABCF7045118E6598005C3642 /* BarScale.h */,
+				ABCF7046118E6598005C3642 /* BarScale.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1107,15 +1116,9 @@
 				AB07F25F11098B6600204AFE /* ClassroomHome.h */,
 				AB07F26011098B6600204AFE /* ClassroomHome.m */,
 				AB07F26111098B6600204AFE /* ClassroomHome.xib */,
-				AB388A79110FBE0C00217E8F /* ChalkboardHome.h */,
-				AB388A7A110FBE0C00217E8F /* ChalkboardHome.m */,
-				AB388A7B110FBE0C00217E8F /* ChalkboardHome.xib */,
 				AB388A8C110FC5E200217E8F /* StudentQuestionHome.h */,
 				AB388A8D110FC5E200217E8F /* StudentQuestionHome.m */,
 				AB388A8E110FC5E200217E8F /* StudentQuestionHome.xib */,
-				AB388AC0110FE20E00217E8F /* PassOutWorksheets.h */,
-				AB388AC1110FE20E00217E8F /* PassOutWorksheets.m */,
-				AB388AC2110FE20E00217E8F /* PassOutWorksheets.xib */,
 				AB160CD0114FD5FC004DC0C1 /* ParentEmail.h */,
 				AB160CD1114FD5FC004DC0C1 /* ParentEmail.m */,
 				AB160CD2114FD5FC004DC0C1 /* ParentEmail.xib */,
@@ -1249,40 +1252,6 @@
 				ABAD47B411723D3800C33FCA /* StudentDesk.png */,
 			);
 			name = furniture;
-			sourceTree = "<group>";
-		};
-		AB26207B1112204F005D02F4 /* avatar */ = {
-			isa = PBXGroup;
-			children = (
-				ABBB42751187D8AC006303D2 /* FClothes1.png */,
-				ABBB42761187D8AC006303D2 /* FClothes2.png */,
-				ABBB42771187D8AC006303D2 /* FClothes3.png */,
-				ABBB42781187D8AC006303D2 /* FEyesBlue.png */,
-				ABBB42791187D8AC006303D2 /* FEyesBrown.png */,
-				ABBB427A1187D8AC006303D2 /* FEyesGreen.png */,
-				ABBB427B1187D8AC006303D2 /* FGlasses.png */,
-				ABBB427C1187D8AC006303D2 /* FHairBlack.png */,
-				ABBB427D1187D8AC006303D2 /* FHairBlond.png */,
-				ABBB427E1187D8AC006303D2 /* FHairRed.png */,
-				ABBB427F1187D8AC006303D2 /* FSkinDark.png */,
-				ABBB42801187D8AC006303D2 /* FSkinMed.png */,
-				ABBB42811187D8AC006303D2 /* FSkinPale.png */,
-				ABBB42821187D8AC006303D2 /* MClothes1.png */,
-				ABBB42831187D8AC006303D2 /* MClothes2.png */,
-				ABBB42841187D8AC006303D2 /* MClothes3.png */,
-				ABBB42851187D8AC006303D2 /* MEyesBlue.png */,
-				ABBB42861187D8AC006303D2 /* MEyesBrown.png */,
-				ABBB42871187D8AC006303D2 /* MEyesGreen.png */,
-				ABBB42881187D8AC006303D2 /* MGlasses.png */,
-				ABBB42891187D8AC006303D2 /* MHairBlack.png */,
-				ABBB428A1187D8AC006303D2 /* MHairBlond.png */,
-				ABBB428B1187D8AC006303D2 /* MHairBrown.png */,
-				ABBB428C1187D8AC006303D2 /* MSkinDark.png */,
-				ABBB428D1187D8AC006303D2 /* MSkinMed.png */,
-				ABBB428E1187D8AC006303D2 /* MSkinPale.png */,
-			);
-			name = avatar;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		AB34B03D115924EA00BC950F /* music */ = {
@@ -1488,12 +1457,13 @@
 		AB53B519112349DE0017AFAB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ABCF6E7911896E2A005C3642 /* award.png */,
+				ABBB43A51188AADE006303D2 /* Avatars */,
 				F57D632C1187C7100052F95D /* lb-g.png */,
 				F57D632D1187C7100052F95D /* lb-b.png */,
 				F57D632E1187C7100052F95D /* lb-red.png */,
 				F5A7048E1187B39C00F8C678 /* paintsplash.jpg */,
 				ABB3B00D1186B39C00A889C7 /* instructions */,
-				AB26207B1112204F005D02F4 /* avatar */,
 				ABB3AC301182095300A889C7 /* rabbit.png */,
 				ABB3AC311182095300A889C7 /* turtle.png */,
 				ABD5707E117F84EA001AB41D /* open_book.png */,
@@ -1621,6 +1591,45 @@
 			path = instructions;
 			sourceTree = "<group>";
 		};
+		ABBB43A51188AADE006303D2 /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				ABBB43A61188AADE006303D2 /* darkskin.png */,
+				ABBB43A71188AADE006303D2 /* FClothes1.png */,
+				ABBB43A81188AADE006303D2 /* FClothes1small.png */,
+				ABBB43A91188AADE006303D2 /* FClothes2.png */,
+				ABBB43AA1188AADE006303D2 /* FClothes2small.png */,
+				ABBB43AB1188AADE006303D2 /* FClothes3.png */,
+				ABBB43AC1188AADE006303D2 /* FClothes3small.png */,
+				ABBB43AD1188AADE006303D2 /* FEyesBlue.png */,
+				ABBB43AE1188AADE006303D2 /* FEyesBrown.png */,
+				ABBB43AF1188AADE006303D2 /* FEyesGreen.png */,
+				ABBB43B01188AADE006303D2 /* FGlasses.png */,
+				ABBB43B11188AADE006303D2 /* FHairBlack.png */,
+				ABBB43B21188AADE006303D2 /* FHairBlond.png */,
+				ABBB43B31188AADE006303D2 /* FHairRed.png */,
+				ABBB43B41188AADE006303D2 /* FSkinDark.png */,
+				ABBB43B51188AADE006303D2 /* FSkinMed.png */,
+				ABBB43B61188AADE006303D2 /* FSkinPale.png */,
+				ABBB43B71188AADE006303D2 /* lightskin.png */,
+				ABBB43B81188AADE006303D2 /* MClothes1.png */,
+				ABBB43B91188AADE006303D2 /* MClothes2.png */,
+				ABBB43BA1188AADE006303D2 /* MClothes3.png */,
+				ABBB43BB1188AADE006303D2 /* medskin.png */,
+				ABBB43BC1188AADE006303D2 /* MEyesBlue.png */,
+				ABBB43BD1188AADE006303D2 /* MEyesBrown.png */,
+				ABBB43BE1188AADE006303D2 /* MEyesGreen.png */,
+				ABBB43BF1188AADE006303D2 /* MGlasses.png */,
+				ABBB43C01188AADE006303D2 /* MHairBlack.png */,
+				ABBB43C11188AADE006303D2 /* MHairBlond.png */,
+				ABBB43C21188AADE006303D2 /* MHairBrown.png */,
+				ABBB43C31188AADE006303D2 /* MSkinDark.png */,
+				ABBB43C41188AADE006303D2 /* MSkinMed.png */,
+				ABBB43C51188AADE006303D2 /* MSkinPale.png */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
 		ABCAA67D1116B68000D3956F /* welcome new game */ = {
 			isa = PBXGroup;
 			children = (
@@ -1724,9 +1733,7 @@
 				AB07F26A11098B7600204AFE /* LoungeHome.xib in Resources */,
 				AB3889CE110ED78800217E8F /* DesignAvatar1.xib in Resources */,
 				AB388A4E110FB24B00217E8F /* ChapterHome.xib in Resources */,
-				AB388A7D110FBE0C00217E8F /* ChalkboardHome.xib in Resources */,
 				AB388A90110FC5E200217E8F /* StudentQuestionHome.xib in Resources */,
-				AB388AC4110FE20E00217E8F /* PassOutWorksheets.xib in Resources */,
 				AB388AFE110FEA8600217E8F /* AwardsHome.xib in Resources */,
 				AB388B05110FEA9500217E8F /* StoreHome.xib in Resources */,
 				AB53B36F1121EC120017AFAB /* dinosaurs.xml in Resources */,
@@ -1973,37 +1980,44 @@
 				ABB3B00F1186B39C00A889C7 /* classroomInstructions.png in Resources */,
 				ABB3B0161186B61100A889C7 /* blackArrow.png in Resources */,
 				ABB3B0AD11875FAF00A889C7 /* help.png in Resources */,
-				ABBB428F1187D8AC006303D2 /* FClothes1.png in Resources */,
-				ABBB42901187D8AC006303D2 /* FClothes2.png in Resources */,
-				ABBB42911187D8AC006303D2 /* FClothes3.png in Resources */,
-				ABBB42921187D8AC006303D2 /* FEyesBlue.png in Resources */,
-				ABBB42931187D8AC006303D2 /* FEyesBrown.png in Resources */,
-				ABBB42941187D8AC006303D2 /* FEyesGreen.png in Resources */,
-				ABBB42951187D8AC006303D2 /* FGlasses.png in Resources */,
-				ABBB42961187D8AC006303D2 /* FHairBlack.png in Resources */,
-				ABBB42971187D8AC006303D2 /* FHairBlond.png in Resources */,
-				ABBB42981187D8AC006303D2 /* FHairRed.png in Resources */,
-				ABBB42991187D8AC006303D2 /* FSkinDark.png in Resources */,
-				ABBB429A1187D8AC006303D2 /* FSkinMed.png in Resources */,
-				ABBB429B1187D8AC006303D2 /* FSkinPale.png in Resources */,
-				ABBB429C1187D8AC006303D2 /* MClothes1.png in Resources */,
-				ABBB429D1187D8AC006303D2 /* MClothes2.png in Resources */,
-				ABBB429E1187D8AC006303D2 /* MClothes3.png in Resources */,
-				ABBB429F1187D8AC006303D2 /* MEyesBlue.png in Resources */,
-				ABBB42A01187D8AC006303D2 /* MEyesBrown.png in Resources */,
-				ABBB42A11187D8AC006303D2 /* MEyesGreen.png in Resources */,
-				ABBB42A21187D8AC006303D2 /* MGlasses.png in Resources */,
-				ABBB42A31187D8AC006303D2 /* MHairBlack.png in Resources */,
-				ABBB42A41187D8AC006303D2 /* MHairBlond.png in Resources */,
-				ABBB42A51187D8AC006303D2 /* MHairBrown.png in Resources */,
-				ABBB42A61187D8AC006303D2 /* MSkinDark.png in Resources */,
-				ABBB42A71187D8AC006303D2 /* MSkinMed.png in Resources */,
-				ABBB42A81187D8AC006303D2 /* MSkinPale.png in Resources */,
 				F5A7048C1187B1A000F8C678 /* ColorMenu.xib in Resources */,
 				F5A7048F1187B39C00F8C678 /* paintsplash.jpg in Resources */,
 				F57D632F1187C7100052F95D /* lb-g.png in Resources */,
 				F57D63301187C7100052F95D /* lb-b.png in Resources */,
 				F57D63311187C7100052F95D /* lb-red.png in Resources */,
+				ABBB43C61188AADE006303D2 /* darkskin.png in Resources */,
+				ABBB43C71188AADE006303D2 /* FClothes1.png in Resources */,
+				ABBB43C81188AADE006303D2 /* FClothes1small.png in Resources */,
+				ABBB43C91188AADE006303D2 /* FClothes2.png in Resources */,
+				ABBB43CA1188AADE006303D2 /* FClothes2small.png in Resources */,
+				ABBB43CB1188AADE006303D2 /* FClothes3.png in Resources */,
+				ABBB43CC1188AADE006303D2 /* FClothes3small.png in Resources */,
+				ABBB43CD1188AADE006303D2 /* FEyesBlue.png in Resources */,
+				ABBB43CE1188AADE006303D2 /* FEyesBrown.png in Resources */,
+				ABBB43CF1188AADE006303D2 /* FEyesGreen.png in Resources */,
+				ABBB43D01188AADE006303D2 /* FGlasses.png in Resources */,
+				ABBB43D11188AADE006303D2 /* FHairBlack.png in Resources */,
+				ABBB43D21188AADE006303D2 /* FHairBlond.png in Resources */,
+				ABBB43D31188AADE006303D2 /* FHairRed.png in Resources */,
+				ABBB43D41188AADE006303D2 /* FSkinDark.png in Resources */,
+				ABBB43D51188AADE006303D2 /* FSkinMed.png in Resources */,
+				ABBB43D61188AADE006303D2 /* FSkinPale.png in Resources */,
+				ABBB43D71188AADE006303D2 /* lightskin.png in Resources */,
+				ABBB43D81188AADE006303D2 /* MClothes1.png in Resources */,
+				ABBB43D91188AADE006303D2 /* MClothes2.png in Resources */,
+				ABBB43DA1188AADE006303D2 /* MClothes3.png in Resources */,
+				ABBB43DB1188AADE006303D2 /* medskin.png in Resources */,
+				ABBB43DC1188AADE006303D2 /* MEyesBlue.png in Resources */,
+				ABBB43DD1188AADE006303D2 /* MEyesBrown.png in Resources */,
+				ABBB43DE1188AADE006303D2 /* MEyesGreen.png in Resources */,
+				ABBB43DF1188AADE006303D2 /* MGlasses.png in Resources */,
+				ABBB43E01188AADE006303D2 /* MHairBlack.png in Resources */,
+				ABBB43E11188AADE006303D2 /* MHairBlond.png in Resources */,
+				ABBB43E21188AADE006303D2 /* MHairBrown.png in Resources */,
+				ABBB43E31188AADE006303D2 /* MSkinDark.png in Resources */,
+				ABBB43E41188AADE006303D2 /* MSkinMed.png in Resources */,
+				ABBB43E51188AADE006303D2 /* MSkinPale.png in Resources */,
+				ABCF6E7A11896E2A005C3642 /* award.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2027,9 +2041,7 @@
 				AB07F26911098B7600204AFE /* LoungeHome.m in Sources */,
 				AB3889CD110ED78800217E8F /* DesignAvatar1.m in Sources */,
 				AB388A4D110FB24B00217E8F /* ChapterHome.m in Sources */,
-				AB388A7C110FBE0C00217E8F /* ChalkboardHome.m in Sources */,
 				AB388A8F110FC5E200217E8F /* StudentQuestionHome.m in Sources */,
-				AB388AC3110FE20E00217E8F /* PassOutWorksheets.m in Sources */,
 				AB388AE2110FE5F300217E8F /* GradePaper.m in Sources */,
 				AB388AFD110FEA8600217E8F /* AwardsHome.m in Sources */,
 				AB388B04110FEA9500217E8F /* StoreHome.m in Sources */,
@@ -2097,6 +2109,7 @@
 				ABB3B0EB11878EE900A889C7 /* Avatar.m in Sources */,
 				ABB3B0F311878F5C00A889C7 /* AvatarPlus.m in Sources */,
 				F5A7048B1187B1A000F8C678 /* ColorMenu.m in Sources */,
+				ABCF7047118E6598005C3642 /* BarScale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,4 +23,8 @@
 -(NSString*)overallGrade;
 -(void)addPossibleReports;
 -(void)adjustBehavior:(NSString*)posNeg;
+
+- (UIView*)behaviorBarAtX:(int)x y:(int)y;
+- (UIView*)smartsBarAtX:(int)x y:(int)y;
+
 @end

@@ -5,7 +5,7 @@
 //  Created by Ashley Kayler on 1/26/10.
 //  Copyright 2010 DataJedi. All rights reserved.
 //
-
+#import "MySchoolAppDelegate.h"
 #import "StudentQuestionHome.h"
 #import "UserPlus.h"
 #import "StudentPlus.h"
@@ -16,6 +16,10 @@
 #import "StudentQuestionPlus.h"
 #import "StudentAnswer.h"
 #import "ClassroomHome.h"
+#import "AvatarPlus.h"
+#import "BarScale.h"
+#import "PersonalQuestion.h"
+#import "Library.h"
 
 @implementation StudentQuestionHome
 
@@ -27,8 +31,11 @@
 @synthesize a1Button, a2Button, a3Button;
 @synthesize whichQuestion;
 @synthesize delegate;
+@synthesize bar;
+@synthesize answerKey;
 
 - (void)dealloc {
+	[bar release];
 	[a1Button release];
 	[a2Button release];
 	[a3Button release];
@@ -40,27 +47,49 @@
     [super dealloc];
 }
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
 
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	//[self setBackgroundColor];
+
 	MySchoolAppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
-	[student setImageView:self.studentView forMood:@"Confused" isWaving:NO];
-	//[self.studentView setImage:[student frontViewForMood:@"Confused"]];
-	[self.teacherView setImage:[appdelegate.teacher avatarImageWaistUp]];
-	StudentQuestion *sQuestion = [[chapter studentQuestionsArray] objectAtIndex:whichQuestion];
-	NSString *question = [NSString stringWithFormat:@"%@, %@", [appdelegate.teacher title],[sQuestion text]];
+
+	//set teacher and student images
+	[self.teacherView addSubview:[appdelegate.teacher.avatar customAvatarAtSize:.7]];
+	[student setImageView:self.studentView forMood:@"Happy" isWaving:NO];
+
+	/*
+	//add student intelligence barscale
+	BarScale *barScale = [[BarScale alloc] initWithData:@"Smarts" student:student];
+	[self setBar:barScale];
+	[self.view addSubview:self.bar];
+	[barScale release];
+	 */
+	
+	NSString *question;
+	NSString *answer1;
+	NSString *answer2;
+
+	if (whichQuestion == 100) {
+		//personal question
+		PersonalQuestion *pQuestion = (PersonalQuestion*)[Library fetchPersonalQuestion];
+		question = pQuestion.question;
+		int randomNum = arc4random() % 2;
+		if (randomNum == 1) {
+			answer1 = [NSString stringWithFormat:@"%@", pQuestion.correct];
+			answer2 = [NSString stringWithFormat:@"%@", pQuestion.wrong];
+		} else {
+			answer2 = [NSString stringWithFormat:@"%@", pQuestion.correct];
+			answer1 = [NSString stringWithFormat:@"%@", pQuestion.wrong];
+		}
+
+	} else {
+		//academic question
+		StudentQuestion *sQuestion = [[chapter studentQuestionsArray] objectAtIndex:whichQuestion];
+		question = [NSString stringWithFormat:@"%@, %@", [appdelegate.teacher title],[sQuestion text]];
+		answer1 = [NSString stringWithFormat:[[[sQuestion studentAnswersArray] objectAtIndex:0] answer]];
+		answer2 = [NSString stringWithFormat:[[[sQuestion studentAnswersArray] objectAtIndex:1] answer]];
+	}
+	//set up question
 	sButton.titleLabel.numberOfLines = 6;
 	sButton.titleLabel.lineBreakMode   = UILineBreakModeWordWrap;
 	sButton.titleLabel.shadowOffset    = CGSizeMake (.5, .5);
@@ -73,8 +102,7 @@
 	CGRect frame = CGRectMake(100, 30.0, 210.0, sButton.frame.size.height+35);
 	sButton.frame = frame;	
 
-	
-	NSString *answer1 = [NSString stringWithFormat:[[[sQuestion studentAnswersArray] objectAtIndex:0] answer]];
+	//set up answers
 	a1Button.titleLabel.numberOfLines = 6;
 	a1Button.titleLabel.lineBreakMode   = UILineBreakModeWordWrap;
 	UIImage *buttonImageNormal2 = [UIImage imageNamed:@"yellowbutton.png"];
@@ -87,7 +115,6 @@
 	a1Button.frame = frame2;	
 	[a1Button addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
 
-	NSString *answer2 = [NSString stringWithFormat:[[[sQuestion studentAnswersArray] objectAtIndex:1] answer]];
 	a2Button.titleLabel.numberOfLines = 6;
 	a2Button.titleLabel.lineBreakMode   = UILineBreakModeWordWrap;
 	UIImage *buttonImageNormal3 = [UIImage imageNamed:@"yellowbutton.png"];
@@ -100,20 +127,53 @@
 	a2Button.frame = frame3;	
 	[a2Button addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchUpInside];  
 	
+	
 }
 
 
 - (void)clickedButton:(UIButton *)button {
-	int keywordIndex = button.tag;
-	StudentQuestion *sQuestion = [[chapter studentQuestionsArray] objectAtIndex:whichQuestion];
-	StudentAnswer *sAnswer = [[sQuestion studentAnswersArray] objectAtIndex:keywordIndex];
-
-	if ([self.delegate respondsToSelector:@selector(dismissQuestionWindow:)]) {
-		[self.delegate dismissQuestionWindow:[sAnswer correctness]];
+	self.answerKey = button.tag;
+	if (whichQuestion == 100) {
+		//personal question. Always show happy face.
+		[self.student setImageView:self.studentView forMood:@"Happy" isWaving:NO];		
+	} else {
+		//academic queston
+		StudentQuestion *sQuestion = [[chapter studentQuestionsArray] objectAtIndex:whichQuestion];
+		StudentAnswer *sAnswer = [[sQuestion studentAnswersArray] objectAtIndex:self.answerKey];
+		
+		//if the answer is correct, show 'Aha'. If not show confused look.
+		if ([[sAnswer correctness] intValue] > 0) {
+			//correct
+			[self.student setImageView:self.studentView forMood:@"Aha" isWaving:NO];		
+		} else {
+			//wrong
+			[self.student setImageView:self.studentView forMood:@"Confused" isWaving:NO];
+		}
 	}
-	
+
+
+	//delay for a second to show student expression
+	[NSTimer scheduledTimerWithTimeInterval:1.6 target:self 
+								   selector:@selector(returnToPreviousPage) userInfo:nil repeats:NO];
+
 }
 
+-(void) returnToPreviousPage{
+	if (whichQuestion == 100) {
+		//personal question. Always show happy face.
+		[self.student setImageView:self.studentView forMood:@"Happy" isWaving:NO];		
+		if ([self.delegate respondsToSelector:@selector(dismissQuestionWindow:)]) {
+			[self.delegate dismissQuestionWindow:nil];
+		}
+	} else {
+		//academic question
+		StudentQuestion *sQuestion = [[chapter studentQuestionsArray] objectAtIndex:whichQuestion];
+		StudentAnswer *sAnswer = [[sQuestion studentAnswersArray] objectAtIndex:self.answerKey];
+		if ([self.delegate respondsToSelector:@selector(dismissQuestionWindow:)]) {
+			[self.delegate dismissQuestionWindow:[sAnswer correctness]];
+		}
+	}
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

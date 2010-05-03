@@ -11,7 +11,7 @@
 
 @interface Avatar (AvatarPlus) 
 
--(UIView*)customAvatar;
+-(UIView*)customAvatarAtSize:(float)scale;
 -(void)setGenericMan;
 -(void)setGenericWoman;
 

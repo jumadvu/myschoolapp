@@ -43,7 +43,7 @@
 					<object class="IBUITableView" id="499614010">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 69}, {320, 391}}</string>
+						<string key="NSFrame">{{0, 42}, {320, 418}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -207,11 +207,13 @@
 							<string>goBack</string>
 							<string>lowerMenu:</string>
 							<string>raiseMenu:</string>
+							<string>toHelp:</string>
 							<string>toMainMenu</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>id</string>
+							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>id</string>

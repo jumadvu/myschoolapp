@@ -15,6 +15,9 @@
 #import "Student.h"
 #import "StudentPlus.h"
 #import "ScoreAnim.h"
+#import "AvatarPlus.h"
+#import "MySchoolAppDelegate.h"
+#import "BarScale.h"
 
 @implementation HandleReport
 
@@ -24,11 +27,13 @@
 @synthesize delegate;
 @synthesize gotItRight;
 @synthesize clicked;
+@synthesize behaviorBar;
 
 - (void)dealloc {
 	[delegate release];
 	[report release];
 	[teacherAtDesk release];
+	[behaviorBar release];
     [super dealloc];
 }
 
@@ -39,8 +44,15 @@
 	//[self setBackgroundColor];
 	[self setTopBarTitle:@"What Should You Do?" withLogo:NO backButton:NO];
 	MySchoolAppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
-	//[self setTopBarTitle:@"Handle Report" withLogo:NO backButton:NO];
-	[self.teacherAtDesk setImage:[appdelegate.teacher avatarImageWaistUp]];
+
+	//add teacher icon
+	[self.teacherAtDesk addSubview:[appdelegate.teacher.avatar customAvatarAtSize:.6]];
+	
+	//add student respect bar
+	BarScale *bar = [[BarScale alloc] initWithData:@"Behavior" student:delegate.student];
+	[self setBehaviorBar:bar];
+	[self.view addSubview:behaviorBar];
+	[bar release];
 	
 	//default
 	gotItRight = NO;
@@ -111,34 +123,43 @@
 
 - (void)clickedButton:(UIButton *)button {
 	int keywordIndex = button.tag;
+	MySchoolAppDelegate *appdelegate = [[UIApplication sharedApplication] delegate];
 	
-	//check this is the first button
+	//check this is the first button clicked
 	if (!clicked) {
 		
 		if ((keywordIndex == 0 && answer1Correct) || (keywordIndex == 1 && !answer1Correct)) {
-			//got it right
+			//got it right. add student behavior point
+			[delegate.student adjustBehavior:@"positive"];
 			gotItRight = YES;
-			ScoreAnim *anim = [[ScoreAnim alloc] initWithData:@"+2 Respect" x:[NSNumber numberWithInt:115] y:[NSNumber numberWithInt:300]];
+			ScoreAnim *anim = [[ScoreAnim alloc] initWithData:@"+2 Behavior" x:[NSNumber numberWithInt:115] y:[NSNumber numberWithInt:300]];
 			[self.view addSubview:anim];
 			[anim release];
-			 
+			[behaviorBar animateBarBy:2];
 		} else {
-			//got it wrong
+			//got it wrong. subtract student behavior point
+			[delegate.student adjustBehavior:@"negative"];
 			gotItRight = NO;
-			ScoreAnim *anim = [[ScoreAnim alloc] initWithData:@"-2 Respect" x:[NSNumber numberWithInt:115] y:[NSNumber numberWithInt:300]];
+			ScoreAnim *anim = [[ScoreAnim alloc] initWithData:@"-2 Behavior" x:[NSNumber numberWithInt:115] y:[NSNumber numberWithInt:300]];
 			[self.view addSubview:anim];
 			[anim release];
+			[behaviorBar animateBarBy:-2];
 		}
 
 		clicked = YES;
 		
+		
 		//delay until the feedback has shown, then dismiss modal window
 		[NSTimer scheduledTimerWithTimeInterval:2.5 target:self 
 										selector:@selector(returnToPreviousPage) userInfo:nil repeats:NO];
+	} else {
+		//do nothing if they click a second button
 	}
+
  
 	
 }
+
 
 -(void) returnToPreviousPage{
 	if ([self.delegate respondsToSelector:@selector(dismissQuestionWindow:)]) {

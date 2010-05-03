@@ -19,6 +19,7 @@
 #import "User.h"
 #import "ActivitiesHome.h"
 #import "UserPlus.h"
+#import "AvatarPlus.h"
 
 
 @implementation MainMenu
@@ -121,7 +122,8 @@
 	[self setBackgroundColor];
 	[delegate.navCon setNavigationBarHidden:YES];
 	[self getParentEmail];
-	[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
+	//[self.teacherAtDesk setImage:[delegate.teacher avatarImageWaistUp]];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -130,6 +132,10 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	[self.pointsLabel setText:[NSString stringWithFormat:@"%d%%",[delegate.teacher.rating intValue]]];
 	[self.creditsLabel setText:[[delegate.teacher pointsAvailable] stringValue]];
+	for (UIView *view in self.teacherAtDesk.subviews) {
+		[view removeFromSuperview];
+	}
+	[self.teacherAtDesk addSubview:[delegate.teacher.avatar customAvatarAtSize:.2]];
 }
 
 -(void)getParentEmail {

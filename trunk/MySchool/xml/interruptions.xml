@@ -16,18 +16,18 @@
 		<wrong>I stepped in some mud on the way to school this morning.</wrong>
 	</interruption>
 	<interruption type="respect">
-		<question>otherstudent touched me!</question>
-		<correct>otherstudent please keep your hands to yourself</correct>
-		<wrong>I doubt that.</wrong>
+		<question>Joey touched me!</question>
+		<correct>Joey! Please keep your hands to yourself.</correct>
+		<wrong>I doubt that. Joey always does well on his homework.</wrong>
 	</interruption>
 	<interruption type="respect">
-		<question>When is recess?</question>
-		<correct>In a while.</correct>
-		<wrong>It's in thirteen minutes.</wrong>
+		<question>Is it time for recess yet?</question>
+		<correct>Please don't interrupt class with this kind of question.</correct>
+		<wrong>Obviously not, I'm still talking to the class.</wrong>
 	</interruption>
 	<interruption type="respect">
-		<question>Is this going to be on the quiz?</question>
+		<question>Is this going to be on the homework?</question>
 		<correct>You need to pay attention, in case it is.</correct>
-		<wrong>Probably not.</wrong>
+		<wrong>Probably not. Don't worry about listening to this.</wrong>
 	</interruption>
 </myschool>

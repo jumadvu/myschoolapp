@@ -12,6 +12,8 @@
 @interface DesignAvatar1 : baseViewController {
 	IBOutlet UISegmentedControl *segmentControl;
 	IBOutlet UISegmentedControl *segmentControl2;
+	IBOutlet UISegmentedControl *segmentControl3;
+	IBOutlet UISegmentedControl *segmentControl4;
 	NSMutableArray *imageArray;
 	IBOutlet UIImageView *avatarImageView;
 	NSArray *descriptions;
@@ -19,10 +21,13 @@
 
 @property (nonatomic, retain) UISegmentedControl *segmentControl;
 @property (nonatomic, retain) UISegmentedControl *segmentControl2;
+@property (nonatomic, retain) UISegmentedControl *segmentControl3;
+@property (nonatomic, retain) UISegmentedControl *segmentControl4;
 @property (nonatomic, retain) NSMutableArray *imageArray;
 @property (nonatomic, retain) UIImageView *avatarImageView;
 @property (nonatomic, retain) NSArray *descriptions;
 
-- (void)segmentAction:(UISegmentedControl*)sender;
+- (IBAction)segmentAction:(UISegmentedControl*)sender;
+- (IBAction)changeFeature:(UISegmentedControl*)sender;
 
 @end

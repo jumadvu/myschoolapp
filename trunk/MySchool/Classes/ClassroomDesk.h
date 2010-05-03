@@ -10,13 +10,13 @@
 
 
 @interface ClassroomDesk : baseViewController {
-	IBOutlet UIImageView *teacherAtDesk;
+	IBOutlet UIView *teacherAtDesk;
 	IBOutlet UIButton *book;
 	BOOL transformed;
 	BOOL clicked;
 
 }
-@property (nonatomic, retain) UIImageView *teacherAtDesk;
+@property (nonatomic, retain) UIView *teacherAtDesk;
 @property (nonatomic, retain) UIButton *book;
 @property (nonatomic) BOOL transformed;
 @property (nonatomic) BOOL clicked;

@@ -43,7 +43,7 @@
 					<object class="IBUIButton" id="320654711">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{225, 418}, {86, 29}}</string>
+						<string key="NSFrame">{{221, 418}, {86, 29}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -55,14 +55,11 @@
 							<int key="NSfFlags">16</int>
 						</object>
 						<string key="IBUINormalTitle">I'm Done</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="3020666">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUINormalTitleColor" ref="3020666"/>
 						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
@@ -75,11 +72,11 @@
 					<object class="IBUISegmentedControl" id="474679950">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{11, 42}, {295, 30}}</string>
+						<string key="NSFrame">{{11, 56}, {295, 30}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<int key="IBUITag">1</int>
+						<int key="IBUITag">3</int>
 						<int key="IBSegmentControlStyle">2</int>
 						<int key="IBNumberOfSegments">5</int>
 						<int key="IBSelectedSegmentIndex">0</int>
@@ -128,46 +125,34 @@
 							<bytes key="NSRGB">MC42MDAwMDAwMjM4IDAuMjAwMDAwMDAzIDAuMjAwMDAwMDAzAA</bytes>
 						</object>
 					</object>
-					<object class="IBUISegmentedControl" id="737587216">
+					<object class="IBUISegmentedControl" id="127084838">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{11, 72}, {295, 30}}</string>
+						<string key="NSFrame">{{217, 114}, {89, 30}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<int key="IBUITag">2</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBSegmentControlStyle">2</int>
-						<int key="IBNumberOfSegments">3</int>
-						<int key="IBSelectedSegmentIndex">0</int>
+						<int key="IBNumberOfSegments">1</int>
 						<object class="NSArray" key="IBSegmentTitles">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>Pale</string>
-							<string>Tan</string>
-							<string>Dark</string>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentWidths">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<real value="0.0"/>
-							<real value="0.0"/>
 							<real value="0.0"/>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentEnabledStates">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<boolean value="YES"/>
-							<boolean value="YES"/>
-							<boolean value="YES"/>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentContentOffsets">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>{0, 0}</string>
-							<string>{0, 0}</string>
-							<string>{0, 0}</string>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentImages">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="4"/>
-							<reference ref="4"/>
 							<reference ref="4"/>
 						</object>
 						<object class="NSColor" key="IBTintColor">
@@ -175,7 +160,79 @@
 							<bytes key="NSRGB">MC42MDAwMDAwMjM4IDAuMjAwMDAwMDAzIDAuMjAwMDAwMDAzAA</bytes>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="291345147">
+					<object class="IBUISegmentedControl" id="695753528">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{217, 157}, {89, 30}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+						<int key="IBUITag">1</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<int key="IBSegmentControlStyle">2</int>
+						<int key="IBNumberOfSegments">1</int>
+						<object class="NSArray" key="IBSegmentTitles">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>Tan</string>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentWidths">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<real value="0.0"/>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentEnabledStates">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<boolean value="YES"/>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentContentOffsets">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>{0, 0}</string>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentImages">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="4"/>
+						</object>
+						<object class="NSColor" key="IBTintColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC42MDAwMDAwMjM4IDAuMjAwMDAwMDAzIDAuMjAwMDAwMDAzAA</bytes>
+						</object>
+					</object>
+					<object class="IBUISegmentedControl" id="345415557">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{217, 200}, {89, 30}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+						<int key="IBUITag">2</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<int key="IBSegmentControlStyle">2</int>
+						<int key="IBNumberOfSegments">1</int>
+						<object class="NSArray" key="IBSegmentTitles">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>Dark</string>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentWidths">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<real value="0.0"/>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentEnabledStates">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<boolean value="YES"/>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentContentOffsets">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>{0, 0}</string>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentImages">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="4"/>
+						</object>
+						<object class="NSColor" key="IBTintColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC42MDAwMDAwMjM4IDAuMjAwMDAwMDAzIDAuMjAwMDAwMDAzAA</bytes>
+						</object>
+					</object>
+					<object class="IBUIImageView" id="740615306">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{16, 114}, {193, 346}}</string>
@@ -238,7 +295,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">avatarImageView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="291345147"/>
+						<reference key="destination" ref="740615306"/>
 					</object>
 					<int key="connectionID">14</int>
 				</object>
@@ -246,7 +303,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">segmentControl2</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="737587216"/>
+						<reference key="destination" ref="127084838"/>
 					</object>
 					<int key="connectionID">16</int>
 				</object>
@@ -257,16 +314,50 @@
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
-					<int key="connectionID">20</int>
+					<int key="connectionID">26</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">segmentControl3</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="695753528"/>
+					</object>
+					<int key="connectionID">30</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">segmentControl4</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="345415557"/>
+					</object>
+					<int key="connectionID">32</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">segmentAction:</string>
-						<reference key="source" ref="737587216"/>
+						<string key="label">changeFeature:</string>
+						<reference key="source" ref="345415557"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
-					<int key="connectionID">21</int>
+					<int key="connectionID">33</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">changeFeature:</string>
+						<reference key="source" ref="695753528"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">34</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">changeFeature:</string>
+						<reference key="source" ref="127084838"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">35</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -284,9 +375,11 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="320654711"/>
-							<reference ref="291345147"/>
+							<reference ref="740615306"/>
 							<reference ref="474679950"/>
-							<reference ref="737587216"/>
+							<reference ref="127084838"/>
+							<reference ref="345415557"/>
+							<reference ref="695753528"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -313,12 +406,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
-						<reference key="object" ref="291345147"/>
+						<reference key="object" ref="740615306"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="737587216"/>
+						<reference key="object" ref="127084838"/>
+						<reference key="parent" ref="191373211"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">22</int>
+						<reference key="object" ref="695753528"/>
+						<reference key="parent" ref="191373211"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">24</int>
+						<reference key="object" ref="345415557"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -334,6 +437,8 @@
 					<string>11.IBPluginDependency</string>
 					<string>12.IBPluginDependency</string>
 					<string>15.IBPluginDependency</string>
+					<string>22.IBPluginDependency</string>
+					<string>24.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
@@ -341,6 +446,8 @@
 					<string>DesignAvatar1</string>
 					<string>UIResponder</string>
 					<string>{{436, 64}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -364,7 +471,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">21</int>
+			<int key="maxID">35</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -373,8 +480,17 @@
 					<string key="className">DesignAvatar1</string>
 					<string key="superclassName">baseViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">segmentAction:</string>
-						<string key="NS.object.0">UISegmentedControl</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>changeFeature:</string>
+							<string>segmentAction:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UISegmentedControl</string>
+							<string>UISegmentedControl</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -383,10 +499,14 @@
 							<string>avatarImageView</string>
 							<string>segmentControl</string>
 							<string>segmentControl2</string>
+							<string>segmentControl3</string>
+							<string>segmentControl4</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIImageView</string>
+							<string>UISegmentedControl</string>
+							<string>UISegmentedControl</string>
 							<string>UISegmentedControl</string>
 							<string>UISegmentedControl</string>
 						</object>

@@ -7,9 +7,7 @@
 //
 
 #import "ClassroomHome.h"
-#import "ChalkboardHome.h"
 #import "StudentQuestionHome.h"
-#import "PassOutWorksheets.h"
 #import "Library.h"
 #import "Chapter.h"
 #import "User.h"
@@ -27,6 +25,7 @@
 #import "WorksheetPlus.h"
 #import "ParentEmail.h"
 #import "ChapterPlus.h"
+#import "AvatarPlus.h"
 
 @implementation ClassroomHome
 
@@ -144,14 +143,18 @@
 	student2.userInteractionEnabled	= NO;
 	student3.userInteractionEnabled	= NO;
 	student4.userInteractionEnabled	= NO;
-	//set teacher image
-	[self.teacher setImage:[delegate.teacher avatarImageWaistUp]];
 	
-	scrollSpeed = 5;
-		
+	//set teacher image
+	[self.teacher addSubview:[delegate.teacher.avatar customAvatarAtSize:.6]];
+	
+	//set the chapter to be taught	
 	[self setChapter:delegate.currentChapter];
+	
+	//create a timer
 	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:.2 target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:YES];
 	self.repeatingTimer = timer;
+
+	//set some variables
 	numQuestionsAssigned = 0;
 	whichQuestion = 0;
 	paused = YES;
@@ -162,6 +165,7 @@
 	keywordIndex = 0;
 	bonusPoints = 0;
 	completedLesson = NO;
+	scrollSpeed = 5;
 	
 	//all students start with arm down
 	[[students objectAtIndex:0] setArmRaised:[NSNumber numberWithInt:0]];
@@ -169,18 +173,19 @@
 	[[students objectAtIndex:2] setArmRaised:[NSNumber numberWithInt:0]];
 	[[students objectAtIndex:3] setArmRaised:[NSNumber numberWithInt:0]];
 	
-	
 	//add opening remarks
 	NSString *openingRemark = [NSString stringWithFormat:@"Hello Class!\rThe topic for today's lesson is: "];
-	NSString *endingRemark = [NSString stringWithFormat:@"\r\r\rThat's all for now kids. Don't forget to do your homework!"];
-	lectureText = [NSString stringWithFormat:@"%@%@\r\r\r%@%@", openingRemark, chapter.lecture.title, chapter.lecture.text, endingRemark];
+	NSString *endingRemark = [NSString stringWithFormat:@"\r\rThat's all for now kids. Don't forget to do your homework!"];
+	[self setLectureText:[NSString stringWithFormat:@"%@%@\r\r\r%@%@", openingRemark, chapter.lecture.title, chapter.lecture.text, endingRemark]];
+	
+	//setup the scroll view
 	scrollView.scrollEnabled = NO;
 	scrollView.showsVerticalScrollIndicator = YES;
 
 	//add main lecture text
 	[self loadTextIntoScrollView];
 	
-	//add speed control slider target
+	//add speed control slider target and put it on top of the black bar
 	[self.speedControl addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
 	[self.view bringSubviewToFront:speedControl];
 }
@@ -228,6 +233,7 @@
 			continue;
 		}
 		if ([[word substringToIndex:1] isEqualToString:@"["]) {
+			//its a special word
 			NSMutableString *buttonWord = (NSMutableString*)[word stringByReplacingOccurrencesOfString:@"[" withString:@"  "];
 			while ([word rangeOfString:@"]"].location == NSNotFound) {
 				word = [wordEnumerator nextObject];
@@ -237,6 +243,7 @@
 
 			UIButton *memberButt = [UIButton buttonWithType:UIButtonTypeCustom]; 
 			memberButt.titleLabel.font = [UIFont boldSystemFontOfSize:17.0];
+			memberButt.titleLabel.adjustsFontSizeToFitWidth = YES;
 			memberButt.backgroundColor = [UIColor redColor];
 			[memberButt setTitle:buttonWord forState:UIControlStateNormal];
 			memberButt.tag = tagCount;
@@ -257,6 +264,7 @@
 			tagCount++;
 
 		} else {
+			//its a normal word
 			UILabel * label = [[UILabel alloc] initWithFrame:CGRectZero];
 			label.backgroundColor = [UIColor clearColor];
 			label.font = [UIFont systemFontOfSize:17];
@@ -375,8 +383,10 @@
 		[compLesson setTime:[NSNumber numberWithInt:secondsRemaining]];
 		[compLesson setUser:delegate.teacher];
 		[compLesson setChapter:chapter];
+
 		//add teacher's points
 		[delegate.teacher setTotalPoints:[NSNumber numberWithInt:([delegate.teacher.totalPoints intValue] + bonusPoints)]];
+		
 		NSString *msg;
 		
 		//assess the quality of the lecture and assign points
@@ -384,13 +394,13 @@
 			msg = [NSString stringWithFormat:@"Principal Wilson says:\rWow, nice class!.\r Your students are really getting smarter, and you earned %d store credits too! Don't forget to grade the homework!", bonusPoints];
 			[delegate.teacher assignSmartsPoints:2];
 		} else if (bonusPoints > 45) {
-			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHey, that was a pretty good lecture!.\r Don't forget to grade the homework!", bonusPoints];
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHey, that was a pretty good lecture!. You earned %d store credits.\r Don't forget to grade the homework!", bonusPoints];
 			[delegate.teacher assignSmartsPoints:1];
 		} else if (bonusPoints > 25) {
-			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHmm. Slow down a bit, I think you missed a few things!.\r Your students aren't going to learn much that way. Don't forget to grade the homework!", bonusPoints];
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rHmm. Slow down a bit. You missed a few things!.\r Your students aren't going to learn much that way. You earned %d store credits. Don't forget to grade the homework!", bonusPoints];
 			[delegate.teacher assignSmartsPoints:0];
 		} else {
-			msg = [NSString stringWithFormat:@"Principal Wilson says:\rUm you really rushed that one!.\r Your students aren't going to learn that way. Don't forget to grade the homework!", bonusPoints];
+			msg = [NSString stringWithFormat:@"Principal Wilson says:\rUm you really rushed that one!.\r Your students aren't going to learn that way. You earned %d store credits. Don't forget to grade the homework!", bonusPoints];
 			[delegate.teacher assignSmartsPoints:-1];
 		}
 
@@ -428,7 +438,6 @@
 
 //present modal window to answer student question
 -(void)answerQuestionFromStudent:(Student *)student{
-	//handle student question
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	if([[chapter studentQuestionsArray] count]>whichQuestion){
 		scrollPaused = YES;
@@ -436,20 +445,39 @@
 		StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
 		vc.delegate = self;
 		vc.student = student;
-		vc.whichQuestion = whichQuestion;
+		
+		//determine if its a personal question or not
+		int randomNum = arc4random() % 4;
+		if (randomNum == 1) {
+			//personal question
+			vc.whichQuestion = 100;
+		} else {
+			//academic question
+			vc.whichQuestion = whichQuestion;
+			whichQuestion++; //increment the questions for this chapter
+		}
+
+		
+		//set the chapter
 		vc.chapter = chapter;
-		whichQuestion++; //increment the questions for this chapter
 		[self presentModalViewController:vc animated:YES];
 	}
 }
 
 - (void)dismissQuestionWindow:(NSNumber *)points {
 	//MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	if (points == nil) {
+		//personal question. Don't give any points
+	} else {
+		//academic question. Assign teaching points
+		bonusPoints += [points intValue];
+	}
+
 	[self dismissModalViewControllerAnimated:YES];
 	[self setScrollPaused:NO];
-	bonusPoints += [points intValue];
 	NSLog(@"dismissed window");
 }
+
 
 - (void)timerFireMethod:(NSTimer*)theTimer {
 	if (scrollView.contentOffset.y >= (scrollView.contentSize.height-70)) {
@@ -535,6 +563,7 @@
 		NSLog(@"correct");
 		//this is how many teaching points the student gets for correcting a word.
 		bonusPoints += 5;
+		
 		//change faces to happy if student is not waving arm
 		Student *student;
 		int x=0;
@@ -568,24 +597,10 @@
 	[self.repeatingTimer invalidate];
 }
 
--(void)toChalkboard {
-	//go back to previous page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ChalkboardHome *vc = [[[ChalkboardHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
 -(void)toQuestion {
 	//go back to previous page
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	StudentQuestionHome *vc = [[[StudentQuestionHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	[delegate.navCon pushViewController:vc animated:YES];
-	
-}
--(void)toWorksheets {
-	//go back to previous page
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	PassOutWorksheets *vc = [[[PassOutWorksheets alloc] initWithNibName:nil bundle:nil] autorelease];
 	[delegate.navCon pushViewController:vc animated:YES];
 	
 }

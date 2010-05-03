@@ -41,7 +41,8 @@
 	gradeLabel.text = [NSString stringWithFormat:@"Overall Grade: %@",[self.student overallGrade]];
 	
 	[self setTopBarTitle:[NSString stringWithFormat:@"%@'s Grades",[self.student firstName]] withLogo:YES backButton:YES];
-	
+	[self setBackgroundColor];
+
 }
 
 

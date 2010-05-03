@@ -266,4 +266,84 @@
 
 }
 
+- (UIView*)behaviorBarAtX:(int)x y:(int)y {
+	UIView* myView = [[[UIView alloc] initWithFrame:CGRectMake(0, 400, 320, 90)] autorelease];
+	myView.backgroundColor = [UIColor blackColor];
+	
+	//create the bar
+	UIImage *barImage = [UIImage imageNamed:@"red-green.png"];
+	UIImageView * bar = [[UIImageView alloc] initWithImage:barImage];
+	bar.frame = CGRectMake(60, 30, 200, 21);
+	
+	//create the label
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(2*[self.politeness intValue], 0, 28, 21)];
+	label.backgroundColor = [UIColor blackColor];
+	label.font = [UIFont boldSystemFontOfSize:14.0];
+	label.textColor = [UIColor whiteColor];
+	label.textAlignment = UITextAlignmentCenter;
+	label.text = [self.politeness stringValue];
+	
+	//create the title label
+	UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+	titleLabel.backgroundColor = [UIColor clearColor];
+	titleLabel.font = [UIFont boldSystemFontOfSize:13];
+	titleLabel.textColor = [UIColor whiteColor];
+	titleLabel.textAlignment = UITextAlignmentCenter;
+	titleLabel.text = [NSString stringWithFormat:@"%@'s Behavior", self.firstName];
+
+	[bar addSubview:label];
+	
+	[myView addSubview:titleLabel];
+	
+	[label release];
+	[titleLabel release];
+	
+	[myView addSubview:bar];
+	[bar release];
+	
+	return myView;
+	
+}
+
+- (UIView*)smartsBarAtX:(int)x y:(int)y{
+	//currently x and y not used, as bar always goes at bottom.
+	
+	UIView* myView = [[[UIView alloc] initWithFrame:CGRectMake(0, 400, 320, 80)] autorelease];
+	myView.backgroundColor = [UIColor blackColor];
+	
+	//create the bar
+	UIImage *barImage = [UIImage imageNamed:@"red-green.png"];
+	UIImageView * bar = [[UIImageView alloc] initWithImage:barImage];
+	bar.frame = CGRectMake(60, 30, 200, 21);
+		
+	//create the score label
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(2*[self.intelligence intValue], 0, 28, 21)];
+	label.backgroundColor = [UIColor blackColor];
+	label.font = [UIFont boldSystemFontOfSize:14.0];
+	label.textColor = [UIColor whiteColor];
+	label.textAlignment = UITextAlignmentCenter;
+	label.text = [self.intelligence stringValue];
+	
+	//create the title label
+	UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+	titleLabel.backgroundColor = [UIColor clearColor];
+	titleLabel.font = [UIFont boldSystemFontOfSize:13];
+	titleLabel.textColor = [UIColor whiteColor];
+	titleLabel.textAlignment = UITextAlignmentCenter;
+	titleLabel.text = [NSString stringWithFormat:@"%@'s Smarts", self.firstName];
+
+	[bar addSubview:label];
+	[myView addSubview:titleLabel];
+	
+	[label release];
+	[titleLabel release];
+	
+	[myView addSubview:bar];
+	[bar release];
+	
+	return myView;
+	
+}
+
+
 @end
