@@ -128,7 +128,7 @@
 		Chapter *chapterMO = (Chapter *)[NSEntityDescription insertNewObjectForEntityForName:@"Chapter" inManagedObjectContext:moc];
 		[chapterMO setOrder:[NSNumber numberWithInt:chapterCount]];
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-		NSLog(@"Adding chapter %@", chapterMO.title);
+		//NSLog(@"Adding chapter %@", chapterMO.title);
 
 		Lecture *lectureMO = (Lecture *)[NSEntityDescription insertNewObjectForEntityForName:@"Lecture" inManagedObjectContext:moc];
 		TBXMLElement * lecture=[tbxml childElementNamed:@"lecture" parentElement:chapter];
@@ -143,7 +143,7 @@
 			KeywordSet *keySetMO = (KeywordSet *)[NSEntityDescription insertNewObjectForEntityForName:@"KeywordSet" inManagedObjectContext:moc];
 			Keyword *awordMO = (Keyword *)[NSEntityDescription insertNewObjectForEntityForName:@"Keyword" inManagedObjectContext:moc];
 			[awordMO setWord:[tbxml valueOfAttributeNamed:@"word" forElement:keywordSet]];
-			NSLog(@"%@",awordMO.word);
+			//NSLog(@"%@",awordMO.word);
 			[awordMO setCorrect:[NSNumber numberWithInt:1]];
 			[keySetMO addWordsObject:awordMO];
 			[keySetMO setLecture:lectureMO];
@@ -163,14 +163,14 @@
 		//grab the student questions
 		TBXMLElement * studentQ=[tbxml childElementNamed:@"studentQuestion" parentElement:lecture];		
 		while (studentQ!=nil) {
-			NSLog(@"adding a student question");
+			//NSLog(@"adding a student question");
 			StudentQuestion *studentQMO = (StudentQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentQuestion" inManagedObjectContext:moc];
 			[studentQMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:studentQ]]];
 			[studentQMO setStudentType:[NSNumber numberWithInt:[[tbxml textForElement:[tbxml childElementNamed:@"studentType" parentElement:studentQ]] intValue]]];
 			[studentQMO setLecture:lectureMO];
 			TBXMLElement * answer=[tbxml childElementNamed:@"answer" parentElement:studentQ];		
 			while (answer!=nil) {
-				NSLog(@"adding a student answer");
+				//NSLog(@"adding a student answer");
 				StudentAnswer *answerMO = (StudentAnswer *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentAnswer" inManagedObjectContext:moc];
 				[answerMO setAnswer:[tbxml textForElement:answer]];
 				[answerMO setCorrectness:[NSNumber numberWithInt:[[tbxml valueOfAttributeNamed:@"correctness" forElement:answer] intValue]]];
@@ -205,11 +205,11 @@
 		while (wQuestion!=nil) {
 			WorksheetQuestion *worksheetQuestionMO = (WorksheetQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"WorksheetQuestion" inManagedObjectContext:moc];
 			[worksheetQuestionMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:wQuestion]]];
-			NSLog(@"adding worksheet question: %@", worksheetQuestionMO.text);
+			//NSLog(@"adding worksheet question: %@", worksheetQuestionMO.text);
 			[worksheetQuestionMO setWorksheet:worksheetMO];
 			TBXMLElement * answer=[tbxml childElementNamed:@"answer" parentElement:wQuestion];		
 			while (answer!=nil) {
-				NSLog(@"adding a worksheet answer");
+				//NSLog(@"adding a worksheet answer");
 				WorksheetAnswer *answerMO = (WorksheetAnswer *)[NSEntityDescription insertNewObjectForEntityForName:@"WorksheetAnswer" inManagedObjectContext:moc];
 				[answerMO setAnswer:[tbxml textForElement:answer]];
 				[answerMO setCorrectness:[NSNumber numberWithInt:[[tbxml valueOfAttributeNamed:@"correctness" forElement:answer] intValue]]];
@@ -355,7 +355,7 @@
 
 +(PersonalQuestion*)fetchPersonalQuestion {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	NSLog(@"attempting to fetch personal question");
+	//NSLog(@"attempting to fetch personal question");
 	//fetch data from the sql lite database
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	//finds all users who don't have parents (these are the parents)

@@ -12,36 +12,26 @@
 			<title>Building a Sustainable World</title>
 		</module>
 		<module>
-			<category>Chemistry</category>
-			<fileName>chemistry</fileName>
-			<title>What's It Made Of?</title>
+			<category>Biology</category>
+			<fileName>insects</fileName>
+			<title>Fascinating Insects</title>
 		</module>
 		<module>
-			<category>Geography</category>
-			<fileName>geography</fileName>
-			<title>Countries and Continents</title>
+			<category>Biology</category>
+			<fileName>endangeredspecies</fileName>
+			<title>Endangered Species</title>
 		</module>
 	</subject>
 	<subject name="History">
 		<module>
-			<category>U.S.</category>
-			<fileName>independence</fileName>
-			<title>1776: A Brave New World</title>
+			<category>U.S. History</category>
+			<fileName>presidents</fileName>
+			<title>Great Presidents</title>
 		</module>
 		<module>
-			<category>U.S.</category>
-			<fileName>civilwar</fileName>
-			<title>1861-1865: A Nation Divided</title>
-		</module>
-		<module>
-			<category>U.S.</category>
-			<fileName>civilrights</fileName>
-			<title>1910-1970: Equal Rights</title>
-		</module>
-		<module>
-			<category>general</category>
-			<fileName>dates</fileName>
-			<title>Today in History</title>
+			<category>World History</category>
+			<fileName>historicalFigures</fileName>
+			<title>Famous People</title>
 		</module>
 	</subject>
 	<subject name="Math">
@@ -49,16 +39,6 @@
 			<category>Fractions</category>
 			<fileName>fractions</fileName>
 			<title>Fractions and Music</title>
-		</module>
-		<module>
-			<category>Addition</category>
-			<fileName>addition</fileName>
-			<title>Adding Numbers Up to 10</title>
-		</module>
-		<module>
-			<category>Multiplication</category>
-			<fileName>multiplication</fileName>
-			<title>12 Times Table</title>
 		</module>
 	</subject>
 </myschool>
