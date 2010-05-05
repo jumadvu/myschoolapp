@@ -298,26 +298,6 @@
 		ABCAA6821116B7D700D3956F /* AccountSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAA6811116B7D700D3956F /* AccountSelection.m */; };
 		ABCF6E7A11896E2A005C3642 /* award.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF6E7911896E2A005C3642 /* award.png */; };
 		ABCF7047118E6598005C3642 /* BarScale.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF7046118E6598005C3642 /* BarScale.m */; };
-		ABCF717B1190DCFC005C3642 /* civilrights.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71651190DCFB005C3642 /* civilrights.png */; };
-		ABCF717C1190DCFC005C3642 /* gandhi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71661190DCFB005C3642 /* gandhi.jpg */; };
-		ABCF717D1190DCFC005C3642 /* marchonwashington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71671190DCFB005C3642 /* marchonwashington.jpg */; };
-		ABCF717E1190DCFC005C3642 /* mlk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71681190DCFB005C3642 /* mlk.jpg */; };
-		ABCF717F1190DCFC005C3642 /* rosaparksbus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71691190DCFB005C3642 /* rosaparksbus.jpg */; };
-		ABCF71801190DCFC005C3642 /* carolinas.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF716B1190DCFB005C3642 /* carolinas.png */; };
-		ABCF71811190DCFC005C3642 /* donkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF716C1190DCFB005C3642 /* donkey.jpg */; };
-		ABCF71821190DCFC005C3642 /* duel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF716D1190DCFB005C3642 /* duel.jpg */; };
-		ABCF71831190DCFC005C3642 /* hermitage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF716E1190DCFB005C3642 /* hermitage.jpg */; };
-		ABCF71841190DCFC005C3642 /* inauguration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF716F1190DCFB005C3642 /* inauguration.jpg */; };
-		ABCF71851190DCFC005C3642 /* trailoftears.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71701190DCFB005C3642 /* trailoftears.jpg */; };
-		ABCF71861190DCFC005C3642 /* warof1812.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71711190DCFB005C3642 /* warof1812.jpg */; };
-		ABCF71871190DCFC005C3642 /* marie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71731190DCFB005C3642 /* marie.jpg */; };
-		ABCF71881190DCFC005C3642 /* nobelprize.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71741190DCFB005C3642 /* nobelprize.png */; };
-		ABCF71891190DCFC005C3642 /* pierre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71751190DCFB005C3642 /* pierre.jpg */; };
-		ABCF718A1190DCFC005C3642 /* polonium.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71761190DCFB005C3642 /* polonium.png */; };
-		ABCF718B1190DCFC005C3642 /* radiationtherapy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71771190DCFB005C3642 /* radiationtherapy.jpg */; };
-		ABCF718C1190DCFC005C3642 /* sorbonne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71781190DCFB005C3642 /* sorbonne.jpg */; };
-		ABCF718D1190DCFC005C3642 /* warsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71791190DCFB005C3642 /* warsaw.png */; };
-		ABCF718E1190DCFC005C3642 /* historicalFigures.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABCF717A1190DCFC005C3642 /* historicalFigures.xml */; };
 		ABCF71A41190DD69005C3642 /* bee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71941190DD69005C3642 /* bee.jpg */; };
 		ABCF71A51190DD69005C3642 /* beekeeper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71951190DD69005C3642 /* beekeeper.jpg */; };
 		ABCF71A61190DD69005C3642 /* bigspider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71961190DD69005C3642 /* bigspider.jpg */; };
@@ -334,6 +314,26 @@
 		ABCF71B11190DD69005C3642 /* tarantula.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71A11190DD69005C3642 /* tarantula.jpg */; };
 		ABCF71B21190DD69005C3642 /* tubetent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71A21190DD69005C3642 /* tubetent.jpg */; };
 		ABCF71B31190DD69005C3642 /* wrapup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71A31190DD69005C3642 /* wrapup.jpg */; };
+		ABCF71FF1190EBBB005C3642 /* civilrights.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71EA1190EBBB005C3642 /* civilrights.png */; };
+		ABCF72001190EBBB005C3642 /* gandhi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71EB1190EBBB005C3642 /* gandhi.jpg */; };
+		ABCF72011190EBBB005C3642 /* marchonwashington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71EC1190EBBB005C3642 /* marchonwashington.jpg */; };
+		ABCF72021190EBBB005C3642 /* mlk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71ED1190EBBB005C3642 /* mlk.jpg */; };
+		ABCF72031190EBBB005C3642 /* rosaparksbus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71EE1190EBBB005C3642 /* rosaparksbus.jpg */; };
+		ABCF72041190EBBB005C3642 /* carolinas.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F01190EBBB005C3642 /* carolinas.png */; };
+		ABCF72051190EBBB005C3642 /* donkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F11190EBBB005C3642 /* donkey.jpg */; };
+		ABCF72061190EBBB005C3642 /* duel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F21190EBBB005C3642 /* duel.jpg */; };
+		ABCF72071190EBBB005C3642 /* hermitage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F31190EBBB005C3642 /* hermitage.jpg */; };
+		ABCF72081190EBBB005C3642 /* inauguration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F41190EBBB005C3642 /* inauguration.jpg */; };
+		ABCF72091190EBBB005C3642 /* trailoftears.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F51190EBBB005C3642 /* trailoftears.jpg */; };
+		ABCF720A1190EBBB005C3642 /* warof1812.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F61190EBBB005C3642 /* warof1812.jpg */; };
+		ABCF720B1190EBBB005C3642 /* marie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F81190EBBB005C3642 /* marie.jpg */; };
+		ABCF720C1190EBBB005C3642 /* nobelprize.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71F91190EBBB005C3642 /* nobelprize.png */; };
+		ABCF720D1190EBBB005C3642 /* pierre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71FA1190EBBB005C3642 /* pierre.jpg */; };
+		ABCF720E1190EBBB005C3642 /* polonium.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71FB1190EBBB005C3642 /* polonium.png */; };
+		ABCF720F1190EBBB005C3642 /* radiationtherapy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71FC1190EBBB005C3642 /* radiationtherapy.jpg */; };
+		ABCF72101190EBBB005C3642 /* sorbonne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71FD1190EBBB005C3642 /* sorbonne.jpg */; };
+		ABCF72111190EBBB005C3642 /* warsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCF71FE1190EBBB005C3642 /* warsaw.png */; };
+		ABCF721D1190ECF8005C3642 /* historicalFigures.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABCF721C1190ECF8005C3642 /* historicalFigures.xml */; };
 		ABD56A8A117CB0B1001AB41D /* BehaviorReportPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD56A89117CB0B1001AB41D /* BehaviorReportPlus.m */; };
 		ABD56AA1117CB9DC001AB41D /* goldstar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD56A9F117CB9DC001AB41D /* goldstar.png */; };
 		ABD56AA2117CB9DC001AB41D /* warningmark.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD56AA0117CB9DC001AB41D /* warningmark.png */; };
@@ -780,26 +780,6 @@
 		ABCF6E7911896E2A005C3642 /* award.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award.png; sourceTree = "<group>"; };
 		ABCF7045118E6598005C3642 /* BarScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarScale.h; sourceTree = "<group>"; };
 		ABCF7046118E6598005C3642 /* BarScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarScale.m; sourceTree = "<group>"; };
-		ABCF71651190DCFB005C3642 /* civilrights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = civilrights.png; sourceTree = "<group>"; };
-		ABCF71661190DCFB005C3642 /* gandhi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gandhi.jpg; sourceTree = "<group>"; };
-		ABCF71671190DCFB005C3642 /* marchonwashington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marchonwashington.jpg; sourceTree = "<group>"; };
-		ABCF71681190DCFB005C3642 /* mlk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mlk.jpg; sourceTree = "<group>"; };
-		ABCF71691190DCFB005C3642 /* rosaparksbus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosaparksbus.jpg; sourceTree = "<group>"; };
-		ABCF716B1190DCFB005C3642 /* carolinas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carolinas.png; sourceTree = "<group>"; };
-		ABCF716C1190DCFB005C3642 /* donkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donkey.jpg; sourceTree = "<group>"; };
-		ABCF716D1190DCFB005C3642 /* duel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duel.jpg; sourceTree = "<group>"; };
-		ABCF716E1190DCFB005C3642 /* hermitage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hermitage.jpg; sourceTree = "<group>"; };
-		ABCF716F1190DCFB005C3642 /* inauguration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inauguration.jpg; sourceTree = "<group>"; };
-		ABCF71701190DCFB005C3642 /* trailoftears.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trailoftears.jpg; sourceTree = "<group>"; };
-		ABCF71711190DCFB005C3642 /* warof1812.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warof1812.jpg; sourceTree = "<group>"; };
-		ABCF71731190DCFB005C3642 /* marie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marie.jpg; sourceTree = "<group>"; };
-		ABCF71741190DCFB005C3642 /* nobelprize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nobelprize.png; sourceTree = "<group>"; };
-		ABCF71751190DCFB005C3642 /* pierre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pierre.jpg; sourceTree = "<group>"; };
-		ABCF71761190DCFB005C3642 /* polonium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = polonium.png; sourceTree = "<group>"; };
-		ABCF71771190DCFB005C3642 /* radiationtherapy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radiationtherapy.jpg; sourceTree = "<group>"; };
-		ABCF71781190DCFB005C3642 /* sorbonne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sorbonne.jpg; sourceTree = "<group>"; };
-		ABCF71791190DCFB005C3642 /* warsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warsaw.png; sourceTree = "<group>"; };
-		ABCF717A1190DCFC005C3642 /* historicalFigures.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = historicalFigures.xml; path = ../../../historicalFigures.xml; sourceTree = "<group>"; };
 		ABCF71941190DD69005C3642 /* bee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bee.jpg; sourceTree = "<group>"; };
 		ABCF71951190DD69005C3642 /* beekeeper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beekeeper.jpg; sourceTree = "<group>"; };
 		ABCF71961190DD69005C3642 /* bigspider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigspider.jpg; sourceTree = "<group>"; };
@@ -816,6 +796,26 @@
 		ABCF71A11190DD69005C3642 /* tarantula.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarantula.jpg; sourceTree = "<group>"; };
 		ABCF71A21190DD69005C3642 /* tubetent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tubetent.jpg; sourceTree = "<group>"; };
 		ABCF71A31190DD69005C3642 /* wrapup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wrapup.jpg; sourceTree = "<group>"; };
+		ABCF71EA1190EBBB005C3642 /* civilrights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = civilrights.png; sourceTree = "<group>"; };
+		ABCF71EB1190EBBB005C3642 /* gandhi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gandhi.jpg; sourceTree = "<group>"; };
+		ABCF71EC1190EBBB005C3642 /* marchonwashington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marchonwashington.jpg; sourceTree = "<group>"; };
+		ABCF71ED1190EBBB005C3642 /* mlk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mlk.jpg; sourceTree = "<group>"; };
+		ABCF71EE1190EBBB005C3642 /* rosaparksbus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosaparksbus.jpg; sourceTree = "<group>"; };
+		ABCF71F01190EBBB005C3642 /* carolinas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carolinas.png; sourceTree = "<group>"; };
+		ABCF71F11190EBBB005C3642 /* donkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = donkey.jpg; sourceTree = "<group>"; };
+		ABCF71F21190EBBB005C3642 /* duel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duel.jpg; sourceTree = "<group>"; };
+		ABCF71F31190EBBB005C3642 /* hermitage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hermitage.jpg; sourceTree = "<group>"; };
+		ABCF71F41190EBBB005C3642 /* inauguration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inauguration.jpg; sourceTree = "<group>"; };
+		ABCF71F51190EBBB005C3642 /* trailoftears.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trailoftears.jpg; sourceTree = "<group>"; };
+		ABCF71F61190EBBB005C3642 /* warof1812.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warof1812.jpg; sourceTree = "<group>"; };
+		ABCF71F81190EBBB005C3642 /* marie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marie.jpg; sourceTree = "<group>"; };
+		ABCF71F91190EBBB005C3642 /* nobelprize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nobelprize.png; sourceTree = "<group>"; };
+		ABCF71FA1190EBBB005C3642 /* pierre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pierre.jpg; sourceTree = "<group>"; };
+		ABCF71FB1190EBBB005C3642 /* polonium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = polonium.png; sourceTree = "<group>"; };
+		ABCF71FC1190EBBB005C3642 /* radiationtherapy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radiationtherapy.jpg; sourceTree = "<group>"; };
+		ABCF71FD1190EBBB005C3642 /* sorbonne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sorbonne.jpg; sourceTree = "<group>"; };
+		ABCF71FE1190EBBB005C3642 /* warsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warsaw.png; sourceTree = "<group>"; };
+		ABCF721C1190ECF8005C3642 /* historicalFigures.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = historicalFigures.xml; path = famous_people/historicalFigures.xml; sourceTree = "<group>"; };
 		ABD56A88117CB0B1001AB41D /* BehaviorReportPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorReportPlus.h; sourceTree = "<group>"; };
 		ABD56A89117CB0B1001AB41D /* BehaviorReportPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorReportPlus.m; sourceTree = "<group>"; };
 		ABD56A9F117CB9DC001AB41D /* goldstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldstar.png; sourceTree = "<group>"; };
@@ -1720,49 +1720,6 @@
 			name = "welcome new game";
 			sourceTree = "<group>";
 		};
-		ABCF71641190DCFB005C3642 /* Ch1_MLK */ = {
-			isa = PBXGroup;
-			children = (
-				ABCF71651190DCFB005C3642 /* civilrights.png */,
-				ABCF71661190DCFB005C3642 /* gandhi.jpg */,
-				ABCF71671190DCFB005C3642 /* marchonwashington.jpg */,
-				ABCF71681190DCFB005C3642 /* mlk.jpg */,
-				ABCF71691190DCFB005C3642 /* rosaparksbus.jpg */,
-			);
-			name = Ch1_MLK;
-			path = ../../../Ch1_MLK;
-			sourceTree = "<group>";
-		};
-		ABCF716A1190DCFB005C3642 /* Ch2_AndrewJackson */ = {
-			isa = PBXGroup;
-			children = (
-				ABCF716B1190DCFB005C3642 /* carolinas.png */,
-				ABCF716C1190DCFB005C3642 /* donkey.jpg */,
-				ABCF716D1190DCFB005C3642 /* duel.jpg */,
-				ABCF716E1190DCFB005C3642 /* hermitage.jpg */,
-				ABCF716F1190DCFB005C3642 /* inauguration.jpg */,
-				ABCF71701190DCFB005C3642 /* trailoftears.jpg */,
-				ABCF71711190DCFB005C3642 /* warof1812.jpg */,
-			);
-			name = Ch2_AndrewJackson;
-			path = ../../../Ch2_AndrewJackson;
-			sourceTree = "<group>";
-		};
-		ABCF71721190DCFB005C3642 /* Ch3_MarieCurie */ = {
-			isa = PBXGroup;
-			children = (
-				ABCF71731190DCFB005C3642 /* marie.jpg */,
-				ABCF71741190DCFB005C3642 /* nobelprize.png */,
-				ABCF71751190DCFB005C3642 /* pierre.jpg */,
-				ABCF71761190DCFB005C3642 /* polonium.png */,
-				ABCF71771190DCFB005C3642 /* radiationtherapy.jpg */,
-				ABCF71781190DCFB005C3642 /* sorbonne.jpg */,
-				ABCF71791190DCFB005C3642 /* warsaw.png */,
-			);
-			name = Ch3_MarieCurie;
-			path = ../../../Ch3_MarieCurie;
-			sourceTree = "<group>";
-		};
 		ABCF71931190DD69005C3642 /* insects */ = {
 			isa = PBXGroup;
 			children = (
@@ -1786,13 +1743,56 @@
 			path = insects;
 			sourceTree = "<group>";
 		};
+		ABCF71E91190EBBB005C3642 /* Ch1_MLK */ = {
+			isa = PBXGroup;
+			children = (
+				ABCF71EA1190EBBB005C3642 /* civilrights.png */,
+				ABCF71EB1190EBBB005C3642 /* gandhi.jpg */,
+				ABCF71EC1190EBBB005C3642 /* marchonwashington.jpg */,
+				ABCF71ED1190EBBB005C3642 /* mlk.jpg */,
+				ABCF71EE1190EBBB005C3642 /* rosaparksbus.jpg */,
+			);
+			name = Ch1_MLK;
+			path = famous_people/Ch1_MLK;
+			sourceTree = "<group>";
+		};
+		ABCF71EF1190EBBB005C3642 /* Ch2_AndrewJackson */ = {
+			isa = PBXGroup;
+			children = (
+				ABCF71F01190EBBB005C3642 /* carolinas.png */,
+				ABCF71F11190EBBB005C3642 /* donkey.jpg */,
+				ABCF71F21190EBBB005C3642 /* duel.jpg */,
+				ABCF71F31190EBBB005C3642 /* hermitage.jpg */,
+				ABCF71F41190EBBB005C3642 /* inauguration.jpg */,
+				ABCF71F51190EBBB005C3642 /* trailoftears.jpg */,
+				ABCF71F61190EBBB005C3642 /* warof1812.jpg */,
+			);
+			name = Ch2_AndrewJackson;
+			path = famous_people/Ch2_AndrewJackson;
+			sourceTree = "<group>";
+		};
+		ABCF71F71190EBBB005C3642 /* Ch3_MarieCurie */ = {
+			isa = PBXGroup;
+			children = (
+				ABCF71F81190EBBB005C3642 /* marie.jpg */,
+				ABCF71F91190EBBB005C3642 /* nobelprize.png */,
+				ABCF71FA1190EBBB005C3642 /* pierre.jpg */,
+				ABCF71FB1190EBBB005C3642 /* polonium.png */,
+				ABCF71FC1190EBBB005C3642 /* radiationtherapy.jpg */,
+				ABCF71FD1190EBBB005C3642 /* sorbonne.jpg */,
+				ABCF71FE1190EBBB005C3642 /* warsaw.png */,
+			);
+			name = Ch3_MarieCurie;
+			path = famous_people/Ch3_MarieCurie;
+			sourceTree = "<group>";
+		};
 		ABE9A4921178C1D000C9CA4F /* famous_people */ = {
 			isa = PBXGroup;
 			children = (
-				ABCF717A1190DCFC005C3642 /* historicalFigures.xml */,
-				ABCF71641190DCFB005C3642 /* Ch1_MLK */,
-				ABCF716A1190DCFB005C3642 /* Ch2_AndrewJackson */,
-				ABCF71721190DCFB005C3642 /* Ch3_MarieCurie */,
+				ABCF721C1190ECF8005C3642 /* historicalFigures.xml */,
+				ABCF71E91190EBBB005C3642 /* Ch1_MLK */,
+				ABCF71EF1190EBBB005C3642 /* Ch2_AndrewJackson */,
+				ABCF71F71190EBBB005C3642 /* Ch3_MarieCurie */,
 			);
 			name = famous_people;
 			sourceTree = "<group>";
@@ -2157,26 +2157,6 @@
 				ABBB43E41188AADE006303D2 /* MSkinMed.png in Resources */,
 				ABBB43E51188AADE006303D2 /* MSkinPale.png in Resources */,
 				ABCF6E7A11896E2A005C3642 /* award.png in Resources */,
-				ABCF717B1190DCFC005C3642 /* civilrights.png in Resources */,
-				ABCF717C1190DCFC005C3642 /* gandhi.jpg in Resources */,
-				ABCF717D1190DCFC005C3642 /* marchonwashington.jpg in Resources */,
-				ABCF717E1190DCFC005C3642 /* mlk.jpg in Resources */,
-				ABCF717F1190DCFC005C3642 /* rosaparksbus.jpg in Resources */,
-				ABCF71801190DCFC005C3642 /* carolinas.png in Resources */,
-				ABCF71811190DCFC005C3642 /* donkey.jpg in Resources */,
-				ABCF71821190DCFC005C3642 /* duel.jpg in Resources */,
-				ABCF71831190DCFC005C3642 /* hermitage.jpg in Resources */,
-				ABCF71841190DCFC005C3642 /* inauguration.jpg in Resources */,
-				ABCF71851190DCFC005C3642 /* trailoftears.jpg in Resources */,
-				ABCF71861190DCFC005C3642 /* warof1812.jpg in Resources */,
-				ABCF71871190DCFC005C3642 /* marie.jpg in Resources */,
-				ABCF71881190DCFC005C3642 /* nobelprize.png in Resources */,
-				ABCF71891190DCFC005C3642 /* pierre.jpg in Resources */,
-				ABCF718A1190DCFC005C3642 /* polonium.png in Resources */,
-				ABCF718B1190DCFC005C3642 /* radiationtherapy.jpg in Resources */,
-				ABCF718C1190DCFC005C3642 /* sorbonne.jpg in Resources */,
-				ABCF718D1190DCFC005C3642 /* warsaw.png in Resources */,
-				ABCF718E1190DCFC005C3642 /* historicalFigures.xml in Resources */,
 				ABCF71A41190DD69005C3642 /* bee.jpg in Resources */,
 				ABCF71A51190DD69005C3642 /* beekeeper.jpg in Resources */,
 				ABCF71A61190DD69005C3642 /* bigspider.jpg in Resources */,
@@ -2193,6 +2173,26 @@
 				ABCF71B11190DD69005C3642 /* tarantula.jpg in Resources */,
 				ABCF71B21190DD69005C3642 /* tubetent.jpg in Resources */,
 				ABCF71B31190DD69005C3642 /* wrapup.jpg in Resources */,
+				ABCF71FF1190EBBB005C3642 /* civilrights.png in Resources */,
+				ABCF72001190EBBB005C3642 /* gandhi.jpg in Resources */,
+				ABCF72011190EBBB005C3642 /* marchonwashington.jpg in Resources */,
+				ABCF72021190EBBB005C3642 /* mlk.jpg in Resources */,
+				ABCF72031190EBBB005C3642 /* rosaparksbus.jpg in Resources */,
+				ABCF72041190EBBB005C3642 /* carolinas.png in Resources */,
+				ABCF72051190EBBB005C3642 /* donkey.jpg in Resources */,
+				ABCF72061190EBBB005C3642 /* duel.jpg in Resources */,
+				ABCF72071190EBBB005C3642 /* hermitage.jpg in Resources */,
+				ABCF72081190EBBB005C3642 /* inauguration.jpg in Resources */,
+				ABCF72091190EBBB005C3642 /* trailoftears.jpg in Resources */,
+				ABCF720A1190EBBB005C3642 /* warof1812.jpg in Resources */,
+				ABCF720B1190EBBB005C3642 /* marie.jpg in Resources */,
+				ABCF720C1190EBBB005C3642 /* nobelprize.png in Resources */,
+				ABCF720D1190EBBB005C3642 /* pierre.jpg in Resources */,
+				ABCF720E1190EBBB005C3642 /* polonium.png in Resources */,
+				ABCF720F1190EBBB005C3642 /* radiationtherapy.jpg in Resources */,
+				ABCF72101190EBBB005C3642 /* sorbonne.jpg in Resources */,
+				ABCF72111190EBBB005C3642 /* warsaw.png in Resources */,
+				ABCF721D1190ECF8005C3642 /* historicalFigures.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
