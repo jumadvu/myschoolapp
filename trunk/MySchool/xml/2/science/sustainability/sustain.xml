@@ -7,29 +7,35 @@
 		<chapter>
 			<title>You and your environment</title>
 			<article>
-				<text>Sustainability comes from the word sustainable. It means to conserve our surroundings and prevent our [natural resources] from disappearing. What we do everyday affects the earth and our environment. For instance, the cars and trucks that we drive produce harmful gases that go into our [atmosphere]. These gases form part of what we call greenhouse gases. These gases allow sunlight to enter the Earth's atmosphere. Some of this light is re-radiated back towards space as [infrared radiation]. But greenhouse gases absorb this infrared radiation and traps its heat in the atmosphere. As more greenhouse gases get sent out into our atmosphere, it contributes to the warming of our planet. The main sources of greenhouse gases due to human activity are burning of [fossil fuels] and [deforestation]. Carbon footprint indicates the amount of greenhouse gases that have been created by an organization, a product or a person. It is trying to measure how much greenhouse gas went into the production of an activity. In order to lower greenhouse gas levels, we want to lower our carbon footprint. If we want to be more sustainable, we need to be mindful first of [energy]. There are two different sources of energy: renewable, an energy source that can easily be recreated, and nonrenewable, an energy source that we use up and cannot recreate. In the US, most of our energy comes from nonrenewable energy sources. Coal, petroleum, natural gas are all nonrenewable energy sources because their supplies on earth are limited and we cannot recreate them easily. Meanwhile, renewable energy sources include solar and wind energy.</text>
-				<image><file>naturalresources.jpg</file><desc>Natural resources are the things that the Earth provides for us such as land, plants, minerals and water.</desc></image>
+				<text>
+				What do we mean when we say that we want to live in a sustainable way? To sustain means to preserve or support, so by making sustainable actions we help conserve our surroundings and prevent our [natural resources] from disappearing. Thus we help support keeping the world healthy and unchanged.
+				Things we do every day affect the earth and our environment. For instance, the cars and trucks that we drive produce harmful gases that enter Earth's [atmosphere]. These gases form part of what we call greenhouse gases. Greenhouse gases trap [infrared radiation] from the Sun that would have been reflected into space,when the Sun's rays are trapped in the atmosphere, they create heat. Small changes in the temperature of Earth's atmosphere can cause big changes in the climate.
+				The main ways people produce greenhouse gases are by burning [fossil fuels] like gasoline, and by [deforestation]. A 'carbon footprint' is a measure of the greenhouse gases that have been created by an organization, a product, or a person. By reducing the greenhouse gases we create, we lower our carbon footprint and have less of a negative effect on the Earth's climate.
+				If we want to be more sustainable, we need to be mindful first of the [energy] we use. There are two different types of energy sources: renewable sources of energy will never be used up; solar and wind energy are renewable because nothing is destroyed by gathering energy from them. Nonrenewable energy sources include fuels like coal, petroleum, and natural gas. In order to get energy from these substances, they must be burned and used up. Because the supply of these fuels is limited and because we cannot make new fuels synthetically, they are nonrenewable. 
+				Most of the energy we currently use comes from nonrenewable sources, but using renewable energy is more sustainable, as it preserves the Earth's natural resources.
+</text>
+				<image><file>naturalresources.jpg</file><desc>Natural resources are the parts of the Earth which we use, including land, plants, minerals and water.</desc></image>
 				<image><file>atmosphere.jpg</file><desc>The earth's atmosphere is a layer of gases surrounding the planet Earth that is held together by Earth's gravity.</desc></image>
-				<image><file>infrared_dog.jpg</file><desc>Infrared radiation is electromagnetic radiation with wavelength between 0.7 and 300 micrometers. It can be used to determine the temperature of objects from far away.</desc></image>
-				<image><file>fossilfuel_coal.jpg</file><desc>Fossil fuels are fuels formed by the earth from the fossilized remains of dead plants and animals that have been exposed to the pressure of the earth's crust over hundreds of millions of years!</desc></image>
+				<image><file>infrared_dog.jpg</file><desc>Infrared radiation is a type of light which humans cannot see, but which can be used to determine the temperature of objects from far away.</desc></image>
+				<image><file>fossilfuel_coal.jpg</file><desc>Fossil fuels are fuels formed from the fossilized remains of dead plants and animals that have been exposed to the pressure of the earth's crust over hundreds of millions of years!</desc></image>
 				<image><file>deforestation.jpg</file><desc>Deforestation is cutting down and clearing forests to make more room for people or buildings.</desc></image>
-				<image><file>energy_lightning.jpg</file><desc>In physics, energy describes the amount of work that can be performed by a force. We use energy in everything we do from breathing, to doing jumping jacks, or watching television.</desc></image>
+				<image><file>energy_lightning.jpg</file><desc>Chemical energy makes combustion engines work, thermal energy heats our homes, and electromagnetic energy powers the machines around us!</desc></image>
 			</article>
 			<lecture>	
 				<title>Sustainability and Your Environment</title>
 				<text>
-				    Sustainability means to [pray for] our environment and prevent our natural resources from disappearing. Natural resources occur naturally within environments and include [sweaters, pants, dresses]. What we do [every earth day] impacts the earth and our surroundings. Cars and trucks produce gases that contribute to the [stars] in the atmosphere. We do not create greenhouse gases when we [open the refrigerator]. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [100] years! Scientists have found that more greenhouse gases [on the moon] in recent years has made the planet [more tilted]. [Tree rings] indicates the amount of greenhouse gases that have been produced by an organization, a product or a person. In the US, most of our energy comes from [renewable] energy sources. 
+				    Being more sustainable means that we [confuse] our environment and prevent our natural resources from disappearing. Natural resources occur naturally on Earth and are not made by humans; they include things like [sweaters, pants, and dresses]. The things we do [on holidays] impact the earth and our surroundings. Cars and trucks produce pollution whichi increases the amount of [stars] in the atmosphere. We do not create greenhouse gases when we [make a campfire]. Most greenhouse gases are produced by burning fossil fuels. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [one hundred] years! Scientists have found that the presence of more greenhouse gases in Earth's [moon] in recent years has made the planet [more tilted]. A [tree ring] is a measure of the amount of greenhouse gases that have been produced by an organization, a product or a person. In the US, most of our energy comes from [renewable] energy sources. 
 				</text>
 				<keywordSet word="conserve">
 					<word>destroy</word>
 					<word>fight</word>
 				</keywordSet>
-			    	<keywordSet word="air, wind, water">
-					<word>kit kats, snickers, skittles</word>
-					<word>ipod, dvd player, laptop</word>
+			    	<keywordSet word="wood, metals, and water">
+					<word>books, magazines, and CDs</word>
+					<word>stereos, televisions, and laptops</word>
 				</keywordSet>
-				<keywordSet word="everyday">
-					<word>every other earth year</word>
+				<keywordSet word="every day">
+					<word>never</word>
 					<word>every ten years</word>
 				</keywordSet>
 				<keywordSet word="greenhouse gases">
@@ -37,28 +43,28 @@
 					<word>rainbows</word>
 				</keywordSet>
 				<keywordSet word="walk to the park">
-					<word>ride a plane</word>
-					<word>use the washer and dryer</word>
+					<word>ride an airplane</word>
+					<word>heatour houses</word>
 				</keywordSet>
-				<keywordSet word="dead plants and animals">
+				<keywordSet word="plants and animals">
 					<word>shoes</word>
-					<word>cars</word>
+					<word>cars and trucks</word>
 				</keywordSet>
-				<keywordSet word="hundreds of millions of">
-					<word>10</word>
-					<word>1000</word>
+				<keywordSet word="millions of">
+					<word>a few</word>
+					<word>thousands of</word>
 				</keywordSet>
-				<keywordSet word="in the atmosphere">
-					<word>in California</word>
-					<word>on Jupiter</word>	
+				<keywordSet word="atmosphere">
+					<word>core</word>
+					<word>surface</word>	
 				</keywordSet>
 				<keywordSet word="warmer">
 					<word>windier</word>
 					<word>flatter</word>
 				</keywordSet>
-				<keywordSet word="Carbon footprint">
-					<word>Bigfoot's footprint</word>
-					<word>Barney's paw print</word>
+				<keywordSet word="carbon footprint">
+					<word>seismic fault</word>
+					<word>greenhouse gas</word>
 				</keywordSet>
 				<keywordSet word="nonrenewable">
 					<word>green</word>
@@ -67,29 +73,29 @@
 				<studentQuestion>
 					<text>How do I create a carbon footprint?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">By keeping the lights on when I leave the room.</answer>
+					<answer correctness="5">By leaving the lights on when I leave the room.</answer>
 					<answer correctness="0">By playing jump rope.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why are fossil fuels not renewable?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">Fossil fuel takes a very long time for the earth to create. It is difficult to replenish.</answer>
+					<answer correctness="5">Fossil fuel takes a very long time for the Earth to create. They are difficult to replenish.</answer>
 					<answer correctness="1">Because fossils are buried deep down in the earth.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why do they call it carbon footprint?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">Because they are referring to how much carbon dioxide is produced when we use energy.</answer>
-					<answer correctness="1">Because dinosaurs have left footprints on our world.</answer>
+					<answer correctness="5">It refers to how much carbon dioxide is produced when we use energy.</answer>
+					<answer correctness="1">Because dinosaurs left fossil footprints in rocks.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why do we want to be more sustainable?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">Because we want to preserve earth and our environment.</answer>
+					<answer correctness="5">Because we want to preserve the Earth and our environment.</answer>
 					<answer correctness="3">If we don't then we'll have to move to the moon.</answer>
 				</studentQuestion>
 				<studentQuestion>
-					<text>Who is most affected by greenhouse gas effects and high level carbon emission?</text>
+					<text>Who is most affected by greenhouse gases and carbon emissions?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Every species living on the planet.</answer>
 					<answer correctness="0">Humans.</answer>
@@ -98,7 +104,7 @@
 					<text>How do greenhouse gases make the earth warmer?</text>
 					<studentType>1</studentType>
 				    <answer correctness="5">By absorbing infrared radiation and trapping its heat in the atmosphere.</answer>
-					<answer correctness="0">By sucking all the cold air in the atmosphere and emitting it to space.</answer>
+					<answer correctness="0">By sucking up all the cold air in the atmosphere and pushing it out into space.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why are trees good for the environment?</text>
@@ -114,13 +120,13 @@
 				</studentQuestion>
 			</lecture> 
 			<worksheetQuestion>
-				<text>What do we call the gases that re-radiate sunlight back towards space as infrared radiation (heat)?</text>
+				<text>What do we call the gases that absorb sunlight and heat the atmosphere?</text>
 				<answer correctness="5">Greenhouse gases</answer>
 				<answer correctness="0">Ozone</answer>
 				<answer correctness="0">Laughing gases</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>What do we call energy sources that can easily be recreated?</text>
+				<text>What do we call energy sources that cannot be used up?</text>
 				<answer correctness="5">Renewable energy</answer>
 				<answer correctness="0">Happy energy</answer>
 				<answer correctness="0">Toxic energy</answer>
@@ -138,7 +144,7 @@
 				<answer correctness="0">Forest preservation</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>What do we call the amount of greenhouse gases that have been emitted by someone?</text>
+				<text>What do we call the amount of greenhouse gases that someone or something has created?</text>
 				<answer correctness="5">Carbon footprint</answer>
 				<answer correctness="0">Fossil fuel</answer>
 				<answer correctness="0">Greenhouse effect</answer>
@@ -153,49 +159,51 @@
 		<chapter>
 			<title>Things we can do</title>
 			<article>
-				<text>We can [recycle]. Old newspapers can be used to make new newspapers. Old [aluminum] cans can be used to make new aluminum cans. Recycling is one of the three Rs that form the waste hierarchy: Reduce, Reuse, Recycle. Reduce is to buy less and use less. Reuse is to use things over again like by purchasing at garage sales or wearing hand-me-downs from your older sister/brother. We can recycle anything from glass, paper, metal, plastic, textiles, and electronics. Recycling saves energy and natural resources. By using materials more than once, we are able to conserve. It almost always takes less energy to make a product from recycled materials than it does to make it from new materials. Making paper from recycled paper saves trees and uses less water. We can switch to [compact fluorescent lights (CFLs)]. According to the EPA (Environmental Protection Agency), if every American household were to swap just one incandescent bulb to a compact fluorescent light, we would save enough energy to light more than 2.5 million homes for a year and prevent greenhouse gases equivalent to the emissions of 800,000 cars! You can ask your parent to buy local and [seasonal food]. That means to buy food from your [neighborhood farmers]. Instead of asking a parent of older sibling for a ride in the [car], think about walking or riding your bike. You can turn off your electronic appliances when they are not in use. These can include your lights, TV, computer, video games, stereo, ipod and cell phone chargers. Some electronic devices even use energy when they are not turned on. So you might want to unplug them. Every device that plugs into an electrical socket is using energy that produces carbon dioxide that goes into the air. When you reduce your energy use you reduce your carbon footprint.</text>
+				<text>
+				The 'three Rs' describe the three best things we can do to live in a more sustainable way: Reduce, Reuse, and Recycle.
+				[Recycling] is the process of manufacturing new product from old products. Old newspapers can be used to make new newspapers. Old [aluminum] cans can be used to make new aluminum cans. We can recycle almost anything; glass, paper, metal, plastic, textiles, and electronics. Although it  almost always takes less energy to make a product from recycled materials than it does to make it from new materials, recycling does use energy, since old items have to be broken down to be made into new ones.
+				When we reuse things, we reduce the number of products that need to be manufatured, thus saving energy. We reuse items by buying things at garage sales or using things for new purposes. Instead of throwing old things away, see if you can give them to someone who needs them or reuse them in a new way!
+				Reducing our energy consumption is one of the most important ways of being more sustainable. We can reduce fossil fuel use in many ways. Instead of riding in [cars], try walking or riding a bicycle. In addition, by buying more food from [local farms], we don't need trucks to use fuels to ship us food. Buying [seasonal fruits] and vegetables means that they don't have to be shipped from different climates far away.
+				Reducing the electricity we use is also important, since most electricity is produced by fossil fuels. For instance, [compact fluorescent] lightbulbs use much less energy than regular lightbulbs, which saves a lot of money and fuel. It's also important to turn off your electronic appliances when they are not in use. These can include your lights, TV, computer, video games, stereo, ipod and cell phone chargers. Some electronic devices even use energy when they are not turned on, so unplug them. When you reduce your energy use, you reduce pollution and your carbon footprint.</text>
 				<image><file>Recycling_can.jpg</file><desc>Recycling involves processing used materials to create new ones.</desc></image>
-				<image><file>Aluminium.jpg</file><desc>Aluminum is the most abundant metal in the Earth's crust and the third most abundant element after oxygen and silicon. It is 100% recyclable without any loss of its natural qualities.</desc></image>
-				<image><file>Compact-Fluorescent-Bulb.jpg</file><desc>The average life of a compact fluorescent light is between 8 to 15 times greater than a regular light bulb, also known as an incandescent light bulb.</desc></image>
-				<image><file>seasonal_food.jpg</file><desc>Seasonality of foods refers to the times of year when a given food is at its peak, either in terms of harvest or its flavor. During these times the food is the cheapest and freshest.</desc></image>
-				<image><file>farmersmarket.jpg</file><desc>The typical carrot or apple at your big grocery store often travels thousands of miles before landing on your table. That's a lot of carbon footprint. When you buy from local farmers at the farmer's market, it travels much less and your food is much fresher too.</desc></image>
-				<image><file>car.jpg</file><desc>Cars are a leading cause of greenhouse gas emissions. They account for almost a quarter of annual US emissions of carbon dioxide (CO2). The US has the 2nd highest rate of carbon emissions in the world, just behind China, with about 20% of the world's total.</desc></image>
+				<image><file>Aluminium.jpg</file><desc>Aluminum is the most abundant metal in the Earth's crust. It is 100% recyclable without any loss of quality.</desc></image>
+				<image><file>car.jpg</file><desc>Cars account for almost a quarter of annual US emissions of carbon dioxide. The US produces about 20% of the world's total carbon dioxide emissions.</desc></image>
+				<image><file>farmersmarket.jpg</file><desc>Food at the grocery store often travels thousands of miles before we buy it. When you buy from local farmers, your food travels much less and is much fresher too.</desc></image>
+				<image><file>seasonal_food.jpg</file><desc>Food is cheapest and freshest when it is in season. For instance, tomatoes are best in the summer and carrots are best in the winter.</desc></image>
+				<image><file>Compact-Fluorescent-Bulb.jpg</file><desc>A compact fluorescent light lasts 8 to 15 times longer than a regular, or incandescent, light bulb.</desc></image>
+
 			</article>
 			<lecture>
 				<title>What we can do to be more sustainable</title>
-				<text>[Remodeling] involves taking materials that have already been used to create new ones. It is one of the three Rs that form the [food groups]: reduce, reuse, recycle. [Reuse] is to buy less and use less. [Reduce] is to use things over again. When we make paper from recycled paper, we save not only trees but also [tigers]. We can also switch out our light bulbs. Approximately 90% of the power consumed by [an electric socket] is emitted as heat, rather than visible light. The average life of a compact fluorescent light is [500 times] greater than an incandescent light bulb. [Flash lights] use energy much more efficiently by using 20 - 30% of the power equivalent of incandescent light bulbs. You can also buy local seasonal food. Often fruits and vegetables at your large grocery store travel [light years]. That creates a lot of carbon footprint. If you eat [genetically modified food], it's not only helping to reduce carbon footprint but also it's cheap and fresh!
+				<text>To be more sustainable, we should follow the [three bears]: reduce, reuse, and recycle. [Remodeling] breaks down materials that have already been used to create new products.  [Reduce] is using our old things over again. [Increase] means to practice buying less and using less. When we make paper from recycled paper, we save not only trees but also [tigers]. We can also switch out our old light bulbs for compact fluorescent bulbe. Approximately 90% of the power consumed by [a stereo] is turned into heat, rather than visible light. The average life of a compact fluorescent bulb is [500 times] greater than an incandescent light bulb. You can also buy local ly grown, seasonal food. Often fruits and vegetables at your large grocery store travel [light years]. That creates a big carbon footprint. If you eat [genetically modified food], it's not only helping to reduce carbon footprint but also it's cheap and fresh!
 				</text>
+				<keywordSet word="three R's">
+					<word>three C's</word>
+					<word>three kings</word>
+				</keywordSet>
 				<keywordSet word="Recycling">
 					<word>Cycling</word>
 					<word>Animating</word>
 				</keywordSet>
-				<keywordSet word="waste hierarchy">
-					<word>filing system hierarchy</word>
-					<word>body mass index</word>
+				<keywordSet word="Reuse">
+					<word>Refuse</word>
+					<word>Recluse</word>
 				</keywordSet>
 				<keywordSet word="Reduce">
-					<word>Reuse</word>
-					<word>Recycling</word>
+					<word>Recycle</word>
+					<word>Replace</word>
 				</keywordSet>
-				<keywordSet word="Reuse">
-					<word>Reduce</word>
-					<word>Recycling</word>
-				</keywordSet>
-				<keywordSet word="water">
+				<keywordSet word="energy">
 					<word>bald eagles</word>
-					<word>carbon dioxide</word>
+					<word>people</word>
 				</keywordSet>
-				<keywordSet word="incandescent light bulb">
+				<keywordSet word="incandescent bulb">
 					<word>hair dryer</word>
 					<word>washing machine</word>
 				</keywordSet>
 				<keywordSet word="8 to 15 times">
 					<word>thousands of times</word>
 					<word>two times</word>
-				</keywordSet>
-				<keywordSet word="Compact fluorescent lights">
-					<word>Nuclear power plants</word>
-					<word>Diesel powered cars</word>
 				</keywordSet>
 				<keywordSet word="thousands of miles">
 					<word>backwards in time</word>
@@ -244,8 +252,8 @@
 				<studentQuestion>
 					<text>What does it mean when a fruit is seasonal?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">It means that it's the time of year when that fruit is at its peak, either in terms of harvest or its flavor.</answer>
-					<answer correctness="2">It means that it is very ripe.</answer>
+					<answer correctness="5">It means that it's the time of year when that fruit is best to harvest.</answer>
+					<answer correctness="2">It means that the fruit tastes good but looks ugly.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>What does it mean when a food item has a lot of carbon footprint?</text>
@@ -263,7 +271,7 @@
 					<text>Is it true that cars are NOT a leading cause of greenhouse gas emissions in the US.</text>
 					<studentType>1</studentType>
 					<answer correctness="5">False. Cars account for almost a quarter of annual US emissions of carbon dioxide (CO2).</answer>
-					<answer correctness="0">True. Cars emit much less greenhouse gases than airplanes.</answer>
+					<answer correctness="0">True. Cars emit much less greenhouse gases than airplanes and other vehicles.</answer>
 				</studentQuestion>
 			</lecture>
 			<worksheetQuestion>
@@ -279,22 +287,16 @@
 				<answer correctness="0">Traffic lights</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>What do the 3Rs of Reduce, Reuse and Recycle refer to?</text>
+				<text>What do the 3 Rs of Reduce, Reuse and Recycle refer to?</text>
 				<answer correctness="5">Waste Hierarchy</answer>
 				<answer correctness="0">Food Chain</answer>
 				<answer correctness="0">Circle of Life</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>In an incandescent light bulb what percentage of the power consumed is emitted as heat as opposed to light?</text>
+				<text>In an incandescent light bulb, what percentage of the power consumed is emitted as heat rather than light?</text>
 				<answer correctness="5">90 %</answer>
 				<answer correctness="0">0 %</answer>
 				<answer correctness="0">100 %</answer>
-			</worksheetQuestion>
-			<worksheetQuestion>
-				<text>What is the US Federal government agency that is charged with protecting the environment called?</text>
-				<answer correctness="5">EPA</answer>
-				<answer correctness="0">FCC</answer>
-				<answer correctness="0">SEC</answer>
 			</worksheetQuestion>
 		</chapter>
 
