@@ -303,22 +303,27 @@
 		<chapter>
 			<title>Rainforests</title>
 			<article>
-				<text>Rainforests are forests with [high rainfall]. More than half of the world's species are found in the rainforest. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. Tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis]. When the leaf [canopy] is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees, this area becomes a jungle. There are two types of rainforests: tropical and temperate. [Tropical rainforests] are rainforests in the tropics, found near the [equator]. Temperate rainforests are in temperate regions, including North America, Europe, and East Asia. However, rainforests have been shrinking due to deforestation. Biologists have estimated that large numbers of species are being driven to [extinction]. Tropical rainforests are a valuable part of our ecosystem. They provide a home for many interesting types of animals and plants. Plus all the trees in the rainforest absorb carbon dioxide, which helps stop global warming.
+				<text>
+				Rainforests are forests with very [high rainfall]. There are two types of rainforests: tropical and temperate. [Tropical rainforests] are rainforests in warm regions, found near the [equator]. Temperate rainforests are found in cooler regions with defined seasons, including North America, Europe, and East Asia.
+				More than half of the world's species live in the rainforest. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. This great variety of species has benefits for humans; tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. 
+				Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis], in which plants convert carbon dioxide into oxygen. Dense rainforests are formed when the leaf [canopy] of tall trees is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees. The area thus becomes a dense jungle.  
+				Unfortunately, rainforests have been shrinking due to deforestation. Biologists have estimated that large numbers of species are being driven to [extinction] as rainforest land is cleared for use as farmland. 
+				Tropical rainforests are a valuable part of Earth's ecosystem. They provide a home for many interesting types of animals and plants. The large number of trees in the rainforest help to absorb carbon dioxide from the atmosphere, which reduces pollution and helps to stop global warming.
 				</text>
-				<image><file>rainfall.jpg</file><desc>Minimum normal annual rainfall for a rainforest is between 68 and 78 inches.</desc></image>
-				<image><file>ecoli.jpg</file><desc>Microorganism is an organism that is microscopic, ie, too small to be seen by the naked human eye. They include bacteria, fungi, archaea, and protists.</desc></image>
-				<image><file>photosynthesis.png</file><desc>Photosynthesis is a process that converts carbon dioxide into energy in the form of sugars and oxygen. It occurs in plants, algae and many species of bacteria.</desc></image>
-				<image><file>canopy.png</file><desc>Canopy is the layer of branches and leaves formed by closely spaced rainforest trees. Most of the plants and animals in the rainforest live in the canopy.</desc></image>
+				<image><file>rainfall.jpg</file><desc>Normal annual rainfall for a rainforest is between 68 and 78 inches.</desc></image>
 				<image><file>amazon.jpg</file><desc>The Amazon rainforest in South America is the largest and most species-rich tropical rainforest in the world.</desc></image>
-				<image><file>equator.jpg</file><desc>The equator is the imaginary line on the Earth's surface that is the same distance from the North and South Pole that divides the earth into Northern and Southern hemispheres.</desc></image>
-				<image><file>dinosaur.jpg</file><desc>Extinction is considered the death of the last individual of that species. Dinosaurs that used to roam the earth became extinct and no longer exist.</desc></image>
+				<image><file>equator.jpg</file><desc>The equator is an imaginary line on the Earth's surface that divides the earth into Northern and Southern hemispheres.</desc></image>
+				<image><file>ecoli.jpg</file><desc>A microorganism is an organism that is too small to be seen by the human eye. Bacteria and fungi are microorganisms.</desc></image>
+				<image><file>photosynthesis.png</file><desc>In photosynthesis, carbon dioxide is converted into energy in the form of sugars and oxygen. It occurs in plants, algae and many species of bacteria.</desc></image>
+				<image><file>canopy.png</file><desc>The canopy is the layer of branches and leaves formed by closely spaced trees. Many plants and animals live in the rainforest canopy.</desc></image>
+				<image><file>dinosaur.jpg</file><desc>Extinction occurs when all members of a species die out. For instance, dinosaurs became extinct and no longer exist.</desc></image>
 			</article>
 			<lecture>
-				<title>Why Rainforests are Important to Us</title>
-				<text>Rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there. Rainforests are forests with tall trees, [dry] climate and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. One reason for this is because rainforests receive a lot of [rainbows]. This is converted to energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [canopy]. Many well-known animals including monkeys, frogs, lizards, birds, snakes and sloths are found in the canopy. Rainforests also help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
+				<title>The Importance of Rainforests</title>
+				<text>Rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there. Rainforests are forests which have many tall trees, [dry] climate and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. One reason for the vast growth of rainforests is that they receive a lot of [rainbows]. Plants convert this light into energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [canopy]. Many fascinating animals including monkeys, frogs, lizards, birds, snakes and sloths live in the canopy. Rainforests play an important part in regularting the Earth's climate. Rainforests prevent global warming and help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
 				</text>
 				<keywordSet word="more than half">
-					<word>less than half</word>
+					<word>a few</word>
 					<word>all</word>
 				</keywordSet>
 				<keywordSet word="pharmacy">
@@ -356,31 +361,31 @@
 				<studentQuestion>
 					<text>How do rain forests help stop global warming?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">The trees absorb carbon dioxide, a 'greenhouse gas' that causes global warming.</answer>
-					<answer correctness="0">Because it's warm in the rain forest, and the animals like warmth.</answer>
+					<answer correctness="5">Plants absorb carbon dioxide, a 'greenhouse gas' that contributes to global warming.</answer>
+					<answer correctness="0">Because it's warm in the rain forest, and all the animals there like warmth.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Can deforestation lead to certain species disappearing forever?</text>
 					<studentType>1</studentType>
 					<answer correctness="5">Yes, when we get rid of forests, many species lose their homes and can become extinct.</answer>
-					<answer correctness="0">No, they can find another home easily.</answer>
+					<answer correctness="0">No, most animals can adapt and find another home easily.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why do rainforests have so many kinds of plants and animals?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">The sunlight helps to produce lots of energy and the canopies provide many more places for plants to grow and animals to live.</answer>
-					<answer correctness="0">Because there are no lions that live in the rainforest.</answer>
+					<answer correctness="5">The sunlight helps plants grow and the canopy provide many more places for plants to grow and animals to live.</answer>
+					<answer correctness="0">Because rainforests do not support many large predators which eat other animals.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Why are rainforests being destroyed?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">Human beings are the main cause. They cut down rainforests to make more room for themselves.</answer>
-					<answer correctness="0">Because there is little need for them in our lives.</answer>
+					<answer correctness="5">Humans cut down rainforests to make more room for themselves.</answer>
+					<answer correctness="0">Because they are not very important for therest of the planet.</answer>
 				</studentQuestion>
 				<studentQuestion>
 					<text>Is a jungle different from a rainforest?</text>
 					<studentType>1</studentType>
-					<answer correctness="5">Yes. When the leaf canopies are thinned or destroyed and the ground becomes a dense tangle of vines and shrubs, this becomes a jungle.</answer>
+					<answer correctness="5">Yes. A jungle is just a dense tangle of plants, rainforests have a specific climate.</answer>
 					<answer correctness="0">No. they are the same thing.</answer>
 				</studentQuestion>
 			</lecture>
@@ -391,25 +396,25 @@
 				<answer correctness="0">Sahara</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>Where are tropical rainforests typically located at?</text>
+				<text>Where are tropical rainforests typically located?</text>
 				<answer correctness="5">Near the equator</answer>
 				<answer correctness="0">In the south pole</answer>
 				<answer correctness="0">In North America</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>What do we call the death of the last individual of that species?</text>
+				<text>What do we call the death of all members of a species?</text>
 				<answer correctness="5">Extinction</answer>
 				<answer correctness="0">Tragedy</answer>
 				<answer correctness="0">Evolution</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>In the rainforest, most plant and animal life is found in the leafy world know as?</text>
+				<text>In the rainforest, most plant and animal life is found in the leafy world known as?</text>
 				<answer correctness="5">the canopy</answer>
 				<answer correctness="0">forest floor</answer>
 				<answer correctness="0">shrub layer</answer>
 			</worksheetQuestion>
 			<worksheetQuestion>
-				<text>The process in which carbon dioxide and water with sunlight is converted into energy in the form of sugars and oxygen is known as?</text>
+				<text>The process in which carbon dioxide, water and sunlight are converted into sugars and oxygen is known as?</text>
 				<answer correctness="5">Photosynthesis</answer>
 				<answer correctness="0">Digestion</answer>
 				<answer correctness="0">Greenhouse Effect</answer>
