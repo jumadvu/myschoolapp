@@ -320,16 +320,11 @@
 			</article>
 			<lecture>
 				<title>The Importance of Rainforests</title>
-				<text>Rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there. Rainforests are forests which have many tall trees, [dry] climate and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. One reason for the vast growth of rainforests is that they receive a lot of [rainbows]. Plants convert this light into energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [canopy]. Many fascinating animals including monkeys, frogs, lizards, birds, snakes and sloths live in the canopy. Rainforests play an important part in regularting the Earth's climate. Rainforests prevent global warming and help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
+				<text>Rainforests are a special type of forest; they are very important to the Earth's climate and biodiversity. Rainforests are different from other forests in that they  have many tall trees, [dry] climates and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. 
+				Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. Earth's rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there.  
+				One reason for the vast growth of rainforests is that they receive a lot of [rainbows]. Plants convert this light into energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [umbrella]. Many fascinating animals including monkeys, frogs, lizards, birds, snakes and sloths live in the canopy. 
+				In addition to housing some of the Earth's rarest species, rainforests play an important part in regularting the Earth's climate. Rainforests prevent global warming and help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
 				</text>
-				<keywordSet word="more than half">
-					<word>a few</word>
-					<word>all</word>
-				</keywordSet>
-				<keywordSet word="pharmacy">
-					<word>candy store</word>
-					<word>super market</word>
-				</keywordSet>
 				<keywordSet word="warm">
 					<word>windy</word>
 					<word>cool</word>
@@ -341,10 +336,18 @@
 				<keywordSet word="the Amazon rainforest">
 					<word>North Pole</word>
 					<word>Sequoia national forest</word>
-				</keywordSet>
+				</keywordSet>	
 				<keywordSet word="biodiversity">
 					<word>precipitation</word>
 					<word>fidelity</word>
+				</keywordSet>							
+				<keywordSet word="more than half">
+					<word>a few</word>
+					<word>all</word>
+				</keywordSet>
+				<keywordSet word="pharmacy">
+					<word>candy store</word>
+					<word>super market</word>
 				</keywordSet>
 				<keywordSet word="sunlight">
 					<word>attention</word>
@@ -353,6 +356,10 @@
 				<keywordSet word="photosynthesis">
 					<word>digestion</word>
 					<word>exercise</word>
+				</keywordSet>
+				<keywordSet word="canopy">
+					<word>calliope</word>
+					<word>ceiling</word>
 				</keywordSet>
 				<keywordSet word="carbon dioxide">
 					<word>hydrogen</word>
