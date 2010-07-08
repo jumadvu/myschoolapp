@@ -50,7 +50,7 @@
 	
 	rect.origin.x += 2;
 	rect.origin.y += 0;
-	rect.size.width = 200;
+	rect.size.width = 300;
 	lblTitle.frame = rect;
 		
 	

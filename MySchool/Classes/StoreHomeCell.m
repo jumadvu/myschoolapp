@@ -46,17 +46,6 @@
 		
 }
 
-/*
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	//selected the cell. Default to learning not teaching
-	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
-	vc.chapterName=self.textLabel.text;
-	vc.fileName = fileName;
-	vc.article = article;
-	[delegate.navCon pushViewController:vc animated:YES];
-}
-*/
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
 	

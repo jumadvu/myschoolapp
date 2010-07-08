@@ -14,6 +14,7 @@
 #import "Image.h"
 #import "MusicMenu.h"
 #import "DayinHistory.h"
+#import "ColorMenu.h"
 
 @implementation ActivitiesHome
 
@@ -107,6 +108,7 @@
 	[scroller setContentSize:CGSizeMake(320 * [activities count], scroller.frame.size.height)];
 }
 
+
 - (void)clickedButton:(UIButton *)button {
 	int activityIndex = button.tag;
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];	
@@ -117,8 +119,12 @@
 		MusicMenu *vc = [[[MusicMenu alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];		
 	} else if ([[activity title] isEqualToString:@"Calendar"]) {
-		//go to music area
+		//go to calendar activity
 		DayinHistory *vc = [[[DayinHistory alloc] initWithNibName:nil bundle:nil] autorelease];
+		[delegate.navCon pushViewController:vc animated:YES];		
+	} else if ([[activity title] isEqualToString:@"Art Supplies"]) {
+		//go to calendar activity
+		ColorMenu *vc = [[[ColorMenu alloc] initWithNibName:nil bundle:nil] autorelease];
 		[delegate.navCon pushViewController:vc animated:YES];		
 	} else {
 		//apologize that there is no activity

@@ -20,6 +20,7 @@
 @synthesize imageArray, currentButton, numLabel, teachButton;
 @synthesize chapterNameLabel, chapterName, scrollView;
 @synthesize chapter;
+@synthesize chapterNum;
 
 - (void)dealloc {
 	[chapter release];
@@ -50,20 +51,24 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	[self setTopBarTitle:@"Book Chapter" withLogo:YES backButton:YES];
+	if (!chapterNum > 0) {
+		chapterNum = 1;
+	}
+	[self setTopBarTitle:[NSString stringWithFormat:@"Chapter %d", chapterNum] withLogo:YES backButton:YES];
 	[self setBackgroundColor];
 	chapterNameLabel.text= self.chapter.title;
 	[teachButton addTarget:self action:@selector(teachButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
 	imageArray = [[NSArray alloc] init];
 	[self arrangeImageArray];
 	[self loadTextIntoScrollView];
-	[self addHelpButton:5 x:85 y:410];
+	[self addHelpButton:9
+					  x:85 y:410];
 }
 
 - (void)loadTextIntoScrollView {
 	//create a UILabel for each regular word in the text and a UIButton for each keyword
 	//add these labels and buttons to the scrollview
-	scrollView.backgroundColor = [UIColor whiteColor];
+	scrollView.backgroundColor = [UIColor clearColor];
 	NSMutableArray *words = [[NSMutableArray alloc] init];
 	NSArray *lines = [chapter.article.text componentsSeparatedByString:@"\n"];
 	NSEnumerator *enumerator = [lines objectEnumerator];

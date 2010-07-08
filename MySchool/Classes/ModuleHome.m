@@ -83,6 +83,7 @@
 	if (goToLearn) {
 		//go to learning section
 		ChapterHome *vc = [[[ChapterHome alloc] initWithNibName:nil bundle:nil] autorelease];
+		vc.chapterNum = indexPath.row+1;
 		//set up the learning page
 		Chapter *chapter = [[self.targetModule chaptersArray] objectAtIndex:indexPath.row];
 		[delegate setCurrentChapter:chapter];

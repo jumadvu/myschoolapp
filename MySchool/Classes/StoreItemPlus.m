@@ -18,7 +18,7 @@
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	
 	NSArray *storeItemNames = [NSArray arrayWithObjects:@"Calendar", @"Piano", @"Art Supplies", @"Globe", @"Hamster", nil];
-	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:20],[NSNumber numberWithInt:30],[NSNumber numberWithInt:500],[NSNumber numberWithInt:600],[NSNumber numberWithInt:700],nil];
+	NSArray *storeItemCosts = [NSArray arrayWithObjects:[NSNumber numberWithInt:20],[NSNumber numberWithInt:30],[NSNumber numberWithInt:30],[NSNumber numberWithInt:600],[NSNumber numberWithInt:700],nil];
 	NSArray *storeItemImages = [NSArray arrayWithObjects:@"calendar.png",@"musiclesson.png",@"artsupplies.png",@"globe.png",@"hamster.png", nil];
 	
 	for (int x=0; x<[storeItemNames count]; x++) {
