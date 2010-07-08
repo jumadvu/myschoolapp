@@ -12,11 +12,13 @@
 @interface baseViewController : UIViewController {
 	IBOutlet UIButton *mainMenuButton;
 	IBOutlet UIButton *backButton;
-
+	BOOL helpShowing;
+	
 }
 
 @property (nonatomic, retain) UIButton *mainMenuButton;
 @property (nonatomic, retain) UIButton *backButton;
+@property (nonatomic) BOOL helpShowing;
 
 -(IBAction)toMainMenu;
 -(IBAction)raiseMenu:(UIButton*)sender;
@@ -26,5 +28,6 @@
 -(void)setTopBarTitle:(NSString*)title withLogo:(BOOL)addLogo backButton:(BOOL)addBackButton;
 -(void)addHelpButton:(int)helpNum x:(int)x y:(int)y;
 -(void)toHelp:(UIButton*)sender;
+- (void)toPrincipalHelp:(UIButton*)sender;
 
 @end

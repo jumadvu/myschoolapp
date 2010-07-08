@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+<myschool>
+	<module>
+		<title>All About Dinosaurs</title>
+		<superSubject>Biology</superSubject>
+		<gradeLevel>2</gradeLevel>
+		<chapter>
+			<title>What is a dinosaur?</title>
+			<article>
+				<text>The dinosaurs are a group of prehistoric reptiles which lived many millions of years ago. There were many kinds of dinosaurs; scientists have discovered more than 1,000 species of dinosaur, and more are found every year!
+				All of the dinosaurs were reptiles, like the lizards and crocodiles we know today. There were both meat-eating dinosaurs and plant-eating dinosaurs. Some, like [Compsognathus], were as small as a pigeon, and some, like Brachiosaurus, were over three stories tall! In fact, dinosaurs were the largest land-dwelling animals ever (the [blue whale] is still the largest animal to ever exist on land or sea).
+				None of the dinosaurs could fly or swim. There were flying and swimming reptiles in prehistoric times, but these belonged to different groups. So why is a dinosaur called a dinosaur?
+				"Dino-saur" means ["terrible lizard"]. The name was invented by the biologist [Sir Richard Owen] in the 1800s. Only three kinds of dinosaur had been discovered when he named them, and these three walked on land.
+				Later, when prehistoric reptiles that flew and swam were discovered, we called them "pterosaurs", or "winged lizards", and ["icthyosaurs",] or "fish lizards", to tell them apart from dinosaurs.
+				So, there are many kinds of "saur"! But usually when people say "dinosaur" they mean any kind of large prehistoric reptile.
+				The dinosaurs died out over 60 million years ago, so no dinosaurs are alive today. Scientists think that the birds we know today are their closest living relatives. Other animals like crocodiles and [sharks] have looked much the same since the time of the dinosaurs. So, we can learn about the world of the dinosaurs by looking at our own!</text>
+				<image><file>compsognathus.jpg</file><desc>Compsognathus ("dainty jaw") was a small carnivore that lived during the Jurassic period.</desc></image>
+				<image><file>bluewhale.jpg</file><desc>Because water is buoyant and supports its mass, the blue whale can grow much larger than any land animal can.</desc></image>
+				<image><file>terriblelizard.jpg</file><desc>Scientists once thought of dinosaurs as huge, slow beasts, but we now know that there were many different kinds.</desc></image>
+				<image><file>richardowen.jpg</file><desc>Sir Richard Owen helped to found the British Natural History Museum.</desc></image>
+				<image><file>icthyosaur.jpg</file><desc>Many icthyosaurs look similar to fish, and some gave birth to live young.</desc></image>
+				<image><file>shark.jpg</file><desc>The earliest sharks lived more than 400 million years ago, long before the dinosaurs!</desc></image>
+			</article>
+			<lecture>
+				<title>Dinosaurs: The Terrible Lizards</title>
+				<text>Dinosaurs were reptiles that lived [hundreds] of years ago. The word "dinosaur" comes from [Spanish], meaning "terrible lizard". The name was coined by the English [film maker] Richard Owen in 1842. The first fossils of dinosaurs are from about 230 million years ago. About 65 million years ago, dinosaurs became [very heavy]. There were many kinds of dinosaurs. Today scientists know about hundreds of different species of dinosaur. Some, called [veggiesaurs], ate plants. Others, called carnivores, ate meat. The largest dinosaurs were plant-eaters, like the [Velociraptor]. Some plant-eaters had special weapons and armor to protect themselves. For example, Triceratops had [a giant eye] on its head shield, Ankylosaurus was covered in bony plates, and Stegosaurus had spikes on its tail. Scientists have a good idea of what they looked like, because of the [cave paintings] that have been found. Some dinosaurs were very large, like Tyrannosaurus and Spinosaurus, but some were small, like Compsognathus. One of the first [fish] dinosaurs was Archaeopteryx; it had wings and feathers, but a dinosaur-like skeleton. These large flying reptiles that lived at the same time as dinosaurs were called [emus], or winged lizards. There were also large reptiles that could swim, like ichthyosaurs, plesiosaurs and mosasaurs.
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<keywordSet word="Greek">
+					<word>Chinese</word>
+					<word>Martian</word>
+				</keywordSet>
+				<keywordSet word="biologist">
+					<word>chemist</word>
+					<word>ice cream truck driver</word>
+				</keywordSet>
+				<keywordSet word="extinct">
+					<word>very popular</word>
+					<word>very smart</word>
+				</keywordSet>
+				<keywordSet word="herbivores">
+					<word>carnivores</word>
+					<word>tuskivores</word>
+				</keywordSet>
+				<keywordSet word="Apatosaurus">
+					<word>Tyrannosaurus Rex</word>
+					<word>Allosaurus</word>
+				</keywordSet>
+				<keywordSet word="three horns">
+					<word>poisonous spikes</word>
+					<word>solar panels</word>
+				</keywordSet>
+				<keywordSet word="fossil bones">
+					<word>living dinosaurs</word>
+					<word>dinosaur photographs</word>
+				</keywordSet>
+                		<keywordSet word="bird-like">
+					<word>lizard</word>
+					<word>wizard</word>
+				</keywordSet>
+				<keywordSet word="pterosaurs">
+					<word>bald eagles</word>
+					<word>dodos</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>How did the cavemen avoid getting eaten by dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="0">They hid in caves</answer>
+					<answer correctness="5">There were no cavemen in the time of the dinosaurs</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why don't dinosaurs exist anymore?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">A big meteor hit the earth and caused a cloud that blocked the sun's warming rays.</answer>
+					<answer correctness="1">They ate each other until there were no more left.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>How do scientists know if a dinosaur was a carnivore or a herbivore?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">They look at the fossil teeth. Carnivore teeth are bigger and pointier than herbivore teeth</answer>
+					<answer correctness="1">They look on wikipedia</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>What made scientists decide to look for dinosaur bones?</text>
+					<studentType>1</studentType>
+					<answer correctness="4">Scientists have always looked for bones for answers about our past.</answer>
+					<answer correctness="0">Albert Einstein had a vision about dinosaurs.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why did some dinosaurs eat plants, and others eat only meat?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">The process of evolution has created this division throughout the animal kingdom.</answer>
+					<answer correctness="1">The short dinosaurs could not reach the leaves on the trees.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>How heavy was a Tyrannosaurus Rex?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">About 6 tons</answer>
+					<answer correctness="0">About 100 tons</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Were dinosaurs mammals?</text>
+					<studentType>1</studentType>
+					<answer correctness="0">Yes, they were the earliest mammals</answer>
+					<answer correctness="5">No, they were reptiles</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+			<worksheetQuestion>
+					<text>How many years ago did dinosaurs live?</text>
+					<answer correctness="5">60 million years ago</answer>
+					<answer correctness="0">10 thousand years ago</answer>
+					<answer correctness="0">500 years ago</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What is the name of a small dinosaur?</text>
+					<answer correctness="5">Compsognathus</answer>
+					<answer correctness="0">Apatosaurus</answer>
+					<answer correctness="0">Hedgehog</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What does the term 'dinosaur' mean?</text>
+					<answer correctness="5">Terrible lizard</answer>
+					<answer correctness="0">Flying reptile</answer>
+					<answer correctness="0">Sharp Teeth</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>Which animals living today do scientists think are most like a dinosaur?</text>
+					<answer correctness="5">Birds</answer>
+					<answer correctness="0">Sharks</answer>
+					<answer correctness="0">Elephants</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>Why is the blue whale a special animal?</text>
+					<answer correctness="5">It is bigger than any dinosaur or animal</answer>
+					<answer correctness="0">It was as big as the biggest dinosaur</answer>
+					<answer correctness="0">It ate dniosaurs</answer>
+			</worksheetQuestion>
+		</chapter>
+		<chapter>
+			<title>Dinosaur origins</title>
+			<article>
+				<text>Where on Earth did the dinosaurs live? Dinosaur fossils have been found on every continent on Earth, even [Antarctica]!
+				How can this be? Many years ago, the continents were united in one big mass called [Pangea]. In the time of Pangea, the Earth was warmer than it is now, with many more active [volcanoes]. This huge continent was a warm place covered with trees and plants.
+				Before the dinosaurs appeared, no mammals lived on Earth. However, there were many reptiles, amphibians, fish and [crustaceans].
+				The closest ancestors of dinosaurs likely looked a lot like [crocodiles]. They ate meat, walked on four legs, and had long tails.
+				Over time, these reptiles evolved to walk on two legs and become the very first dinosaurs. These dinosaurs were small and fast, about the size of chickens.These tiny predators become very successful hunters and were able to move all over Pangea. 
+				Millions of years passed, and dinosaurs adapted to many different environments. Their bodies evolved into the shapes we know today. Some stayed small, others became huge. Some adapted to walk on four legs and eat plants, some grew sharp teeth and preyed on other dinosaurs.
+				As time went on, pieces of Pangea drifted apart and became the continents we live on today. The [skeletons] of the dinosaurs that had lived there millions of years ago remained in the rocks as fossils. So, we can still find bones in the Antarctic ice from animals that lived there when it was a jungle!
+				Many dinosaur bones have been found in rocky areas, where wind and rain washed away the rock to expose the bones inside. China's Gobi Desert and the badlands of Montana are two dry, rocky places where many famous dinosaurs have been found.</text>
+                <image><file>antarctica.jpg</file><desc>The only land animals in Antarctica today are birds and seals.</desc></image>
+				<image><file>pangea.jpg</file><desc>Pangea was a massive supercontinent containing all of the current continents.</desc></image>
+				<image><file>volcano.jpg</file><desc>Volcanoes created smoke and pollution which kept the Earth warmer in ancient times.</desc></image>
+				<image><file>trilobite.jpg</file><desc>Ancient hard-shelled creatures like this trilobite have been found in great numbers.</desc></image>
+				<image><file>shark.jpg</file><desc>Like sharks, crocodiles have not changed their shape in millions of years!</desc></image>
+				<image><file>skeleton.jpg</file><desc>These skeletal dinosaur remains were found in China.</desc></image>
+			</article>
+			<lecture>
+				<title>Where Did Dinosaurs Live?</title>
+				<text>Long ago, before the first dinosaurs, the earth was warmer and covered with plants and [farms]. Huge volcanoes created [thunder], which created a warmer climate. All of the continents we know today were collected in one big mass which we call [Thunderdome]. This mass was so large that we call it a [microcontinent]! The first dinosaurs appeared in the jungles of Pangea, evolving from reptiles which looked like [bears]. Some of the first dinosaurs were small, but could [grow taller] to avoid predators. Since Pangea was made up of all the continents combined, early dinosaurs moved to all parts of Pangea and adapted in unique ways. Over millions of years, the continents began to [spin], and are now separated by [rivers]. So even though Antarctica is covered in ice today, it was once a jungle where many dinosaurs lived. Humans have been finding dinosaur bones for many centuries, which early cultures may have thought were the bones of [marsupials] or giants. Now, some of the most famous dinosaur finds come from places like Montana and [the Moon], but dinosaur bones and other fossils have been found almost every place on earth.
+				</text>
+				<keywordSet word="jungles">
+					<word>deserts</word>
+					<word>playgrounds</word>
+				</keywordSet>
+				<keywordSet word="lava and smoke">
+					<word>earthquakes</word>
+					<word>lighning</word>
+				</keywordSet>
+				<keywordSet word="Pangea">
+					<word>Pangolin</word>
+					<word>Panegyric</word>
+				</keywordSet>
+				<keywordSet word="supercontinent">
+					<word>supergiant</word>
+					<word>supermarket</word>
+				</keywordSet>
+				<keywordSet word="crocodiles">
+					<word>sharks</word>
+					<word>chickens</word>
+				</keywordSet>
+				<keywordSet word="run fast">
+					<word>change color</word>
+					<word>spit acid</word>
+				</keywordSet>
+				<keywordSet word="drift apart">
+					<word>shrink</word>
+					<word>change color</word>
+				</keywordSet>
+				<keywordSet word="oceans">
+					<word>bridges</word>
+					<word>deserts</word>
+				</keywordSet>
+				<keywordSet word="dragons">
+					<word>aliens</word>
+					<word>scientists</word>
+				</keywordSet>
+				<keywordSet word="China">
+					<word>Chicago</word>
+					<word>Disneyland</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Do continents really move?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, but very, very slowly.</answer>
+					<answer correctness="0">No, they stopped moving about 200 million years ago.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Did dinosaurs live in America?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, both Tyrannosaurus and Triceratops lived in America.</answer>
+					<answer correctness="0">No, America's climate was not right for the dinosaurs.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Did dinosaurs eat fish?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, there were many fish during the time of the dinosaurs.</answer>
+					<answer correctness="0">No, dinosaurs were too slow and not smart enough to catch fish.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Are crocodiles dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="1">No, because crocodiles are still alive today.</answer>
+					<answer correctness="5">No, crocodiles are a different kind of reptile.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Weren't the dinosaurs really slow and dumb?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, some were very fast, and we can't tell how smart they were.</answer>
+					<answer correctness="0">Yes, they were not intelligent enought to survive.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Can I find dinosaur bones?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, some places have many fossils; check with your local museum.</answer>
+					<answer correctness="0">No, only scientists are allowed to dig up bones.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Was Antarctica really a jungle once?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, a long time ago. It was much further north and much warmer than it is today.</answer>
+					<answer correctness="0">No, it's always been a cold, rocky place where nothing has ever lived.</answer>
+				</studentQuestion>
+			</lecture>
+			<worksheetQuestion>
+					<text>What was Pangea made of?</text>
+					<answer correctness="5">All the continents squished together</answer>
+					<answer correctness="0">A bunch of jungles</answer>
+					<answer correctness="0">Pangea was made of dinosaurs</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>When did mammals first appear on earth?</text>
+					<answer correctness="5">Long after the dinosars</answer>
+					<answer correctness="0">Long before the dinosaurs</answer>
+					<answer correctness="0">2000 years ago</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What was the climate like when the dinosaurs lived?</text>
+					<answer correctness="5">Warmer than it is today</answer>
+					<answer correctness="0">Colder than it is today</answer>
+					<answer correctness="0">Mostly sunny and windy</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What continents did dinosaurs live on?</text>
+					<answer correctness="5">All of them</answer>
+					<answer correctness="0">North America, China and Antarctica</answer>
+					<answer correctness="0">Every one except Australia</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>Many dinosaur skeletons are found in ____ areas.</text>
+					<answer correctness="5">Rocky</answer>
+					<answer correctness="1">Jungle</answer>
+					<answer correctness="0">Playground</answer>
+			</worksheetQuestion>
+		</chapter>
+
+		<chapter>
+			<title>All about fossils</title>
+			<article>
+				<text>When we think about dinosaurs, we often think of the dinosaur fossils which are found buried in the earth. A fossil is a piece or an imprint of a living thing which has been preserved in rock.
+				Some pieces, like shells, survive inside the rock, some pieces [become rock], and some leave impressions in mud which are preserved. Even bugs preserved in [amber] are fossils.
+				As living things die they are covered in sand and mud. Newer sand and mud covers the old, forming layers. Some of these layers are preserved formillions of years and fossilize into rock. When scientists dig into the rock, they look at the layers and the living things that were preserved in them. In this way, we know what plants and animals lived at what times. This is the [fossil record].
+				We know a lot about dinosaur bones because bone lasts a long time, helping it to absorb minerals and fossilize. Skin and feathers don't fossilize very often. Scientists rely on rare impressions of [dinosaur skin] to tell them what it was like. Because we can only see an imprint of dinosaur skin, no one knows what colors the dinosaurs were! 
+				In order for a fossil of a dinosaur or other land animal to form, the animal had to have been covered with sand or mud very quickly after it died. If the environment was just right, the bones would absorb minerals and become more like rock than bone, allowing them to last millions of years. You can imagine how rarely fossilization has happened!
+				However, most fossils are not parts of dinosaurs. Huge numbers of fossils of tiny sea creatures exist, like spiral-shelled [ammonites]. The hard shells of millions of sea creatures are what make up the [chalk cliffs] found in parts of Europe. 
+				Chalk itself is a mineral composed of calcite, which comes from the shells of fossilized sea creatures. Blackboard chalk is man-made though, so teachers aren't writing with fossils!</text>
+				<image><file>petrifiedwood.jpg</file><desc>Petrified wood is wood which has been completely replaced with minerals, and turned to stone.</desc></image>
+				<image><file>amber.jpg</file><desc>Amber is preserved tree sap. It can be many colors, and is sometimes made into jewelery.</desc></image>
+				<image><file>fossilrecord.jpg</file><desc>The older the layer, the lower down it will be. </desc></image>
+				<image><file>dinosaurskin.jpg</file><desc>Dinosaur skin was sometimes rough and pebbled, sometimes smooth or scaly.</desc></image>
+				<image><file>ammonite.jpg</file><desc>Ammonites were early relatives of squids and octopi. </desc></image>
+				<image><file>chalkcliffs.jpg</file><desc>Chalk cliffs erode easily, exposing fossils of sponges, sea urchins and other sea creatures.</desc></image>
+			</article>
+			<lecture>
+				<title>How are Fossils Made?</title>
+				<text>How do we know anything about prehistoric life? When living things die, they [shrink], so it must be very rare for any part of a living thing to survive after it dies. However, [fires] and minerals can last millions of years without decaying. The parts of animals that are made mostly of minerals include bones and [organs], which survive in layers of mud and rock as fossils. More rarely, parts of plants and animals which are [sparkly], like skin and leaves, make [tunnels] in mud which hardens into rock. Petrified [soap] is a special fossil because it turns into rock from the inside out. When wood is soaked in water rich in minerals for many years, the minerals enter the plant's cells and create molds of them. Every tiny [bone] in the wood becomes a fossil. Most of the fossils we find are parts of [dinosaurs], not huge animals. Life began in the ocean, so many more animals have lived in the sea than on land. The shells of dead sea animals formed thick layers on the ocean floor, which over time were compressed into what we now call [asphalt]. It is much easier for fossils to form underwater than on land, which means that dinosaur fossils are really special and rare. Dinosaurs and other organisms had to be quickly covered in [frosting] and left undisturbed to even have a chance at becoming a fossil!
+				</text>
+				<keywordSet word="decay">
+					<word>disappear</word>
+					<word>explode</word>
+				</keywordSet>
+				<keywordSet word="rocks">
+					<word>wood</word>
+					<word>ice</word>
+				</keywordSet>
+				<keywordSet word="hard shells">
+					<word>muscles</word>
+					<word>nerves</word>
+				</keywordSet>
+				<keywordSet word="soft">
+					<word>pink</word>
+					<word>brittle</word>
+				</keywordSet>
+				<keywordSet word="imprints">
+					<word>handprints</word>
+					<word>drawings</word>
+				</keywordSet>
+				<keywordSet word="wood">
+					<word>plastic</word>
+					<word>rock</word>
+				</keywordSet>
+				<keywordSet word="cell">
+					<word>hole</word>
+					<word>vein</word>
+				</keywordSet>
+				<keywordSet word="sea creatures">
+					<word>scientists</word>
+					<word>insects</word>
+				</keywordSet>
+				<keywordSet word="chalk">
+					<word>steel</word>
+					<word>rubber</word>
+				</keywordSet>
+				<keywordSet word="sediment">
+					<word>leaves and branches</word>
+					<word>lava</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Why do dinosaur bones look like rocks?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Bones absorb minerals as they fossilize, making them more like rock than bone.</answer>
+					<answer correctness="0">Fossilized bone changes color, but is just like regular bone.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why don't we know what colors dinosaurs were?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Because dinosaur skin cannot survive intact for millions of years.</answer>
+					<answer correctness="0">Because dinosaur skin changes color when it fossilizes.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>If dinosaur fossils are so rare, why do we find so many of them?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Because dinosaurs lived for millions of years, and we know where to look.</answer>
+					<answer correctness="0">Because scientists are trying to keep people from owning their own fossils.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Are all fossils buried really deep underground?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Sometimes, but erosion can also bring them to the surface.</answer>
+					<answer correctness="2">Yes, they always take a lot of digging to find.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Is the fossil record the same everywhere?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, different places have layers that look different.</answer>
+					<answer correctness="0">Yes, because of volcanic eruptions.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why aren't there fossils of people and modern animals?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Becuase fossilization takes thousands of years.</answer>
+					<answer correctness="0">Because the climate is no longer right for fossilization.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Does wood petrify faster than bone?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, because wood is spongy and absorbs minerals quickly.</answer>
+					<answer correctness="0">No, because bones have smaller cells than wood does.</answer>
+				</studentQuestion>
+			</lecture>
+			<worksheetQuestion>
+					<text>Most fossils are from what kind of animal?</text>
+					<answer correctness="5">Hard-shelled sea creatures</answer>
+					<answer correctness="0">Reptiles and mammals</answer>
+					<answer correctness="0">Plants and trees</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>How did dinosaurs become fossils?</text>
+					<answer correctness="5">They were quickly buried after they died and  were left undisturbed.</answer>
+					<answer correctness="0">They were eaten by other dinosaurs.</answer>
+					<answer correctness="0">They were left out in the sun to dry after they died.</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>What parts of living things are the most likely to fossilize?</text>
+					<answer correctness="5">Hard parts like bones, shells and wood.</answer>
+					<answer correctness="0">Soft parts like skin and muscles.</answer>
+					<answer correctness="0">Individual cells of the plant or animal.</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+					<text>How is the fossil record arranged?</text>
+					<answer correctness="5">Older fossils are buried underneath newer fossils.</answer>
+					<answer correctness="0">Newer fossils are buried underneath older fossils.</answer>
+					<answer correctness="0">All the fossils are on top of the rock.</answer>
+			</worksheetQuestion>
+		</chapter>
+		<!--
+		<chapter>
+			<title>The Triassic period</title>
+			<article>
+            <text>Just before the Triassic period, there was a massive extinction of life on earth. Prehistoric animals like the trilobite went extinct, but this paved the way for the evolution of the dinosaurs and mammals.
+			The Triassic was from about 250-200 million years ago.
+			The first plesiosaurs and icthyosaurs lived in the oceans
+			Archosaurs were common, walked on two legs like an ostrich, had small front legs. Some were crocodilian, and had short legs like crocodiles and alligators.
+			The first turtles, frogs, and lizards appeared. The first mammals appeared in the late Triassic, and were mostly small and nocturnal.
+			Another extinction at the end of the Triassic, because of major volcanic eruptions. Some repiles, like Dimetrodon, went extinct, but many mammals and dinosaurs survived and went on to flourish in the Jurassic period.</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The Jurassic period</title>
+			<article>
+            <text>The supercontinent of Pangea broke up.
+			Great diversity of aquatic reptiles like icthyosaurs.
+			Warm, humid climate. This was "the age of reptiles"
+			On land, large herbivores flourished, especially the giant sauropods like brachiosaurus, diplodocus, and apatosaurus. They ate  the fields of ferns that grew during this period, as well as trees that looked like modern-day pine and palm trees. Large predators like allosaurus preyed upon these giants.
+			Pterosaurs ruled the skies, although the first birds evolved at the end of the Jurassic.
+			Many of the enourmous sauropods and setgosaurus-like dinosaurs died out at the end of the Jurassic.</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The Cretaceous Period</title>
+			<article>
+            <text>During the cretaceous, dinosaurs diversified. More huge predators, like Tyrannosaurus rex, evolved to prey upon armored herbivores like ankylosaurus and triceratops. Duck-billed dinosaurs like maiasaurus and parasaurolophus travelled in large herds with their families.
+			In the seas, sharks just like the ones we know today became common, as well as rays and fish.
+			Ferns and palms were replaced with flowering plants. The rise of insects like bees helped these plants to spread and evolve quickly.
+			Mammals continued to evolve, often ate the eggs of dinosaurs and early birds.
+			65 million years ago, a massive extinction occurred, killing off all of the dinosaurs. This event marked the end of the Cretaceous period, and the end of the Age of the Dinosaurs.</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>Dinosaur anatomy</title>
+			<article>
+            <text>Warm/cold blooded
+			Eggs/egg fossils
+			Skeletons/hip structure more like a bird than a lizard
+			Lifespan/saurupods ~100 years, smaller-shorter
+			Many defenses and weapons</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>Dinosaur society</title>
+			<article><text>Some dinosaurs lived in herds
+            How dinosaurs took care of their babies
+            Different from lizards</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>Dinosaur food</title>
+			<article><text>Plant-eaters
+            Hunters
+            Scavengers</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		<chapter>
+			<title>The end of the dinosaurs</title>
+			<article><text>Regular extinctions marked prehistoric periods
+            Cooler environment
+            Competition from mammals
+            Meteor strike</text>
+			</article>
+			<lecture>
+				<title>title</title>
+				<text>text...
+				</text>
+				<keywordSet word="millions">
+					<word>thousands</word>
+					<word>gazillions</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>Did humans evolve from dinosaurs?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">No, dinosaurs went extinct. Human evolved from mammals</answer>
+					<answer correctness="0">Yes, we evolved from a small dinosaur called Compsognathus</answer>
+				</studentQuestion>
+			</lecture>
+		</chapter>
+		-->
+	</module>
+</myschool>

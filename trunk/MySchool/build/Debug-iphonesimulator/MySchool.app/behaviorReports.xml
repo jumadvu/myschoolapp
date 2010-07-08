@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<myschool>
+	<negative>
+		<report>
+			<text>studentname got in a fight on the playground during recess today.</text>
+			<correct>I must talk to studentname about how we resolve problems peacefully at MySchool.</correct>
+			<wrong>I must reprimand the other child involved as it must have been his/her fault.</wrong>
+		</report>
+		<report>
+			<text>studentname shared lots of her friend Jenny's secrets with the whole class. Jenny became very upset and had to be sent home.</text>
+			<correct>I must talk to studentname about why this really hurt Jenny's feelings.</correct>
+			<wrong>Not a big deal. I guess Jenny won't be telling her secrets to anyone anymore.</wrong>
+		</report>
+		<report>
+			<text>studentname keeps reporting to me and the other teachers about some of the not so great things that some kids are doing in the school.</text>
+			<correct>While I realize that it is often important to tell a grownup about dangerous or hurtful situations, I should talk to studentname about the difference between tattling and asking an adult for help.</correct>
+			<wrong>I should tell studentname to keep up the good work and continue monitoring other students on my behalf.</wrong>
+		</report>
+		<report>
+			<text>studentname was very loud and disruptive during reading time in the library today.</text>
+			<correct>I must talk to studentname about why it is important to be quiet during reading time.</correct>
+			<wrong>I must tell studentname to bring his iPod and listen to music instead of being loud during reading time.</wrong>
+		</report>
+		<report>
+			<text>studentname stole another student's hat at recess and threw it in the dirt.</text>
+			<correct>I must talk with studentname about treating others' belongings with respect.</correct>
+			<wrong>The other student must have instigated studentname so I must question the other student first.</wrong>
+		</report>
+		<report>
+			<text>studentname was running through the halls today and knocked down a first-grader named Jimmy.</text>
+			<correct>I must talk with studentname that running in the hallways is dangerous and makes sure studentname apologizes to Jimmy.</correct>
+			<wrong>I must tell studentname to run in the halls only when there are no first-graders around.</wrong>
+		</report>
+		<report>
+			<text>studentname threw potato chips all over the cafeteria today.</text>
+			<correct>I must talk with studentname and explain that we should treat our school, including the cafeteria, with respect and not throw food items or trash in undesignated places.</correct>
+			<wrong>I must ask studentname if there was a food fight and who won?</wrong>
+		</report>
+		<report>
+			<text>studentname threw a rolled up piece of paper at Sally during recess. studentname claims he was just trying to get her attention.</text>
+			<correct>I must explain to studentname that throwing items at other students is impolite and improper.</correct>
+			<wrong>I must tell studentname to shout Sally's name repeatedly if studentname wants to get her attention rather than rolling up pieces of paper and throwing them at her.</wrong>
+		</report>
+		<report>
+			<text>studentname has been late to school more than once this week.</text>
+			<correct>I should talk to studentname to make sure to go to bed early.</correct>
+			<wrong>I should buy studentname a new alarm clock.</wrong>
+		</report>
+		<report>
+			<text>studentname climbed the fence and left the school grounds to retrieve a soccer ball during lunch recess today.</text>
+			<correct>I must go over the school safety rules with studentname to ensure studentname's safety while at school.</correct>
+			<wrong>I must tell studentname that I like climbing fences too and next time we can to do together.</wrong>
+		</report>
+		<report>
+			<text>studentname was using her cell phone during class today.</text>
+			<correct>I must talk to studentname about the school rules on cell phones.</correct>
+			<wrong>I must tell studentname that texting in class is ok but not talking on the phone.</wrong>
+		</report>
+		<report>
+			<text>studentname is bullying some of the smaller kids in the playground again.</text>
+			<correct>I must explain to studentname that bullying is not allowed at MySchool and make sure studentname apologizes to the other kids.</correct>
+			<wrong>I must tell studentname that a little bullying helps the smaller kids get tougher but not to overdo it.</wrong>
+		</report>
+		<report>
+			<text>studentname was squirting waterguns at students in the hallway.</text>
+			<correct>I must explain to studentname that squirting waterguns is not only not nice, but that people can slip on the water on the floor and seriously hurt themselves.</correct>
+			<wrong>I should take away the watergun from studentname and use it myself when kids are misbehaving.</wrong>
+		</report>
+		<report>
+			<text>studentname said a curse word during recess while playing handball.</text>
+			<correct>I must explain to studentname that bad words are not allowed in MySchool and can hurt people's feelings.</correct>
+			<wrong>I must explain to studentname that bad words should be used only when the other kid deserves it.</wrong>
+		</report>
+		<report>
+			<text>studentname brought a whoopee cushion to school today and put it on Taylor's chair as she was about to sit down.</text>
+			<correct>I must explain to studentname that pranks that embarrass fellow classmates can be hurtful and should not be done.</correct>
+			<wrong>I must tell studentname that I used to pull such pranks as a kid too!</wrong>
+		</report>
+		<report>
+			<text>studentname became very upset when he/she lost a game of handball against Suzy and threw the ball across the school field.</text>
+			<correct>I must explain to studentname that it is important to learn sportsmanship and how to lose gracefully.</correct>
+			<wrong>I must tell studentname that if some famous athletes throw tantrums, they can throw tantrums too!</wrong>
+		</report>
+		<report>
+			<text>studentname cut in line at the cafeteria to get lunch.</text>
+			<correct>I should tell studentname that respecting the line is important and everyone will get their turn.</correct>
+			<wrong>I should tell studentname that sometimes I cut in line at the movie theater so sometimes it's ok.</wrong>
+		</report>
+		<report>
+			<text>studentname hit Jose with a pencil.</text>
+			<correct>I should tell studentname to see a teacher when they are upset with a classmate.</correct>
+			<wrong>I should tell studentname that if you hit someone with a pencil, be sure to use the eraser end.</wrong>
+		</report>
+	</negative>
+	<positive>
+		<report>
+			<text>studentname was seen helping a kindergartener to her feet after she fell off the monkey bars.</text>
+			<correct>I should tell studentname that helping others is a great thing and her kind actions were appreciated.</correct>
+			<wrong>I should tell studentname that the kindergartener will learn mental toughness by getting up on her own</wrong>
+		</report>
+		<report>
+			<text>studentname resolved a challenging problem with a classmate through discussion.</text>
+			<correct>I should tell studentname how much I appreciate resolving problems without fighting or using harsh words.</correct>
+			<wrong>I should tell studentname that next time he should propose settling matters by arm wrestling.</wrong>
+		</report>
+		<report>
+			<text>studentname befriended the new student, Ronaldo, and introduced him to some friends.</text>
+			<correct>I should tell studentname that helping new students feel at home is kind and thoughtful.</correct>
+			<wrong>I should tell studentname that studentname should not feel sorry for new students.</wrong>
+		</report>
+		<report>
+			<text>studentname cleared her own lunch mess and some of her friend's in the cafeteria today.</text>
+			<correct>I should tell studentname that treating public places like the cafeteria with respect is greatly appreciated.</correct>
+			<wrong>I should tell studentname that cleaning up is what the janitors are for.</wrong>
+		</report>
+		<report>
+			<text>studentname tutored Lena on some math problems today after school.</text>
+			<correct>I should tell studentname that helping a friend learn helps you learn better too!</correct>
+			<wrong>I should tell studentname that next time studentname should charge Lena for tutoring services.</wrong>
+		</report>
+		<report>
+			<text>studentname showed great honesty today when she turned in a twenty dollar bill that she found in the yard to the office.</text>
+			<correct>I should tell studentname that being honest pays off.</correct>
+			<wrong>I should tell studentname finders keepers, losers weepers!</wrong>
+		</report>
+		<report>
+			<text>studentname won the school four square tournament last Friday. But he didn't brag about it, and showed great humility in accepting the prize.</text>
+			<correct>I should tell studentname that being modest makes studentname a bigger, more respected person.</correct>
+			<wrong>I should tell studentname that he should sometimes be boastful since it's a dog-eat-dog world.</wrong>
+		</report>
+		<report>
+			<text>studentname was runner up in the spelling bee last week, but was very quick to congratulate the winner.</text>
+			<correct>I should tell studentname that displaying sportsmanship makes him/her a more respected person.</correct>
+			<wrong>I should tell studentname that sometimes it's ok to be upset and throw tantrums when you lose.</wrong>
+		</report>
+		<report>
+			<text>studentname consoled a 1st grader who had dropped her lunch onto the ground.</text>
+			<correct>I should tell studentname that displaying empathy for others is admirable.</correct>
+			<wrong>I should tell studentname that having a bleeding heart does not make you more successful in life.</wrong>
+		</report>
+		<report>
+			<text>studentname thanked the janitor today for cleaning the bathroom.  It really made Mr Smith's day.</text>
+			<correct>I should tell studentname that it's important to notice the hard workers around us and his thoughtful behavior did not go unnoticed.</correct>
+			<wrong>I should tell studentname that janitors don't like to talk to kids so he shouldn't thank them anymore.</wrong>
+		</report>
+		<report>
+			<text>studentname volunteered to give a speech on the environment at the school's Earth Day assembly.</text>
+			<correct>I should tell studentname that I appreciate studentname for taking the time to help out for an important cause.</correct>
+			<wrong>I should tell studentname that volunteering is only important in order to get into good colleges.</wrong>
+		</report>
+		<report>
+			<text>studentname and a friend came in to the office at lunch and helped stuff envelopes for the fall PTA fundraising drive.</text>
+			<correct>I should tell studentname that taking time out of the day to help with school events is incredibly appreciated.</correct>
+			<wrong>I should question studentname's motives for wanting to help.</wrong>
+		</report>
+		<report>
+			<text>studentname waited patiently in line to play with the class pet hamster.</text>
+			<correct>I should tell studentname that the patience studentname displayed was appreciated because everyone should have the chance to play with the hamster and in order to do so, we must take turns.</correct>
+			<wrong>I should tell studentname that it's ok to cut in line only when no one is watching.</wrong>
+		</report>
+		<report>
+			<text>studentname waited patiently in line to play handball.</text>
+			<correct>I should tell studentname that the patience studentname displayed was appreciated because everyone should have the chance to play handball and in order to do so, we must take turns.</correct>
+			<wrong>I should tell studentname that it's ok to cut in line only when no one is watching.</wrong>
+		</report>
+		<report>
+			<text>studentname put the art supplies back where they came from in the art cabinet after using them.</text>
+			<correct>I should tell studentname that cleaning up after yourself is important and studentname's actions are exemplary.</correct>
+			<wrong>I should tell studentname that cleaning up is only important when the teacher is watching.</wrong>
+		</report>
+		<report>
+			<text>studentname took care of the school chickens all week without having to be reminded.</text>
+			<correct>I should thank her by giving her some of the chicken's eggs to take home.</correct>
+			<wrong>I should pay her $10 and make it her job.</wrong>
+		</report>
+	</positive>
+</myschool>

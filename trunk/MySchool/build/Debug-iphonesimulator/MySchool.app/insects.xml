@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<myschool>
+<module>
+	<title>Fascinating Insects</title>
+	<superSubject>Biology</superSubject>
+	<gradeLevel>2</gradeLevel>
+	<chapter>
+		<title>The Creepy Tarantula</title>
+		<article>
+			<text>'Tarantula' is the common name for a group of hairy and often very [large spiders]. Approximately 900 different kinds of [tarantulas] have been found. 
+			Tarantulas are hunters. Some tarantulas hunt prey in trees and some hunt on the ground. They feed on many kinds of insects, especially crickets, grasshoppers and cicadas. Tarantulas kept as pets tend to eat between 2 and 6 crickets per week. Although they are very fast and effective hunters, tarantulas have very poor eyesight, and use their sense of touch to sense the world around them. The hairs on their legs act like a cat's whiskers to help them sense touch and movement.
+			All tarantulas can make silk, like other types of spider. They use silk to make shelters like [tube tents] in trees, or to line their burrows if they live on the ground.  They also use silk to [wrap up their prey] before they eat it. When a tarantula captures a live meal, it first bites the prey with its sharp fangs, injecting it with a paralyzing venom. Once the prey is immobilized, the tarantula secretes digestive enzymes into its victim that turn the victim's body into soup. The spider can then suck up its meal using straw-like mouthparts. 
+			These spiders are found in warmer regions around the world, including North America. Tarantulas are [good climbers], so if you have a tarantula as a pet, always be careful when you open the lid, as the tarantula may try to escape.</text>
+			<image><file>bigspider.jpg</file><desc>The biggest Tarantula ever found was over 11 inches across</desc></image>
+			<image><file>tarantula.jpg</file><desc>A tarantula's venom is not life threatening to humans, but it will cause pain and swelling.</desc></image>
+			<image><file>tubetent.jpg</file><desc>A tarantula lines its home with its silk web.</desc></image>
+			<image><file>wrapup.jpg</file><desc>Tarantulas are nocturnal. It's best to feed a pet tarantula at night.</desc></image>
+			<image><file>climber.jpg</file><desc>Some people keep tarantulas as pets, because they are not aggressive spiders and are easy to care for.</desc></image>
+		</article>
+		<lecture>
+			<title>The Creepy Tarantula</title>
+			<text>Tarantuals are a group of spiders which are [smooth] and often very large. Over [19] different species of tarantulas have been found all over the world. 
+			All tarantulas are carnivorous [grass eaters]. Some tarantulas hunt their prey in trees and some hunt on the ground. Tarantulas eat all kinds of insects, especially [rabbits], grasshoppers and cicadas. 
+			All tarantulas can make silk. They use silk to make [banana]-shaped homes in trees, or to line their burrows if they live on the ground. Silk makes climbing in and out of these burrows quicker for the tarantual. Tarantuals also use silk to [frighten] their prey before they eat it. When a tarantula captures a live meal, it first bites the prey with its sharp [knives], injecting it with a paralyzing venom. Once the prey is immobilized, the tarantula injects digestive enzymes into its victim that turn the victim's body into soup. The spider can then suck up its meal using [tongue-like] mouthparts. Fortunately, tarantula venom is not very poisonous to humans!
+			Tarantuals tend to be found in warmer regions around the world; they have been found in deserts, grasslands, and forests. Tarantulas are good [shoppers], so if you have a tarantula as a pet, always be careful when you open the lid, as the tarantula is likely to try to [wrap you up].</text>
+			<keywordSet word="hairy">
+				<word>colorful</word>
+				<word>slimy</word>
+			</keywordSet>
+			<keywordSet word="900">
+				<word>9,000</word>
+				<word>9</word>
+			</keywordSet>
+			<keywordSet word="insect hunters">
+				<word>vegetarians</word>
+				<word>beef eaters</word>
+			</keywordSet>
+			<keywordSet word="crickets">
+				<word>humans</word>
+				<word>ants</word>
+			</keywordSet>
+			<keywordSet word="tube">
+				<word>web</word>
+				<word>leaf</word>
+			</keywordSet>
+			<keywordSet word="wrap up">
+				<word>trip up</word>
+				<word>silence</word>
+			</keywordSet>
+			<keywordSet word="fangs">
+				<word>wit</word>
+				<word>claws</word>
+			</keywordSet>
+			<keywordSet word="straw-like">
+				<word>sticky</word>
+				<word>hairy</word>
+			</keywordSet>
+			<keywordSet word="climbers">
+				<word>diggers</word>
+				<word>story tellers</word>
+			</keywordSet>
+			<keywordSet word="escape">
+				<word>bite you</word>
+				<word>hiss at you</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>What should I do if I see a tarantula when I go hiking?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Keep a good distance away and watch it for a while. It won't bother you unless you disturb it.</answer>
+				<answer correctness="0">Stomp on it and run away as fast as you can.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why do tarantulas make silk?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">They use silk to make their homes and catch their prey</answer>
+				<answer correctness="0">So they can swing on the end of a long silk thread.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Do tarantulas make good pets?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Yes, they are quite easy to care for, but you must learn a lot about them first.</answer>
+				<answer correctness="0">Are you crazy? They are scary, dangerous creatures.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Do tarantulas hunt during the day?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Not usually, they are nocturnal animals.</answer>
+				<answer correctness="0">Yes, they need the light to see their prey.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How many insects do tarantulas eat every week?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">They eat about 4 crickets per week.</answer>
+				<answer correctness="0">They eat 3 insects per day.</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>Where do tarantulas hunt prey their prey</text>
+			<answer correctness="5">In trees and on the ground</answer>
+			<answer correctness="0">In the water</answer>
+			<answer correctness="0">They catch flies in their webs</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>How do tarantulas use their fur?</text>
+			<answer correctness="5">To feel their way around and sense movement</answer>
+			<answer correctness="0">To keep warm at night</answer>
+			<answer correctness="0">To confuse their prey</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Are tarantulas deadly to humans?</text>
+			<answer correctness="5">No, but their venom can cause pain and swelling</answer>
+			<answer correctness="3">No</answer>
+			<answer correctness="0">Yes, we must wipe them out.</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Do tarantulas live in North America?</text>
+			<answer correctness="5">Yes</answer>
+			<answer correctness="0">No</answer>
+			<answer correctness="0">No</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What does a Tarantula's digestive enzyme do?</text>
+			<answer correctness="5">Turns its prey into soup</answer>
+			<answer correctness="0">Paralyzes its prey</answer>
+			<answer correctness="0">Makes the tarantula sleepy</answer>
+		</worksheetQuestion>
+	</chapter>
+	<chapter>
+		<title>Beautiful Butterflies</title>
+		<article>
+			<text>Many people think that [butterflies] are the most beautiful creatures in the world. Butterflies are very closely related to the far less colorful [moths]. A butterfly has four wings which are often patterned and brightly coloured. There are many different types of butterflies, and they all have different patterns and colors. Butterfly watching is a popular hobby. Some people even keep collections of dead butterflies that they have caught. As with most insects, a butterfly's life begins as an egg. Then it hatches into a larva. We call this larva a [caterpillar]. After some time, the larva turns into a [chrysalis]. This is also known as a cocoon. While the caterpillar is in the chrysalis, it becomes a butterfly. The butterfly then hatches from the chrysalis and lays more eggs. Butterflies have very short life spans. They only live about one week! Some species of Butterflies are endangered because of the destruction of forests and grasslands where they live. To help, some people plant a butterfly garden with flowers having lots of nectar for butterflies to feed on. These people often enjoy watching the caterpillars hatch and feed on the plants.  Butterflies have many enemies, including birds, spiders, and frogs. Some butterflies, like the [Monarch] butterfly, taste horrible so that birds will learn not to eat them. Other butterflies use their patterns to confuse predators.</text>
+			<image><file>butterfly.jpg</file><desc>There are over 100,000 types of butterfly</desc></image>
+			<image><file>moth.jpg</file><desc>Moths only fly at night</desc></image>
+			<image><file>caterpillar.jpg</file><desc>Caterpillars eat most kinds of garden plants, so many people think they are pests.</desc></image>
+			<image><file>cocoon.jpg</file><desc>It takes about 10 days for a caterpillar to turn into a butterfly</desc></image>
+			<image><file>monarch.jpg</file><desc>Monarch butterflies taste horrible so that birds will not eat them</desc></image>
+		</article>
+		<lecture>
+			<title>Butterfly</title>
+			<text>Many people think that butterflies are the most [ugly] creatures in the world. Surprisingly, they are very closely related to the far less colorful moth. A butterfly has four wings which are often patterned and brightly coloured. There are many different types of butterflies, and they all have different [size wings]. Because they are so colorful, butterfly watching is a popular hobby. Some people even keep collections of dead butterflies. As with most insects, a butterfly's life begins as an egg. Then it hatches into a larva. You may call this larva a [frog]. After some time, the caterpillar turns into a [mouse]. This is also known as a cocoon. While the caterpillar is in the chrysalis, it becomes a butterfly. The butterfly then hatches from the chrysalis and lays more eggs. The process of changing from one form to another is known as [getting a new outfit]. Butterflies have very short [tails].  They only live about one week! Some species of Butterflies are endangered because of the destruction of the [deserts and oceans] where they live. To help, some people plant a [strawberry patch] with flowers having lots of [caterpillars] for butterflies to feed on.</text>
+			<keywordSet word="beautiful">
+				<word>dangerous</word>
+				<word>speedy</word>
+			</keywordSet>
+			<keywordSet word="colors and patterns">
+				<word>songs</word>
+				<word>hopes and aspirations</word>
+			</keywordSet>
+			<keywordSet word="caterpillar">
+				<word>pigeon</word>
+				<word>cricket</word>
+			</keywordSet>
+			<keywordSet word="chrysalis">
+				<word>ladybug</word>
+				<word>peanut</word>
+			</keywordSet>
+			<keywordSet word="metamorphosis">
+				<word>changing clothes</word>
+				<word>being born again</word>
+			</keywordSet>
+			<keywordSet word="life spans">
+				<word>fangs</word>
+				<word>memories</word>
+			</keywordSet>
+			<keywordSet word="forests and grasslands">
+				<word>houses and schools</word>
+				<word>mountains and valleys</word>
+			</keywordSet>
+			<keywordSet word="butterfly garden">
+				<word>Redwood tree</word>
+				<word>Toadstool</word>
+			</keywordSet>
+			<keywordSet word="nectar">
+				<word>strawberries</word>
+				<word>mushrooms</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>Are butterflies and moths related?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Yes they are.</answer>
+				<answer correctness="0">No, they just look kind of similar.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How many different kinds of butterflies are there in the world?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">About 100,000</answer>
+				<answer correctness="0">About 100</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why are butterflies so colorful?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">It helps camouflage and finding a mate</answer>
+				<answer correctness="0">They eat colorful flowers</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What do butterflies eat?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Nectar and pollen</answer>
+				<answer correctness="0">Small insects like ladybugs</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How long do butterflies live?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">About one or two weeks</answer>
+				<answer correctness="0">About one year</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>What animals eat butterflies?</text>
+			<answer correctness="5">Birds and spiders</answer>
+			<answer correctness="0">Dogs and Cats</answer>
+			<answer correctness="0">Rabbits</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>How long does it take for a moth to turn into a butterfly?</text>
+			<answer correctness="5">About 10 days</answer>
+			<answer correctness="0">One year</answer>
+			<answer correctness="0">5 years</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Why do Monarch butterflies taste so bad?</text>
+			<answer correctness="5">So birds won't eat them</answer>
+			<answer correctness="0">They eat cow poop</answer>
+			<answer correctness="0">They taste better than worms</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What do caterpillars eat?</text>
+			<answer correctness="5">Green leaves</answer>
+			<answer correctness="0">Dead animals</answer>
+			<answer correctness="0">Other caterpillars</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What are the four stages of a butterfly's life?</text>
+			<answer correctness="5">Egg, Caterpillar, Cocoon, Butterfly</answer>
+			<answer correctness="0">Cocoon, Moth, Butterfly, Egg</answer>
+			<answer correctness="0">Body, Legs, Antennae, Wings</answer>
+		</worksheetQuestion>
+	</chapter>
+	<chapter>
+		<title>Buzzing Bees</title>
+		<article>
+			<text>There are many different species of bee. Two of the most common are [bumble bees] and honey bees. The honey bee makes honey and are sometimes kept by humans. Keeping bees to make honey is called [beekeeping]. Many bees are hairy and have yellow and black or orange and black stripes. Many bees have stingers (pointy things, like a [needle]) on the back end of their bodies. If they get confused, angry, or scared they can sting. Bee stings can really hurt. Once a worker bee has stung it dies after a short while, but other bees can sting many times. Some people are very allergic to bee stings and can even die from them. Bees live in highly organized groups called colonies. The home of a bee colony is called a hive. Usually a hive is home to about 12,000 bees. There are three kinds of bees in a honey bee colony. A [queen bee] is the most important bee in the colony because she lays the eggs. She ate a special jelly called royal jelly when she was young. [Worker bees] are females too, and they collect pollen from flowers and fight to protect the colony. Drone bees (males) mate with the queen bee so that she can lay eggs.</text>
+			<image><file>bee.jpg</file><desc>The yellow and black stripes on a bee serve as a warning to other animals</desc></image>
+			<image><file>beekeeper.jpg</file><desc>Bee keepers take great care not to be stung. But even so they do get stung from time to time.</desc></image>
+			<image><file>stinger.jpg</file><desc>Like other insects, the body of a bee can be divided into three parts: the head, thorax, and abdomen</desc></image>
+			<image><file>queenbee.jpg</file><desc>The queen bee is much bigger than all the other bees in the colony.</desc></image>
+			<image><file>honeycomb.jpg</file><desc>Worker bees perform a unique kind of dance that lets other bees know where the best sources of pollen are around the hive.</desc></image>
+		</article>
+		<lecture>
+			<title>Amazing Bees</title>
+			<text>There are about 20,000 species of bee and they are found on all continents except [North America]. Some species of bees, known as [wasps] make honey and are sometimes kept by humans. Keeping bees to make honey is [risky business]. Many bees are hairy and have yellow and black stripes. Many bees have sharp pointy stingers on the back end of their bodies. If they get confused, angry, or scared they can sting. Bee stings can really hurt. Once a worker bee has stung it dies after a short while. Some people are [immune] to bee stings and can even die from them. Bees live in highly organized groups called [democracies]. The home of a bee colony is called a [wasp nest]. There are three kinds of bees in a honey bee colony. A [princess bee] is the most important bee in the colony because she lays the eggs. She ate a special jelly called [fruit jam] when she was young. Worker bees are females too, and they collect [water] from flowers and fight to protect the colony. Drone bees (males) mate with the queen bee so that she can lay eggs.</text>
+			<keywordSet word="Antarctica">
+				<word>Africa</word>
+				<word>Europe</word>
+			</keywordSet>
+			<keywordSet word="honey bees">
+				<word>killer bees</word>
+				<word>yellow jackets</word>
+			</keywordSet>
+			<keywordSet word="called beekeeping">
+				<word>honeycombing</word>
+				<word>asking to get stung</word>
+			</keywordSet>
+			<keywordSet word="honey">
+				<word>beloved</word>
+				<word>dear</word>
+				<word>dearest</word>
+			</keywordSet>
+			<keywordSet word="allergic">
+				<word>craving</word>
+				<word>sensitive</word>
+			</keywordSet>
+			<keywordSet word="colonies">
+				<word>pyramids</word>
+				<word>settlement</word>
+			</keywordSet>
+			<keywordSet word="hive">
+				<word>labyrinth</word>
+				<word>cheerio</word>
+			</keywordSet>
+			<keywordSet word="queen bee">
+				<word>drone</word>
+				<word>king bee</word>
+			</keywordSet>
+			<keywordSet word="royal jelly">
+				<word>golden syrup</word>
+				<word>sweet jam</word>
+			</keywordSet>
+			<keywordSet word="nectar and pollen">
+				<word>seeds</word>
+				<word>baby bees</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>Do all bees sting?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">No, only the worker bees sting.</answer>
+				<answer correctness="0">wrong</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What do the bees do with the pollen and nectar they collect from flowers?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">They feed the queen and use it to make honey</answer>
+				<answer correctness="0">wrong</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why do bees make honey.</text>
+				<studentType>1</studentType>
+				<answer correctness="5">It is how they store their food (nectar)</answer>
+				<answer correctness="0">Because kids love honey</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What should I do if a bee lands on me?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Stay still and calm and wait for it to fly away</answer>
+				<answer correctness="0">Try to swat it with you hand</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Do beekeepers get stung sometimes?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Yes, all beekeepers get stung from time to time.</answer>
+				<answer correctness="0">No. They never go near the hive when the bees are home.</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>What happens to a worker bee after it stings?</text>
+			<answer correctness="5">It dies</answer>
+			<answer correctness="0">It does a bee dance</answer>
+			<answer correctness="0">It goes back to collecting nectar</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What do bees and squirrels have in common?</text>
+			<answer correctness="5">They both store food for the winter</answer>
+			<answer correctness="0">They both like honey</answer>
+			<answer correctness="0">They both watch TV</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What do we call the home of a bee colony?</text>
+			<answer correctness="5">Hive</answer>
+			<answer correctness="0">Nest</answer>
+			<answer correctness="0">Honeycomb</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Why is the queen bee the most important bee in the colony?</text>
+			<answer correctness="5">She will lay the eggs.</answer>
+			<answer correctness="0">She has the biggest stinger</answer>
+			<answer correctness="0">She wears the crown</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What is the purpose of the bee dance?</text>
+			<answer correctness="5">To tell other bees where nectar is?</answer>
+			<answer correctness="0">Celebrate the birth of a baby bee</answer>
+			<answer correctness="0">Nobody knows</answer>
+		</worksheetQuestion>
+	</chapter>
+</module>
+</myschool>
