@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<myschool>
+    <module>
+		<title>Building a Sustainable World</title>
+		<superSubject>What is Sustainability?</superSubject>
+		<gradeLevel>2</gradeLevel>
+		<chapter>
+			<title>You and your environment</title>
+			<article>
+				<text>
+				What do we mean when we say that we want to live in a sustainable way? To sustain means to preserve or support, so by making sustainable actions we help conserve our surroundings and prevent our [natural resources] from disappearing. Thus we help support keeping the world healthy and unchanged.
+				Things we do every day affect the earth and our environment. For instance, the cars and trucks that we drive produce harmful gases that enter Earth's [atmosphere]. These gases form part of what we call greenhouse gases. Greenhouse gases trap [infrared radiation] from the Sun that would have been reflected into space,when the Sun's rays are trapped in the atmosphere, they create heat. Small changes in the temperature of Earth's atmosphere can cause big changes in the climate.
+				The main ways people produce greenhouse gases are by burning [fossil fuels] like gasoline, and by [deforestation]. A 'carbon footprint' is a measure of the greenhouse gases that have been created by an organization, a product, or a person. By reducing the greenhouse gases we create, we lower our carbon footprint and have less of a negative effect on the Earth's climate.
+				If we want to be more sustainable, we need to be mindful first of the [energy] we use. There are two different types of energy sources: renewable sources of energy will never be used up; solar and wind energy are renewable because nothing is destroyed by gathering energy from them. Nonrenewable energy sources include fuels like coal, petroleum, and natural gas. In order to get energy from these substances, they must be burned and used up. Because the supply of these fuels is limited and because we cannot make new fuels synthetically, they are nonrenewable. 
+				Most of the energy we currently use comes from nonrenewable sources, but using renewable energy is more sustainable, as it preserves the Earth's natural resources.
+</text>
+				<image><file>naturalresources.jpg</file><desc>Natural resources are the parts of the Earth which we use, including land, plants, minerals and water.</desc></image>
+				<image><file>atmosphere.jpg</file><desc>The earth's atmosphere is a layer of gases surrounding the planet Earth that is held together by Earth's gravity.</desc></image>
+				<image><file>infrared_dog.jpg</file><desc>Infrared radiation is a type of light which humans cannot see, but which can be used to determine the temperature of objects from far away.</desc></image>
+				<image><file>fossilfuel_coal.jpg</file><desc>Fossil fuels are fuels formed from the fossilized remains of dead plants and animals that have been exposed to the pressure of the earth's crust over hundreds of millions of years!</desc></image>
+				<image><file>deforestation.jpg</file><desc>Deforestation is cutting down and clearing forests to make more room for people or buildings.</desc></image>
+				<image><file>energy_lightning.jpg</file><desc>Chemical energy makes combustion engines work, thermal energy heats our homes, and electromagnetic energy powers the machines around us!</desc></image>
+			</article>
+			<lecture>	
+				<title>Sustainability and Your Environment</title>
+				<text>
+				    Being more sustainable means that we [confuse] our environment and prevent our natural resources from disappearing. Natural resources occur naturally on Earth and are not made by humans; they include things like [sweaters, pants, and dresses]. The things we do [on holidays] impact the earth and our surroundings. Cars and trucks produce pollution whichi increases the amount of [stars] in the atmosphere. We do not create greenhouse gases when we [make a campfire]. Most greenhouse gases are produced by burning fossil fuels. Fossil fuels are formed from the fossilized remains of [bananas] that have been exposed to the pressure of the earth's crust over [one hundred] years! Scientists have found that the presence of more greenhouse gases in Earth's [moon] in recent years has made the planet [more tilted]. A [tree ring] is a measure of the amount of greenhouse gases that have been produced by an organization, a product or a person. In the US, most of our energy comes from [renewable] energy sources. 
+				</text>
+				<keywordSet word="conserve">
+					<word>destroy</word>
+					<word>fight</word>
+				</keywordSet>
+			    	<keywordSet word="wood, metals, and water">
+					<word>books, magazines, and CDs</word>
+					<word>stereos, televisions, and laptops</word>
+				</keywordSet>
+				<keywordSet word="every day">
+					<word>never</word>
+					<word>every ten years</word>
+				</keywordSet>
+				<keywordSet word="greenhouse gases">
+					<word>milky way</word>
+					<word>rainbows</word>
+				</keywordSet>
+				<keywordSet word="walk to the park">
+					<word>ride an airplane</word>
+					<word>heatour houses</word>
+				</keywordSet>
+				<keywordSet word="plants and animals">
+					<word>shoes</word>
+					<word>cars and trucks</word>
+				</keywordSet>
+				<keywordSet word="millions of">
+					<word>a few</word>
+					<word>thousands of</word>
+				</keywordSet>
+				<keywordSet word="atmosphere">
+					<word>core</word>
+					<word>surface</word>	
+				</keywordSet>
+				<keywordSet word="warmer">
+					<word>windier</word>
+					<word>flatter</word>
+				</keywordSet>
+				<keywordSet word="carbon footprint">
+					<word>seismic fault</word>
+					<word>greenhouse gas</word>
+				</keywordSet>
+				<keywordSet word="nonrenewable">
+					<word>green</word>
+					<word>intergalactic</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>How do I create a carbon footprint?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">By leaving the lights on when I leave the room.</answer>
+					<answer correctness="0">By playing jump rope.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why are fossil fuels not renewable?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Fossil fuel takes a very long time for the Earth to create. They are difficult to replenish.</answer>
+					<answer correctness="1">Because fossils are buried deep down in the earth.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why do they call it carbon footprint?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">It refers to how much carbon dioxide is produced when we use energy.</answer>
+					<answer correctness="1">Because dinosaurs left fossil footprints in rocks.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why do we want to be more sustainable?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Because we want to preserve the Earth and our environment.</answer>
+					<answer correctness="3">If we don't then we'll have to move to the moon.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Who is most affected by greenhouse gases and carbon emissions?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Every species living on the planet.</answer>
+					<answer correctness="0">Humans.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>How do greenhouse gases make the earth warmer?</text>
+					<studentType>1</studentType>
+				    <answer correctness="5">By absorbing infrared radiation and trapping its heat in the atmosphere.</answer>
+					<answer correctness="0">By sucking up all the cold air in the atmosphere and pushing it out into space.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why are trees good for the environment?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">They renew our air supply by absorbing carbon dioxide and producing oxygen</answer>
+					<answer correctness="0">They heat up the air around us and make the atmosphere warmer.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Are solar and wind energy both renewable?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, both solar and wind energy are renewable.</answer>
+					<answer correctness="0">No, once we have used them up, they'll be gone forever.</answer>
+				</studentQuestion>
+			</lecture> 
+			<worksheetQuestion>
+				<text>What do we call the gases that absorb sunlight and heat the atmosphere?</text>
+				<answer correctness="5">Greenhouse gases</answer>
+				<answer correctness="0">Ozone</answer>
+				<answer correctness="0">Laughing gases</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call energy sources that cannot be used up?</text>
+				<answer correctness="5">Renewable energy</answer>
+				<answer correctness="0">Happy energy</answer>
+				<answer correctness="0">Toxic energy</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What gas is created when fossil fuels are burned?</text>
+				<answer correctness="5">Carbon dioxide</answer>
+				<answer correctness="0">Oxygen</answer>
+				<answer correctness="0">Helium</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call the activity of cutting down and clearing forests to make more room for people or buildings?</text>
+				<answer correctness="5">Deforestation</answer>
+				<answer correctness="0">City planning</answer>
+				<answer correctness="0">Forest preservation</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call the amount of greenhouse gases that someone or something has created?</text>
+				<answer correctness="5">Carbon footprint</answer>
+				<answer correctness="0">Fossil fuel</answer>
+				<answer correctness="0">Greenhouse effect</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>Where does most of the energy consumed in the US come from today?</text>
+				<answer correctness="5">Fossil fuels</answer>
+				<answer correctness="0">Solar</answer>
+				<answer correctness="0">Wind</answer>
+			</worksheetQuestion>
+		</chapter>
+		<chapter>
+			<title>Things we can do</title>
+			<article>
+				<text>
+				The 'three Rs' describe the three best things we can do to live in a more sustainable way: Reduce, Reuse, and Recycle.
+				[Recycling] is the process of manufacturing new product from old products. Old newspapers can be used to make new newspapers. Old [aluminum] cans can be used to make new aluminum cans. We can recycle almost anything; glass, paper, metal, plastic, textiles, and electronics. Although it  almost always takes less energy to make a product from recycled materials than it does to make it from new materials, recycling does use energy, since old items have to be broken down to be made into new ones.
+				When we reuse things, we reduce the number of products that need to be manufatured, thus saving energy. We reuse items by buying things at garage sales or using things for new purposes. Instead of throwing old things away, see if you can give them to someone who needs them or reuse them in a new way!
+				Reducing our energy consumption is one of the most important ways of being more sustainable. We can reduce fossil fuel use in many ways. Instead of riding in [cars], try walking or riding a bicycle. In addition, by buying more food from [local farms], we don't need trucks to use fuels to ship us food. Buying [seasonal fruits] and vegetables means that they don't have to be shipped from different climates far away.
+				Reducing the electricity we use is also important, since most electricity is produced by fossil fuels. For instance, [compact fluorescent] lightbulbs use much less energy than regular lightbulbs, which saves a lot of money and fuel. It's also important to turn off your electronic appliances when they are not in use. These can include your lights, TV, computer, video games, stereo, ipod and cell phone chargers. Some electronic devices even use energy when they are not turned on, so unplug them. When you reduce your energy use, you reduce pollution and your carbon footprint.</text>
+				<image><file>Recycling_can.jpg</file><desc>Recycling involves processing used materials to create new ones.</desc></image>
+				<image><file>Aluminium.jpg</file><desc>Aluminum is the most abundant metal in the Earth's crust. It is 100% recyclable without any loss of quality.</desc></image>
+				<image><file>car.jpg</file><desc>Cars account for almost a quarter of annual US emissions of carbon dioxide. The US produces about 20% of the world's total carbon dioxide emissions.</desc></image>
+				<image><file>farmersmarket.jpg</file><desc>Food at the grocery store often travels thousands of miles before we buy it. When you buy from local farmers, your food travels much less and is much fresher too.</desc></image>
+				<image><file>seasonal_food.jpg</file><desc>Food is cheapest and freshest when it is in season. For instance, tomatoes are best in the summer and carrots are best in the winter.</desc></image>
+				<image><file>Compact-Fluorescent-Bulb.jpg</file><desc>A compact fluorescent light lasts 8 to 15 times longer than a regular, or incandescent, light bulb.</desc></image>
+
+			</article>
+			<lecture>
+				<title>What we can do to be more sustainable</title>
+				<text>To be more sustainable, we should follow the [three bears]: reduce, reuse, and recycle. [Remodeling] breaks down materials that have already been used to create new products.  [Reduce] is using our old things over again. [Increase] means to practice buying less and using less. When we make paper from recycled paper, we save not only trees but also [tigers]. We can also switch out our old light bulbs for compact fluorescent bulbe. Approximately 90% of the power consumed by [a stereo] is turned into heat, rather than visible light. The average life of a compact fluorescent bulb is [500 times] greater than an incandescent light bulb. You can also buy local ly grown, seasonal food. Often fruits and vegetables at your large grocery store travel [light years]. That creates a big carbon footprint. If you eat [genetically modified food], it's not only helping to reduce carbon footprint but also it's cheap and fresh!
+				</text>
+				<keywordSet word="three R's">
+					<word>three C's</word>
+					<word>three kings</word>
+				</keywordSet>
+				<keywordSet word="Recycling">
+					<word>Cycling</word>
+					<word>Animating</word>
+				</keywordSet>
+				<keywordSet word="Reuse">
+					<word>Refuse</word>
+					<word>Recluse</word>
+				</keywordSet>
+				<keywordSet word="Reduce">
+					<word>Recycle</word>
+					<word>Replace</word>
+				</keywordSet>
+				<keywordSet word="energy">
+					<word>bald eagles</word>
+					<word>people</word>
+				</keywordSet>
+				<keywordSet word="incandescent bulb">
+					<word>hair dryer</word>
+					<word>washing machine</word>
+				</keywordSet>
+				<keywordSet word="8 to 15 times">
+					<word>thousands of times</word>
+					<word>two times</word>
+				</keywordSet>
+				<keywordSet word="thousands of miles">
+					<word>backwards in time</word>
+					<word>millions of miles</word>
+				</keywordSet>
+				<keywordSet word="seasonal food">
+					<word>manufactured candy</word>
+					<word>corn syrup</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>What happens to newspapers when we recycle them?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">They can be made into new newspapers.</answer>
+					<answer correctness="0">They are thrown away and put in a landfill.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Can we recycle aluminum foil?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, Aluminum foil comes from Aluminum which is 100% recyclable.</answer>
+					<answer correctness="0">No, it cannot be recycled because it rusts.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>When I wear hand-me-downs from my older sister, which of the 3 R's is that?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Reuse</answer>
+					<answer correctness="0">Reduce</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>What does EPA stand for?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Environmental Protection Agency</answer>
+					<answer correctness="0">Energy Preservation Alliance</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Was the light bulb Thomas Edison invented incandescent or compact fluorescent?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Incandescent light bulb</answer>
+					<answer correctness="0">Compact fluorescent light bulb</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Are compact fluorescent lights better than incandescent lights?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, they give out the same amount of visible light but use less power and have a longer life.</answer>
+					<answer correctness="2">No, they are more expensive.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>What does it mean when a fruit is seasonal?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">It means that it's the time of year when that fruit is best to harvest.</answer>
+					<answer correctness="2">It means that the fruit tastes good but looks ugly.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>What does it mean when a food item has a lot of carbon footprint?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">It means it had to travel many miles and in the process led to carbon emissions.</answer>
+					<answer correctness="0">It means there were a lot of bugs that left footprints on the food item.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Should we unplug electronic devices when we're not using them?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, some electronic devices even use energy when they are not turned on.</answer>
+					<answer correctness="0">No, electronic devices do not use energy when not in use.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Is it true that cars are NOT a leading cause of greenhouse gas emissions in the US.</text>
+					<studentType>1</studentType>
+					<answer correctness="5">False. Cars account for almost a quarter of annual US emissions of carbon dioxide (CO2).</answer>
+					<answer correctness="0">True. Cars emit much less greenhouse gases than airplanes and other vehicles.</answer>
+				</studentQuestion>
+			</lecture>
+			<worksheetQuestion>
+				<text>What do we call the activity of processing used materials to create new ones?</text>
+				<answer correctness="5">Recycling</answer>
+				<answer correctness="0">Waste Hierarchy</answer>
+				<answer correctness="0">Garbage Collection</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What light bulbs allow us to save energy in our every day lives?</text>
+				<answer correctness="5">Compact fluorescent lights</answer>
+				<answer correctness="0">Incandescent lights</answer>
+				<answer correctness="0">Traffic lights</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do the 3 Rs of Reduce, Reuse and Recycle refer to?</text>
+				<answer correctness="5">Waste Hierarchy</answer>
+				<answer correctness="0">Food Chain</answer>
+				<answer correctness="0">Circle of Life</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>In an incandescent light bulb, what percentage of the power consumed is emitted as heat rather than light?</text>
+				<answer correctness="5">90 %</answer>
+				<answer correctness="0">0 %</answer>
+				<answer correctness="0">100 %</answer>
+			</worksheetQuestion>
+		</chapter>
+
+		<chapter>
+			<title>Rainforests</title>
+			<article>
+				<text>
+				Rainforests are forests with very [high rainfall]. There are two types of rainforests: tropical and temperate. [Tropical rainforests] are rainforests in warm regions, found near the [equator]. Temperate rainforests are found in cooler regions with defined seasons, including North America, Europe, and East Asia.
+				More than half of the world's species live in the rainforest. It has been estimated that many millions of species of plants, insects and [microorganisms] are still undiscovered. This great variety of species has benefits for humans; tropical rainforests are called the world's largest pharmacy because over one quarter of natural medicines are discovered there. 
+				Rainforests are responsible for 28% of the world's oxygen turnover. This occurs through a process called [photosynthesis], in which plants convert carbon dioxide into oxygen. Dense rainforests are formed when the leaf [canopy] of tall trees is destroyed or thinned and the ground beneath is overtaken by a dense growth of vines, shrubs and small trees. The area thus becomes a dense jungle.  
+				Unfortunately, rainforests have been shrinking due to deforestation. Biologists have estimated that large numbers of species are being driven to [extinction] as rainforest land is cleared for use as farmland. 
+				Tropical rainforests are a valuable part of Earth's ecosystem. They provide a home for many interesting types of animals and plants. The large number of trees in the rainforest help to absorb carbon dioxide from the atmosphere, which reduces pollution and helps to stop global warming.
+				</text>
+				<image><file>rainfall.jpg</file><desc>Normal annual rainfall for a rainforest is between 68 and 78 inches.</desc></image>
+				<image><file>amazon.jpg</file><desc>The Amazon rainforest in South America is the largest and most species-rich tropical rainforest in the world.</desc></image>
+				<image><file>equator.jpg</file><desc>The equator is an imaginary line on the Earth's surface that divides the earth into Northern and Southern hemispheres.</desc></image>
+				<image><file>ecoli.jpg</file><desc>A microorganism is an organism that is too small to be seen by the human eye. Bacteria and fungi are microorganisms.</desc></image>
+				<image><file>photosynthesis.png</file><desc>In photosynthesis, carbon dioxide is converted into energy in the form of sugars and oxygen. It occurs in plants, algae and many species of bacteria.</desc></image>
+				<image><file>canopy.png</file><desc>The canopy is the layer of branches and leaves formed by closely spaced trees. Many plants and animals live in the rainforest canopy.</desc></image>
+				<image><file>dinosaur.jpg</file><desc>Extinction occurs when all members of a species die out. For instance, dinosaurs became extinct and no longer exist.</desc></image>
+			</article>
+			<lecture>
+				<title>The Importance of Rainforests</title>
+				<text>Rainforests are a special type of forest; they are very important to the Earth's climate and biodiversity. Rainforests are different from other forests in that they  have many tall trees, [dry] climates and lots of [snow]. Rainforests are found in Africa, Asia, Australia and Central and South America. The largest rainforest in the world is [the Sahara desert]. 
+				Rainforests have high [cholesterol], which refers to all the living things like plants, animals and fungi found in an ecosystem. Earth's rainforests are home to [none] of the world's species of plants and animals. Tropical rainforests have been called the "world's largest [playground] because over one quarter of natural medicines have been discovered there.  
+				One reason for the vast growth of rainforests is that they receive a lot of [rainbows]. Plants convert this light into energy through the process of [carbonation]. In the rainforest, most plant and animal life is not found on the forest floor but in the leafy world known as the [umbrella]. Many fascinating animals including monkeys, frogs, lizards, birds, snakes and sloths live in the canopy. 
+				In addition to housing some of the Earth's rarest species, rainforests play an important part in regularting the Earth's climate. Rainforests prevent global warming and help stabilize the climate by absorbing vast amounts of [nitrogen] from the atmosphere. 
+				</text>
+				<keywordSet word="warm">
+					<word>windy</word>
+					<word>cool</word>
+				</keywordSet>
+				<keywordSet word="rain">
+					<word>hail</word>
+					<word>clouds</word>
+				</keywordSet>
+				<keywordSet word="the Amazon rainforest">
+					<word>North Pole</word>
+					<word>Sequoia national forest</word>
+				</keywordSet>	
+				<keywordSet word="biodiversity">
+					<word>precipitation</word>
+					<word>fidelity</word>
+				</keywordSet>							
+				<keywordSet word="more than half">
+					<word>a few</word>
+					<word>all</word>
+				</keywordSet>
+				<keywordSet word="pharmacy">
+					<word>candy store</word>
+					<word>super market</word>
+				</keywordSet>
+				<keywordSet word="sunlight">
+					<word>attention</word>
+					<word>water</word>
+				</keywordSet>
+				<keywordSet word="photosynthesis">
+					<word>digestion</word>
+					<word>exercise</word>
+				</keywordSet>
+				<keywordSet word="canopy">
+					<word>calliope</word>
+					<word>ceiling</word>
+				</keywordSet>
+				<keywordSet word="carbon dioxide">
+					<word>hydrogen</word>
+					<word>acid rain</word>
+				</keywordSet>
+				<studentQuestion>
+					<text>How do rain forests help stop global warming?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Plants absorb carbon dioxide, a 'greenhouse gas' that contributes to global warming.</answer>
+					<answer correctness="0">Because it's warm in the rain forest, and all the animals there like warmth.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Can deforestation lead to certain species disappearing forever?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes, when we get rid of forests, many species lose their homes and can become extinct.</answer>
+					<answer correctness="0">No, most animals can adapt and find another home easily.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why do rainforests have so many kinds of plants and animals?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">The sunlight helps plants grow and the canopy provide many more places for plants to grow and animals to live.</answer>
+					<answer correctness="0">Because rainforests do not support many large predators which eat other animals.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Why are rainforests being destroyed?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Humans cut down rainforests to make more room for themselves.</answer>
+					<answer correctness="0">Because they are not very important for therest of the planet.</answer>
+				</studentQuestion>
+				<studentQuestion>
+					<text>Is a jungle different from a rainforest?</text>
+					<studentType>1</studentType>
+					<answer correctness="5">Yes. A jungle is just a dense tangle of plants, rainforests have a specific climate.</answer>
+					<answer correctness="0">No. they are the same thing.</answer>
+				</studentQuestion>
+			</lecture>
+			<worksheetQuestion>
+				<text>What is the name of the largest rainforest in the world?</text>
+				<answer correctness="5">Amazon</answer>
+				<answer correctness="0">Antarctica</answer>
+				<answer correctness="0">Sahara</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>Where are tropical rainforests typically located?</text>
+				<answer correctness="5">Near the equator</answer>
+				<answer correctness="0">In the south pole</answer>
+				<answer correctness="0">In North America</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>What do we call the death of all members of a species?</text>
+				<answer correctness="5">Extinction</answer>
+				<answer correctness="0">Tragedy</answer>
+				<answer correctness="0">Evolution</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>In the rainforest, most plant and animal life is found in the leafy world known as?</text>
+				<answer correctness="5">the canopy</answer>
+				<answer correctness="0">forest floor</answer>
+				<answer correctness="0">shrub layer</answer>
+			</worksheetQuestion>
+			<worksheetQuestion>
+				<text>The process in which carbon dioxide, water and sunlight are converted into sugars and oxygen is known as?</text>
+				<answer correctness="5">Photosynthesis</answer>
+				<answer correctness="0">Digestion</answer>
+				<answer correctness="0">Greenhouse Effect</answer>
+			</worksheetQuestion>
+		</chapter>
+	</module>
+</myschool>

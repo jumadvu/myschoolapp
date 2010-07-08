@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<myschool>
+	<subject name="Science">
+		<module>
+			<category>Biology</category>
+			<fileName>dinosaurs</fileName>
+			<title>All About Dinosaurs</title>
+		</module>
+		<module>
+			<category>Earth Science</category>
+			<fileName>sustain</fileName>
+			<title>Building a Sustainable World</title>
+		</module>
+		<module>
+			<category>Biology</category>
+			<fileName>insects</fileName>
+			<title>Fascinating Insects</title>
+		</module>
+		<module>
+			<category>Biology</category>
+			<fileName>endangeredspecies</fileName>
+			<title>Endangered Species</title>
+		</module>
+	</subject>
+	<subject name="History">
+		<module>
+			<category>U.S. History</category>
+			<fileName>presidents</fileName>
+			<title>Great Presidents</title>
+		</module>
+		<module>
+			<category>World History</category>
+			<fileName>historicalFigures</fileName>
+			<title>Famous People</title>
+		</module>
+	</subject>
+	<subject name="Math">
+		<module>
+			<category>Fractions</category>
+			<fileName>fractions</fileName>
+			<title>Fractions and Music</title>
+		</module>
+	</subject>
+</myschool>
