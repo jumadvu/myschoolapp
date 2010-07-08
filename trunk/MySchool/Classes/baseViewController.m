@@ -9,11 +9,13 @@
 #import "baseViewController.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import "HelpHome.h"
+#import "PrincipalHelp.h"
 
 @implementation baseViewController
 
 @synthesize mainMenuButton;
 @synthesize backButton;
+@synthesize helpShowing;
 
 -(void)toMainMenu {
 	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -88,7 +90,7 @@
 	myButton.frame = CGRectMake(x, y, 25, 25);
 	myButton.userInteractionEnabled = YES;
 	myButton.tag = helpNum;
-	[myButton addTarget:self action:@selector(toHelp:) forControlEvents:UIControlEventTouchUpInside];  
+	[myButton addTarget:self action:@selector(toPrincipalHelp:) forControlEvents:UIControlEventTouchUpInside];  
 	
 	//add button to view controller
 	[self.view addSubview:myButton];
@@ -102,6 +104,15 @@
 	vc.helpNum = [NSNumber numberWithInt:sender.tag];
 	[delegate.navCon pushViewController:vc animated:YES];
 		
+}
+
+- (void)toPrincipalHelp:(UIButton*)sender {
+	MySchoolAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	PrincipalHelp *vc = [[[PrincipalHelp alloc] initWithNibName:nil bundle:nil] autorelease];
+	vc.helpNum = [NSNumber numberWithInt:sender.tag];
+
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [delegate.navCon presentModalViewController:vc animated:YES];
 }
 
 -(void)raiseMenu:(UIButton*)sender {
