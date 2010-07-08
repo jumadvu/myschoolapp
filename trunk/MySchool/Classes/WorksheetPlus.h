@@ -11,6 +11,6 @@
 
 @interface Worksheet (WorksheetPlus)
 
-+(void)createCompletedWorksheetsForTeacher:(User*)teacher forChapter:(Chapter*)chapter;
++(void)createCompletedWorksheetsForTeacher:(User*)teacher forChapter:(Chapter*)chapter withPoints:(int)lectureScore;
 
 @end

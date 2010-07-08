@@ -19,6 +19,7 @@
 	UIButton *currentButton;
 	NSArray *imageArray;
 	Chapter *chapter;
+	int chapterNum;
 
 }
 
@@ -30,6 +31,7 @@
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) NSArray *imageArray;
 @property (nonatomic, retain) Chapter *chapter;
+@property (nonatomic) int chapterNum;
 
 -(void)loadTextIntoScrollView;
 -(void)arrangeImageArray;

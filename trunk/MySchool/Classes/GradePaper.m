@@ -93,18 +93,18 @@
 
 	NSNumber *gotItRight;
 	if ([value intValue] == 0) {
-		//marked it wrong
+		//marked it as wrong
 		if ([answer.correctness intValue] > 0) {
 			//oops it was a good answer
 			gotItRight = [NSNumber numberWithInt:0];
 		} else {
-			//thats right, it was the wrong answer
+			//thats right, it was a wrong answer
 			gotItRight = [NSNumber numberWithInt:1];
 		}
 	} else {
-		//marked it right
+		//marked it as correct
 		if ([answer.correctness intValue] > 0) {
-			//that's right it was a right answer
+			//that's right it was a good answer
 			gotItRight = [NSNumber numberWithInt:1];
 		} else {
 			//oops, it was a wrong answer

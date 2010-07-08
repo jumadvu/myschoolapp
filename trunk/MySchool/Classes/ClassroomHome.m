@@ -384,12 +384,12 @@
 		[compLesson setUser:delegate.teacher];
 		[compLesson setChapter:chapter];
 
-		//add teacher's points
+		//add teacher's points earned from lecture
 		[delegate.teacher setTotalPoints:[NSNumber numberWithInt:([delegate.teacher.totalPoints intValue] + bonusPoints)]];
 		
 		NSString *msg;
 		
-		//assess the quality of the lecture and assign points
+		//assess the quality of the lecture and assign smarts points to the students
 		if (bonusPoints > 60) {
 			msg = [NSString stringWithFormat:@"Principal Wilson says:\rWow, nice class!.\r Your students are really getting smarter, and you earned %d store credits too! Don't forget to grade the homework!", bonusPoints];
 			[delegate.teacher assignSmartsPoints:2];
@@ -413,7 +413,11 @@
 							  otherButtonTitles:nil];
 		[alert show];
 		[alert release];
-		[Worksheet createCompletedWorksheetsForTeacher:delegate.teacher forChapter:chapter];
+		
+		//create a finished homework "worksheet" for each of this teacher's students
+		[Worksheet createCompletedWorksheetsForTeacher:delegate.teacher forChapter:chapter withPoints:bonusPoints];
+		
+		//This should probably happen on its own thread
 		[ParentEmail sendEmailForChapter:chapter];
 		
 	} else {
@@ -447,8 +451,15 @@
 		vc.student = student;
 		
 		//determine if its a personal question or not
+		//if the student has low respect score, then it is more likely to be a personal question
 		int randomNum = arc4random() % 4;
-		if (randomNum == 1) {
+		
+		NSLog(@"random number %d", randomNum);
+		
+		int politenessScore = (25 *randomNum) + [student.politeness intValue];
+		
+		NSLog(@"random number after modification %d", politenessScore);
+		if (politenessScore < 85) {
 			//personal question
 			vc.whichQuestion = 100;
 		} else {

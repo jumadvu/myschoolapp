@@ -340,10 +340,11 @@
 		[questionMO setQuestion:[tbxml textForElement:[tbxml childElementNamed:@"question" parentElement:interruption]]];
 		[questionMO setCorrect:[tbxml textForElement:[tbxml childElementNamed:@"correct" parentElement:interruption]]];
 		[questionMO setWrong:[tbxml textForElement:[tbxml childElementNamed:@"wrong" parentElement:interruption]]];
-		interruption = [tbxml nextSiblingNamed:@"report" searchFromElement:interruption];
+		interruption = [tbxml nextSiblingNamed:@"interruption" searchFromElement:interruption];
 		count++;
 	}
-		
+	
+	//NSLog(@"how many personal questions loaded? %d", count);
 	//save the managed object
 	NSError *error;
 	if (![moc save:&error]) {
