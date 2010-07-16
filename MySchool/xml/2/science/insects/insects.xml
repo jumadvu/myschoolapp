@@ -19,13 +19,13 @@
 		</article>
 		<lecture>
 			<title>The Creepy Tarantula</title>
-			<text>Tarantuals are a group of spiders which are [smooth] and often very large. Over [19] different species of tarantulas have been found all over the world. 
+			<text>Tarantuals are a group of large spiders which have [spikes] on their bodies. Over [19] different species of tarantulas have been found all over the world. 
 			All tarantulas are carnivorous [grass eaters]. Some tarantulas hunt their prey in trees and some hunt on the ground. Tarantulas eat all kinds of insects, especially [rabbits], grasshoppers and cicadas. 
-			All tarantulas can make silk. They use silk to make [banana]-shaped homes in trees, or to line their burrows if they live on the ground. Silk makes climbing in and out of these burrows quicker for the tarantual. Tarantuals also use silk to [frighten] their prey before they eat it. When a tarantula captures a live meal, it first bites the prey with its sharp [knives], injecting it with a paralyzing venom. Once the prey is immobilized, the tarantula injects digestive enzymes into its victim that turn the victim's body into soup. The spider can then suck up its meal using [tongue-like] mouthparts. Fortunately, tarantula venom is not very poisonous to humans!
-			Tarantuals tend to be found in warmer regions around the world; they have been found in deserts, grasslands, and forests. Tarantulas are good [shoppers], so if you have a tarantula as a pet, always be careful when you open the lid, as the tarantula is likely to try to [wrap you up].</text>
-			<keywordSet word="hairy">
-				<word>colorful</word>
-				<word>slimy</word>
+			All tarantulas can make silk. They use their silk to make [banana]-shaped homes in trees, or to line their burrows if they live on the ground. Silk makes climbing in and out of these burrows quicker for the tarantual. Tarantuals also use silk to [frighten] their prey before they eat it. When a tarantula captures a live meal, it first bites the prey with its sharp [knives], injecting it with a paralyzing venom. Once the prey is immobilized, the tarantula injects digestive enzymes into its victim that turn the victim's body into soup. The spider can then suck up its meal using [tongue-like] mouthparts. Fortunately, tarantula venom is not very poisonous to humans!
+			Tarantuals tend to be found in warmer regions around the world; they have been found in deserts, grasslands, and forests. Tarantulas are good [shoppers], so if you have a tarantula as a pet, be careful as the tarantula is likely to try to [wrap you up].</text>
+			<keywordSet word="hair">
+				<word>slime</word>
+				<word>feathers</word>
 			</keywordSet>
 			<keywordSet word="900">
 				<word>9,000</word>
@@ -128,23 +128,25 @@
 	<chapter>
 		<title>Beautiful Butterflies</title>
 		<article>
-			<text>Many people think that [butterflies] are the most beautiful creatures in the world. Butterflies are very closely related to the far less colorful [moths]. A butterfly has four wings which are often patterned and brightly coloured. There are many different types of butterflies, and they all have different patterns and colors. Butterfly watching is a popular hobby. Some people even keep collections of dead butterflies that they have caught. As with most insects, a butterfly's life begins as an egg. Then it hatches into a larva. We call this larva a [caterpillar]. After some time, the larva turns into a [chrysalis]. This is also known as a cocoon. While the caterpillar is in the chrysalis, it becomes a butterfly. The butterfly then hatches from the chrysalis and lays more eggs. Butterflies have very short life spans. They only live about one week! Some species of Butterflies are endangered because of the destruction of forests and grasslands where they live. To help, some people plant a butterfly garden with flowers having lots of nectar for butterflies to feed on. These people often enjoy watching the caterpillars hatch and feed on the plants.  Butterflies have many enemies, including birds, spiders, and frogs. Some butterflies, like the [Monarch] butterfly, taste horrible so that birds will learn not to eat them. Other butterflies use their patterns to confuse predators.</text>
-			<image><file>butterfly.jpg</file><desc>There are over 100,000 types of butterfly</desc></image>
-			<image><file>moth.jpg</file><desc>Moths only fly at night</desc></image>
+			<text>Many people think that [butterflies] are unique and beautiful creatures, as they have large, brightly-colored wings. Butterflies are very closely related to the far less colorful [moths]. All butterflies have four wings, but their wings come in many different colors and patterns. Butterflies use these colors to blend into their surroundings or confuse animals which want to eat them. Butterflies have many enemies, including birds, spiders, and frogs. Some butterflies, like the [Monarch] butterfly, taste horrible so that birds will learn not to eat them. Big spots on a butterfly's wings can confuse predators into thinking the butterfly is a much larger creature with big eyes.
+			As with most insects, a butterfly's life begins as an egg. Then it hatches into a larva called a [caterpillar]. After some time, the larva forms a hard shell and turns into a [chrysalis]. This is also known as a cocoon. While the caterpillar is in the chrysalis, it becomes a butterfly. The butterfly then hatches from the chrysalis and lays more eggs. 
+			Butterflies have very short life spans. They only live about one week! Some species of Butterflies are endangered because of the destruction of forests and grasslands where they live. To help, some people plant a butterfly garden with flowers having lots of nectar for butterflies to feed on. These people often enjoy watching the caterpillars hatch and feed on the plants. Butterfly watching is a popular hobby. Some people even keep collections of dead butterflies that they have caught. </text>
+			<image><file>butterfly.jpg</file><desc>There are over 100,000 types of butterfly!</desc></image>
+			<image><file>moth.jpg</file><desc>Moths only fly at night; unlike butterflies, they have furry antennae.</desc></image>
 			<image><file>caterpillar.jpg</file><desc>Caterpillars eat most kinds of garden plants, so many people think they are pests.</desc></image>
-			<image><file>cocoon.jpg</file><desc>It takes about 10 days for a caterpillar to turn into a butterfly</desc></image>
-			<image><file>monarch.jpg</file><desc>Monarch butterflies taste horrible so that birds will not eat them</desc></image>
+			<image><file>cocoon.jpg</file><desc>It takes about 10 days for a caterpillar to turn into a butterfly.</desc></image>
+			<image><file>monarch.jpg</file><desc>Monarch butterflies migrate just like birds, travelling south for the winter in huge groups.</desc></image>
 		</article>
 		<lecture>
 			<title>Butterfly</title>
-			<text>Many people think that butterflies are the most [ugly] creatures in the world. Surprisingly, they are very closely related to the far less colorful moth. A butterfly has four wings which are often patterned and brightly coloured. There are many different types of butterflies, and they all have different [size wings]. Because they are so colorful, butterfly watching is a popular hobby. Some people even keep collections of dead butterflies. As with most insects, a butterfly's life begins as an egg. Then it hatches into a larva. You may call this larva a [frog]. After some time, the caterpillar turns into a [mouse]. This is also known as a cocoon. While the caterpillar is in the chrysalis, it becomes a butterfly. The butterfly then hatches from the chrysalis and lays more eggs. The process of changing from one form to another is known as [getting a new outfit]. Butterflies have very short [tails].  They only live about one week! Some species of Butterflies are endangered because of the destruction of the [deserts and oceans] where they live. To help, some people plant a [strawberry patch] with flowers having lots of [caterpillars] for butterflies to feed on.</text>
+			<text>Many people think that butterflies are the most [ugly] creatures in the world. Surprisingly, they are closely related to dull-colored moths. A butterfly has four wings which are often patterned and brightly coloured. There are many different types of butterflies, and they all have different [fingerprints]. As with most insects, a butterfly's life begins as an egg. Then it hatches into a larva, also called a [frog]. After some time, the caterpillar creates a shell around itself and turns into a [mouse]. This is also known as a cocoon. While the caterpillar is in the chrysalis, it becomes a butterfly. The process of changing from one form to another is known as [growing up]. Butterflies have very short [memories]. They only live for about one week! Some species of butterflies are endangered because of the destruction of the [deserts and oceans] where they live. To help, some people plant [hedges] with flowers which will make lots of [fruits and nuts] for butterflies to feed on.</text>
 			<keywordSet word="beautiful">
 				<word>dangerous</word>
 				<word>speedy</word>
 			</keywordSet>
-			<keywordSet word="colors and patterns">
-				<word>songs</word>
-				<word>hopes and aspirations</word>
+			<keywordSet word="colors">
+				<word>behaviors</word>
+				<word>flavors</word>
 			</keywordSet>
 			<keywordSet word="caterpillar">
 				<word>pigeon</word>
@@ -155,30 +157,30 @@
 				<word>peanut</word>
 			</keywordSet>
 			<keywordSet word="metamorphosis">
-				<word>changing clothes</word>
-				<word>being born again</word>
+				<word>becoming mature</word>
+				<word>transference</word>
 			</keywordSet>
 			<keywordSet word="life spans">
 				<word>fangs</word>
-				<word>memories</word>
+				<word>tails</word>
 			</keywordSet>
 			<keywordSet word="forests and grasslands">
 				<word>houses and schools</word>
 				<word>mountains and valleys</word>
 			</keywordSet>
 			<keywordSet word="butterfly garden">
-				<word>Redwood tree</word>
-				<word>Toadstool</word>
+				<word>Redwood trees</word>
+				<word>Toadstools</word>
 			</keywordSet>
 			<keywordSet word="nectar">
-				<word>strawberries</word>
-				<word>mushrooms</word>
+				<word>sandwiches</word>
+				<word>pollen</word>
 			</keywordSet>
 			<studentQuestion>
 				<text>Are butterflies and moths related?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">Yes they are.</answer>
-				<answer correctness="0">No, they just look kind of similar.</answer>
+				<answer correctness="0">No, they just look similar.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>How many different kinds of butterflies are there in the world?</text>
@@ -189,8 +191,8 @@
 			<studentQuestion>
 				<text>Why are butterflies so colorful?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">It helps camouflage and finding a mate</answer>
-				<answer correctness="0">They eat colorful flowers</answer>
+				<answer correctness="5">It helps them hide from predators and find a mate</answer>
+				<answer correctness="0">Butterflies become colorful to match the colorful flowers they eat</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>What do butterflies eat?</text>
@@ -212,16 +214,16 @@
 			<answer correctness="0">Rabbits</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>How long does it take for a moth to turn into a butterfly?</text>
+			<text>How long does it take for a caterpillar to turn into a butterfly?</text>
 			<answer correctness="5">About 10 days</answer>
 			<answer correctness="0">One year</answer>
 			<answer correctness="0">5 years</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>Why do Monarch butterflies taste so bad?</text>
+			<text>Why do Monarch butterflies taste bad?</text>
 			<answer correctness="5">So birds won't eat them</answer>
-			<answer correctness="0">They eat cow poop</answer>
-			<answer correctness="0">They taste better than worms</answer>
+			<answer correctness="0">They never take baths</answer>
+			<answer correctness="0">They eat worms and slugs</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
 			<text>What do caterpillars eat?</text>
