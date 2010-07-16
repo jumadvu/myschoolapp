@@ -961,7 +961,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F5833756117E49A60077F1C8 /* color */,
 				F50B4817111A1368003231FB /* TBXML.m */,
 				AB0999A6116168E100787969 /* TBXML.h */,
 				AB53B3771121F39D0017AFAB /* Library.h */,
@@ -978,7 +977,6 @@
 				AB176523113D719100BA887D /* testing123.xib */,
 				AB07F2131109858000204AFE /* baseViewController.h */,
 				AB07F2141109858000204AFE /* baseViewController.m */,
-				F577F6BB1174F40900387EAE /* day_in_history */,
 				ABCAA67D1116B68000D3956F /* welcome new game */,
 				AB07F25511098B2A00204AFE /* my office */,
 				AB07F25211098B2000204AFE /* classroom */,
@@ -987,7 +985,6 @@
 				AB160EDB11516216004DC0C1 /* store */,
 				AB07F1D61109669200204AFE /* Help */,
 				AB07F1B5110962C700204AFE /* Principals office */,
-				AB34B03D115924EA00BC950F /* music */,
 				F577F81211762CCC00387EAE /* ScoreAnim.h */,
 				F577F81311762CCC00387EAE /* ScoreAnim.m */,
 				ABCF7045118E6598005C3642 /* BarScale.h */,
@@ -1604,6 +1601,9 @@
 		ABAD47271171812E00C33FCA /* activities */ = {
 			isa = PBXGroup;
 			children = (
+				F5833756117E49A60077F1C8 /* color */,
+				F577F6BB1174F40900387EAE /* day_in_history */,
+				AB34B03D115924EA00BC950F /* music */,
 				ABAD472A1171815A00C33FCA /* ActivitiesHome.h */,
 				ABAD472B1171815A00C33FCA /* ActivitiesHome.m */,
 				ABAD472C1171815A00C33FCA /* ActivitiesHome.xib */,
@@ -2313,7 +2313,7 @@
 				GCC_PREFIX_HEADER = MySchool_Prefix.pch;
 				INFOPLIST_FILE = "MySchool-Info.plist";
 				PRODUCT_NAME = MySchool;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B3A3A6E6-9BB1-41BC-B601-2282900801EC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB5FB46D-962D-4BED-829E-1D429432311E";
 				SDKROOT = iphoneos3.2;
 			};
 			name = Debug;
