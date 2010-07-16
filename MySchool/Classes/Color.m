@@ -11,7 +11,7 @@
 
 @implementation Color
 @synthesize redValue, blueValue, greenButton, greenValue, redButton, blueButton, tRed, tBlue, tGreen, level, isLight, points, levVal, pointVal, targetColor, currentColor;
-
+@synthesize instructions;
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -50,7 +50,14 @@
 	[self newTarget];
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+		if (isLight) {
+			instructions.text = @"Click on the light bulbs to select the right combination of colors that, when blended, create the color on the right";
+		} else {
+			instructions.text = @"Click on the paint buckets to select the right combination of colors that, when mixed, create the color on the right";
+		}
 
+}
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -150,6 +157,7 @@
 	//[points dealloc];
 	//[currentColor dealloc];
 	//[targetColor dealloc];
+	[instructions release];
     [super dealloc];
 }
 
