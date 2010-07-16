@@ -17,6 +17,8 @@
 	IBOutlet UILabel *points;
 	IBOutlet UIView *targetColor;
 	IBOutlet UIView *currentColor;
+	IBOutlet UILabel *instructions;
+	
 	int redValue;
 	int greenValue;
 	int blueValue;
@@ -27,6 +29,7 @@
 	int tGreen;
 	bool isLight;
 }
+@property (nonatomic, retain) UILabel *instructions;
 @property (nonatomic, retain) UIButton *redButton;
 @property (nonatomic, retain) UIButton *greenButton;
 @property (nonatomic, retain) UIButton *blueButton;
