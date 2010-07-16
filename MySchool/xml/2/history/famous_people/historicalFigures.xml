@@ -282,9 +282,9 @@
 			<answer correctness="0">Mexico</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>Is Andrew Jackson the first President to invite the public to the White House ball honoring his first inauguration?</text>
-			<answer correctness="5">Yes</answer>
-			<answer correctness="0">No</answer>
+			<text>What did Andrew Jackson think of being compared to a donkey?</text>
+			<answer correctness="5">He was very offended and challenged the people who insulted him to a duel.</answer>
+			<answer correctness="0">He liked being compared to a stubborn donkey and made it his campaign mascot.</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
 			<text>Which former President did Andrew Jackson defeat in the eleciton of 1828?</text>
@@ -296,33 +296,34 @@
 	<chapter>
 		<title>Marie Curie</title>
 		<article>
-            <text>Marie Curie was a physicist and chemist from Poland, who lived and worked in France for much of her life. She was an expert in the field of radioactivity and the first person to win the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [female professor] at the [University of Paris] which she attended as a student and worked for as a researcher. 
-            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her degree and started her important scientific work. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well as discovering two new elements, radium and [polonium]. 
-               Under her direction, the world's first studies into the treatment of cancers using [radiation] were conducted. Curie also pioneered the use of X-ray imaging during World War I for the treatment of wounded soldiers, for which she won the Nobel Prize.
+            <text>Marie Curie was a physicist and chemist from Poland, who lived and worked in France for much of her life. She was an expert in the field of radioactivity and she was also the first person to win the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [female professor] at the [University of Paris] which she attended as a student and worked for as a researcher. 
+            	Marie Curie was born in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her university degree and started her work in chemical research. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well as discovering two new elements, radium and [polonium]. 
+               Under her direction, the world's first studies into the treatment of cancers using [radiation] were conducted. Curie also pioneered the use of X-ray imaging during World War I for the treatment of wounded soldiers, for which she won a Nobel Prize.
                Curie and her husband both were exposed to the then-unknown harmful effects of radiation through their work. Both experienced weakness and anemia from radiation poisoning. Curie died of these effects at the age of 66.
+               Curie's discoveries have been incredibly important in many areas of science; her work has advanced medical science, created new sources of energy and continues to lead humanity to harness the power of the atom. She is widely regarded as one of the greatest scientists of all time. As the first woman to win a Nobel Prize for her research, she is also a great role model for women in science.
 </text>
-			<image><file>nobelprize.jpg</file><desc>The Nobel Prizes are annual international awards given to individuals for important cultural and scientific advances. Thy were established in 1895 by the Swedish chemist Alfred Nobel who was the inventor of dynamite.</desc></image>
-			<image><file>marie.jpg</file><desc>Marie was a trailblazer. She come up against a lot of prejudice just for being a woman throughout her career. Even after winning 2 Nobel Prizes, the French Academy of Sciences refused to elect her as a member for being a woman.</desc></image>			
-			<image><file>sorbonne.jpg</file><desc>The University of Paris was founded in the 11st century and is often referred to as the Sorbonne. The original college of Sorbonne was created for the use of 20 theology students in 1257 and became the most distinguished theological institution in France.</desc></image>
-			<image><file>warsaw.jpg</file><desc>Warsaw is the capital and largest city of Poland. It is located on the Vistula River and was severely damaged during World War II.</desc></image>
-			<image><file>pierre.jpg</file><desc>Pierre, who was actually working on crystals, put his research on hold and joined Marie's research efforts when she discovered elements besides uranium that were radioactive.</desc></image>
-			<image><file>polonium.png</file><desc>Polonium is a highly radioactive chemical element discovered by Marie and Pierre Curie. They named it polonium in honor of her native country of Poland.</desc></image>
-			<image><file>radiationtherapy.png</file><desc>Cancer is a disease that causes cells to grow abnormally and out of control. In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</desc></image>			
+			<image><file>nobelprize.jpg</file><desc>The Nobel Prizes awarded for important cultural and scientific advances. They are named for Swedish chemist Alfred Nobel, the inventor of dynamite.</desc></image>
+			<image><file>marie.jpg</file><desc>Marie faced many prejudices against her gender: even after winning 2 Nobel Prizes, the French Academy of Sciences refused to elect her as a member.</desc></image>			
+			<image><file>sorbonne.jpg</file><desc>The University of Paris, or the Sorbonne, was founded in 1257 as a school of theology and religious studies.</desc></image>
+			<image><file>warsaw.jpg</file><desc>Warsaw is the capital of Poland; it is the largest city on Poland and one of the largest in Europe.</desc></image>
+			<image><file>pierre.jpg</file><desc>Pierre put his own research on hold and joined Marie's research efforts when she discovered new radioactive elements.</desc></image>
+			<image><file>polonium.png</file><desc>Polonium is a highly radioactive chemical element. Marie named it polonium in honor of her native country of Poland.</desc></image>
+			<image><file>radiationtherapy.png</file><desc>In radiation therapy, high-energy X-rays are used to kill cancer cells and keep them from growing and multiplying.</desc></image>			
 		</article>
 		<lecture>
 			<title>Marie Curie</title>
-			<text>Marie Curie was born in 1867 in [Moscow, Russia] and lived there until she was 24. She followed her elder sister, Bronislawa to Paris where she studied physics, chemistry and mathematics at [Cambridge]. There she met her husband, Pierre. When they joined as partners in life and science, Pierre was actually studying [cancer cells] but put his studies on hold when Marie made ground breaking discoveries in radioactive elements. Together, Marie and Pierre went on to create the theory of [evolution] as well as discovering two new elements, [uranium] and polonium. They named polonium in honor of Marie's native country of [Prussia]. In 1903, Marie and Pierre Curie, with Henri Becquerel were awarded the [French Legion of Honor] in Physics. 8 years later Marie Curie was awarded this honor again in the field of [Biology]. She was the [second] woman to win or share two Nobel Prizes. Despite this, [Doctors without Borders] refused to elect her as a member for being a woman. Her work has lasting effects till this day. It was under her direction that the world's first studies into the treatment of [migraines] using [acupuncture] were conducted.</text>
+			<text>Marie Curie was born in 1867 in [Moscow, Russia] and lived there until she was 24. She later moved to Paris where she studied physics, chemistry and mathematics at [Cambridge]. There she met her husband, Pierre Curie. Pierre joined Marie in her ground-breaking research of [purple] elements. Together, Marie and Pierre went on to create the theory of [evolution] as well as discovering two new elements, [platinum] and polonium. They named polonium in honor of Marie's native country of [Mexico]. In 1903, Marie and Pierre Curie were awarded the [French Legion of Honor] in Physics. 8 years later Marie Curie was awarded this honor again in the field of [Biology]. She was the [second] woman to win or share two Nobel Prizes. Her work on using radioactivity in medicine, treating patients with [aspirin], was used during World War I, and her work has lasting effects till this day. It was under her direction that the world's first studies into the treatment of [migraines] using [acupuncture] were conducted.</text>
 			<keywordSet word="Warsaw, Poland">
 				<word>Paris, France</word>
 				<word>Prague, Czech Republic</word>
 			</keywordSet>
 			<keywordSet word="the Sorbonne">
-				<word>Oxford</word>
+				<word>Harvard</word>
 				<word>Krakow University</word>
 			</keywordSet>
-			<keywordSet word="chrystals">
-				<word>nanotechnology</word>
-				<word>DNA</word>
+			<keywordSet word="radioactive">
+				<word>high-energy</word>
+				<word>caustic</word>
 			</keywordSet>
 			<keywordSet word="radioactivity">
 				<word>quantum physics</word>
@@ -330,7 +331,7 @@
 			</keywordSet>
 			<keywordSet word="radium">
 				<word>hydrogen</word>
-				<word>magnesium</word>
+				<word>carbon</word>
 			</keywordSet>
 			<keywordSet word="Poland">
 				<word>Albania</word>
@@ -348,9 +349,9 @@
 				<word>third</word>
 				<word>fifteenth</word>
 			</keywordSet>
-			<keywordSet word="the French Academy of Sciences">
-				<word>the French Legion</word>
-				<word>the Sorbonne Physics Society</word>
+			<keywordSet word="X-Rays">
+				<word>CAT scans</word>
+				<word>penicillin</word>
 			</keywordSet>
 			<keywordSet word="cancer">
 				<word>ulcers</word>
@@ -361,51 +362,45 @@
 				<word>surgery</word>
 			</keywordSet>			
 			<studentQuestion>
-				<text>Was Marie Curie Polish or French?</text>
+				<text>What country was Marie Curie from?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">She is originally from Poland but moved to France when she was 24 and spent the rest of her life there. She is embraced and celebrated by both countries.</answer>
-				<answer correctness="0">Marie Curie was actually a Russian Jewish woman.</answer>
+				<answer correctness="5">She was originally from Poland but moved to France and spent the rest of her life there.</answer>
+				<answer correctness="0">Marie Curie was a Russian Jewish woman who was exiled from her home country.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>Why was Marie rejected membership into the French Academy of Sciences?</text>
+				<text>Why wasn't Marie allowed into the French Academy of Sciences?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">She was rejected simply for being a woman.</answer>
-				<answer correctness="0">She was rejected for being a Polish citizen.</answer>
+				<answer correctness="5">She was rejected because she was a woman.</answer>
+				<answer correctness="0">She was rejected because she was a Polish citizen.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>What are the two elements that Marie and Pierre discovered?</text>
+				<text>What elements did Marie and Pierre discover?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">Radium and Polonium</answer>
 				<answer correctness="0">Kalium and Potassium</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>Why did Marie name the element she discovered with Pierre, Polonium?</text>
+				<text>Why did Marie name it Polonium?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">She named it in honor of her native country of Poland.</answer>
 				<answer correctness="0">She named it in honor of her favorite dish, Polenta.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>How did Marie's work affect cancer treatment?</text>
+				<text>Did Marie's work help treat cancer?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">She introduced radiation therapy to kill cancer cells from spreading in the body. This is a widely used cancer treatment method till this day.</answer>
+				<answer correctness="5">She invented radiation therapy to stop cancer cells from spreading in the body. This treatment is still used today.</answer>
 				<answer correctness="0">She has made little contribution to cancer. All the treatments that are used today were developed after her death.</answer>
-			</studentQuestion>
-			<studentQuestion>
-				<text>Why do they call the University of Paris the Sorbonne?</text>
-				<studentType>1</studentType>
-				<answer correctness="5">They call it the Sorbonne after the College of Sorbonne which was the theological college of the University of Paris. Founded in 1257 by Robert de Sorbon it became the most distinguished theological institution in France.</answer>
-				<answer correctness="0">They call it the Sorbonne because that was the name of the biggest department store in Paris that was funding the University of Paris.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>What is the Nobel Prize?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">The Nobel Prizes were established in 1895 by Swedish chemist Alfred Nobel, and are annual international awards given to individuals for important cultural and scientific advances.</answer>
-				<answer correctness="0">The Nobel Prizes is an international popularity contest. If you win it, that means you're popular and you have a lot of friends.</answer>
+				<answer correctness="5">The Nobel Prizes are annual international awards given for important cultural and scientific advances.</answer>
+				<answer correctness="0">The Nobel Prizes are an international contest held to elect new European Leaders.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>In what fields did Marie Curie win her two Nobel Prizes?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">In 1903, she won her first in Physics along with her husband, Pierre and Henri Becquerel and her second in Chemistry in 1911.</answer>
+				<answer correctness="5">In 1903, she won her first in Physics, and she won her second in Chemistry in 1911.</answer>
 				<answer correctness="0">In 1903, she won her first in Astrology with her daughter, Irene Joliot-Curie, and later in 1911 in Medicine.</answer>
 			</studentQuestion>
 			<studentQuestion>
@@ -417,29 +412,29 @@
 			<studentQuestion>
 				<text>What is radiation therapy?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">Radiation therapy is usually used in the treatment of cancer which is a disease that causes cells to grow abnormally and out of control. In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</answer>
-				<answer correctness="0">Radiation therapy is influenced by Eastern alternative treatments to illnesses. It uses yoga, massage, meditation and herbs to tackle the growing cancer cells.</answer>
+				<answer correctness="5">In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</answer>
+				<answer correctness="0">Radiation therapy is influenced by Eastern alternative treatments to illnesses. It uses yoga, massage, meditation and herbs to treat cancer.</answer>
 			</studentQuestion>			
 		</lecture>
 		<worksheetQuestion>
 			<text>What element did Marie Curie discover and name after Poland?</text>
 			<answer correctness="5">Polonium</answer>
-			<answer correctness="0">Radium</answer>
+			<answer correctness="0">Kosiuszkium</answer>
 			<answer correctness="0">Krakownium</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>True or False? Marie Curie was the first person honored with two Nobel Prizes.</text>
+			<text>True or False? Marie Curie was the first person to win Nobel Prizes.</text>
 			<answer correctness="5">True</answer>
 			<answer correctness="0">False</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>At which university was Marie Curie the first ever woman professor?</text>
+			<text>At which university was Marie Curie the first woman professor?</text>
 			<answer correctness="5">University of Paris</answer>
 			<answer correctness="0">Krakow University</answer>
-			<answer correctness="0">Oxford University</answer>
+			<answer correctness="0">Yale University</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>What is the name of the theory that Marie and Pierre Curie created?</text>
+			<text>What is the name of the scientific theory that Marie and Pierre Curie created?</text>
 			<answer correctness="5">Theory of radioactivity</answer>
 			<answer correctness="0">Theory of quantum mechanics</answer>
 			<answer correctness="0">Theory of gravity</answer>
