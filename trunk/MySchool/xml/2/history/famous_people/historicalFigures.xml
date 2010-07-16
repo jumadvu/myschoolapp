@@ -7,24 +7,24 @@
 	    <chapter>
 		    <title>Martin Luther King, Jr.</title>
 		    <article>
-		    	<text>Dr Martin Luther King, Jr. was a famous American who fought for equal human rights. He was born in [Atlanta, Georgia] on January 15th, 1929. 
-		    		After graduating from college in 1948, he was not sure about which profession to join. He considered a career in medicine and law but instead became a preacher in the Baptist Church. He studied at a Theological Seminary in Pennsylvania. While studying there, King learned about the non-violent methods used by [Mahatma Gandhi] to resist the British occupation of India. King was convinced that such methods would be of great value to the American [civil rights movement]. 
-		    		King worked hard to make people understand that black people should always be treated equally to white people. He gave speeches and led rallies to encourage African Americans to protest without the need for violence. 
-		    		He first began to be well-known in 1955 when he led the [Montgomery Bus boycott]. King's efforts also led to the 1963 [March on Washington], where he delivered his ["I Have a Dream"] speech. 
-		    		In 1964, he was given the [Nobel Peace Prize]. After this he continued to work with many others to fight against poverty and the Vietnam War. On the evening of April 4, 1968, while standing on the balcony of his motel room in Memphis, Tennessee, where he was preparing to lead a protest march in sympathy with striking garbage workers of that city, he was shot and killed.
+		    	<text>Dr Martin Luther King, Jr. was an African-American minister and leader of the civil rights movement in the 1960s. As an activist , he fought for equal rights for all people. 
+		    	King was born in [Atlanta, Georgia] on January 15th, 1929. After graduating from college in 1948, he was not sure about which profession to join. He considered a career in medicine and law but instead became a preacher in the Baptist church. While studying at a seminary, King learned about the non-violent methods used by [Mahatma Gandhi] to resist the British occupation of India. King was convinced that such methods would be of great value to the American [civil rights movement]. 
+		    		King worked hard to make people understand that people of all races should be treated with equal respect and protection under the law. He gave speeches and led rallies to encourage African Americans to protest without the need for violence. 
+		    		He first began to be well-known in 1955 when he led the [Montgomery Bus boycott] in protest of racial segregation. King's efforts also led to the 1963 [March on Washington], where he delivered his ["I Have a Dream"] speech. 
+		    		In 1964, he was awarded the [Nobel Peace Prize] for his help in securing equal rights for African-Americans. After this he continued to work with other activist groups to fight against poverty and the Vietnam War. On the evening of April 4, 1968, while standing on the balcony of his motel room in Memphis, Tennessee, where he was preparing to lead a protest march in sympathy with striking garbage workers of that city, he was shot and killed.
 		    		To honor Dr. King's influence on civil rights in America, President Ronald Reagan created a federal holdiay in his honor, celebrated every January 20th.</text>
-		    <image><file>atlanta.jpg</file><desc>Atlanta is the capital and most populous city in the state of Georgia.</desc></image>	
-			<image><file>gandhi.jpg</file><desc>Gandhi, best known for his philosophy of resisting tyranny through mass civil disobedience, was the preeminent spiritual leader of India during the Indian independence movement against British colonial rule.</desc></image>
-			<image><file>civilrights.png</file><desc>Civil rights movement here refers to the movement in the US aimed at outlawing racial discrimination against African Americans and restoring the civil right to vote in Southern states.</desc></image>
-			<image><file>rosaparksbus.jpg</file><desc>This was a political and social protest opposing Montgomery, Alabama's policy of racial segregation on its public transit system. Rosa Parks famously was arrested for refusing to surrender her seat to a white person.</desc></image>
-		    <image><file>marchonwashington.jpg</file><desc>This march is widely credited as helping pass the Civil Rights Act and the National Voting Rights Act.</desc></image>	
-		    	<image><file>mlk.jpg</file><desc>In this speech, King called for racial equality and an end to discrimination, "I have a dream that my children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character."</desc></image>	
-		    <image><file>mlk.jpg</file><desc>King became the youngest person to receive the Nobel Peace Prize for his work to end racial segregation and racial discrimination through civil disobedience and other non-violent means.</desc></image>	
+		    <image><file>atlanta.jpg</file><desc>Atlanta is the capital of Georgia, and its largest city.</desc></image>	
+			<image><file>gandhi.jpg</file><desc>Gandhi led the Indian independence movement against British colonial rule by encouraging peaceful protest.</desc></image>
+			<image><file>civilrights.png</file><desc>The civil rights movement ended racial discrimination against African Americans and protected their right to vote in Southern states.</desc></image>
+			<image><file>rosaparksbus.jpg</file><desc>The bus boycott began when Rosa Parks was arrested for refusing to surrender her seat to a white person.</desc></image>
+		    <image><file>marchonwashington.jpg</file><desc>This march helped to convince Congress to pass the Civil Rights Act and the National Voting Rights Act.</desc></image>	
+		    	<image><file>mlk.jpg</file><desc>"I have a dream that my children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character."</desc></image>	
+		    <image><file>mlk.jpg</file><desc>King became the youngest person to receive the Nobel Peace Prize for his work tworad ending racial discrimination through non-violent means.</desc></image>	
 			
 		</article>
 		<lecture>
 			<title>Martin Luther King, Jr.</title>
-			<text>Martin Luther King was a famous American [astronaut] born in [Washington, D.C.]. While attending Seminary, King was introduced to the non-violent methods used by [Buddha] against the [Soviets] in India. King incorporated Gandhi's philosophy to resist tyranny through [use of violence] in the American civil rights movement. The civil rights movement aimed to outlaw racial discrimination against African Americans and restore the right to [free speech] in certain states. In 1955, King led a social protest opposing [Memphis, Tennessee's] policy of racial segregation on its public transit system. The struggle began when [Rosetta Stone], an African American woman, famously was arrested for refusing to surrender her seat to a white person. In 1963 during the [March of Washington], King delivered his famous "I Have a Dream" speech. After winning the [Presidential Medal of Freedom] in 1964, he continued to work to fight against poverty and the [Cold War]. He was assassinated in 1968 by James Earl Ray in [Chicago, Illinois].</text>
+			<text>Martin Luther King was a famous American [astronaut] born in [Washington, D.C.]. While studying to be a [speechwriter], King was introduced to the non-violent methods used by [Buddha] against the [Soviets] in India. King incorporated Gandhi's philosophy to resist tyranny through [use of violence] in the American civil rights movement. The civil rights movement aimed to outlaw racial discrimination against African Americans and restore the right to [free speech] in certain states. In 1955, King led a social protest opposing [Memphis, Tennessee's] policy of racial segregation on its public transit system. The struggle began when [Rosetta Stone], an African American woman, famously was arrested for refusing to surrender her seat to a white person. In 1963 during the [March of Washington], King delivered his famous "I Have a Dream" speech. After winning the [Presidential Medal of Freedom] in 1964, he continued to work to fight against poverty and the [Cold War]. He was assassinated in 1968 by James Earl Ray in Memphis, Tennessee.</text>
 			<keywordSet word="civil rights leader">
 				<word>President</word>
 				<word>Nuclear physicist</word>
@@ -32,6 +32,10 @@
 			<keywordSet word="Atlanta, Georgia">
 				<word>Montgomery, Alabama</word>
 				<word>Chester, Pennsylvania</word>
+			</keywordSet>
+			<keywordSet word="minister">
+				<word>cowboy</word>
+				<word>doctor</word>
 			</keywordSet>
 			<keywordSet word="Mahatma Gandhi">
 				<word>Siddhartha</word>
@@ -65,10 +69,6 @@
 				<word>Iraq War</word>
 				<word>World War II</word>
 			</keywordSet>
-			<keywordSet word="Memphis, Tennessee">
-				<word>Atlanta, Georgia</word>
-				<word>Birmingham, Alabama</word>
-			</keywordSet>
 			<studentQuestion>
 				<text>What was Gandhi protesting against?</text>
 				<studentType>1</studentType>
@@ -78,13 +78,13 @@
 			<studentQuestion>
 				<text>What does civil rights mean?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">These are a set of rights and freedoms that allow us to live our lives without discrimination or repression.</answer>
-				<answer correctness="0">These are a set of rules that encourage everyone to be nice to one another.</answer>
+				<answer correctness="5">Rights and freedoms that allow everyone to live without discrimination or repression.</answer>
+				<answer correctness="0">Laws and rules that encourage everyone in society to be nice to one another.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>What does tyranny mean?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">It means cruel and unreasonable use of power or control. The British in India at the time often exercised tyranny against the Indians.</answer>
+				<answer correctness="5">It means cruel and unfair use of power or control.</answer>
 				<answer correctness="0">It's the smaller female version of the Tyrannosaurus rex.</answer>
 			</studentQuestion>
 			<studentQuestion>
@@ -96,19 +96,19 @@
 			<studentQuestion>
 				<text>Were African Americans treated equally in the US in the 1960s?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">No, African Americans did not have equal rights. They were treated poorly and segregated from the whites.</answer>
-				<answer correctness="0">Yes, under the "separate but equal" policy, they had all the same rights as the whites.</answer>
+				<answer correctness="5">No, African Americans did not have equal rights. They were treated poorly and segregated from white people.</answer>
+				<answer correctness="0">Yes, under the "separate but equal" policy, they had all the same rights as white people.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>How did the Montgomery Bus boycott start?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">It started when Rosa Parks was arrested for refusing to surrender her seat to a white man. This went all the way to the supreme court who upheld the decision that Alabama's segregation laws on buses was unconstitutional.</answer>
-				<answer correctness="0">It started when Linda Brown, an African American girl, was refused enrollment at her local white school. This led to the landmark Supreme court decision that declared separate public schools for blacks and whites unconstitutional.</answer>
+				<answer correctness="5">It started when Rosa Parks was arrested for refusing to surrender her seat to a white man. Because of the boycott, Alabama's segregation laws were found unconstitutional.</answer>
+				<answer correctness="0">It started when Linda Brown, an African American girl, was refused enrollment at her local public school. The Supreme Court then decided that segregation is schools was unconstitutional.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>What does King say in his "I have a dream" speech?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">He talks about an America where his children are not judged by the color of their skin but by the content of their character.</answer>
+				<answer correctness="5">He talks about an America where children would not be judged by the color of their skin.</answer>
 				<answer correctness="0">He talks about a nightmare he had when he was a kid.</answer>
 			</studentQuestion>
 			<studentQuestion>
@@ -118,20 +118,20 @@
 				<answer correctness="0">He was preparing to give the "I have a dream" speech.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>What happened after the March of Washington?</text>
+				<text>What happened after the March on Washington?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">The Civil Rights Act was passed in 1964 and the National Voting Rights Act was passed in 1965.</answer>
 				<answer correctness="0">Nothing changed. Everything went back to normal and African Americans were still suffering.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>How could our country have permitted discrimination???</text>
+				<text>That's crazy, how could the USA have discriminated against people?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">This is an ugly part of our history but by learning about it, we can try to make our country better.</answer>
-				<answer correctness="0">That's what a lot of other countries were doing too so you don't have to be too embarrassed about it.</answer>
+				<answer correctness="0">A lot of other countries did it too, so it's okay.</answer>
 			</studentQuestion>
 		</lecture>
 		<worksheetQuestion>
-			<text>Was Martin Luther King the youngest person to win the Nobel Peace Prize in 1964?</text>
+			<text>Was Martin Luther King the youngest person to win the Nobel Peace Prize?</text>
 			<answer correctness="5">Yes</answer>
 			<answer correctness="0">No</answer>
 		</worksheetQuestion>
@@ -142,13 +142,13 @@
 			<answer correctness="0">Buddha</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>What was the political and social protest opposing Montgomery, Alabama's policy of racial segregation on its public transit system?</text>
+			<text>What was the protest against Montgomery, Alabama's rules for its public transit system?</text>
 			<answer correctness="5">Montgomery bus boycott</answer>
 			<answer correctness="0">March of Washington</answer>
 			<answer correctness="0">Memphis garbage worker's strike</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>After winning the Nobel Peace Prize, King famously opposed which war?</text>
+			<text>After winning the Nobel Peace Prize, King protested which war?</text>
 			<answer correctness="5">the Vietnam war</answer>
 			<answer correctness="0">the Cold war</answer>
 			<answer correctness="0">the war in Afghanistan</answer>
@@ -157,23 +157,23 @@
 	<chapter>
 		<title>Andrew Jackson</title>
 		<article>
-            <text>Andrew Jackson was born in March 15, 1767 in [the Waxhaws] which is an area bordering North and South Carolina. Well-known for his toughness, he was nicknamed "Old Hickory". 
-            	While he received education on and off throughout his youth, he went on to become an outstanding young lawyer in Tennessee. 
-            	Jackson was fierce about protecting his honor, particularly that of his wife, and engaged in several brawls and [duels]. He is known to have killed Charles Dickinson in a duel.
-            	Jackson prospered sufficiently to buy slaves and to build a mansion, the Hermitage, near Nashville. He was the first man elected from Tennessee to the House of Representatives and he served briefly in the US Senate. A prominent general in the [War of 1812], Jackson became a national hero when he defeated the British in the battle of New Orleans. 
-            	During the presidential election of 1828, Jackson's opponents referred to him as a ["jackass"]. He won the election against John Quincy Adams easily and was the first President to invite the public to the White House ball honoring his first inauguration. 
-            	His most controversial policy was forcing Native Americans to leave their homelands and make the arduous journey west on the [Trail of Tears]. 
-            	In 1835, in what is believed to be the first attempt to kill a sitting US President, Richard Lawrence aimed a pistol at Jackson which misfired.</text>
-			<image><file>carolinas.jpg</file><desc>Known as "the Waxhaw Settlement" the area was named for its first inhabitants, the Waxhaw Tribe. They were killed from infectious diseases and European immigrants, mostly Scots-Irish and German, began to settle in the area.</desc></image>
-			<image><file>duel.jpg</file><desc>A duel is an engagement in combat between two individuals, practiced from the 11th to 20th centuries in Western societies. Duels occurred to defend one's honor.</desc></image>
-			<image><file>hermitage.jpg</file><desc>Hermitage was a plantation Andrew Jackson owned. The primary crop was cotton grown by slaves.</desc></image>
-			<image><file>warof1812.jpg</file><desc>This was a war fought between the United States and the British Empire. The US declared war due to trade restrictions introduced by Britain and to uphold its national honor.</desc></image>
-			<image><file>donkey.jpg</file><desc>Jackass is another name for a donkey. Jackson liked the name and used it as a symbol. This later became the symbol for the Democratic party, popularized by cartoonist Thomas Nast.</desc></image>
-			<image><file>inauguration.jpg</file><desc>The crowd attending the inauguration became so large that Jackson's guards could not hold them out of the White House. To lure the people out, the attendants poured punch in tubs and put them on the lawn.</desc></image>
-			<image><file>trailoftears.jpg</file><desc>This was the relocation and movement of Native Americans from their homelands to Indian Territory in the Western United States. Many suffered and died from disease and starvation.</desc></image>			</article>
+            <text>Andrew Jackson,the 7th president of the United States, was born in 1767 in [the Waxhaws], bordering North and South Carolina. Well-known for his toughness, he was nicknamed "Old Hickory". 
+            	While he received education on and off throughout his youth, he went on to become an outstanding young [lawyer and landowner] in Tennessee. His great success in his career allowed him to move into politics. He was the first man elected from Tennessee to the House of Representatives and he served briefly in the US Senate.
+            	Jackson's military career was also very successful. He begain as a courier in the American Revolution as a boy, and later was head of the Tennessee militia. As a general in the [War of 1812], Jackson became a national hero when he defeated the British in the battle of New Orleans. 
+            	 Jackson fell in love with his wife, Rachel, while she was unhappily married to another man. She and Jackson were married just after her divorce, which caused an embarassing controversy. Perhaps because of this, Jackson was fierce about protecting his honor and that of his wife, and engaged in several brawls and [duels]. He is known to have killed Charles Dickinson in a duel. In 1835, in what is believed to be the first attempt to kill a sitting US President, Richard Lawrence aimed a pistol at Jackson which misfired.
+            	Jackson ran against John Quincy Adams for President in 1824 and 1828. The 1824 election was closely tied, and Adams was eventually chosen by the Electoral College. During the presidential election of 1828, Jackson's opponents referred to him as a ["jackass"]. However, he won the election against John Quincy Adams easily and was the first President to invite the public to the White House ball honoring his first inauguration. 
+            	Jackson's presidential policies favored individual freedoms, and he greatly supported public particiaption in democracy. Jackson became the only US president to have ever paid off the national debt. His most controversial policy was forcing Native Americans to leave their homelands and make the arduous journey west on the [Trail of Tears]. After eight years of presidency, he retured to Nashville, where he died at age 78. Jackson is commemorated on the US $20 bill.
+            	</text>
+			<image><file>carolinas.jpg</file><desc>The area was named for its first inhabitants, the Waxhaw Tribe. European immigrants, mostly Scots-Irish and German, settled in the area.</desc></image>
+			<image><file>hermitage.jpg</file><desc>The Hermitage was a plantation Andrew Jackson owned. The primary crop was cotton grown by slaves.</desc></image>
+			<image><file>warof1812.jpg</file><desc>This was a war fought between the United States and the British Empire. The US declared war due to trade restrictions introduced by Britain.</desc></image>
+			<image><file>duel.jpg</file><desc>A duel is a formal fight between two individuals, practiced until the 1900s. Duels occurred to defend one's honor.</desc></image>
+			<image><file>donkey.jpg</file><desc>Jackass is another name for a donkey. Jackson liked the name and used it as a symbol. The donkey later became the symbol for the Democratic party.</desc></image>
+			<image><file>inauguration.jpg</file><desc>The crowd attending the inauguration became so large that they coudn't fit in the White House. To lure the crowd outside, the attendants poured punch in tubs and put them on the lawn.</desc></image>
+			<image><file>trailoftears.jpg</file><desc>During the relocation to Indian Territory in the Western United States, many Native Americans died from disease and starvation.</desc></image></article>
 		<lecture>
 			<title>Andrew Jackson</title>
-			<text>Andrew Jackson is the 7th US President and is on the [US 5 dollar bill]. Before becoming a politician, he was a [doctor]. He was born in the Waxhaw Settlement, which is between [North and South Dakota]. He is known to have engaged in duels and killed a man named [Alexander Hamilton] defending his wife's honor. In addition to his legal and political career, Jackson prospered as a slave and plantation owner. His mansion, [Monticello], grew primarily cotton. Jackson served in the [Creek War] against Britain and was known for his bravery and success. In the [Battle of Talladega] Jackson took command of the defenses and defeated the British who outnumbered them. He was a strict officer but was popular with his troops. It was said he was "tough as old [cedar]" wood on the battlefield which gave him his nickname. During the presidential election of 1828, Jackson's opponents referred to him as [an elephant] which became the symbol of the Democratic party. One of Jackson's most controversial policy was the forceful removal of Native Americans to the west in what is known as the [Grapes of Wrath].</text>
+			<text>Andrew Jackson is the 7th US President and is on the [US 5 dollar bill]. Before becoming a politician, he was a [doctor]. He was born in the Waxhaw Settlement, which is between [North and South Dakota]. He is known to have engaged in [surfing] and killed a man named defending his wife's honor. In addition to his legal and political career, Jackson prospered as a slave and plantation owner. His mansion, [Monticello], grew primarily cotton. Jackson served in the [Creek War] against Britain and was known for his bravery and success. In the [Battle of Talladega] Jackson defeated the British who greatly outnumbered the Americans. He was a strict officer but was popular with his troops. It was said he was "tough as old [cedar]" wood on the battlefield which gave him his nickname. During the presidential election of 1828, Jackson's opponents referred to him as [an elephant] which became the symbol of the Democratic party. Jackson defeated John Quincy Adams in the election and seved as president for eight years. One of Jackson's most controversial policies was the forceful removal of Native Americans to the west in what is known as the [Grapes of Wrath].</text>
 			<keywordSet word="US 20 dollar bill">
 				<word>US 1 dollar bill</word>
 				<word>US 100 dollar bill</word>
@@ -186,12 +186,12 @@
 				<word>West Virginia and Virginia</word>
 				<word>New York and New Jersey</word>
 			</keywordSet>
-			<keywordSet word="Charles Dickinson">
-				<word>Aaron Burr</word>
-				<word>Charles Dickens</word>
+			<keywordSet word="duels">
+				<word>crossword puzzles</word>
+				<word>fencing</word>
 			</keywordSet>
 			<keywordSet word="the Hermitage">
-				<word>Bellagio</word>
+				<word>the Hotel</word>
 				<word>Hermes</word>
 			</keywordSet>
 			<keywordSet word="War of 1812">
@@ -218,7 +218,7 @@
 				<text>If President Obama is the 44th US President, which president was Andrew Jackson?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">The 7th. He was President from 1829 to 1837.</answer>
-				<answer correctness="0">The 5th. He was President from 1817 to 1825.</answer>
+				<answer correctness="0">The 3rd. He was President from 1817 to 1825.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>Why was President Jackson nicknamed "Old Hickory?"</text>
@@ -230,12 +230,12 @@
 				<text>Why did people engage in duels back then?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">While now illegal and never practiced, duels were a way to defend honor among social equals.</answer>
-				<answer correctness="0">Duels are a way to settle real estate disputes in certain US States till this day.</answer>
+				<answer correctness="0">Duels are a way to settle real estate disputes in certain US States.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>Why was the US fighting against the British in the War of 1812?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">The US declared war due to trade restrictions introduced by Britain and to uphold its national honor.</answer>
+				<answer correctness="5">The US declared war due to trade restrictions introduced by Britain.</answer>
 				<answer correctness="0">The US declared war to gain independence from the British.</answer>
 			</studentQuestion>
 			<studentQuestion>
@@ -247,26 +247,26 @@
 			<studentQuestion>
 				<text>Where did Andrew Jackson practice law before getting into politics?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">He practiced frontier law in what is now known as Tennessee.</answer>
-				<answer correctness="0">He practiced constitutional law in the Waxhaws region where he was born, in the border between the Carolinas.</answer>
+				<answer correctness="5">He practiced frontier law in Tennessee.</answer>
+				<answer correctness="0">He practiced constitutional law in the North Carolina.</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>How did Jackson became a national hero?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">He defeated the British who outnumbered them in the battle of New Orleans.</answer>
+				<answer correctness="5">He defeated the far stronger British forces in the battle of New Orleans.</answer>
 				<answer correctness="0">He defeated the Indians in the First Seminole War.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>Why is the Native Americans' forced relocation called "Trail of Tears"?</text>
+				<text>Why was the Native Americans' forced relocation called "Trail of Tears"?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">En route to their destination in what is now Oklahoma, many Native Americans suffered from disease and starvation and many died.</answer>
+				<answer correctness="5">Many Native Americans suffered from disease and starvation and many died.</answer>
 				<answer correctness="0">That was the Native American name for the road they traveled to get to their destination.</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>What does Andrew Jackson have to do with the current day Democratic party symbol being a donkey?</text>
+				<text>What does Andrew Jackson have to do with the modern Democratic party?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">When he was campaigning for the 1828 Presidential elections, his opponents called him "jackass" which he liked and used on his campaign.</answer>
-				<answer correctness="0">Donkeys being his favorite animal, he incorporated it into his 1828 Presidential campaign.</answer>
+				<answer correctness="5">Adrew Jackson adopted hte donkey as the party's mascot.</answer>
+				<answer correctness="0">Andrew Jackson thought up the name for the Democratic party.</answer>
 			</studentQuestion>				
 		</lecture>
 		<worksheetQuestion>
@@ -276,10 +276,10 @@
 			<answer correctness="0">Louisiana</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>Despite being outnumbered, Andrew Jackson led his soldiers to victory in what battle against the British in the War of 1812?</text>
-			<answer correctness="5">Battle of New Orleans</answer>
-			<answer correctness="0">Battle of Talladega</answer>
-			<answer correctness="0">Battle of Pensacola</answer>
+			<text>Despite being outnumbered, Andrew Jackson led his soldiers to victory in the War of 1812 against what country?</text>
+			<answer correctness="5">Britain</answer>
+			<answer correctness="0">France</answer>
+			<answer correctness="0">Mexico</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
 			<text>Is Andrew Jackson the first President to invite the public to the White House ball honoring his first inauguration?</text>
@@ -287,19 +287,19 @@
 			<answer correctness="0">No</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>What was the name of the plantation Andrew Jackson owned, located near Nashville in Tennessee?</text>
-			<answer correctness="5">Hermitage</answer>
-			<answer correctness="0">Monticello</answer>
-			<answer correctness="0">Bellagio</answer>
+			<text>Which former President did Andrew Jackson defeat in the eleciton of 1828?</text>
+			<answer correctness="5">John Quincy Adams</answer>
+			<answer correctness="0">Thomas Jefferson</answer>
+			<answer correctness="0">William Jefferson Clinton</answer>
 		</worksheetQuestion>
 	</chapter>
 	<chapter>
 		<title>Marie Curie</title>
 		<article>
-            <text>Marie Curie was a physicist and chemist from Poland, who lived and worked in France for much of her life. She was an expert in the field of radioactivity and the first person to win the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [woman professor] at the [University of Paris] which is where she attended as a student and remained as a researcher. 
-            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and started her important scientific work. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well as discovering two new elements, radium and [polonium]. 
-               Under her direction, the world's first studies into the treatment of cancers using [radiation] were conducted. Curie also pioneered the use of X-ray imaging during World War I for the treatment of wounded soldiers.
-               Curie and her husband both were exposed to the then-unknown harmful effects of radiation through their work, experiencing weakness and anemia from radiation poisoning. Curie died of these effects at the age of 66.
+            <text>Marie Curie was a physicist and chemist from Poland, who lived and worked in France for much of her life. She was an expert in the field of radioactivity and the first person to win the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [female professor] at the [University of Paris] which she attended as a student and worked for as a researcher. 
+            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her degree and started her important scientific work. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well as discovering two new elements, radium and [polonium]. 
+               Under her direction, the world's first studies into the treatment of cancers using [radiation] were conducted. Curie also pioneered the use of X-ray imaging during World War I for the treatment of wounded soldiers, for which she won the Nobel Prize.
+               Curie and her husband both were exposed to the then-unknown harmful effects of radiation through their work. Both experienced weakness and anemia from radiation poisoning. Curie died of these effects at the age of 66.
 </text>
 			<image><file>nobelprize.jpg</file><desc>The Nobel Prizes are annual international awards given to individuals for important cultural and scientific advances. Thy were established in 1895 by the Swedish chemist Alfred Nobel who was the inventor of dynamite.</desc></image>
 			<image><file>marie.jpg</file><desc>Marie was a trailblazer. She come up against a lot of prejudice just for being a woman throughout her career. Even after winning 2 Nobel Prizes, the French Academy of Sciences refused to elect her as a member for being a woman.</desc></image>			
