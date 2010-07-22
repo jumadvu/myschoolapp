@@ -241,7 +241,11 @@
 	<chapter>
 		<title>Buzzing Bees</title>
 		<article>
-			<text>There are many different species of bee. Two of the most common are [bumble bees] and honey bees. The honey bee makes honey and are sometimes kept by humans. Keeping bees to make honey is called [beekeeping]. Many bees are hairy and have yellow and black or orange and black stripes. Many bees have stingers (pointy things, like a [needle]) on the back end of their bodies. If they get confused, angry, or scared they can sting. Bee stings can really hurt. Once a worker bee has stung it dies after a short while, but other bees can sting many times. Some people are very allergic to bee stings and can even die from them. Bees live in highly organized groups called colonies. The home of a bee colony is called a hive. Usually a hive is home to about 12,000 bees. There are three kinds of bees in a honey bee colony. A [queen bee] is the most important bee in the colony because she lays the eggs. She ate a special jelly called royal jelly when she was young. [Worker bees] are females too, and they collect pollen from flowers and fight to protect the colony. Drone bees (males) mate with the queen bee so that she can lay eggs.</text>
+			<text>Bees are flying insects which are very useful to both plants and animals. There are many different species of bee living on every continent except Antarctica. Two of the most common are [bumble bees] and honey bees.
+			Bees are sometimes kept by humans. This is called [beekeeping]. Bees can be kept for the honey and wax they make, or to help pollinate flowers. When bees collect the sweet nectar from flowers, pollen from the flower sticks to the bee. When the bee visits another flower, the pollen rubs off and fertilizes the flower, helping the plant make new fruit and seeds.
+			Many bees are hairy and have yellow and black or orange and black stripes. Many bees have stingers, which look like [needles], on the back end of their bodies. If they are scared by an animal they can inject a poison through this stinger, causing a painful bump. Some people are very allergic to bee stings and can even die from them. Once a bee stings an animal, it dies soon afterward. 
+			Bees live in highly organized groups called colonies. The home of a bee colony is called a hive. Usually a hive is home to about 12,000 bees. There are three kinds of bees in a honey bee colony. A [queen bee] is the most important bee in the colony because she lays the eggs. Queen bees eat a special food called royal jelly when they are young. [Worker bees] are females also, and they collect pollen from flowers and fight to protect the colony. Drone bees are male; they cannot sting and they mate with the queen bee so that she can lay eggs.
+			Without the help of bees, many plants would not be able to produce fruit. Because of bees, we can enjoy all kinds of fruits and vegetables, from avodacos to watermelons!</text>
 			<image><file>bee.jpg</file><desc>The yellow and black stripes on a bee serve as a warning to other animals</desc></image>
 			<image><file>beekeeper.jpg</file><desc>Bee keepers take great care not to be stung. But even so they do get stung from time to time.</desc></image>
 			<image><file>stinger.jpg</file><desc>Like other insects, the body of a bee can be divided into three parts: the head, thorax, and abdomen</desc></image>
@@ -250,7 +254,7 @@
 		</article>
 		<lecture>
 			<title>Amazing Bees</title>
-			<text>There are about 20,000 species of bee and they are found on all continents except [North America]. Some species of bees, known as [wasps] make honey and are sometimes kept by humans. Keeping bees to make honey is [risky business]. Many bees are hairy and have yellow and black stripes. Many bees have sharp pointy stingers on the back end of their bodies. If they get confused, angry, or scared they can sting. Bee stings can really hurt. Once a worker bee has stung it dies after a short while. Some people are [immune] to bee stings and can even die from them. Bees live in highly organized groups called [democracies]. The home of a bee colony is called a [wasp nest]. There are three kinds of bees in a honey bee colony. A [princess bee] is the most important bee in the colony because she lays the eggs. She ate a special jelly called [fruit jam] when she was young. Worker bees are females too, and they collect [water] from flowers and fight to protect the colony. Drone bees (males) mate with the queen bee so that she can lay eggs.</text>
+			<text>There are about 20,000 species of bee and they are found on all continents except [North America]. Some species of bees, known as [wasps] make honey and are sometimes kept by humans. Keeping bees to make honey is called [bee ranching]. Bee colonies help farmers by pollinating [grasses]; these develop into fruit which humans can eat. Many bees are hairy and have yellow and black stripes. Some bees have sharp pointy stingers on the back end of their bodies. If they get frightened or angry they can sting. Bee stings can really hurt. Once a worker bee has stung it dies after a short while. Some people are [scared of] bee stings and can even die from them. Bees live in highly organized groups called [democracies]. The home of a bee colony is called a [labyrinth]. There are three kinds of bees in a honey bee colony. A [princess bee] is the most important bee in the colony because she lays the eggs. She ate a special food called [fruit jam] when she was young. Worker bees are females too, and they collect [water] from flowers and fight to protect the colony. The male drone bees mate with the queen bee so that she can lay eggs.</text>
 			<keywordSet word="Antarctica">
 				<word>Africa</word>
 				<word>Europe</word>
@@ -259,26 +263,25 @@
 				<word>killer bees</word>
 				<word>yellow jackets</word>
 			</keywordSet>
-			<keywordSet word="called beekeeping">
+			<keywordSet word="beekeeping">
 				<word>honeycombing</word>
-				<word>asking to get stung</word>
+				<word>drone hunting</word>
 			</keywordSet>
-			<keywordSet word="honey">
-				<word>beloved</word>
-				<word>dear</word>
-				<word>dearest</word>
+			<keywordSet word="flowers">
+				<word>seeds</word>
+				<word>branches</word>
 			</keywordSet>
-			<keywordSet word="allergic">
-				<word>craving</word>
-				<word>sensitive</word>
+			<keywordSet word="allergic to">
+				<word>worried about</word>
+				<word>sensitive to</word>
 			</keywordSet>
 			<keywordSet word="colonies">
 				<word>pyramids</word>
-				<word>settlement</word>
+				<word>settlements</word>
 			</keywordSet>
 			<keywordSet word="hive">
-				<word>labyrinth</word>
-				<word>cheerio</word>
+				<word>nest</word>
+				<word>palace</word>
 			</keywordSet>
 			<keywordSet word="queen bee">
 				<word>drone</word>
@@ -289,32 +292,32 @@
 				<word>sweet jam</word>
 			</keywordSet>
 			<keywordSet word="nectar and pollen">
-				<word>seeds</word>
+				<word>seeds and leaves</word>
 				<word>baby bees</word>
 			</keywordSet>
 			<studentQuestion>
 				<text>Do all bees sting?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">No, only the worker bees sting.</answer>
-				<answer correctness="0">wrong</answer>
+				<answer correctness="0">Yes, so run away from instects!</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>What do the bees do with the pollen and nectar they collect from flowers?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">They feed the queen and use it to make honey</answer>
-				<answer correctness="0">wrong</answer>
+				<answer correctness="0">They use it to biuld new homes for themselves</answer>
 			</studentQuestion>
 			<studentQuestion>
-				<text>Why do bees make honey.</text>
+				<text>Why do bees make honey?</text>
 				<studentType>1</studentType>
-				<answer correctness="5">It is how they store their food (nectar)</answer>
-				<answer correctness="0">Because kids love honey</answer>
+				<answer correctness="5">It is how they store the food they gather from flowers</answer>
+				<answer correctness="0">Because people love to eat it</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>What should I do if a bee lands on me?</text>
 				<studentType>1</studentType>
 				<answer correctness="5">Stay still and calm and wait for it to fly away</answer>
-				<answer correctness="0">Try to swat it with you hand</answer>
+				<answer correctness="0">Try to swat it with your hand before it stings</answer>
 			</studentQuestion>
 			<studentQuestion>
 				<text>Do beekeepers get stung sometimes?</text>
@@ -348,10 +351,10 @@
 			<answer correctness="0">She wears the crown</answer>
 		</worksheetQuestion>
 		<worksheetQuestion>
-			<text>What is the purpose of the bee dance?</text>
-			<answer correctness="5">To tell other bees where nectar is?</answer>
-			<answer correctness="0">Celebrate the birth of a baby bee</answer>
-			<answer correctness="0">Nobody knows</answer>
+			<text>What are the three kinds of honey bee?</text>
+			<answer correctness="5">Queens, workers, and drones</answer>
+			<answer correctness="0">Kings, queens, and princes</answer>
+			<answer correctness="0">Nobles, peasants, and slaves</answer>
 		</worksheetQuestion>
 	</chapter>
 </module>
