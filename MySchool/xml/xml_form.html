@@ -1,0 +1,319 @@
+<html>
+  <head>
+    <style>
+	  input{width:150px;}
+	  input.sm{width:50px;}
+	  input.med{width:100px;}
+	  input.lg{width:300px;}
+	  textarea{width:500px; height:300px;}
+	  span{display:inline-block; width:110px; padding-left:10px;}
+	  span.short{width:50px;}
+	  #output{position:fixed; top:0px; right:0px; font-family:monospace; 
+	          font-size:10px; width:500px; height:80%; padding:10px; margin:5%; overflow:scroll;}
+	</style>
+  </head>
+  <body>
+	<form>
+	<h3>Chapter/Lecture Name</h3>
+	<input type="text" name="chapterTitle"/>
+	<h3>Chapter/Lecture Text</h3>
+	<textarea name="chapterText"></textarea>
+	<p>&nbsp;</p>
+	
+	<h3>Secret 1</h3>
+	<table>
+	<tr><td>File: </td><td><input class="med" type="text" name="secretFile1"/></td>
+	<td>Description: </td><td><input class="lg" type="text" name="secretDescription1"/></td></tr>
+	</table>
+	<h3>Secret 2</h3>
+	<table>
+	<tr><td>File: </td><td><input class="med" type="text" name="secretFile2"/></td>
+	<td>Description: </td><td><input class="lg" type="text" name="secretDescription2"/></td></tr>
+	</table>
+	<h3>Secret 3</h3>
+	<table>	
+	<tr><td>File: </td><td><input class="med" type="text" name="secretFile3"/></td>
+	<td>Description: </td><td><input class="lg" type="text" name="secretDescription3"/></td></tr>
+	</table>
+	<h3>Secret 4</h3>
+	<table>
+	<tr><td>File: </td><td><input class="med" type="text" name="secretFile4"/></td>
+	<td>Description: </td><td><input class="lg" type="text" name="secretDescription4"/></td></tr>
+	</table>
+	<h3>Secret 5</h3>
+	<table>
+	<tr><td>File: </td><td><input class="med" type="text" name="secretFile5"/></td>
+	<td>Description: </td><td><input class="lg" type="text" name="secretDescription5"/></td></tr>
+	</table>
+	
+	<p>&nbsp;</p>
+	
+	<h3>Keyword Set 1</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword1Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword1Incorrect1"/>
+	<input type="text" name="keyword1Incorrect2"/>
+	<input type="text" name="keyword1Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 2</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword2Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword2Incorrect1"/>
+	<input type="text" name="keyword2Incorrect2"/>
+	<input type="text" name="keyword2Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 3</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword3Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword3Incorrect1"/>
+	<input type="text" name="keyword3Incorrect2"/>
+	<input type="text" name="keyword3Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 4</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword4Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword4Incorrect1"/>
+	<input type="text" name="keyword41Incorrect2"/>
+	<input type="text" name="keyword4Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 5</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword5Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword5Incorrect1"/>
+	<input type="text" name="keyword5Incorrect2"/>
+	<input type="text" name="keyword5Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 6</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword6Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword6Incorrect1"/>
+	<input type="text" name="keyword6Incorrect2"/>
+	<input type="text" name="keyword6Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 7</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword7Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword7Incorrect1"/>
+	<input type="text" name="keyword71Incorrect2"/>
+	<input type="text" name="keyword7Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 8</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword8Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword8Incorrect1"/>
+	<input type="text" name="keyword8Incorrect2"/>
+	<input type="text" name="keyword8Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 9</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword9Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword9Incorrect1"/>
+	<input type="text" name="keyword9Incorrect2"/>
+	<input type="text" name="keyword9Incorrect3"/></td></tr>
+	</table>
+	<h3>Keyword Set 10</h3>
+	<table>
+	<tr><td>Correct Option: </td><td><input type="text" name="keyword10Correct"/></td></tr>
+	<tr><td>Incorrect Options: </td><td><input type="text" name="keyword10Incorrect1"/>
+	<input type="text" name="keyword10Incorrect2"/>
+	<input type="text" name="keyword10Incorrect3"/></td></tr>
+	</table>
+	<p>&nbsp;</p>
+	<h3>Student Question 1</h3>
+	<table>
+	<tr><td>Question Type: </td><td><input type="text" name="studentQuestion1Type"/></td></tr>
+	<tr><td>Right Answer: </td><td><input type="text" name="studentQuestion1Right"/></td></tr>
+	<tr><td>Wrong Answer: </td><td><input type="text" name="studentQuestion1Wrong"/></td></tr>
+	</table>
+	<table>
+	<h3>Student Question 2</h3>
+	<table>
+	<tr><td>Question Type: </td><td><input type="text" name="studentQuestion2Type"/></td></tr>
+	<tr><td>Right Answer: </td><td><input type="text" name="studentQuestion2Right"/></td></tr>
+	<tr><td>Wrong Answer: </td><td><input type="text" name="studentQuestion2Wrong"/></td></tr>
+	</table>
+	<h3>Student Question 3</h3>
+	<table>
+	<tr><td>Question Type: </td><td><input type="text" name="studentQuestion3Type"/></td></tr>
+	<tr><td>Right Answer: </td><td><input type="text" name="studentQuestion3Right"/></td></tr>
+	<tr><td>Wrong Answer: </td><td><input type="text" name="studentQuestion3Wrong"/></td></tr>
+	</table>
+	<h3>Student Question 4</h3>
+	<table>
+	<tr><td>Question Type: </td><td><input type="text" name="studentQuestion4Type"/></td></tr>
+	<tr><td>Right Answer: </td><td><input type="text" name="studentQuestion4Right"/></td></tr>
+	<tr><td>Wrong Answer: </td><td><input type="text" name="studentQuestion4Wrong"/></td></tr>
+	</table>
+	<h3>Student Question 5</h3>
+	<table>
+	<tr><td>Question Type: </td><td><input type="text" name="studentQuestion5Type"/></td></tr>
+	<tr><td>Right Answer: </td><td><input type="text" name="studentQuestion5Right"/></td></tr>
+	<tr><td>Wrong Answer: </td><td><input type="text" name="studentQuestion5Wrong"/></td></tr>
+	</table>
+	
+    <p>&nbsp;</p>
+	<h3>Worksheet Question 1</h3>
+	<table>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion1Answer1Correctness"/></td>
+	<td>Answer 1: </td><td><input type="text" name="worksheetQuestion1Answer1"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion1Answer2Correctness"/></td>
+	<td>Answer 2: </td><td><input type="text" name="worksheetQuestion1Answer2"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion1Answer3Correctness"/></td>
+	<td>Answer 3: </td><td><input type="text" name="worksheetQuestion1Answer3"/></td></tr>
+	</table>
+	<h3>Worksheet Question 2</h3>
+	<table>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion2Answer1Correctness"/></td>
+	<td>Answer 1: </td><td><input type="text" name="worksheetQuestion2Answer1"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion2Answer2Correctness"/></td>
+	<td>Answer 2: </td><td><input type="text" name="worksheetQuestion2Answer2"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion2Answer3Correctness"/></td>
+	<td>Answer 3: </td><td><input type="text" name="worksheetQuestion2Answer3"/></td></tr>
+	</table>
+	<h3>Worksheet Question 3</h3>
+	<table>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion3Answer1Correctness"/></td>
+	<td>Answer 1: </td><td><input type="text" name="worksheetQuestion3Answer1"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion3Answer2Correctness"/></td>
+	<td>Answer 2: </td><td><input type="text" name="worksheetQuestion3Answer2"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion3Answer3Correctness"/></td>
+	<td>Answer 3: </td><td><input type="text" name="worksheetQuestion3Answer3"/></td></tr>
+	</table>
+	<h3>Worksheet Question 4</h3>
+	<table>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion4Answer1Correctness"/></td>
+	<td>Answer 1: </td><td><input type="text" name="worksheetQuestion4Answer1"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion4Answer2Correctness"/></td>
+	<td>Answer 2: </td><td><input type="text" name="worksheetQuestion4Answer2"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion4Answer3Correctness"/></td>
+	<td>Answer 3: </td><td><input type="text" name="worksheetQuestion4Answer3"/></td></tr>
+	</table>
+	<h3>Worksheet Question 5</h3>
+	<table>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion5Answer1Correctness"/></td>
+	<td>Answer 1: </td><td><input type="text" name="worksheetQuestion5Answer1"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion5Answer2Correctness"/></td>
+	<td>Answer 2: </td><td><input type="text" name="worksheetQuestion5Answer2"/></td></tr>
+	<tr><td>Correctness: </td><td><input type="text" name="worksheetQuestion5Answer3Correctness"/></td>
+	<td>Answer 3: </td><td><input type="text" name="worksheetQuestion5Answer3"/></td></tr>
+	</table>
+	</form>
+	<div id="output"><pre>
+&lt;chapter&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;article&gt;
+		&lt;text&gt;&lt;/text&gt;
+		&lt;image&gt;&lt;file&gt;&lt;/file&gt;&lt;desc&gt;&lt;/desc&gt;&lt;/image&gt;
+		&lt;image&gt;&lt;file&gt;&lt;/file&gt;&lt;desc&gt;&lt;/desc&gt;&lt;/image&gt;
+		&lt;image&gt;&lt;file&gt;&lt;/file&gt;&lt;desc&gt;&lt;/desc&gt;&lt;/image&gt;
+		&lt;image&gt;&lt;file&gt;&lt;/file&gt;&lt;desc&gt;&lt;/desc&gt;&lt;/image&gt;
+		&lt;image&gt;&lt;file&gt;&lt;/file&gt;&lt;desc&gt;&lt;/desc&gt;&lt;/image&gt;
+	&lt;/article&gt;
+	&lt;lecture&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;text&gt;&lt;/text&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;keywordSet word=""&gt;
+			&lt;word&gt;&lt;/word&gt;
+			&lt;word&gt;&lt;/word&gt;
+		&lt;/keywordSet&gt;
+		&lt;studentQuestion&gt;
+			&lt;text&gt;&lt;/text&gt;
+			&lt;studentType&gt;&lt;/studentType&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;/studentQuestion&gt;
+		&lt;studentQuestion&gt;
+			&lt;text&gt;&lt;/text&gt;
+			&lt;studentType&gt;&lt;/studentType&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;/studentQuestion&gt;
+		&lt;studentQuestion&gt;
+			&lt;text&gt;&lt;/text&gt;
+			&lt;studentType&gt;&lt;/studentType&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;/studentQuestion&gt;
+		&lt;studentQuestion&gt;
+			&lt;text&gt;&lt;/text&gt;
+			&lt;studentType&gt;&lt;/studentType&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;/studentQuestion&gt;
+		&lt;studentQuestion&gt;
+			&lt;text&gt;&lt;/text&gt;
+			&lt;studentType&gt;&lt;/studentType&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+			&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;/studentQuestion&gt;
+	&lt;/lecture&gt;
+	&lt;worksheetQuestion&gt;
+		&lt;text&gt;/text&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+	&lt;/worksheetQuestion&gt;
+	&lt;worksheetQuestion&gt;
+		&lt;text&gt;/text&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+	&lt;/worksheetQuestion&gt;
+	&lt;worksheetQuestion&gt;
+		&lt;text&gt;/text&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+	&lt;/worksheetQuestion&gt;
+	&lt;worksheetQuestion&gt;
+		&lt;text&gt;/text&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+	&lt;/worksheetQuestion&gt;
+	&lt;worksheetQuestion&gt;
+		&lt;text&gt;/text&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+		&lt;answer correctness=""&gt;&lt;/answer&gt;
+	&lt;/worksheetQuestion&gt;
+&lt;/chapter&gt;
+	</pre></div>
+  </body>
+</html>
