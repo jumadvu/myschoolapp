@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+<myschool>
+    <module>
+	    <title>Greek Mythology</title>
+	    <superSubject>English</superSubject>
+	    <gradeLevel>3</gradeLevel>
+	    <chapter>
+		    <title>Greek Mythology Overview</title>
+		    <article>
+		    	<text>Long ago in ancient [Greece], people believed in myths and legends about their gods and heroes and the nature of the world. We call this Greek Mythology and it was part of the ancient Greek religion. 
+		    		Greek myth explains where the world comes from and tells us the about the lives and adventures of different gods, goddesses, heroes, heroines and [mythological creatures]. These stories traveled through the tradition of word-of-mouth but then people started writing these stories down. The oldest known sources of these stories are from the famous epic poems, ["Iliad"] and ["Odyssey"], both attributed to [Homer], the legendary Greek epic poet. Both poems focus on the events surrounding the [Trojan War]. 
+		    		In addition to writings, we can find details about Greek mythology in ancient archiaeological sculptures and [pottery]. 
+		    		Greek mythology has strongly influenced the culture, arts and literature of Western civilization. Poets and artists from long time ago to present times have found inspiriation from the stories in Greek mythology. 
+		    		
+	    	</text>
+		    <image><file>pantheon.jpg</file><desc>Greece is a country in southeastern Europe and is known as being the first area in Europe where civilization started.</desc></image>	
+		    <image><file>griffin.jpg</file><desc>A griffin is an example of a mythological creature. It has the body of a lion with the head and wings of an eagle.</desc></image>	
+			<image><file>iliad.jpg</file><desc>Set in the Trojan War, Iliad tells of the battles and events during the weeks of a quarrel between King Agamennon and the warrier Achilles.</desc></image>
+			<image><file>odyssey.jpg</file><desc>This is sort of like a sequal to the Iliad and follows the journey of Odysseus and his long journey home after the fall of Troy.</desc></image>
+		    <image><file>homer.jpg</file><desc>Homer is said to be the author of the epic poems Iliad and the Odyssey but modern scholars are not sure if he really existed or not.</desc></image>
+			<image><file>trojanwar.jpg</file><desc>This war was waged against the city of Troy by the Achaeans (Greeks) after Paris of Troy stole Helen from her husband Menelaus, the King of Sparta.</desc></image>
+		    <image><file>artifact.jpg</file><desc>These drawings on pottery and vases help to explain Greek myth. In some cases, these visual sources predate literary sources.</desc></image>		
+		</article>
+		<lecture>
+			<title>Greek Mythology Overview</title>
+			<text>[Croatia] is a country in southeastern Europe and is known as being the first area in Europe where civilization started. Long ago, people here believed in myths and legends about their [neighbors] which we call Greek Mythology. Greek myth tells us about [love] through stories about the lives and adventures of different gods and goddesses.</text>
+			<keywordSet word="Greece">
+				<word>Italy</word>
+				<word>Morocco</word>
+			</keywordSet>
+			<keywordSet word="gods and heroes">
+				<word>friends</word>
+				<word>family members</word>
+			</keywordSet>
+			<keywordSet word="origins of the world">
+				<word>the stars</word>
+				<word>Hare Krish</word>
+			</keywordSet>
+			<keywordSet word="British">
+				<word>Japanese</word>
+				<word>Spanish</word>
+			</keywordSet>
+			<keywordSet word="civil disobedience">
+				<word>laughter and love</word>
+				<word>acceptance</word>
+			</keywordSet>
+			<keywordSet word="vote">
+				<word>bear arms</word>
+				<word>remain silent</word>
+			</keywordSet>
+			<keywordSet word="Montgomery, Alabama's">
+				<word>Philadelphia, Pennsylvania's</word>
+				<word>Louisville, Kentucky's</word>
+			</keywordSet>
+			<keywordSet word="Rosa Parks">
+				<word>Carlton Banks</word>
+				<word>Coretta Scott King</word>
+			</keywordSet>
+			<keywordSet word="Nobel Peace Prize">
+				<word>Pulitzer Prize</word>
+				<word>Academy award</word>
+			</keywordSet>
+			<keywordSet word="Vietnam War">
+				<word>Iraq War</word>
+				<word>World War II</word>
+			</keywordSet>
+			<keywordSet word="Memphis, Tennessee">
+				<word>Atlanta, Georgia</word>
+				<word>Birmingham, Alabama</word>
+			</keywordSet>
+			<studentQuestion>
+				<text>What was Gandhi protesting against?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Gandhi was protesting against the British colonial rule in India and for India's independence.</answer>
+				<answer correctness="0">Gandhi was protesting against segregation in the southern US states.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What does civil rights mean?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">These are a set of rights and freedoms that allow us to live our lives without discrimination or repression.</answer>
+				<answer correctness="0">These are a set of rules that encourage everyone to be nice to one another.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What does tyranny mean?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">It means cruel and unreasonable use of power or control. The British in India at the time often exercised tyranny against the Indians.</answer>
+				<answer correctness="0">It's the smaller female version of the Tyrannosaurus rex.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why was Rosa Parks arrested?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">She was arrested for refusing to surrender her seat to a white person.</answer>
+				<answer correctness="0">She was arrested for trying to vote.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Were African Americans treated equally in the US in the 1960s?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">No, African Americans did not have equal rights. They were treated poorly and segregated from the whites.</answer>
+				<answer correctness="0">Yes, under the "separate but equal" policy, they had all the same rights as the whites.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How did the Montgomery Bus boycott start?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">It started when Rosa Parks was arrested for refusing to surrender her seat to a white man. This went all the way to the supreme court who upheld the decision that Alabama's segregation laws on buses was unconstitutional.</answer>
+				<answer correctness="0">It started when Linda Brown, an African American girl, was refused enrollment at her local white school. This led to the landmark Supreme court decision that declared separate public schools for blacks and whites unconstitutional.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What does King say in his "I have a dream" speech?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">He talks about an America where his children are not judged by the color of their skin but by the content of their character.</answer>
+				<answer correctness="0">He talks about a nightmare he had when he was a kid.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>The night of his assassination, what was King doing in Memphis, Tennessee?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">He was preparing to lead a protest march in sympathy with striking garbage workers of that city.</answer>
+				<answer correctness="0">He was preparing to give the "I have a dream" speech.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What happened after the March of Washington?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">The Civil Rights Act was passed in 1964 and the National Voting Rights Act was passed in 1965.</answer>
+				<answer correctness="0">Nothing changed. Everything went back to normal and African Americans were still suffering.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How could our country have permitted discrimination???</text>
+				<studentType>1</studentType>
+				<answer correctness="5">This is an ugly part of our history but by learning about it, we can try to make our country better.</answer>
+				<answer correctness="0">That's what a lot of other countries were doing too so you don't have to be too embarrassed about it.</answer>
+			</studentQuestion>
+		</lecture>
+		<worksheetQuestion>
+			<text>Was Martin Luther King the youngest person to win the Nobel Peace Prize in 1964?</text>
+			<answer correctness="5">Yes</answer>
+			<answer correctness="0">No</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Who was the Indian spiritual and political leader that influenced Martin Luther King?</text>
+			<answer correctness="5">Gandhi</answer>
+			<answer correctness="0">Geronimo</answer>
+			<answer correctness="0">Buddha</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What was the political and social protest opposing Montgomery, Alabama's policy of racial segregation on its public transit system?</text>
+			<answer correctness="5">Montgomery bus boycott</answer>
+			<answer correctness="0">March of Washington</answer>
+			<answer correctness="0">Memphis garbage worker's strike</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>After winning the Nobel Peace Prize, King famously opposed which war?</text>
+			<answer correctness="5">the Vietnam war</answer>
+			<answer correctness="0">the Cold war</answer>
+			<answer correctness="0">the war in Afghanistan</answer>
+		</worksheetQuestion>
+	</chapter>
+	<chapter>
+		<title>The Titans</title>
+		<article>
+            <text>Andrew Jackson was born in March 15, 1767 in [the Waxhaws] which is an area bordering North and South Carolina. Well-known for his toughness, he was nicknamed "Old Hickory". 
+            	While he received education on and off throughout his youth, he went on to become an outstanding young lawyer in Tennessee. 
+            	Jackson was fierce about protecting his honor, particularly that of his wife, and engaged in several brawls and [duels]. He is known to have killed Charles Dickinson in a duel.
+            	Jackson prospered sufficiently to buy slaves and to build a mansion, the Hermitage, near Nashville. He was the first man elected from Tennessee to the House of Representatives and he served briefly in the US Senate. A prominent general in the [War of 1812], Jackson became a national hero when he defeated the British in the battle of New Orleans. 
+            	During the presidential election of 1828, Jackson's opponents referred to him as a ["jackass"]. He won the election against John Quincy Adams easily and was the first President to invite the public to the White House ball honoring his first inauguration. 
+            	His most controversial policy was forcing Native Americans to leave their homelands and make the arduous journey west on the [Trail of Tears]. 
+            	In 1835, in what is believed to be the first attempt to kill a sitting US President, Richard Lawrence aimed a pistol at Jackson which misfired.</text>
+			<image><file>carolinas.jpg</file><desc>Known as "the Waxhaw Settlement" the area was named for its first inhabitants, the Waxhaw Tribe. They were killed from infectious diseases and European immigrants, mostly Scots-Irish and German, began to settle in the area.</desc></image>
+			<image><file>duel.jpg</file><desc>A duel is an engagement in combat between two individuals, practiced from the 11th to 20th centuries in Western societies. Duels occurred to defend one's honor.</desc></image>
+			<image><file>hermitage.jpg</file><desc>Hermitage was a plantation Andrew Jackson owned. The primary crop was cotton grown by slaves.</desc></image>
+			<image><file>warof1812.jpg</file><desc>This was a war fought between the United States and the British Empire. The US declared war due to trade restrictions introduced by Britain and to uphold its national honor.</desc></image>
+			<image><file>donkey.jpg</file><desc>Jackass is another name for a donkey. Jackson liked the name and used it as a symbol. This later became the symbol for the Democratic party, popularized by cartoonist Thomas Nast.</desc></image>
+			<image><file>inauguration.jpg</file><desc>The crowd attending the inauguration became so large that Jackson's guards could not hold them out of the White House. To lure the people out, the attendants poured punch in tubs and put them on the lawn.</desc></image>
+			<image><file>trailoftears.jpg</file><desc>This was the relocation and movement of Native Americans from their homelands to Indian Territory in the Western United States. Many suffered and died from disease and starvation.</desc></image>			</article>
+		<lecture>
+			<title>Andrew Jackson</title>
+			<text>Andrew Jackson is the 7th US President and is on the [US 5 dollar bill]. Before becoming a politician, he was a [doctor]. He was born in the Waxhaw Settlement, which is between [North and South Dakota]. He is known to have engaged in duels and killed a man named [Alexander Hamilton] defending his wife's honor. In addition to his legal and political career, Jackson prospered as a slave and plantation owner. His mansion, [Monticello], grew primarily cotton. Jackson served in the [Creek War] against Britain and was known for his bravery and success. In the [Battle of Talladega] Jackson took command of the defenses and defeated the British who outnumbered them. He was a strict officer but was popular with his troops. It was said he was "tough as old [cedar]" wood on the battlefield which gave him his nickname. During the presidential election of 1828, Jackson's opponents referred to him as [an elephant] which became the symbol of the Democratic party. One of Jackson's most controversial policy was the forceful removal of Native Americans to the west in what is known as the [Grapes of Wrath].</text>
+			<keywordSet word="US 20 dollar bill">
+				<word>US 1 dollar bill</word>
+				<word>US 100 dollar bill</word>
+			</keywordSet>
+			<keywordSet word="lawyer">
+				<word>orator</word>
+				<word>teacher</word>
+			</keywordSet>
+			<keywordSet word="North and South Carolina">
+				<word>West Virginia and Virginia</word>
+				<word>New York and New Jersey</word>
+			</keywordSet>
+			<keywordSet word="Charles Dickinson">
+				<word>Aaron Burr</word>
+				<word>Charles Dickens</word>
+			</keywordSet>
+			<keywordSet word="the Hermitage">
+				<word>Bellagio</word>
+				<word>Hermes</word>
+			</keywordSet>
+			<keywordSet word="War of 1812">
+				<word>Civil War</word>
+				<word>First Seminole War</word>
+			</keywordSet>
+			<keywordSet word="Battle of New Orleans">
+				<word>Battle of Horseshoe Bend</word>
+				<word>Battle of Pensacola</word>
+			</keywordSet>			
+			<keywordSet word="hickory">
+				<word>mahogany</word>
+				<word>chestnut</word>
+			</keywordSet>			
+			<keywordSet word="jackass">
+				<word>eagle</word>
+				<word>pig</word>
+			</keywordSet>
+			<keywordSet word="Trail of Tears">
+				<word>Dust Bowl</word>
+				<word>Footprints in the Sand</word>
+			</keywordSet>			
+			<studentQuestion>
+				<text>If President Obama is the 44th US President, which president was Andrew Jackson?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">The 7th. He was President from 1829 to 1837.</answer>
+				<answer correctness="0">The 5th. He was President from 1817 to 1825.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why was President Jackson nicknamed "Old Hickory?"</text>
+				<studentType>1</studentType>
+				<answer correctness="5">While on the battlefield he was known to be "tough as old hickory" wood.</answer>
+				<answer correctness="0">His favorite dish that the first lady prepared for him was hickory smoked ham.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why did people engage in duels back then?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">While now illegal and never practiced, duels were a way to defend honor among social equals.</answer>
+				<answer correctness="0">Duels are a way to settle real estate disputes in certain US States till this day.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why was the US fighting against the British in the War of 1812?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">The US declared war due to trade restrictions introduced by Britain and to uphold its national honor.</answer>
+				<answer correctness="0">The US declared war to gain independence from the British.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Did Andrew Jackson own slaves?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Yes, he owned a plantation that produced cotton grown by slaves.</answer>
+				<answer correctness="0">No, he did not believe in slavery.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Where did Andrew Jackson practice law before getting into politics?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">He practiced frontier law in what is now known as Tennessee.</answer>
+				<answer correctness="0">He practiced constitutional law in the Waxhaws region where he was born, in the border between the Carolinas.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How did Jackson became a national hero?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">He defeated the British who outnumbered them in the battle of New Orleans.</answer>
+				<answer correctness="0">He defeated the Indians in the First Seminole War.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why is the Native Americans' forced relocation called "Trail of Tears"?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">En route to their destination in what is now Oklahoma, many Native Americans suffered from disease and starvation and many died.</answer>
+				<answer correctness="0">That was the Native American name for the road they traveled to get to their destination.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What does Andrew Jackson have to do with the current day Democratic party symbol being a donkey?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">When he was campaigning for the 1828 Presidential elections, his opponents called him "jackass" which he liked and used on his campaign.</answer>
+				<answer correctness="0">Donkeys being his favorite animal, he incorporated it into his 1828 Presidential campaign.</answer>
+			</studentQuestion>				
+		</lecture>
+		<worksheetQuestion>
+			<text>Andrew Jackson was the first man elected from which state to the House of Representatives?</text>
+			<answer correctness="5">Tennessee</answer>
+			<answer correctness="0">North Carolina</answer>
+			<answer correctness="0">Louisiana</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Despite being outnumbered, Andrew Jackson led his soldiers to victory in what battle against the British in the War of 1812?</text>
+			<answer correctness="5">Battle of New Orleans</answer>
+			<answer correctness="0">Battle of Talladega</answer>
+			<answer correctness="0">Battle of Pensacola</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>Is Andrew Jackson the first President to invite the public to the White House ball honoring his first inauguration?</text>
+			<answer correctness="5">Yes</answer>
+			<answer correctness="0">No</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What was the name of the plantation Andrew Jackson owned, located near Nashville in Tennessee?</text>
+			<answer correctness="5">Hermitage</answer>
+			<answer correctness="0">Monticello</answer>
+			<answer correctness="0">Bellagio</answer>
+		</worksheetQuestion>
+	</chapter>
+	<chapter>
+		<title>Marie Curie</title>
+		<article>
+            <text>Marie Curie was a physicist and chemist from Poland, who lived and worked in France for much of her life. She was an expert in the field of radioactivity and the first person to win the [Nobel Prize] in two different sciences: physics and chemistry. She was the first [woman professor] at the [University of Paris] which is where she attended as a student and remained as a researcher. 
+            	Marie Curie was born under the name Maria Sklodowska in [Warsaw, Poland] in 1867 and lived there until she was 24. In 1891 she followed her elder sister Bronislawa to study in Paris, where she received her higher degrees and started her important scientific work. There she met her husband [Pierre Curie] and the two became partners in life and in science. The two created the theory of radioactivity as well as discovering two new elements, radium and [polonium]. 
+               Under her direction, the world's first studies into the treatment of cancers using [radiation] were conducted. Curie also pioneered the use of X-ray imaging during World War I for the treatment of wounded soldiers.
+               Curie and her husband both were exposed to the then-unknown harmful effects of radiation through their work, experiencing weakness and anemia from radiation poisoning. Curie died of these effects at the age of 66.
+</text>
+			<image><file>nobelprize.jpg</file><desc>The Nobel Prizes are annual international awards given to individuals for important cultural and scientific advances. Thy were established in 1895 by the Swedish chemist Alfred Nobel who was the inventor of dynamite.</desc></image>
+			<image><file>marie.jpg</file><desc>Marie was a trailblazer. She come up against a lot of prejudice just for being a woman throughout her career. Even after winning 2 Nobel Prizes, the French Academy of Sciences refused to elect her as a member for being a woman.</desc></image>			
+			<image><file>sorbonne.jpg</file><desc>The University of Paris was founded in the 11st century and is often referred to as the Sorbonne. The original college of Sorbonne was created for the use of 20 theology students in 1257 and became the most distinguished theological institution in France.</desc></image>
+			<image><file>warsaw.jpg</file><desc>Warsaw is the capital and largest city of Poland. It is located on the Vistula River and was severely damaged during World War II.</desc></image>
+			<image><file>pierre.jpg</file><desc>Pierre, who was actually working on crystals, put his research on hold and joined Marie's research efforts when she discovered elements besides uranium that were radioactive.</desc></image>
+			<image><file>polonium.png</file><desc>Polonium is a highly radioactive chemical element discovered by Marie and Pierre Curie. They named it polonium in honor of her native country of Poland.</desc></image>
+			<image><file>radiationtherapy.png</file><desc>Cancer is a disease that causes cells to grow abnormally and out of control. In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</desc></image>			
+		</article>
+		<lecture>
+			<title>Marie Curie</title>
+			<text>Marie Curie was born in 1867 in [Moscow, Russia] and lived there until she was 24. She followed her elder sister, Bronislawa to Paris where she studied physics, chemistry and mathematics at [Cambridge]. There she met her husband, Pierre. When they joined as partners in life and science, Pierre was actually studying [cancer cells] but put his studies on hold when Marie made ground breaking discoveries in radioactive elements. Together, Marie and Pierre went on to create the theory of [evolution] as well as discovering two new elements, [uranium] and polonium. They named polonium in honor of Marie's native country of [Prussia]. In 1903, Marie and Pierre Curie, with Henri Becquerel were awarded the [French Legion of Honor] in Physics. 8 years later Marie Curie was awarded this honor again in the field of [Biology]. She was the [second] woman to win or share two Nobel Prizes. Despite this, [Doctors without Borders] refused to elect her as a member for being a woman. Her work has lasting effects till this day. It was under her direction that the world's first studies into the treatment of [migraines] using [acupuncture] were conducted.</text>
+			<keywordSet word="Warsaw, Poland">
+				<word>Paris, France</word>
+				<word>Prague, Czech Republic</word>
+			</keywordSet>
+			<keywordSet word="the Sorbonne">
+				<word>Oxford</word>
+				<word>Krakow University</word>
+			</keywordSet>
+			<keywordSet word="chrystals">
+				<word>nanotechnology</word>
+				<word>DNA</word>
+			</keywordSet>
+			<keywordSet word="radioactivity">
+				<word>quantum physics</word>
+				<word>relativity</word>
+			</keywordSet>
+			<keywordSet word="radium">
+				<word>hydrogen</word>
+				<word>magnesium</word>
+			</keywordSet>
+			<keywordSet word="Poland">
+				<word>Albania</word>
+				<word>Bolivia</word>
+			</keywordSet>
+			<keywordSet word="Nobel Prize">
+				<word>Peabody award</word>
+				<word>Golden Globe</word>
+			</keywordSet>
+			<keywordSet word="Chemistry">
+				<word>Literature</word>
+				<word>Medicine</word>
+			</keywordSet>
+			<keywordSet word="first">
+				<word>third</word>
+				<word>fifteenth</word>
+			</keywordSet>
+			<keywordSet word="the French Academy of Sciences">
+				<word>the French Legion</word>
+				<word>the Sorbonne Physics Society</word>
+			</keywordSet>
+			<keywordSet word="cancer">
+				<word>ulcers</word>
+				<word>asthma</word>
+			</keywordSet>
+			<keywordSet word="radiation">
+				<word>diet and nutrition</word>
+				<word>surgery</word>
+			</keywordSet>			
+			<studentQuestion>
+				<text>Was Marie Curie Polish or French?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">She is originally from Poland but moved to France when she was 24 and spent the rest of her life there. She is embraced and celebrated by both countries.</answer>
+				<answer correctness="0">Marie Curie was actually a Russian Jewish woman.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why was Marie rejected membership into the French Academy of Sciences?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">She was rejected simply for being a woman.</answer>
+				<answer correctness="0">She was rejected for being a Polish citizen.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What are the two elements that Marie and Pierre discovered?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Radium and Polonium</answer>
+				<answer correctness="0">Kalium and Potassium</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why did Marie name the element she discovered with Pierre, Polonium?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">She named it in honor of her native country of Poland.</answer>
+				<answer correctness="0">She named it in honor of her favorite dish, Polenta.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>How did Marie's work affect cancer treatment?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">She introduced radiation therapy to kill cancer cells from spreading in the body. This is a widely used cancer treatment method till this day.</answer>
+				<answer correctness="0">She has made little contribution to cancer. All the treatments that are used today were developed after her death.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>Why do they call the University of Paris the Sorbonne?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">They call it the Sorbonne after the College of Sorbonne which was the theological college of the University of Paris. Founded in 1257 by Robert de Sorbon it became the most distinguished theological institution in France.</answer>
+				<answer correctness="0">They call it the Sorbonne because that was the name of the biggest department store in Paris that was funding the University of Paris.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What is the Nobel Prize?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">The Nobel Prizes were established in 1895 by Swedish chemist Alfred Nobel, and are annual international awards given to individuals for important cultural and scientific advances.</answer>
+				<answer correctness="0">The Nobel Prizes is an international popularity contest. If you win it, that means you're popular and you have a lot of friends.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>In what fields did Marie Curie win her two Nobel Prizes?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">In 1903, she won her first in Physics along with her husband, Pierre and Henri Becquerel and her second in Chemistry in 1911.</answer>
+				<answer correctness="0">In 1903, she won her first in Astrology with her daughter, Irene Joliot-Curie, and later in 1911 in Medicine.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>In what city was Marie Curie born?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">She was born in Warsaw, which is the largest city of Poland but is known for the destruction it suffered during World War II.</answer>
+				<answer correctness="0">She was born in Krakow, the 2nd largest city in Poland. It is one of the oldest cities in Poland and a popular tourist destination.</answer>
+			</studentQuestion>
+			<studentQuestion>
+				<text>What is radiation therapy?</text>
+				<studentType>1</studentType>
+				<answer correctness="5">Radiation therapy is usually used in the treatment of cancer which is a disease that causes cells to grow abnormally and out of control. In radiation therapy, high-energy X-rays are directed at a person's body to kill cancer cells and keep them from growing and multiplying.</answer>
+				<answer correctness="0">Radiation therapy is influenced by Eastern alternative treatments to illnesses. It uses yoga, massage, meditation and herbs to tackle the growing cancer cells.</answer>
+			</studentQuestion>			
+		</lecture>
+		<worksheetQuestion>
+			<text>What element did Marie Curie discover and name after Poland?</text>
+			<answer correctness="5">Polonium</answer>
+			<answer correctness="0">Radium</answer>
+			<answer correctness="0">Krakownium</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>True or False? Marie Curie was the first person honored with two Nobel Prizes.</text>
+			<answer correctness="5">True</answer>
+			<answer correctness="0">False</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>At which university was Marie Curie the first ever woman professor?</text>
+			<answer correctness="5">University of Paris</answer>
+			<answer correctness="0">Krakow University</answer>
+			<answer correctness="0">Oxford University</answer>
+		</worksheetQuestion>
+		<worksheetQuestion>
+			<text>What is the name of the theory that Marie and Pierre Curie created?</text>
+			<answer correctness="5">Theory of radioactivity</answer>
+			<answer correctness="0">Theory of quantum mechanics</answer>
+			<answer correctness="0">Theory of gravity</answer>
+		</worksheetQuestion>
+	</chapter>
+</module>
+</myschool>
