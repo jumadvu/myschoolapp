@@ -1,7 +1,22 @@
 <?xml version="1.0"?>
 <myschool>
 	<help>
+		<page>
 		<issue num="0">
+<<<<<<< .mine
+			<title>Library</title>
+			<text>In the library, you can read up on subjects to teach your class. Look for secret facts for extra points! </text>
+		</issue>
+		<issue num="1">
+			<title>Classroom</title>
+			<text>There are several things you should pay attention to in the classroom. First, correct the red errors in the lesson and watch your students' expression for feedback. Also, call on the students to answer their questions when they raise their hands.</text>
+		</issue>
+		<issue num="2">
+			<title>Grading Papers</title>
+			<text>In the office, you'll see a stack of homework. Mark your students' homework right or wrong. Be careful – Principal Wilson doesn't approve of incorrect grading! </text>	
+		</issue>	
+		<issue num="3">
+=======
 			<title>Library</title>
 			<text>In the library, you can read up on subjects to teach your class. Look for secret facts for extra points! </text>
 		</issue>
@@ -14,6 +29,7 @@
 			<text>In the office, you'll see a stack of homework. Mark your students' homework right or wrong. Be careful ‚Äì Principal Wilson doesn't approve of incorrect grading! </text>	
 		</issue>	
 		<issue num="3">
+>>>>>>> .r355
 			<title>Principal Wilson's Approval Rating</title>
 			<text>Principal Wilson thinks homework is really important. If you grade your students' homework correctly, your approval rating will go up!</text>
 		</issue>
@@ -21,7 +37,12 @@
 			<title>Student Respect Score</title>
 			<text>Some of your students can be disrespectful to you and their fellow classmates. To help them learn to behave properly in school, be sure to look at their 'behavior reports' in your office and choose the best way to deal with each situation.</text>
 		</issue>
+<<<<<<< .mine
+		</page>
 		<issue num="5">
+=======
+		<issue num="5">
+>>>>>>> .r355
 			<title>Student Smarts Score</title>
 			<text>As you teach lessons and grade homeworks, your students will gradually get smarter if you do a good job! The better you do, the smarter they get!</text>
 		</issue>
@@ -33,6 +54,12 @@
 			<title>School Store Credit</title>
 			<text>For every lesson you teach, you receive 'Store Credit'. The better you do on the lesson, the more store credit you earn. You can trade your store credits for activities that you can access in your classroom's 'Fun Zone'.</text>
 		</issue>
+<<<<<<< .mine
+		<issue num="8">
+			<title>Redesigning Your Avatar</title>
+			<text>To change your avatar's name or appearance, go to the Principal's office.</text>
+		</issue>		
+=======
 		<issue num="8">
 			<title>Redesigning Your Avatar</title>
 			<text>To change your avatar's name or appearance, go to the Principal's office.</text>
@@ -41,5 +68,6 @@
 			<title>Chapter Secrets</title>
 			<text>As you read, look for words that stand out in the text. Tap them to find new facts and pictures!</text>
 		</issue>
+>>>>>>> .r355
 	</help>
 </myschool>
