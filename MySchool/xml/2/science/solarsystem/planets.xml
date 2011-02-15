@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<myschool>
+    <module>
+		<title>The Planets</title>
+		<superSubject>Science</superSubject>
+		<gradeLevel>2</gradeLevel>
+    	<chapter>
+    		<title>Mercury</title>
+    		<article>
+    			<text>Mercury is the [closest planet to the sun]. Two spacecraft have been sent to Mercury to take pictures of the planet's [surface]. Neither of the spacecraft had astronauts on board.  The first was called Mariner 10.  The second one was called [Messenger]. The Messenger spacecraft was sent in 2008, and it is still orbiting Mercury taking pictures to make a complete map of the planet's [surface].
+    				
+    				Mercury looks a lot like our Moon: it has many deep craters and some areas of smooth plains. It has no moons of its own, and no atmosphere.
+    				
+    				The temperature on Mercury's surface varies greatly. The temperature can be anywhere from about −297 °F to 801 °F. This is because Mercury rotates so slowly, that the side of Mercury facing the sun gets superheated, while the side facing away from the sun gets extremely cold. One Mercury day is longer than one Earth year!
+    				
+    				Mercury was first noted by Greek astronomers around 1000BC. Before the 4th century BC, Greek astronomers thought that Mercury was two different objects: one able to be seen only at sunrise, which they called Apollo; the other that was only able to be seen at sunset, which they called Hermes.
+    				
+    				About once every 20 years Mercury passes between us and the sun.  When this happens, Mercury looks like a black dot on the surface of the sun. This is called a [transit].
+    				
+    				The English name for the planet comes from the Romans, who named it after the [Roman god] Mercury, which they thought to be the same as the Greek god Hermes. The symbol for Mercury is based on Hermes' staff.</text>
+    			<image><file>all_planets.png</file><desc>The closest planet to the sun, Mercury travels around the sun faster than any other planet!</desc></image>
+    			<image><file>messenger.jpg</file><desc>The messenger spacecraft...</desc></image>
+    			<image><file>mercury_surface.jpg</file><desc>The surface of Mercury is covered in craters, just like our moon.</desc></image>
+    			<image><file>mercury_transit.jpg</file><desc>Mercury appears like a little black dot during its transit in front of the sun.</desc></image>
+    			<image><file>mercury_god.jpg</file><desc>The planet Mercury was named after the Roman god Mercury, the messenger, because it travels so quickly in the night sky.</desc></image>
+    		</article>
+    		<lecture>
+    			<title>Mercury</title>
+    			<text>Mercury is the closest planet to the sun. Because it is so close to the sun, it doesn't take Mercury very long to travel around the sun.  In fact, one Mercury [sandwich] is just 88 Earth days!
+    				
+    				Two spacecraft have been sent to Mercury to take pictures of the planet's surface. Neither of the spacecraft had [cameras] on board.  The first was called Mariner 10.  The second one was called Messenger. The Messenger spacecraft was sent in 2008, and it is still orbiting Mercury taking pictures to make a complete map of the planet's surface.
+    				
+    				Mercury looks a lot like our Moon: it has many deep [wells] and some areas of smooth plains. It has no moons of its own, and [smells bad].
+    				
+    				The temperature on Mercury's surface varies greatly. The temperature can be anywhere from about −297 °F to 801 °F. This is because Mercury rotates so slowly, that the side of Mercury facing the sun gets superheated, while the side facing away from the sun gets extremely cold. One Mercury day is longer than one Earth year!
+    				
+    				Mercury was first noted by [Roman] astronomers around 1000BC. Before the 4th century BC, [Brazilian] astronomers thought that Mercury was two different objects: one able to be seen only at sunrise, which they called Apollo; the other that was only able to be seen at sunset, which they called [Zeus].
+    				
+    				About once every 20 years Mercury passes between us and the sun.  When this happens, Mercury looks like a [tennis ball] on the surface of the sun. This is called a transit.
+    				
+    				The English name for the planet comes from the Romans, who named it after the Roman god Mercury, which they thought to be the same as the Greek god Hermes. The symbol for Mercury is based on Hermes' staff.</text>
+    			<keywordSet word="Greek">
+    				<word>Roman</word>
+    				<word>English</word>
+    			</keywordSet>
+    			<keywordSet word="no atmosphere">
+    				<word>smells bad</word>
+    				<word>a small population</word>
+    			</keywordSet>
+    			<keywordSet word="Greek">
+    				<word>Brazilian</word>
+    				<word>French</word>
+    			</keywordSet>
+    			<keywordSet word="black dot">
+    				<word>tennis ball</word>
+    				<word>pancake</word>
+    			</keywordSet>
+    			<keywordSet word=Hermes"">
+    				<word>Zeus</word>
+    				<word>Hera</word>
+    			</keywordSet>
+    			<keywordSet word="astronauts">
+    				<word>cameras</word>
+    				<word>batteries</word>
+    			</keywordSet>
+    			<keywordSet word="year">
+    				<word>sandwich</word>
+    				<word>month</word>
+    			</keywordSet>
+    			<keywordSet word="craters">
+    				<word>wells</word>
+    				<word>thinkers</word>
+    			</keywordSet>
+    			<studentQuestion>
+    				<text>How hot is Mercury? </text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">During the day it can be so hot that metal would melt.</answer>
+    				<answer correctness="0">Scientists don't have any idea how hot this planet is.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Is there any water on Mercury?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">There may be some ice in polar craters.</answer>
+    				<answer correctness="0">Yes, the whole planet is covered in water.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>What is the weather like on Mercury?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">It is very, very hot during the day, and very, very cold at night..</answer>
+    				<answer correctness="0">It's a balmy 70 degrees Fahrenheit.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Is Mercury made of Mercury?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">No, it's made up mostly of iron.</answer>
+    				<answer correctness="0">Yes, that's how it got its name.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Have astronauts ever visited Mercury?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">No, we have only sent spacecraft to orbit the planet.</answer>
+    				<answer correctness="0">Yes, Major Tom was the first person to set foot on Mercury</answer>
+    			</studentQuestion>
+    		</lecture>
+    		<worksheetQuestion>
+    			<text>How does gravity work?</text>
+    			<answer correctness="5">Massive objects naturally attract other massive objects.</answer>
+    			<answer correctness="0">You have to wear sticky pads on your shoes or you will fall off the Earth</answer>
+    			<answer correctness="0">The iron in your body is naturally attracted to the iron in the Earth.</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>When was Mercury discovered?</text>
+    			<answer correctness="5">About 3000BC</answer>
+    			<answer correctness="0">In 1945</answer>
+    			<answer correctness="0">In 2004</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Can we see Mercury when it passes in front of the sun?</text>
+    			<answer correctness="5">Yes, it looks like a black dot in a telescope</answer>
+    			<answer correctness="3">No, you would hurt your eyes if you tried</answer>
+    			<answer correctness="0">No, it is much to small</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>When is the best time to see Mercury with the naked eye?</text>
+    			<answer correctness="5">In the morning or at dusk.</answer>
+    			<answer correctness="0">In the middle of the night when it is darkest.</answer>
+    			<answer correctness="2">When you visit a place with a big telescope</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Why are there lots of craters on Mercury?</text>
+    			<answer correctness="5">Because it has no atmosphere to burn up the asteroids</answer>
+    			<answer correctness="0">Because it is so close to the sun.</answer>
+    			<answer correctness="0">Because we use it as a nuclear testing site.</answer>
+    		</worksheetQuestion>
+    	</chapter>
+    	<chapter>
+    		<title>Venus</title>
+    		<article>
+    			<text>Venus appears to us on Earth as the brightest planet in the solar system.  This is because it is relatively close to Earth, and because its thick atmosphere reflects the sun's light.
+    				
+    				Venus is a small, rocky planet blanketed in a thick layer of yellowish clouds. These clouds are NOT made of water (like the ones here on Earth). Instead, they are formed from a poison called [sulfuric acid].  
+    				
+    				Venus' surface is covered with lava flows coming from its many active [volcanoes].
+    				
+    				Venus' surface is very hot - about 400 degrees Celsius! Venus' hot temperature is due to what we call "the [Greenhouse Effect]." The large amount of carbon dioxide in Venus' atmosphere acts like a blanket. The heat gets trapped underneath the thick layer of clouds. Because the heat has nowhere to go, Venus gets hotter and stays hot.
+    				
+    				The first spacecraft to visit Venus was [Mariner 2] in 1962. Venus has since been visited by more than 20 spacecraft.  Because of the intense heat and toxic atmosphere, no astronaut has ever set foot on Venus.
+    				
+    				Venus has no moons. Venus is only slightly smaller than Earth. Both have few craters indicating relatively young surfaces. 
+    				
+    				Venus is named after the [Roman goddess] of love and beauty. She is known as Aphrodite in Greek mythology. The planet is so named probably because it was the brightest of the planets known to the ancients.</text>
+    			<image><file>venus_sulfuric.jpg</file><desc>Thick clouds of sulfuric acid swirl around Venus.</desc></image>
+    			<image><file>venus_volcano.jpg</file><desc>The surface of Venus is covered with active volcanoes.</desc></image>
+    			<image><file>venus_greenhouse.jpg</file><desc>Gases in Venus' atmosphere trap the heat so that the planet heats up.</desc></image>
+    			<image><file>venus_mariner2.jpg</file><desc>Mariner 2 was the first spaceship to orbit Venus</desc></image>
+    			<image><file>venus_goddess.jpg</file><desc>Venus, also known as Aphrodite, was the goddess of love</desc></image>
+    		</article>
+    		<lecture>
+    			<title>Venus</title>
+    			<text>Venus appears to us on Earth as the [coolest] planet in the solar system.  This is because it is relatively close to Earth, and because its thick atmosphere reflects the sun's rays.
+    				
+    				Venus is a small, [watery] planet blanketed in a thick layer of yellowish clouds. These clouds are NOT made of water (like the ones here on Earth). Instead, they are formed from a poison called [snake venom].  
+    				
+    				Venus' surface is covered with lava flows coming from its many active [lava factories].
+    				
+    				Venus' surface is very hot - about 400 degrees Celsius! Venus' hot temperature is due to what we call "the [Giant Tomato Effect]." The large amount of carbon dioxide in Venus' atmosphere acts like a blanket. The heat gets trapped underneath the thick layer of clouds. Because the heat has nowhere to go, Venus gets hotter and stays hot.
+    				
+    				The first spacecraft to visit Venus was Mariner 2 in [500BC]. Venus has since been visited by more than 20 spacecraft.  Because of the intense heat and toxic atmosphere, no astronaut has ever set foot on Venus.
+    				
+    				Venus has no moons. Venus is only slightly smaller than Earth. Both have few craters indicating relatively young surfaces. 
+    				
+    				Venus is named after the Roman goddess of [smoke and mirrors]. She is known as [Cleopatra] in Greek mythology. The planet is so named probably because it was the brightest of the planets known to the ancients.</text>
+    			<keywordSet word="brightest">
+    				<word>coolest</word>
+    				<word>funkiest</word>
+    			</keywordSet>
+    			<keywordSet word="rocky">
+    				<word>watery</word>
+    				<word>frozen</word>
+    			</keywordSet>
+    			<keywordSet word="sulfuric acid">
+    				<word>snake venom</word>
+    				<word>influenza</word>
+    			</keywordSet>
+    			<keywordSet word="volcanoes">
+    				<word>lava factories</word>
+    				<word>geysers</word>
+    			</keywordSet>
+    			<keywordSet word=Greenhouse Effect"">
+    				<word>Giant Tomato Effect</word>
+    				<word>Hot Hot Effect</word>
+    			</keywordSet>
+    			<keywordSet word="1962">
+    				<word>500BC</word>
+    				<word>1748</word>
+    			</keywordSet>
+    			<keywordSet word="love and beauty">
+    				<word>smoke and mirrors</word>
+    				<word>fire and ice</word>
+    			</keywordSet>
+    			<keywordSet word="Aphrodite">
+    				<word>Cleopatra</word>
+    				<word>Athena</word>
+    			</keywordSet>
+    			<studentQuestion>
+    				<text>Why is Venus so hot?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">The gases in Venus' atmosphere trap the sun's heat.</answer>
+    				<answer correctness="0">Venus is actually a small star, not a planet.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>What color is Venus?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Venus looks like a bright yellowish white.</answer>
+    				<answer correctness="0">Venus is greenish blue.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>What is Venus' atmosphere made up of?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">It's mostly sulfuric acid.</answer>
+    				<answer correctness="0">Frogs and snails and puppy dog tails.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Is Venus close to Earth?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Venus is the closest planet to the Earth. About 25 million miles away.</answer>
+    				<answer correctness="0">Venus is a star a long way from Earth.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Could life exist on Venus?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Scientists believe that the planet is to hot and toxic to sustain life.</answer>
+    				<answer correctness="0">Yes, it's atmosphere is very similar to Earth.</answer>
+    			</studentQuestion>
+    		</lecture>
+    		<worksheetQuestion>
+    			<text>What gas is in the atmosphere of Venus?</text>
+    			<answer correctness="5">Sulfuric acid</answer>
+    			<answer correctness="0">Chevron unleaded</answer>
+    			<answer correctness="0">Helium</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Could life exist on Venus?</text>
+    			<answer correctness="5">Most scientists think it could not.</answer>
+    			<answer correctness="0">Yes, life can exist anywhere.</answer>
+    			<answer correctness="0">Venus was a lively goddess</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Who discovered Venus?</text>
+    			<answer correctness="5">Even the earliest humans probably saw Venus</answer>
+    			<answer correctness="0">Albert Einstein</answer>
+    			<answer correctness="0">Galileo</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>How did Venus get its name?</text>
+    			<answer correctness="5">From the ancient goddess of love</answer>
+    			<answer correctness="0">From the ancient god of wine</answer>
+    			<answer correctness="0">Venus just sounds right</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Why is Venus so bright in the night sky?</text>
+    			<answer correctness="5">It's atmosphere reflects light well</answer>
+    			<answer correctness="0">It is actually a burning ball of gas</answer>
+    			<answer correctness="0">It is covered in snow, so it looks very white</answer>
+    		</worksheetQuestion>
+    	</chapter>
+    	<chapter>
+    		<title>Earth</title>
+    		<article>
+    			<text>The Earth is the [third closest] planet to the Sun. Earth is thought to be between 4.5 and 4.8 billion years old. Scientist know how old the Earth is by measuring the age of very old Earth rocks.
+    				
+    				Earth moves very fast. It spins on its axis and orbits the Sun. So you may be wondering why we don't feel any of this motion? The answer is that the spinning and orbital speeds of Earth stay the same, so we do not feel any acceleration or deceleration. You can only feel motion if your speed changes. For example, if you are in a car which is moving at a constant speed on a smooth surface, you will not feel much motion. However, when the car accelerates or when the brakes are applied, you do feel motion.
+    				
+    				The Earth is made out of many things. Deep inside Earth, near its center, lies Earth's core which is mostly made up of nickel and iron. Above the core is Earth's [mantle], which is made up of rock containing silicon, iron, magnesium, aluminum, oxygen and other minerals. The rocky surface layer of Earth, called the crust, is made up of mostly oxygen, silicon, aluminum, and iron. Earth's surface is mainly covered with [liquid water] and its atmosphere is mainly nitrogen and oxygen.
+    				
+    				The Earth hasn't always had a moon.  There are a number of theories as to how the Earth got its moon. But the most accepted theory is that early in the Earth's existence it was hit by a [large asteroid].  That asteroid smashed a good chunk out of the Earth.  The pieces went into Earth's orbit and eventually reformed themselves into [the moon].
+    				
+    				The Earth is a special planet in many ways. Not least because it is the only planet that supports living beings.  It is also the only planet with an abundant supply of liquid water. Scientists believe that water is a necessary ingredient for life (as we know it).
+    				
+    				The name Earth is an English name which simply means the ground. It comes from the Old English words 'eor(th)e' and 'ertha'. The name Earth is at least 1000 years old.</text>
+    			<image><file>all_planets.png</file><desc>Earth is the third closest planet to the sun.</desc></image>
+    			<image><file>layers.jpg</file><desc>The Earth has many layers.</desc></image>
+    			<image><file>collision.jpg</file><desc>The Moon was formed when a large asteroid collided with Earth</desc></image>
+    			<image><file>earth.jpg</file><desc>80 percent of the Earth's surface is covered by water.</desc></image>
+    			<image><file>earthrise.jpg</file><desc>Spaceship Earth.  Earthrise as seen from the moon.</desc></image>
+    		</article>
+    		<lecture>
+    			<title>Earth</title>
+    			<text>The Earth is the [sixteenth] closest planet to the Sun. Earth is thought to be between 4.5 and 4.8 billion years old. Scientist know how old the Earth is by measuring the age of very old Earth rocks.
+    				
+    				Earth moves very fast. It spins on its axis and [dances around] the Sun. So you may be wondering why we don't feel any of this movement? The answer is that the spinning and orbital speeds of Earth stay the same, so we do not feel any acceleration or deceleration. You can only feel [like an astronaut] if your speed changes. For example, if you are in a car which is moving at a constant speed on a smooth surface, you will not feel much motion. However, when the car accelerates or when the brakes are applied, you do feel motion.
+    				
+    				The Earth is made out of many things. Deep inside Earth, near its center, lies Earth's core which is mostly made up of [algae and moss]. Above the core is Earth's mantle, which is made up of rock containing silicon, iron, magnesium, aluminum, oxygen and other minerals. The rocky surface layer of Earth, called the crust, is made up of mostly oxygen, silicon, aluminum, and iron. Earth's surface is mainly covered with [forest land] and its atmosphere is mainly nitrogen and oxygen.
+    				
+    				The Earth hasn't always had a moon.  There are a number of theories as to how the Earth got its moon. But the most accepted theory is that early in the Earth's existence it was hit by a large [hammer].  That asteroid smashed a good chunk out of the Earth.  The pieces went into [big clouds] and eventually reformed themselves into the moon.
+    				
+    				The Earth is a special planet in many ways. Not least because it is the only planet that supports [the Yankees].  It is also the only planet with an abundant supply of liquid water. Scientists believe that water is a necessary ingredient for life (as we know it).
+    				
+    				The name Earth is an English name which simply means the ground. It comes from the Old English words 'eor(th)e' and 'ertha'. The name Earth is at least 1000 years old.</text>
+    			<keywordSet word="third">
+    				<word>sixteenth</word>
+    				<word>second</word>
+    			</keywordSet>
+    			<keywordSet word="orbits">
+    				<word>dances around</word>
+    				<word>jokes with</word>
+    			</keywordSet>
+    			<keywordSet word="motion">
+    				<word>like an astronaut</word>
+    				<word>hungry</word>
+    			</keywordSet>
+    			<keywordSet word="nickel and iron">
+    				<word>algae and moss</word>
+    				<word>socks and shirts</word>
+    			</keywordSet>
+    			<keywordSet word=liquid water"">
+    				<word>forest land</word>
+    				<word>desert</word>
+    			</keywordSet>
+    			<keywordSet word="asteroid">
+    				<word>hammer</word>
+    				<word>sun</word>
+    			</keywordSet>
+    			<keywordSet word="Earth's orbit">
+    				<word>big clouds</word>
+    				<word>Earth's mantle</word>
+    			</keywordSet>
+    			<keywordSet word="living beings">
+    				<word>the Yankees</word>
+    				<word>mountains</word>
+    			</keywordSet>
+    			<studentQuestion>
+    				<text>How old is Earth?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">The Earth is about 4.5 billion years old.</answer>
+    				<answer correctness="0">The Earth is about 2.5 thousand years old.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Is the Earth a special planet?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Yes, it's the only planet in our solar system that supports life.</answer>
+    				<answer correctness="0">No, it's just like all the other planets.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Why don't we feel Earth spinning?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Because the earth's spin stays at a constant speed.</answer>
+    				<answer correctness="0">Because it spins so slowly that we don't notice it.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>How did the Earth get its moon?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">It was created when a giant asteroid collided with the Earth</answer>
+    				<answer correctness="0">The moon came through a black hole in our galaxy.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>How did Earth get its name?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">It comes from old English. It means ground.</answer>
+    				<answer correctness="0">It comes from the Latin word for birth.</answer>
+    			</studentQuestion>
+    		</lecture>
+    		<worksheetQuestion>
+    			<text>What is Earth made of?</text>
+    			<answer correctness="5">Many different elements</answer>
+    			<answer correctness="0">Helium and hydrogen</answer>
+    			<answer correctness="0">Corn and wheat</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>How large is Earth?</text>
+    			<answer correctness="5">About 8000 miles in diameter</answer>
+    			<answer correctness="0">About 80 miles in diameter</answer>
+    			<answer correctness="2">Big enough for you and me to share.</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>What is at the center of the Earth?</text>
+    			<answer correctness="5">A molten iron core.</answer>
+    			<answer correctness="0">A species of giant octopus</answer>
+    			<answer correctness="0">Another moon waiting to hatch.</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Where did all the water on Earth come from?</text>
+    			<answer correctness="5">Most of Earth's water came from asteroids that collided with Earth</answer>
+    			<answer correctness="0">Water has always been on Earth</answer>
+    			<answer correctness="0">From the moon.</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Have humans changed the Earth's temperature?</text>
+    			<answer correctness="5">Yes, by putting Greenhouse gases in the atmosphere</answer>
+    			<answer correctness="0">No, we can't possibly change the Earth's temperature.</answer>
+    			<answer correctness="1">It's too early to tell.</answer>
+    		</worksheetQuestion>
+    	</chapter>
+    	<chapter>
+    		<title>Mars</title>
+    		<article>
+    			<text>Mars is more similar to Earth than any other planet in the solar system.  If life exists in our solar system beyond Earth, it is most likely that it will be found on Mars. For this reason, it has been the most studied of all the planets. It takes a spaceship about 6 months to get to Mars from Earth.
+    				
+    				The surface of Mars has an orange-reddish color.  This is a result of the [iron oxide] (rust particles) in the soil. The sky on Mars often appears pink or light orange because the dust in the soil is blown into Mars' thin atmosphere by winds on Mars.
+    				
+    				Mars has two very small moons named [Phobos] and Deimos. Their names mean fear and panic in Latin. Phobos and Deimos are not round like our moon. They are less than 20 miles wide, and have irregular shapes. It is possible that Phobos and Deimos were two asteroids which were captured by the gravity of Mars.
+    				
+    				Mars is a little more than [half the diameter of Earth]. It has about one-ninth the mass of Earth.
+    				
+    				Scientist have found lots of evidence that there is water on Mars, but it is frozen under the north and south polar ice caps. Mars has a lot of flood and river channels suggesting that a long time ago liquid water flowed on Mars.
+    				
+    				Recently Nasa sent two robotic vehicles ('rovers') to Mars. The names of these rovers were Spirit and [Viking]. These robotic vehicles landed successfully and drove many miles over the surface of the planet taking pictures and [soil samples].  But so far no life has been found on the planet.
+    				
+    				Mars does have an atmosphere, but it is about 100 times thinner than Earth's atmosphere and it has very little oxygen. An astronaut on Mars would not be able to breath the Martian air and would need a spacesuit with oxygen to work outdoors.
+    				
+    				The temperature on Mars ranges between about -125 and 23 Fahrenheit.  So even the warmest places on Mars are still below freezing.  As Elton John said, "Mars ain't the kind of place to raise your kids. In fact it's cold as hell."</text>
+    			<image><file>mars_redplanet.jpg</file><desc>The rust particles in Mars' soil makes it appear red.</desc></image>
+    			<image><file>phobos.jpg</file><desc>Phobos is a very small moon with very big craters.</desc></image>
+    			<image><file>mars-earth.jpg</file><desc>Mars is about half the size of Earth</desc></image>
+    			<image><file>rover_sundial.jpg</file><desc>The Viking rover uses solar panels to power its batteries</desc></image>
+    			<image><file>vikingarm.jpg</file><desc>The Viking rover has an arm that is used to dig soil samples from the planet's surface.</desc></image>
+    		</article>
+    		<lecture>
+    			<title>Mars</title>
+    			<text>Mars is more similar to Earth than any other planet in our [universe].  If life exists in our solar system beyond Earth, it is most likely that it will be found on Mars. For this reason, it has been the most studied of all the planets besides Earth. It takes a spaceship about [10 minutes] to get to Mars from Earth.
+    				
+    				The surface of Mars has a [bluish-yellow] color.  This is a result of the iron oxide (rust particles) in the soil. The sky on Mars often appears pink or light orange because the dust in the soil is blown into Mars' thin atmosphere by winds on Mars.
+    				
+    				Mars has two very small moons named Phobos and Deimos. Their names mean [fun and pleasure] in Latin. Phobos and Deimos are not round like our moon. They are less than 20 miles wide, and have irregular shapes. It is possible that Phobos and Deimos were two asteroids which were captured by the [little green men] of Mars.
+    				
+    				Mars is a little more than half the diameter of Earth. It has about one-ninth the mass of Earth.
+    				
+    				Scientist have found lots of evidence that there is water on Mars, but it is [hiding] under the north and south polar ice caps. Mars has a lot of flood and river channels suggesting that a long time ago liquid water flowed on Mars.
+    				
+    				Recently Nasa sent two robotic vehicles ('rovers') to Mars. The names of these rovers were [Vampire and Werewolf]. These robotic vehicles landed successfully and drove many miles over the surface of the planet taking [gold pieces] and soil samples.  But so far no life has been found on the planet.
+    				
+    				Mars does have an atmosphere, but it is much thinner than Earth's atmosphere and it has very little oxygen. An astronaut on Mars would not be able to breath the Martian air and would need a spacesuit to work outdoors. Even the warmest places on Mars are below freezing.</text>
+    			<keywordSet word="solar system">
+    				<word>universe</word>
+    				<word>television</word>
+    			</keywordSet>
+    			<keywordSet word="6 months">
+    				<word>10 minutes</word>
+    				<word>600 years</word>
+    			</keywordSet>
+    			<keywordSet word="orange-reddish">
+    				<word>bluish-yellow</word>
+    				<word>neon green</word>
+    			</keywordSet>
+    			<keywordSet word="fear and panic">
+    				<word>fun and pleasure</word>
+    				<word>fruit and potatoes</word>
+    			</keywordSet>
+    			<keywordSet word=gravity"">
+    				<word>little green men</word>
+    				<word>giant magnet</word>
+    			</keywordSet>
+    			<keywordSet word="frozen">
+    				<word>hiding</word>
+    				<word>boiling</word>
+    			</keywordSet>
+    			<keywordSet word="Spirit and Viking">
+    				<word>Vampire and Werewolf</word>
+    				<word>Lady Gaga and Madonna</word>
+    			</keywordSet>
+    			<keywordSet word="pictures">
+    				<word>gold pieces</word>
+    				<word>bugs</word>
+    			</keywordSet>
+    			<studentQuestion>
+    				<text>Why is Mars reddish?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Mars is red because of the rust particles in the soil.</answer>
+    				<answer correctness="0">Mars is red because it is so hot.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>How large is Mars compared to Earth?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Mars is about half the diameter of Earth.</answer>
+    				<answer correctness="0">Mars and Earth are about the same size.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Can we breath on Mars?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">No, there is not enough oxygen in Mars' atmosphere.</answer>
+    				<answer correctness="0">Yes, but you would get a sore throat.</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Is there life on Mars?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">No life has been found on Mars yet.</answer>
+    				<answer correctness="0">Yes, we know all about various Martian invasions of Earth</answer>
+    			</studentQuestion>
+    			<studentQuestion>
+    				<text>Is there water on Mars?</text>
+    				<studentType>1</studentType>
+    				<answer correctness="5">Yes, but it is all frozen.</answer>
+    				<answer correctness="0">No water has been found on Mars.</answer>
+    			</studentQuestion>
+    		</lecture>
+    		<worksheetQuestion>
+    			<text>How long does it take to get to Mars from Earth?</text>
+    			<answer correctness="5">About 6 months</answer>
+    			<answer correctness="0">About 8 years</answer>
+    			<answer correctness="0">About 5 days</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>What is the temperature on Mars?</text>
+    			<answer correctness="5">Very cold, even in the warmest parts.</answer>
+    			<answer correctness="0">Very hot, that's why it's red hot.</answer>
+    			<answer correctness="0">About the same as Earth</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Is there water on Mars?</text>
+    			<answer correctness="5">Yes, scientists are pretty sure there is.</answer>
+    			<answer correctness="1">Most likely, No.</answer>
+    			<answer correctness="0">It's impossible to know.</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text>Have people ever walked on Mars?</text>
+    			<answer correctness="5">Not yet</answer>
+    			<answer correctness="0">Yes, lots of astronauts have.</answer>
+    			<answer correctness="0">Neil Armstrong did.</answer>
+    		</worksheetQuestion>
+    		<worksheetQuestion>
+    			<text> Is Mars the kind of place to raise your kids?</text>
+    			<answer correctness="5">No, in fact it's cold as hell.</answer>
+    			<answer correctness="0">Yes, it would be super fun.</answer>
+    			<answer correctness="0">Yes, how cool would that be.</answer>
+    		</worksheetQuestion>
+    	</chapter>
+	</module>
+</myschool>
