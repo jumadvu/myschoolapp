@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <myschool>
     <module>
-		<title>The Planets</title>
+		<title>Our Solar System</title>
 		<superSubject>Science</superSubject>
 		<gradeLevel>2</gradeLevel>
     	<chapter>
@@ -18,7 +18,7 @@
     				About once every 20 years Mercury passes between us and the sun.  When this happens, Mercury looks like a black dot on the surface of the sun. This is called a [transit].
     				
     				The English name for the planet comes from the Romans, who named it after the [Roman god] Mercury, which they thought to be the same as the Greek god Hermes. The symbol for Mercury is based on Hermes' staff.</text>
-    			<image><file>all_planets.png</file><desc>The closest planet to the sun, Mercury travels around the sun faster than any other planet!</desc></image>
+    			<image><file>mercury/all_planets.png</file><desc>The closest planet to the sun, Mercury travels around the sun faster than any other planet!</desc></image>
     			<image><file>messenger.jpg</file><desc>The messenger spacecraft...</desc></image>
     			<image><file>mercury_surface.jpg</file><desc>The surface of Mercury is covered in craters, just like our moon.</desc></image>
     			<image><file>mercury_transit.jpg</file><desc>Mercury appears like a little black dot during its transit in front of the sun.</desc></image>
