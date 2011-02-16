@@ -83,6 +83,7 @@
 		[Library addXMLModule:@"dinosaurs" toDatabaseContext:managedObjectContext];
 		[Library addXMLModule:@"sustain" toDatabaseContext:managedObjectContext];
 		[Library addXMLModule:@"insects" toDatabaseContext:managedObjectContext];
+		[Library addXMLModule:@"planets" toDatabaseContext:managedObjectContext];
 		[Library addXMLModule:@"historicalFigures" toDatabaseContext:managedObjectContext];
 
 		//add behavior reports
