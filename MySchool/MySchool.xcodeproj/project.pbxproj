@@ -13,6 +13,27 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		294B6F57130AE05F0045CBBF /* all_planets.png in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F3F130AE05E0045CBBF /* all_planets.png */; };
+		294B6F58130AE05F0045CBBF /* collision.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F40130AE05E0045CBBF /* collision.jpg */; };
+		294B6F59130AE05F0045CBBF /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F41130AE05E0045CBBF /* earth.jpg */; };
+		294B6F5A130AE05F0045CBBF /* earthrise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F42130AE05E0045CBBF /* earthrise.jpg */; };
+		294B6F5B130AE05F0045CBBF /* layers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F43130AE05E0045CBBF /* layers.jpg */; };
+		294B6F5C130AE05F0045CBBF /* mars-earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F45130AE05E0045CBBF /* mars-earth.jpg */; };
+		294B6F5D130AE05F0045CBBF /* mars_redplanet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F46130AE05E0045CBBF /* mars_redplanet.jpg */; };
+		294B6F5E130AE05F0045CBBF /* phobos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F47130AE05E0045CBBF /* phobos.jpg */; };
+		294B6F5F130AE05F0045CBBF /* rover_sundial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F48130AE05E0045CBBF /* rover_sundial.jpg */; };
+		294B6F60130AE05F0045CBBF /* vikingarm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F49130AE05E0045CBBF /* vikingarm.jpg */; };
+		294B6F61130AE05F0045CBBF /* all_planets.png in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F4B130AE05E0045CBBF /* all_planets.png */; };
+		294B6F62130AE05F0045CBBF /* mercury_god.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F4C130AE05E0045CBBF /* mercury_god.jpg */; };
+		294B6F63130AE05F0045CBBF /* mercury_surface.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F4D130AE05E0045CBBF /* mercury_surface.jpg */; };
+		294B6F64130AE05F0045CBBF /* mercury_transit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F4E130AE05E0045CBBF /* mercury_transit.jpg */; };
+		294B6F65130AE05F0045CBBF /* messenger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F4F130AE05E0045CBBF /* messenger.jpg */; };
+		294B6F66130AE05F0045CBBF /* planets.xml in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F50130AE05E0045CBBF /* planets.xml */; };
+		294B6F67130AE05F0045CBBF /* venus_goddess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F52130AE05F0045CBBF /* venus_goddess.jpg */; };
+		294B6F68130AE05F0045CBBF /* venus_greenhouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F53130AE05F0045CBBF /* venus_greenhouse.jpg */; };
+		294B6F69130AE05F0045CBBF /* venus_mariner2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F54130AE05F0045CBBF /* venus_mariner2.jpg */; };
+		294B6F6A130AE05F0045CBBF /* venus_sulfuric.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F55130AE05F0045CBBF /* venus_sulfuric.jpg */; };
+		294B6F6B130AE05F0045CBBF /* venus_volcano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 294B6F56130AE05F0045CBBF /* venus_volcano.jpg */; };
 		AB0542341140E979001045D7 /* WorksheetPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0542331140E979001045D7 /* WorksheetPlus.m */; };
 		AB07EFF11108EA1D00204AFE /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07EFEF1108EA1D00204AFE /* MainMenu.m */; };
 		AB07EFF21108EA1D00204AFE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB07EFF01108EA1D00204AFE /* MainMenu.xib */; };
@@ -439,6 +460,27 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		294B6F3F130AE05E0045CBBF /* all_planets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all_planets.png; sourceTree = "<group>"; };
+		294B6F40130AE05E0045CBBF /* collision.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = collision.jpg; sourceTree = "<group>"; };
+		294B6F41130AE05E0045CBBF /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		294B6F42130AE05E0045CBBF /* earthrise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthrise.jpg; sourceTree = "<group>"; };
+		294B6F43130AE05E0045CBBF /* layers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = layers.jpg; sourceTree = "<group>"; };
+		294B6F45130AE05E0045CBBF /* mars-earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mars-earth.jpg"; sourceTree = "<group>"; };
+		294B6F46130AE05E0045CBBF /* mars_redplanet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars_redplanet.jpg; sourceTree = "<group>"; };
+		294B6F47130AE05E0045CBBF /* phobos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phobos.jpg; sourceTree = "<group>"; };
+		294B6F48130AE05E0045CBBF /* rover_sundial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rover_sundial.jpg; sourceTree = "<group>"; };
+		294B6F49130AE05E0045CBBF /* vikingarm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vikingarm.jpg; sourceTree = "<group>"; };
+		294B6F4B130AE05E0045CBBF /* all_planets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all_planets.png; sourceTree = "<group>"; };
+		294B6F4C130AE05E0045CBBF /* mercury_god.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercury_god.jpg; sourceTree = "<group>"; };
+		294B6F4D130AE05E0045CBBF /* mercury_surface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercury_surface.jpg; sourceTree = "<group>"; };
+		294B6F4E130AE05E0045CBBF /* mercury_transit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercury_transit.jpg; sourceTree = "<group>"; };
+		294B6F4F130AE05E0045CBBF /* messenger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = messenger.jpg; sourceTree = "<group>"; };
+		294B6F50130AE05E0045CBBF /* planets.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = planets.xml; sourceTree = "<group>"; };
+		294B6F52130AE05F0045CBBF /* venus_goddess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus_goddess.jpg; sourceTree = "<group>"; };
+		294B6F53130AE05F0045CBBF /* venus_greenhouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus_greenhouse.jpg; sourceTree = "<group>"; };
+		294B6F54130AE05F0045CBBF /* venus_mariner2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus_mariner2.jpg; sourceTree = "<group>"; };
+		294B6F55130AE05F0045CBBF /* venus_sulfuric.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus_sulfuric.jpg; sourceTree = "<group>"; };
+		294B6F56130AE05F0045CBBF /* venus_volcano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus_volcano.jpg; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MySchool_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySchool_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MySchool-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MySchool-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -1001,6 +1043,66 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		294B6F3D130AE05E0045CBBF /* solarsystem */ = {
+			isa = PBXGroup;
+			children = (
+				294B6F50130AE05E0045CBBF /* planets.xml */,
+				294B6F3E130AE05E0045CBBF /* earth */,
+				294B6F44130AE05E0045CBBF /* mars */,
+				294B6F4A130AE05E0045CBBF /* mercury */,
+				294B6F51130AE05F0045CBBF /* venus */,
+			);
+			path = solarsystem;
+			sourceTree = "<group>";
+		};
+		294B6F3E130AE05E0045CBBF /* earth */ = {
+			isa = PBXGroup;
+			children = (
+				294B6F3F130AE05E0045CBBF /* all_planets.png */,
+				294B6F40130AE05E0045CBBF /* collision.jpg */,
+				294B6F41130AE05E0045CBBF /* earth.jpg */,
+				294B6F42130AE05E0045CBBF /* earthrise.jpg */,
+				294B6F43130AE05E0045CBBF /* layers.jpg */,
+			);
+			path = earth;
+			sourceTree = "<group>";
+		};
+		294B6F44130AE05E0045CBBF /* mars */ = {
+			isa = PBXGroup;
+			children = (
+				294B6F45130AE05E0045CBBF /* mars-earth.jpg */,
+				294B6F46130AE05E0045CBBF /* mars_redplanet.jpg */,
+				294B6F47130AE05E0045CBBF /* phobos.jpg */,
+				294B6F48130AE05E0045CBBF /* rover_sundial.jpg */,
+				294B6F49130AE05E0045CBBF /* vikingarm.jpg */,
+			);
+			path = mars;
+			sourceTree = "<group>";
+		};
+		294B6F4A130AE05E0045CBBF /* mercury */ = {
+			isa = PBXGroup;
+			children = (
+				294B6F4B130AE05E0045CBBF /* all_planets.png */,
+				294B6F4C130AE05E0045CBBF /* mercury_god.jpg */,
+				294B6F4D130AE05E0045CBBF /* mercury_surface.jpg */,
+				294B6F4E130AE05E0045CBBF /* mercury_transit.jpg */,
+				294B6F4F130AE05E0045CBBF /* messenger.jpg */,
+			);
+			path = mercury;
+			sourceTree = "<group>";
+		};
+		294B6F51130AE05F0045CBBF /* venus */ = {
+			isa = PBXGroup;
+			children = (
+				294B6F52130AE05F0045CBBF /* venus_goddess.jpg */,
+				294B6F53130AE05F0045CBBF /* venus_greenhouse.jpg */,
+				294B6F54130AE05F0045CBBF /* venus_mariner2.jpg */,
+				294B6F55130AE05F0045CBBF /* venus_sulfuric.jpg */,
+				294B6F56130AE05F0045CBBF /* venus_volcano.jpg */,
+			);
+			path = venus;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1437,6 +1539,7 @@
 		AB53B3641121EC120017AFAB /* science */ = {
 			isa = PBXGroup;
 			children = (
+				294B6F3D130AE05E0045CBBF /* solarsystem */,
 				ABCF71931190DD69005C3642 /* insects */,
 				AB53B3651121EC120017AFAB /* dinosaurs */,
 				AB53B3681121EC120017AFAB /* sustainability */,
@@ -1855,7 +1958,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MySchool" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2202,6 +2312,27 @@
 				ABCF72111190EBBB005C3642 /* warsaw.png in Resources */,
 				ABCF721D1190ECF8005C3642 /* historicalFigures.xml in Resources */,
 				AB9C967C11E5AC8700739957 /* PrincipalHelp.xib in Resources */,
+				294B6F57130AE05F0045CBBF /* all_planets.png in Resources */,
+				294B6F58130AE05F0045CBBF /* collision.jpg in Resources */,
+				294B6F59130AE05F0045CBBF /* earth.jpg in Resources */,
+				294B6F5A130AE05F0045CBBF /* earthrise.jpg in Resources */,
+				294B6F5B130AE05F0045CBBF /* layers.jpg in Resources */,
+				294B6F5C130AE05F0045CBBF /* mars-earth.jpg in Resources */,
+				294B6F5D130AE05F0045CBBF /* mars_redplanet.jpg in Resources */,
+				294B6F5E130AE05F0045CBBF /* phobos.jpg in Resources */,
+				294B6F5F130AE05F0045CBBF /* rover_sundial.jpg in Resources */,
+				294B6F60130AE05F0045CBBF /* vikingarm.jpg in Resources */,
+				294B6F61130AE05F0045CBBF /* all_planets.png in Resources */,
+				294B6F62130AE05F0045CBBF /* mercury_god.jpg in Resources */,
+				294B6F63130AE05F0045CBBF /* mercury_surface.jpg in Resources */,
+				294B6F64130AE05F0045CBBF /* mercury_transit.jpg in Resources */,
+				294B6F65130AE05F0045CBBF /* messenger.jpg in Resources */,
+				294B6F66130AE05F0045CBBF /* planets.xml in Resources */,
+				294B6F67130AE05F0045CBBF /* venus_goddess.jpg in Resources */,
+				294B6F68130AE05F0045CBBF /* venus_greenhouse.jpg in Resources */,
+				294B6F69130AE05F0045CBBF /* venus_mariner2.jpg in Resources */,
+				294B6F6A130AE05F0045CBBF /* venus_sulfuric.jpg in Resources */,
+				294B6F6B130AE05F0045CBBF /* venus_volcano.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2305,16 +2436,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ashley Kayler (G38M98N748)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MySchool_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "MySchool-Info.plist";
 				PRODUCT_NAME = MySchool;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB5FB46D-962D-4BED-829E-1D429432311E";
-				SDKROOT = iphoneos3.2;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -2327,7 +2459,7 @@
 				GCC_PREFIX_HEADER = MySchool_Prefix.pch;
 				INFOPLIST_FILE = "MySchool-Info.plist";
 				PRODUCT_NAME = MySchool;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -2340,7 +2472,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
