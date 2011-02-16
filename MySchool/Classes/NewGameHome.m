@@ -106,8 +106,8 @@
 			//create new teacher
 			User *aTeacher = (User *)[NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:delegate.managedObjectContext];
 			Avatar *avatar = (Avatar *)[NSEntityDescription insertNewObjectForEntityForName:@"Avatar" inManagedObjectContext:delegate.managedObjectContext];
-			[aTeacher setFirstName:[NSString stringWithFormat:firstField.text]];
-			[aTeacher setLastName:[NSString stringWithFormat:lastField.text]];
+			[aTeacher setFirstName:[NSString stringWithFormat:@"%@",firstField.text]];
+			[aTeacher setLastName:[NSString stringWithFormat:@"%@",lastField.text]];
 			[avatar setAvatarImage:[avatarImages objectAtIndex:selectedImage]];
 			[avatar setAvatarImageWaistUp:[avatarImagesWaistUp objectAtIndex:selectedImage]];
 			[aTeacher setStudents:[Student createStudentsInContext:delegate.managedObjectContext]];
@@ -136,8 +136,8 @@
 					[delegate.teacher.avatar setGenericMan];
 				}
 			}
-			[delegate.teacher setFirstName:[NSString stringWithFormat:firstField.text]];
-			[delegate.teacher setLastName:[NSString stringWithFormat:lastField.text]];
+			[delegate.teacher setFirstName:[NSString stringWithFormat:@"%@",firstField.text]];
+			[delegate.teacher setLastName:[NSString stringWithFormat:@"%@",lastField.text]];
 			
 		}
 

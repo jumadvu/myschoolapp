@@ -102,7 +102,7 @@
 	int y = 0;
 	int ytop = 20;
 	int ybottom = 180;
-	int spacer = 0;
+	int spacer = 5;
 	int tagCount = 0;
 	
 	NSArray *modulesInSubject;
@@ -110,7 +110,7 @@
 	for (int i = 0; i< [subjects count]; i++) {
 		modulesInSubject = [NSArray arrayWithArray:[[subjects objectAtIndex:i] objectAtIndex:1]];
 		NSArray *module;
-		[shelfMarkers addObject:[NSNumber numberWithInt:x]];
+		[shelfMarkers addObject:[NSNumber numberWithInt:x-10]];
 		[subjectNames addObject:[[subjects objectAtIndex:i] objectAtIndex:0]];
 		y = ytop;
 		for (module in modulesInSubject) {
@@ -120,6 +120,7 @@
 
 			//set book background
 			NSString *title = [module objectAtIndex:0];
+			//NSLog(@"%@", title);
 			int randomNum = [title length] % 6;
 			//this probably shouldn't be random. Book should retain its look
 			UIImage *bimage = [bookImages objectAtIndex:randomNum];
@@ -142,12 +143,16 @@
 			if(y == ytop){
 				y = ybottom;
 			}else{
-				x = x + bookButton.frame.size.width + spacer;
+				x += bookButton.frame.size.width + spacer;
 				y = ytop;
 			}
+
 		}
 		
-		x = x+30; //add space between subjects
+		x += 40; //add space between subjects
+		if (y == ybottom) {
+			x += 170; //add some additional space if there was an odd number of books in previous subject
+		}
 	}
 	[scrollView setContentSize:CGSizeMake(x, 320)];
 	

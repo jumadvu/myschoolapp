@@ -86,8 +86,8 @@
 		//academic question
 		StudentQuestion *sQuestion = [[chapter studentQuestionsArray] objectAtIndex:whichQuestion];
 		question = [NSString stringWithFormat:@"%@, %@", [appdelegate.teacher title],[sQuestion text]];
-		answer1 = [NSString stringWithFormat:[[[sQuestion studentAnswersArray] objectAtIndex:0] answer]];
-		answer2 = [NSString stringWithFormat:[[[sQuestion studentAnswersArray] objectAtIndex:1] answer]];
+		answer1 = [NSString stringWithFormat:@"%@",[[[sQuestion studentAnswersArray] objectAtIndex:0] answer]];
+		answer2 = [NSString stringWithFormat:@"%@",[[[sQuestion studentAnswersArray] objectAtIndex:1] answer]];
 	}
 	//set up question
 	sButton.titleLabel.numberOfLines = 6;

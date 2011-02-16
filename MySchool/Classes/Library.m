@@ -128,7 +128,7 @@
 		Chapter *chapterMO = (Chapter *)[NSEntityDescription insertNewObjectForEntityForName:@"Chapter" inManagedObjectContext:moc];
 		[chapterMO setOrder:[NSNumber numberWithInt:chapterCount]];
 		[chapterMO setTitle:[tbxml textForElement:[tbxml childElementNamed:@"title" parentElement:chapter]]];
-		//NSLog(@"Adding chapter %@", chapterMO.title);
+		NSLog(@"Adding chapter %@", chapterMO.title);
 
 		Lecture *lectureMO = (Lecture *)[NSEntityDescription insertNewObjectForEntityForName:@"Lecture" inManagedObjectContext:moc];
 		TBXMLElement * lecture=[tbxml childElementNamed:@"lecture" parentElement:chapter];
@@ -163,7 +163,7 @@
 		//grab the student questions
 		TBXMLElement * studentQ=[tbxml childElementNamed:@"studentQuestion" parentElement:lecture];		
 		while (studentQ!=nil) {
-			//NSLog(@"adding a student question");
+			NSLog(@"adding a student question");
 			StudentQuestion *studentQMO = (StudentQuestion *)[NSEntityDescription insertNewObjectForEntityForName:@"StudentQuestion" inManagedObjectContext:moc];
 			[studentQMO setText:[tbxml textForElement:[tbxml childElementNamed:@"text" parentElement:studentQ]]];
 			[studentQMO setStudentType:[NSNumber numberWithInt:[[tbxml textForElement:[tbxml childElementNamed:@"studentType" parentElement:studentQ]] intValue]]];
@@ -238,7 +238,7 @@
 }
 
 +(void)addBehaviorReports:(NSString*)xmlFile toDatabaseContext:(NSManagedObjectContext*)moc {
-	NSLog(@"Adding xml module %@", xmlFile);
+	NSLog(@"Adding behavior reports xml module %@", xmlFile);
 	
 	TBXML * tbxml = [[TBXML alloc] initWithXMLFile:xmlFile fileExtension:@"xml"];
 	TBXMLElement * root = tbxml.rootXMLElement;
