@@ -21,6 +21,11 @@
 			<fileName>endangeredspecies</fileName>
 			<title>Endangered Species</title>
 		</module>
+		<module>
+			<category>Astronomy</category>
+			<fileName>planets</fileName>
+			<title>Our Solar System</title>
+		</module>
 	</subject>
 	<subject name="History">
 		<module>
