@@ -1,0 +1,1 @@
+Educational app for the iPhone
